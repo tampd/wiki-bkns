@@ -1,0 +1,44 @@
+name: bkns-wiki-agent
+description: Agent wiki tri thức BKNS — thủ thư tự động (Karpathy pattern)
+
+telegram:
+  bot_token: ${TELEGRAM_BOT_TOKEN}
+  admin_ids:
+    - ${ADMIN_TELEGRAM_ID}
+
+workspace: /home/openclaw/wiki/
+
+models:
+  default: gemini-2.5-flash
+  compile: gemini-2.5-pro
+  lint: gemini-2.5-pro
+  ingest: gemini-2.5-flash
+
+vertex_ai:
+  project: ${GOOGLE_CLOUD_PROJECT}
+  location: ${GOOGLE_CLOUD_LOCATION}
+  credentials: ${GOOGLE_APPLICATION_CREDENTIALS}
+
+# Skills enabled theo phase
+skills:
+  # Phase 0.5 (core)
+  - skills/crawl-source/SKILL.md
+  - skills/extract-claims/SKILL.md
+  - skills/compile-wiki/SKILL.md
+  - skills/query-wiki/SKILL.md
+  # Phase 1 (automation)
+  - skills/build-snapshot/SKILL.md
+  - skills/ingest-image/SKILL.md
+  - skills/lint-wiki/SKILL.md
+  - skills/ground-truth/SKILL.md
+  # Phase 2 (intelligence) — enable khi Phase 2
+  # - skills/auto-file/SKILL.md
+  # - skills/cross-link/SKILL.md
+
+memory:
+  type: file
+  path: /home/openclaw/wiki/build/active-build.yaml
+
+logging:
+  level: INFO
+  path: /home/openclaw/wiki/logs/

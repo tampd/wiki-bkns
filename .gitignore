@@ -1,0 +1,47 @@
+# Secrets
+.env
+api/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# MkDocs build
+site/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Logs (keep structure, ignore content)
+logs/**/*.jsonl
+logs/**/*.log
+!logs/.gitkeep
+
+# Assets evidence (Git LFS)
+assets/evidence/**
+!assets/evidence/.gitkeep
+
+# Drafts content (tracked separately)
+# claims/.drafts/ — tracked
+# wiki/.drafts/ — tracked
+
+# Tmp
+*.tmp
+*.bak
+
+# Claude / other AI
+.claude/
+
+# Old project files (kept for reference)
+# output/
+# tampd_skill/
+# trienkhai/
+tampd_skill/

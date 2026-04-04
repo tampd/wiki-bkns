@@ -1,0 +1,9 @@
+# BKNS Claims Registry
+# Master index mọi claims — tự động cập nhật bởi extract-claims
+# Dùng để tra cứu nhanh claim by entity, attribute
+
+claims: []
+last_updated: null
+total_claims: 0
+total_approved: 0
+total_drafted: 0

@@ -1,0 +1,40 @@
+# BKNS Entity Registry
+# Quản lý tất cả entities (sản phẩm, công ty, dịch vụ)
+# Mỗi entity có ID duy nhất, skill tự động thêm khi extract claims mới
+
+entities:
+  - entity_id: ENT-COMPANY-001
+    name: BKNS
+    type: company
+    status: active
+    description: "Nhà cung cấp hosting, tên miền, VPS hàng đầu Việt Nam"
+
+  - entity_id: ENT-PROD-HOSTING
+    name: Hosting BKNS
+    type: product_category
+    status: active
+    description: "Shared hosting plans"
+
+  - entity_id: ENT-PROD-VPS
+    name: VPS BKNS
+    type: product_category
+    status: active
+    description: "Virtual Private Server plans"
+
+  - entity_id: ENT-PROD-DOMAIN
+    name: Tên miền BKNS
+    type: product_category
+    status: active
+    description: "Domain registration services"
+
+  - entity_id: ENT-PROD-EMAIL
+    name: Email BKNS
+    type: product_category
+    status: active
+    description: "Email hosting services"
+
+  - entity_id: ENT-PROD-SSL
+    name: SSL BKNS
+    type: product_category
+    status: active
+    description: "SSL certificate services"

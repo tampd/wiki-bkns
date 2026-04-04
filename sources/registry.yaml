@@ -1,0 +1,17 @@
+sources:
+- source_id: SRC-BKNS-WEB-HOSTING
+  type: official_product_page
+  url: https://bkns.vn/hosting
+  authority_level: 3
+  freshness_sla_days: 7
+  last_crawled: '2026-04-04'
+  raw_file: raw/website-crawl/hosting-2026-04-04.md
+  hash: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+- source_id: SRC-BKNS-WEB-INDEX
+  type: official_product_page
+  url: https://bkns.vn
+  authority_level: 3
+  freshness_sla_days: 7
+  last_crawled: '2026-04-04'
+  raw_file: raw/website-crawl/index-2026-04-04.md
+  hash: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
