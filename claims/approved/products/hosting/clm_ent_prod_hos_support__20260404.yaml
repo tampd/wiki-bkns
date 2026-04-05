@@ -1,0 +1,20 @@
+claim_id: CLM-ENT-PROD-HOS-SUPPORT_-20260404
+entity_id: ENT-PROD-HOSTING
+entity_type: product_category
+entity_name: Hosting (Web Hosting)
+attribute: support_availability
+value: 24/7
+unit: null
+qualifiers:
+  type: technical
+source_ids:
+- SRC-TRANNING_KINH_DOANH_HOSTING_EMAIL_2026_04_04
+observed_at: '2026-04-04T21:17:54.062976+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ bảng Giới thiệu dịch vụ BKNS cung cấp, hàng ''Hosting (Web
+  Hosting)'', cột ''Điểm mạnh cạnh tranh'': ''hỗ trợ kỹ thuật 24/7'''
+approved_at: '2026-04-04T21:19:26.844848+07:00'
+approved_by: admin-batch

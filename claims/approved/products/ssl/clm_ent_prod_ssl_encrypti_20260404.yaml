@@ -1,0 +1,18 @@
+claim_id: CLM-ENT-PROD-SSL-ENCRYPTI-20260404
+entity_id: ENT-PROD-SSL-INSTANTSSL-PRO-OV
+entity_type: product_plan
+entity_name: InstantSSL Pro (OV)
+attribute: encryption_strength
+value: 256
+unit: bit
+qualifiers: {}
+source_ids:
+- SRC-INSTANTSSL_PRO_OV_CHUNG_CHI_SSL_XAC_THUC_TO_CHUC_CUA_COM_2026_04_04
+observed_at: '2026-04-04T21:05:51.044828+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: none
+compiler_note: 'Trích từ Tóm tắt nhanh: ''Điểm chính: Cung cấp mã hóa 256 bit...'''
+approved_at: '2026-04-04T21:19:27.735318+07:00'
+approved_by: admin-batch

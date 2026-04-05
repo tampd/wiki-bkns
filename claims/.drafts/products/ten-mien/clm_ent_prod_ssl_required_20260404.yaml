@@ -1,0 +1,17 @@
+claim_id: CLM-ENT-PROD-SSL-REQUIRED-20260404
+entity_id: ENT-PROD-SSL-RAPIDSSL
+entity_type: product
+entity_name: RapidSSL Certificate
+attribute: required_documents
+value: Không yêu cầu
+unit: null
+qualifiers: null
+source_ids:
+- SRC-RAPIDSSL_CERTIFICATE_CHUNG_CHI_SSL_XAC_THUC_TEN_MIEN_DV_2026_04_04
+observed_at: '2026-04-04T21:12:48.701860+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: medium
+compiler_note: 'Trích từ Thông số kỹ thuật / Giới hạn: ''| Giấy tờ kèm theo | Không
+  yêu cầu |'''

@@ -135,6 +135,8 @@ CATEGORY_MAP = {
     "domain": "products/ten-mien",
     "email": "products/email",
     "ssl": "products/ssl",
+    "server": "products/server",
+    "software": "products/software",
     "gioi-thieu": "company",
     "lien-he": "support",
     "ho-tro": "support",

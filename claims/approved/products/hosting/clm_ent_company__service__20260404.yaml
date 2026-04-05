@@ -1,0 +1,20 @@
+claim_id: CLM-ENT-COMPANY--SERVICE_-20260404
+entity_id: ENT-COMPANY-001
+entity_type: company
+entity_name: BKNS
+attribute: service_offering
+value: Lưu trữ và sao lưu dữ liệu an toàn
+unit: null
+qualifiers:
+  service_name: Cloud Backup – Storage
+source_ids:
+- SRC-TRANNING_KINH_DOANH_HOSTING_EMAIL_2026_04_04
+observed_at: '2026-04-04T21:17:54.111065+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: Trích từ bảng Giới thiệu dịch vụ BKNS cung cấp, hàng 'Cloud Backup
+  – Storage', cột 'Mô tả ngắn'
+approved_at: '2026-04-04T21:19:26.680286+07:00'
+approved_by: admin-batch

@@ -1,0 +1,17 @@
+claim_id: CLM-HOST-PLATINUM-SSL_CERT-20260404
+entity_id: product.hosting.platinum
+entity_type: product_family
+entity_name: Platinum Web Hosting
+attribute: ssl_certificate
+value: free
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-PLATINUM_WEB_HOSTING_HOSTING_NVME_TOC_O_CAO_BACKUP_3_LAN_2026_04_04
+observed_at: '2026-04-04T21:09:45.436285+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tính năng / Thành phần: Cung cấp chứng chỉ SSL miễn phí
+  để mã hóa dữ liệu.'

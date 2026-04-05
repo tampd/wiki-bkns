@@ -1,0 +1,19 @@
+attribute: price
+claim_id: CLM-EMAI-EMAIL_2-PRICE-20260404
+compiler_note: 'Gói EMAIL 2:
+
+  - Giá năm: 1.026.000 VNĐ'
+confidence: high
+entity_id: product.email_hosting.email_2
+entity_name: Email Hosting - Gói EMAIL 2
+entity_type: product_plan
+observed_at: '2026-04-04T20:22:33.843954+07:00'
+qualifiers:
+  billing_cycle: year
+review_state: approved
+risk_class: high
+source_ids:
+- SRC-BANG_GIA_DICH_VU_BKNS_TEXT_2026_04_04
+unit: VND
+valid_from: '2026-04-04'
+value: 1026000

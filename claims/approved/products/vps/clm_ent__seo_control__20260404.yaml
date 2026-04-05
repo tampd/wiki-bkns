@@ -1,0 +1,20 @@
+claim_id: CLM-ENT--SEO-CONTROL_-20260404
+entity_id: ENT-PROD-VPS.seo
+entity_type: product_service
+entity_name: VPS SEO
+attribute: control_panel_support
+value: false
+unit: ''
+qualifiers:
+  control_panel_name: DirectAdmin
+source_ids:
+- SRC-DICH_VU_CLOUD_VPS_SEO_MAY_CHU_AO_TOI_UU_CHO_SEO_2026_04_04
+observed_at: '2026-04-04T20:48:08.017522+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ mục Thông số kỹ thuật / Giới hạn: • Dịch vụ không hỗ trợ
+  control panel DirectAdmin.'
+approved_at: '2026-04-04T21:19:28.198101+07:00'
+approved_by: admin-batch

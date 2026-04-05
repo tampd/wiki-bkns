@@ -1,0 +1,18 @@
+claim_id: CLM-SIEU-VPSTK1-VCPU-20260404
+entity_id: vps.sieu_re.vpstk1
+entity_type: product_plan
+entity_name: VPSTK1
+attribute: vcpu
+value: 1
+unit: Core
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_VPS_SIEU_TIET_KIEM_VPS_SIEU_RE_TAI_BKNS_2026_04_04
+observed_at: '2026-04-04T20:55:45.006080+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ bảng giá, dòng VPSTK1: | vCPU | 01 Core |'
+approved_at: '2026-04-04T21:19:28.509199+07:00'
+approved_by: admin-batch

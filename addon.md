@@ -1466,7 +1466,68 @@ RULES:
 
 ---
 
-## 28. Phụ lục C — Mẫu câu chốt để đặt cuối tài liệu
+## 28. Web Data Portal — Intake Interface qua Web (Bổ sung 2026-04-05)
+
+> **Trạng thái**: 📋 Design — chờ phê duyệt
+
+### 28.1. Bối cảnh
+
+Hệ thống hiện tại intake dữ liệu qua 3 kênh:
+1. `crawl-source` → `raw/website-crawl/` (bị Cloudflare block)
+2. CLI copy → `raw/manual/` (cần SSH access)
+3. Telegram → `ingest-image` (chỉ ảnh)
+
+**Thiếu**: Kênh upload web cho file đa định dạng (PDF, DOCX, XLSX, MD, TXT).
+
+### 28.2. Vị trí trong kiến trúc
+
+```text
+Nguồn dữ liệu (mới)
+  └─ Web Portal upload (PDF/DOCX/XLSX/MD/TXT)
+
+        ↓ intake (POST /api/upload)
+
+raw/web/{date}/
+  ├─ {uuid}-{filename}
+  └─ metadata.jsonl    ← upload audit log
+
+        ↓ extraction / normalization (trigger thủ công hoặc auto)
+
+claims/ → wiki/ → build/ → query
+```
+
+### 28.3. Luật intake qua web
+
+1. File upload qua web chỉ được ghi vào `raw/web/`, **KHÔNG** vào `claims/` hay `wiki/` trực tiếp.
+2. Mỗi upload PHẢI có metadata record: `source_channel: "web"`, `uploader`, `timestamp`, `file_hash`.
+3. Pipeline trigger sau upload là **optional** — admin quyết định khi nào chạy.
+4. File types cho phép: `.pdf`, `.docx`, `.xlsx`, `.md`, `.txt` (whitelist, không blacklist).
+5. Max file size: 50MB per file.
+6. Auth: Bearer token (env ADMIN_TOKEN). Không cho phép anonymous upload.
+7. Upload metadata tuân thủ Source schema (section 4.2) với `kind: web_upload`.
+
+### 28.4. Source registration tự động
+
+Mỗi file upload tạo một Source record:
+
+```yaml
+source_id: web.upload.{date}.{uuid}
+kind: web_upload
+canonical_title: "{original_filename}"
+owner: admin
+url: null
+authority_level: 6  # internal_note equivalent
+freshness_sla_days: 30
+default_review_gate: medium
+capture_method: web_upload
+captured_at: "{ISO timestamp}"
+hash_sha256: "{file hash}"
+status: active
+```
+
+---
+
+## 29. Phụ lục C — Mẫu câu chốt để đặt cuối tài liệu
 
 ```markdown
 Tài liệu này tồn tại để ngăn dự án đi lệch thành một chatbot biết nhiều.

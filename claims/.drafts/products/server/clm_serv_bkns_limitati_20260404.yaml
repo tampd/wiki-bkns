@@ -1,0 +1,17 @@
+claim_id: CLM-SERV-BKNS-LIMITATI-20260404
+entity_id: product.server_management.bkns.basic
+entity_type: product_plan
+entity_name: Quản trị Máy chủ - Gói Cơ bản
+attribute: limitation
+value: Không bao gồm các tác vụ cấu hình chuyên sâu và bảo mật.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_QUAN_TRI_MAY_CHU_TRON_GOI_TAI_BKNS_2026_04_04
+observed_at: '2026-04-04T20:51:23.102292+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tóm tắt nhanh: ''Gói Cơ bản không bao gồm các tác vụ
+  cấu hình chuyên sâu và bảo mật.'''

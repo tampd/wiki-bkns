@@ -1,0 +1,26 @@
+]633;E;} > /home/openclaw/wiki/logs/test-results.txt 2>&1;78b618b1-1233-42b2-acad-adecb9c28383]633;C=== T1: Wrong pwd ===
+{"error":"Quá nhiều lần đăng nhập thất bại. Thử lại sau 15 phút."}
+=== T2: No auth ===
+{"error":"Token bắt buộc"}
+=== T3: Status OK ===
+{"pipeline":"success","last_run":"2026-04-05T08:34:30.345Z","last_result":"success (no scripts)","build_version":"snapshots","wiki_stats":{"total_files":147,"web_files":0,"manual_files":147,"wiki_pages":20,"total_claims":1619,"build_version":"snapshots"}}
+=== T4: Trigger ===
+{"job_id":"05a9d018-8ec1-4806-a06f-878239da3f06","status":"started","action":"extract"}
+=== T5: Files ===
+{"files":[{"id":"","filename":"Bảng giá Hosting- VPS- Email.xlsx","stored_name":"Bảng giá Hosting- VPS- Email.xlsx","path":"raw/manual/Bảng giá Hosting- VPS- Email.xlsx","size":23125,"mtime":"2026-04-04T15:49:51.000Z","source":"manual","uploaded_at":"2026-04-04T15:49:51.000Z"},{"id":"","filename":"vps-n8n-ai-dich-vu-tu-ong-hoa-quy-trinh-tai-bkns-2026-04-04.md","stored_name":"vps-n8n-ai-dich-vu-tu-ong-hoa-quy-trinh-tai-bkns-2026-04-04.md","path":"raw/manual/vps-n8n-ai-dich-vu-tu-ong-hoa-quy-trinh-tai-bkns-2026-04-04.md","size":5131,"mtime":"2026-04-04T14:19:11.155Z","source":"manual","uploaded_at":"2026-04-04T14:19:11.155Z"},{"id":"","filename":"tranning-kinh-doanh-hosting-email-2026-04-04.md","stored_name":"tranning-kinh-doanh-hosting-email-2026-04-04.md","path":"raw/manual/tranning-kinh-doanh-hosting-email-2026-04-04.md","size":16311,"mtime":"2026-04-04T14:17:54.270Z","source":"manual","uploaded_at":"2026-04-04T14:17:54.270Z"}],"total":147,"page":1,"limit":3}
+=== T6: Security ===
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+x-content-type-options: nosniff
+x-frame-options: SAMEORIGIN
+x-frame-options: DENY
+x-content-type-options: nosniff
+referrer-policy: strict-origin-when-cross-origin
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+permissions-policy: camera=(), microphone=(), geolocation=()
+
+=== T7: TLS ===
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384 / X25519 / id-ecPublicKey
+
+=== T8: Cleanup ===
+{"error":"File not found"}
+{"error":"File not found"}

@@ -1,0 +1,17 @@
+claim_id: CLM-SSL-GEOTRUST_QUICKSSL_PREMIUM_SAN-ISSUANCE-20260404
+entity_id: product.ssl.geotrust_quickssl_premium_san
+entity_type: product_plan
+entity_name: GeoTrust QuickSSL Premium SAN
+attribute: issuance_time
+value: 5
+unit: minutes
+qualifiers: {}
+source_ids:
+- SRC-GEOTRUST_QUICKSSL_PREMIUM_SAN_2026_04_04
+observed_at: '2026-04-04T21:00:08.731453+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích xuất từ bảng Thông số kỹ thuật: | Thời gian phát hành | 5
+  phút |'

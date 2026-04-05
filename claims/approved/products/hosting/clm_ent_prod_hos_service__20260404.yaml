@@ -1,0 +1,19 @@
+claim_id: CLM-ENT-PROD-HOS-SERVICE_-20260404
+entity_id: ENT-PROD-HOSTING-DEDICATED
+entity_type: product_line
+entity_name: Server vật lý (Dedicated)
+attribute: service_description
+value: Thuê máy chủ riêng toàn quyền quản lý
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-TRANNING_KINH_DOANH_HOSTING_EMAIL_2026_04_04
+observed_at: '2026-04-04T21:17:54.101760+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: Trích từ bảng Giới thiệu dịch vụ BKNS cung cấp, hàng 'Server vật lý
+  (Dedicated)', cột 'Mô tả ngắn'
+approved_at: '2026-04-04T21:19:26.831866+07:00'
+approved_by: admin-batch

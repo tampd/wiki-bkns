@@ -1,0 +1,19 @@
+claim_id: CLM-SERV-DEDICATED-SERVER_M-20260404
+entity_id: product.server.dedicated.mccb01
+entity_type: product_plan
+entity_name: MCCB01
+attribute: server_model
+value: Dell R620 / HPDL360 G8
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-DANH_SACH_GOI_SAN_PHAM_MAY_CHU_BKNS_2026_04_04
+observed_at: '2026-04-04T20:42:43.392363+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ bảng thông số gói MCCB01: ''| Server | Dell R620 / HPDL360
+  G8 |'''
+approved_at: '2026-04-04T21:19:25.813521+07:00'
+approved_by: admin-batch

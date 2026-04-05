@@ -1,0 +1,20 @@
+claim_id: CLM-ENT-PROD-HOS-PERFORMA-20260404
+entity_id: ENT-PROD-HOSTING
+entity_type: product_category
+entity_name: Shared Hosting
+attribute: performance_feature
+value: Redis
+unit: ''
+qualifiers:
+  product_line: Hosting Windows
+source_ids:
+- SRC-DICH_VU_HOSTING_WINDOWS_TAI_BKNS_2026_04_04
+observed_at: '2026-04-04T20:50:27.482696+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ mục ''Tính năng / Thành phần'': ''...hỗ trợ Redis để tăng
+  tốc độ website.'''
+approved_at: '2026-04-04T21:19:26.812318+07:00'
+approved_by: admin-batch

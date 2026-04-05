@@ -1,0 +1,18 @@
+claim_id: CLM-ENT-PROD-DOM-PRODUCT_-20260404
+entity_id: ENT-PROD-DOMAIN
+entity_type: product_category
+entity_name: Dịch vụ Tên miền
+attribute: product_name
+value: Bảo vệ Tên miền Cấp cao nhất
+unit: ''
+qualifiers: {}
+source_ids:
+- SRC-BKNS_CAMNANG_EMAIL_TENMIEN_DOT1_2026_04_04
+observed_at: '2026-04-04T20:32:16.871781+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ mục lục và tiêu đề: ''2.3. Bảo vệ Tên miền Cấp cao nhất'''
+approved_at: '2026-04-04T21:19:26.587909+07:00'
+approved_by: admin-batch

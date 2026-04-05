@@ -1,0 +1,19 @@
+claim_id: CLM-ENT--POSITIVESSL_EV-SERVER_L-20260404
+entity_id: ENT-PROD-SSL.POSITIVESSL_EV
+entity_type: product_plan
+entity_name: PositiveSSL EV
+attribute: server_license
+value: unlimited
+unit: ''
+qualifiers: {}
+source_ids:
+- SRC-POSITIVESSL_EV_CHUNG_CHI_SSL_XAC_THUC_MO_RONG_EV_2026_04_04
+observed_at: '2026-04-04T21:10:33.327786+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: null
+compiler_note: 'Trích từ Tính năng / Thành phần: • Giấy phép máy chủ: Không giới hạn
+  số lượng máy chủ có thể cài đặt.'
+approved_at: '2026-04-04T21:19:27.658975+07:00'
+approved_by: admin-batch

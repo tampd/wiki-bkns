@@ -1,0 +1,19 @@
+claim_id: CLM-ENT-PROD-COL-MONTHLY_-20260404
+entity_id: ENT-PROD-COLOCATION
+entity_type: product
+entity_name: Colocation
+attribute: monthly_price_component
+value:
+  min: 1000000
+  max: 2000000
+unit: VND
+qualifiers:
+  component: Power
+source_ids:
+- SRC-BKNS_CAMNANG_HOSTING_DOT4_2026_04_04
+observed_at: '2026-04-04T20:34:06.200782+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ CO5: 3) Power: 1-2M/tháng.'

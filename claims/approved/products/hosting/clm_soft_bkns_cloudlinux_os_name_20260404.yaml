@@ -1,0 +1,18 @@
+claim_id: CLM-SOFT-BKNS_CLOUDLINUX_OS-NAME-20260404
+entity_id: product.software.bkns_cloudlinux_os
+entity_type: product
+entity_name: Bản Quyền CloudLinux OS
+attribute: name
+value: Bản Quyền CloudLinux OS
+unit: ''
+qualifiers: {}
+source_ids:
+- SRC-BAN_QUYEN_CLOUDLINUX_OS_TANG_ON_INH_VA_BAO_MAT_CHO_SHARED_2026_04_04
+observed_at: '2026-04-04T20:16:52.767551+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ tiêu đề: ''═══ Bản Quyền CloudLinux OS'''
+approved_at: '2026-04-04T21:19:27.401910+07:00'
+approved_by: admin-batch

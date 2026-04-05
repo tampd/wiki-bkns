@@ -1,0 +1,16 @@
+claim_id: CLM-ENT-PROD-VPN-SOURCE_U-20260404
+entity_id: ENT-PROD-VPN-001
+entity_type: product
+entity_name: Dịch vụ VPN
+attribute: source_url
+value: https://www.bkns.vn/server/dich-vu-vpn.html
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_VPN_CLOUD_VPN_CUA_BKNS_2026_04_04
+observed_at: '2026-04-04T20:53:50.514510+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ mục ''Thông tin nguồn'': ''URL: https://www.bkns.vn/server/dich-vu-vpn.html'''

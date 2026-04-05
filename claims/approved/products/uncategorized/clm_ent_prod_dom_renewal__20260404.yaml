@@ -1,0 +1,17 @@
+attribute: renewal_price
+claim_id: CLM-ENT-PROD-DOM-RENEWAL_-20260404
+compiler_note: 'Trích từ dòng: .info.vn | .pro.vn | .id.vn | Phí gia hạn (VNĐ) 60.000'
+confidence: high
+entity_id: ENT-PROD-DOMAIN
+entity_name: Tên miền
+entity_type: product_category
+observed_at: '2026-04-04T20:27:56.947902+07:00'
+qualifiers:
+  domain_extension: .info.vn
+review_state: approved
+risk_class: high
+source_ids:
+- SRC-BANG_GIA_TEN_MIEN_VN_2026_04_04
+unit: VND
+valid_from: '2026-04-04'
+value: 60000

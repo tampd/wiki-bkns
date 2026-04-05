@@ -1,0 +1,17 @@
+claim_id: CLM-SSL-BKNS-DOMAIN_P-20260404
+entity_id: product.ssl.bkns.instantssl_ov
+entity_type: product
+entity_name: InstantSSL (OV)
+attribute: domain_protection_type
+value: single_domain
+unit: null
+qualifiers: null
+source_ids:
+- SRC-CHUNG_CHI_SSL_INSTANTSSL_OV_2026_04_04
+observed_at: '2026-04-04T20:37:35.305612+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ Tóm tắt nhanh: • Điều kiện/giới hạn nổi bật (nếu có): Chỉ
+  bảo vệ cho một tên miền chính...'

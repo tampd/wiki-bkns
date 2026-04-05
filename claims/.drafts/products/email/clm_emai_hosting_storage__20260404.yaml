@@ -1,0 +1,16 @@
+claim_id: CLM-EMAI-HOSTING-STORAGE_-20260404
+entity_id: product.email.hosting.goi1
+entity_type: product_plan
+entity_name: Email Hosting Gói 1
+attribute: storage_per_email
+value: 5
+unit: GB
+qualifiers: {}
+source_ids:
+- SRC-BKNS_CAMNANG_EMAIL_TENMIEN_DOT1_2026_04_04
+observed_at: '2026-04-04T20:32:16.886218+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng giá Email Hosting: ''Gói 1 | 5GB'''

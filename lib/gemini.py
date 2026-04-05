@@ -176,6 +176,8 @@ def generate_with_cache(
     system_instruction: str = None,
     temperature: float = 0.2,
     max_output_tokens: int = 4096,
+    retry_count: int = 2,
+    retry_interval: float = 5.0,
 ) -> dict:
     """Generate text using implicit caching pattern.
 
@@ -190,6 +192,8 @@ def generate_with_cache(
         system_instruction: System prompt
         temperature: Sampling temperature
         max_output_tokens: Max output tokens
+        retry_count: Number of retries on failure
+        retry_interval: Seconds between retries
 
     Returns:
         dict with same keys as generate() plus cache_hit_rate
@@ -211,8 +215,6 @@ def generate_with_cache(
         ]),
     ]
 
-    start_time = time.time()
-
     config = types.GenerateContentConfig(
         temperature=temperature,
         max_output_tokens=max_output_tokens,
@@ -220,35 +222,72 @@ def generate_with_cache(
     if system_instruction:
         config.system_instruction = system_instruction
 
-    response = client.models.generate_content(
-        model=model,
-        contents=contents,
-        config=config,
+    last_error = None
+
+    for attempt in range(retry_count + 1):
+        try:
+            start_time = time.time()
+
+            response = client.models.generate_content(
+                model=model,
+                contents=contents,
+                config=config,
+            )
+
+            elapsed_ms = int((time.time() - start_time) * 1000)
+
+            usage = response.usage_metadata
+            input_tokens = getattr(usage, "prompt_token_count", 0) or 0
+            cached_tokens = getattr(usage, "cached_content_token_count", 0) or 0
+            output_tokens = getattr(usage, "candidates_token_count", 0) or 0
+
+            cost = calculate_cost(model, input_tokens, cached_tokens, output_tokens)
+
+            cache_hit_rate = 0.0
+            if input_tokens > 0:
+                cache_hit_rate = round(cached_tokens / input_tokens * 100, 1)
+
+            log_entry(
+                skill=skill,
+                action="llm_call_cached",
+                detail=f"model={model} in={input_tokens} cached={cached_tokens} out={output_tokens} cache_hit={cache_hit_rate}%",
+                cost_usd=cost,
+                extra={
+                    "model": model,
+                    "input_tokens": input_tokens,
+                    "cached_tokens": cached_tokens,
+                    "output_tokens": output_tokens,
+                    "elapsed_ms": elapsed_ms,
+                    "cache_hit_rate": cache_hit_rate,
+                    "attempt": attempt + 1,
+                }
+            )
+
+            return {
+                "text": response.text,
+                "input_tokens": input_tokens,
+                "cached_tokens": cached_tokens,
+                "output_tokens": output_tokens,
+                "cost_usd": cost,
+                "model": model,
+                "elapsed_ms": elapsed_ms,
+                "cache_hit_rate": cache_hit_rate,
+            }
+
+        except Exception as e:
+            last_error = e
+            log_entry(
+                skill=skill,
+                action="error",
+                detail=f"generate_with_cache error (attempt {attempt + 1}): {str(e)}",
+                severity="high" if attempt < retry_count else "critical",
+            )
+            if attempt < retry_count:
+                time.sleep(retry_interval)
+
+    raise RuntimeError(
+        f"generate_with_cache failed after {retry_count + 1} attempts: {last_error}"
     )
-
-    elapsed_ms = int((time.time() - start_time) * 1000)
-
-    usage = response.usage_metadata
-    input_tokens = getattr(usage, "prompt_token_count", 0) or 0
-    cached_tokens = getattr(usage, "cached_content_token_count", 0) or 0
-    output_tokens = getattr(usage, "candidates_token_count", 0) or 0
-
-    cost = calculate_cost(model, input_tokens, cached_tokens, output_tokens)
-
-    cache_hit_rate = 0.0
-    if input_tokens > 0:
-        cache_hit_rate = round(cached_tokens / input_tokens * 100, 1)
-
-    return {
-        "text": response.text,
-        "input_tokens": input_tokens,
-        "cached_tokens": cached_tokens,
-        "output_tokens": output_tokens,
-        "cost_usd": cost,
-        "model": model,
-        "elapsed_ms": elapsed_ms,
-        "cache_hit_rate": cache_hit_rate,
-    }
 
 
 # ── Generate with Image (Vision) ──────────────────────────

@@ -1,0 +1,16 @@
+attribute: setup_fee
+claim_id: CLM-ENT-PROD-DOM-SETUP_FE-20260404
+compiler_note: 'Trích từ bảng giá: Loại tên miền .id, Phí cài đặt Miễn phí'
+confidence: high
+entity_id: ENT-PROD-DOMAIN
+entity_name: .id
+entity_type: product
+observed_at: '2026-04-04T20:26:47.401004+07:00'
+qualifiers: {}
+review_state: approved
+risk_class: high
+source_ids:
+- SRC-BANG_GIA_TEN_MIEN_QUOC_TE_2026_04_04
+unit: VND
+valid_from: '2026-04-04'
+value: 0

@@ -1,0 +1,20 @@
+claim_id: CLM-ENT-PROD-VPS-DESC-20260404
+entity_id: ENT-PROD-VPS
+entity_type: product
+entity_name: Storage VPS
+attribute: description
+value: Máy chủ ảo (VPS) được tối ưu hóa cho nhu cầu lưu trữ dung lượng lớn, sử dụng
+  ổ cứng HDD.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-STORAGE_VPS_MAY_CHU_AO_LUU_TRU_DUNG_LUONG_CAO_2026_04_04
+observed_at: '2026-04-04T21:15:48.850840+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: Dịch vụ này là gì: Máy chủ ảo (VPS) được tối
+  ưu hóa cho nhu cầu lưu trữ dung lượng lớn, sử dụng ổ cứng HDD.'
+approved_at: '2026-04-04T21:19:28.287378+07:00'
+approved_by: admin-batch

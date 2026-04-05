@@ -1,0 +1,18 @@
+claim_id: CLM-ENT-PROD-SSL-COMPETIT-20260404
+entity_id: ENT-PROD-SSL-001
+entity_type: product
+entity_name: GeoTrust True BusinessID with EV Multi-Domain
+attribute: competitor_price
+value: 15071680
+unit: VND
+qualifiers:
+  billing_cycle: year
+  competitor: nhà cung cấp
+source_ids:
+- SRC-GEOTRUST_TRUE_BUSINESSID_WITH_EV_MULTI_DOMAIN_2026_04_04
+observed_at: '2026-04-04T21:02:40.983414+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ bảng giá: So với giá nhà cung cấp 15.071.680đ/năm'

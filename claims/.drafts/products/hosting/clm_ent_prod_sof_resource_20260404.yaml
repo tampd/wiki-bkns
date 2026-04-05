@@ -1,0 +1,18 @@
+claim_id: CLM-ENT-PROD-SOF-RESOURCE-20260404
+entity_id: ENT-PROD-SOFTWARE-LITESPEED
+entity_type: product
+entity_name: LiteSpeed Web Server
+attribute: resource_usage_comparison
+value: sử dụng ít tài nguyên (CPU/RAM) hơn so với Apache
+unit: null
+qualifiers:
+  compared_to: Apache
+source_ids:
+- SRC-LITESPEED_WEB_SERVER_TINH_NANG_PHIEN_BAN_VA_SO_SANH_2026_04_04
+observed_at: '2026-04-04T21:06:48.432673+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ phần ''Mô tả dịch vụ'': ...giúp xử lý hàng ngàn kết nối đồng
+  thời với việc sử dụng ít tài nguyên (CPU/RAM) hơn so với Apache.'

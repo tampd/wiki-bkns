@@ -1,0 +1,19 @@
+claim_id: CLM-SERV-BKNS-TARGET_A-20260404
+entity_id: product.server_management.bkns
+entity_type: product
+entity_name: Dịch vụ Quản trị Máy chủ Trọn gói
+attribute: target_audience
+value: Các cá nhân và doanh nghiệp sử dụng máy chủ nhưng không có đội ngũ kỹ thuật
+  chuyên trách hoặc muốn tiết kiệm chi phí nhân sự IT.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_QUAN_TRI_MAY_CHU_TRON_GOI_TAI_BKNS_2026_04_04
+observed_at: '2026-04-04T20:51:23.090766+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tóm tắt nhanh: ''Phù hợp với: Các cá nhân và doanh nghiệp
+  sử dụng máy chủ nhưng không có đội ngũ kỹ thuật chuyên trách hoặc muốn tiết kiệm
+  chi phí nhân sự IT.'''

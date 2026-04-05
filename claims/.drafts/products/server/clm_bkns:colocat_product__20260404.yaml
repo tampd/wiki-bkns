@@ -1,0 +1,16 @@
+claim_id: CLM-BKNS:COLOCAT-PRODUCT_-20260404
+entity_id: bkns:colocation
+entity_type: product_service
+entity_name: Thuê Chỗ Đặt Máy Chủ (Colocation)
+attribute: product_category
+value: server
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-DICH_VU_THUE_CHO_AT_MAY_CHU_COLOCATION_TAI_BKNS_2026_04_04
+observed_at: '2026-04-04T20:52:19.116941+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ phần ''Thông tin nguồn'': • Danh mục: server'

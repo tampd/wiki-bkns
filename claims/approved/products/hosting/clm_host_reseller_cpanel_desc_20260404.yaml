@@ -1,0 +1,23 @@
+claim_id: CLM-HOST-RESELLER_CPANEL-DESC-20260404
+entity_id: product.hosting.reseller_cpanel
+entity_type: product
+entity_name: Reseller Hosting cPanel
+attribute: description
+value: Reseller Hosting cPanel là dịch vụ cho phép người dùng mua một gói tài nguyên
+  hosting lớn, sau đó chia nhỏ thành các gói hosting con để cung cấp cho khách hàng
+  của mình. Việc quản lý được thực hiện thông qua control panel cPanel.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-RESELLER_HOSTING_CPANEL_QUAN_LY_NHIEU_HOSTING_CHI_VOI_MOT_T_2026_04_04
+observed_at: '2026-04-04T21:14:39.963027+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ mục Tóm tắt nhanh: Dịch vụ này là gì: Reseller Hosting cPanel
+  là dịch vụ cho phép người dùng mua một gói tài nguyên hosting lớn, sau đó chia nhỏ
+  thành các gói hosting con để cung cấp cho khách hàng của mình. Việc quản lý được
+  thực hiện thông qua control panel cPanel.'
+approved_at: '2026-04-04T21:19:27.193149+07:00'
+approved_by: admin-batch

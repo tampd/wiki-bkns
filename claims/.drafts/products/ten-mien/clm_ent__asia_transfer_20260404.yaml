@@ -1,0 +1,16 @@
+claim_id: CLM-ENT--ASIA-TRANSFER-20260404
+entity_id: ENT-PROD-DOMAIN.asia
+entity_type: product_plan
+entity_name: .asia
+attribute: transfer_in_fee
+value: 545000
+unit: VND
+qualifiers: {}
+source_ids:
+- SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_04
+observed_at: '2026-04-04T20:20:40.748425+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ bảng giá Tên miền Quốc tế: | .asia | ... | 545.000 |'

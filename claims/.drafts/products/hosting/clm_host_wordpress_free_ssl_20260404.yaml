@@ -1,0 +1,17 @@
+claim_id: CLM-HOST-WORDPRESS-FREE_SSL-20260404
+entity_id: product.hosting.wordpress
+entity_type: product
+entity_name: Hosting WordPress
+attribute: free_ssl
+value: true
+unit: null
+qualifiers: null
+source_ids:
+- SRC-HOSTING_WORDPRESS_TOC_O_CAO_BANG_GIA_GIAI_PHAP_TOI_UU_S_2026_04_04
+observed_at: '2026-04-04T21:04:54.558015+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: Điểm chính: ...cung cấp chứng chỉ SSL miễn
+  phí.'

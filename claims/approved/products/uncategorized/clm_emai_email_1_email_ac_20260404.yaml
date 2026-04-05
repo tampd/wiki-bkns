@@ -1,0 +1,18 @@
+attribute: email_account_limit
+claim_id: CLM-EMAI-EMAIL_1-EMAIL_AC-20260404
+compiler_note: 'Gói EMAIL 1:
+
+  - Số lượng email: 5 email'
+confidence: high
+entity_id: product.email_hosting.email_1
+entity_name: Email Hosting - Gói EMAIL 1
+entity_type: product_plan
+observed_at: '2026-04-04T20:22:33.808844+07:00'
+qualifiers: null
+review_state: approved
+risk_class: normal
+source_ids:
+- SRC-BANG_GIA_DICH_VU_BKNS_TEXT_2026_04_04
+unit: email
+valid_from: '2026-04-04'
+value: 5

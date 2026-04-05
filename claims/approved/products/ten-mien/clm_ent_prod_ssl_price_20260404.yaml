@@ -1,0 +1,20 @@
+claim_id: CLM-ENT-PROD-SSL-PRICE-20260404
+entity_id: ENT-PROD-SSL-RAPIDSSL
+entity_type: product
+entity_name: RapidSSL Certificate
+attribute: price
+value: 215000
+unit: VND
+qualifiers:
+  billing_cycle: year
+source_ids:
+- SRC-RAPIDSSL_CERTIFICATE_CHUNG_CHI_SSL_XAC_THUC_TEN_MIEN_DV_2026_04_04
+observed_at: '2026-04-04T21:12:48.699273+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: high
+compiler_note: 'Trích từ Gói dịch vụ và bảng giá: ''| Giá tại BKNS | 215.000đ | năm
+  |'''
+approved_at: '2026-04-04T21:19:26.286545+07:00'
+approved_by: admin-batch

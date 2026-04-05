@@ -1,0 +1,20 @@
+claim_id: CLM-EMAI-SERVER-COMPARIS-20260404
+entity_id: product.email.server
+entity_type: product
+entity_name: Email Server
+attribute: comparison
+value: Sử dụng một IP riêng biệt, không dùng chung.
+unit: ''
+qualifiers:
+  compared_to: Email Hosting
+source_ids:
+- SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_TIN_CAY_2026_04_04
+observed_at: '2026-04-04T20:56:34.756842+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ bảng So sánh Email Hosting và Email Server: | EMAIL SERVER
+  | Sử dụng một IP riêng biệt, không dùng chung. |'
+approved_at: '2026-04-04T21:19:26.557218+07:00'
+approved_by: admin-batch

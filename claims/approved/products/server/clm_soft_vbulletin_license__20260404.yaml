@@ -1,0 +1,19 @@
+claim_id: CLM-SOFT-VBULLETIN-LICENSE_-20260404
+entity_id: product.software.vbulletin.connect_mobile
+entity_type: product_plan
+entity_name: vBulletin 5 Connect + Mobile Suite Bundle
+attribute: license_term
+value: Lifetime
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-BAN_QUYEN_VBULLETIN_HE_QUAN_TRI_FORUM_MANG_XA_HOI_2026_04_04
+observed_at: '2026-04-04T20:19:43.225201+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ bảng giá: | vBulletin 5 Connect + Mobile Suite Bundle | Giá
+  liên hệ | ... Phiên bản Lifetime. |'
+approved_at: '2026-04-04T21:19:25.840516+07:00'
+approved_by: admin-batch

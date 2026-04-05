@@ -21,35 +21,29 @@ from lib.telegram import send_report
 from lib.utils import read_text_safe, parse_frontmatter
 
 
-CROSSLINK_PROMPT = """Bạn là SEO specialist cho Wiki BKNS.
+CROSSLINK_PROMPT = """Bạn là SEO specialist cho Wiki BKNS. Phân tích danh sách trang wiki và trả về JSON GỢI Ý internal links.
 
-Dưới đây là danh sách các trang wiki và nội dung tóm tắt:
+CÁC TRANG WIKI:
 {pages_summary}
 
-NHIỆM VỤ: Đề xuất internal links giữa các trang.
-
-QUY TẮC:
-1. Mỗi trang nên link đến 2-5 trang liên quan
-2. Link phải tự nhiên, có ý nghĩa
-3. Ưu tiên: sản phẩm liên quan, FAQ, hỗ trợ
-4. Tránh link loop vô ích
-
-OUTPUT (JSON):
+OUTPUT — CHỈ JSON, không giải thích:
 {{
   "suggestions": [
     {{
       "from_page": "products/hosting/tong-quan.md",
       "to_page": "products/ssl/tong-quan.md",
-      "anchor_text": "SSL Certificate cho hosting",
-      "context": "Thêm vào section bảo mật",
-      "relevance": "high" | "medium" | "low"
+      "anchor_text": "SSL Certificate miễn phí",
+      "context": "Thêm cuối section bảo mật",
+      "relevance": "high"
     }}
   ],
-  "orphan_pages": ["page.md"],
-  "hub_pages": ["index.md"],
-  "link_density": 0.5,
-  "summary": "Nhận xét"
-}}"""
+  "orphan_pages": [],
+  "hub_pages": [],
+  "link_density": 0.3,
+  "summary": "Tóm tắt đề xuất"
+}}
+
+QUY TẮC: Mỗi trang link đến 2-4 trang liên quan, tự nhiên, có ý nghĩa. relevance: high/medium/low."""
 
 
 def analyze_wiki_graph() -> dict:
@@ -77,13 +71,11 @@ def analyze_wiki_graph() -> dict:
     if len(pages) < 2:
         return {"status": "skip", "detail": "Cần ít nhất 2 wiki pages"}
 
-    # Build summary for prompt
+    # Build summary for prompt — keep concise to avoid token overflow
     pages_summary = []
     for path, info in pages.items():
         pages_summary.append(
-            f"- {path}: {info['title']} (category: {info['category']})\n"
-            f"  Links: {info['links_to']}\n"
-            f"  Preview: {info['body_preview'][:100]}"
+            f"- {path}: {info['title']} (category: {info['category']})"
         )
 
     prompt = CROSSLINK_PROMPT.format(
@@ -96,20 +88,37 @@ def analyze_wiki_graph() -> dict:
             model=MODEL_FLASH,
             skill="cross-link",
             temperature=0.2,
-            max_output_tokens=4096,
+            max_output_tokens=8192,
         )
     except Exception as e:
         return {"status": "error", "detail": str(e)}
 
     text = result["text"].strip()
-    text = re.sub(r"^```json\s*", "", text)
-    text = re.sub(r"\s*```$", "", text)
+    # Strip markdown fences
+    cleaned = re.sub(r"```json\s*", "", text)
+    cleaned = re.sub(r"```\s*", "", cleaned).strip()
 
+    analysis = {}
     try:
-        match = re.search(r"\{.*\}", text, re.DOTALL)
-        analysis = json.loads(match.group(0)) if match else {}
-    except (json.JSONDecodeError, AttributeError):
-        analysis = {"suggestions": [], "summary": "Parse error"}
+        analysis = json.loads(cleaned)
+    except json.JSONDecodeError:
+        # Fallback: find outermost {...}
+        first = cleaned.find("{")
+        if first != -1:
+            depth = 0
+            for i in range(first, len(cleaned)):
+                if cleaned[i] == "{":
+                    depth += 1
+                elif cleaned[i] == "}":
+                    depth -= 1
+                    if depth == 0:
+                        try:
+                            analysis = json.loads(cleaned[first:i + 1])
+                        except json.JSONDecodeError:
+                            analysis = {"suggestions": [], "summary": "Parse error"}
+                        break
+        if not analysis:
+            analysis = {"suggestions": [], "summary": "Parse error"}
 
     analysis["cost_usd"] = result.get("cost_usd", 0)
     analysis["pages_analyzed"] = len(pages)

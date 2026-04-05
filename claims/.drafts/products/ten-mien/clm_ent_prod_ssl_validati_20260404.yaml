@@ -1,0 +1,17 @@
+claim_id: CLM-ENT-PROD-SSL-VALIDATI-20260404
+entity_id: ENT-PROD-SSL-RAPIDSSL
+entity_type: product
+entity_name: RapidSSL Certificate
+attribute: validation_type
+value: Domain Validation - DV
+unit: null
+qualifiers: null
+source_ids:
+- SRC-RAPIDSSL_CERTIFICATE_CHUNG_CHI_SSL_XAC_THUC_TEN_MIEN_DV_2026_04_04
+observed_at: '2026-04-04T21:12:48.611699+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: medium
+compiler_note: 'Trích từ Tóm tắt nhanh: ''...thực hiện xác thực qua tên miền (Domain
+  Validation - DV).'''

@@ -97,17 +97,13 @@ def collect_claims(category: str) -> tuple[list[dict], str]:
     """
     claims = []
 
-    # Check both approved and drafts
-    for base_dir in [CLAIMS_APPROVED_DIR, CLAIMS_DRAFTS_DIR]:
-        search_dir = base_dir / "products" / category
-        if not search_dir.exists():
-            continue
+    # Only read from approved dir — never mix unreviewed drafts into compilation
+    search_dir = CLAIMS_APPROVED_DIR / "products" / category
+    if search_dir.exists():
         for f in sorted(search_dir.glob("*.yaml")):
             claim = read_yaml(f)
             if isinstance(claim, dict):
-                # Only use approved claims for compile
-                if base_dir == CLAIMS_APPROVED_DIR or claim.get("review_state") == "approved":
-                    claims.append(claim)
+                claims.append(claim)
 
     if not claims:
         return [], ""
@@ -155,6 +151,8 @@ def compile_category(category: str, force: bool = False) -> dict:
         "ten-mien": "Tên Miền BKNS — Domain Registration",
         "email": "Email Hosting BKNS",
         "ssl": "SSL Certificate BKNS",
+        "server": "Máy Chủ BKNS — Dedicated & Co-location",
+        "software": "Phần Mềm & Bản Quyền BKNS",
     }
     title = title_map.get(category, f"BKNS — {category.title()}")
 
@@ -363,7 +361,7 @@ def main():
         result = approve_draft(args.approve)
         print(f"Approve result: {result}")
     elif args.all:
-        for cat in ["hosting", "vps", "ten-mien", "email", "ssl"]:
+        for cat in ["hosting", "vps", "ten-mien", "email", "ssl", "server", "software"]:
             print(f"\n{'='*40}")
             print(f"Compiling: {cat}")
             result = compile_category(cat)

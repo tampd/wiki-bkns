@@ -1,0 +1,17 @@
+attribute: pricing:availability
+claim_id: CLM-ENT-PROD-BAC-PRICING:-20260404
+compiler_note: 'Trích từ mục Gói dịch vụ và bảng giá: ⚠️ CHƯA TRÍCH XUẤT ĐỦ: Trang
+  không cung cấp bảng giá chi tiết cho các gói dịch vụ backup.'
+confidence: high
+entity_id: ENT-PROD-BACKUP-001
+entity_name: Dịch vụ Backup Dữ liệu
+entity_type: product
+observed_at: '2026-04-04T20:44:55.482303+07:00'
+qualifiers: null
+review_state: approved
+risk_class: low
+source_ids:
+- SRC-DICH_VU_BACKUP_DU_LIEU_SAO_LUU_VA_PHUC_HOI_DU_LIEU_UY_TIN_2026_04_04
+unit: null
+valid_from: '2026-04-04'
+value: Không cung cấp bảng giá chi tiết

@@ -1,0 +1,18 @@
+claim_id: CLM-ENT-PROD-COL-HARDWARE-20260404
+entity_id: ENT-PROD-COLOCATION
+entity_type: product
+entity_name: Colocation
+attribute: hardware_price
+value: 80000000
+unit: VND
+qualifiers:
+  use_case: Database server
+  ram_gb: 128+
+source_ids:
+- SRC-BKNS_CAMNANG_HOSTING_DOT4_2026_04_04
+observed_at: '2026-04-04T20:34:06.184597+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ CO2: Database server: CPU mạnh, RAM lớn (128GB+) (̃ 80M).'

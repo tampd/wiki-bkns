@@ -1,0 +1,19 @@
+claim_id: CLM-ENT-PROD-EMA-AUTO_REP-20260404
+entity_id: ENT-PROD-EMAIL
+entity_type: product
+entity_name: Email Hosting
+attribute: auto_reply
+value: true
+unit: ''
+qualifiers: {}
+source_ids:
+- SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_04
+observed_at: '2026-04-04T20:02:16.386483+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ Tính năng / Thành phần: ''Tiện ích: Bao gồm tính năng tự
+  động trả lời (Auto-Reply).'''
+approved_at: '2026-04-04T21:19:26.740576+07:00'
+approved_by: admin-batch

@@ -1,0 +1,19 @@
+claim_id: CLM-ENT-PROD-VPS-BACKUP_F-20260404
+entity_id: ENT-PROD-VPS
+entity_type: product_family
+entity_name: Cloud VPS SSD
+attribute: backup_frequency
+value: weekly
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_THUE_CLOUD_VPS_SSD_GIA_RE_TAI_BKNS_2026_04_04
+observed_at: '2026-04-04T20:53:17.308728+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ Tính năng / Thành phần: ''Sao lưu: Dữ liệu được sao lưu hàng
+  tuần'''
+approved_at: '2026-04-04T21:19:28.269177+07:00'
+approved_by: admin-batch

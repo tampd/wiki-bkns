@@ -1,0 +1,19 @@
+claim_id: CLM-ENT-PROD-SOF-TAX_POLI-20260404
+entity_id: ENT-PROD-SOFTWARE-VBULLETIN
+entity_type: product
+entity_name: Bản quyền vBulletin
+attribute: tax_policy
+value: Bản quyền phần mềm không chịu thuế.
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-BAN_QUYEN_VBULLETIN_HE_QUAN_TRI_FORUM_MANG_XA_HOI_2026_04_04
+observed_at: '2026-04-04T20:19:43.201656+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ Chính sách / Điều khoản / Lưu ý: Bản quyền phần mềm không
+  chịu thuế.'
+approved_at: '2026-04-04T21:19:25.629366+07:00'
+approved_by: admin-batch

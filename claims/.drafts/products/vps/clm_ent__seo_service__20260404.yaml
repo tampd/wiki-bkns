@@ -1,0 +1,19 @@
+claim_id: CLM-ENT--SEO-SERVICE_-20260404
+entity_id: ENT-PROD-VPS.seo
+entity_type: product_service
+entity_name: VPS SEO
+attribute: service_description
+value: Một dịch vụ máy chủ ảo (Cloud VPS) được cấu hình chuyên dụng cho các website
+  cần tối ưu hóa cho công cụ tìm kiếm (SEO).
+unit: ''
+qualifiers: {}
+source_ids:
+- SRC-DICH_VU_CLOUD_VPS_SEO_MAY_CHU_AO_TOI_UU_CHO_SEO_2026_04_04
+observed_at: '2026-04-04T20:48:07.991460+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tóm tắt nhanh: • Dịch vụ này là gì: Một dịch vụ máy chủ
+  ảo (Cloud VPS) được cấu hình chuyên dụng cho các website cần tối ưu hóa cho công
+  cụ tìm kiếm (SEO).'

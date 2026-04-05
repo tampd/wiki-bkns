@@ -1,0 +1,19 @@
+claim_id: CLM-HOST-WORDPRESS-PRICE-20260404
+entity_id: product.hosting.wordpress.wpcp01
+entity_type: product_plan
+entity_name: WPCP01
+attribute: price
+value: 570000
+unit: VND
+qualifiers:
+  billing_cycle: year
+source_ids:
+- SRC-HOSTING_WORDPRESS_TOC_O_CAO_BANG_GIA_GIAI_PHAP_TOI_UU_S_2026_04_04
+observed_at: '2026-04-04T21:04:54.580900+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: high
+compiler_note: 'Trích từ bảng giá: | WPCP01 | 570.000đ/Năm |'
+approved_at: '2026-04-04T21:19:27.361171+07:00'
+approved_by: admin-batch

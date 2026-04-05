@@ -857,6 +857,52 @@ VPS hàng đầu Việt Nam. Quy tắc bắt buộc:
 
 ---
 
+---
+
+## 13. Web Data Portal — Giao Diện Upload Dữ Liệu (Bổ sung 2026-04-05)
+
+> **Ý tưởng**: Xây giao diện web cho phép admin upload tài liệu (PDF, DOCX, XLSX, MD, TXT) vào pipeline wiki thay vì phải SSH copy file thủ công vào `raw/manual/`.
+> **Trạng thái**: 📋 Design Phase — Chờ phê duyệt plan
+
+### 13.1. Vấn đề cần giải quyết
+
+Hiện tại hệ thống chỉ hỗ trợ đưa dữ liệu vào qua 2 cách:
+1. **CLI**: SSH → copy file vào `raw/manual/` → chạy lệnh Python
+2. **Telegram Bot**: Gửi ảnh → `ingest-image` (chỉ ảnh, không PDF/DOCX)
+
+**Thiếu**: Giao diện web trực quan để upload tài liệu đa định dạng.
+
+### 13.2. Thiết kế đề xuất
+
+```
+User → Web Portal (drag & drop) → raw/web/{date}/{uuid}-{filename}
+                                      ↓ trigger (thủ công hoặc auto)
+                                  convert_manual.py → extract-claims → compile-wiki
+```
+
+**Stack**: Node.js + Express + Vanilla HTML/CSS/JS
+**Auth**: Bearer token đơn giản (MVP)
+**Port**: 3000 (kết hợp Nginx reverse proxy nếu cần)
+
+### 13.3. Tính năng MVP
+
+| Tính năng | Mô tả |
+|-----------|--------|
+| **Upload Zone** | Drag & drop + click browse, multi-file, max 50MB/file |
+| **File Browser** | Xem danh sách file trong raw/ (web + manual) |
+| **Pipeline Trigger** | Nút bấm trigger extract/compile cho file đã upload |
+| **Upload History** | JSONL audit log mọi upload action |
+| **Pipeline Status** | Xem trạng thái pipeline (idle/running/done) |
+
+### 13.4. Vị trí trong Roadmap
+
+Đây thuộc **Phase 2.5** — sau khi hoàn tất ổn định MVP (Phase 1) và mở rộng dữ liệu (Phase 2), trước Production (Phase 3).
+
+> 📂 **Chi tiết plan**: `/home/openclaw/wiki/trienkhai/trienkhaicuoicung/16-web-data-portal.md`
+
+---
+
 *Tài liệu v3 — Sửa lỗi toàn diện bởi OpenClaw + Claude (2026-04-04).*
+*Tài liệu v3.1 — Bổ sung Web Data Portal concept (2026-04-05).*
 *Trạng thái: **Sẵn sàng triển khai Phase 1** — chờ xác nhận loại $300 budget và số hotline BKNS.*
 

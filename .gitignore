@@ -1,6 +1,7 @@
 # Secrets
 .env
 api/
+password.md
 
 # Python
 __pycache__/
@@ -32,6 +33,11 @@ assets/evidence/**
 # Drafts content (tracked separately)
 # claims/.drafts/ — tracked
 # wiki/.drafts/ — tracked
+
+# Node.js
+web/node_modules/
+node_modules/
+npm-debug.log*
 
 # Tmp
 *.tmp

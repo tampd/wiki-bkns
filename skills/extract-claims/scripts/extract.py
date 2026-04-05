@@ -274,22 +274,89 @@ def extract_claims_from_file(raw_file: Path) -> dict:
 
 
 def parse_claims_json(text: str) -> list | None:
-    """Parse JSON array from LLM output, handling markdown code blocks."""
-    # Remove markdown code fences
+    """Parse JSON array from LLM output with multiple fallback strategies.
+
+    Gemini 2.5 Pro may wrap JSON in:
+    - Markdown code fences (```json ... ```)
+    - Thinking blocks
+    - Extra explanation text before/after
+    """
     text = text.strip()
-    text = re.sub(r"^```json\s*", "", text)
-    text = re.sub(r"^```\s*", "", text)
-    text = re.sub(r"\s*```$", "", text)
 
-    # Find JSON array
-    match = re.search(r"\[.*\]", text, re.DOTALL)
-    if not match:
-        return None
-
+    # Strategy 1: Remove ```json fences and try direct parse
+    cleaned = re.sub(r"```json\s*", "", text)
+    cleaned = re.sub(r"```\s*", "", cleaned).strip()
     try:
-        return json.loads(match.group(0))
+        parsed = json.loads(cleaned)
+        if isinstance(parsed, list):
+            return parsed
     except json.JSONDecodeError:
-        return None
+        pass
+
+    # Strategy 2: Find the outermost [...] using bracket matching
+    first_bracket = text.find("[")
+    if first_bracket != -1:
+        depth = 0
+        last_bracket = -1
+        for i in range(first_bracket, len(text)):
+            if text[i] == "[":
+                depth += 1
+            elif text[i] == "]":
+                depth -= 1
+                if depth == 0:
+                    last_bracket = i
+                    break
+
+        if last_bracket > first_bracket:
+            candidate = text[first_bracket:last_bracket + 1]
+            try:
+                parsed = json.loads(candidate)
+                if isinstance(parsed, list):
+                    return parsed
+            except json.JSONDecodeError:
+                # Try fixing common JSON issues
+                fixed = candidate
+                # Fix trailing commas before ] or }
+                fixed = re.sub(r",\s*([}\]])", r"\1", fixed)
+                # Fix single quotes → double quotes (careful with values)
+                try:
+                    parsed = json.loads(fixed)
+                    if isinstance(parsed, list):
+                        return parsed
+                except json.JSONDecodeError:
+                    pass
+
+    # Strategy 3: Find all {...} objects and wrap in array
+    objects = []
+    depth = 0
+    start = -1
+    for i, ch in enumerate(text):
+        if ch == "{":
+            if depth == 0:
+                start = i
+            depth += 1
+        elif ch == "}":
+            depth -= 1
+            if depth == 0 and start >= 0:
+                candidate = text[start:i + 1]
+                try:
+                    obj = json.loads(candidate)
+                    if isinstance(obj, dict) and "entity_id" in obj:
+                        objects.append(obj)
+                except json.JSONDecodeError:
+                    # Try fixing trailing commas
+                    fixed = re.sub(r",\s*([}\]])", r"\1", candidate)
+                    try:
+                        obj = json.loads(fixed)
+                        if isinstance(obj, dict) and "entity_id" in obj:
+                            objects.append(obj)
+                    except json.JSONDecodeError:
+                        pass
+
+    if objects:
+        return objects
+
+    return None
 
 
 def detect_conflicts(new_claims: list[dict]) -> list[dict]:

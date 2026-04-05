@@ -1,0 +1,16 @@
+attribute: name
+claim_id: CLM-ENT-PROD-EME-NAME-20260404
+compiler_note: 'Trích từ tiêu đề: ═══ Cloud Meeting (E-meeting)'
+confidence: high
+entity_id: ENT-PROD-EMEETING-001
+entity_name: Cloud Meeting
+entity_type: product
+observed_at: '2026-04-04T20:38:10.474487+07:00'
+qualifiers: null
+review_state: approved
+risk_class: low
+source_ids:
+- SRC-CLOUD_MEETING_E_MEETING_GIAI_PHAP_HOP_TRUC_TUYEN_TAI_BKNS_2026_04_04
+unit: null
+valid_from: '2026-04-04'
+value: Cloud Meeting

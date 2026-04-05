@@ -1,0 +1,18 @@
+claim_id: CLM-ENT-PROD-SSL-INCLUDED-20260404
+entity_id: ENT-PROD-SSL-COMODO-EV
+entity_type: product
+entity_name: Comodo EV SSL
+attribute: included_feature_value
+value: 119
+unit: USD
+qualifiers:
+  feature: con dấu trang web động
+source_ids:
+- SRC-COMODO_EV_SSL_CHUNG_CHI_SSL_XAC_THUC_MO_RONG_2026_04_04
+observed_at: '2026-04-04T20:39:57.480026+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ mục ''Tính năng / Thành phần'': ''• Con dấu trang web miễn
+  phí: Một con dấu động trị giá $119 để hiển thị trên website.'''

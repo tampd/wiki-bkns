@@ -1,0 +1,19 @@
+claim_id: CLM-ENT-PROD-SSL-MOBILE_C-20260404
+entity_id: ENT-PROD-SSL-001
+entity_type: ENT-PROD-SSL
+entity_name: PositiveSSL Wildcard (DV)
+attribute: mobile_compatibility
+value: true
+unit: ''
+qualifiers: {}
+source_ids:
+- SRC-POSITIVESSL_WILDCARD_DV_CHUNG_CHI_SSL_GIA_RE_2026_04_04
+observed_at: '2026-04-04T21:11:54.339746+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ mục ''Mô tả dịch vụ'': ...và khả năng tương thích với thiết
+  bị di động...'
+approved_at: '2026-04-04T21:19:27.786877+07:00'
+approved_by: admin-batch

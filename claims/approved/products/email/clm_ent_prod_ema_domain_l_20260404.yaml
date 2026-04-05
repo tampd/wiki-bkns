@@ -1,0 +1,20 @@
+claim_id: CLM-ENT-PROD-EMA-DOMAIN_L-20260404
+entity_id: ENT-PROD-EMAIL-RELAY
+entity_type: product
+entity_name: Email Relay
+attribute: domain_limit
+value: unlimited
+unit: null
+qualifiers:
+  scope: all_plans
+source_ids:
+- SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_VA_TIN_CAY_2026_04_04
+observed_at: '2026-04-04T20:57:41.680882+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ bảng giá: | Số lượng tên miền | Không giới hạn | Không giới
+  hạn | Không giới hạn | Không giới hạn |'
+approved_at: '2026-04-04T21:19:26.602633+07:00'
+approved_by: admin-batch

@@ -1,0 +1,20 @@
+claim_id: CLM-SSL-GEOTRUST_QUICKSSL_PREMIUM_SAN-PRICE-20260404
+entity_id: product.ssl.geotrust_quickssl_premium_san
+entity_type: product_plan
+entity_name: GeoTrust QuickSSL Premium SAN
+attribute: price
+value: 2912000
+unit: VND
+qualifiers:
+  billing_cycle: year
+source_ids:
+- SRC-GEOTRUST_QUICKSSL_PREMIUM_SAN_2026_04_04
+observed_at: '2026-04-04T21:00:08.780062+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: high
+compiler_note: 'Trích xuất từ Gói dịch vụ và bảng giá: | Giá tại BKNS | 2.912.000đ/năm
+  |'
+approved_at: '2026-04-04T21:19:28.138071+07:00'
+approved_by: admin-batch

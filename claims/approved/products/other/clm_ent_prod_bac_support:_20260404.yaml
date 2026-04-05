@@ -1,0 +1,17 @@
+attribute: support:availability
+claim_id: CLM-ENT-PROD-BAC-SUPPORT:-20260404
+compiler_note: 'Trích từ mục Tóm tắt nhanh: • Điểm chính: ... và có đội ngũ kỹ thuật
+  hỗ trợ 24/7.'
+confidence: high
+entity_id: ENT-PROD-BACKUP-001
+entity_name: Dịch vụ Backup Dữ liệu
+entity_type: product
+observed_at: '2026-04-04T20:44:55.421018+07:00'
+qualifiers: null
+review_state: approved
+risk_class: low
+source_ids:
+- SRC-DICH_VU_BACKUP_DU_LIEU_SAO_LUU_VA_PHUC_HOI_DU_LIEU_UY_TIN_2026_04_04
+unit: null
+valid_from: '2026-04-04'
+value: 24/7

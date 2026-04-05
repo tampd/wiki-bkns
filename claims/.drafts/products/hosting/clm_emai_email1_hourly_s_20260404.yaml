@@ -1,0 +1,17 @@
+claim_id: CLM-EMAI-EMAIL1-HOURLY_S-20260404
+entity_id: product.email.email1
+entity_type: product_plan
+entity_name: EMAIL 1
+attribute: hourly_send_limit
+value: 200
+unit: email
+qualifiers:
+  belongs_to: ENT-PROD-EMAIL
+source_ids:
+- SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_04
+observed_at: '2026-04-04T20:02:16.402172+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng giá, cột EMAIL 1, hàng Số lượng email gửi ra/ giờ: ''200'''

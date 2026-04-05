@@ -1,0 +1,18 @@
+claim_id: CLM-ENT-PROD-DOM-TRANSFER-20260404
+entity_id: ENT-PROD-DOMAIN
+entity_type: product_category
+entity_name: Tên miền
+attribute: transfer_price
+value: 0
+unit: VND
+qualifiers:
+  domain_extension: .edu.vn
+source_ids:
+- SRC-BANG_GIA_TEN_MIEN_VN_2026_04_04
+observed_at: '2026-04-04T20:27:56.929655+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ dòng: .org.vn | .gov.vn | .edu.vn | Transfer về BKNS Miễn
+  phí'

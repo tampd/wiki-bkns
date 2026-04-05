@@ -1,0 +1,16 @@
+build_id: BLD-20260404-200931
+version: v0.2
+build_date: '2026-04-04T20:09:31.654238+07:00'
+wiki_hash: sha256:7a7c014858531f5d9dd27aa26c1ef373d266a725c916151a720cdc87872f6b44
+wiki_files: 6
+wiki_token_estimate: 3359
+claims_count: 88
+file_list:
+- index.md
+- products/hosting/tong-quan.md
+- products/ssl/tong-quan.md
+- products/ten-mien/tong-quan.md
+- products/vps/tong-quan.md
+- support/lien-he.md
+previous_build: BLD-20260404-181433
+previous_version: v0.1

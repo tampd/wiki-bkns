@@ -1,0 +1,21 @@
+claim_id: CLM-BKNS_CLOUD_E-DATA_CON-20260404
+entity_id: bkns_cloud_email_server
+entity_type: product
+entity_name: Dịch vụ Cloud Email Server
+attribute: data_contradiction
+value: Giá quảng cáo trên meta description ('CHỈ TỪ 239K/THÁNG') mâu thuẫn với giá
+  gói thấp nhất trong bảng giá ('314.000đ/Tháng').
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_04
+observed_at: '2026-04-04T20:47:01.891022+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ Ghi chú trích xuất: ⚠️ MÂU THUẪN TRONG TRANG: Meta description
+  ghi giá "CHỈ TỪ 239K/THÁNG", nhưng trong bảng giá, gói thấp nhất là MINI EMAIL 01
+  có giá "314.000đ/Tháng".'
+approved_at: '2026-04-04T21:19:26.365190+07:00'
+approved_by: admin-batch

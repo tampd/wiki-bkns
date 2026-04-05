@@ -1,0 +1,17 @@
+claim_id: CLM-ENT-PROD-VPS-INFRASTR-20260404
+entity_id: ENT-PROD-VPS
+entity_type: product
+entity_name: VPS Giá Rẻ
+attribute: infrastructure
+value: Hệ thống được đặt tại các Data Center đạt chuẩn quốc tế.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_VPS_GIA_RE_MAY_CHU_AO_CAU_HINH_ON_INH_2026_04_04
+observed_at: '2026-04-04T20:54:42.957926+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tính năng / Thành phần: • Hạ tầng ổn định: Hệ thống được
+  đặt tại các Data Center đạt chuẩn quốc tế.'

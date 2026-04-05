@@ -1,0 +1,18 @@
+claim_id: CLM-SSL-ESSENTIALSSL_WILDCARD_DV-MAIN_DOM-20260404
+entity_id: bkns.ssl.essentialssl_wildcard_dv
+entity_type: ENT-PROD-SSL
+entity_name: EssentialSSL Wildcard (DV)
+attribute: main_domain_coverage
+value: 1
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-CHUNG_CHI_SSL_ESSENTIALSSL_WILDCARD_DV_CUA_COMODO_2026_04_04
+observed_at: '2026-04-04T20:34:55.322701+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ: Comodo EssentialSSL Wildcard là một giải pháp SSL hiệu quả
+  về chi phí, có khả năng bảo mật một tên miền chính và số lượng tên miền phụ không
+  giới hạn.'

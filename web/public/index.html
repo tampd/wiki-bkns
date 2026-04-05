@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BKNS Wiki Data Portal — Upload và quản lý dữ liệu wiki">
+  <meta name="robots" content="noindex, nofollow">
+  <title>BKNS Wiki Data Portal</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/style.css">
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@0.344.0/dist/umd/lucide.min.js"></script>
+  <!-- Marked.js — Markdown renderer for wiki preview -->
+  <script src="https://unpkg.com/marked@12.0.0/marked.min.js"></script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Bỏ qua đến nội dung chính</a>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toast-container" role="status" aria-live="polite"></div>
+
+  <!-- Modal Overlay -->
+  <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal card" id="modal-content">
+      <h3 id="modal-title">Xác nhận</h3>
+      <p id="modal-message">Bạn có chắc chắn?</p>
+      <div class="modal-actions">
+        <button class="btn btn-ghost" id="modal-cancel" aria-label="Hủy">Hủy</button>
+        <button class="btn btn-primary" id="modal-confirm" aria-label="Xác nhận">Xác nhận</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== LOGIN PAGE ==================== -->
+  <div class="login-page" id="login-page">
+    <div class="card login-card">
+      <div class="logo">📡 BKNS Wiki</div>
+      <div class="subtitle">Data Portal — Đăng nhập quản trị</div>
+
+      <div class="login-error" id="login-error" role="alert">
+        Sai mật khẩu. Vui lòng thử lại.
+      </div>
+
+      <form id="login-form" aria-label="Form đăng nhập">
+        <div class="input-group">
+          <label for="login-password">Mật khẩu quản trị</label>
+          <input
+            type="password"
+            id="login-password"
+            class="input"
+            placeholder="Nhập mật khẩu..."
+            required
+            autocomplete="current-password"
+            aria-describedby="login-error"
+          >
+        </div>
+        <button type="submit" class="btn btn-primary" id="login-submit">
+          <span id="login-btn-text">Đăng nhập</span>
+          <div class="spinner" id="login-spinner" style="display:none"></div>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==================== MAIN APP ==================== -->
+  <div class="app" id="app">
+    <!-- Header -->
+    <header class="header" role="banner">
+      <div class="header-inner">
+        <div class="brand">
+          <div class="brand-icon" aria-hidden="true">📡</div>
+          <span>BKNS Wiki Portal</span>
+        </div>
+
+        <!-- Main Navigation Tabs -->
+        <nav class="main-nav" role="navigation" aria-label="Điều hướng chính">
+          <button class="nav-tab active" data-tab="dashboard" aria-selected="true">
+            <i data-lucide="layout-dashboard" aria-hidden="true"></i>
+            <span>Dashboard</span>
+          </button>
+          <button class="nav-tab" data-tab="wiki" aria-selected="false">
+            <i data-lucide="book-open" aria-hidden="true"></i>
+            <span>Wiki Editor</span>
+          </button>
+        </nav>
+
+        <div class="header-actions">
+          <span id="pipeline-status-header" class="pipeline-status-badge idle" aria-label="Trạng thái pipeline">
+            <span class="dot" aria-hidden="true"></span>
+            <span>Idle</span>
+          </span>
+          <button class="btn btn-ghost btn-icon" id="btn-logout" aria-label="Đăng xuất" title="Đăng xuất">
+            <i data-lucide="log-out" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main" id="main-content">
+
+      <!-- Stats Bar -->
+      <div class="stats-bar fade-in">
+        <div class="card stat-card">
+          <div class="stat-icon cyan" aria-hidden="true"><i data-lucide="files"></i></div>
+          <div class="stat-content">
+            <div class="stat-value" id="stat-total-files">—</div>
+            <div class="stat-label">Tổng file</div>
+          </div>
+        </div>
+        <div class="card stat-card">
+          <div class="stat-icon green" aria-hidden="true"><i data-lucide="book-open"></i></div>
+          <div class="stat-content">
+            <div class="stat-value" id="stat-wiki-pages">—</div>
+            <div class="stat-label">Wiki pages</div>
+          </div>
+        </div>
+        <div class="card stat-card">
+          <div class="stat-icon blue" aria-hidden="true"><i data-lucide="list-checks"></i></div>
+          <div class="stat-content">
+            <div class="stat-value" id="stat-claims">—</div>
+            <div class="stat-label">Claims</div>
+          </div>
+        </div>
+        <div class="card stat-card">
+          <div class="stat-icon amber" aria-hidden="true"><i data-lucide="clock"></i></div>
+          <div class="stat-content">
+            <div class="stat-value" id="stat-last-build">—</div>
+            <div class="stat-label">Build cuối</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Upload Section -->
+      <section class="upload-section card fade-in" aria-labelledby="upload-title">
+        <div class="section-header">
+          <h2 class="section-title" id="upload-title">
+            <i data-lucide="upload-cloud" aria-hidden="true"></i>
+            Upload Tài Liệu
+          </h2>
+        </div>
+
+        <!-- Drop Zone -->
+        <div class="upload-zone" id="upload-zone" role="button" tabindex="0"
+             aria-label="Kéo thả file hoặc click để chọn file upload">
+          <div class="upload-icon" aria-hidden="true"><i data-lucide="cloud-upload"></i></div>
+          <div class="upload-title">Kéo thả file vào đây</div>
+          <div class="upload-desc">hoặc click để chọn file • Tối đa 50MB/file</div>
+          <div class="upload-formats">
+            <span class="format-tag">.pdf</span>
+            <span class="format-tag">.docx</span>
+            <span class="format-tag">.xlsx</span>
+            <span class="format-tag">.md</span>
+            <span class="format-tag">.txt</span>
+            <span class="format-tag">.png</span>
+            <span class="format-tag">.jpg</span>
+          </div>
+        </div>
+        <input type="file" id="file-input" multiple hidden
+               accept=".pdf,.docx,.xlsx,.md,.txt,.png,.jpg,.jpeg">
+
+        <!-- File Queue (shown when files selected) -->
+        <div class="file-queue" id="file-queue" style="display:none"></div>
+
+        <!-- Upload Actions -->
+        <div class="upload-actions" id="upload-actions" style="display:none">
+          <button class="btn btn-success" id="btn-upload-trigger" aria-label="Upload và xử lý ngay">
+            <i data-lucide="zap" aria-hidden="true"></i>
+            Upload & Trigger Pipeline
+          </button>
+          <button class="btn btn-primary" id="btn-upload-only" aria-label="Upload và chờ xử lý sau">
+            <i data-lucide="inbox" aria-hidden="true"></i>
+            Upload & Chờ xử lý
+          </button>
+          <button class="btn btn-ghost" id="btn-clear-queue" aria-label="Xóa hàng đợi">
+            <i data-lucide="x" aria-hidden="true"></i>
+            Xóa hết
+          </button>
+        </div>
+      </section>
+
+      <!-- Pipeline Section -->
+      <section class="pipeline-section card fade-in" aria-labelledby="pipeline-title">
+        <div class="section-header">
+          <h2 class="section-title" id="pipeline-title">
+            <i data-lucide="workflow" aria-hidden="true"></i>
+            Pipeline Control
+          </h2>
+          <div id="pipeline-status-badge" class="pipeline-status-badge idle">
+            <span class="dot" aria-hidden="true"></span>
+            <span id="pipeline-status-text">Idle</span>
+          </div>
+        </div>
+
+        <div class="pipeline-actions">
+          <button class="btn btn-primary" id="btn-trigger-full" aria-label="Chạy pipeline đầy đủ">
+            <i data-lucide="play" aria-hidden="true"></i>
+            Full Pipeline
+          </button>
+          <button class="btn btn-ghost" id="btn-trigger-extract" aria-label="Chỉ extract">
+            <i data-lucide="file-text" aria-hidden="true"></i>
+            Extract Only
+          </button>
+          <button class="btn btn-ghost" id="btn-trigger-compile" aria-label="Chỉ compile">
+            <i data-lucide="layers" aria-hidden="true"></i>
+            Compile Only
+          </button>
+        </div>
+
+        <dl class="pipeline-info">
+          <dt>Lần chạy cuối</dt>
+          <dd id="pipeline-last-run">—</dd>
+          <dt>Kết quả</dt>
+          <dd id="pipeline-last-result">—</dd>
+          <dt>Build version</dt>
+          <dd id="pipeline-build-version">—</dd>
+        </dl>
+      </section>
+
+      <!-- Files Section -->
+      <section class="files-section card fade-in" aria-labelledby="files-title">
+        <div class="section-header">
+          <h2 class="section-title" id="files-title">
+            <i data-lucide="folder-open" aria-hidden="true"></i>
+            File Browser
+          </h2>
+        </div>
+
+        <div class="files-header">
+          <div class="files-tabs" role="tablist" aria-label="Lọc file theo nguồn">
+            <button class="files-tab active" data-source="all" role="tab" aria-selected="true">Tất cả</button>
+            <button class="files-tab" data-source="web" role="tab" aria-selected="false">Web Upload</button>
+            <button class="files-tab" data-source="manual" role="tab" aria-selected="false">Manual</button>
+          </div>
+        </div>
+
+        <div style="overflow-x:auto">
+          <table class="files-table" aria-label="Danh sách file">
+            <thead>
+              <tr>
+                <th scope="col">Tên file</th>
+                <th scope="col">Nguồn</th>
+                <th scope="col">Kích thước</th>
+                <th scope="col">Ngày upload</th>
+                <th scope="col"><span class="sr-only">Hành động</span></th>
+              </tr>
+            </thead>
+            <tbody id="files-tbody">
+              <tr>
+                <td colspan="5" class="files-empty">
+                  <i data-lucide="inbox" style="margin:0 auto var(--space-3);opacity:0.3;display:block;width:48px;height:48px"></i>
+                  Chưa có file nào
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="files-pagination" id="files-pagination" style="display:none">
+          <span id="files-info">Đang hiển thị 0-0 / 0</span>
+          <div style="display:flex;gap:var(--space-2)">
+            <button class="btn btn-ghost btn-icon" id="btn-prev-page" disabled aria-label="Trang trước">
+              <i data-lucide="chevron-left" aria-hidden="true"></i>
+            </button>
+            <button class="btn btn-ghost btn-icon" id="btn-next-page" disabled aria-label="Trang sau">
+              <i data-lucide="chevron-right" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ==================== WIKI EDITOR PAGE ==================== -->
+    <div class="wiki-page" id="wiki-page" style="display:none">
+
+      <!-- Wiki Sidebar -->
+      <aside class="wiki-sidebar" role="complementary" aria-label="Danh sách wiki pages">
+        <div class="wiki-sidebar-header">
+          <h2 class="wiki-sidebar-title">
+            <i data-lucide="library" aria-hidden="true"></i>
+            Wiki Pages
+          </h2>
+          <button class="btn btn-ghost btn-icon btn-sm" id="btn-wiki-refresh" title="Làm mới danh sách" aria-label="Làm mới">
+            <i data-lucide="refresh-cw" aria-hidden="true"></i>
+          </button>
+        </div>
+        <ul class="wiki-page-list" id="wiki-page-list" role="listbox" aria-label="Chọn wiki page để chỉnh sửa">
+          <li class="wiki-page-list-empty">
+            <i data-lucide="loader" style="animation:spin 1s linear infinite"></i>
+            Đang tải...
+          </li>
+        </ul>
+      </aside>
+
+      <!-- Wiki Editor Main -->
+      <div class="wiki-editor-main" id="wiki-editor-main">
+
+        <!-- Empty state -->
+        <div class="wiki-empty-state" id="wiki-empty-state">
+          <div class="wiki-empty-icon"><i data-lucide="file-edit" aria-hidden="true"></i></div>
+          <h3>Chọn một Wiki Page</h3>
+          <p>Chọn trang wiki từ sidebar bên trái để bắt đầu xem và chỉnh sửa nội dung.</p>
+        </div>
+
+        <!-- Editor Panel (hidden until page selected) -->
+        <div class="wiki-editor-panel" id="wiki-editor-panel" style="display:none">
+
+          <!-- Editor Header -->
+          <div class="wiki-editor-header">
+            <div class="wiki-editor-title-row">
+              <div class="wiki-breadcrumb">
+                <span class="wiki-breadcrumb-root">wiki/products</span>
+                <i data-lucide="chevron-right" class="wiki-breadcrumb-sep" aria-hidden="true"></i>
+                <span id="wiki-editor-category" class="wiki-breadcrumb-current">—</span>
+                <i data-lucide="chevron-right" class="wiki-breadcrumb-sep" aria-hidden="true"></i>
+                <span class="wiki-breadcrumb-file">tong-quan.md</span>
+              </div>
+              <div class="wiki-editor-badges" id="wiki-editor-badges"></div>
+            </div>
+
+            <!-- Editor Toolbar -->
+            <div class="wiki-toolbar">
+              <div class="wiki-view-toggle" role="group" aria-label="Chế độ xem">
+                <button class="wiki-view-btn active" data-view="split" aria-pressed="true" title="Split view">
+                  <i data-lucide="columns" aria-hidden="true"></i>
+                  <span>Split</span>
+                </button>
+                <button class="wiki-view-btn" data-view="edit" aria-pressed="false" title="Chỉ edit">
+                  <i data-lucide="code" aria-hidden="true"></i>
+                  <span>Edit</span>
+                </button>
+                <button class="wiki-view-btn" data-view="preview" aria-pressed="false" title="Chỉ preview">
+                  <i data-lucide="eye" aria-hidden="true"></i>
+                  <span>Preview</span>
+                </button>
+              </div>
+
+              <div class="wiki-toolbar-sep"></div>
+
+              <span class="wiki-word-count" id="wiki-word-count">0 từ</span>
+              <span class="wiki-char-count" id="wiki-char-count">0 ký tự</span>
+
+              <div class="wiki-toolbar-sep"></div>
+
+              <span class="wiki-save-status" id="wiki-save-status" aria-live="polite"></span>
+
+              <button class="btn btn-ghost btn-sm" id="btn-wiki-backups" title="Xem lịch sử backup" aria-label="Xem backups">
+                <i data-lucide="history" aria-hidden="true"></i>
+                Backups
+              </button>
+              <button class="btn btn-primary btn-sm" id="btn-wiki-save" aria-label="Lưu thay đổi">
+                <i data-lucide="save" aria-hidden="true"></i>
+                Lưu
+              </button>
+            </div>
+          </div>
+
+          <!-- Split Pane -->
+          <div class="wiki-split-pane" id="wiki-split-pane">
+            <!-- Left: Markdown Editor -->
+            <div class="wiki-edit-pane" id="wiki-edit-pane">
+              <div class="wiki-pane-label">
+                <i data-lucide="pencil" aria-hidden="true"></i> Markdown
+              </div>
+              <textarea
+                class="wiki-textarea"
+                id="wiki-textarea"
+                spellcheck="false"
+                autocomplete="off"
+                autocorrect="off"
+                autocapitalize="off"
+                aria-label="Nội dung Markdown"
+                placeholder="Nội dung markdown sẽ hiển thị ở đây..."
+              ></textarea>
+            </div>
+
+            <!-- Resize Handle -->
+            <div class="wiki-resize-handle" id="wiki-resize-handle" role="separator" aria-label="Kéo để thay đổi kích thước"></div>
+
+            <!-- Right: Preview -->
+            <div class="wiki-preview-pane" id="wiki-preview-pane">
+              <div class="wiki-pane-label">
+                <i data-lucide="eye" aria-hidden="true"></i> Preview
+              </div>
+              <div class="wiki-preview-content" id="wiki-preview" aria-label="Bản xem trước" aria-live="polite"></div>
+            </div>
+          </div>
+
+          <!-- Backups Drawer -->
+          <div class="wiki-backups-drawer" id="wiki-backups-drawer" style="display:none" role="region" aria-label="Lịch sử backup">
+            <div class="wiki-backups-header">
+              <h4><i data-lucide="history" aria-hidden="true"></i> Lịch Sử Backup</h4>
+              <button class="btn btn-ghost btn-icon btn-sm" id="btn-close-backups" aria-label="Đóng">
+                <i data-lucide="x" aria-hidden="true"></i>
+              </button>
+            </div>
+            <ul class="wiki-backups-list" id="wiki-backups-list">
+              <li class="wiki-backups-empty">Chưa có backup nào</li>
+            </ul>
+          </div>
+
+        </div><!-- /wiki-editor-panel -->
+      </div><!-- /wiki-editor-main -->
+
+    </div><!-- /wiki-page -->
+
+  </div><!-- /app -->
+
+  <script src="/app.js"></script>
+</body>
+</html>

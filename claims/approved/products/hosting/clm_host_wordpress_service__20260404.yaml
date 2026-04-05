@@ -1,0 +1,20 @@
+claim_id: CLM-HOST-WORDPRESS-SERVICE_-20260404
+entity_id: product.hosting.wordpress
+entity_type: product
+entity_name: Hosting WordPress
+attribute: service_description
+value: Đây là dịch vụ lưu trữ web được thiết kế và tối ưu hóa đặc biệt cho các website
+  sử dụng mã nguồn WordPress.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-HOSTING_WORDPRESS_TOC_O_CAO_BANG_GIA_GIAI_PHAP_TOI_UU_S_2026_04_04
+observed_at: '2026-04-04T21:04:54.543608+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: Dịch vụ này là gì: Đây là dịch vụ lưu trữ
+  web được thiết kế và tối ưu hóa đặc biệt cho các website sử dụng mã nguồn WordPress.'
+approved_at: '2026-04-04T21:19:27.370110+07:00'
+approved_by: admin-batch

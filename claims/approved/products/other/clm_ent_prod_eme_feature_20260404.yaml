@@ -1,0 +1,17 @@
+attribute: feature
+claim_id: CLM-ENT-PROD-EME-FEATURE-20260404
+compiler_note: 'Trích từ mục Tính năng / Thành phần: • Cung cấp âm thanh và hình ảnh
+  chất lượng cao.'
+confidence: high
+entity_id: ENT-PROD-EMEETING-001
+entity_name: Cloud Meeting
+entity_type: product
+observed_at: '2026-04-04T20:38:10.503395+07:00'
+qualifiers: null
+review_state: approved
+risk_class: low
+source_ids:
+- SRC-CLOUD_MEETING_E_MEETING_GIAI_PHAP_HOP_TRUC_TUYEN_TAI_BKNS_2026_04_04
+unit: null
+valid_from: '2026-04-04'
+value: Cung cấp âm thanh và hình ảnh chất lượng cao

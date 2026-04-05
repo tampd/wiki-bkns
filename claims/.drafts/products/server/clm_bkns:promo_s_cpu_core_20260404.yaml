@@ -1,0 +1,17 @@
+claim_id: CLM-BKNS:PROMO_S-CPU_CORE-20260404
+entity_id: bkns:promo_server:config2
+entity_type: product_hardware
+entity_name: Máy Chủ Tặng Kèm - Cấu hình 2
+attribute: cpu_cores
+value: 8
+unit: Cores
+qualifiers: {}
+source_ids:
+- SRC-DICH_VU_THUE_CHO_AT_MAY_CHU_COLOCATION_TAI_BKNS_2026_04_04
+observed_at: '2026-04-04T20:52:19.166709+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng ''Bảng Cấu Hình Máy Chủ Tặng Kèm'', cột ''Cấu hình 2'':
+  CPU: 8 CORES'

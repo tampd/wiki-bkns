@@ -1,0 +1,19 @@
+claim_id: CLM-SSL-BKNS-SAN_SUPP-20260404
+entity_id: product.ssl.bkns.instantssl_ov
+entity_type: product
+entity_name: InstantSSL (OV)
+attribute: san_support
+value: false
+unit: null
+qualifiers: null
+source_ids:
+- SRC-CHUNG_CHI_SSL_INSTANTSSL_OV_2026_04_04
+observed_at: '2026-04-04T20:37:35.307979+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: none
+compiler_note: 'Trích từ Tóm tắt nhanh: • Điều kiện/giới hạn nổi bật (nếu có): ...không
+  hỗ trợ SAN (nhiều tên miền)...'
+approved_at: '2026-04-04T21:19:27.991519+07:00'
+approved_by: admin-batch

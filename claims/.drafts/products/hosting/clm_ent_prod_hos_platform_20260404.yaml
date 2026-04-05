@@ -1,0 +1,18 @@
+claim_id: CLM-ENT-PROD-HOS-PLATFORM-20260404
+entity_id: ENT-PROD-HOSTING
+entity_type: product_category
+entity_name: Shared Hosting
+attribute: platform_os
+value: Windows Server
+unit: ''
+qualifiers:
+  product_line: Hosting Windows
+source_ids:
+- SRC-DICH_VU_HOSTING_WINDOWS_TAI_BKNS_2026_04_04
+observed_at: '2026-04-04T20:50:27.455050+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục ''Mô tả dịch vụ'': ''Hosting Windows là dịch vụ lưu trữ
+  website được xây dựng trên máy chủ sử dụng hệ điều hành Windows Server.'''

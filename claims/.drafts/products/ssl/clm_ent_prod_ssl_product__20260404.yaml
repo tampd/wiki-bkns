@@ -1,0 +1,17 @@
+claim_id: CLM-ENT-PROD-SSL-PRODUCT_-20260404
+entity_id: ENT-PROD-SSL-RapidSSL-Wildcard
+entity_type: product_plan
+entity_name: RapidSSL Wildcard Certificate
+attribute: product_type
+value: Wildcard SSL
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-RAPIDSSL_WILDCARD_CERTIFICATE_THONG_TIN_VA_BANG_GIA_TAI_BK_2026_04_04
+observed_at: '2026-04-04T21:13:48.024880+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: Dịch vụ này là gì: Chứng chỉ SSL Wildcard
+  xác thực tên miền (DV) từ RapidSSL...'
