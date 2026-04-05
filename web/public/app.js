@@ -513,15 +513,27 @@
             <td class="file-size-cell">${formatSize(f.size || 0)}</td>
             <td class="file-date">${formatDate(f.uploaded_at || f.mtime)}</td>
             <td class="file-actions-cell" style="display:flex;gap:4px;align-items:center">
-              ${isViewable && fileId ? `<button class="btn btn-ghost btn-icon" onclick="viewFile('${fileId}','${escapeHtml(fname)}')" aria-label="Xem nội dung ${escapeHtml(fname)}" title="Xem nội dung">
+              ${isViewable && fileId ? `<button class="btn btn-ghost btn-icon" data-action="view" data-file-id="${fileId}" data-file-name="${escapeHtml(fname)}" aria-label="Xem nội dung ${escapeHtml(fname)}" title="Xem nội dung">
                 <i data-lucide="eye" aria-hidden="true"></i>
               </button>` : ''}
-              <button class="btn btn-ghost btn-icon" onclick="deleteFile('${fileId}')" aria-label="Xóa file" ${!fileId ? 'disabled' : ''} title="Xóa file">
+              <button class="btn btn-ghost btn-icon" data-action="delete" data-file-id="${fileId}" aria-label="Xóa file" ${!fileId ? 'disabled' : ''} title="Xóa file">
                 <i data-lucide="trash-2" aria-hidden="true"></i>
               </button>
             </td>
           </tr>`;
       }).join('');
+
+      // Wire up file action buttons via event delegation (CSP-safe, no inline onclick)
+      dom.filesTbody.querySelectorAll('[data-action="view"]').forEach(btn => {
+        btn.addEventListener('click', () => {
+          viewFile(btn.dataset.fileId, btn.dataset.fileName);
+        });
+      });
+      dom.filesTbody.querySelectorAll('[data-action="delete"]').forEach(btn => {
+        btn.addEventListener('click', () => {
+          deleteFile(btn.dataset.fileId);
+        });
+      });
 
       lucide.createIcons();
 
@@ -583,8 +595,8 @@
     loadFiles();
   });
 
-  // Delete file (exposed globally for inline onclick)
-  window.deleteFile = async function (id) {
+  // Delete file (event delegation, no inline onclick for CSP compliance)
+  async function deleteFile(id) {
     if (!id) return;
     const ok = await showModal('Xóa file', 'File sẽ bị xóa vĩnh viễn. Tiếp tục?', 'Xóa');
     if (!ok) return;
@@ -601,10 +613,10 @@
     } catch (e) {
       toast('error', 'Lỗi', e.message);
     }
-  };
+  }
 
-  // View file content in modal (text files only)
-  window.viewFile = async function (id, filename) {
+  // View file content in modal (text files only, event delegation for CSP compliance)
+  async function viewFile(id, filename) {
     if (!id) return;
     try {
       const res = await apiFetch('/api/files/' + encodeURIComponent(id) + '/content');
@@ -649,7 +661,7 @@
     } catch (e) {
       toast('error', 'Lỗi kết nối', e.message);
     }
-  };
+  }
 
   // Update selection counter (checkboxes are for selection only — no bulk action)
   function updateBulkDeleteBtn() {
@@ -734,8 +746,30 @@
     if (typeof marked === 'undefined') return '<em>marked.js chưa tải</em>';
     try {
       const html = marked.parse(markdown, { breaks: true, gfm: true });
-      // Open all links in new tab so they don't navigate away from the app
-      return html.replace(/<a href=/g, '<a target="_blank" rel="noopener noreferrer" href=');
+
+      // Process links: intercept relative .md links for wiki navigation,
+      // open external links in new tab
+      const wrapper = document.createElement('div');
+      wrapper.innerHTML = html;
+      wrapper.querySelectorAll('a[href]').forEach(a => {
+        const href = a.getAttribute('href');
+        if (href && href.endsWith('.md') && !href.startsWith('http')) {
+          // Relative wiki link — extract category from path
+          // e.g. "../hosting/tong-quan.md" → category = "hosting"
+          const parts = href.replace(/\.md$/, '').split('/');
+          const category = parts.length >= 2 ? parts[parts.length - 2] : parts[0];
+          a.setAttribute('href', '#');
+          a.setAttribute('data-wiki-link', category);
+          a.style.cursor = 'pointer';
+          a.title = `Mở wiki: ${CATEGORY_LABELS[category] || category}`;
+        } else {
+          // External link — open in new tab
+          a.setAttribute('target', '_blank');
+          a.setAttribute('rel', 'noopener noreferrer');
+        }
+      });
+
+      return wrapper.innerHTML;
     } catch {
       return '<em>Lỗi render markdown</em>';
     }
@@ -1170,6 +1204,19 @@
     if (closeBackupsBtn) {
       closeBackupsBtn.addEventListener('click', () => {
         backupsDrawer.style.display = 'none';
+      });
+    }
+
+    // Wiki preview link interception — handle relative .md links
+    const previewEl = $('#wiki-preview');
+    if (previewEl) {
+      previewEl.addEventListener('click', (e) => {
+        const link = e.target.closest('[data-wiki-link]');
+        if (link) {
+          e.preventDefault();
+          const category = link.dataset.wikiLink;
+          if (category) loadWikiPage(category);
+        }
       });
     }
 
