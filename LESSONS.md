@@ -51,3 +51,13 @@
 - **Observation**: Excel bảng giá nội bộ (`Bảng giá Hosting- VPS- Email.xlsx`) là nguồn chính xác nhất. Website thường hiển thị giá đã giảm hoặc giá khuyến mãi (ví dụ: .com chỉ 25.000đ khi mua 5 năm, trong khi giá thực 379.000đ/năm).
 - **Pattern**: Luôn ưu tiên giá từ Excel. Nếu conflict → ghi cả 2 giá + note "giá website có thể là giá khuyến mãi".
 - **Tags**: `pricing`, `source-of-truth`, `excel`
+
+## L006 — Helmet CSP blocks inline onclick handlers silently
+- **Date**: 2026-04-05
+- **Type**: experience
+- **Importance**: 0.9
+- **Mistake**: Upload portal buttons (view file, delete file) không hoạt động. Không có error message nào hiển thị cho user.
+- **Root cause**: `helmet()` CSP mặc định `scriptSrc: ["'self'"]` KHÔNG bao gồm `'unsafe-inline'`. Tất cả `onclick="..."` attributes bị browser block silently. Chỉ thấy lỗi trong DevTools Console: "Refused to execute inline event handler because it violates CSP".
+- **Fix**: Thay tất cả inline `onclick` bằng `data-action` attributes + `addEventListener()` (event delegation). KHÔNG thêm `'unsafe-inline'` vì weaken CSP.
+- **Prevention**: (1) KHÔNG BAO GIỜ dùng inline event handlers khi có Helmet/CSP (2) Luôn dùng `addEventListener` hoặc event delegation (3) Test CSP compliance bằng cách check DevTools Console cho CSP violations.
+- **Tags**: `csp`, `security`, `helmet`, `inline-handler`, `silent-failure`
