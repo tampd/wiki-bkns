@@ -35,7 +35,7 @@ function scanDir(dir, source) {
         }
 
         results.push({
-          id: id || '',
+          id: id || (source === 'manual' ? `manual__${entry.name}` : ''),
           filename: source === 'web' ? entry.name.replace(/^[0-9a-f-]{36}-/, '') : entry.name,
           stored_name: entry.name,
           path: relativePath,
@@ -101,16 +101,28 @@ function filesRoute(router) {
   });
 
   // DELETE /api/files/:id
+  // id is either a UUID (web upload) or "manual__<filename>" (manual file)
   router.delete('/api/files/:id', (req, res) => {
     try {
       const id = req.params.id;
-      if (!id || id.length < 10) {
+      if (!id || id.length < 5) {
         return res.status(400).json({ error: 'Invalid file ID' });
       }
 
-      // Find the file in raw/web/
-      const files = scanDir(RAW_WEB_DIR, 'web');
-      const file = files.find(f => f.id === id);
+      let file, baseDir;
+
+      if (id.startsWith('manual__')) {
+        // Manual file: look up by stored filename
+        const storedName = id.slice('manual__'.length);
+        const files = scanDir(RAW_MANUAL_DIR, 'manual');
+        file = files.find(f => f.stored_name === storedName);
+        baseDir = RAW_MANUAL_DIR;
+      } else {
+        // Web file: look up by UUID
+        const files = scanDir(RAW_WEB_DIR, 'web');
+        file = files.find(f => f.id === id);
+        baseDir = RAW_WEB_DIR;
+      }
 
       if (!file) {
         return res.status(404).json({ error: 'File not found' });
@@ -118,8 +130,8 @@ function filesRoute(router) {
 
       const fullPath = path.resolve(__dirname, '../../', file.path);
 
-      // Validate path is within raw/web/ (prevent path traversal)
-      if (!fullPath.startsWith(RAW_WEB_DIR)) {
+      // Validate path is within allowed base dir (prevent path traversal)
+      if (!fullPath.startsWith(baseDir)) {
         return res.status(403).json({ error: 'Access denied' });
       }
 
@@ -139,6 +151,47 @@ function filesRoute(router) {
     } catch (err) {
       console.error('[DELETE] Error:', err);
       res.status(500).json({ error: 'Delete failed' });
+    }
+  });
+
+  // GET /api/files/:id/content
+  // Returns plain text content for text-based files (.md, .txt)
+  router.get('/api/files/:id/content', (req, res) => {
+    try {
+      const id = req.params.id;
+      if (!id) return res.status(400).json({ error: 'Invalid file ID' });
+
+      let file, baseDir;
+
+      if (id.startsWith('manual__')) {
+        const storedName = id.slice('manual__'.length);
+        const files = scanDir(RAW_MANUAL_DIR, 'manual');
+        file = files.find(f => f.stored_name === storedName);
+        baseDir = RAW_MANUAL_DIR;
+      } else {
+        const files = scanDir(RAW_WEB_DIR, 'web');
+        file = files.find(f => f.id === id);
+        baseDir = RAW_WEB_DIR;
+      }
+
+      if (!file) return res.status(404).json({ error: 'File not found' });
+
+      const fullPath = path.resolve(__dirname, '../../', file.path);
+      if (!fullPath.startsWith(baseDir)) {
+        return res.status(403).json({ error: 'Access denied' });
+      }
+
+      const ext = path.extname(file.stored_name).toLowerCase();
+      const textExts = ['.md', '.txt', '.csv', '.json', '.yaml', '.yml'];
+      if (!textExts.includes(ext)) {
+        return res.status(415).json({ error: 'Chỉ hỗ trợ xem file văn bản (.md, .txt, ...)' });
+      }
+
+      const content = fs.readFileSync(fullPath, 'utf8');
+      res.json({ filename: file.filename, content, size: file.size, mtime: file.mtime });
+    } catch (err) {
+      console.error('[FILE CONTENT] Error:', err);
+      res.status(500).json({ error: 'Failed to read file' });
     }
   });
 }

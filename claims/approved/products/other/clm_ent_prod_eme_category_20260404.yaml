@@ -1,16 +1,18 @@
-attribute: category
 claim_id: CLM-ENT-PROD-EME-CATEGORY-20260404
-compiler_note: 'Trích từ thông tin nguồn: • Danh mục: dich-vu'
-confidence: high
 entity_id: ENT-PROD-EMEETING-001
-entity_name: Cloud Meeting
 entity_type: product
-observed_at: '2026-04-04T20:38:10.481165+07:00'
+entity_name: Cloud Meeting
+attribute: category
+value: dich-vu
+unit: null
 qualifiers: null
-review_state: approved
-risk_class: low
 source_ids:
 - SRC-CLOUD_MEETING_E_MEETING_GIAI_PHAP_HOP_TRUC_TUYEN_TAI_BKNS_2026_04_04
-unit: null
+observed_at: '2026-04-04T20:38:10.481165+07:00'
 valid_from: '2026-04-04'
-value: dich-vu
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ thông tin nguồn: • Danh mục: dich-vu'
+approved_at: '2026-04-05T22:26:36.228340+07:00'
+approved_by: admin-batch

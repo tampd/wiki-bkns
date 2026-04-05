@@ -1,0 +1,19 @@
+claim_id: CLM-ENT-COMPANY--CUSTOMER-20260405
+entity_id: ENT-COMPANY-001
+entity_type: company
+entity_name: BKNS
+attribute: customer_base
+value: 500000
+unit: null
+qualifiers:
+  comparison: greater_than
+  customer_type: cá nhân và doanh nghiệp
+source_ids:
+- SRC-DANG_KY_TEN_MIEN_2026_04_05
+observed_at: '2026-04-05T21:53:55.743409+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Giới thiệu: ''Hơn 500.000+ cá nhân và doanh nghiệp tin
+  dùng dịch vụ đăng ký tên miền tại BKNS.'''

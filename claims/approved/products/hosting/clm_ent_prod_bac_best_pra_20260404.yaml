@@ -16,5 +16,5 @@ review_state: approved
 risk_class: low
 compiler_note: 'Trích từ BK3: 3-2-1 backup rule là gì? 3 bản sao dữ liệu, 2 loại media
   khác nhau (disk + cloud), 1 bản offsite (datacenter khác).'
-approved_at: '2026-04-04T21:19:26.684472+07:00'
+approved_at: '2026-04-05T22:26:35.108012+07:00'
 approved_by: admin-batch

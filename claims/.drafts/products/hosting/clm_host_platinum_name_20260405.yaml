@@ -1,0 +1,19 @@
+claim_id: CLM-HOST-PLATINUM-NAME-20260405
+entity_id: product.hosting.platinum
+entity_type: product_line
+entity_name: Platinum Web Hosting
+attribute: name
+value: Platinum Web Hosting
+unit: null
+qualifiers:
+  source_url: https://www.bkns.vn/hosting/platinum-web-hosting.html
+  retrieved_at: '2026-04-05T14:25:00+07:00'
+source_ids:
+- SRC-PLATINUM_WEB_HOSTING_WEB_2026_04_05
+observed_at: '2026-04-05T22:08:42.119340+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ tiêu đề: # Platinum Web Hosting - Hosting NVMe Tốc Độ Cao,
+  Backup 3 Lần/Ngày'

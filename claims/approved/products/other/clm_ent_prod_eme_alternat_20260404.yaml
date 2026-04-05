@@ -1,17 +1,19 @@
-attribute: alternate_name
 claim_id: CLM-ENT-PROD-EME-ALTERNAT-20260404
-compiler_note: 'Trích từ tiêu đề và mô tả: ═══ Cloud Meeting (E-meeting)... Cloud
-  Meeting là dịch vụ họp trực tuyến của BKNS, còn được gọi là E-Meeting.'
-confidence: high
 entity_id: ENT-PROD-EMEETING-001
-entity_name: Cloud Meeting
 entity_type: product
-observed_at: '2026-04-04T20:38:10.477027+07:00'
+entity_name: Cloud Meeting
+attribute: alternate_name
+value: E-meeting
+unit: null
 qualifiers: null
-review_state: approved
-risk_class: low
 source_ids:
 - SRC-CLOUD_MEETING_E_MEETING_GIAI_PHAP_HOP_TRUC_TUYEN_TAI_BKNS_2026_04_04
-unit: null
+observed_at: '2026-04-04T20:38:10.477027+07:00'
 valid_from: '2026-04-04'
-value: E-meeting
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ tiêu đề và mô tả: ═══ Cloud Meeting (E-meeting)... Cloud
+  Meeting là dịch vụ họp trực tuyến của BKNS, còn được gọi là E-Meeting.'
+approved_at: '2026-04-05T22:26:36.219498+07:00'
+approved_by: admin-batch

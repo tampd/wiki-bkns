@@ -1,18 +1,20 @@
-attribute: email_forwarder_limit
 claim_id: CLM-EMAI-EMAIL_2-EMAIL_FO-20260404
+entity_id: product.email_hosting.email_2
+entity_type: product_plan
+entity_name: Email Hosting - Gói EMAIL 2
+attribute: email_forwarder_limit
+value: 10
+unit: null
+qualifiers: null
+source_ids:
+- SRC-BANG_GIA_DICH_VU_BKNS_TEXT_2026_04_04
+observed_at: '2026-04-04T20:22:33.836977+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: normal
 compiler_note: 'Gói EMAIL 2:
 
   - Email forwarders: 10'
-confidence: high
-entity_id: product.email_hosting.email_2
-entity_name: Email Hosting - Gói EMAIL 2
-entity_type: product_plan
-observed_at: '2026-04-04T20:22:33.836977+07:00'
-qualifiers: null
-review_state: approved
-risk_class: normal
-source_ids:
-- SRC-BANG_GIA_DICH_VU_BKNS_TEXT_2026_04_04
-unit: null
-valid_from: '2026-04-04'
-value: 10
+approved_at: '2026-04-05T22:26:36.147729+07:00'
+approved_by: admin-batch

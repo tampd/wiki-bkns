@@ -1,0 +1,19 @@
+claim_id: CLM-ENT-PROD-VPS-STORAGE_-20260405
+entity_id: ENT-PROD-VPS
+entity_type: product_offering
+entity_name: Cloud VPS VM
+attribute: storage_type
+value: NVMe SSD
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-CLOUD_VPS_VM_WEB_2026_04_05
+observed_at: '2026-04-05T21:49:02.589902+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ tiêu đề và giới thiệu: ''# Cloud VPS VM - Tốc Độ Cao, NVMe
+  SSD, Uptime 99.99%'' và ''Cloud VPS VM tốc độ cao với NVMe SSD...'''
+approved_at: '2026-04-05T22:26:37.343844+07:00'
+approved_by: admin-batch

@@ -1,0 +1,18 @@
+claim_id: CLM-VPS-SEO_02-CPU_CORE-20260405
+entity_id: product.vps.seo_02
+entity_type: product_plan
+entity_name: SEO 02
+attribute: cpu_cores
+value: 5
+unit: core
+qualifiers: null
+source_ids:
+- SRC-VPS_SEO_WEB_2026_04_05
+observed_at: '2026-04-05T22:23:09.226069+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ bảng giá, dòng SEO 02: ''05 Core'''
+approved_at: '2026-04-05T22:26:37.897253+07:00'
+approved_by: admin-batch

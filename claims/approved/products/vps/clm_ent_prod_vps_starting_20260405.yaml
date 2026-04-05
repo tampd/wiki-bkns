@@ -1,0 +1,19 @@
+claim_id: CLM-ENT-PROD-VPS-STARTING-20260405
+entity_id: ENT-PROD-VPS
+entity_type: product_offering
+entity_name: Cloud VPS VM
+attribute: starting_price
+value: 42000
+unit: VND
+qualifiers:
+  billing_cycle: month
+source_ids:
+- SRC-CLOUD_VPS_VM_WEB_2026_04_05
+observed_at: '2026-04-05T21:49:02.594452+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: approved
+risk_class: high
+compiler_note: 'Trích từ giới thiệu: ''Giá từ 42.000đ/tháng.'''
+approved_at: '2026-04-05T22:26:37.330921+07:00'
+approved_by: admin-batch

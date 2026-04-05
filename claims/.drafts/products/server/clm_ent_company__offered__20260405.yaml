@@ -1,0 +1,17 @@
+claim_id: CLM-ENT-COMPANY--OFFERED_-20260405
+entity_id: ENT-COMPANY-001
+entity_type: company
+entity_name: BKNS
+attribute: offered_service
+value: Dịch vụ quản trị máy chủ trọn gói
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-THUE_MAY_CHU_WEB_2026_04_05
+observed_at: '2026-04-05T22:18:42.833838+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Dịch vụ liên quan: ''- Dịch vụ quản trị máy chủ trọn
+  gói'''

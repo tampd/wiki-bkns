@@ -15,5 +15,5 @@ review_state: approved
 risk_class: low
 compiler_note: 'Trích từ mục Tính năng / Thành phần: • Toàn quyền quản trị: Cung cấp
   quyền truy cập root, cho phép người dùng toàn quyền cài đặt và cấu hình máy chủ.'
-approved_at: '2026-04-04T21:19:28.310178+07:00'
+approved_at: '2026-04-05T22:26:37.241426+07:00'
 approved_by: admin-batch

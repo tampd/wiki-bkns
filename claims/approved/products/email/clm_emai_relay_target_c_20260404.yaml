@@ -17,5 +17,5 @@ risk_class: low
 compiler_note: 'Trích từ mục Tóm tắt nhanh: • Phù hợp với: Các khách hàng đã có Email
   Server riêng và tự quản lý nhưng gặp vấn đề khi gửi email ra ngoài (ví dụ: IP bị
   blacklist, email vào spam).'
-approved_at: '2026-04-04T21:19:26.553402+07:00'
+approved_at: '2026-04-05T22:26:34.865600+07:00'
 approved_by: admin-batch

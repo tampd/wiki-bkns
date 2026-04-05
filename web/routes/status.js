@@ -3,7 +3,7 @@
 const path = require('path');
 const fs = require('fs');
 
-const WIKI_DIR = path.resolve(__dirname, '../../wiki');
+const WIKI_PRODUCTS_DIR = path.resolve(__dirname, '../../wiki/products');
 const CLAIMS_DIR = path.resolve(__dirname, '../../claims');
 const RAW_WEB_DIR = path.resolve(__dirname, '../../raw/web');
 const RAW_MANUAL_DIR = path.resolve(__dirname, '../../raw/manual');
@@ -40,8 +40,16 @@ function statusRoute(router, pipelineRunner) {
       // Count files
       const webFiles = countFiles(RAW_WEB_DIR);
       const manualFiles = countFiles(RAW_MANUAL_DIR);
-      const wikiPages = countFiles(WIKI_DIR);
       const claims = countFiles(CLAIMS_DIR);
+
+      // Count only compiled product wiki pages (directories with tong-quan.md)
+      let wikiPages = 0;
+      if (fs.existsSync(WIKI_PRODUCTS_DIR)) {
+        wikiPages = fs.readdirSync(WIKI_PRODUCTS_DIR, { withFileTypes: true })
+          .filter(e => e.isDirectory() && !e.name.startsWith('.'))
+          .filter(e => fs.existsSync(path.join(WIKI_PRODUCTS_DIR, e.name, 'tong-quan.md')))
+          .length;
+      }
 
       // Build version
       let buildVersion = '—';

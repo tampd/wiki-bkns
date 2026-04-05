@@ -1,0 +1,18 @@
+claim_id: CLM-HOST-BKNS_FREE-SUITABIL-20260405
+entity_id: product.hosting.bkns_free
+entity_type: product_plan
+entity_name: Hosting Miễn Phí
+attribute: suitability
+value: phù hợp cho người mới học làm website
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-HOSTING_MIEN_PHI_WEB_2026_04_05
+observed_at: '2026-04-05T22:03:59.627283+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ đặc điểm: ''- Phù hợp cho người mới học làm website'''
+approved_at: '2026-04-05T22:26:35.501780+07:00'
+approved_by: admin-batch

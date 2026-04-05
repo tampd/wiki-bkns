@@ -1,0 +1,16 @@
+claim_id: CLM-ENT-PROD-VPS-PROVISIO-20260405
+entity_id: ENT-PROD-VPS-AMD
+entity_type: product
+entity_name: Cloud VPS AMD
+attribute: provisioning_time
+value: 1
+unit: minute
+qualifiers: {}
+source_ids:
+- SRC-CLOUD_VPS_AMD_WEB_2026_04_05
+observed_at: '2026-04-05T21:46:05.005599+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Thông số kỹ thuật: Khởi tạo: Cực nhanh 1 phút'

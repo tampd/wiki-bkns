@@ -1,0 +1,16 @@
+claim_id: CLM-ENT-PROD-SOF-MIN_CPU_-20260405
+entity_id: ENT-PROD-SOFTWARE-DIRECTADMIN
+entity_type: product
+entity_name: DirectAdmin
+attribute: min_cpu_cores
+value: 1
+unit: core
+qualifiers: {}
+source_ids:
+- SRC-DIRECTADMIN_WEB_2026_04_05
+observed_at: '2026-04-05T21:56:38.828976+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Cấu hình tối thiểu: ''- CPU: 1 Core'''

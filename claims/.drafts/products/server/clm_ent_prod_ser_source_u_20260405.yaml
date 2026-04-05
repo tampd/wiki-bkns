@@ -1,0 +1,16 @@
+claim_id: CLM-ENT-PROD-SER-SOURCE_U-20260405
+entity_id: ENT-PROD-SERVER-MGT-001
+entity_type: service
+entity_name: Dịch vụ Quản trị Máy chủ Trọn gói
+attribute: source_url
+value: https://www.bkns.vn/server/dich-vu-quan-tri-may-chu-tron-goi.html
+unit: null
+qualifiers: null
+source_ids:
+- SRC-QUAN_TRI_MAY_CHU_WEB_2026_04_05
+observed_at: '2026-04-05T22:10:29.071628+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ nội dung: ''- Nguồn: https://www.bkns.vn/server/dich-vu-quan-tri-may-chu-tron-goi.html'''

@@ -16,5 +16,5 @@ review_state: approved
 risk_class: low
 compiler_note: 'Trích từ bảng So sánh Email Relay và Email Server: | EMAIL RELAY |
   Toàn bộ email gửi ra ngoài sẽ được routing qua hệ thống của BKNS để xử lý. |'
-approved_at: '2026-04-04T21:19:26.493416+07:00'
+approved_at: '2026-04-05T22:26:34.804765+07:00'
 approved_by: admin-batch

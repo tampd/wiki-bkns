@@ -30,7 +30,7 @@
   <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
     <div class="modal card" id="modal-content">
       <h3 id="modal-title">Xác nhận</h3>
-      <p id="modal-message">Bạn có chắc chắn?</p>
+      <div id="modal-message" class="modal-message">Bạn có chắc chắn?</div>
       <div class="modal-actions">
         <button class="btn btn-ghost" id="modal-cancel" aria-label="Hủy">Hủy</button>
         <button class="btn btn-primary" id="modal-confirm" aria-label="Xác nhận">Xác nhận</button>
@@ -239,12 +239,14 @@
             <button class="files-tab" data-source="web" role="tab" aria-selected="false">Web Upload</button>
             <button class="files-tab" data-source="manual" role="tab" aria-selected="false">Manual</button>
           </div>
+          <span id="files-selected-info" style="display:none;font-size:0.8rem;opacity:0.6;align-self:center"></span>
         </div>
 
         <div style="overflow-x:auto">
           <table class="files-table" aria-label="Danh sách file">
             <thead>
               <tr>
+                <th scope="col"><input type="checkbox" id="select-all-files" aria-label="Chọn tất cả" style="cursor:pointer"></th>
                 <th scope="col">Tên file</th>
                 <th scope="col">Nguồn</th>
                 <th scope="col">Kích thước</th>
@@ -254,7 +256,7 @@
             </thead>
             <tbody id="files-tbody">
               <tr>
-                <td colspan="5" class="files-empty">
+                <td colspan="6" class="files-empty">
                   <i data-lucide="inbox" style="margin:0 auto var(--space-3);opacity:0.3;display:block;width:48px;height:48px"></i>
                   Chưa có file nào
                 </td>

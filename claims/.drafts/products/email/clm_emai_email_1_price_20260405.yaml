@@ -1,0 +1,18 @@
+claim_id: CLM-EMAI-EMAIL_1-PRICE-20260405
+entity_id: product.email.email_1
+entity_type: product_plan
+entity_name: EMAIL 1
+attribute: price
+value: 42750
+unit: VND
+qualifiers:
+  billing_cycle: month
+  source: website
+source_ids:
+- SRC-EMAIL_HOSTING_WEB_2026_04_05
+observed_at: '2026-04-05T21:59:38.417592+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ Bảng giá các gói Email Hosting (website): ''EMAIL 1 | 42.750đ'''

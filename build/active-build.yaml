@@ -1,9 +1,9 @@
-build_id: BLD-20260404-215859
-version: v0.3
-build_date: '2026-04-04T21:58:59.664124+07:00'
-wiki_token_estimate: 13786
-wiki_files: 9
-claims_count: 809
-wiki_hash: sha256:41ca4a4b34701be7e07456474a4c3d346e75f49a79f5cffbe514ec8a6685eaaa
-git_tag: v0.3
+build_id: BLD-20260405-224146
+version: v0.5
+build_date: '2026-04-05T22:41:46.753808+07:00'
+wiki_token_estimate: 11894
+wiki_files: 11
+claims_count: 1038
+wiki_hash: sha256:b2425d8c9af15cbeb35df0dd296bc329d6c40eb55c7bf6b5e05bc8afff4e5d8c
+git_tag: v0.5
 status: active

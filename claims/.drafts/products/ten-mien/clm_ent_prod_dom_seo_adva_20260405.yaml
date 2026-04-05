@@ -1,0 +1,18 @@
+claim_id: CLM-ENT-PROD-DOM-SEO_ADVA-20260405
+entity_id: ENT-PROD-DOMAIN
+entity_type: product_category
+entity_name: Tên miền
+attribute: seo_advantage
+value: Lợi thế SEO Local vượt trội
+unit: null
+qualifiers:
+  domain_extension: .VN
+source_ids:
+- SRC-DANG_KY_TEN_MIEN_2026_04_05
+observed_at: '2026-04-05T21:53:55.763432+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tại sao chọn BKNS?: ''Lợi thế SEO Local vượt trội (Google
+  ưu tiên .VN cho IP Việt Nam)'''

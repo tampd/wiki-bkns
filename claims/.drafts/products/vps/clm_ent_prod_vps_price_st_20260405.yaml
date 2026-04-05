@@ -1,0 +1,17 @@
+claim_id: CLM-ENT-PROD-VPS-PRICE_ST-20260405
+entity_id: ENT-PROD-VPS-AMD
+entity_type: product
+entity_name: Cloud VPS AMD
+attribute: price_starts_at
+value: 165000
+unit: VND
+qualifiers:
+  billing_cycle: month
+source_ids:
+- SRC-CLOUD_VPS_AMD_WEB_2026_04_05
+observed_at: '2026-04-05T21:46:04.993947+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ đoạn giới thiệu: giá từ 165.000đ/tháng.'

@@ -15,5 +15,5 @@ review_state: approved
 risk_class: low
 compiler_note: 'Trích từ bảng thông số gói MCCB01: ''| Server | Dell R620 / HPDL360
   G8 |'''
-approved_at: '2026-04-04T21:19:25.813521+07:00'
+approved_at: '2026-04-05T22:26:33.807137+07:00'
 approved_by: admin-batch

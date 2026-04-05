@@ -1,0 +1,17 @@
+claim_id: CLM-HOST-SEO-PRODUCT_-20260405
+entity_id: product.hosting.seo
+entity_type: product
+entity_name: Hosting SEO
+attribute: product_name
+value: Hosting SEO
+unit: ''
+qualifiers: {}
+source_ids:
+- SRC-SEO_HOSTING_WEB_2026_04_05
+observed_at: '2026-04-05T22:12:42.213866+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ tiêu đề: ''# Hosting SEO - Tối Ưu Website Cho Công Cụ Tìm
+  Kiếm'''

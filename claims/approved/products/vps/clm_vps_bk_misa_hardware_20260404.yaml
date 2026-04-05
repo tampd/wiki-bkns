@@ -15,5 +15,5 @@ review_state: approved
 risk_class: low
 compiler_note: 'Trích từ Thông số kỹ thuật / Giới hạn: Phần cứng: Sử dụng Chipset
   Intel Xeon, RAM DDR4, ổ cứng SSD & NVME.'
-approved_at: '2026-04-04T21:19:28.613544+07:00'
+approved_at: '2026-04-05T22:26:37.678598+07:00'
 approved_by: admin-batch

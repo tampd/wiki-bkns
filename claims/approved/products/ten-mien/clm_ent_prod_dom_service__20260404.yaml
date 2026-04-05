@@ -18,5 +18,5 @@ risk_class: low
 compiler_note: 'Trích từ Tóm tắt nhanh: • Điều kiện/giới hạn nổi bật \(nếu có\): Mọi
   thay đổi trên tên miền \(chuyển nhượng, sửa DNS, xóa, thay đổi thông tin\) sẽ bị
   khóa và cần thực hiện quy trình xác thực đa bên để mở khóa tạm thời\.'
-approved_at: '2026-04-04T21:19:26.181728+07:00'
+approved_at: '2026-04-05T22:26:34.383595+07:00'
 approved_by: admin-batch

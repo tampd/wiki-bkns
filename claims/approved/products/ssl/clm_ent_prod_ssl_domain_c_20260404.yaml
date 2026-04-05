@@ -15,5 +15,5 @@ review_state: approved
 risk_class: low
 compiler_note: 'Trích từ mục ''Tóm tắt nhanh'': ...dùng để bảo mật một tên miền chính
   và không giới hạn số lượng tên miền phụ (subdomain) cấp 1 của nó.'
-approved_at: '2026-04-04T21:19:27.727241+07:00'
+approved_at: '2026-04-05T22:26:36.398355+07:00'
 approved_by: admin-batch

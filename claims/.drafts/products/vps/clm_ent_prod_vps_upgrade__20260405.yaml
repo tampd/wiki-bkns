@@ -1,0 +1,19 @@
+claim_id: CLM-ENT-PROD-VPS-UPGRADE_-20260405
+entity_id: ENT-PROD-VPS
+entity_type: product_upgrade
+entity_name: Cloud VPS VM Upgrade
+attribute: upgrade_price
+value: 80000
+unit: VND
+qualifiers:
+  resource: Tốc độ
+  billing_cycle: month
+  note: Giá chính xác từ bảng giá nội bộ, chưa VAT
+source_ids:
+- SRC-CLOUD_VPS_VM_WEB_2026_04_05
+observed_at: '2026-04-05T21:49:02.606202+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ bảng giá nâng cấp: ''| Tốc độ | 80.000đ |'''

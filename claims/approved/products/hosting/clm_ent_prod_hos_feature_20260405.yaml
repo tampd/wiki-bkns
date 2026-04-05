@@ -1,0 +1,19 @@
+claim_id: CLM-ENT-PROD-HOS-FEATURE-20260405
+entity_id: ENT-PROD-HOSTING
+entity_type: product
+entity_name: Hosting WordPress
+attribute: feature
+value: Bảo mật
+unit: null
+qualifiers:
+  product_line: Hosting WordPress
+source_ids:
+- SRC-HOSTING_WORDPRESS_WEB_2026_04_05
+observed_at: '2026-04-05T22:04:52.743071+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ mục Giới thiệu: ''...đảm bảo tốc độ cao và bảo mật.'''
+approved_at: '2026-04-05T22:26:35.256322+07:00'
+approved_by: admin-batch

@@ -1,0 +1,18 @@
+claim_id: CLM-HOST-BKNS_RESELLER_CPANEL-FEATURE-20260405
+entity_id: product.hosting.bkns_reseller_cpanel
+entity_type: product
+entity_name: Reseller Hosting cPanel
+attribute: feature
+value: Cài WordPress 1 click qua Softaculous
+unit: null
+qualifiers: null
+source_ids:
+- SRC-RESELLER_HOSTING_WEB_2026_04_05
+observed_at: '2026-04-05T22:11:26.608769+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ đặc điểm: - Cài WordPress 1 click qua Softaculous'
+approved_at: '2026-04-05T22:26:35.531123+07:00'
+approved_by: admin-batch

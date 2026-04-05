@@ -1,0 +1,19 @@
+claim_id: CLM-SOFT-CPANEL-TARGET_P-20260405
+entity_id: product.software.cpanel.5acc
+entity_type: product_plan
+entity_name: 5 Account
+attribute: target_product
+value: VPS
+unit: null
+qualifiers:
+  target_entity_id: ENT-PROD-VPS
+source_ids:
+- SRC-CPANEL_WHM_WEB_2026_04_05
+observed_at: '2026-04-05T21:52:26.268168+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ Bảng giá, cột Đối tượng: ''VPS'''
+approved_at: '2026-04-05T22:26:38.205047+07:00'
+approved_by: admin-batch

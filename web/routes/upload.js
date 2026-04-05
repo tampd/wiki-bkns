@@ -67,7 +67,7 @@ function uploadRoute(router, pipelineRunner) {
 
       for (const file of req.files) {
         const entry = {
-          id: path.basename(file.filename, path.extname(file.filename)).split('-')[0],
+          id: (file.filename.match(/^([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})/i) || [])[1] || '',
           filename: file.originalname,
           stored_name: file.filename,
           path: file.path,

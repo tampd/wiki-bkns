@@ -16,5 +16,5 @@ review_state: approved
 risk_class: low
 compiler_note: 'Trích từ BK10: 30% backup fail khi restore (corrupted, incomplete,
   wrong config).'
-approved_at: '2026-04-04T21:19:26.688835+07:00'
+approved_at: '2026-04-05T22:26:35.112637+07:00'
 approved_by: admin-batch

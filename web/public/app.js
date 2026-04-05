@@ -178,6 +178,9 @@
     dom.modalTitle.textContent = title;
     dom.modalMessage.textContent = message;
     dom.modalConfirm.textContent = confirmText;
+    dom.modalCancel.style.display = '';
+    const modalCard = dom.modalOverlay.querySelector('.modal');
+    if (modalCard) modalCard.style.maxWidth = '';
     dom.modalOverlay.classList.add('active');
     dom.modalConfirm.focus();
     return new Promise((resolve) => { modalResolve = resolve; });
@@ -482,7 +485,7 @@
 
       if (!data.files || data.files.length === 0) {
         dom.filesTbody.innerHTML = `
-          <tr><td colspan="5" class="files-empty">
+          <tr><td colspan="6" class="files-empty">
             <div style="opacity:0.3;font-size:2rem;margin-bottom:var(--space-2)">📂</div>
             Chưa có file nào
           </td></tr>`;
@@ -493,19 +496,27 @@
       dom.filesTbody.innerHTML = data.files.map(f => {
         const info = getFileTypeInfo(f.filename || f.name || '');
         const source = f.source === 'web' ? '🌐 Web' : '📁 Manual';
+        const fileId = escapeHtml(f.id || '');
+        const fname = f.filename || f.name || '';
+        const ext = getFileExt(fname).toLowerCase();
+        const isViewable = ['.md', '.txt', '.csv', '.json', '.yaml', '.yml'].includes(ext);
         return `
           <tr>
             <td>
               <div class="file-name-cell">
-                <div class="file-icon ${info.cls}" style="width:28px;height:28px;font-size:0.6rem">${info.label}</div>
-                <span class="file-name-text" title="${escapeHtml(f.filename || f.name || '')}">${escapeHtml(f.filename || f.name || '')}</span>
+                <input type="checkbox" class="file-row-checkbox" data-id="${fileId}" aria-label="Chọn ${escapeHtml(fname)}" style="margin-right:6px;cursor:pointer;flex-shrink:0;">
+                <div class="file-icon ${info.cls}" style="width:28px;height:28px;font-size:0.6rem;flex-shrink:0">${info.label}</div>
+                <span class="file-name-text" title="${escapeHtml(fname)}" style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:260px;display:inline-block">${escapeHtml(fname)}</span>
               </div>
             </td>
             <td>${source}</td>
             <td class="file-size-cell">${formatSize(f.size || 0)}</td>
             <td class="file-date">${formatDate(f.uploaded_at || f.mtime)}</td>
-            <td class="file-actions-cell">
-              <button class="btn btn-ghost btn-icon" onclick="deleteFile('${escapeHtml(f.id || '')}')" aria-label="Xóa file" ${!f.id ? 'disabled' : ''}>
+            <td class="file-actions-cell" style="display:flex;gap:4px;align-items:center">
+              ${isViewable && fileId ? `<button class="btn btn-ghost btn-icon" onclick="viewFile('${fileId}','${escapeHtml(fname)}')" aria-label="Xem nội dung ${escapeHtml(fname)}" title="Xem nội dung">
+                <i data-lucide="eye" aria-hidden="true"></i>
+              </button>` : ''}
+              <button class="btn btn-ghost btn-icon" onclick="deleteFile('${fileId}')" aria-label="Xóa file" ${!fileId ? 'disabled' : ''} title="Xóa file">
                 <i data-lucide="trash-2" aria-hidden="true"></i>
               </button>
             </td>
@@ -513,6 +524,24 @@
       }).join('');
 
       lucide.createIcons();
+
+      // Wire up Select All checkbox
+      const selectAll = document.getElementById('select-all-files');
+      if (selectAll) {
+        selectAll.checked = false;
+        selectAll.addEventListener('change', () => {
+          document.querySelectorAll('.file-row-checkbox').forEach(cb => {
+            cb.checked = selectAll.checked;
+          });
+          updateBulkDeleteBtn();
+        });
+      }
+      document.querySelectorAll('.file-row-checkbox').forEach(cb => {
+        cb.addEventListener('change', () => {
+          if (selectAll) selectAll.checked = [...document.querySelectorAll('.file-row-checkbox')].every(c => c.checked);
+          updateBulkDeleteBtn();
+        });
+      });
 
       // Pagination
       const total = data.total || 0;
@@ -561,7 +590,7 @@
     if (!ok) return;
 
     try {
-      const res = await apiFetch('/api/files/' + id, { method: 'DELETE' });
+      const res = await apiFetch('/api/files/' + encodeURIComponent(id), { method: 'DELETE' });
       if (res.ok) {
         toast('success', 'Đã xóa file');
         loadFiles();
@@ -573,6 +602,67 @@
       toast('error', 'Lỗi', e.message);
     }
   };
+
+  // View file content in modal (text files only)
+  window.viewFile = async function (id, filename) {
+    if (!id) return;
+    try {
+      const res = await apiFetch('/api/files/' + encodeURIComponent(id) + '/content');
+      if (!res.ok) {
+        const err = await res.json().catch(() => ({}));
+        toast('error', 'Không thể xem file', err.error || 'Lỗi');
+        return;
+      }
+      const data = await res.json();
+      const content = data.content || '';
+      const lines = content.split('\n').length;
+
+      // Show file content in wider modal
+      dom.modalTitle.textContent = filename;
+      dom.modalMessage.innerHTML = '';
+
+      const pre = document.createElement('pre');
+      pre.style.cssText = 'max-height:60vh;overflow:auto;font-size:0.75rem;white-space:pre-wrap;word-break:break-word;text-align:left;background:var(--surface-2,#1a1a2e);padding:var(--space-3);border-radius:6px;margin:0 0 var(--space-2)';
+      pre.textContent = content;
+      dom.modalMessage.appendChild(pre);
+
+      const meta = document.createElement('div');
+      meta.style.cssText = 'font-size:0.75rem;opacity:0.5';
+      meta.textContent = `${lines} dòng · ${formatSize(data.size || content.length)}`;
+      dom.modalMessage.appendChild(meta);
+
+      // Expand modal for file viewing
+      const modalCard = dom.modalOverlay.querySelector('.modal');
+      if (modalCard) modalCard.style.maxWidth = '800px';
+
+      dom.modalConfirm.textContent = 'Đóng';
+      dom.modalCancel.style.display = 'none';
+      dom.modalOverlay.classList.add('active');
+      dom.modalConfirm.focus();
+      // Override confirm to close and restore modal
+      const cleanup = () => {
+        dom.modalConfirm.textContent = 'Xác nhận';
+        dom.modalCancel.style.display = '';
+        if (modalCard) modalCard.style.maxWidth = '';
+      };
+      modalResolve = () => { cleanup(); };
+    } catch (e) {
+      toast('error', 'Lỗi kết nối', e.message);
+    }
+  };
+
+  // Update selection counter (checkboxes are for selection only — no bulk action)
+  function updateBulkDeleteBtn() {
+    const info = document.getElementById('files-selected-info');
+    if (!info) return;
+    const checked = [...document.querySelectorAll('.file-row-checkbox:checked')];
+    if (checked.length > 0) {
+      info.style.display = 'inline';
+      info.textContent = `Đã chọn ${checked.length} file`;
+    } else {
+      info.style.display = 'none';
+    }
+  }
 
   // ============================================================
   // TAB NAVIGATION
@@ -643,7 +733,9 @@
   function renderWikiPreview(markdown) {
     if (typeof marked === 'undefined') return '<em>marked.js chưa tải</em>';
     try {
-      return marked.parse(markdown, { breaks: true, gfm: true });
+      const html = marked.parse(markdown, { breaks: true, gfm: true });
+      // Open all links in new tab so they don't navigate away from the app
+      return html.replace(/<a href=/g, '<a target="_blank" rel="noopener noreferrer" href=');
     } catch {
       return '<em>Lỗi render markdown</em>';
     }

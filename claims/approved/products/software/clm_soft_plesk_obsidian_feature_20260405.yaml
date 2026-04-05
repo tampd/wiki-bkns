@@ -1,0 +1,18 @@
+claim_id: CLM-SOFT-PLESK_OBSIDIAN-FEATURE-20260405
+entity_id: product.software.plesk_obsidian
+entity_type: product
+entity_name: Plesk Obsidian
+attribute: feature
+value: Security Advisor
+unit: ''
+qualifiers: {}
+source_ids:
+- SRC-PLESK_OBSIDIAN_WEB_2026_04_05
+observed_at: '2026-04-05T22:09:26.910493+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ: ''Security Advisor'''
+approved_at: '2026-04-05T22:26:38.263672+07:00'
+approved_by: admin-batch

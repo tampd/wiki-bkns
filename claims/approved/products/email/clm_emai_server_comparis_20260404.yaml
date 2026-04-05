@@ -16,5 +16,5 @@ review_state: approved
 risk_class: low
 compiler_note: 'Trích từ bảng So sánh Email Hosting và Email Server: | EMAIL SERVER
   | Sử dụng một IP riêng biệt, không dùng chung. |'
-approved_at: '2026-04-04T21:19:26.557218+07:00'
+approved_at: '2026-04-05T22:26:34.872897+07:00'
 approved_by: admin-batch

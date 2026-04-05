@@ -58,36 +58,35 @@ class PipelineRunner {
 
   _buildCommands(action) {
     const commands = [];
-    const scriptDir = path.join(PROJECT_ROOT, 'scripts');
 
-    // Check which scripts exist
-    const hasConvert = fs.existsSync(path.join(scriptDir, 'convert_manual.py'));
-    const hasExtract = fs.existsSync(path.join(scriptDir, 'extract.py'));
-    const hasCompile = fs.existsSync(path.join(scriptDir, 'compile.py'));
+    // Script locations (relative to PROJECT_ROOT)
+    const convertScript = path.join(PROJECT_ROOT, 'tools', 'convert_manual.py');
+    const extractScript = path.join(PROJECT_ROOT, 'skills', 'extract-claims', 'scripts', 'extract.py');
+    const compileScript = path.join(PROJECT_ROOT, 'skills', 'compile-wiki', 'scripts', 'compile.py');
 
     if (action === 'extract' || action === 'full') {
-      if (hasConvert) {
+      if (fs.existsSync(convertScript)) {
         commands.push({
           name: 'convert',
           cmd: 'python3',
-          args: [path.join(scriptDir, 'convert_manual.py')],
+          args: [convertScript],
         });
       }
-      if (hasExtract) {
+      if (fs.existsSync(extractScript)) {
         commands.push({
           name: 'extract',
           cmd: 'python3',
-          args: [path.join(scriptDir, 'extract.py')],
+          args: [extractScript],
         });
       }
     }
 
     if (action === 'compile' || action === 'full') {
-      if (hasCompile) {
+      if (fs.existsSync(compileScript)) {
         commands.push({
           name: 'compile',
           cmd: 'python3',
-          args: [path.join(scriptDir, 'compile.py')],
+          args: [compileScript],
         });
       }
     }

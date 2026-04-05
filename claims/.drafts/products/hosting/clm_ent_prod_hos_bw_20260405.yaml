@@ -1,0 +1,16 @@
+claim_id: CLM-ENT-PROD-HOS-BW-20260405
+entity_id: ENT-PROD-HOSTING
+entity_type: product_line
+entity_name: Hosting Giá Rẻ
+attribute: bandwidth
+value: unlimited
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-HOSTING_GIA_RE_WEB_2026_04_05
+observed_at: '2026-04-05T22:02:28.703667+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ: ''Băng thông không giới hạn'''

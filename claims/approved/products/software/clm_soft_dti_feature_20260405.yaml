@@ -1,0 +1,18 @@
+claim_id: CLM-SOFT-DTI-FEATURE-20260405
+entity_id: product.software.dti
+entity_type: product
+entity_name: Phần Mềm Đánh Giá Chuyển Đổi Số DTI
+attribute: feature
+value: Đề xuất lộ trình chuyển đổi số
+unit: ''
+qualifiers: {}
+source_ids:
+- SRC-DTI_WEB_2026_04_05
+observed_at: '2026-04-05T21:58:28.005097+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ mục Đặc điểm: ''- Đề xuất lộ trình chuyển đổi số'''
+approved_at: '2026-04-05T22:26:38.229990+07:00'
+approved_by: admin-batch

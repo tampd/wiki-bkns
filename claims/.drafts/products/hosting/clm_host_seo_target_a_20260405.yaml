@@ -1,0 +1,16 @@
+claim_id: CLM-HOST-SEO-TARGET_A-20260405
+entity_id: product.hosting.seo
+entity_type: product
+entity_name: Hosting SEO
+attribute: target_audience
+value: Chiến dịch link building đa IP
+unit: ''
+qualifiers: {}
+source_ids:
+- SRC-SEO_HOSTING_WEB_2026_04_05
+observed_at: '2026-04-05T22:12:42.261945+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ phần Phù hợp cho: ''- Chiến dịch link building đa IP'''

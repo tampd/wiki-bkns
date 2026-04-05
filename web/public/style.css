@@ -961,7 +961,7 @@ h3 { font-size: var(--text-2xl); }
   margin-bottom: var(--space-3);
 }
 
-.modal p {
+.modal-message {
   color: var(--color-text-secondary);
   font-size: var(--text-sm);
   margin-bottom: var(--space-6);

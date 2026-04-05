@@ -1,0 +1,16 @@
+claim_id: CLM-ENT-PROD-VPS-CPU_CORE-20260405
+entity_id: ENT-PROD-VPS-AMD-5
+entity_type: product_plan
+entity_name: AMD 5
+attribute: cpu_cores
+value: 4
+unit: core
+qualifiers: {}
+source_ids:
+- SRC-CLOUD_VPS_AMD_WEB_2026_04_05
+observed_at: '2026-04-05T21:46:05.023973+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng giá gói AMD 5: CPU | 04 Core'

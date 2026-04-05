@@ -1,0 +1,18 @@
+claim_id: CLM-HOST-WINDOWS-SUITABIL-20260405
+entity_id: product.hosting.windows
+entity_type: product_service
+entity_name: Windows Hosting
+attribute: suitability
+value: ứng dụng .NET Framework
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-WINDOWS_HOSTING_WEB_2026_04_05
+observed_at: '2026-04-05T22:25:30.857521+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ Giới thiệu: ''...phù hợp cho ứng dụng .NET Framework.'''
+approved_at: '2026-04-05T22:26:35.968478+07:00'
+approved_by: admin-batch

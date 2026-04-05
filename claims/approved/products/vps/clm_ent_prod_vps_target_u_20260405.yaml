@@ -1,0 +1,19 @@
+claim_id: CLM-ENT-PROD-VPS-TARGET_U-20260405
+entity_id: ENT-PROD-VPS-SIEU-RE
+entity_type: product_line
+entity_name: VPS Siêu Tiết Kiệm
+attribute: target_use_case
+value: tool automation
+unit: ''
+qualifiers: {}
+source_ids:
+- SRC-VPS_SIEU_RE_WEB_2026_04_05
+observed_at: '2026-04-05T22:24:38.264843+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ mục Giới thiệu: VPS cấu hình cao, giá rẻ - phù hợp cho MMO,
+  tool automation.'
+approved_at: '2026-04-05T22:26:37.366312+07:00'
+approved_by: admin-batch

@@ -2,167 +2,68 @@
 page_id: wiki.products.hosting.tong-quan
 title: Hosting BKNS — Tổng Quan
 category: products/hosting
-updated: '2026-04-04'
+updated: '2026-04-05'
 review_state: approved
 sensitivity: high
-price_source: raw/manual/Bảng giá Hosting- VPS- Email.xlsx
-price_source_note: Giá chưa bao gồm VAT. Cập nhật từ bảng giá chính thức 2026-04-04.
+compiled_from:
+- CLM-EMAI-EMAIL1-HOURLY_S-20260404
+- CLM-EMAI-EMAIL1-NUM_ACCO-20260404
+- CLM-EMAI-EMAIL1-NUM_DOMA-20260404
+- CLM-EMAI-EMAIL1-NUM_EMAI-20260404
+- CLM-EMAI-EMAIL1-PRICE-20260404
+- CLM-EMAI-EMAIL1-REGISTRA-20260404
+- CLM-EMAI-EMAIL1-STORAGE_-20260404
+- CLM-EMAI-EMAIL2-NUM_ACCO-20260404
+- CLM-EMAI-EMAIL2-NUM_EMAI-20260404
+- CLM-EMAI-EMAIL2-PRICE-20260404
+compile_cost_usd: 0.1005
+corrections: 1
+self_review_verdict: fail
+approved_at: '2026-04-05T22:38:55.015358+07:00'
 ---
 
 # Hosting BKNS — Tổng Quan
 
-> **Lưu ý:** Tất cả giá dưới đây **chưa bao gồm VAT (10%)**.
-> Hotline tư vấn: **1800 646 884** (miễn phí) | Kỹ thuật: **1900 63 68 09**
+Dịch vụ Hosting (Web Hosting) của BKNS cung cấp giải pháp lưu trữ website với cam kết uptime trên 99.9% và hỗ trợ kỹ thuật 24/7. Toàn bộ hạ tầng hosting sử dụng ổ cứng NVME để đảm bảo tốc độ truy xuất dữ liệu cao. Bảng giá các dịch vụ hosting chưa bao gồm thuế VAT. (Nguồn: CLM-ENT-PROD-HOS-UPTIME_C-20260404, CLM-ENT-PROD-HOS-SUPPORT_-20260404, CLM-ENT-PROD-HOS-STORAGE_-20260404, CLM-ENT-PROD-HOS-PRICE_VA-20260404)
 
----
+## 1. Windows Hosting (Shared Hosting)
 
-## Chính sách chung
+Đây là dịch vụ lưu trữ web chạy trên nền tảng hệ điều hành Windows Server và web server IIS, được tối ưu cho các website sử dụng ngôn ngữ lập trình ASP, ASP.NET và cơ sở dữ liệu MSSQL. Dịch vụ này phù hợp cho các doanh nghiệp và cá nhân có website hoặc ứng dụng được phát triển bằng công nghệ của Microsoft. (Nguồn: CLM-ENT-PROD-HOS-DESC-20260404, CLM-ENT-PROD-HOS-PLATFORM-20260404, CLM-HOST-WINDOWS-WEB_SERV-20260405, CLM-ENT-PROD-HOS-SUPPORTE-20260404, CLM-HOST-WINDOWS-SUITABIL-20260405, CLM-ENT-PROD-HOS-TARGET_A-20260404)
 
-- **Hạ tầng:** Ổ cứng NVMe U.2, CPU Intel Xeon Platinum
-- **Uptime:** Cam kết ≥ 99.9%
-- **SSL:** Miễn phí cho tất cả các gói
-- **Sao lưu:** Tự động qua JetBackup (Platinum: 3 lần/ngày; các gói khác: hàng ngày)
-- **Hỗ trợ:** 24/7/365
-- **Dùng thử:** 7 ngày (Hosting WordPress, Hosting Giá Rẻ, Hosting SEO, Reseller)
-- **Chuyển dữ liệu:** Miễn phí từ nhà cung cấp khác
-- **Hoàn tiền:** 30 ngày (Platinum)
+**Tính năng chính:**
+*   **Bảng điều khiển:** Plesk Obsidian (Nguồn: CLM-ENT-PROD-HOS-CONTROL_-20260404)
+*   **Sao lưu:** Tích hợp Jetbackup (Nguồn: CLM-ENT-PROD-HOS-BACKUP_S-20260404)
+*   **Tiện ích:** Hỗ trợ Redis để tăng tốc website và OneClick installer để cài đặt ứng dụng nhanh chóng. (Nguồn: CLM-ENT-PROD-HOS-PERFORMA-20260404, CLM-ENT-PROD-HOS-INCLUDED-20260404)
+*   **Giá khởi điểm:** Từ 31.350đ/tháng (Nguồn: CLM-HOST-WINDOWS-STARTING-20260405)
 
----
+**Thông số các gói dịch vụ:**
 
-## 1. Platinum Web Hosting (Linux – cPanel)
+| Thông số | Gói BKSW01 |
+| :--- | :--- |
+| **Giá** | 31.350đ/tháng |
+| **Thanh toán tối thiểu** | 12 tháng |
+| **Disk space** | 1 GB |
+| **Bandwidth** | 20 GB |
+| **Domain** | 1 |
+| **Parked/Sub Domain** | 2 |
+| **Email Accounts** | 5 |
+| **FTP Accounts** | 2 |
+| **MSSQL Accounts** | 2 |
 
-Hosting cao cấp sử dụng 100% NVMe U.2, CPU Intel Xeon Platinum, Litespeed Webserver, Imunify360.
-Phù hợp: website thương mại điện tử, báo chí, tin tức, lượng truy cập lớn.
+(Nguồn: CLM-HOST-BKSW01-PRICE-20260405, CLM-HOST-BKSW01-MINIMUM_-20260405, CLM-HOST-BKSW01-DISK_SPA-20260405, CLM-HOST-BKSW01-BW-20260405, CLM-HOST-BKSW01-DOMAIN_L-20260405, CLM-HOST-BKSW01-PARKED_S-20260405, CLM-HOST-BKSW01-EMAIL_AC-20260405, CLM-HOST-BKSW01-FTP_ACCO-20260405, CLM-HOST-BKSW01-MSSQL_AC-20260405)
 
-### Bảng giá Platinum (BKCP)
+*   **Gói BKSW05+:** Có giá 10.389.600đ cho 3 năm, cung cấp 15 GB dung lượng SSD và cho phép sử dụng 15 tên miền. (Nguồn: CLM-HOST-BKSW05_PLUS-PRICE-20260405, CLM-HOST-BKSW05_PLUS-DISK_SPA-20260405, CLM-HOST-BKSW05_PLUS-DOMAIN_L-20260405)
 
-| Gói | CPU | RAM | NVMe | Domains | Tháng | 1 năm (−5%) | 2 năm (−20%) | 3 năm (−30%) | 4 năm (−40%) |
-|:----|:----|:----|:-----|:--------|------:|------------:|-------------:|-------------:|-------------:|
-| BKCP01 | 1 Core | 1 GB | 2 GB | 1 | 29.000 | 330.600 | 556.800 | 730.800 | 835.200 |
-| BKCP02 | 1 Core | 2 GB | 5 GB | 2 | 50.000 | 570.000 | 960.000 | 1.260.000 | 1.440.000 |
-| BKCP03 | 2 Core | 2 GB | 7 GB | 3 | 78.000 | 889.200 | 1.497.600 | 1.965.600 | 2.246.400 |
-| BKCP03+ | 2 Core | 4 GB | 10 GB | 4 | 110.000 | 1.254.000 | 2.112.000 | 2.772.000 | 3.168.000 |
-| BKCP04 | 2 Core | 5 GB | 15 GB | 6 | 145.000 | 1.653.000 | 2.784.000 | 3.654.000 | 4.176.000 |
-| BKCP04+ | 2 Core | 6 GB | 20 GB | 8 | 200.000 | 2.280.000 | 3.840.000 | 5.040.000 | 5.760.000 |
-| BKCP05 | 3 Core | 7 GB | 25 GB | 9 | 250.000 | 2.850.000 | 4.800.000 | 6.300.000 | 7.200.000 |
-| BKCP05+ | 3 Core | 8 GB | 30 GB | 10 | 290.000 | 3.306.000 | 5.568.000 | 7.308.000 | 8.352.000 |
+## 2. Hosting Giá Rẻ
 
-> Đơn vị: VND/tháng hoặc VND/kỳ thanh toán
+Đây là dịch vụ hosting dành cho các website có ngân sách hạn chế, website mới bắt đầu, blog, trang giới thiệu công ty. Dịch vụ sử dụng ổ cứng SSD Enterprise, nền tảng CloudLinux và web server LiteSpeed để đảm bảo chất lượng và tốc độ. (Nguồn: CLM-HOST-GIA_RE-DESC-20260404, CLM-ENT-PROD-HOS-TARGET_A-20260405, CLM-HOST-GIA_RE-TARGET_A-20260404, CLM-HOST-GIA_RE-STORAGE_-20260404, CLM-HOST-GIA_RE-OS-20260404, CLM-HOST-GIA_RE-WEB_SERV-20260404)
 
-**Tính năng nổi bật:** WordPress Toolkit, JetBackup (backup 3 lần/ngày), CloudLinux, Redis Cache, OneClick Installer.
-
----
-
-## 2. Hosting WordPress (Linux – cPanel)
-
-Tối ưu cho WordPress: LiteSpeed Web Server, Redis Cache, LiteSpeed Cache, Imunify360, JetBackup.
-
-### Bảng giá Hosting WordPress (WPCP)
-
-| Gói | SSD | Domains | Tháng | 1 năm (−5%) | 2 năm (−20%) | 3 năm (−30%) | 4 năm (−40%) |
-|:----|:----|:--------|------:|------------:|-------------:|-------------:|-------------:|
-| WPCP01 | 1 GB | 2 | 50.000 | 570.000 | 960.000 | 1.260.000 | 1.440.000 |
-| WPCP02 | 1,5 GB | 3 | 78.000 | 889.200 | 1.497.600 | 1.965.600 | 2.246.400 |
-| WPCP03 | 2 GB | 4 | 110.000 | 1.254.000 | 2.112.000 | 2.772.000 | 3.168.000 |
-| WPCP04 | 3 GB | 5 | 145.000 | 1.653.000 | 2.784.000 | 3.654.000 | 4.176.000 |
-| WPCP05 | 5 GB | 6 | 200.000 | 2.280.000 | 3.840.000 | 5.040.000 | 5.760.000 |
-| WPCP06 | 8 GB | 8 | 250.000 | 2.850.000 | 4.800.000 | 6.300.000 | 7.200.000 |
-| WPCP07 | 15 GB | 10 | 390.000 | 4.446.000 | 7.488.000 | 9.828.000 | 11.232.000 |
-| WPCP08 | 30 GB | 15 | 500.000 | 5.700.000 | 9.600.000 | 12.600.000 | 14.400.000 |
-
----
-
-## 3. Hosting Windows (Windows Server – Plesk)
-
-Phù hợp cho ứng dụng .NET, ASP, MSSQL, PHP trên môi trường Windows.
-
-### Bảng giá Hosting Windows (BKSW)
-
-| Gói | SSD | Domains | Tháng | 1 năm | 2 năm (−16%) | 3 năm (−26%) |
-|:----|:----|:--------|------:|------:|-------------:|-------------:|
-| BKSW01 | 1 GB | 1 | 33.000 | 396.000 | 665.280 | 878.040 |
-| BKSW02 | 1,5 GB | 2 | 60.000 | 720.000 | 1.209.600 | 1.594.800 |
-| BKSW03 | 2,5 GB | 3 | 85.000 | 1.020.000 | 1.713.600 | 2.259.900 |
-| BKSW03+ | 3,5 GB | 5 | 135.000 | 1.620.000 | 2.721.600 | 3.588.300 |
-| BKSW04 | 5 GB | 7 | 165.000 | 1.980.000 | 3.326.400 | 4.385.700 |
-| BKSW04+ | 7 GB | 9 | 210.000 | 2.520.000 | 4.233.600 | 5.580.600 |
-| BKSW05 | 10 GB | 12 | 250.000 | 3.000.000 | 5.040.000 | 6.642.000 |
-| BKSW05+ | 15 GB | 15 | 390.000 | 4.680.000 | 7.862.400 | 10.361.400 |
-
-> **Lưu ý:** Hosting Windows không có chiết khấu năm 1. Năm 2 giảm 16%, năm 3 giảm 26%.
-
----
-
-## 4. Hosting Giá Rẻ
-
-Phù hợp: website cá nhân, blog, doanh nghiệp nhỏ, dự án mới.
-
-- **Giá khởi điểm:** Từ 5.700đ/tháng (khi đăng ký nhiều năm)
-- **Công nghệ:** SSD Enterprise, LiteSpeed, CloudLinux, Jetbackup, Redis, OneClick
-- **Băng thông:** Không giới hạn
-- **Ưu đãi:** Tặng theme và plugin bản quyền
-
-> ⚠️ **Cần bổ sung:** Bảng giá chi tiết từng gói hosting giá rẻ chưa có trong nguồn hiện tại. Vui lòng liên hệ sales hoặc bổ sung file tài liệu vào `raw/manual/`.
-
----
-
-## 5. Hosting SEO
-
-Hosting có nhiều IP độc lập, tối ưu cho hệ thống website vệ tinh (PBN).
-
-| Thông số | BKSEO-01 | BKSEO-02 |
-|:---------|:---------|:---------|
-| Giá/Tháng | — | 105.000đ |
-| Disk space | — | 8 GB |
-| CPU limit | — | 2 Core |
-| RAM limit | 1 GB | — |
-| Domains | — | 10 |
-| Bandwidth | Không giới hạn | Không giới hạn |
-| Dùng thử | 7 ngày | 7 ngày |
-
-> ⚠️ **Cần bổ sung:** Giá gói BKSEO-01 và toàn bộ bảng giá đầy đủ chưa có trong nguồn hiện tại.
-
----
-
-## 6. Reseller Hosting cPanel
-
-Phù hợp: đại lý hosting, công ty thiết kế website muốn kinh doanh hosting dưới thương hiệu riêng.
-
-- **Bảng điều khiển:** cPanel (WHM)
-- **Web Server:** LiteSpeed
-- **Băng thông:** Không giới hạn
-- **Bảo mật:** CloudLinux, Imunify360
-- **Sao lưu:** JetBackup, 30 bản gần nhất
-
-| Thông số | Gói RL04 |
-|:---------|:---------|
-| Giá/Năm | 17.100.000đ |
-| Disk space | 50 GB |
-| CPU limit | 2 Core |
-| RAM limit | 2,5 GB |
-| Domains | 15 |
-
-> ⚠️ **Cần bổ sung:** Bảng giá đầy đủ các gói RL01–RL04 chưa có trong nguồn hiện tại.
-
----
-
-## 7. Hosting Miễn Phí
-
-Dành cho sinh viên, lập trình viên học tập/thử nghiệm.
-
-- **Chi phí:** 0đ
-- **Giới hạn:** Tài nguyên cơ bản, không phù hợp cho môi trường production
-
-> ⚠️ **Cần bổ sung:** Thông số kỹ thuật chi tiết và điều kiện đăng ký chưa có trong nguồn.
-
----
-
-*Compiled by BKNS Wiki Bot • Cập nhật giá từ bảng giá chính thức 2026-04-04*
-
----
-
-## Xem thêm
-
-- [chứng chỉ SSL miễn phí](../ssl/tong-quan.md)
-- [đăng ký tên miền](../ten-mien/tong-quan.md)
-- [Email Hosting](../email/tong-quan.md)
+**Tính năng và chính sách:**
+*   **Giá khởi điểm:** Từ 5.700đ/tháng (Nguồn: CLM-HOST-GIA_RE-STARTING-20260404)
+*   **Băng thông:** Không giới hạn (Nguồn: CLM-HOST-GIA_RE-BANDWIDT-20260404)
+*   **Sao lưu:** Tự động sao lưu hàng ngày (Nguồn: CLM-HOST-GIA_RE-BACKUP_F-20260404)
+*   **Bảo mật:** Miễn phí chứng chỉ SSL (Nguồn: CLM-HOST-GIA_RE-IS_SSL_F-20260404)
+*   **Hỗ trợ:** Kỹ thuật 24/7 (Nguồn: CLM-HOST-GIA_RE-SUPPORT_-20260404)
+*   **Ưu đãi:** Tặng theme và plugin bản quyền (Nguồn: CLM-HOST-GIA_RE-SPECIAL_-20260404)
+*   **Dùng thử:** Trải nghiệm dịch vụ trong 7 ngày (Nguồn: CLM-HOST-GIA_RE-TRIAL_PE-20260404)
+*   **Lưu ý:** Giá trên chưa bao gồm VAT (Nguồn: CLM-HOST-GIA_RE-PRICE_VA-20260404)

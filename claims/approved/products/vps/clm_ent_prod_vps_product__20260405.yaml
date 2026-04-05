@@ -1,0 +1,19 @@
+claim_id: CLM-ENT-PROD-VPS-PRODUCT_-20260405
+entity_id: ENT-PROD-VPS-SIEU-RE
+entity_type: product_line
+entity_name: VPS Siêu Tiết Kiệm
+attribute: product_alias
+value: VPS MMO
+unit: ''
+qualifiers: {}
+source_ids:
+- SRC-VPS_SIEU_RE_WEB_2026_04_05
+observed_at: '2026-04-05T22:24:38.227280+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ tiêu đề: # Dịch Vụ VPS Siêu Tiết Kiệm (VPS Siêu Rẻ/VPS MMO)
+  tại BKNS'
+approved_at: '2026-04-05T22:26:37.282723+07:00'
+approved_by: admin-batch

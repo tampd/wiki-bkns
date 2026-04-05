@@ -1,0 +1,18 @@
+claim_id: CLM-HOST-BKSW01-BW-20260405
+entity_id: product.hosting.bksw01
+entity_type: product_plan
+entity_name: BKSW01
+attribute: bandwidth
+value: 20
+unit: GB
+qualifiers:
+  note: nâng từ 5 GB
+source_ids:
+- SRC-WINDOWS_HOSTING_WEB_2026_04_05
+observed_at: '2026-04-05T22:25:30.871990+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Bảng giá gói BKSW01: ''| Bandwidth | 20 GB (nâng từ 5 GB)
+  |'''

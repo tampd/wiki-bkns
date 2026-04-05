@@ -17,5 +17,5 @@ review_state: approved
 risk_class: low
 compiler_note: 'Trích từ BK4: Incremental: chỉ backup phần thay đổi (mỗi ngày chỉ
   500MB, 10 phút).'
-approved_at: '2026-04-04T21:19:26.695506+07:00'
+approved_at: '2026-04-05T22:26:35.121342+07:00'
 approved_by: admin-batch

@@ -1,0 +1,18 @@
+claim_id: CLM-ENT-PROD-EMA-SENDING_-20260405
+entity_id: ENT-PROD-EMAIL
+entity_type: product
+entity_name: Email Hosting
+attribute: sending_limit_per_hour
+value: 200
+unit: email
+qualifiers: {}
+source_ids:
+- SRC-EMAIL_HOSTING_WEB_2026_04_05
+observed_at: '2026-04-05T21:59:38.409801+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ mục Tính năng chung: ''Gửi tối đa 200 email/giờ'''
+approved_at: '2026-04-05T22:26:35.039997+07:00'
+approved_by: admin-batch

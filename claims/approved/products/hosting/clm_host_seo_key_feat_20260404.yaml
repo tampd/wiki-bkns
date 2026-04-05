@@ -16,5 +16,5 @@ risk_class: low
 compiler_note: 'Trích từ phần Điểm chính: Cung cấp nhiều IP độc lập, tốc độ truy cập
   nhanh, độ ổn định cao, băng thông không giới hạn, và tích hợp các công nghệ như
   Redis, CloudLinux.'
-approved_at: '2026-04-04T21:19:27.272818+07:00'
+approved_at: '2026-04-05T22:26:35.901532+07:00'
 approved_by: admin-batch

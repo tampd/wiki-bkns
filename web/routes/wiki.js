@@ -7,11 +7,27 @@ const WIKI_DIR = path.resolve(__dirname, '../../wiki/products');
 const BACKUP_DIR = path.resolve(__dirname, '../../wiki/.drafts/backups');
 const LOG_FILE = path.resolve(__dirname, '../../logs/wiki-edits.jsonl');
 
-// Allowed categories (whitelist — prevent path traversal)
-const CATEGORIES = [
-  'hosting', 'vps', 'ssl', 'ten-mien',
-  'email', 'server', 'software', 'other', 'uncategorized',
-];
+/**
+ * Scan wiki/products/ directory and return all existing category names.
+ * Only returns directories that contain tong-quan.md.
+ * Dynamically detects new categories without hardcoding.
+ */
+function getCategories() {
+  if (!fs.existsSync(WIKI_DIR)) return [];
+  return fs.readdirSync(WIKI_DIR, { withFileTypes: true })
+    .filter(e => e.isDirectory())
+    .map(e => e.name)
+    .filter(name => !name.startsWith('.'))
+    .sort();
+}
+
+/**
+ * Validate a category name to prevent path traversal.
+ * Only allows alphanumeric chars and hyphens.
+ */
+function isValidCategory(name) {
+  return /^[a-zA-Z0-9-]+$/.test(name);
+}
 
 /**
  * Parse YAML frontmatter from markdown content.
@@ -40,8 +56,9 @@ function wikiRoute(router) {
   router.get('/api/wiki', (req, res) => {
     try {
       const pages = [];
+      const categories = getCategories();
 
-      for (const cat of CATEGORIES) {
+      for (const cat of categories) {
         const filepath = path.join(WIKI_DIR, cat, 'tong-quan.md');
         if (!fs.existsSync(filepath)) {
           pages.push({ category: cat, exists: false, title: cat });
@@ -79,7 +96,7 @@ function wikiRoute(router) {
     try {
       const { category } = req.params;
 
-      if (!CATEGORIES.includes(category)) {
+      if (!isValidCategory(category)) {
         return res.status(404).json({ error: 'Category không tồn tại' });
       }
 
@@ -115,7 +132,7 @@ function wikiRoute(router) {
       const { category } = req.params;
       const { content } = req.body;
 
-      if (!CATEGORIES.includes(category)) {
+      if (!isValidCategory(category)) {
         return res.status(404).json({ error: 'Category không tồn tại' });
       }
 
@@ -176,7 +193,7 @@ function wikiRoute(router) {
     try {
       const { category } = req.params;
 
-      if (!CATEGORIES.includes(category)) {
+      if (!isValidCategory(category)) {
         return res.status(404).json({ error: 'Category không tồn tại' });
       }
 
