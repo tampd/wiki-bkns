@@ -100,6 +100,11 @@
             <i data-lucide="workflow" aria-hidden="true"></i>
             <span>Pipeline</span>
           </button>
+          <button class="nav-tab" data-tab="review" aria-selected="false">
+            <i data-lucide="shield-check" aria-hidden="true"></i>
+            <span>Review</span>
+            <span class="nav-badge" id="review-badge" style="display:none">0</span>
+          </button>
         </nav>
 
         <div class="header-actions">
@@ -414,6 +419,104 @@
             <dt>Build version</dt>
             <dd id="pipeline-build-version">—</dd>
           </dl>
+        </section>
+      </div>
+    </div>
+
+    <!-- ==================== REVIEW QUEUE TAB ==================== -->
+    <div class="tab-content" id="tab-review" style="display:none">
+      <div class="review-wrap">
+        <!-- Review Stats -->
+        <div class="stats-bar">
+          <div class="card stat-card">
+            <div class="stat-icon blue" aria-hidden="true"><i data-lucide="database"></i></div>
+            <div class="stat-content">
+              <div class="stat-value" id="review-stat-total">—</div>
+              <div class="stat-label">Tổng Claims</div>
+            </div>
+          </div>
+          <div class="card stat-card">
+            <div class="stat-icon green" aria-hidden="true"><i data-lucide="lock"></i></div>
+            <div class="stat-content">
+              <div class="stat-value" id="review-stat-gt">—</div>
+              <div class="stat-label">Ground Truth</div>
+            </div>
+          </div>
+          <div class="card stat-card">
+            <div class="stat-icon cyan" aria-hidden="true"><i data-lucide="image"></i></div>
+            <div class="stat-content">
+              <div class="stat-value" id="review-stat-img">—</div>
+              <div class="stat-label">From Images</div>
+            </div>
+          </div>
+          <div class="card stat-card">
+            <div class="stat-icon amber" aria-hidden="true"><i data-lucide="alert-triangle"></i></div>
+            <div class="stat-content">
+              <div class="stat-value" id="review-stat-conflicts">—</div>
+              <div class="stat-label">Conflicts</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review Filters -->
+        <section class="card" aria-labelledby="review-title">
+          <div class="section-header">
+            <h2 class="section-title" id="review-title">
+              <i data-lucide="shield-check" aria-hidden="true"></i>
+              Review Queue
+            </h2>
+            <div class="review-filters">
+              <select id="review-filter" class="input" style="width:auto;min-width:160px">
+                <option value="all">Tất cả</option>
+                <option value="flagged">🚩 Flagged</option>
+                <option value="conflicts">⚡ Conflicts</option>
+                <option value="unverified">❓ Chưa verify</option>
+                <option value="image">📸 From Images</option>
+              </select>
+              <select id="review-category" class="input" style="width:auto;min-width:160px">
+                <option value="">Tất cả category</option>
+                <option value="hosting">Hosting</option>
+                <option value="vps">VPS</option>
+                <option value="email">Email</option>
+                <option value="ssl">SSL</option>
+                <option value="ten-mien">Tên miền</option>
+                <option value="server">Server</option>
+                <option value="software">Software</option>
+              </select>
+              <button class="btn btn-ghost btn-sm" id="btn-refresh-review" title="Làm mới">
+                <i data-lucide="refresh-cw" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Claims Table -->
+          <div style="overflow-x:auto">
+            <table class="files-table review-table" aria-label="Danh sách claims cần review">
+              <thead>
+                <tr>
+                  <th scope="col">Entity</th>
+                  <th scope="col">Attribute</th>
+                  <th scope="col">Value</th>
+                  <th scope="col">Confidence</th>
+                  <th scope="col">Source</th>
+                  <th scope="col">Status</th>
+                  <th scope="col"><span class="sr-only">Actions</span></th>
+                </tr>
+              </thead>
+              <tbody id="review-tbody">
+                <tr><td colspan="7" class="files-empty">Đang tải...</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Pagination -->
+          <div class="files-pagination" id="review-pagination" style="display:none">
+            <span id="review-info">0-0 / 0</span>
+            <div style="display:flex;gap:var(--space-2)">
+              <button class="btn btn-ghost btn-icon" id="btn-review-prev" disabled><i data-lucide="chevron-left"></i></button>
+              <button class="btn btn-ghost btn-icon" id="btn-review-next" disabled><i data-lucide="chevron-right"></i></button>
+            </div>
+          </div>
         </section>
       </div>
     </div>

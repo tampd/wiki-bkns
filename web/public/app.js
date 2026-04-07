@@ -153,12 +153,14 @@
     $('#tab-dashboard').style.display = 'none';
     $('#tab-upload').style.display = 'none';
     $('#tab-pipeline').style.display = 'none';
+    $('#tab-review').style.display = 'none';
     // Show selected
     const el = $(`#tab-${tabName}`);
     if (el) el.style.display = tabName === 'wiki' ? 'flex' : 'block';
 
     if (tabName === 'dashboard') { loadDashboard(); loadChangelog(); }
     if (tabName === 'upload') loadFiles();
+    if (tabName === 'review') { loadReviewStats(); loadReviewQueue(); }
     lucide.createIcons();
   }
 
@@ -955,6 +957,169 @@
   // ============================================================
   $('#bc-category')?.addEventListener('click', () => {
     if (state.wikiCurrentCategory) navigateToPage(state.wikiCurrentCategory, 'tong-quan');
+  });
+
+  // ============================================================
+  // REVIEW QUEUE
+  // ============================================================
+  let reviewState = { page: 1, filter: 'all', category: '' };
+
+  async function loadReviewStats() {
+    try {
+      const res = await apiFetch('/api/review/stats');
+      if (!res.ok) return;
+      const stats = await res.json();
+
+      $('#review-stat-total').textContent = stats.total || 0;
+      $('#review-stat-gt').textContent = `${stats.by_confidence?.ground_truth || 0} (${stats.ground_truth_ratio}%)`;
+      $('#review-stat-img').textContent = stats.by_source?.image || 0;
+      $('#review-stat-conflicts').textContent = stats.conflicts || 0;
+
+      // Update badge
+      const flagged = stats.by_state?.flagged || 0;
+      const badge = $('#review-badge');
+      if (badge) {
+        if (flagged > 0) {
+          badge.textContent = flagged;
+          badge.style.display = '';
+        } else {
+          badge.style.display = 'none';
+        }
+      }
+    } catch { /* silent */ }
+  }
+
+  async function loadReviewQueue() {
+    try {
+      const params = new URLSearchParams({
+        filter: reviewState.filter,
+        category: reviewState.category,
+        page: reviewState.page,
+        limit: 30,
+      });
+      const res = await apiFetch(`/api/review/queue?${params}`);
+      if (!res.ok) return;
+      const data = await res.json();
+
+      const tbody = $('#review-tbody');
+      if (!data.items?.length) {
+        tbody.innerHTML = '<tr><td colspan="7" class="files-empty">Không có claims nào</td></tr>';
+        $('#review-pagination').style.display = 'none';
+        return;
+      }
+
+      tbody.innerHTML = data.items.map(c => {
+        const confBadge = {
+          ground_truth: '<span class="conf-badge gt">GT</span>',
+          high: '<span class="conf-badge high">High</span>',
+          medium: '<span class="conf-badge med">Med</span>',
+          low: '<span class="conf-badge low">Low</span>',
+        }[c.confidence] || '<span class="conf-badge">' + escapeHtml(c.confidence || '?') + '</span>';
+
+        const sources = (c.source_ids || []).join(', ');
+        let sourceIcon = '🤖';
+        if (sources.includes('EXCEL')) sourceIcon = '📊';
+        else if (sources.includes('IMG')) sourceIcon = '📸';
+
+        const stateBadge = {
+          approved: '<span class="state-badge approved">✅</span>',
+          flagged: '<span class="state-badge flagged">🚩</span>',
+          rejected: '<span class="state-badge rejected">❌</span>',
+        }[c.review_state] || '<span class="state-badge pending">⏳</span>';
+
+        const val = typeof c.value === 'number' ? c.value.toLocaleString('vi-VN') : escapeHtml(String(c.value || ''));
+
+        return `<tr data-claim-id="${escapeHtml(c.claim_id || '')}">
+          <td title="${escapeHtml(c.entity_id || '')}">${escapeHtml(c.entity_name || c.entity_id || '—')}</td>
+          <td>${escapeHtml(c.attribute || '')}</td>
+          <td class="review-value">${val}</td>
+          <td>${confBadge}</td>
+          <td>${sourceIcon}</td>
+          <td>${stateBadge}</td>
+          <td style="display:flex;gap:4px">
+            <button class="btn btn-ghost btn-icon btn-xs" data-action="approve" title="Approve"><i data-lucide="check"></i></button>
+            <button class="btn btn-ghost btn-icon btn-xs" data-action="flag" title="Flag"><i data-lucide="flag"></i></button>
+            <button class="btn btn-ghost btn-icon btn-xs" data-action="reject" title="Reject"><i data-lucide="x"></i></button>
+          </td>
+        </tr>`;
+      }).join('');
+
+      // Bind action buttons
+      tbody.querySelectorAll('[data-action]').forEach(btn => {
+        btn.addEventListener('click', async () => {
+          const row = btn.closest('tr');
+          const claimId = row?.dataset.claimId;
+          if (!claimId) return;
+          const action = btn.dataset.action;
+
+          if (action === 'approve') {
+            await reviewAction('/api/review/approve', { claim_id: claimId });
+          } else if (action === 'flag') {
+            const reason = prompt('Lý do flag:');
+            if (reason !== null) await reviewAction('/api/review/flag', { claim_id: claimId, reason });
+          } else if (action === 'reject') {
+            const ok = await showModal('Reject Claim', `Bạn có chắc muốn reject claim ${claimId}?`, 'Reject');
+            if (ok) await reviewAction('/api/review/reject', { claim_id: claimId, reason: 'manual_rejection' });
+          }
+        });
+      });
+
+      lucide.createIcons();
+
+      // Pagination
+      if (data.pages > 1) {
+        $('#review-pagination').style.display = 'flex';
+        const start = (data.page - 1) * 30 + 1;
+        const end = Math.min(data.page * 30, data.total);
+        $('#review-info').textContent = `${start}-${end} / ${data.total}`;
+        $('#btn-review-prev').disabled = data.page <= 1;
+        $('#btn-review-next').disabled = data.page >= data.pages;
+      } else {
+        $('#review-pagination').style.display = 'none';
+      }
+    } catch { /* silent */ }
+  }
+
+  async function reviewAction(endpoint, body) {
+    try {
+      const res = await apiFetch(endpoint, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(body),
+      });
+      if (res.ok) {
+        toast('success', 'Done', `${body.claim_id} → ${endpoint.split('/').pop()}`);
+        loadReviewQueue();
+        loadReviewStats();
+      } else {
+        const err = await res.json().catch(() => ({}));
+        toast('error', 'Lỗi', err.error || 'Failed');
+      }
+    } catch (e) {
+      toast('error', 'Lỗi kết nối', e.message);
+    }
+  }
+
+  // Review filters
+  $('#review-filter')?.addEventListener('change', (e) => {
+    reviewState.filter = e.target.value;
+    reviewState.page = 1;
+    loadReviewQueue();
+  });
+  $('#review-category')?.addEventListener('change', (e) => {
+    reviewState.category = e.target.value;
+    reviewState.page = 1;
+    loadReviewQueue();
+  });
+  $('#btn-refresh-review')?.addEventListener('click', () => {
+    loadReviewStats();
+    loadReviewQueue();
+  });
+  $('#btn-review-prev')?.addEventListener('click', () => {
+    if (reviewState.page > 1) { reviewState.page--; loadReviewQueue(); }
+  });
+  $('#btn-review-next')?.addEventListener('click', () => {
+    reviewState.page++; loadReviewQueue();
   });
 
   // ============================================================

@@ -16,6 +16,7 @@ const { filesRoute } = require('./routes/files');
 const { triggerRoute } = require('./routes/trigger');
 const { statusRoute } = require('./routes/status');
 const { wikiRoute } = require('./routes/wiki');
+const { reviewRoute } = require('./routes/review');
 const { PipelineRunner } = require('./lib/pipeline-runner');
 
 // ============================================================
@@ -151,6 +152,7 @@ filesRoute(app);
 triggerRoute(app, pipelineRunner);
 statusRoute(app, pipelineRunner);
 wikiRoute(app);
+reviewRoute(app);
 
 // ============================================================
 // FALLBACK — SPA
