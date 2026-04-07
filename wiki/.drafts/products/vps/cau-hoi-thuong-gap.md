@@ -26,11 +26,10 @@ Tổng hợp các câu hỏi thường gặp về dịch vụ Cloud VPS tại BK
 
 Đang cập nhật.
 
-## Sản phẩm liên quan
+## Xem thêm
 
 - [Chứng Chỉ SSL BKNS](../ssl/index.md)
 - [Phần Mềm & Bản Quyền BKNS](../software/index.md)
 - [Máy Chủ BKNS](../server/index.md)
 
----
 Compiled by BKNS Wiki Bot • 2026-04-07

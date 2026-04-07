@@ -8,7 +8,7 @@ claims_used: 67
 compile_cost_usd: 0.015
 self_review: fail
 corrections: 2
-approved_at: '2026-04-07T12:53:58.955915+07:00'
+approved_at: '2026-04-07T16:24:08.900149+07:00'
 ---
 
 # VPS Siêu Rẻ BKNS (VPSTK Series)

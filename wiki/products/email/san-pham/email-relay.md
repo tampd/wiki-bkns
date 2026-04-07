@@ -4,42 +4,51 @@ title: Email Relay BKNS
 category: products/email
 updated: '2026-04-07'
 review_state: approved
-claims_used: 46
-compile_cost_usd: 0.0127
-self_review: fail
-corrections: 3
-approved_at: '2026-04-07T13:06:37.088014+07:00'
+claims_used: 66
+compile_cost_usd: 0.0181
+self_review: pass
+corrections: 0
+approved_at: '2026-04-07T16:24:20.010807+07:00'
 ---
 
 # Email Relay BKNS
 
-Email Relay là giải pháp trung gian của BKNS, giúp định tuyến toàn bộ email gửi ra từ Email Server của khách hàng qua hệ thống máy chủ chuyên dụng của BKNS. Dịch vụ này sử dụng các dải IP uy tín (White list IP) nhằm tăng tỷ lệ email vào Hộp thư đến (Inbox) lên đến 99% và giải quyết các vấn đề như IP bị blacklist hay email vào spam.
+Email Relay là một giải pháp trung gian giúp định tuyến toàn bộ email gửi ra từ hệ thống Email Server của khách hàng qua hệ thống máy chủ chuyên dụng của BKNS. Dịch vụ này sử dụng các dải IP uy tín đã được whitelist, nhằm tăng tỷ lệ email gửi vào inbox lên đến 99% và giải quyết các vấn đề như IP bị blacklist hay email bị đánh dấu spam.
 
-Dịch vụ này phù hợp cho các doanh nghiệp đã có hệ thống Email Server riêng nhưng gặp khó khăn khi gửi email ra ngoài, hoặc các doanh nghiệp có nhu cầu gửi email marketing số lượng lớn. Một yêu cầu bắt buộc là khách hàng cần có sẵn một hệ thống Email Server để có thể sử dụng dịch vụ.
+Dịch vụ phù hợp cho các doanh nghiệp đã có Email Server riêng nhưng gặp khó khăn khi gửi email ra ngoài, hoặc có nhu cầu gửi email marketing với số lượng lớn.
 
-## Các tính năng và chính sách chung
+**Yêu cầu:** Khách hàng cần có sẵn một hệ thống Email Server để sử dụng dịch vụ. Email Relay là giải pháp định tuyến email gửi đi, không phải dịch vụ lưu trữ email đến.
 
-*   **Định tuyến gửi đi:** Dịch vụ chỉ xử lý email gửi đi, không phải là dịch vụ lưu trữ email đến.
-*   **Giới hạn gửi theo giờ:** Tất cả các gói dịch vụ đều có giới hạn gửi chung là 200 email/giờ.
+### Tính năng chung
+
+Tất cả các gói Email Relay của BKNS đều bao gồm các tính năng sau:
+*   **IP uy tín:** Sử dụng hệ thống IP đã được whitelist để gửi email.
 *   **Không giới hạn tên miền:** Khách hàng có thể sử dụng dịch vụ cho nhiều tên miền khác nhau.
-*   **Giao diện quản trị:** Cung cấp giao diện để khách hàng quản trị dịch vụ Email Relay của mình.
-*   **Hỗ trợ kỹ thuật:** Đội ngũ kỹ thuật của BKNS hỗ trợ 24/7/365 các vấn đề liên quan đến dịch vụ.
+*   **Giao diện quản trị:** Cung cấp giao diện để khách hàng quản trị dịch vụ.
+*   **Giới hạn gửi:** Tất cả các gói đều có giới hạn gửi chung là 200 email/giờ.
+*   **Hỗ trợ kỹ thuật:** Đội ngũ hỗ trợ kỹ thuật hoạt động 24/7/365.
 
-## Bảng giá chi tiết các gói Email Relay (BK-RELAY)
+### Bảng giá dịch vụ Email Relay (BK-RELAY)
+
+Bảng so sánh chi tiết các gói cước Email Relay BK-RELAY 01, 02, 03, và 04.
 
 | Tính năng | BK-RELAY 01 | BK-RELAY 02 | BK-RELAY 03 | BK-RELAY 04 |
 | :--- | :--- | :--- | :--- | :--- |
-| Số lượng email/ngày | 350 | 700 | 1.500 | 30.000 |
-| Giá/Tháng (chưa VAT) | 180.000 VNĐ | 290.000 VNĐ | 500.000 VNĐ | 980.000 VNĐ |
-| Quản trị email relay | Có | Có | Có | Có |
-| Đăng ký | Đang cập nhật | Đang cập nhật | Đang cập nhật | [Link](https://my.bkns.net/?cmd=cart&action=add&id=408) |
+| **Số lượng email/ngày** | 350 | 700 | 1.500 | 30.000 |
+| **Giá/tháng** | 180.000đ | 290.000đ | 500.000đ | 980.000đ |
+| **Giá/1 năm** | 2.160.000đ | 3.480.000đ | 6.000.000đ | 11.760.000đ |
+| **Giá/2 năm** | 4.320.000đ | 6.960.000đ | 12.000.000đ | 23.520.000đ |
+| **Giá/3 năm** | 6.480.000đ | 10.440.000đ | 18.000.000đ | 35.280.000đ |
+| **Đăng ký** | Đang cập nhật | Đang cập nhật | Đang cập nhật | [Đăng ký](https://my.bkns.net/?cmd=cart&action=add&id=408) |
 
-*Lưu ý: Có chính sách giảm giá cho các gói thanh toán dài hạn (ví dụ: giảm 30% cho gói BK-RELAY 04 khi đăng ký 3 năm). Vui lòng liên hệ để biết thêm chi tiết.*
+*Lưu ý: Bảng giá trên chưa bao gồm VAT.*
 
-## Sản phẩm liên quan
+### Sản phẩm liên quan
 
 *   [Tên Miền BKNS](../ten-mien/index.md)
 *   [Web Hosting BKNS](../hosting/index.md)
 *   [Chứng Chỉ SSL BKNS](../ssl/index.md)
 
-Compiled by BKNS Wiki Bot • 2024-05-21
+***
+
+*Compiled by BKNS Wiki Bot • 2026-04-07*

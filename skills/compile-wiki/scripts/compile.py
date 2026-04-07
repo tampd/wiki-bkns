@@ -524,33 +524,60 @@ def collect_claims(category: str) -> tuple[list[dict], str]:
 
 
 def _format_claims_text(claims: list[dict]) -> str:
-    """Format claims into text for LLM prompt."""
+    """Format claims into text for LLM prompt.
+    
+    Ground truth claims are marked with [GT] for the compiler to prioritize.
+    """
+    # Sort: ground_truth first, then high, then medium
+    confidence_order = {"ground_truth": 0, "high": 1, "medium": 2, "low": 3}
+    sorted_claims = sorted(claims, key=lambda c: confidence_order.get(c.get("confidence", "low"), 3))
+    
     formatted = []
-    for c in claims:
+    for c in sorted_claims:
+        gt_tag = "[GT] " if c.get("confidence") == "ground_truth" else ""
+        quals = c.get("qualifiers", {})
+        qual_str = ""
+        if quals:
+            qual_parts = [f"{k}={v}" for k, v in quals.items()]
+            qual_str = f"  qualifiers: {', '.join(qual_parts)}\n"
+        
         formatted.append(
-            f"- claim_id: {c.get('claim_id', 'N/A')}\n"
+            f"- {gt_tag}claim_id: {c.get('claim_id', 'N/A')}\n"
             f"  entity: {c.get('entity_id', '')} ({c.get('entity_name', '')})\n"
             f"  attribute: {c.get('attribute', '')}\n"
             f"  value: {c.get('value', '')}\n"
             f"  unit: {c.get('unit', '')}\n"
             f"  confidence: {c.get('confidence', '')}\n"
+            f"{qual_str}"
             f"  note: {c.get('compiler_note', '')}"
         )
     return "\n".join(formatted)
 
 
 def _deduplicate_claims(claims: list[dict]) -> list[dict]:
-    """Remove duplicate claims (same entity_id + attribute), keep latest."""
+    """Remove duplicate claims (same entity_id + attribute).
+    
+    Priority: ground_truth > high > medium > low.
+    Within same confidence, keep latest observed_at.
+    """
+    confidence_rank = {"ground_truth": 4, "high": 3, "medium": 2, "low": 1}
     seen = {}
     for c in claims:
         key = (c.get("entity_id", ""), c.get("attribute", ""))
         if key not in seen:
             seen[key] = c
         else:
-            existing_date = seen[key].get("observed_at", "")
-            new_date = c.get("observed_at", "")
-            if new_date > existing_date:
+            existing = seen[key]
+            existing_rank = confidence_rank.get(existing.get("confidence", "low"), 0)
+            new_rank = confidence_rank.get(c.get("confidence", "low"), 0)
+            
+            # Ground truth always wins
+            if new_rank > existing_rank:
                 seen[key] = c
+            elif new_rank == existing_rank:
+                # Same confidence → keep latest
+                if c.get("observed_at", "") > existing.get("observed_at", ""):
+                    seen[key] = c
     return list(seen.values())
 
 

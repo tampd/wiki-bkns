@@ -8,7 +8,7 @@ claims_used: 25
 compile_cost_usd: 0.0093
 self_review: fail
 corrections: 2
-approved_at: '2026-04-07T12:53:58.950223+07:00'
+approved_at: '2026-04-07T16:24:08.891648+07:00'
 ---
 
 # VPS N8N – AI

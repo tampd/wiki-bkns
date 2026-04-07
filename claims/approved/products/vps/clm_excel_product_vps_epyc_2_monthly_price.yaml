@@ -1,0 +1,20 @@
+claim_id: CLM-EXCEL-product_vps_epyc_2-monthly_price
+entity_id: product.vps.epyc_2
+entity_type: product_plan
+entity_name: Cloud VPS AMD EPYC 2
+attribute: monthly_price
+value: 210000
+confidence: ground_truth
+review_state: approved
+risk_class: verified
+source_ids:
+- EXCEL-BANGGIA-BKNS-2026
+observed_at: '2026-04-07T15:46:04.873903+07:00'
+valid_from: '2026-04-07'
+approved_at: '2026-04-07T15:46:04.873903+07:00'
+approved_by: excel-direct-injection
+unit: VND
+qualifiers:
+  period: 1 tháng
+  vat_included: false
+compiler_note: Excel VPS sheet, 1. VPS ADM, plan EPYC 2, Giá trước giảm (1 tháng)

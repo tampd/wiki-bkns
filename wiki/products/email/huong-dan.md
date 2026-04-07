@@ -8,7 +8,7 @@ claims_used: 0
 compile_cost_usd: 0
 self_review: skeleton
 corrections: 0
-approved_at: '2026-04-07T13:06:37.077292+07:00'
+approved_at: '2026-04-07T16:24:19.991430+07:00'
 ---
 
 # Email Doanh Nghiệp BKNS — Hướng Dẫn

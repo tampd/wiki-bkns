@@ -1,0 +1,16 @@
+claim_id: CLM-EXCEL-product_vps_vm02-storage
+entity_id: product.vps.vm02
+entity_type: product_plan
+entity_name: Cloud VPS VM VM02
+attribute: storage
+value: 30GB
+confidence: ground_truth
+review_state: approved
+risk_class: verified
+source_ids:
+- EXCEL-BANGGIA-BKNS-2026
+observed_at: '2026-04-07T15:46:04.873903+07:00'
+valid_from: '2026-04-07'
+approved_at: '2026-04-07T15:46:04.873903+07:00'
+approved_by: excel-direct-injection
+compiler_note: Excel VPS sheet, 2. VPS VM, plan VM02, SSD (Dung lượng)

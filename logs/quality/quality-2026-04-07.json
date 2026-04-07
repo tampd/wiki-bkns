@@ -1,0 +1,153 @@
+{
+  "ts": "2026-04-07T16:24:35.308978+07:00",
+  "scores": {
+    "accuracy": 24.8,
+    "coverage": 100.0,
+    "verification": 0.0,
+    "audit": 0,
+    "overall": 27.4,
+    "total_claims": 1987,
+    "gt_claims": 492,
+    "total_pages": 117,
+    "content_pages": 117,
+    "skeleton_pages": 0
+  },
+  "claims": {
+    "server": {
+      "high": 142,
+      "total": 143,
+      "medium": 1
+    },
+    "ten-mien": {
+      "high": 99,
+      "total": 99
+    },
+    "email": {
+      "high": 201,
+      "total": 302,
+      "ground_truth": 100,
+      "low": 1
+    },
+    "hosting": {
+      "high": 254,
+      "total": 431,
+      "ground_truth": 176,
+      "medium": 1
+    },
+    "ssl": {
+      "high": 289,
+      "total": 290,
+      "medium": 1
+    },
+    "vps": {
+      "high": 355,
+      "total": 571,
+      "ground_truth": 216
+    },
+    "software": {
+      "high": 151,
+      "total": 151
+    },
+    "_total": {
+      "total": 1987
+    }
+  },
+  "pages": {
+    "other": {
+      "total": 3,
+      "content": 3,
+      "skeleton": 0,
+      "empty": 0
+    },
+    "lien-he.md": {
+      "total": 1,
+      "content": 1,
+      "skeleton": 0,
+      "empty": 0
+    },
+    "index.md": {
+      "total": 1,
+      "content": 1,
+      "skeleton": 0,
+      "empty": 0
+    },
+    "frontmatter-example.md": {
+      "total": 1,
+      "content": 1,
+      "skeleton": 0,
+      "empty": 0
+    },
+    "checklist-review.md": {
+      "total": 1,
+      "content": 1,
+      "skeleton": 0,
+      "empty": 0
+    },
+    "product-detail.md": {
+      "total": 1,
+      "content": 1,
+      "skeleton": 0,
+      "empty": 0
+    },
+    "support": {
+      "total": 4,
+      "content": 4,
+      "skeleton": 0,
+      "empty": 0
+    },
+    "server": {
+      "total": 15,
+      "content": 15,
+      "skeleton": 0,
+      "empty": 0
+    },
+    "ten-mien": {
+      "total": 12,
+      "content": 12,
+      "skeleton": 0,
+      "empty": 0
+    },
+    "email": {
+      "total": 15,
+      "content": 15,
+      "skeleton": 0,
+      "empty": 0
+    },
+    "hosting": {
+      "total": 9,
+      "content": 9,
+      "skeleton": 0,
+      "empty": 0
+    },
+    "uncategorized": {
+      "total": 1,
+      "content": 1,
+      "skeleton": 0,
+      "empty": 0
+    },
+    "ssl": {
+      "total": 9,
+      "content": 9,
+      "skeleton": 0,
+      "empty": 0
+    },
+    "vps": {
+      "total": 25,
+      "content": 25,
+      "skeleton": 0,
+      "empty": 0
+    },
+    "software": {
+      "total": 10,
+      "content": 10,
+      "skeleton": 0,
+      "empty": 0
+    },
+    "subpages": {
+      "total": 9,
+      "content": 9,
+      "skeleton": 0,
+      "empty": 0
+    }
+  }
+}

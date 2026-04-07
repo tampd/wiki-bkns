@@ -5,93 +5,84 @@ category: products/hosting
 updated: '2026-04-07'
 review_state: drafted
 claims_used: 37
-compile_cost_usd: 0.0136
-self_review: fail
-corrections: 1
+compile_cost_usd: 0.0144
+self_review: pass
+corrections: 0
 ---
 
 # Web Hosting BKNS — Chính Sách
 
-Trang này tổng hợp các chính sách dịch vụ quan trọng liên quan đến các gói Web Hosting do BKNS cung cấp, bao gồm cam kết chất lượng (SLA), chính sách dùng thử, hoàn tiền, hỗ trợ kỹ thuật và sao lưu dữ liệu.
+Trang này tổng hợp các chính sách chung và cam kết chất lượng dịch vụ (SLA) liên quan đến các gói Web Hosting do BKNS cung cấp. Thông tin được biên soạn dựa trên các nguồn dữ liệu đã được xác thực, giúp người dùng dễ dàng tra cứu và so sánh.
 
-## Cam kết Chất lượng Dịch vụ (SLA)
+### 1. Cam Kết Chất Lượng Dịch Vụ (SLA)
 
-BKNS cam kết thời gian hoạt động (uptime) cho các dịch vụ hosting như sau:
+-   **Thời gian hoạt động (Uptime):** BKNS cam kết uptime cho các dịch vụ Web Hosting là **99.9%** và **>99.9%**.
 
-*   **Hosting (Web Hosting) nói chung:** >99.9%
-*   **Hosting Windows:** 99.9%
+### 2. Chính Sách Dùng Thử
 
-## Chính sách Dùng thử (Trial)
+BKNS cung cấp chính sách dùng thử dịch vụ trong **7 ngày** cho nhiều gói hosting, cho phép khách hàng trải nghiệm trước khi quyết định đăng ký chính thức. Các dịch vụ áp dụng bao gồm:
+-   Hosting Giá Rẻ
+-   Reseller Hosting cPanel
+-   Hosting SEO
+-   Hosting Windows (áp dụng cho tất cả các gói)
+-   Hosting WordPress (áp dụng cho tất cả các gói)
 
-Nhiều gói dịch vụ hosting của BKNS cho phép khách hàng dùng thử trong 7 ngày trước khi quyết định mua.
+### 3. Chính Sách Hoàn Tiền
 
-| Dịch vụ | Thời gian dùng thử |
-| :--- | :--- |
-| Hosting Giá Rẻ | 7 ngày |
-| Reseller Hosting cPanel | 7 ngày |
-| Hosting SEO | 7 ngày |
-| Hosting Windows | 7 ngày (áp dụng cho tất cả các gói) |
-| Hosting WordPress | 7 ngày |
+Chính sách hoàn tiền được áp dụng tùy theo từng sản phẩm cụ thể:
+-   **Platinum Web Hosting:** Cam kết hoàn tiền trong **30 ngày** nếu khách hàng không hài lòng.
+-   **Reseller Hosting cPanel:** Hoàn tiền **100%** nếu khách hàng không hài lòng.
+-   Chính sách cho các dịch vụ khác: Đang cập nhật.
 
-## Chính sách Hoàn tiền
+### 4. Chính Sách Hỗ Trợ Kỹ Thuật
 
-*   **Platinum Web Hosting:** Cam kết hoàn tiền trong 30 ngày nếu không hài lòng.
-*   **Reseller Hosting cPanel:** Hoàn tiền 100% nếu không hài lòng.
-*   **Các dịch vụ khác:** Đang cập nhật.
+**Thời gian hỗ trợ**
 
-## Hỗ trợ Kỹ thuật
-
-### Thời gian hỗ trợ
-
-| Dịch vụ | Thời gian hỗ trợ | Ghi chú |
+| Dịch Vụ | Thời Gian Hỗ Trợ | Ghi Chú |
 | :--- | :--- | :--- |
+| Hosting (Nói chung) | 24/7 | Hỗ trợ kỹ thuật |
 | Hosting Giá Rẻ | 24/7 | |
+| Platinum Web Hosting | 24/7/365 | |
 | Hosting SEO | 24/7 | |
 | Hosting Windows | 24/7 | |
 | Hosting WordPress | 24/7 | Đội ngũ chuyên môn về WordPress |
-| Platinum Web Hosting | 24/7/365 | |
 | Reseller Hosting cPanel | 24/5 | |
-| Hosting Miễn Phí | Hỗ trợ cơ bản | |
+| Hosting Miễn Phí | Đang cập nhật | Hỗ trợ kỹ thuật ở mức cơ bản |
 
-### Kênh hỗ trợ & Thời gian phản hồi
+-   **Kênh hỗ trợ (Hotline, Email, Ticket):** Đang cập nhật
+-   **Thời gian phản hồi:** Đang cập nhật
 
-*   **Kênh hỗ trợ (Hotline, Email, Ticket):** Đang cập nhật
-*   **Cam kết thời gian phản hồi:** Đang cập nhật
+### 5. Chính Sách Sao Lưu Dữ Liệu (Backup)
 
-## Chính sách Sao lưu Dữ liệu (Backup)
-
-Dữ liệu của khách hàng được sao lưu tự động với tần suất và chính sách lưu trữ khác nhau tùy thuộc vào gói dịch vụ.
-
-| Dịch vụ | Tần suất sao lưu | Chi tiết |
+| Dịch Vụ | Tần Suất Sao Lưu | Chi Tiết |
 | :--- | :--- | :--- |
-| Hosting Giá Rẻ | Hàng ngày | Dữ liệu được tự động sao lưu mỗi ngày, đảm bảo an toàn. |
-| Platinum Web Hosting | 3 lần/ngày | Sử dụng Jetbackup |
-| Reseller Hosting cPanel | Hàng ngày | Sử dụng Jetbackup, lưu trữ 30 bản gần nhất |
-| Hosting WordPress | Hàng ngày | Tự động với JetBackup |
+| Hosting Giá Rẻ | Hàng ngày | Dữ liệu được tự động sao lưu mỗi ngày. |
+| Platinum Web Hosting | 3 lần/ngày | Sao lưu tự động bằng Jetbackup. |
+| Reseller Hosting cPanel | Hàng ngày | Sử dụng Jetbackup, lưu trữ 30 bản gần nhất. |
+| Hosting WordPress | Hàng ngày | Tự động sao lưu với JetBackup. |
 
-## Chính sách Giá & Thanh toán
+### 6. Chính Sách Thanh Toán
 
-*   **Thuế VAT:** Tất cả giá niêm yết trên bảng giá hosting **chưa bao gồm VAT**.
-*   **Chu kỳ thanh toán:**
-    *   **Hosting Windows:** Thanh toán theo năm.
-    *   **Các dịch vụ khác:** Đang cập nhật.
+-   **Thuế GTGT (VAT):** Tất cả bảng giá dịch vụ Hosting được công bố đều **chưa bao gồm VAT**.
+-   **Chu kỳ thanh toán:**
+    -   **Hosting Windows:** Yêu cầu thanh toán theo năm.
+    -   Các dịch vụ khác: Đang cập nhật.
 
-## Chính sách Nâng cấp
+### 7. Chính Sách Nâng Cấp
 
-*   **Hosting Giá Rẻ:** Cho phép dễ dàng nâng cấp lên gói cao hơn.
-*   **Hosting Miễn Phí:** Có thể nâng cấp lên gói trả phí bất cứ lúc nào.
+-   **Hosting Miễn Phí:** Người dùng có thể nâng cấp lên gói trả phí bất cứ lúc nào.
+-   **Hosting Giá Rẻ:** Hỗ trợ nâng cấp dễ dàng lên các gói dịch vụ cao hơn.
 
-## Điều khoản Sử dụng
+### 8. Điều Khoản Sử Dụng
 
 Đang cập nhật.
 
+### Xem Thêm
+
+-   [Chứng Chỉ SSL BKNS](../ssl/index.md)
+-   [Tên Miền BKNS](../ten-mien/index.md)
+-   [Email Doanh Nghiệp BKNS](../email/index.md)
+-   [Phần Mềm & Bản Quyền BKNS](../software/index.md)
+
 ---
-
-### Sản phẩm & Dịch vụ liên quan
-
-*   [Chứng Chỉ SSL BKNS](../ssl/index.md)
-*   [Tên Miền BKNS](../ten-mien/index.md)
-*   [Email Doanh Nghiệp BKNS](../email/index.md)
-*   [Phần Mềm & Bản Quyền BKNS](../software/index.md)
-
-Compiled by BKNS Wiki Bot • 2026-04-07
+*Compiled by BKNS Wiki Bot • 2026-04-07*

@@ -4,83 +4,80 @@ title: Email Doanh Nghiệp BKNS — Thông Số Kỹ Thuật
 category: products/email
 updated: '2026-04-07'
 review_state: drafted
-claims_used: 50
-compile_cost_usd: 0.0156
+claims_used: 70
+compile_cost_usd: 0.0165
 self_review: fail
-corrections: 2
+corrections: 1
 ---
 
 # Email Doanh Nghiệp BKNS — Thông Số Kỹ Thuật
 
-Trang này tổng hợp và so sánh các thông số kỹ thuật chính của các gói dịch vụ Email Doanh Nghiệp do BKNS cung cấp, bao gồm Email Hosting, Cloud Email Server và Email Relay. Dữ liệu được trích xuất trực tiếp từ cơ sở tri thức nội bộ để đảm bảo tính chính xác.
+Trang này tổng hợp và so sánh các thông số kỹ thuật chính của các gói dịch vụ Email Doanh Nghiệp do BKNS cung cấp, bao gồm Email Hosting, Cloud Email Server và Email Relay. Dữ liệu được trích xuất trực tiếp từ cơ sở tri thức nội bộ.
 
 ## Email Hosting
 
-Dịch vụ Email Hosting của BKNS cung cấp giải pháp email theo tên miền riêng, phù hợp cho các doanh nghiệp cần số lượng tài khoản email xác định với dung lượng cố định cho mỗi tài khoản.
+Dịch vụ Email Hosting cung cấp một số lượng tài khoản email nhất định, mỗi tài khoản có dung lượng lưu trữ riêng. Đây là giải pháp phù hợp cho các doanh nghiệp cần email theo tên miền với số lượng người dùng xác định.
 
-**Tính năng chung:**
-*   **Tỷ lệ vào inbox:** 99%
-*   **Dung lượng mỗi email:** 5 GB
-*   **Tương thích:** Hỗ trợ truy cập qua Webmail và các ứng dụng email client phổ biến như Outlook.
+| Gói Dịch Vụ | Số Lượng Tài Khoản | Dung Lượng / Tài Khoản |
+| :--- | :--- | :--- |
+| EMAIL 1 | 5 | 5 GB |
+| EMAIL 2 | 20 | 5 GB |
+| EMAIL 3 | 50 | 5 GB |
+| EMAIL 4 | 100 | 5 GB |
 
-**Bảng so sánh các gói Email Hosting:**
-
-| Gói Dịch Vụ | Số Lượng Tài Khoản | Dung Lượng / Tài Khoản | Số Lượng Tên Miền |
-| :--- | :--- | :--- | :--- |
-| EMAIL 1 | 5 | 5 GB | Đang cập nhật |
-| EMAIL 2 | 20 | 5 GB | Đang cập nhật |
-| EMAIL 3 | 50 | 5 GB | Đang cập nhật |
-| EMAIL 4 | 100 | 5 GB | 1 |
+**Tính năng nổi bật:**
+- Tỷ lệ gửi email vào inbox: 99%
+- Hỗ trợ truy cập qua các ứng dụng email client phổ biến như Outlook.
 
 ## Cloud Email Server
 
-Cloud Email Server là giải pháp email mạnh mẽ, không giới hạn số lượng tài khoản và tên miền, với dung lượng lưu trữ lớn được phân bổ theo từng gói.
+Cloud Email Server là giải pháp email chuyên dụng với không gian lưu trữ lớn, không giới hạn số lượng tài khoản và tên miền, phù hợp cho các tổ chức có nhu cầu sử dụng email linh hoạt và quy mô lớn.
 
 **Tính năng chung:**
-*   **Tài khoản & Tên miền:** Không giới hạn
-*   **Tỷ lệ vào inbox:** Đảm bảo lên đến 99%
-*   **Giao thức hỗ trợ:** POP3/IMAP/SMTP
+- Số lượng tài khoản email: Không giới hạn
+- Số lượng tên miền: Không giới hạn
+- Tỷ lệ gửi email vào inbox: 99%
+- Hỗ trợ giao thức: POP3/IMAP/SMTP
 
-**Bảng so sánh các gói Cloud Email Server:**
+### Gói Cloud Email Server Mini
 
-**Gói MINI EMAIL**
-| Gói Dịch Vụ | Tổng Dung Lượng Gói |
+| Gói Dịch Vụ | Tổng Dung Lượng |
 | :--- | :--- |
-| MINI EMAIL 01 | 100 GB |
-| MINI EMAIL 02 | 150 GB |
-| MINI EMAIL 03 | 200 GB |
-| MINI EMAIL 04 | 250 GB |
+| MINI EMAIL 1 | 100 GB |
+| MINI EMAIL 2 | 150 GB |
+| MINI EMAIL 3 | 200 GB |
+| MINI EMAIL 4 | 255 GB |
 
-**Gói ES**
-| Gói Dịch Vụ | Tổng Dung Lượng Gói |
+### Gói Cloud Email Server ES
+
+| Gói Dịch Vụ | Tổng Dung Lượng |
 | :--- | :--- |
-| ES 01 | 300 GB |
-| ES 02 | 500 GB |
-| ES 03 | 1.000 GB |
-| ES 04 | 2.000 GB |
+| ES 1 | 300 GB |
+| ES 2 | 500 GB |
+| ES 3 | 1000 GB |
+| ES 4 | 2000 GB |
 
 ## Email Relay
 
-Dịch vụ Email Relay được thiết kế để đảm bảo việc gửi email số lượng lớn từ các ứng dụng, website hoặc máy chủ của khách hàng với tỷ lệ vào inbox cao.
+Dịch vụ Email Relay được thiết kế để gửi email marketing và email giao dịch số lượng lớn với tỷ lệ vào inbox cao, giúp doanh nghiệp tiếp cận khách hàng hiệu quả.
+
+| Gói Dịch Vụ | Giới Hạn Email / Ngày |
+| :--- | :--- |
+| BK-RELAY 01 | 350 |
+| BK-RELAY 02 | 700 |
+| BK-RELAY 03 | 1.500 |
+| BK-RELAY 04 | 30.000 |
 
 **Tính năng chung:**
-*   **Tên miền:** Không giới hạn
-*   **Tỷ lệ vào inbox:** Cam kết lên đến 99%
-*   **Hỗ trợ kỹ thuật:** 24/7/365
-
-**Bảng so sánh các gói BK-RELAY:**
-
-| Gói Dịch Vụ | Số Lượng Email / Ngày | Số Lượng Tên Miền | Tỷ Lệ Vào Inbox |
-| :--- | :--- | :--- | :--- |
-| BK-RELAY01 | 350 | Không giới hạn | 99% |
-| BK-RELAY02 | 700 | Không giới hạn | 99% |
-| BK-RELAY03 | 1.500 | Không giới hạn | 99% |
-| BK-RELAY 04 | 3.000 | Không giới hạn | 99% |
+- Số lượng tên miền: Không giới hạn
+- Tỷ lệ gửi email vào inbox: 99%
+- Hỗ trợ kỹ thuật: 24/7/365
 
 ## Xem Thêm
 
-*   [Tên Miền BKNS](../ten-mien/index.md)
-*   [Web Hosting BKNS](../hosting/index.md)
-*   [Chứng Chỉ SSL BKNS](../ssl/index.md)
+- [Tên Miền BKNS](../ten-mien/index.md)
+- [Web Hosting BKNS](../hosting/index.md)
+- [Chứng Chỉ SSL BKNS](../ssl/index.md)
 
-Compiled by BKNS Wiki Bot • 2026-04-07
+---
+Compiled by BKNS Wiki Bot • 2024-05-24

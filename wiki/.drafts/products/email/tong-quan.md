@@ -5,86 +5,84 @@ category: products/email
 updated: '2026-04-07'
 review_state: drafted
 claims_used: 62
-compile_cost_usd: 0.0254
+compile_cost_usd: 0.0244
 self_review: fail
 corrections: 1
 ---
 
 # Email Doanh Nghiệp BKNS — Tổng Quan Chi Tiết
 
-Email Doanh Nghiệp BKNS là giải pháp email chuyên nghiệp theo tên miền riêng của công ty, được thiết kế để đáp ứng các yêu cầu về tính ổn định, bảo mật và khả năng quản trị cho các tổ chức và doanh nghiệp. Dịch vụ này giải quyết bài toán xây dựng một kênh liên lạc chính thức, đáng tin cậy, nâng cao hình ảnh thương hiệu và đảm bảo an toàn thông tin trong giao dịch.
+Email Doanh Nghiệp là một giải pháp email theo tên miền riêng của công ty, được thiết kế để đáp ứng nhu cầu trao đổi thông tin chuyên nghiệp, bảo mật và ổn định. Dịch vụ này giải quyết bài toán xây dựng hình ảnh thương hiệu đồng nhất qua từng email gửi đi, đồng thời đảm bảo an toàn dữ liệu và khả năng quản lý tập trung cho tổ chức.
 
-### 1. Các Giải Pháp Email Doanh Nghiệp tại BKNS
+Tại BKNS, các giải pháp Email Doanh Nghiệp được xây dựng để phục vụ nhiều quy mô và nhu cầu khác nhau, từ các gói hosting email cơ bản đến hệ thống máy chủ email riêng biệt.
 
-BKNS cung cấp một hệ sinh thái dịch vụ email đa dạng, được thiết kế để phù hợp với nhiều nhu cầu và quy mô khác nhau của doanh nghiệp.
+## 1. Các giải pháp Email Doanh Nghiệp tại BKNS
 
-#### 1.1. Cloud Email Server
+BKNS cung cấp ba dòng sản phẩm chính trong danh mục Email Doanh Nghiệp, mỗi dòng sản phẩm hướng đến một nhóm đối tượng và bài toán cụ thể.
 
-Đây là giải pháp cung cấp một hệ thống máy chủ email riêng hoạt động hoàn toàn trên nền tảng điện toán đám mây.
+### 1.1. Email Hosting
 
-*   **Mô tả:** Cung cấp một hệ thống email riêng theo tên miền, hoạt động ổn định với tính bảo mật cao.
-*   **Đối tượng:** Phù hợp cho các doanh nghiệp cần toàn quyền quản trị hệ thống email và không bị giới hạn số lượng tài khoản người dùng.
-*   **Nền tảng:** Cung cấp hai tùy chọn nền tảng là **Kerio** và **Zimbra**.
-    *   Các gói **MINI EMAIL (01, 02, 03, 04)** sử dụng nền tảng Kerio.
-    *   Các gói **ES (01, 02, 03, 04)** sử dụng nền tảng Zimbra.
+Đây là dịch vụ email theo tên miền riêng cho doanh nghiệp, hoạt động trên một nền tảng độc lập, được tối ưu hóa cho sự ổn định và bảo mật.
+
+*   **Nền tảng:** Zimbra.
+*   **Đối tượng phù hợp:** Doanh nghiệp cần một hệ thống email chuyên nghiệp, ổn định, bảo mật và có khả năng tùy chỉnh số lượng tài khoản theo nhu cầu.
 *   **Tính năng nổi bật:**
-    *   Tích hợp miễn phí công cụ chống Spam và Virus.
-    *   Hỗ trợ đầy đủ các giao thức POP3/IMAP/SMTP, cho phép sử dụng trên Webmail và các ứng dụng email client như Outlook.
+    *   Hỗ trợ truy cập qua Webmail và các ứng dụng email client phổ biến như Outlook.
+    *   Tích hợp tính năng tự động trả lời (Auto-responder).
+    *   Bao gồm dịch vụ Managed DNS (Quản trị DNS) miễn phí.
+*   **Giới hạn:** Tất cả các gói đều có giới hạn gửi 200 email/giờ.
 
-#### 1.2. Email Hosting
+**Các gói dịch vụ (Thông tin chi tiết đang được cập nhật):**
 
-Dịch vụ email theo tên miền riêng chạy trên nền tảng độc lập, tối ưu cho các doanh nghiệp cần một giải pháp nhanh chóng và hiệu quả.
+| Gói Dịch Vụ | Giới hạn gửi (email/giờ) | Link Đăng Ký |
+| :--- | :--- | :--- |
+| **EMAIL 1** | 200 | [Đăng ký](https://my.bkns.net/?cmd=cart&action=add&id=302) |
+| **EMAIL 2** | Đang cập nhật | [Đăng ký](https://my.bkns.net/?cmd=cart&action=add&id=264) |
+| **EMAIL 3** | Đang cập nhật | [Đăng ký](https://my.bkns.net/?cmd=cart&action=add&id=265) |
+| **EMAIL 4** | Đang cập nhật | [Đăng ký](https://my.bkns.net/?cmd=cart&action=add&id=266) |
 
-*   **Mô tả:** Dịch vụ email chuyên nghiệp, ổn định và bảo mật, cho phép tùy chỉnh số lượng tài khoản theo nhu cầu.
-*   **Nền tảng:** Hoạt động trên nền tảng **Zimbra**.
+### 1.2. Cloud Email Server
+
+Đây là giải pháp cung cấp một hệ thống máy chủ email riêng hoạt động trên nền tảng điện toán đám mây, mang lại khả năng kiểm soát và bảo mật vượt trội.
+
+*   **Nền tảng tùy chọn:** Kerio hoặc Zimbra.
+*   **Đối tượng phù hợp:** Doanh nghiệp cần một hệ thống email riêng theo tên miền, yêu cầu tính bảo mật cao, hoạt động ổn định, có toàn quyền quản trị và không giới hạn số lượng tài khoản người dùng.
 *   **Tính năng nổi bật:**
-    *   Hỗ trợ tính năng tự động trả lời (Auto-responder).
-    *   Tương thích với các ứng dụng email client phổ biến như Outlook.
-    *   Đi kèm dịch vụ Managed DNS (Quản trị DNS) miễn phí.
-*   **Giới hạn:** Tất cả các gói đều có giới hạn gửi **200 email/giờ**.
+    *   Tích hợp miễn phí các công cụ bảo mật, bao gồm chống Spam và chống Virus.
+    *   Hỗ trợ đầy đủ các giao thức POP3/IMAP/SMTP.
+    *   Cung cấp hai dòng gói cước chính dựa trên nền tảng:
+        *   **Nền tảng Kerio:** Các gói MINI EMAIL 01, MINI EMAIL 02, MINI EMAIL 03, MINI EMAIL 04.
+        *   **Nền tảng Zimbra:** Các gói ES 01, ES 02, ES 03, ES 04.
 
-#### 1.3. Email Relay
+### 1.3. Email Relay
 
-Đây là giải pháp trung gian giúp tăng cường uy tín và đảm bảo tỷ lệ gửi email thành công vào hộp thư đến (inbox).
+Email Relay là một giải pháp trung gian giúp định tuyến toàn bộ email gửi ra từ hệ thống Email Server hiện có của khách hàng qua hệ thống của BKNS. Dịch vụ này giúp tăng uy tín IP và đảm bảo tỷ lệ email vào hộp thư đến (inbox) cao.
 
-*   **Mô tả:** Định tuyến toàn bộ email gửi ra từ hệ thống Email Server của khách hàng qua hệ thống máy chủ chuyên dụng của BKNS, vốn có dải IP uy tín cao đã được whitelist.
-*   **Đối tượng:** Dành cho các doanh nghiệp đã có Email Server riêng nhưng gặp vấn đề khi gửi email (ví dụ: IP bị blacklist, email vào spam) hoặc có nhu cầu gửi Email Marketing số lượng lớn.
+*   **Đối tượng phù hợp:**
+    *   Doanh nghiệp đã có Email Server riêng và gặp vấn đề khi gửi email ra ngoài (ví dụ: IP bị blacklist, email vào spam).
+    *   Doanh nghiệp có nhu cầu gửi Email Marketing với số lượng lớn.
 *   **Tính năng nổi bật:**
-    *   Sử dụng hệ thống IP đã được whitelist để đảm bảo email không bị chặn.
-    *   Không giới hạn số lượng tên miền sử dụng trên dịch vụ.
-    *   Cung cấp giao diện quản trị riêng cho khách hàng.
-    *   Đội ngũ kỹ thuật hỗ trợ 24/7/365.
+    *   Sử dụng hệ thống IP đã được whitelist để gửi email.
+    *   Không giới hạn số lượng tên miền sử dụng.
+    *   Cung cấp giao diện quản trị dịch vụ.
+    *   Hỗ trợ kỹ thuật 24/7/365.
+*   **Giới hạn chung:** Tất cả các gói đều có giới hạn gửi 200 email/giờ. Một số gói cụ thể như BK-RELAY 04 có thêm giới hạn 3.000 email/ngày.
 
-### 2. Điểm Mạnh & Lợi Thế Cạnh Tranh (USP)
+## 2. Điểm mạnh và Lợi thế cạnh tranh (USP)
 
-*   **Đa dạng nền tảng:** Cung cấp cả hai lựa chọn nền tảng phổ biến là Zimbra và Kerio, giúp doanh nghiệp lựa chọn giải pháp phù hợp nhất với hạ tầng và nhu cầu sử dụng.
-*   **Bảo mật tích hợp:** Các giải pháp email đều được tích hợp sẵn tính năng bảo mật, chống spam và virus, giúp bảo vệ doanh nghiệp khỏi các mối đe dọa từ email.
-*   **Giải pháp chuyên biệt cho việc gửi mail:** Dịch vụ Email Relay là một giải pháp đặc thù, giải quyết triệt để bài toán gửi email vào inbox bằng cách sử dụng hệ thống IP uy tín, đặc biệt hiệu quả cho email giao dịch và email marketing.
-*   **Quản trị và hỗ trợ toàn diện:** Cung cấp giao diện quản trị dịch vụ và được hỗ trợ bởi đội ngũ kỹ thuật chuyên nghiệp hoạt động 24/7/365.
-*   **Tương thích cao:** Hỗ trợ đầy đủ các giao thức email tiêu chuẩn (POP3/IMAP/SMTP) và các trình duyệt email phổ biến như Outlook, đảm bảo trải nghiệm người dùng liền mạch.
+*   **Đa dạng giải pháp:** Cung cấp nhiều lựa chọn từ Email Hosting, Cloud Email Server riêng, đến Email Relay chuyên dụng, đáp ứng mọi nhu cầu từ cơ bản đến nâng cao.
+*   **Bảo mật tích hợp:** Các giải pháp đều chú trọng đến bảo mật, tích hợp sẵn các công cụ chống Spam/Virus để bảo vệ người dùng.
+*   **Lựa chọn nền tảng linh hoạt:** Khách hàng có thể lựa chọn giữa các nền tảng email phổ biến và mạnh mẽ là Zimbra và Kerio cho dịch vụ Cloud Email Server.
+*   **Giải pháp cho vấn đề gửi mail:** Dịch vụ Email Relay giải quyết triệt để bài toán IP bị blacklist và tối ưu hóa việc gửi email marketing số lượng lớn.
+*   **Hỗ trợ chuyên nghiệp:** Cung cấp hỗ trợ kỹ thuật chuyên sâu, đặc biệt là hỗ trợ 24/7/365 cho dịch vụ Email Relay.
 
-### 3. Khi Nào Nên Chọn Dịch Vụ Email Doanh Nghiệp BKNS?
+## 3. Khi nào nên chọn các giải pháp Email của BKNS?
 
-*   **Khi cần sự chuyên nghiệp:** Thay vì sử dụng email miễn phí, việc dùng email theo tên miền riêng (`tennhanvien@tencongty.vn`) giúp khẳng định sự chuyên nghiệp và uy tín của thương hiệu.
-*   **Khi cần bảo mật và quản trị:** So với việc tự xây dựng, dịch vụ của BKNS cung cấp một hệ thống được cấu hình sẵn, bảo mật, ổn định và có đội ngũ chuyên gia hỗ trợ, giúp doanh nghiệp tiết kiệm chi phí hạ tầng và nhân sự vận hành.
-*   **Khi gặp sự cố gửi email:** Nếu hệ thống email hiện tại của bạn thường xuyên bị liệt vào danh sách đen (blacklist) hoặc email gửi đi bị vào mục spam, **Email Relay** là giải pháp tối ưu để khắc phục.
-*   **Để hoàn thiện hệ sinh thái số:** Dịch vụ Email Doanh Nghiệp kết hợp hoàn hảo với các dịch vụ khác của BKNS như [Tên Miền BKNS](../ten-mien/index.md) và [Web Hosting BKNS](../hosting/index.md) để tạo nên một giải pháp trực tuyến toàn diện cho doanh nghiệp.
+*   **Chọn Email Hosting:** Khi doanh nghiệp của bạn cần một giải pháp email theo tên miền nhanh chóng, hiệu quả về chi phí, không yêu cầu quyền quản trị sâu và muốn tùy chỉnh số lượng tài khoản linh hoạt.
+*   **Chọn Cloud Email Server:** Khi doanh nghiệp của bạn yêu cầu một hệ thống email hoàn toàn riêng biệt, bảo mật cao, có toàn quyền quản trị máy chủ và không muốn bị giới hạn số lượng tài khoản người dùng.
+*   **Chọn Email Relay:** Khi bạn đã có sẵn một hệ thống email nhưng đang gặp khó khăn trong việc gửi email ra ngoài (email vào spam, IP bị chặn) hoặc có nhu cầu gửi email marketing một cách hiệu quả.
 
-### 4. Bảng Đăng Ký Một Số Gói Dịch Vụ
-
-Dưới đây là liên kết đăng ký nhanh cho một số gói dịch vụ email tiêu biểu.
-
-| Gói Dịch Vụ | Link Đăng Ký |
-| :--- | :--- |
-| EMAIL 1 | [Đăng ký](https://my.bkns.net/?cmd=cart&action=add&id=302) |
-| EMAIL 2 | [Đăng ký](https://my.bkns.net/?cmd=cart&action=add&id=264) |
-| EMAIL 3 | [Đăng ký](https://my.bkns.net/?cmd=cart&action=add&id=265) |
-| EMAIL 4 | [Đăng ký](https://my.bkns.net/?cmd=cart&action=add&id=266) |
-| BK-RELAY04 | [Đăng ký](https://my.bkns.net/?cmd=cart&action=add&id=408) |
-
-*Lưu ý: Thông tin chi tiết về giá và cấu hình đầy đủ của các gói dịch vụ đang được cập nhật.*
-
-### Sản Phẩm Liên Quan
+## Sản phẩm liên quan
 
 *   [Tên Miền BKNS](../ten-mien/index.md)
 *   [Web Hosting BKNS](../hosting/index.md)

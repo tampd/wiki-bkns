@@ -1,0 +1,21 @@
+claim_id: CLM-EXCEL-product_hosting_bksw03_plus-price_3y
+entity_id: product.hosting.bksw03_plus
+entity_type: product_plan
+entity_name: Hosting Windows BKSW03+
+attribute: price_3y
+value: 3596400
+confidence: ground_truth
+review_state: approved
+risk_class: verified
+source_ids:
+- EXCEL-BANGGIA-BKNS-2026
+observed_at: '2026-04-07T15:46:04.873903+07:00'
+valid_from: '2026-04-07'
+approved_at: '2026-04-07T15:46:04.873903+07:00'
+approved_by: excel-direct-injection
+unit: VND
+qualifiers:
+  period: 3 năm
+  vat_included: false
+  discount_pct: 26
+compiler_note: Excel Hosting sheet, 3. Hosting Windows, plan BKSW03+, Giá 3 năm (-26%)

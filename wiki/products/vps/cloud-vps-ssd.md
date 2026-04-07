@@ -8,7 +8,7 @@ claims_used: 43
 compile_cost_usd: 0.0113
 self_review: pass
 corrections: 0
-approved_at: '2026-04-07T12:53:58.903689+07:00'
+approved_at: '2026-04-07T16:24:08.834988+07:00'
 ---
 
 # Cloud VPS SSD — VM Series

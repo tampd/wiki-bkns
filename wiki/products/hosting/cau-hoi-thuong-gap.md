@@ -8,7 +8,7 @@ claims_used: 0
 compile_cost_usd: 0
 self_review: skeleton
 corrections: 0
-approved_at: '2026-04-07T12:35:09.508224+07:00'
+approved_at: '2026-04-07T16:01:36.064512+07:00'
 ---
 
 # Web Hosting BKNS — Câu Hỏi Thường Gặp

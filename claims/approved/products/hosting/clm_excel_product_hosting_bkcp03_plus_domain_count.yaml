@@ -1,0 +1,16 @@
+claim_id: CLM-EXCEL-product_hosting_bkcp03_plus-domain_count
+entity_id: product.hosting.bkcp03_plus
+entity_type: product_plan
+entity_name: Platium Web Hosting BKCP03+
+attribute: domain_count
+value: 4
+confidence: ground_truth
+review_state: approved
+risk_class: verified
+source_ids:
+- EXCEL-BANGGIA-BKNS-2026
+observed_at: '2026-04-07T15:46:04.873903+07:00'
+valid_from: '2026-04-07'
+approved_at: '2026-04-07T15:46:04.873903+07:00'
+approved_by: excel-direct-injection
+compiler_note: Excel Hosting sheet, 1. Platium web hosting, plan BKCP03+, Domain

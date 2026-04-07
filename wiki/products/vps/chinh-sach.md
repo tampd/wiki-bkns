@@ -5,55 +5,77 @@ category: products/vps
 updated: '2026-04-07'
 review_state: approved
 claims_used: 37
-compile_cost_usd: 0.0124
-self_review: pass
-corrections: 0
-approved_at: '2026-04-07T12:53:58.898698+07:00'
+compile_cost_usd: 0.0139
+self_review: fail
+corrections: 3
+approved_at: '2026-04-07T16:24:08.829505+07:00'
 ---
 
 # Cloud VPS BKNS — Chính Sách
 
-Trang này tổng hợp các chính sách, cam kết dịch vụ (SLA) và điều khoản hỗ trợ áp dụng cho các dịch vụ Cloud VPS tại BKNS, được biên soạn dựa trên các thông tin đã được xác thực.
+Trang này tổng hợp các chính sách quan trọng liên quan đến dịch vụ Cloud VPS tại BKNS, bao gồm cam kết chất lượng dịch vụ (SLA), chính sách hỗ trợ, và các điều khoản khác.
 
-### Cam kết Chất lượng Dịch vụ (SLA)
+## 1. Cam kết Chất lượng Dịch vụ (SLA)
 
-*   **Cam kết Uptime:** **99.99%**.
-    *   *Ghi chú: Mức cam kết này được xác nhận trên các gói dịch vụ như **BK MISA** và **Storage VPS**.*
+- **Cam kết Uptime (Uptime Commitment):** BKNS cam kết thời gian hoạt động của dịch vụ là **99.99%**.
+  - *Thông tin được xác nhận cho các dịch vụ: BK MISA, Storage VPS.*
 
-### Dùng thử & Hoàn tiền
+## 2. Chính sách Dùng thử và Hoàn tiền
 
-*   **Chính sách dùng thử:** Gói dịch vụ **BK MISA** cung cấp **7 ngày** dùng thử miễn phí.
-*   **Chính sách hoàn tiền:** Đang cập nhật.
+- **Dùng thử miễn phí (Free Trial):** Dịch vụ **BK MISA** cung cấp **7 ngày** dùng thử miễn phí.
+- **Chính sách hoàn tiền:** Đang cập nhật.
 
-### Chính sách Hỗ trợ Kỹ thuật
+## 3. Chính sách Hỗ trợ Kỹ thuật
 
-*   **Thời gian hỗ trợ:** Đội ngũ kỹ thuật của BKNS hỗ trợ liên tục **24/7/365**.
-*   **Kênh hỗ trợ chính thức:** Đang cập nhật (Hotline, Ticket, Email).
-*   **Thời gian phản hồi:** Đang cập nhật.
-*   **Phạm vi hỗ trợ:**
-    *   Hỗ trợ đổi địa chỉ IP miễn phí (áp dụng cho IP thuộc BKNS).
-    *   Người dùng có thể dễ dàng nâng cấp tài nguyên. Với gói **BK MISA**, việc nâng cấp được hỗ trợ bất kỳ lúc nào mà không làm gián đoạn dịch vụ hay mất mát dữ liệu.
-    *   Một số gói dịch vụ không hỗ trợ control panel **DirectAdmin** (ví dụ: VPS SEO, SEO 01).
+- **Thời gian hỗ trợ:** Đội ngũ kỹ thuật của BKNS hỗ trợ khách hàng liên tục.
+  - Hỗ trợ **24/7/365** cho các dịch vụ: **BK MISA, Storage VPS**.
+  - Hỗ trợ **24/7** cho dịch vụ: **VPS Giá Rẻ**.
+- **Kênh hỗ trợ (Hotline, Email, Ticket):** Đang cập nhật.
+- **Thời gian phản hồi yêu cầu:** Đang cập nhật.
+- **Hỗ trợ khác:**
+  - Khách hàng được hỗ trợ đổi địa chỉ IP miễn phí (áp dụng cho các địa chỉ IP thuộc sở hữu của BKNS).
 
-### Chính sách Sao lưu Dữ liệu (Backup)
+## 4. Chính sách Sao lưu Dữ liệu (Backup Policy)
 
-Chính sách sao lưu dữ liệu có sự khác biệt tùy theo gói dịch vụ cụ thể:
+Chính sách sao lưu có thể khác nhau tùy thuộc vào từng dòng sản phẩm VPS cụ thể.
 
-*   **Sao lưu hàng ngày (Daily):** Áp dụng cho gói **BK MISA**. Dữ liệu được sao lưu tự động mỗi ngày.
-*   **Sao lưu hàng tuần (Weekly):** Áp dụng cho các gói **VPS N8N – AI**, **VPS SEO**, **VPS Siêu Rẻ**, **Thuê Cloud VPS SSD**, và các gói con như **SEO 01**, **SEO 02**.
-*   **Không bao gồm sao lưu hàng tuần:** Các gói **VPS Giá Rẻ** và **VPS-MM01** không đi kèm tính năng sao lưu hàng tuần mặc định.
+| Dịch vụ (Service) | Tần suất Sao lưu (Backup Frequency) | Ghi chú |
+| :--- | :--- | :--- |
+| **BK MISA** | Hàng ngày (Daily) | Sao lưu được thực hiện tự động. |
+| **VPS N8N – AI** | Hàng tuần (Weekly) | |
+| **Cloud VPS SEO** (bao gồm SEO 01, SEO 02) | Hàng tuần (Weekly) | |
+| **VPS Siêu Rẻ** | Hàng tuần (Weekly) | |
+| **Thuê Cloud VPS SSD** | Hàng tuần (Weekly) | |
+| **VPS Giá Rẻ** (bao gồm VPS-MM01) | Không hỗ trợ | Các gói dịch vụ không đi kèm sao lưu dữ liệu hàng tuần. |
 
-### Các Điều khoản và Chính sách khác
+## 5. Các Chính sách và Điều khoản Khác
 
-*   **Hệ điều hành hỗ trợ:** Hỗ trợ đa dạng hệ điều hành, bao gồm các phiên bản phổ biến của CentOS, Ubuntu, Debian và **Windows** (xác nhận trên gói Storage VPS).
-*   **Hỗ trợ IPv6:** Hầu hết các dịch vụ VPS đều có sẵn và hỗ trợ địa chỉ IPv6.
-*   **Chứng chỉ SSL:** Gói dịch vụ **VPS SEO** không đi kèm chứng chỉ SSL miễn phí.
-*   **Thuế VAT:** Giá dịch vụ được niêm yết chưa bao gồm VAT (xác nhận trên gói VPS N8N – AI).
+- **Nâng cấp (Upgrade):**
+  - Hầu hết các dịch vụ đều hỗ trợ nâng cấp tài nguyên khi người dùng có nhu cầu (ví dụ: VPS Giá Rẻ).
+  - Đối với dịch vụ **BK MISA**, việc nâng cấp có thể được thực hiện bất kỳ lúc nào mà không làm gián đoạn dịch vụ hay mất mát dữ liệu.
+
+- **Hỗ trợ IPv6 (IPv6 Support):**
+  - Hầu hết các dịch vụ Cloud VPS đều hỗ trợ địa chỉ IPv6.
+  - *Thông tin được xác nhận cho: VPS N8N – AI, VPS SEO, VPS Siêu Rẻ, Thuê Cloud VPS SSD, VPS-MM01.*
+
+- **Control Panel:**
+  - Dịch vụ **VPS SEO** và **SEO 01** không hỗ trợ control panel **DirectAdmin**.
+
+- **Chứng chỉ SSL (SSL Certificate):**
+  - Gói dịch vụ **VPS SEO** không đi kèm chứng chỉ SSL miễn phí.
+
+- **Hệ điều hành được hỗ trợ (Supported OS):**
+  - Dịch vụ **Storage VPS** tương thích với các hệ điều hành phổ biến như CentOS, Ubuntu, Debian, và Windows.
+
+- **Thuế VAT (VAT Policy):**
+  - Giá dịch vụ **VPS N8N – AI** được niêm yết chưa bao gồm thuế VAT.
+
+---
 
 ### Sản phẩm liên quan
 
-*   [Chứng Chỉ SSL BKNS](../ssl/index.md)
-*   [Phần Mềm & Bản Quyền BKNS](../software/index.md)
-*   [Máy Chủ BKNS](../server/index.md)
+- [Chứng Chỉ SSL BKNS](../ssl/index.md)
+- [Phần Mềm & Bản Quyền BKNS](../software/index.md)
+- [Máy Chủ BKNS](../server/index.md)
 
 Compiled by BKNS Wiki Bot • 2026-04-07

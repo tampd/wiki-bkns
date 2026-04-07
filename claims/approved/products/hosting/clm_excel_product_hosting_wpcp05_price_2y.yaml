@@ -1,0 +1,21 @@
+claim_id: CLM-EXCEL-product_hosting_wpcp05-price_2y
+entity_id: product.hosting.wpcp05
+entity_type: product_plan
+entity_name: Hosting WordPress WPCP05
+attribute: price_2y
+value: 3840000
+confidence: ground_truth
+review_state: approved
+risk_class: verified
+source_ids:
+- EXCEL-BANGGIA-BKNS-2026
+observed_at: '2026-04-07T15:46:04.873903+07:00'
+valid_from: '2026-04-07'
+approved_at: '2026-04-07T15:46:04.873903+07:00'
+approved_by: excel-direct-injection
+unit: VND
+qualifiers:
+  period: 2 năm
+  vat_included: false
+  discount_pct: 20
+compiler_note: Excel Hosting sheet, 2. Hosting Wordpress, plan WPCP05, Giá 2 năm (-20%)
