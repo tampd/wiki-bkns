@@ -1,0 +1,17 @@
+claim_id: CLM-ENT--SEO-BW
+entity_id: ENT-PROD-VPS.seo
+entity_type: product_service
+entity_name: VPS SEO
+attribute: bandwidth
+value: unlimited
+unit: ''
+qualifiers: {}
+source_ids:
+- SRC-DICH_VU_CLOUD_VPS_SEO_MAY_CHU_AO_TOI_UU_CHO_SEO_2026_04_04
+observed_at: '2026-04-04T20:48:08.004379+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tính năng / Thành phần: • Lưu Lượng Truyền Tải Dữ Liệu:
+  Không giới hạn lưu lượng truy cập và truyền tải dữ liệu.'

@@ -8,10 +8,12 @@ original_format: docx
 page_title: Chứng chỉ SSL GeoTrust True BusinessID Wildcard
 content_hash: sha256:7b1cb7cdb855804e40c17c0c5fecc389b9863fe214e2c9547307748f25156110
 word_count: 703
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/ssl
 crawl_method: manual_upload
 source_date: '2026-02-08'
+skipped_reason: Duplicate of chung-chi-ssl-geotrust-true-businessid-wildcard-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.268308+07:00'
 ---
 
 ═══ GeoTrust True BusinessID Wildcard

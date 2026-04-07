@@ -1,0 +1,20 @@
+claim_id: CLM-SSL-BKNS-TARGET_A
+entity_id: product.ssl.bkns.instantssl_ov
+entity_type: product
+entity_name: InstantSSL (OV)
+attribute: target_audience
+value: Các doanh nghiệp muốn tăng cường sự tin tưởng của khách truy cập
+unit: null
+qualifiers: null
+source_ids:
+- SRC-CHUNG_CHI_SSL_INSTANTSSL_OV_2026_04_04
+observed_at: '2026-04-04T20:37:35.292514+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: none
+compiler_note: 'Trích từ Tóm tắt nhanh: • Phù hợp với: ...các doanh nghiệp muốn tăng
+  cường sự tin tưởng của khách truy cập thông qua việc hiển thị thông tin đã được
+  xác thực.'
+approved_at: '2026-04-07T13:00:13.370735+07:00'
+approved_by: admin-batch

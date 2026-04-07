@@ -7,10 +7,12 @@ original_format: docx
 page_title: Dịch vụ Hosting Windows tại BKNS
 content_hash: sha256:2255a7df1274ad8b79e14a5a109e8795ec7a312353e078a50dd0b577cce38faa
 word_count: 955
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/hosting
 crawl_method: manual_upload
 source_date: '2026-02-08'
+skipped_reason: Duplicate of dich-vu-hosting-windows-tai-bkns-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.454815+07:00'
 ---
 
 ═══ Hosting Windows

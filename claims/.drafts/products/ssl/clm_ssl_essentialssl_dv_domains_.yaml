@@ -1,0 +1,17 @@
+claim_id: CLM-SSL-ESSENTIALSSL_DV-DOMAINS_
+entity_id: product.ssl.essentialssl_dv
+entity_type: product_plan
+entity_name: EssentialSSL (DV)
+attribute: domains_protected
+value: 1
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-ESSENTIALSSL_DV_CHUNG_CHI_SSL_XAC_THUC_TEN_MIEN_TU_COMOD_2026_04_06
+observed_at: '2026-04-07T00:25:55.176428+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tính năng / Thành phần: ''Số lượng tên miền: Bảo vệ 1 tên
+  miền.'''

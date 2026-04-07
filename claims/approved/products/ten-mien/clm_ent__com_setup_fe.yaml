@@ -1,0 +1,19 @@
+claim_id: CLM-ENT--COM-SETUP_FE
+entity_id: ENT-PROD-DOMAIN.COM
+entity_type: product_variant
+entity_name: .com
+attribute: setup_fee
+value: 0
+unit: VND
+qualifiers: null
+source_ids:
+- SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_06
+observed_at: '2026-04-06T23:08:52.480720+07:00'
+valid_from: '2026-04-06'
+confidence: high
+review_state: approved
+risk_class: high
+compiler_note: 'Trích từ Bảng giá Tên miền Quốc tế: | .com | Miễn phí | 380.000 |
+  429.000 | 429.000 |'
+approved_at: '2026-04-07T13:00:10.364377+07:00'
+approved_by: admin-batch

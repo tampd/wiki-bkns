@@ -1,0 +1,17 @@
+claim_id: CLM-COLO-BKNS-MANAGEME
+entity_id: product.colocation.bkns
+entity_type: product
+entity_name: Thuê Chỗ Đặt Máy Chủ (Colocation)
+attribute: management_access
+value: Toàn quyền quản trị
+unit: ''
+qualifiers: {}
+source_ids:
+- SRC-DICH_VU_THUE_CHO_AT_MAY_CHU_COLOCATION_TAI_BKNS_2026_04_06
+observed_at: '2026-04-07T00:12:22.818477+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: Điểm chính: ... khách hàng toàn quyền quản
+  trị máy chủ.'

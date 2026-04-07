@@ -1,0 +1,21 @@
+claim_id: CLM-ENT-PROD-HOS-HAS_FEAT
+entity_id: ENT-PROD-HOSTING
+entity_type: product_offering
+entity_name: Hosting Giá Rẻ
+attribute: has_feature
+value: Redis
+unit: ''
+qualifiers: {}
+source_ids:
+- SRC-HOSTING_GIA_RE_BANG_GIA_VA_THONG_SO_KY_THUAT_TAI_BKNS_2026_04_06
+observed_at: '2026-04-07T00:36:08.663042+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ Tính năng / Thành phần: ''• Tiện ích đi kèm: Hỗ trợ Jetbackup,
+  OneClick, Redis.'''
+value_changed_from: OneClick
+value_changed_at: '2026-04-07T00:36:08.663059+07:00'
+approved_at: '2026-04-07T13:00:11.667028+07:00'
+approved_by: admin-batch

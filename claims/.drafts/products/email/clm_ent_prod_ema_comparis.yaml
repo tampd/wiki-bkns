@@ -1,0 +1,21 @@
+claim_id: CLM-ENT-PROD-EMA-COMPARIS
+entity_id: ENT-PROD-EMAIL-SERVER
+entity_type: product
+entity_name: Email Hosting
+attribute: comparison
+value: Số lượng email bị giới hạn theo tài nguyên của gói dịch vụ.
+unit: ''
+qualifiers:
+  compared_to: Email Server
+source_ids:
+- SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_VA_TIN_CAY_2026_04_04
+- SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_TIN_CAY_2026_04_06
+observed_at: '2026-04-07T00:21:09.925036+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng So sánh Email Hosting và Email Server: | EMAIL HOSTING
+  | Số lượng email bị giới hạn theo tài nguyên của gói dịch vụ. |'
+value_changed_from: Sử dụng chung IP (Share IP) với các dịch vụ Email Hosting khác.
+value_changed_at: '2026-04-07T00:21:09.925053+07:00'

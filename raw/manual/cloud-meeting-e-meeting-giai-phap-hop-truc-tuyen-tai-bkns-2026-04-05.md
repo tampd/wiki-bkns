@@ -9,10 +9,12 @@ original_format: docx
 page_title: Cloud Meeting (E-meeting)_ Giải pháp họp trực tuyến tại BKNS
 content_hash: sha256:8f59fd1e796b64fb53c2976c33557937fde37c69bed8a60aeae55b47829ac6de
 word_count: 510
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/other
 crawl_method: manual_upload
 source_date: '2026-02-08'
+skipped_reason: Duplicate of cloud-meeting-e-meeting-giai-phap-hop-truc-tuyen-tai-bkns-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.273086+07:00'
 ---
 
 ═══ Cloud Meeting \(E\-meeting\)

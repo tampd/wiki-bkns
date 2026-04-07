@@ -8,10 +8,12 @@ original_format: docx
 page_title: VPS N8N – AI_ Dịch vụ tự động hóa quy trình tại BKNS
 content_hash: sha256:e7fe7ae371c868277b339443aece3601a19a463bf4052de13fc9977411d4e7bf
 word_count: 744
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/vps
 crawl_method: manual_upload
 source_date: '2026-02-08'
+skipped_reason: Duplicate of vps-n8n-ai-dich-vu-tu-ong-hoa-quy-trinh-tai-bkns-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.223835+07:00'
 ---
 
 ═══ VPS N8N – AI

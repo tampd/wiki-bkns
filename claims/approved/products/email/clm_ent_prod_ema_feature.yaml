@@ -1,0 +1,22 @@
+claim_id: CLM-ENT-PROD-EMA-FEATURE
+entity_id: ENT-PROD-EMAIL
+entity_type: product
+entity_name: Dịch vụ Email Hosting
+attribute: feature
+value: Tự động trả lời (Auto-responder)
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-TRANNING_KINH_DOANH_HOSTING_EMAIL_2026_04_04
+- SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_06
+observed_at: '2026-04-07T00:05:00.848531+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ mục Tính năng / Thành phần: ''Tiện ích: Hỗ trợ tự động trả
+  lời (Auto-responder)'''
+value_changed_from: Chống Virus
+value_changed_at: '2026-04-07T00:05:00.848579+07:00'
+approved_at: '2026-04-07T13:00:11.510187+07:00'
+approved_by: admin-batch

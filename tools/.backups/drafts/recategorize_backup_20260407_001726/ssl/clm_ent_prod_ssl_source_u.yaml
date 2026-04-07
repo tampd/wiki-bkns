@@ -1,0 +1,20 @@
+claim_id: CLM-ENT-PROD-SSL-SOURCE_U
+entity_id: ENT-PROD-SSL-RapidSSL-Wildcard
+entity_type: product
+entity_name: Comodo EV SSL
+attribute: source_url
+value: https://ssl.bkns.vn/ssl-bao-mat/comodo-ev-ssl
+unit: null
+qualifiers: null
+source_ids:
+- SRC-RAPIDSSL_WILDCARD_CERTIFICATE_THONG_TIN_VA_BANG_GIA_TAI_BK_2026_04_04
+- SRC-CHUNG_CHI_SSL_GEOTRUST_TRUE_BUSINESSID_EV_FLEX_2026_04_06
+- SRC-COMODO_EV_SSL_CHUNG_CHI_SSL_XAC_THUC_MO_RONG_2026_04_06
+observed_at: '2026-04-06T23:47:35.411768+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ mục Thông tin nguồn: • URL: https://ssl\.bkns\.vn/ssl\-bao\-mat/comodo\-ev\-ssl'
+value_changed_from: https://ssl.bkns.vn/ssl-bao-mat/geotrust-true-businessid-ev-flex
+value_changed_at: '2026-04-06T23:47:35.411804+07:00'

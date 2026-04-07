@@ -1,99 +1,100 @@
 ---
 page_id: wiki.products.server.tong-quan
-title: Máy Chủ BKNS — Dedicated & Co-location
+title: Máy Chủ BKNS — Tổng Quan Chi Tiết
 category: products/server
-updated: '2026-04-05'
+updated: '2026-04-07'
 review_state: drafted
-sensitivity: high
-compiled_from:
-- CLM-BKNS:COLOCAT-ADMIN_RI-20260404
-- CLM-BKNS:COLOCAT-BANDWIDT-20260404
-- CLM-BKNS:COLOCAT-DATA_AVA-20260404
-- CLM-BKNS:COLOCAT-DATA_CEN-20260404
-- CLM-BKNS:COLOCAT-FEATURE-20260404
-- CLM-BKNS:COLOCAT-PRODUCT_-20260404
-- CLM-BKNS:COLOCAT-PROMOTIO-20260404
-- CLM-BKNS:COLOCAT-REGISTRA-20260404
-- CLM-BKNS:COLOCAT-SERVICE_-20260404
-- CLM-BKNS:COLOCAT-SOURCE_U-20260404
-compile_cost_usd: 0.0569
-corrections: 0
-self_review_verdict: pass
+claims_used: 66
+compile_cost_usd: 0.0295
+self_review: fail
+corrections: 2
 ---
 
-# Máy Chủ BKNS — Dedicated & Co-location
+# Máy Chủ BKNS — Tổng Quan Chi Tiết
 
-BKNS cung cấp các dịch vụ máy chủ chuyên nghiệp, bao gồm Thuê Chỗ Đặt Máy Chủ (Colocation) và Cho Thuê Máy Chủ Vật Lý (Dedicated Server) <sup>[CLM-SERV-DEDICATED-SERVICE_-20260404][CLM-BKNS:COLOCAT-SERVICE_-20260404]</sup>. Các sản phẩm này thuộc danh mục máy chủ <sup>[CLM-BKNS:COLOCAT-PRODUCT_-20260404]</sup>, phù hợp với nhiều đối tượng khách hàng từ doanh nghiệp lớn đến các cá nhân có nhu cầu sử dụng đa dạng <sup>[CLM-BKNS:COLOCAT-TARGET_C-20260404][CLM-SERV-DEDICATED-TARGET_A-20260404]</sup>.
+Dịch vụ Máy chủ của BKNS là một bộ giải pháp toàn diện, cung cấp hạ tầng vật lý và các dịch vụ đi kèm, được thiết kế để đáp ứng nhu cầu về hiệu năng, sự ổn định và khả năng kiểm soát cao của doanh nghiệp. Các dịch vụ này giải quyết bài toán cho các tổ chức cần một môi trường chuyên nghiệp để vận hành hệ thống công nghệ thông tin nhưng muốn tiết kiệm chi phí xây dựng và quản lý trung tâm dữ liệu (Data Center) riêng.
 
-## 1. Thuê Chỗ Đặt Máy Chủ (Colocation)
+## Các Dịch vụ Máy chủ BKNS Cung cấp
 
-Dịch vụ Colocation cho phép khách hàng thuê không gian và cơ sở hạ tầng tại trung tâm dữ liệu (Data Center) của BKNS để đặt máy chủ vật lý của mình <sup>[CLM-BKNS:COLOCAT-SERVICE_-20260404]</sup>. Dịch vụ này phù hợp với các doanh nghiệp đã sở hữu máy chủ riêng và cần một môi trường chuyên nghiệp để vận hành, như các công ty có website lớn, công ty game, tài chính, chứng khoán, hoặc các đơn vị cần hệ thống email và backup dữ liệu riêng <sup>[CLM-BKNS:COLOCAT-TARGET_C-20260404]</sup>.
+BKNS cung cấp một danh mục đa dạng các sản phẩm và dịch vụ liên quan đến máy chủ, bao gồm:
 
-**Đặc điểm nổi bật:**
-*   **Hạ tầng:** Data Center đạt chuẩn quốc tế Tier 3 <sup>[CLM-BKNS:COLOCAT-DATA_CEN-20260404][CLM-ENT-PROD-COL-DATA_CEN-20260405]</sup>, trang bị hệ thống làm mát chuyên dụng <sup>[CLM-ENT-PROD-COL-FEATURE-20260405]</sup>, nguồn điện ổn định có UPS backup <sup>[CLM-ENT-PROD-COL-POWER_SU-20260405]</sup>, và bảo mật vật lý 24/7 <sup>[CLM-ENT-PROD-COL-SECURITY-20260405]</sup>.
-*   **Toàn quyền quản trị:** Khách hàng có toàn quyền quản trị máy chủ của mình <sup>[CLM-BKNS:COLOCAT-ADMIN_RI-20260404]</sup>.
-*   **Băng thông:** Băng thông không giới hạn <sup>[CLM-BKNS:COLOCAT-BANDWIDT-20260404]</sup> với đường truyền internet đa nhà mạng <sup>[CLM-ENT-PROD-COL-NETWORK_-20260405]</sup>.
-*   **Hỗ trợ kỹ thuật:** Đội ngũ kỹ thuật viên chuyên nghiệp sẵn sàng hỗ trợ 24/7/365 <sup>[CLM-BKNS:COLOCAT-TECHNICA-20260404]</sup>.
-*   **Truy cập vật lý:** Khách hàng có thể ra vào Data Center để thao tác trực tiếp trên máy chủ <sup>[CLM-BKNS:COLOCAT-FEATURE-20260404]</sup>.
+### 1. Thuê Máy chủ Vật lý (Dedicated Server)
+Là dịch vụ cho thuê máy chủ vật lý riêng biệt, cung cấp cho khách hàng toàn quyền quản lý và khai thác tài nguyên phần cứng.
 
-**Bảng giá:**
-*   *Lưu ý: Bảng giá chi tiết cho các gói Thuê chỗ đặt máy chủ theo Server Unit (1U, 2U, 3U, 4U) và theo Tủ Rack (10U, 21U, 42U) không có trong nội dung được cung cấp.* <sup>[CLM-BKNS:COLOCAT-DATA_AVA-20260404]</sup>
+*   **Mô tả:** Trang tổng hợp và liệt kê các gói sản phẩm cho thuê máy chủ vật lý (Dedicated Server) của BKNS, bao gồm cả các dòng "Máy Chủ Giá Rẻ".
+*   **Đối tượng:** Doanh nghiệp lớn, các dự án cần hiệu năng cao, và khách hàng có nhu cầu sử dụng đa dạng như làm web server, máy chủ game, lưu trữ, MMO.
 
-**Chương trình khuyến mãi:**
-*   Khách hàng thanh toán 6 tháng dịch vụ Colocation sẽ được tặng kèm một máy chủ (Cấu hình 2) <sup>[CLM-BKNS:COLOCAT-PROMOTIO-20260404]</sup>.
-*   **Cấu hình máy chủ tặng kèm:**
-    *   CPU: 8 Cores <sup>[CLM-BKNS:PROMO_S-CPU_CORE-20260404]</sup>
-    *   RAM: 16 GB <sup>[CLM-BKNS:PROMO_S-RAM_SIZE-20260404]</sup>
+### 2. Thuê Chỗ đặt Máy chủ (Colocation)
+Dịch vụ cho phép khách hàng thuê không gian và hạ tầng tại Data Center của BKNS để đặt máy chủ vật lý mà họ đã sở hữu.
 
-**Quy trình đăng ký:**
-1.  Liên hệ với BKNS.
-2.  Nhận tư vấn.
-3.  Ký hợp đồng.
-4.  Bàn giao. <sup>[CLM-BKNS:COLOCAT-REGISTRA-20260404]</sup>
+*   **Mô tả:** Giúp doanh nghiệp tiết kiệm chi phí xây dựng và vận hành một trung tâm dữ liệu riêng.
+*   **Đối tượng:** Doanh nghiệp đã sở hữu máy chủ riêng và cần một môi trường chuyên nghiệp, an toàn để vận hành.
+*   **Tính năng nổi bật:**
+    *   **Hạ tầng chuyên nghiệp:** Hệ thống làm mát chuyên dụng, nguồn điện ổn định có UPS dự phòng, đường truyền internet đa nhà mạng.
+    *   **An ninh:** Bảo mật vật lý 24/7 với hệ thống an ninh nhiều lớp bao gồm kiểm soát ra vào và camera giám sát.
+    *   **Hỗ trợ:** Đội ngũ kỹ thuật viên chuyên nghiệp sẵn sàng hỗ trợ 24/7/365.
+    *   **Linh hoạt:** Khách hàng có thể ra vào Data Center để thao tác trực tiếp trên máy chủ vật lý của mình.
 
-## 2. Cho Thuê Máy Chủ Vật Lý (Dedicated Server)
+### 3. Dịch vụ Quản trị Máy chủ Trọn gói (Managed Server)
+Là giải pháp trong đó đội ngũ kỹ thuật của BKNS sẽ thay mặt khách hàng thực hiện các công việc vận hành, giám sát, tối ưu và bảo mật máy chủ.
 
-BKNS cung cấp dịch vụ cho thuê máy chủ vật lý (Dedicated Server) với các cấu hình đa dạng, phục vụ các nhu cầu như làm web server, máy chủ game, lưu trữ, MMO... <sup>[CLM-SERV-DEDICATED-TARGET_A-20260404][CLM-SERV-DEDICATED-SERVICE_-20260404]</sup>.
+*   **Mô tả:** Giúp doanh nghiệp và cá nhân vận hành máy chủ hiệu quả mà không cần có đội ngũ IT riêng, đảm bảo hệ thống hoạt động liên tục, ổn định và an toàn.
+*   **Đối tượng:** Các cá nhân và doanh nghiệp sử dụng máy chủ nhưng không có đội ngũ kỹ thuật chuyên trách hoặc muốn tiết kiệm chi phí nhân sự IT.
+*   **Tính năng chính:**
+    *   Giám sát 24/7 tình trạng hoạt động của máy chủ (CPU, RAM, ổ cứng) và các dịch vụ quan trọng (Webserver, Database, Mail).
+    *   Tối ưu hiệu năng hệ thống.
+    *   Hỗ trợ kỹ thuật 24/7.
+*   **Chi tiết gói Nâng cao:**
 
-**Chính sách chung:**
-*   **Ưu đãi:** Giá thuê sẽ ưu đãi hơn khi khách hàng đăng ký các chu kỳ dài hạn <sup>[CLM-SERV-DEDICATED-DISCOUNT-20260404]</sup>.
-*   **Đăng ký:** Để đăng ký, khách hàng nhấn vào nút "Đăng ký" trên gói sản phẩm và sẽ được chuyển hướng đến Zalo của BKNS để nhận tư vấn và hỗ trợ <sup>[CLM-SERV-DEDICATED-REGISTRA-20260404]</sup>.
+| Tính năng | Gói Nâng cao |
+| :--- | :--- |
+| Giám sát hệ thống | ✅ |
+| Bảo mật (Firewall, quét mã độc) | Cấu hình firewall, cài đặt và quét mã độc, virus. |
+| Thời gian phản hồi | 15 phút |
 
-**Một số cấu hình tham khảo:**
-*   **Gói MCCB01:**
-    *   **Server:** Dell R620 / HPDL360 G8 <sup>[CLM-SERV-DEDICATED-SERVER_M-20260404]</sup>
-    *   **CPU:** 1 x E5-2670 - 8 Cores <sup>[CLM-SERV-DEDICATED-CPU-20260404]</sup>
-    *   **RAM:** 16 GB <sup>[CLM-SERV-DEDICATED-RAM-20260404]</sup>
-    *   **SSD:** 1 x 400GB SSD Enterprise <sup>[CLM-SERV-DEDICATED-STORAGE-20260404]</sup>
-    *   **Băng thông:** 100Mbps/ 5Mbps <sup>[CLM-SERV-DEDICATED-BW-20260404]</sup>
-*   **Gói MCCB02:**
-    *   **Giá tham khảo:** 1.800.000 VNĐ/tháng (áp dụng cho chu kỳ 24 tháng) <sup>[CLM-SERV-DEDICATED-PRICE-20260404]</sup>.
+### 4. Dịch vụ Backup Dữ liệu
+Dịch vụ sao chép và lưu trữ dữ liệu từ hệ thống gốc (máy chủ, website, database) sang một hệ thống lưu trữ độc lập để đảm bảo khả năng phục hồi khi có sự cố.
 
-## 3. Dịch vụ Bổ sung & Liên quan
+*   **Mô tả:** Đảm bảo kinh doanh liên tục bằng cách cho phép phục hồi hệ thống nhanh chóng sau sự cố.
+*   **Đối tượng:** Cá nhân và doanh nghiệp có dữ liệu quan trọng cần được bảo vệ.
+*   **Tính năng nổi bật:**
+    *   **Bảo mật:** Dữ liệu được mã hóa và lưu trữ an toàn.
+    *   **Linh hoạt:** Hỗ trợ phục hồi dữ liệu nhanh chóng theo yêu cầu. Tương thích với nhiều nền tảng, bao gồm cả cơ sở dữ liệu.
+    *   **Hỗ trợ:** Đội ngũ kỹ thuật hỗ trợ 24/7.
 
-### Bảng giá Dịch vụ Bổ sung cho Máy chủ
+### 5. Dịch vụ Cloud VPN
+Dịch vụ mạng riêng ảo (VPN) giúp tạo ra một kết nối an toàn và bảo mật, đặc biệt phù hợp cho các doanh nghiệp.
 
-| Dịch vụ | Giá theo tháng | Giá một lần |
-| :--- | :--- | :--- |
-| Thêm 1 IP | 80.000 VNĐ <sup>[CLM-SERV-ADDON-PRICE-20260404]</sup> | - |
-| SSD Samsung Enterprise PM863 960GB | 650.000 VNĐ | 7.000.000 VNĐ <sup>[CLM-SERV-ADDON-OPRICE-20260404]</sup> |
+*   **Mô tả:** Dùng để truy cập các website bị hạn chế về mặt vị trí địa lý và bảo vệ hoạt động duyệt web của người dùng.
+*   **Đối tượng:** Doanh nghiệp và người dùng muốn bảo vệ hoạt động duyệt web.
+*   **Trường hợp sử dụng:** Làm việc từ xa (remote working), bảo vệ dữ liệu truyền tải.
 
-### Dịch vụ Quản trị Máy chủ Trọn gói
+## Đối tượng Khách hàng Phù hợp
 
-Đây là giải pháp giúp doanh nghiệp và cá nhân vận hành máy chủ hiệu quả mà không cần có đội ngũ IT riêng <sup>[CLM-SERV-BKNS-DESC-20260404]</sup>. BKNS sẽ thay mặt khách hàng thực hiện các công việc vận hành, giám sát, và xử lý sự cố để hệ thống hoạt động ổn định và an toàn <sup>[CLM-SERV-BKNS-SHORT_DE-20260404]</sup>.
-*   **Tính năng chính:** Giám sát 24/7 tình trạng máy chủ (CPU, RAM, ổ cứng), tối ưu hiệu năng và hỗ trợ kỹ thuật 24/7 <sup>[CLM-SERV-BKNS-FEATURE-20260404][CLM-ENT-PROD-SER-INCLUDED-20260405][CLM-SERV-BKNS-SUPPORT_-20260404]</sup>.
-*   **Lưu ý:** Giá dịch vụ chưa bao gồm 10% VAT <sup>[CLM-SERV-BKNS-VAT_POLI-20260404]</sup>. Gói Cơ bản không bao gồm các tác vụ cấu hình chuyên sâu và bảo mật <sup>[CLM-SERV-BKNS-LIMITATI-20260404]</sup>.
+*   **Doanh nghiệp lớn, dự án hiệu năng cao:** Phù hợp với dịch vụ **Thuê Máy chủ Vật lý (Dedicated Server)** để có hiệu năng tối đa và tài nguyên không chia sẻ.
+*   **Doanh nghiệp đã có máy chủ:** Nên chọn **Thuê Chỗ đặt Máy chủ (Colocation)** để tận dụng hạ tầng Data Center chuyên nghiệp của BKNS.
+*   **Doanh nghiệp và cá nhân không có đội ngũ IT:** Dịch vụ **Quản trị Máy chủ Trọn gói** là lựa chọn lý tưởng để tiết kiệm chi phí nhân sự và đảm bảo hệ thống luôn ổn định.
+*   **Mọi tổ chức, cá nhân có dữ liệu quan trọng:** Nên sử dụng **Dịch vụ Backup Dữ liệu** để đảm bảo an toàn thông tin và khả năng phục hồi sau sự cố.
+*   **Doanh nghiệp có nhân viên làm việc từ xa:** **Cloud VPN** là giải pháp để thiết lập kết nối an toàn, bảo mật.
 
-### Ưu đãi Phần mềm
+## Điểm mạnh & Lợi thế Cạnh tranh (USP)
 
-*   Khách hàng Thuê Server tại BKNS sẽ được miễn phí bản quyền DirectAdmin <sup>[CLM-ENT-PROD-VPS-PROMOTIO-20260404]</sup>.
-*   Khách hàng sử dụng Cloud VPS/Server với IP thuộc BKNS cũng được hỗ trợ đổi IP miễn phí <sup>[CLM-ENT-PROD-VPS-SUPPORT-20260404]</sup>.
+*   **Hệ sinh thái dịch vụ toàn diện:** BKNS cung cấp một chuỗi giải pháp đầy đủ từ cho thuê phần cứng (Dedicated Server), cho thuê hạ tầng (Colocation), đến vận hành (Managed Server) và bảo vệ (Backup, VPN).
+*   **Hạ tầng Data Center chuyên nghiệp:** Đảm bảo an ninh vật lý 24/7, hệ thống làm mát, nguồn điện dự phòng (UPS) và kết nối mạng ổn định, giúp máy chủ hoạt động trong điều kiện lý tưởng.
+*   **Hỗ trợ kỹ thuật 24/7/365:** Đội ngũ chuyên gia luôn sẵn sàng hỗ trợ, đảm bảo thời gian phản hồi nhanh chóng và xử lý sự cố kịp thời.
+*   **Linh hoạt và chủ động:** Cung cấp các tùy chọn cho phép khách hàng toàn quyền quản lý máy chủ hoặc ra vào Data Center thao tác trực tiếp.
+*   **Tập trung vào bảo mật:** Các dịch vụ đều có những tính năng bảo mật cốt lõi như mã hóa dữ liệu backup, bảo mật vật lý nhiều lớp, và các gói quản trị tăng cường an ninh.
 
-### Các dịch vụ liên quan khác
+## Khi nào nên chọn Dịch vụ Máy chủ BKNS?
 
-*   **Dịch vụ Backup Dữ liệu:** Giải pháp sao lưu và phục hồi dữ liệu an toàn cho doanh nghiệp, với tính năng mã hóa dữ liệu <sup>[CLM-ENT-PROD-BAC-SERVICE_-20260405][CLM-ENT-PROD-BAC-FEATURE-20260405]</sup>.
-*   **BKNS Cloud VPN:** Dịch vụ VPN giúp kết nối an toàn, bảo mật cho doanh nghiệp, đặc biệt phù hợp cho làm việc từ xa (remote working) <sup>[CLM-VPN-BKNS_CLOUD_VPN-TARGET_A-20260405][CLM-VPN-BKNS_CLOUD_VPN-USE_CASE-20260405]</sup>.
-*   **Phần mềm bảo mật Imunify360:** Giải pháp bảo mật cho server dựa trên công nghệ AI, giúp ngăn chặn sự tiếp cận trái phép từ hacker <sup>[CLM-PROD-SOFTWARE-DESC-20260404][CLM-PROD-SOFTWARE-FEATURE-20260404]</sup>.
+Việc lựa chọn dịch vụ máy chủ của BKNS phụ thuộc vào nhu cầu cụ thể về hiệu năng, khả năng kiểm soát và ngân sách.
 
----
-Compiled by BKNS Wiki Bot • 2026-04-05
+*   **Chọn Máy chủ Vật lý (Dedicated/Colocation) khi:**
+    *   Ứng dụng của bạn đòi hỏi hiệu năng xử lý cao nhất và tài nguyên phần cứng không bị chia sẻ (ví dụ: hệ thống game, tài chính, website thương mại điện tử lớn).
+    *   Bạn cần toàn quyền kiểm soát cấu hình phần cứng và hệ điều hành.
+    *   Bạn đã có sẵn máy chủ vật lý và chỉ cần một môi trường vận hành chuyên nghiệp, an toàn.
+
+## Sản phẩm liên quan
+
+*   [Cloud VPS BKNS](../vps/index.md)
+*   [Phần Mềm & Bản Quyền BKNS](../software/index.md)

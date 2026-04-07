@@ -21,6 +21,7 @@ from lib.config import RAW_MANUAL_DIR, RAW_CRAWL_DIR
 from lib.utils import (
     slugify, now_iso, today_str, sha256_content,
     write_markdown_with_frontmatter, count_words, ensure_dir,
+    parse_frontmatter,
 )
 from lib.logger import log_entry, log_intake
 
@@ -102,18 +103,37 @@ def convert_pdf(filepath: Path) -> tuple[str, str]:
 
 def convert_file(filepath: Path, force: bool = False) -> dict:
     """Convert a single file to Markdown with proper frontmatter.
-    
+
+    Deduplication: checks ALL existing .md files with the same slug prefix.
+    If any existing file has the same content_hash, skip conversion.
+    This prevents creating duplicate raw files on repeated runs.
+
     Returns: Result dict
     """
     suffix = filepath.suffix.lower()
     slug = slugify(filepath.stem.rsplit(" - ", 1)[0][:60])
-    
+
     # Output path
     output_name = f"{slug}-{today_str()}.md"
     output_path = RAW_MANUAL_DIR / output_name
-    
+
     if output_path.exists() and not force:
         return {"status": "skip", "detail": f"Already exists: {output_name}"}
+
+    # Check if a previous version with same slug already exists and was extracted
+    if not force:
+        for existing_md in RAW_MANUAL_DIR.glob(f"{slug}-*.md"):
+            if existing_md == output_path:
+                continue
+            try:
+                existing_content = existing_md.read_text(encoding="utf-8")
+                existing_fm, _ = parse_frontmatter(existing_content)
+                if existing_fm.get("status") == "extracted":
+                    # Same source already processed — skip to avoid duplicates
+                    return {"status": "skip",
+                            "detail": f"Already extracted: {existing_md.name}"}
+            except Exception:
+                continue
     
     # Convert based on file type
     try:

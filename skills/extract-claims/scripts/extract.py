@@ -3,14 +3,19 @@
 BKNS Agent Wiki — extract-claims
 Đọc raw/ files → Gemini Pro extract → claims YAML + JSONL trace.
 Conflict detection vs claims/approved/.
+SHA256 incremental cache: skip unchanged files (inspired by Graphify).
 
 Usage:
-    python3 scripts/extract.py              # Extract all pending
+    python3 scripts/extract.py              # Extract all pending (with cache)
     python3 scripts/extract.py [raw_file]   # Extract specific file
+    python3 scripts/extract.py --force      # Bypass cache, re-extract all
+    python3 scripts/extract.py --cache-stats # Show cache statistics
 """
 import sys
 import json
 import re
+import hashlib
+import fcntl  # [C5] file locking for entity registry (Linux/Ubuntu)
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
@@ -27,6 +32,122 @@ from lib.utils import (
     parse_frontmatter, read_yaml, write_yaml, now_iso, today_str,
     generate_claim_id, ensure_dir, write_markdown_with_frontmatter,
 )
+
+
+# ── SHA256 Incremental Cache ───────────────────────────────
+# Inspired by Graphify: cache file hashes to skip unchanged files.
+# Saves ~$0.008/file × N files per re-extract run.
+CACHE_DIR = Path(__file__).resolve().parent.parent.parent.parent / "claims" / ".cache"
+CACHE_FILE = CACHE_DIR / "extract_hashes.json"
+
+
+def _load_cache() -> dict:
+    """Load SHA256 hash cache from disk."""
+    if CACHE_FILE.exists():
+        try:
+            return json.loads(CACHE_FILE.read_text(encoding="utf-8"))
+        except (json.JSONDecodeError, OSError):
+            return {}
+    return {}
+
+
+def _save_cache(cache: dict):
+    """Persist SHA256 hash cache to disk."""
+    ensure_dir(CACHE_DIR)
+    CACHE_FILE.write_text(
+        json.dumps(cache, indent=2, ensure_ascii=False),
+        encoding="utf-8",
+    )
+
+
+def _file_hash(path: Path) -> str:
+    """Compute SHA256 hash of file content."""
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def _is_cached(path: Path, cache: dict) -> bool:
+    """Check if file content matches cached hash (unchanged)."""
+    key = str(path.resolve())
+    cached_hash = cache.get(key, {}).get("sha256")
+    if not cached_hash:
+        return False
+    return _file_hash(path) == cached_hash
+
+
+def _update_cache(path: Path, cache: dict, claims_count: int, cost_usd: float):
+    """Update cache entry after successful extraction."""
+    key = str(path.resolve())
+    cache[key] = {
+        "sha256": _file_hash(path),
+        "extracted_at": now_iso(),
+        "claims_count": claims_count,
+        "cost_usd": cost_usd,
+        "filename": path.name,
+    }
+
+
+def show_cache_stats():
+    """Display cache statistics."""
+    cache = _load_cache()
+    if not cache:
+        print("📭 Cache trống — chưa có file nào được cache.")
+        return
+
+    total_files = len(cache)
+    total_claims = sum(v.get("claims_count", 0) for v in cache.values())
+    total_cost = sum(v.get("cost_usd", 0) for v in cache.values())
+    still_valid = 0
+    stale = 0
+
+    for key, entry in cache.items():
+        path = Path(key)
+        if path.exists() and _file_hash(path) == entry.get("sha256"):
+            still_valid += 1
+        else:
+            stale += 1
+
+    print(f"📊 Extract Cache Statistics")
+    print(f"{'='*45}")
+    print(f"  Cached files:    {total_files}")
+    print(f"  Still valid:     {still_valid} (sẽ skip khi re-extract)")
+    print(f"  Stale/changed:   {stale} (cần re-extract)")
+    print(f"  Total claims:    {total_claims}")
+    print(f"  Total cost saved: ${total_cost:.4f} (nếu skip tất cả valid)")
+    print(f"{'='*45}")
+    print(f"  Cache file: {CACHE_FILE}")
+
+
+# ── Category Routing (entity_id → category) ───────────────
+# Order matters: specific prefixes before generic.
+_ROUTING_RULES = [
+    (["product.hosting", "ent-prod-hosting-wp"], "hosting"),
+    (["product.vps", "ent-prod-vps", "bkns.vps",
+      "vps.gia_re", "vps.sieu_re"], "vps"),
+    (["product.email", "ent-prod-email", "bkns.email",
+      "bkns_cloud_email", "product.email_hosting"], "email"),
+    (["product.ssl", "ent-prod-ssl", "bkns.ssl"], "ssl"),
+    (["product.domain", "ent-prod-domain"], "ten-mien"),
+    (["product.server", "product.colocation", "product.dedicated",
+      "ent-prod-colocation", "ent-prod-backup", "ent-prod-vpn",
+      "ent-prod-managed-server", "ent-prod-server",
+      "ent-prod-hosting-dedicated", "bkns.server",
+      "bkns:colocation", "bkns:promo_server",
+      "product.server_management", "product.vpn"], "server"),
+    (["product.software", "ent-prod-software", "dti_software",
+      "prod.software", "doc.metadata.soft", "bkns.product.software",
+      "vblt_"], "software"),
+    (["ent-prod-hosting"], "hosting"),
+]
+
+
+def determine_claim_category(entity_id: str, fallback: str) -> str:
+    """Route claim to correct category based on entity_id prefix."""
+    eid = entity_id.strip().lower()
+    for prefixes, category in _ROUTING_RULES:
+        for prefix in prefixes:
+            if eid.startswith(prefix):
+                return category
+    return fallback  # Keep suggested_category as fallback
 
 
 # ── Extraction Prompt ──────────────────────────────────────
@@ -93,12 +214,32 @@ def find_pending_files() -> list[Path]:
     return sorted(pending)
 
 
-def extract_claims_from_file(raw_file: Path) -> dict:
+def extract_claims_from_file(raw_file: Path, force: bool = False) -> dict:
     """Extract claims from a single raw file.
+
+    Args:
+        raw_file: Path to the raw markdown file
+        force: If True, bypass SHA256 cache and re-extract
 
     Returns:
         Result dict with status, claims count, conflicts count
     """
+    # ── SHA256 Cache Check ──────────────────────────────────
+    if not force:
+        cache = _load_cache()
+        if _is_cached(raw_file, cache):
+            cached_info = cache.get(str(raw_file.resolve()), {})
+            log_entry("extract-claims", "cache-hit",
+                      f"Cache hit: {raw_file.name} (unchanged, "
+                      f"{cached_info.get('claims_count', '?')} claims cached)")
+            return {
+                "status": "cache-hit",
+                "detail": f"File unchanged since {cached_info.get('extracted_at', 'unknown')}",
+                "claims_count": cached_info.get("claims_count", 0),
+                "cost_usd": 0,
+                "cached": True,
+            }
+
     log_entry("extract-claims", "start", f"Extracting: {raw_file.name}")
 
     content = raw_file.read_text(encoding="utf-8")
@@ -112,8 +253,12 @@ def extract_claims_from_file(raw_file: Path) -> dict:
     crawled_at = fm.get("crawled_at", now_iso())
     category = fm.get("suggested_category", "uncategorized")
 
-    # Truncate content to 50k chars
-    body_truncated = body[:50000]
+    # [W5] Truncate at word boundary to avoid cutting mid-sentence/mid-table
+    MAX_CHARS = 50_000
+    if len(body) > MAX_CHARS:
+        body_truncated = body[:MAX_CHARS].rsplit("\n", 1)[0]
+    else:
+        body_truncated = body
 
     # Build prompt
     prompt = EXTRACTION_PROMPT.format(
@@ -172,45 +317,91 @@ def extract_claims_from_file(raw_file: Path) -> dict:
         elif "risk_class" not in claim_data:
             claim_data["risk_class"] = "low"
 
-        # Generate claim ID
+        # Generate deterministic claim ID (no date → same fact = same ID)
         claim_id = generate_claim_id(
             claim_data["entity_id"],
             attribute,
         )
 
-        # Determine category path
-        cat_parts = category.split("/")
-        if len(cat_parts) >= 2:
-            claim_category = cat_parts[1]
-        else:
-            claim_category = cat_parts[0]
+        # Determine correct category from entity_id (not suggested_category)
+        cat_fallback = category.split("/")[-1] if "/" in category else category
+        claim_category = determine_claim_category(
+            claim_data["entity_id"], cat_fallback
+        )
 
-        # Build claim YAML
-        claim = {
-            "claim_id": claim_id,
-            "entity_id": claim_data["entity_id"],
-            "entity_type": claim_data.get("entity_type", "unknown"),
-            "entity_name": claim_data.get("entity_name", ""),
-            "attribute": attribute,
-            "value": claim_data["value"],
-            "unit": claim_data.get("unit", ""),
-            "qualifiers": claim_data.get("qualifiers", {}),
-            "source_ids": [source_id],
-            "observed_at": now_iso(),
-            "valid_from": today_str(),
-            "confidence": claim_data.get("confidence", "medium"),
-            "review_state": "drafted",
-            "risk_class": claim_data.get("risk_class", "low"),
-            "compiler_note": claim_data.get("compiler_note", ""),
-        }
-
-        # Save claim YAML
+        # Save claim YAML — merge with existing if present
         claim_dir = CLAIMS_DRAFTS_DIR / "products" / claim_category
         ensure_dir(claim_dir)
 
         claim_filename = claim_id.lower().replace("-", "_") + ".yaml"
         claim_path = claim_dir / claim_filename
+
+        # Load existing claim to merge source_ids and preserve history
+        existing = read_yaml(claim_path) if claim_path.exists() else None
+        if isinstance(existing, dict) and existing.get("claim_id") == claim_id:
+            # Merge: accumulate source_ids, keep newest value
+            old_sources = existing.get("source_ids", [])
+            merged_sources = list(dict.fromkeys(old_sources + [source_id]))
+            claim = {
+                **existing,
+                "value": claim_data["value"],
+                "unit": claim_data.get("unit", existing.get("unit", "")),
+                "qualifiers": claim_data.get("qualifiers", existing.get("qualifiers", {})),
+                "source_ids": merged_sources,
+                "observed_at": now_iso(),
+                "confidence": claim_data.get("confidence", existing.get("confidence", "medium")),
+                "risk_class": claim_data.get("risk_class", existing.get("risk_class", "low")),
+                "compiler_note": claim_data.get("compiler_note", existing.get("compiler_note", "")),
+                "entity_name": claim_data.get("entity_name", existing.get("entity_name", "")),
+                "entity_type": claim_data.get("entity_type", existing.get("entity_type", "unknown")),
+            }
+            # If value changed, mark for re-review
+            if str(existing.get("value")) != str(claim_data["value"]):
+                claim["review_state"] = "drafted"
+                claim["value_changed_from"] = existing.get("value")
+                claim["value_changed_at"] = now_iso()
+        else:
+            # Brand new claim
+            claim = {
+                "claim_id": claim_id,
+                "entity_id": claim_data["entity_id"],
+                "entity_type": claim_data.get("entity_type", "unknown"),
+                "entity_name": claim_data.get("entity_name", ""),
+                "attribute": attribute,
+                "value": claim_data["value"],
+                "unit": claim_data.get("unit", ""),
+                "qualifiers": claim_data.get("qualifiers", {}),
+                "source_ids": [source_id],
+                "observed_at": now_iso(),
+                "valid_from": today_str(),
+                "confidence": claim_data.get("confidence", "medium"),
+                "review_state": "drafted",
+                "risk_class": claim_data.get("risk_class", "low"),
+                "compiler_note": claim_data.get("compiler_note", ""),
+            }
+
         write_yaml(claim, claim_path)
+
+        # Sync source_ids into approved claim if it exists.
+        # [DATA INTEGRITY] NEVER overwrite approved value — only flag for re-review.
+        # A hallucinated extraction must NOT silently corrupt ground-truth data.
+        approved_dir = CLAIMS_APPROVED_DIR / "products" / claim_category
+        approved_path = approved_dir / claim_filename
+        if approved_path.exists():
+            approved_claim = read_yaml(approved_path)
+            if isinstance(approved_claim, dict):
+                old_sources = approved_claim.get("source_ids", [])
+                merged_sources = list(dict.fromkeys(old_sources + [source_id]))
+                approved_claim["source_ids"] = merged_sources
+                approved_claim["observed_at"] = now_iso()
+                if str(approved_claim.get("value")) != str(claim_data["value"]):
+                    # Store the new candidate value without touching approved value.
+                    # Human must compare pending_value vs value and decide.
+                    approved_claim["review_state"] = "needs_review"
+                    approved_claim["pending_value"] = claim_data["value"]
+                    approved_claim["pending_observed_at"] = now_iso()
+                    # value field intentionally untouched — keeps ground truth intact
+                write_yaml(approved_claim, approved_path)
 
         # Save JSONL trace
         trace = {
@@ -238,8 +429,11 @@ def extract_claims_from_file(raw_file: Path) -> dict:
     # Update raw file status
     update_raw_status(raw_file, "extracted")
 
+    # [C1] Pre-load approved index once, pass into detect_conflicts
+    approved_index = _load_approved_claims_index()
+
     # Conflict detection
-    conflicts = detect_conflicts(saved_claims)
+    conflicts = detect_conflicts(saved_claims, approved_index)
     for conflict in conflicts:
         send_conflict_alert(
             conflict["entity_id"],
@@ -261,6 +455,11 @@ def extract_claims_from_file(raw_file: Path) -> dict:
     log_entry("extract-claims", "success",
               f"Extracted {len(saved_claims)} claims from {raw_file.name}",
               cost_usd=result.get("cost_usd", 0))
+
+    # ── Update SHA256 Cache ─────────────────────────────────
+    cache = _load_cache()
+    _update_cache(raw_file, cache, len(saved_claims), result.get("cost_usd", 0))
+    _save_cache(cache)
 
     return {
         "status": "success",
@@ -359,36 +558,58 @@ def parse_claims_json(text: str) -> list | None:
     return None
 
 
-def detect_conflicts(new_claims: list[dict]) -> list[dict]:
-    """Compare new claims vs approved claims, find mismatches."""
-    conflicts = []
+def _load_approved_claims_index() -> dict:
+    """[C1] Pre-load all approved claims into memory as (entity_id, attribute) → claim.
 
+    Avoids O(N×M) file reads in detect_conflicts() by scanning approved dir once.
+    """
+    import yaml
+    index = {}
     if not CLAIMS_APPROVED_DIR.exists():
-        return conflicts
-
-    for new in new_claims:
-        for approved_file in CLAIMS_APPROVED_DIR.rglob("*.yaml"):
-            try:
-                import yaml
-                old = yaml.safe_load(approved_file.read_text(encoding="utf-8"))
-                if not isinstance(old, dict):
-                    continue
-
-                if (old.get("entity_id") == new["entity_id"]
-                        and old.get("attribute") == new["attribute"]
-                        and old.get("review_state") == "approved"):
-                    if str(old.get("value")) != str(new.get("value")):
-                        conflicts.append({
-                            "entity_id": new["entity_id"],
-                            "attribute": new["attribute"],
-                            "old_value": old["value"],
-                            "new_value": new["value"],
-                            "old_claim": old.get("claim_id"),
-                            "new_claim": new.get("claim_id"),
-                        })
-            except Exception:
+        return index
+    for approved_file in CLAIMS_APPROVED_DIR.rglob("*.yaml"):
+        try:
+            old = yaml.safe_load(approved_file.read_text(encoding="utf-8"))
+            if not isinstance(old, dict):
                 continue
+            key = (old.get("entity_id"), old.get("attribute"))
+            if key[0] and key[1]:
+                index[key] = old
+        except Exception:
+            continue
+    return index
 
+
+def detect_conflicts(new_claims: list[dict],
+                     approved_index: dict | None = None) -> list[dict]:
+    """[C1] Compare new claims vs approved claims, find mismatches.
+
+    Args:
+        new_claims: Freshly extracted claims from this run.
+        approved_index: Pre-loaded approved claims index from
+            _load_approved_claims_index(). If None, loads on demand
+            (slower — for backwards-compat single-call use).
+    """
+    if approved_index is None:
+        approved_index = _load_approved_claims_index()
+
+    conflicts = []
+    for new in new_claims:
+        key = (new.get("entity_id"), new.get("attribute"))
+        old = approved_index.get(key)
+        if old is None:
+            continue
+        if old.get("review_state") != "approved":
+            continue
+        if str(old.get("value")) != str(new.get("value")):
+            conflicts.append({
+                "entity_id": new["entity_id"],
+                "attribute": new["attribute"],
+                "old_value": old["value"],
+                "new_value": new["value"],
+                "old_claim": old.get("claim_id"),
+                "new_claim": new.get("claim_id"),
+            })
     return conflicts
 
 
@@ -401,39 +622,54 @@ def update_raw_status(raw_file: Path, new_status: str):
 
 
 def update_entity_registry(claims: list[dict]):
-    """Add new entities to registry if not exists."""
+    """[C5] Add new entities to registry with exclusive file lock.
+
+    Uses fcntl.flock to prevent concurrent writes corrupting registry.yaml
+    when multiple extract processes run simultaneously (e.g., batch_pipeline).
+    """
     if not claims:
         return
 
-    registry = read_yaml(ENTITIES_REGISTRY)
-    if not isinstance(registry, dict):
-        registry = {"entities": []}
+    ensure_dir(ENTITIES_REGISTRY.parent)
+    lock_path = ENTITIES_REGISTRY.parent / "registry.lock"
 
-    entities = registry.get("entities", [])
-    existing_ids = {e.get("entity_id") for e in entities}
+    with open(lock_path, "w") as lock_file:
+        fcntl.flock(lock_file, fcntl.LOCK_EX)
+        try:
+            registry = read_yaml(ENTITIES_REGISTRY)
+            if not isinstance(registry, dict):
+                registry = {"entities": []}
 
-    for claim in claims:
-        entity_id = claim.get("entity_id", "")
-        entity_name = claim.get("entity_name", "")
-        entity_type = claim.get("entity_type", "")
+            entities = registry.get("entities", [])
+            existing_ids = {e.get("entity_id") for e in entities}
 
-        # Map to entity registry ID format
-        if entity_id not in existing_ids and entity_name:
-            entities.append({
-                "entity_id": entity_id,
-                "name": entity_name,
-                "type": entity_type,
-                "status": "draft",
-                "description": f"Auto-discovered from extraction",
-            })
-            existing_ids.add(entity_id)
+            for claim in claims:
+                entity_id = claim.get("entity_id", "")
+                entity_name = claim.get("entity_name", "")
+                entity_type = claim.get("entity_type", "")
 
-    registry["entities"] = entities
-    write_yaml(registry, ENTITIES_REGISTRY)
+                if entity_id not in existing_ids and entity_name:
+                    entities.append({
+                        "entity_id": entity_id,
+                        "name": entity_name,
+                        "type": entity_type,
+                        "status": "draft",
+                        "description": "Auto-discovered from extraction",
+                    })
+                    existing_ids.add(entity_id)
+
+            registry["entities"] = entities
+            write_yaml(registry, ENTITIES_REGISTRY)
+        finally:
+            fcntl.flock(lock_file, fcntl.LOCK_UN)
 
 
-def extract_all_pending() -> list[dict]:
-    """Extract claims from all pending raw files."""
+def extract_all_pending(force: bool = False) -> list[dict]:
+    """Extract claims from all pending raw files.
+
+    Args:
+        force: If True, bypass SHA256 cache and re-extract all files
+    """
     pending = find_pending_files()
 
     if not pending:
@@ -442,21 +678,45 @@ def extract_all_pending() -> list[dict]:
         return []
 
     print(f"Found {len(pending)} pending file(s)")
+    if not force:
+        print(f"💾 SHA256 cache enabled — unchanged files sẽ được skip")
+    else:
+        print(f"⚠️  Force mode — bypass cache, re-extract tất cả")
+
     results = []
+    cached_count = 0
+    extracted_count = 0
 
     for i, raw_file in enumerate(pending, 1):
-        print(f"\n[{i}/{len(pending)}] Extracting: {raw_file.name}")
-        result = extract_claims_from_file(raw_file)
+        print(f"\n[{i}/{len(pending)}] {raw_file.name}", end="")
+        result = extract_claims_from_file(raw_file, force=force)
         results.append({"file": raw_file.name, **result})
-        print(f"  → {result['status']}: {result.get('claims_count', 0)} claims")
+
+        if result.get("cached"):
+            cached_count += 1
+            print(f" → ⏭️  cache-hit (unchanged)")
+        else:
+            extracted_count += 1
+            print(f" → {result['status']}: {result.get('claims_count', 0)} claims")
 
     # Summary
     total_claims = sum(r.get("claims_count", 0) for r in results)
     total_cost = sum(r.get("cost_usd", 0) for r in results)
     total_conflicts = sum(r.get("conflicts", 0) for r in results)
+    saved_cost = sum(
+        _load_cache().get(str(Path(r["file"]).resolve()), {}).get("cost_usd", 0)
+        for r in results if r.get("cached")
+    )
 
     print(f"\n{'='*50}")
-    print(f"Extract Summary: {total_claims} claims, {total_conflicts} conflicts, ${total_cost:.4f}")
+    print(f"📊 Extract Summary")
+    print(f"  Extracted:    {extracted_count} files (new/changed)")
+    print(f"  Cache hits:   {cached_count} files (unchanged, skipped)")
+    print(f"  Total claims: {total_claims}")
+    print(f"  Conflicts:    {total_conflicts}")
+    print(f"  Cost:         ${total_cost:.4f}")
+    if cached_count > 0:
+        print(f"  💰 Saved:     ~${saved_cost:.4f} (by skipping {cached_count} cached files)")
     print(f"{'='*50}")
 
     return results
@@ -466,17 +726,25 @@ def main():
     import argparse
     parser = argparse.ArgumentParser(description="BKNS Extract Claims")
     parser.add_argument("files", nargs="*", help="Specific raw files to extract")
+    parser.add_argument("--force", action="store_true",
+                        help="Bypass SHA256 cache, re-extract all files")
+    parser.add_argument("--cache-stats", action="store_true",
+                        help="Show cache statistics and exit")
     args = parser.parse_args()
+
+    if args.cache_stats:
+        show_cache_stats()
+        return
 
     if args.files:
         for f in args.files:
             path = Path(f)
             if path.exists():
-                extract_claims_from_file(path)
+                extract_claims_from_file(path, force=args.force)
             else:
                 print(f"File not found: {f}")
     else:
-        extract_all_pending()
+        extract_all_pending(force=args.force)
 
 
 if __name__ == "__main__":

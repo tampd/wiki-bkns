@@ -1,0 +1,19 @@
+claim_id: CLM-SOFT-CPANEL-PRICE
+entity_id: product.software.cpanel.5acc
+entity_type: product_plan
+entity_name: 5 Account
+attribute: monthly_price
+value: 697000
+unit: VND
+qualifiers:
+  billing_cycle: month
+source_ids:
+- SRC-CPANEL_WHM_WEB_2026_04_05
+observed_at: '2026-04-05T21:52:26.262460+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: approved
+risk_class: high
+compiler_note: 'Trích từ Bảng giá: ''| 5 Account | VPS | 697.000đ |'''
+approved_at: '2026-04-07T13:00:15.909048+07:00'
+approved_by: admin-batch

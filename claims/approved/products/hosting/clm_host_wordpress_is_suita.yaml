@@ -1,0 +1,21 @@
+claim_id: CLM-HOST-WORDPRESS-IS_SUITA
+entity_id: product.hosting.wordpress
+entity_type: product
+entity_name: Hosting WordPress
+attribute: is_suitable_for
+value: Các cá nhân, doanh nghiệp sử dụng website WordPress, từ blog cá nhân, trang
+  giới thiệu công ty đến các trang thương mại điện tử.
+unit: ''
+qualifiers: {}
+source_ids:
+- SRC-HOSTING_WORDPRESS_TOC_O_CAO_BANG_GIA_GIAI_PHAP_TOI_UU_S_2026_04_06
+observed_at: '2026-04-07T00:40:11.040403+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: • Phù hợp với: Các cá nhân, doanh nghiệp sử
+  dụng website WordPress, từ blog cá nhân, trang giới thiệu công ty đến các trang
+  thương mại điện tử.'
+approved_at: '2026-04-07T13:00:12.680802+07:00'
+approved_by: admin-batch

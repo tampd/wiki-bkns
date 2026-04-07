@@ -9,10 +9,12 @@ original_format: docx
 page_title: Dịch vụ Hosting SEO - Tối ưu Website cho Công cụ Tìm kiếm
 content_hash: sha256:77939cbf922b2fbd858ff15e071c99763b2cc19c0c1d0f1c3af2176019a7db6e
 word_count: 836
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/hosting
 crawl_method: manual_upload
 source_date: '2026-02-08'
+skipped_reason: Duplicate of dich-vu-hosting-seo-toi-uu-website-cho-cong-cu-tim-kiem-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.330438+07:00'
 ---
 
 ═══ Hosting SEO

@@ -1,0 +1,21 @@
+claim_id: CLM-ENT-PROD-VPS-BACKUP_F
+entity_id: ENT-PROD-VPS-AMD
+entity_type: product_offering
+entity_name: VPS Siêu Rẻ
+attribute: backup_frequency
+value: weekly
+unit: null
+qualifiers: null
+source_ids:
+- SRC-CLOUD_VPS_AMD_WEB_2026_04_05
+- SRC-DICH_VU_THUE_CLOUD_VPS_SSD_GIA_RE_TAI_BKNS_2026_04_04
+- SRC-DICH_VU_VPS_SIEU_TIET_KIEM_VPS_SIEU_RE_TAI_BKNS_2026_04_06
+observed_at: '2026-04-07T00:18:36.274168+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ mục Tính năng / Thành phần: ''Sao lưu dữ liệu: Cung cấp tính
+  năng sao lưu dữ liệu hàng tuần.'''
+approved_at: '2026-04-07T13:00:14.298804+07:00'
+approved_by: admin-batch

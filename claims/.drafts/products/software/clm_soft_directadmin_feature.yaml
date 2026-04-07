@@ -1,0 +1,19 @@
+claim_id: CLM-SOFT-DIRECTADMIN-FEATURE
+entity_id: product.software.directadmin
+entity_type: product_plan
+entity_name: DirectAdmin Standard
+attribute: feature
+value: Sử dụng cho IP theo yêu cầu của khách hàng.
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-BANG_GIA_BAN_QUYEN_PHAN_MEM_QUAN_TRI_SERVER_DIRECTADMIN_2026_04_06
+observed_at: '2026-04-06T23:11:14.354385+07:00'
+valid_from: '2026-04-06'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng giá: ''Standard | Loại License | Sử dụng cho IP theo
+  yêu cầu của khách hàng.'''
+value_changed_from: Hỗ trợ cài đặt và tối ưu miễn phí.
+value_changed_at: '2026-04-06T23:11:14.354406+07:00'

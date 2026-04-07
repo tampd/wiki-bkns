@@ -1,0 +1,17 @@
+claim_id: CLM-PROD-SOFTWARE-TARGET_A
+entity_id: bkns.product.software.imunify360
+entity_type: product
+entity_name: Imunify360
+attribute: target_audience
+value: Các cá nhân, doanh nghiệp quản trị server
+unit: null
+qualifiers: null
+source_ids:
+- SRC-BANG_GIA_IMUNIFY360_GIAI_PHAP_BAO_MAT_SERVER_BANG_AI_2026_04_04
+observed_at: '2026-04-04T20:25:41.431188+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ tóm tắt nhanh: ''• Phù hợp với: Các cá nhân, doanh nghiệp
+  quản trị server...'''

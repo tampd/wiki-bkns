@@ -1,0 +1,16 @@
+claim_id: CLM-HOST-BKSW01-MSSQL_AC
+entity_id: product.hosting.bksw01
+entity_type: product_plan
+entity_name: BKSW01
+attribute: mssql_account_limit
+value: 2
+unit: account
+qualifiers: {}
+source_ids:
+- SRC-WINDOWS_HOSTING_WEB_2026_04_05
+observed_at: '2026-04-05T22:25:30.883931+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Bảng giá gói BKSW01: ''| MSSQL Accounts | 02 |'''

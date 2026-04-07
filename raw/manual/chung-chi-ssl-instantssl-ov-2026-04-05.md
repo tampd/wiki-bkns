@@ -7,10 +7,12 @@ original_format: docx
 page_title: Chứng chỉ SSL InstantSSL (OV)
 content_hash: sha256:b96c5bf0675f5ff3b6789f28dccae48a2001a83897ce1f6915870efae554e90e
 word_count: 726
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/ssl
 crawl_method: manual_upload
 source_date: '2026-02-08'
+skipped_reason: Duplicate of chung-chi-ssl-instantssl-ov-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.472425+07:00'
 ---
 
 ═══ Chứng chỉ SSL InstantSSL \(OV\)

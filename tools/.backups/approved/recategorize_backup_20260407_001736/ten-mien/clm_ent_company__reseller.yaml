@@ -1,0 +1,24 @@
+claim_id: CLM-ENT-COMPANY--RESELLER
+entity_id: ENT-COMPANY-001
+entity_type: company
+entity_name: BKNS
+attribute: reseller_status
+value: Authorized Reseller
+unit: null
+qualifiers:
+  brand: RapidSSL
+source_ids:
+- SRC-ESSENTIALSSL_DV_CHUNG_CHI_SSL_XAC_THUC_TEN_MIEN_TU_COMOD_2026_04_04
+- SRC-COMODO_SSL_CERTIFICATE_DV_CHUNG_CHI_XAC_THUC_TEN_MIEN_2026_04_06
+- SRC-RAPIDSSL_CERTIFICATE_CHUNG_CHI_SSL_XAC_THUC_TEN_MIEN_DV_2026_04_06
+observed_at: '2026-04-07T00:57:06.315333+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ mục Chính sách / Điều khoản / Lưu ý: • Nhà cung cấp: BKNS
+  là đại lý ủy quyền (Authorized Reseller) của RapidSSL.'
+value_changed_from: Đại lý ủy quyền của Comodo
+value_changed_at: '2026-04-06T23:48:44.897190+07:00'
+approved_at: '2026-04-07T01:09:09.220900+07:00'
+approved_by: admin-batch

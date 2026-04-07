@@ -1,0 +1,19 @@
+claim_id: CLM-VPS-CLOUD-VM02-FREE_SSL
+entity_id: product.vps.cloud-vm02
+entity_type: product_plan
+entity_name: CLOUD-VM02
+attribute: free_ssl
+value: true
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_THUE_CLOUD_VPS_SSD_GIA_RE_TAI_BKNS_2026_04_04
+observed_at: '2026-04-04T20:53:17.342004+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ Thông số kỹ thuật / Giới hạn: ''SSL Miễn Phí: Chỉ áp dụng
+  cho các gói từ CLOUD-VM02 trở lên.'''
+approved_at: '2026-04-07T13:00:15.111656+07:00'
+approved_by: admin-batch

@@ -1,0 +1,19 @@
+claim_id: CLM-ENT-PROD-SSL-MAX_DOMA
+entity_id: ENT-PROD-SSL-001
+entity_type: ENT-PROD-SSL
+entity_name: GeoTrust True BusinessID EV (FLEX)
+attribute: max_domains
+value: 250
+unit: tên miền
+qualifiers: {}
+source_ids:
+- SRC-CHUNG_CHI_SSL_GEOTRUST_TRUE_BUSINESSID_EV_FLEX_2026_04_04
+observed_at: '2026-04-04T20:36:08.969606+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ bảng Thông số kỹ thuật: | Hỗ trợ SAN | Tối đa 250 tên miền
+  |'
+approved_at: '2026-04-07T01:09:12.869689+07:00'
+approved_by: admin-batch

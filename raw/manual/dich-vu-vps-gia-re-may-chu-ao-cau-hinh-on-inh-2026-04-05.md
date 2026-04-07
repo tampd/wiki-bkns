@@ -8,10 +8,12 @@ original_format: docx
 page_title: Dịch vụ VPS Giá Rẻ - Máy chủ ảo cấu hình ổn định
 content_hash: sha256:092a89688edf565e6eee81c79688ae95bf8ccecb71b31dbd434d807b746ac3fa
 word_count: 1125
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/vps
 crawl_method: manual_upload
 source_date: '2026-02-08'
+skipped_reason: Duplicate of dich-vu-vps-gia-re-may-chu-ao-cau-hinh-on-inh-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.432770+07:00'
 ---
 
 ═══ Dịch vụ VPS Giá Rẻ

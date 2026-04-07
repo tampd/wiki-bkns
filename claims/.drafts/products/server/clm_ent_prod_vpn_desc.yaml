@@ -1,0 +1,20 @@
+claim_id: CLM-ENT-PROD-VPN-DESC
+entity_id: ENT-PROD-VPN-001
+entity_type: product
+entity_name: Dịch vụ VPN
+attribute: description
+value: Dịch vụ VPN của BKNS có thể được sử dụng nhằm mục đích truy cập những website
+  bị hạn chế truy cập về mặt vị trí địa lý và bảo vệ hoạt động duyệt web của người
+  dùng.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_VPN_CLOUD_VPN_CUA_BKNS_2026_04_04
+observed_at: '2026-04-04T20:53:50.510262+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ mục ''Mô tả dịch vụ'': ''Dịch vụ VPN của BKNS có thể được
+  sử dụng nhằm mục đích truy cập những website bị hạn chế truy cập về mặt vị trí địa
+  lý và bảo vệ hoạt động duyệt web của người dùng.'''

@@ -1,0 +1,18 @@
+claim_id: CLM-EMAI-BKNS_CLOUD_SERVER-PROTOCOL
+entity_id: product.email.bkns_cloud_server
+entity_type: product
+entity_name: Cloud Email Server
+attribute: protocol_support
+value: POP3/IMAP/SMTP
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_06
+observed_at: '2026-04-07T00:01:11.811438+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục ''Tính năng / Thành phần'': Tương thích: Hỗ trợ đầy đủ
+  các giao thức POP3/IMAP/SMTP, cho phép sử dụng trên Webmail và các ứng dụng email
+  client như Outlook.'

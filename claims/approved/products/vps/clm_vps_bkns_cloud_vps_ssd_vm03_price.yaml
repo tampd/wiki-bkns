@@ -1,0 +1,19 @@
+claim_id: CLM-VPS-BKNS_CLOUD_VPS_SSD_VM03-PRICE
+entity_id: product.vps.bkns_cloud_vps_ssd_vm03
+entity_type: product_plan
+entity_name: CLOUD-VM03
+attribute: monthly_price
+value: 66000
+unit: VND
+qualifiers:
+  billing_cycle: month
+source_ids:
+- SRC-DICH_VU_THUE_CLOUD_VPS_SSD_GIA_RE_TAI_BKNS_2026_04_06
+observed_at: '2026-04-07T00:13:45.711896+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: high
+compiler_note: 'Trích từ bảng giá: ''| CLOUD-VM03 | 66.000đ |'''
+approved_at: '2026-04-07T13:00:15.034389+07:00'
+approved_by: admin-batch

@@ -1,0 +1,22 @@
+claim_id: CLM-ENT-PROD-SSL-KEY_FEAT
+entity_id: ENT-PROD-SSL-001
+entity_type: product
+entity_name: PositiveSSL (DV)
+attribute: key_feature
+value: Chi phí thấp
+unit: null
+qualifiers: null
+source_ids:
+- SRC-POSITIVESSL_DV_CHUNG_CHI_SSL_GIA_RE_2026_04_04
+- SRC-POSITIVESSL_DV_CHUNG_CHI_SSL_GIA_RE_2026_04_06
+observed_at: '2026-04-07T00:51:08.480331+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: ''Điểm chính: Chi phí thấp, cấp phát nhanh
+  trong 5 phút, mã hóa tiêu chuẩn ngành.'''
+value_changed_from: Mã hóa tiêu chuẩn ngành
+value_changed_at: '2026-04-07T00:51:08.480351+07:00'
+approved_at: '2026-04-07T13:00:13.013889+07:00'
+approved_by: admin-batch

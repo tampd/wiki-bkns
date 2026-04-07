@@ -1,0 +1,16 @@
+claim_id: CLM-ENT--GEOTRUST_QUICKSSL_PREMIUM-SERVER_L
+entity_id: ENT-PROD-SSL.GEOTRUST_QUICKSSL_PREMIUM
+entity_type: product_plan
+entity_name: GeoTrust QuickSSL Premium
+attribute: server_license_limit
+value: unlimited
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-GEOTRUST_QUICKSSL_PREMIUM_CHUNG_CHI_SSL_XAC_THUC_TEN_MIEN_2026_04_04
+observed_at: '2026-04-04T20:59:24.035990+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: ''...không giới hạn máy chủ cài đặt.'''

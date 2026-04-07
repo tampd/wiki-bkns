@@ -1,0 +1,17 @@
+claim_id: CLM-HOST-BKH02-STORAGE_
+entity_id: product.hosting.bkh02
+entity_type: product_plan
+entity_name: BKH02
+attribute: storage_capacity
+value: 3
+unit: GB
+qualifiers:
+  disk_type: SSD Enterprise
+source_ids:
+- SRC-HOSTING_GIA_RE_BANG_GIA_VA_THONG_SO_KY_THUAT_TAI_BKNS_2026_04_06
+observed_at: '2026-04-07T00:36:08.693273+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng giá: ''SSD Enterprise | 3 GB'''

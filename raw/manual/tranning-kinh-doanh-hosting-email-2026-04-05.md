@@ -7,10 +7,12 @@ original_format: pdf
 page_title: Training Kinh Doanh
 content_hash: sha256:6d9870d71a09387d2452ba0a18c2d3608102d6d7ce85adbafb07e8d8250066fe
 word_count: 2258
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/hosting
 crawl_method: manual_upload
 source_date: '2026-04-05'
+skipped_reason: Duplicate of tranning-kinh-doanh-hosting-email-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.464176+07:00'
 ---
 
 Training Kinh Doanh 

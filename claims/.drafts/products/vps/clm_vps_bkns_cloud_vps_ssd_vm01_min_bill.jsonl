@@ -1,0 +1,1 @@
+{"ts": "2026-04-07T00:13:45.691866+07:00", "action": "extracted", "claim_id": "CLM-VPS-BKNS_CLOUD_VPS_SSD_VM01-MIN_BILL", "source": "SRC-DICH_VU_THUE_CLOUD_VPS_SSD_GIA_RE_TAI_BKNS_2026_04_06", "raw_file": "raw/manual/dich-vu-thue-cloud-vps-ssd-gia-re-tai-bkns-2026-04-06.md", "model": "gemini-2.5-pro", "cost_usd": 0.039002}

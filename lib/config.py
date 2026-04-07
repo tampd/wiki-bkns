@@ -59,7 +59,10 @@ GOOGLE_PROJECT = os.getenv("GOOGLE_CLOUD_PROJECT", "ai-test-491016")
 GOOGLE_LOCATION = os.getenv("GOOGLE_CLOUD_LOCATION", "us-central1")
 
 # ── Models ─────────────────────────────────────────────────
+# gemini-2.5-flash: GA, fast, cost-effective
+# gemini-3.1-pro-preview: most advanced reasoning, 1M context, 65K output
 MODEL_FLASH = os.getenv("MODEL_FLASH", "gemini-2.5-flash")
+# [C6] Default to gemini-2.5-pro (GA). Override via MODEL_PRO env var if needed.
 MODEL_PRO = os.getenv("MODEL_PRO", "gemini-2.5-pro")
 
 # Model assignment per skill (theo spec 00-MASTER.md)
@@ -78,7 +81,9 @@ SKILL_MODELS = {
 
 # ── Telegram ───────────────────────────────────────────────
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "")
-ADMIN_TELEGRAM_ID = os.getenv("ADMIN_TELEGRAM_ID", "882968821")
+# [C3] No hardcoded default — must be set via .env to prevent privilege escalation.
+# If unset, admin commands in the bot will be blocked for all users (safe default).
+ADMIN_TELEGRAM_ID = os.getenv("ADMIN_TELEGRAM_ID", "")
 
 # ── BKNS Contact (Ground Truth — KHÔNG thay đổi) ──────────
 BKNS_HOTLINE_KY_THUAT = "1900 63 68 09"  # Có phí

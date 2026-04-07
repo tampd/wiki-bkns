@@ -8,10 +8,12 @@ original_format: docx
 page_title: Dịch vụ Cloud VPS SEO - Máy Chủ Ảo Tối Ưu Cho SEO
 content_hash: sha256:e2ab1a86f755fbe6b50d788c5a2404136f32ad9fd3a251d485835169b6e3cc0a
 word_count: 722
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/vps
 crawl_method: manual_upload
 source_date: '2026-02-08'
+skipped_reason: Duplicate of dich-vu-cloud-vps-seo-may-chu-ao-toi-uu-cho-seo-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.305193+07:00'
 ---
 
 ═══ VPS SEO

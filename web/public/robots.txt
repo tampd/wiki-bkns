@@ -1,0 +1,18 @@
+# BKNS Wiki Admin Portal — Internal Only
+# Block all search engine crawlers
+
+User-agent: *
+Disallow: /
+
+# Block specific bots
+User-agent: Googlebot
+Disallow: /
+
+User-agent: Bingbot  
+Disallow: /
+
+User-agent: YandexBot
+Disallow: /
+
+User-agent: Baiduspider
+Disallow: /

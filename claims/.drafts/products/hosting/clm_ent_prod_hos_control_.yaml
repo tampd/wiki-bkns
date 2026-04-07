@@ -1,0 +1,18 @@
+claim_id: CLM-ENT-PROD-HOS-CONTROL_
+entity_id: ENT-PROD-HOSTING
+entity_type: product_line
+entity_name: Hosting Giá Rẻ
+attribute: control_panel_language
+value: Vietnamese
+unit: null
+qualifiers:
+  control_panel: cPanel
+source_ids:
+- SRC-HOSTING_GIA_RE_WEB_2026_04_05
+- SRC-DICH_VU_HOSTING_WINDOWS_TAI_BKNS_2026_04_04
+observed_at: '2026-04-05T22:02:28.711371+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ: ''cPanel Control Panel tiếng Việt'''

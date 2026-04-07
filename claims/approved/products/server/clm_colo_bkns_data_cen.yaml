@@ -1,0 +1,18 @@
+claim_id: CLM-COLO-BKNS-DATA_CEN
+entity_id: product.colocation.bkns
+entity_type: product
+entity_name: Thuê Chỗ Đặt Máy Chủ (Colocation)
+attribute: data_center_tier
+value: Tier 3
+unit: ''
+qualifiers: {}
+source_ids:
+- SRC-DICH_VU_THUE_CHO_AT_MAY_CHU_COLOCATION_TAI_BKNS_2026_04_06
+observed_at: '2026-04-07T00:12:22.810004+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: Điểm chính: Data Center chuẩn Tier 3...'
+approved_at: '2026-04-07T13:00:09.704448+07:00'
+approved_by: admin-batch

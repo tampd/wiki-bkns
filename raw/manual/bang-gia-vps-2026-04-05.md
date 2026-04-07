@@ -7,10 +7,12 @@ original_format: pdf
 page_title: 1. VPS ADM
 content_hash: sha256:97570574c8f50229a17c5a68418c8db342d9f6a24e896cb3aae83b7d01591ce7
 word_count: 523
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/vps
 crawl_method: manual_upload
 source_date: '2026-04-05'
+skipped_reason: Duplicate of bang-gia-vps-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.459719+07:00'
 ---
 
 1. VPS ADM

@@ -1,0 +1,20 @@
+claim_id: CLM-ENT-PROD-DOM-RENEWAL_
+entity_id: ENT-PROD-DOMAIN
+entity_type: product
+entity_name: Tên miền Việt Nam
+attribute: renewal_price
+value: 30000
+unit: VND
+qualifiers:
+  domain_extension: .name.vn
+source_ids:
+- SRC-BANG_GIA_TEN_MIEN_VN_2026_04_04
+- SRC-BANG_GIA_TEN_MIEN_VN_2026_04_06
+observed_at: '2026-04-06T23:21:19.973069+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ dòng: .name.vn | .io.vn | Phí gia hạn (VNĐ) 30.000'
+value_changed_from: 60000
+value_changed_at: '2026-04-06T23:21:19.973088+07:00'

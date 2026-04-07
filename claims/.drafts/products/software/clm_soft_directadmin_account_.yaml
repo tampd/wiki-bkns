@@ -1,0 +1,16 @@
+claim_id: CLM-SOFT-DIRECTADMIN-ACCOUNT_
+entity_id: product.software.directadmin.lite
+entity_type: product_plan
+entity_name: DirectAdmin Lite
+attribute: account_limit
+value: 10
+unit: Account
+qualifiers: {}
+source_ids:
+- SRC-BANG_GIA_BAN_QUYEN_PHAN_MEM_QUAN_TRI_SERVER_DIRECTADMIN_2026_04_06
+observed_at: '2026-04-06T23:11:14.307549+07:00'
+valid_from: '2026-04-06'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng giá: ''Lite | Giới hạn | 10 Account, 50 domain'''

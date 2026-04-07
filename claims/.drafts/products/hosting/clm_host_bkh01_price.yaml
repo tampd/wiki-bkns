@@ -1,0 +1,17 @@
+claim_id: CLM-HOST-BKH01-PRICE
+entity_id: product.hosting.bkh01
+entity_type: product_plan
+entity_name: BKH01
+attribute: price
+value: 5700
+unit: VND
+qualifiers:
+  billing_cycle: month
+source_ids:
+- SRC-HOSTING_GIA_RE_BANG_GIA_VA_THONG_SO_KY_THUAT_TAI_BKNS_2026_04_06
+observed_at: '2026-04-07T00:36:08.674419+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ bảng giá: ''Giá | 5.700đ/Tháng'''

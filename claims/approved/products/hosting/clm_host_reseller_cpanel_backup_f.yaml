@@ -1,0 +1,19 @@
+claim_id: CLM-HOST-RESELLER_CPANEL-BACKUP_F
+entity_id: product.hosting.reseller_cpanel
+entity_type: product
+entity_name: Reseller Hosting cPanel
+attribute: backup_frequency
+value: daily
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-RESELLER_HOSTING_CPANEL_QUAN_LY_NHIEU_HOSTING_CHI_VOI_MOT_T_2026_04_06
+observed_at: '2026-04-07T01:00:34.450970+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ mục Tính năng / Thành phần: ''Backup: Sử dụng Jetbackup,
+  sao lưu mỗi ngày và lưu trữ 30 bản gần nhất.'''
+approved_at: '2026-04-07T13:00:12.295412+07:00'
+approved_by: admin-batch

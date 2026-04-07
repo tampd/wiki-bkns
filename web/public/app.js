@@ -1,6 +1,6 @@
 /**
- * BKNS Wiki Data Portal — Client Application
- * Handles: Login, Upload (drag/drop), Pipeline control, File browser
+ * BKNS Wiki Admin Portal — Client Application
+ * Handles: Login, Wiki Viewer/Editor, Upload, Pipeline, Search
  */
 
 (function () {
@@ -10,19 +10,14 @@
   // CONFIG & STATE
   // ============================================================
   const API = '';
-  const MAX_FILE_SIZE = 50 * 1024 * 1024; // 50MB
+  const MAX_FILE_SIZE = 50 * 1024 * 1024;
   const ALLOWED_TYPES = ['.pdf', '.docx', '.xlsx', '.md', '.txt', '.png', '.jpg', '.jpeg'];
   const FILE_TYPE_MAP = {
-    '.pdf': { label: 'PDF', cls: 'pdf' },
-    '.docx': { label: 'DOC', cls: 'doc' },
-    '.doc': { label: 'DOC', cls: 'doc' },
-    '.xlsx': { label: 'XLS', cls: 'xls' },
-    '.xls': { label: 'XLS', cls: 'xls' },
-    '.md': { label: 'MD', cls: 'md' },
-    '.txt': { label: 'TXT', cls: 'txt' },
-    '.png': { label: 'PNG', cls: 'img' },
-    '.jpg': { label: 'JPG', cls: 'img' },
-    '.jpeg': { label: 'JPG', cls: 'img' },
+    '.pdf': { label: 'PDF', cls: 'pdf' }, '.docx': { label: 'DOC', cls: 'doc' },
+    '.doc': { label: 'DOC', cls: 'doc' }, '.xlsx': { label: 'XLS', cls: 'xls' },
+    '.xls': { label: 'XLS', cls: 'xls' }, '.md': { label: 'MD', cls: 'md' },
+    '.txt': { label: 'TXT', cls: 'txt' }, '.png': { label: 'PNG', cls: 'img' },
+    '.jpg': { label: 'JPG', cls: 'img' }, '.jpeg': { label: 'JPG', cls: 'img' },
   };
 
   let state = {
@@ -30,112 +25,37 @@
     fileQueue: [],
     currentPage: 1,
     currentSource: 'all',
-    pipelineStatus: 'idle',
     statusInterval: null,
-    // Wiki editor state
-    currentTab: 'dashboard',
+    // App state
+    currentTab: 'wiki',
+    // Wiki state
+    wikiTree: null,
     wikiCurrentCategory: null,
-    wikiOriginalContent: '',
+    wikiCurrentPage: null,
+    wikiContent: '',
+    wikiMode: 'read', // 'read' | 'edit'
     wikiDirty: false,
-    wikiSaveDebounce: null,
+    wikiEditor: null, // Toast UI Editor instance
+    searchDebounce: null,
   };
 
   // ============================================================
-  // DOM REFS
+  // HELPERS
   // ============================================================
   const $ = (sel) => document.querySelector(sel);
   const $$ = (sel) => document.querySelectorAll(sel);
-
-  const dom = {
-    loginPage: $('#login-page'),
-    app: $('#app'),
-    loginForm: $('#login-form'),
-    loginPassword: $('#login-password'),
-    loginError: $('#login-error'),
-    loginSubmit: $('#login-submit'),
-    loginBtnText: $('#login-btn-text'),
-    loginSpinner: $('#login-spinner'),
-    btnLogout: $('#btn-logout'),
-    uploadZone: $('#upload-zone'),
-    fileInput: $('#file-input'),
-    fileQueue: $('#file-queue'),
-    uploadActions: $('#upload-actions'),
-    btnUploadTrigger: $('#btn-upload-trigger'),
-    btnUploadOnly: $('#btn-upload-only'),
-    btnClearQueue: $('#btn-clear-queue'),
-    pipelineStatusBadge: $('#pipeline-status-badge'),
-    pipelineStatusHeader: $('#pipeline-status-header'),
-    pipelineStatusText: $('#pipeline-status-text'),
-    pipelineLastRun: $('#pipeline-last-run'),
-    pipelineLastResult: $('#pipeline-last-result'),
-    pipelineBuildVersion: $('#pipeline-build-version'),
-    btnTriggerFull: $('#btn-trigger-full'),
-    btnTriggerExtract: $('#btn-trigger-extract'),
-    btnTriggerCompile: $('#btn-trigger-compile'),
-    filesTbody: $('#files-tbody'),
-    filesPagination: $('#files-pagination'),
-    filesInfo: $('#files-info'),
-    btnPrevPage: $('#btn-prev-page'),
-    btnNextPage: $('#btn-next-page'),
-    toastContainer: $('#toast-container'),
-    modalOverlay: $('#modal-overlay'),
-    modalTitle: $('#modal-title'),
-    modalMessage: $('#modal-message'),
-    modalCancel: $('#modal-cancel'),
-    modalConfirm: $('#modal-confirm'),
-    statTotalFiles: $('#stat-total-files'),
-    statWikiPages: $('#stat-wiki-pages'),
-    statClaims: $('#stat-claims'),
-    statLastBuild: $('#stat-last-build'),
-  };
-
-  // ============================================================
-  // UTILITIES
-  // ============================================================
-  function formatSize(bytes) {
-    if (bytes === 0) return '0 B';
-    const units = ['B', 'KB', 'MB', 'GB'];
-    const i = Math.floor(Math.log(bytes) / Math.log(1024));
-    return (bytes / Math.pow(1024, i)).toFixed(i > 0 ? 1 : 0) + ' ' + units[i];
-  }
-
-  function formatDate(iso) {
-    if (!iso) return '—';
-    const d = new Date(iso);
-    return d.toLocaleDateString('vi-VN', {
-      day: '2-digit', month: '2-digit', year: 'numeric',
-      hour: '2-digit', minute: '2-digit'
-    });
-  }
-
-  function getFileExt(name) {
-    const i = name.lastIndexOf('.');
-    return i > 0 ? name.substring(i).toLowerCase() : '';
-  }
-
-  function getFileTypeInfo(name) {
-    const ext = getFileExt(name);
-    return FILE_TYPE_MAP[ext] || { label: 'FILE', cls: 'txt' };
-  }
-
-  function escapeHtml(str) {
-    const div = document.createElement('div');
-    div.textContent = str;
-    return div.innerHTML;
-  }
+  function escapeHtml(s) { const d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+  function formatSize(b) { if (!b) return '0 B'; const u = ['B', 'KB', 'MB', 'GB']; const i = Math.floor(Math.log(b) / Math.log(1024)); return (b / Math.pow(1024, i)).toFixed(i > 0 ? 1 : 0) + ' ' + u[i]; }
+  function formatDate(iso) { if (!iso) return '—'; return new Date(iso).toLocaleDateString('vi-VN', { day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' }); }
+  function getFileExt(n) { const i = n.lastIndexOf('.'); return i > 0 ? n.substring(i).toLowerCase() : ''; }
+  function getFileTypeInfo(n) { return FILE_TYPE_MAP[getFileExt(n)] || { label: 'FILE', cls: 'txt' }; }
 
   async function apiFetch(path, options = {}) {
     const res = await fetch(API + path, {
       ...options,
-      headers: {
-        'Authorization': 'Bearer ' + state.token,
-        ...(options.headers || {}),
-      },
+      headers: { 'Authorization': 'Bearer ' + state.token, ...(options.headers || {}) },
     });
-    if (res.status === 401) {
-      logout();
-      throw new Error('Unauthorized');
-    }
+    if (res.status === 401) { logout(); throw new Error('Unauthorized'); }
     return res;
   }
 
@@ -146,302 +66,697 @@
     const icons = { success: '✅', error: '❌', warning: '⚠️', info: 'ℹ️' };
     const el = document.createElement('div');
     el.className = 'toast ' + type;
-    el.innerHTML = `
-      <span class="toast-icon" aria-hidden="true">${icons[type] || 'ℹ️'}</span>
-      <div class="toast-content">
-        <div class="toast-title">${escapeHtml(title)}</div>
-        ${message ? '<div class="toast-message">' + escapeHtml(message) + '</div>' : ''}
-      </div>
-      <button class="toast-close" aria-label="Đóng thông báo">&times;</button>
-    `;
+    el.innerHTML = `<span class="toast-icon">${icons[type] || 'ℹ️'}</span>
+      <div class="toast-content"><div class="toast-title">${escapeHtml(title)}</div>
+      ${message ? '<div class="toast-message">' + escapeHtml(message) + '</div>' : ''}</div>
+      <button class="toast-close" aria-label="Đóng">&times;</button>`;
     el.querySelector('.toast-close').addEventListener('click', () => removeToast(el));
-    dom.toastContainer.appendChild(el);
-
-    if (duration > 0) {
-      setTimeout(() => removeToast(el), duration);
-    }
+    $('#toast-container').appendChild(el);
+    if (duration > 0) setTimeout(() => removeToast(el), duration);
     return el;
   }
-
-  function removeToast(el) {
-    if (!el.parentNode) return;
-    el.classList.add('removing');
-    setTimeout(() => el.remove(), 200);
-  }
+  function removeToast(el) { if (!el.parentNode) return; el.classList.add('removing'); setTimeout(() => el.remove(), 200); }
 
   // ============================================================
   // MODAL SYSTEM
   // ============================================================
   let modalResolve = null;
-
   function showModal(title, message, confirmText = 'Xác nhận') {
-    dom.modalTitle.textContent = title;
-    dom.modalMessage.textContent = message;
-    dom.modalConfirm.textContent = confirmText;
-    dom.modalCancel.style.display = '';
-    const modalCard = dom.modalOverlay.querySelector('.modal');
-    if (modalCard) modalCard.style.maxWidth = '';
-    dom.modalOverlay.classList.add('active');
-    dom.modalConfirm.focus();
-    return new Promise((resolve) => { modalResolve = resolve; });
+    const overlay = $('#modal-overlay');
+    $('#modal-title').textContent = title;
+    $('#modal-message').textContent = message;
+    $('#modal-confirm').textContent = confirmText;
+    $('#modal-cancel').style.display = '';
+    overlay.classList.add('active');
+    $('#modal-confirm').focus();
+    return new Promise(r => { modalResolve = r; });
   }
-
   function closeModal(result) {
-    dom.modalOverlay.classList.remove('active');
+    $('#modal-overlay').classList.remove('active');
     if (modalResolve) { modalResolve(result); modalResolve = null; }
   }
-
-  dom.modalCancel.addEventListener('click', () => closeModal(false));
-  dom.modalConfirm.addEventListener('click', () => closeModal(true));
-  dom.modalOverlay.addEventListener('click', (e) => {
-    if (e.target === dom.modalOverlay) closeModal(false);
-  });
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && dom.modalOverlay.classList.contains('active')) {
-      closeModal(false);
-    }
-  });
+  $('#modal-cancel').addEventListener('click', () => closeModal(false));
+  $('#modal-confirm').addEventListener('click', () => closeModal(true));
+  $('#modal-overlay').addEventListener('click', e => { if (e.target === $('#modal-overlay')) closeModal(false); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && $('#modal-overlay').classList.contains('active')) closeModal(false); });
 
   // ============================================================
   // AUTH
   // ============================================================
-  dom.loginForm.addEventListener('submit', async (e) => {
+  $('#login-form').addEventListener('submit', async (e) => {
     e.preventDefault();
-    const pw = dom.loginPassword.value.trim();
+    const pw = $('#login-password').value.trim();
     if (!pw) return;
-
-    dom.loginSubmit.disabled = true;
-    dom.loginBtnText.style.display = 'none';
-    dom.loginSpinner.style.display = 'block';
-    dom.loginError.classList.remove('visible');
-
+    $('#login-submit').disabled = true;
+    $('#login-btn-text').style.display = 'none';
+    $('#login-spinner').style.display = 'block';
+    $('#login-error').classList.remove('visible');
     try {
-      const res = await fetch(API + '/api/login', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ password: pw }),
-      });
-
-      if (res.ok) {
-        const data = await res.json();
-        state.token = data.token;
-        localStorage.setItem('wiki_token', data.token);
-        showApp();
-      } else {
-        dom.loginError.classList.add('visible');
-        dom.loginPassword.focus();
-      }
-    } catch {
-      dom.loginError.textContent = 'Không thể kết nối server.';
-      dom.loginError.classList.add('visible');
-    } finally {
-      dom.loginSubmit.disabled = false;
-      dom.loginBtnText.style.display = 'inline';
-      dom.loginSpinner.style.display = 'none';
-    }
+      const res = await fetch(API + '/api/login', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ password: pw }) });
+      if (res.ok) { const d = await res.json(); state.token = d.token; localStorage.setItem('wiki_token', d.token); showApp(); }
+      else { $('#login-error').classList.add('visible'); $('#login-password').focus(); }
+    } catch { $('#login-error').textContent = 'Không thể kết nối server.'; $('#login-error').classList.add('visible'); }
+    finally { $('#login-submit').disabled = false; $('#login-btn-text').style.display = 'inline'; $('#login-spinner').style.display = 'none'; }
   });
 
   function logout() {
     state.token = '';
     localStorage.removeItem('wiki_token');
-    dom.app.classList.remove('active');
-    dom.loginPage.style.display = '';
-    dom.loginPassword.value = '';
+    $('#app').classList.remove('active');
+    $('#login-page').style.display = '';
     if (state.statusInterval) clearInterval(state.statusInterval);
   }
-
-  dom.btnLogout.addEventListener('click', async () => {
-    const confirmed = await showModal('Đăng xuất', 'Bạn có chắc chắn muốn đăng xuất?', 'Đăng xuất');
-    if (confirmed) logout();
-  });
+  $('#btn-logout').addEventListener('click', async () => { const ok = await showModal('Đăng xuất', 'Bạn có chắc chắn?', 'Đăng xuất'); if (ok) logout(); });
 
   function showApp() {
-    dom.loginPage.style.display = 'none';
-    dom.app.classList.add('active');
+    $('#login-page').style.display = 'none';
+    $('#app').classList.add('active');
     lucide.createIcons();
-    loadDashboard();
-    bindWikiEvents();
-    state.statusInterval = setInterval(loadStatus, 10000);
+    switchTab('wiki');
+    loadWikiTree();
+    state.statusInterval = setInterval(loadStatus, 15000);
+    loadStatus();
   }
 
   // ============================================================
-  // UPLOAD — DRAG & DROP
+  // TAB NAVIGATION
   // ============================================================
-  dom.uploadZone.addEventListener('click', () => dom.fileInput.click());
-  dom.uploadZone.addEventListener('keydown', (e) => {
-    if (e.key === 'Enter' || e.key === ' ') {
-      e.preventDefault();
-      dom.fileInput.click();
-    }
-  });
+  function switchTab(tabName) {
+    state.currentTab = tabName;
+    $$('.nav-tab').forEach(btn => {
+      const active = btn.dataset.tab === tabName;
+      btn.classList.toggle('active', active);
+      btn.setAttribute('aria-selected', active ? 'true' : 'false');
+    });
+    // Hide all tabs
+    $('#tab-wiki').style.display = 'none';
+    $('#tab-dashboard').style.display = 'none';
+    $('#tab-upload').style.display = 'none';
+    $('#tab-pipeline').style.display = 'none';
+    // Show selected
+    const el = $(`#tab-${tabName}`);
+    if (el) el.style.display = tabName === 'wiki' ? 'flex' : 'block';
 
-  dom.uploadZone.addEventListener('dragover', (e) => {
-    e.preventDefault();
-    dom.uploadZone.classList.add('drag-over');
-  });
-
-  dom.uploadZone.addEventListener('dragleave', () => {
-    dom.uploadZone.classList.remove('drag-over');
-  });
-
-  dom.uploadZone.addEventListener('drop', (e) => {
-    e.preventDefault();
-    dom.uploadZone.classList.remove('drag-over');
-    addFilesToQueue(e.dataTransfer.files);
-  });
-
-  dom.fileInput.addEventListener('change', () => {
-    addFilesToQueue(dom.fileInput.files);
-    dom.fileInput.value = '';
-  });
-
-  function addFilesToQueue(fileList) {
-    for (const file of fileList) {
-      const ext = getFileExt(file.name);
-      if (!ALLOWED_TYPES.includes(ext)) {
-        toast('warning', 'Định dạng không hỗ trợ', `${file.name} — Chỉ hỗ trợ: ${ALLOWED_TYPES.join(', ')}`);
-        continue;
-      }
-      if (file.size > MAX_FILE_SIZE) {
-        toast('warning', 'File quá lớn', `${file.name} — Tối đa 50MB/file`);
-        continue;
-      }
-      if (state.fileQueue.some(f => f.name === file.name && f.size === file.size)) {
-        continue; // skip duplicates
-      }
-      state.fileQueue.push(file);
-    }
-    renderQueue();
+    if (tabName === 'dashboard') { loadDashboard(); loadChangelog(); }
+    if (tabName === 'upload') loadFiles();
+    lucide.createIcons();
   }
 
-  function renderQueue() {
-    if (state.fileQueue.length === 0) {
-      dom.fileQueue.style.display = 'none';
-      dom.uploadActions.style.display = 'none';
+  $$('.nav-tab').forEach(btn => {
+    btn.addEventListener('click', () => {
+      if (btn.dataset.tab === state.currentTab) return;
+      switchTab(btn.dataset.tab);
+    });
+  });
+
+  // ============================================================
+  // WIKI — SIDEBAR TREE
+  // ============================================================
+  async function loadWikiTree() {
+    try {
+      const res = await apiFetch('/api/wiki/tree');
+      if (!res.ok) return;
+      const data = await res.json();
+      state.wikiTree = data.tree;
+      renderTree(data.tree);
+      // Show stats on welcome page
+      const statsEl = $('#welcome-stats');
+      if (statsEl) {
+        statsEl.innerHTML = `
+          <div class="welcome-stat"><div class="welcome-stat-value">${data.tree.length}</div><div class="welcome-stat-label">Categories</div></div>
+          <div class="welcome-stat"><div class="welcome-stat-value">${data.total}</div><div class="welcome-stat-label">Trang wiki</div></div>`;
+      }
+    } catch { /* silent */ }
+  }
+
+  function renderTree(tree) {
+    const container = $('#sidebar-tree');
+    if (!tree || tree.length === 0) {
+      container.innerHTML = '<div class="sidebar-tree-loading">Chưa có wiki nào</div>';
       return;
     }
 
-    dom.fileQueue.style.display = 'block';
-    dom.uploadActions.style.display = 'flex';
+    const CATEGORY_ICONS = {
+      hosting: 'server', vps: 'cloud', ssl: 'shield-check', 'ten-mien': 'globe',
+      email: 'mail', server: 'hard-drive', software: 'package', other: 'folder', uncategorized: 'help-circle',
+    };
 
-    dom.fileQueue.innerHTML = state.fileQueue.map((file, i) => {
-      const info = getFileTypeInfo(file.name);
+    container.innerHTML = tree.map(cat => {
+      const icon = CATEGORY_ICONS[cat.category] || 'folder';
+      const pagesHtml = cat.pages.map(p => `
+        <button class="tree-page-btn" data-category="${cat.category}" data-page="${p.page}" title="${escapeHtml(p.title)}">
+          <i data-lucide="file-text" aria-hidden="true"></i>
+          ${escapeHtml(p.label)}
+        </button>
+      `).join('');
+
+      let productsHtml = '';
+      if (cat.products.length > 0) {
+        productsHtml = `<div class="tree-product-group"><div class="tree-product-label">Sản phẩm (${cat.products.length})</div>` +
+          cat.products.map(p => `
+            <button class="tree-page-btn tree-product-btn" data-category="${cat.category}" data-page="${p.page}" title="${escapeHtml(p.title)}">
+              <i data-lucide="package" aria-hidden="true"></i>
+              ${escapeHtml(p.label)}
+            </button>
+          `).join('') + '</div>';
+      }
+
       return `
-        <div class="file-queue-item" data-index="${i}">
-          <div class="file-icon ${info.cls}">${info.label}</div>
-          <div class="file-info">
-            <div class="file-name" title="${escapeHtml(file.name)}">${escapeHtml(file.name)}</div>
-            <div class="file-size">${formatSize(file.size)}</div>
-            <div class="progress-bar"><div class="progress-fill" id="progress-${i}"></div></div>
+        <div class="tree-category" data-cat="${cat.category}">
+          <button class="tree-category-btn" data-cat="${cat.category}">
+            <i data-lucide="chevron-right" aria-hidden="true"></i>
+            <i data-lucide="${icon}" aria-hidden="true" style="width:16px;height:16px;opacity:0.6"></i>
+            <span class="tree-category-label">${escapeHtml(cat.label)}</span>
+            <span class="tree-category-count">${cat.totalPages}</span>
+          </button>
+          <div class="tree-pages" data-cat="${cat.category}">
+            ${pagesHtml}
+            ${productsHtml}
           </div>
-          <button class="remove-btn" data-index="${i}" aria-label="Xóa ${escapeHtml(file.name)}">&times;</button>
-        </div>
-      `;
+        </div>`;
     }).join('');
 
-    dom.fileQueue.querySelectorAll('.remove-btn').forEach(btn => {
+    lucide.createIcons();
+    bindTreeEvents();
+  }
+
+  function bindTreeEvents() {
+    $$('.tree-category-btn').forEach(btn => {
       btn.addEventListener('click', () => {
-        state.fileQueue.splice(parseInt(btn.dataset.index), 1);
-        renderQueue();
+        const cat = btn.dataset.cat;
+        const pages = $(`.tree-pages[data-cat="${cat}"]`);
+        const isOpen = pages.classList.contains('open');
+        pages.classList.toggle('open');
+        btn.classList.toggle('expanded', !isOpen);
+      });
+    });
+
+    $$('.tree-page-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const cat = btn.dataset.category;
+        const page = btn.dataset.page;
+        navigateToPage(cat, page);
       });
     });
   }
 
-  dom.btnClearQueue.addEventListener('click', () => {
-    state.fileQueue = [];
-    renderQueue();
+  // Auto-expand category
+  function expandCategory(cat) {
+    const pages = $(`.tree-pages[data-cat="${cat}"]`);
+    const btn = $(`.tree-category-btn[data-cat="${cat}"]`);
+    if (pages && !pages.classList.contains('open')) {
+      pages.classList.add('open');
+      if (btn) btn.classList.add('expanded');
+    }
+  }
+
+  function highlightTreeItem(cat, page) {
+    $$('.tree-page-btn.active').forEach(b => b.classList.remove('active'));
+    const pageKey = page.replace(/\//g, '__');
+    const btn = $(`.tree-page-btn[data-category="${cat}"][data-page="${page}"]`);
+    if (btn) btn.classList.add('active');
+  }
+
+  $('#btn-refresh-tree').addEventListener('click', () => loadWikiTree());
+
+  // ============================================================
+  // WIKI — PAGE NAVIGATION
+  // ============================================================
+  async function navigateToPage(category, page) {
+    try {
+      const pageParam = page.replace(/\//g, '__');
+      const res = await apiFetch(`/api/wiki/${category}/${pageParam}`);
+      if (!res.ok) {
+        const err = await res.json().catch(() => ({}));
+        toast('error', 'Lỗi', err.error || 'Không thể tải trang');
+        return;
+      }
+      const data = await res.json();
+
+      state.wikiCurrentCategory = category;
+      state.wikiCurrentPage = page;
+      state.wikiContent = data.content;
+      state.wikiDirty = false;
+
+      // Update UI
+      $('#wiki-welcome').style.display = 'none';
+      $('#wiki-content').style.display = 'flex';
+
+      // Breadcrumb
+      const catTree = state.wikiTree?.find(c => c.category === category);
+      $('#bc-category').textContent = catTree?.label || category;
+      $('#bc-page').textContent = data.label || page;
+
+      // Meta
+      const mtime = data.mtime ? formatDate(data.mtime) : '';
+      const size = data.size ? formatSize(data.size) : '';
+      $('#wiki-meta').textContent = `${mtime} • ${size}`;
+
+      // Render content
+      renderWikiArticle(data.body || data.content);
+      expandCategory(category);
+      highlightTreeItem(category, page);
+
+      // Switch to read mode
+      setMode('read');
+
+      // Hide save button
+      $('#btn-save').style.display = 'none';
+      lucide.createIcons();
+
+    } catch (e) {
+      toast('error', 'Lỗi kết nối', e.message);
+    }
+  }
+
+  // Wiki rendering
+  function renderWikiArticle(markdown) {
+    const article = $('#wiki-article');
+    if (typeof marked === 'undefined') { article.innerHTML = '<em>marked.js chưa tải</em>'; return; }
+
+    try {
+      const html = marked.parse(markdown, { breaks: true, gfm: true });
+      const wrapper = document.createElement('div');
+      wrapper.innerHTML = html;
+
+      // Process links
+      wrapper.querySelectorAll('a[href]').forEach(a => {
+        const href = a.getAttribute('href');
+        if (href && href.endsWith('.md') && !href.startsWith('http')) {
+          const parts = href.replace(/\.md$/, '').split('/');
+          const cat = parts.length >= 2 ? parts[parts.length - 2] : state.wikiCurrentCategory;
+          const pg = parts[parts.length - 1];
+          a.setAttribute('href', '#');
+          a.setAttribute('data-wiki-cat', cat);
+          a.setAttribute('data-wiki-page', pg);
+          a.style.cursor = 'pointer';
+        } else if (href && href.startsWith('http')) {
+          a.setAttribute('target', '_blank');
+          a.setAttribute('rel', 'noopener noreferrer');
+        }
+      });
+
+      // Add IDs to headings for ToC
+      let headingCount = 0;
+      wrapper.querySelectorAll('h1, h2, h3, h4').forEach(h => {
+        const id = 'h-' + (++headingCount);
+        h.id = id;
+      });
+
+      article.innerHTML = wrapper.innerHTML;
+
+      // Bind wiki links
+      article.querySelectorAll('[data-wiki-cat]').forEach(a => {
+        a.addEventListener('click', e => {
+          e.preventDefault();
+          navigateToPage(a.dataset.wikiCat, a.dataset.wikiPage);
+        });
+      });
+
+      // Build ToC
+      buildToc(article);
+
+    } catch { article.innerHTML = '<em>Lỗi render markdown</em>'; }
+  }
+
+  // Table of Contents
+  function buildToc(article) {
+    const tocList = $('#toc-list');
+    const headings = article.querySelectorAll('h1, h2, h3, h4');
+    if (headings.length === 0) {
+      tocList.innerHTML = '<li style="font-size:11px;color:var(--color-text-muted)">Không có mục lục</li>';
+      return;
+    }
+
+    tocList.innerHTML = [...headings].map(h => {
+      const level = h.tagName.toLowerCase();
+      const cls = level === 'h3' ? ' toc-h3' : level === 'h4' ? ' toc-h4' : '';
+      return `<li><a href="#${h.id}" class="${cls}">${escapeHtml(h.textContent)}</a></li>`;
+    }).join('');
+
+    // Click handler
+    tocList.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        const target = document.getElementById(a.getAttribute('href').slice(1));
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        // Highlight active
+        tocList.querySelectorAll('a').forEach(l => l.classList.remove('active'));
+        a.classList.add('active');
+      });
+    });
+  }
+
+  // ============================================================
+  // WIKI — MODE TOGGLE (Read/Edit)
+  // ============================================================
+  function setMode(mode) {
+    state.wikiMode = mode;
+    $$('.mode-btn').forEach(b => {
+      b.classList.toggle('active', b.dataset.mode === mode);
+    });
+
+    if (mode === 'read') {
+      $('#wiki-reader-layout').style.display = 'flex';
+      $('#wiki-editor-layout').style.display = 'none';
+      $('#btn-save').style.display = 'none';
+    } else {
+      $('#wiki-reader-layout').style.display = 'none';
+      $('#wiki-editor-layout').style.display = 'block';
+      $('#btn-save').style.display = '';
+      initEditor();
+    }
+    lucide.createIcons();
+  }
+
+  $$('.mode-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      if (btn.dataset.mode === state.wikiMode) return;
+      if (state.wikiMode === 'edit' && state.wikiDirty) {
+        showModal('Thay đổi chưa lưu', 'Bạn có muốn rời khỏi editor?', 'Rời đi').then(ok => {
+          if (ok) { state.wikiDirty = false; setMode(btn.dataset.mode); }
+        });
+        return;
+      }
+      setMode(btn.dataset.mode);
+    });
   });
 
   // ============================================================
-  // UPLOAD — EXECUTION
+  // WIKI — TOAST UI EDITOR
   // ============================================================
-  async function uploadFiles(triggerPipeline) {
-    if (state.fileQueue.length === 0) return;
+  function initEditor() {
+    const editorEl = $('#toast-editor');
+    editorEl.innerHTML = '';
 
-    const files = [...state.fileQueue];
-    const formData = new FormData();
-    files.forEach(f => formData.append('files', f));
-    formData.append('trigger', triggerPipeline ? 'true' : 'false');
+    // Strip frontmatter for editing
+    const content = state.wikiContent || '';
+    const fmMatch = content.match(/^---\n[\s\S]*?\n---\n([\s\S]*)$/);
+    const bodyContent = fmMatch ? fmMatch[1] : content;
+    const frontmatterBlock = fmMatch ? content.slice(0, content.length - fmMatch[1].length) : '';
 
-    // Disable buttons during upload
-    dom.btnUploadTrigger.disabled = true;
-    dom.btnUploadOnly.disabled = true;
+    // Store frontmatter for later
+    editorEl.dataset.frontmatter = frontmatterBlock;
 
     try {
-      const loadingToast = toast('info', 'Đang upload...', `${files.length} file`, 0);
+      const ToastEditor = toastui.Editor;
+      state.wikiEditor = new ToastEditor({
+        el: editorEl,
+        height: 'calc(100dvh - 160px)',
+        initialEditType: 'wysiwyg',
+        previewStyle: 'vertical',
+        initialValue: bodyContent,
+        usageStatistics: false,
+        hideModeSwitch: false,
+        toolbarItems: [
+          ['heading', 'bold', 'italic', 'strike'],
+          ['hr', 'quote'],
+          ['ul', 'ol', 'task'],
+          ['table', 'image', 'link'],
+          ['code', 'codeblock'],
+          ['scrollSync'],
+        ],
+        hooks: {
+          addImageBlobHook: async (blob, callback) => {
+            try {
+              const formData = new FormData();
+              formData.append('image', blob);
+              const res = await apiFetch('/api/upload/image', { method: 'POST', body: formData });
+              if (res.ok) {
+                const data = await res.json();
+                callback(data.url, blob.name || 'image');
+              } else {
+                toast('error', 'Upload ảnh thất bại');
+              }
+            } catch (e) {
+              toast('error', 'Lỗi upload', e.message);
+            }
+          },
+        },
+        events: {
+          change: () => {
+            if (!state.wikiDirty) {
+              state.wikiDirty = true;
+              $('#btn-save').classList.add('btn-success');
+              $('#btn-save').classList.remove('btn-primary');
+            }
+          },
+        },
+      });
+    } catch (e) {
+      console.error('Toast UI Editor init failed:', e);
+      // Fallback to textarea
+      editorEl.innerHTML = `<textarea style="width:100%;height:calc(100dvh - 160px);background:var(--color-bg);color:var(--color-text);border:1px solid var(--color-border);padding:1rem;font-family:var(--font-mono);font-size:14px;resize:none" id="fallback-editor">${escapeHtml(bodyContent)}</textarea>`;
+      state.wikiEditor = {
+        getMarkdown: () => $('#fallback-editor').value,
+      };
+    }
+  }
 
-      const res = await apiFetch('/api/upload', {
-        method: 'POST',
-        body: formData,
+  // Save
+  $('#btn-save').addEventListener('click', async () => {
+    if (!state.wikiCurrentCategory || !state.wikiCurrentPage) return;
+    if (!state.wikiEditor) return;
+
+    const body = state.wikiEditor.getMarkdown();
+    const frontmatter = $('#toast-editor').dataset.frontmatter || '';
+
+    // Update frontmatter dates
+    let updatedFm = frontmatter;
+    const today = new Date().toISOString().slice(0, 10);
+    if (updatedFm.includes('updated:')) {
+      updatedFm = updatedFm.replace(/updated:.*/, `updated: "${today}"`);
+    }
+    const fullContent = updatedFm + body;
+
+    try {
+      const pageParam = state.wikiCurrentPage.replace(/\//g, '__');
+      const res = await apiFetch(`/api/wiki/${state.wikiCurrentCategory}/${pageParam}`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ content: fullContent }),
       });
 
-      removeToast(loadingToast);
+      if (res.ok) {
+        state.wikiContent = fullContent;
+        state.wikiDirty = false;
+        toast('success', 'Đã lưu', `${state.wikiCurrentCategory}/${state.wikiCurrentPage}`);
+        $('#btn-save').classList.remove('btn-success');
+        $('#btn-save').classList.add('btn-primary');
+        // Re-render reader
+        const fmMatch2 = fullContent.match(/^---\n[\s\S]*?\n---\n([\s\S]*)$/);
+        renderWikiArticle(fmMatch2 ? fmMatch2[1] : fullContent);
+      } else {
+        const err = await res.json().catch(() => ({}));
+        toast('error', 'Lưu thất bại', err.error || 'Lỗi');
+      }
+    } catch (e) {
+      toast('error', 'Lỗi kết nối', e.message);
+    }
+  });
+
+  // Keyboard shortcut: Ctrl+S
+  document.addEventListener('keydown', (e) => {
+    if ((e.ctrlKey || e.metaKey) && e.key === 's' && state.wikiMode === 'edit') {
+      e.preventDefault();
+      $('#btn-save').click();
+    }
+  });
+
+  // ============================================================
+  // WIKI — SEARCH
+  // ============================================================
+  const searchInput = $('#wiki-search-input');
+  const searchResultsEl = $('#search-results');
+  const searchListEl = $('#search-results-list');
+
+  searchInput.addEventListener('input', () => {
+    clearTimeout(state.searchDebounce);
+    const q = searchInput.value.trim();
+    if (q.length < 2) {
+      searchResultsEl.style.display = 'none';
+      $('#sidebar-tree').style.display = '';
+      return;
+    }
+    state.searchDebounce = setTimeout(() => performSearch(q), 300);
+  });
+
+  async function performSearch(query) {
+    try {
+      const res = await apiFetch(`/api/wiki/search?q=${encodeURIComponent(query)}`);
+      if (!res.ok) return;
+      const data = await res.json();
+
+      $('#search-results-count').textContent = `${data.total} kết quả`;
+      searchResultsEl.style.display = '';
+      $('#sidebar-tree').style.display = 'none';
+
+      if (data.results.length === 0) {
+        searchListEl.innerHTML = '<li class="search-result-item" style="text-align:center;color:var(--color-text-muted)">Không tìm thấy</li>';
+        return;
+      }
+
+      searchListEl.innerHTML = data.results.map(r => {
+        const snippet = r.snippet ? r.snippet.replace(new RegExp(`(${escapeHtml(query)})`, 'gi'), '<mark>$1</mark>') : '';
+        return `<li class="search-result-item" data-cat="${r.category}" data-page="${r.page}">
+          <div class="search-result-title">${escapeHtml(r.title)}</div>
+          <div class="search-result-path">${r.categoryLabel} / ${r.page}</div>
+          ${snippet ? '<div class="search-result-snippet">' + snippet + '</div>' : ''}
+        </li>`;
+      }).join('');
+
+      searchListEl.querySelectorAll('.search-result-item[data-cat]').forEach(item => {
+        item.addEventListener('click', () => {
+          navigateToPage(item.dataset.cat, item.dataset.page);
+          clearSearch();
+        });
+      });
+    } catch { /* silent */ }
+  }
+
+  function clearSearch() {
+    searchInput.value = '';
+    searchResultsEl.style.display = 'none';
+    $('#sidebar-tree').style.display = '';
+  }
+
+  $('#btn-clear-search').addEventListener('click', clearSearch);
+
+  // Ctrl+K shortcut
+  document.addEventListener('keydown', e => {
+    if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+      e.preventDefault();
+      if (state.currentTab !== 'wiki') switchTab('wiki');
+      searchInput.focus();
+    }
+  });
+
+  // ============================================================
+  // WIKI — BACKUPS
+  // ============================================================
+  $('#btn-backups').addEventListener('click', async () => {
+    if (!state.wikiCurrentCategory || !state.wikiCurrentPage) return;
+    const drawer = $('#backups-drawer');
+    const isOpen = drawer.style.display !== 'none';
+    if (isOpen) { drawer.style.display = 'none'; return; }
+
+    try {
+      const pageParam = state.wikiCurrentPage.replace(/\//g, '__');
+      const res = await apiFetch(`/api/wiki/${state.wikiCurrentCategory}/${pageParam}/backups`);
+      if (!res.ok) return;
+      const data = await res.json();
+
+      const listEl = $('#backups-list');
+      if (data.backups.length === 0) {
+        listEl.innerHTML = '<li class="backups-empty">Chưa có backup nào</li>';
+      } else {
+        listEl.innerHTML = data.backups.map(b =>
+          `<li data-filename="${escapeHtml(b.filename)}">
+            <div style="font-weight:500">${escapeHtml(b.filename)}</div>
+            <div style="color:var(--color-text-muted);margin-top:2px">${formatDate(b.mtime)} • ${formatSize(b.size)}</div>
+          </li>`
+        ).join('');
+      }
+      drawer.style.display = '';
+      lucide.createIcons();
+    } catch { toast('error', 'Lỗi tải backups'); }
+  });
+
+  $('#btn-close-backups').addEventListener('click', () => { $('#backups-drawer').style.display = 'none'; });
+
+  // ============================================================
+  // WIKI — CREATE PAGE
+  // ============================================================
+  const createModal = $('#create-page-modal');
+
+  $('#btn-new-page').addEventListener('click', () => {
+    // Populate category dropdown
+    const select = $('#cp-category');
+    select.innerHTML = (state.wikiTree || []).map(c =>
+      `<option value="${c.category}">${escapeHtml(c.label)}</option>`
+    ).join('');
+    if (state.wikiCurrentCategory) select.value = state.wikiCurrentCategory;
+    createModal.style.display = 'flex';
+    lucide.createIcons();
+  });
+
+  $('#cp-cancel').addEventListener('click', () => { createModal.style.display = 'none'; });
+  createModal.addEventListener('click', e => { if (e.target === createModal) createModal.style.display = 'none'; });
+
+  $('#create-page-form').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const category = $('#cp-category').value;
+    const page = $('#cp-page').value.trim();
+    const title = $('#cp-title').value.trim();
+    const template = $('#cp-template').value;
+
+    if (!page || !title) return;
+
+    try {
+      const res = await apiFetch(`/api/wiki/${category}/${page}`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ title, template }),
+      });
 
       if (res.ok) {
         const data = await res.json();
-        state.fileQueue = [];
-        renderQueue();
-
-        if (triggerPipeline) {
-          toast('success', 'Upload & Trigger thành công',
-            `${data.uploaded.length} file đã upload. Pipeline đang chạy...`);
-        } else {
-          toast('success', 'Upload thành công',
-            `${data.uploaded.length} file đã upload. Chờ xử lý.`);
-        }
-
-        loadFiles();
-        loadStatus();
+        toast('success', 'Tạo trang thành công', `${category}/${page}`);
+        createModal.style.display = 'none';
+        await loadWikiTree();
+        navigateToPage(category, page);
       } else {
         const err = await res.json().catch(() => ({}));
-        toast('error', 'Upload thất bại', err.error || 'Lỗi không xác định');
+        toast('error', 'Tạo trang thất bại', err.error || 'Lỗi');
       }
     } catch (e) {
-      toast('error', 'Lỗi kết nối', e.message);
-    } finally {
-      dom.btnUploadTrigger.disabled = false;
-      dom.btnUploadOnly.disabled = false;
+      toast('error', 'Lỗi', e.message);
     }
-  }
-
-  dom.btnUploadTrigger.addEventListener('click', () => uploadFiles(true));
-  dom.btnUploadOnly.addEventListener('click', () => uploadFiles(false));
-
-  // ============================================================
-  // PIPELINE CONTROL
-  // ============================================================
-  async function triggerPipeline(action) {
-    try {
-      const res = await apiFetch('/api/trigger', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ action }),
-      });
-
-      if (res.ok) {
-        toast('success', 'Pipeline triggered', `Action: ${action}`);
-        loadStatus();
-      } else {
-        const err = await res.json().catch(() => ({}));
-        toast('error', 'Trigger thất bại', err.error || 'Lỗi');
-      }
-    } catch (e) {
-      toast('error', 'Lỗi kết nối', e.message);
-    }
-  }
-
-  dom.btnTriggerFull.addEventListener('click', async () => {
-    const ok = await showModal('Chạy Full Pipeline',
-      'Extract tất cả file pending → Compile wiki → Build. Tiếp tục?',
-      'Chạy Pipeline');
-    if (ok) triggerPipeline('full');
   });
 
-  dom.btnTriggerExtract.addEventListener('click', () => triggerPipeline('extract'));
-  dom.btnTriggerCompile.addEventListener('click', () => triggerPipeline('compile'));
+  // ============================================================
+  // DASHBOARD
+  // ============================================================
+  async function loadDashboard() {
+    try {
+      const res = await apiFetch('/api/status');
+      if (!res.ok) return;
+      const data = await res.json();
+      if (data.wiki_stats) {
+        const s = data.wiki_stats;
+        if ($('#stat-total-files')) $('#stat-total-files').textContent = s.total_files || '0';
+        if ($('#stat-wiki-pages')) $('#stat-wiki-pages').textContent = s.wiki_pages || '0';
+        if ($('#stat-claims')) $('#stat-claims').textContent = s.total_claims || '0';
+        if ($('#stat-last-build')) $('#stat-last-build').textContent = s.build_version || '—';
+      }
+    } catch { /* silent */ }
+  }
+
+  async function loadChangelog() {
+    try {
+      const res = await apiFetch('/api/wiki/changelog?limit=20');
+      if (!res.ok) return;
+      const data = await res.json();
+      const el = $('#changelog-list');
+      if (!data.entries || data.entries.length === 0) {
+        el.innerHTML = '<div class="changelog-empty">Chưa có thay đổi nào.</div>';
+        return;
+      }
+      el.innerHTML = data.entries.map(e => {
+        const isCreate = e.action === 'wiki_create';
+        return `<div class="changelog-item">
+          <div class="changelog-dot ${isCreate ? 'create' : ''}"></div>
+          <div class="changelog-info">
+            <div class="changelog-title">${isCreate ? '🆕' : '✏️'} ${escapeHtml(e.category || '')}/${escapeHtml(e.page || 'tong-quan')}</div>
+            <div class="changelog-time">${formatDate(e.edited_at || e.created_at)} • ${e.editor || '—'}</div>
+          </div>
+        </div>`;
+      }).join('');
+    } catch { /* silent */ }
+  }
 
   // ============================================================
-  // STATUS & STATS
+  // STATUS
   // ============================================================
   async function loadStatus() {
     try {
@@ -449,30 +764,101 @@
       if (!res.ok) return;
       const data = await res.json();
 
-      // Update badges
-      const statusClass = data.pipeline || 'idle';
-      const statusLabels = { idle: 'Idle', running: 'Đang chạy', success: 'Thành công', failed: 'Thất bại' };
+      const cls = data.pipeline || 'idle';
+      const labels = { idle: 'Idle', running: 'Đang chạy', success: 'Thành công', failed: 'Thất bại' };
 
-      [dom.pipelineStatusBadge, dom.pipelineStatusHeader].forEach(el => {
-        el.className = 'pipeline-status-badge ' + statusClass;
+      [$('#pipeline-status-badge'), $('#pipeline-status-header')].forEach(el => {
+        if (el) el.className = 'pipeline-badge ' + cls;
       });
-      dom.pipelineStatusText.textContent = statusLabels[statusClass] || statusClass;
-      dom.pipelineStatusHeader.querySelector('span:last-child').textContent = statusLabels[statusClass] || statusClass;
+      if ($('#pipeline-status-text')) $('#pipeline-status-text').textContent = labels[cls] || cls;
+      const headerSpan = $('#pipeline-status-header');
+      if (headerSpan) headerSpan.querySelector('span:last-child').textContent = labels[cls] || cls;
 
-      // Update info
-      dom.pipelineLastRun.textContent = formatDate(data.last_run);
-      dom.pipelineLastResult.textContent = data.last_result || '—';
-      dom.pipelineBuildVersion.textContent = data.build_version || '—';
-
-      // Stats
-      if (data.wiki_stats) {
-        dom.statTotalFiles.textContent = data.wiki_stats.total_files || '0';
-        dom.statWikiPages.textContent = data.wiki_stats.wiki_pages || '0';
-        dom.statClaims.textContent = data.wiki_stats.total_claims || '0';
-        dom.statLastBuild.textContent = data.wiki_stats.build_version || '—';
-      }
+      if ($('#pipeline-last-run')) $('#pipeline-last-run').textContent = formatDate(data.last_run);
+      if ($('#pipeline-last-result')) $('#pipeline-last-result').textContent = data.last_result || '—';
+      if ($('#pipeline-build-version')) $('#pipeline-build-version').textContent = data.build_version || '—';
     } catch { /* silent */ }
   }
+
+  // ============================================================
+  // PIPELINE CONTROL
+  // ============================================================
+  async function triggerPipeline(action) {
+    try {
+      const res = await apiFetch('/api/trigger', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ action }) });
+      if (res.ok) { toast('success', 'Pipeline triggered', `Action: ${action}`); loadStatus(); }
+      else { const err = await res.json().catch(() => ({})); toast('error', 'Trigger thất bại', err.error || 'Lỗi'); }
+    } catch (e) { toast('error', 'Lỗi kết nối', e.message); }
+  }
+
+  $('#btn-trigger-full')?.addEventListener('click', async () => {
+    const ok = await showModal('Chạy Full Pipeline', 'Extract → Compile → Build. Tiếp tục?', 'Chạy');
+    if (ok) triggerPipeline('full');
+  });
+  $('#btn-trigger-extract')?.addEventListener('click', () => triggerPipeline('extract'));
+  $('#btn-trigger-compile')?.addEventListener('click', () => triggerPipeline('compile'));
+
+  // ============================================================
+  // UPLOAD
+  // ============================================================
+  const uploadZone = $('#upload-zone');
+  const fileInput = $('#file-input');
+
+  if (uploadZone) {
+    uploadZone.addEventListener('click', () => fileInput.click());
+    uploadZone.addEventListener('dragover', e => { e.preventDefault(); uploadZone.classList.add('drag-over'); });
+    uploadZone.addEventListener('dragleave', () => uploadZone.classList.remove('drag-over'));
+    uploadZone.addEventListener('drop', e => { e.preventDefault(); uploadZone.classList.remove('drag-over'); addFilesToQueue(e.dataTransfer.files); });
+  }
+  if (fileInput) fileInput.addEventListener('change', () => { addFilesToQueue(fileInput.files); fileInput.value = ''; });
+
+  function addFilesToQueue(fileList) {
+    for (const file of fileList) {
+      const ext = getFileExt(file.name);
+      if (!ALLOWED_TYPES.includes(ext)) { toast('warning', 'Định dạng không hỗ trợ', file.name); continue; }
+      if (file.size > MAX_FILE_SIZE) { toast('warning', 'File quá lớn', file.name); continue; }
+      if (state.fileQueue.some(f => f.name === file.name && f.size === file.size)) continue;
+      state.fileQueue.push(file);
+    }
+    renderQueue();
+  }
+
+  function renderQueue() {
+    const queueEl = $('#file-queue');
+    const actionsEl = $('#upload-actions');
+    if (!state.fileQueue.length) { queueEl.style.display = 'none'; actionsEl.style.display = 'none'; return; }
+    queueEl.style.display = 'block'; actionsEl.style.display = 'flex';
+    queueEl.innerHTML = state.fileQueue.map((file, i) => {
+      const info = getFileTypeInfo(file.name);
+      return `<div class="file-queue-item"><div class="file-icon ${info.cls}">${info.label}</div>
+        <div class="file-info"><div class="file-name">${escapeHtml(file.name)}</div><div class="file-size">${formatSize(file.size)}</div></div>
+        <button class="remove-btn" data-index="${i}">&times;</button></div>`;
+    }).join('');
+    queueEl.querySelectorAll('.remove-btn').forEach(b => b.addEventListener('click', () => { state.fileQueue.splice(+b.dataset.index, 1); renderQueue(); }));
+  }
+
+  $('#btn-clear-queue')?.addEventListener('click', () => { state.fileQueue = []; renderQueue(); });
+
+  async function uploadFiles(trigger) {
+    if (!state.fileQueue.length) return;
+    const formData = new FormData();
+    state.fileQueue.forEach(f => formData.append('files', f));
+    formData.append('trigger', trigger ? 'true' : 'false');
+    const loading = toast('info', 'Đang upload...', `${state.fileQueue.length} file`, 0);
+    try {
+      const res = await apiFetch('/api/upload', { method: 'POST', body: formData });
+      removeToast(loading);
+      if (res.ok) {
+        const data = await res.json();
+        state.fileQueue = []; renderQueue();
+        toast('success', trigger ? 'Upload & Trigger OK' : 'Upload OK', `${data.uploaded.length} file`);
+        loadFiles(); loadStatus();
+      } else { toast('error', 'Upload thất bại'); }
+    } catch (e) { removeToast(loading); toast('error', 'Lỗi', e.message); }
+  }
+
+  $('#btn-upload-trigger')?.addEventListener('click', () => uploadFiles(true));
+  $('#btn-upload-only')?.addEventListener('click', () => uploadFiles(false));
 
   // ============================================================
   // FILE BROWSER
@@ -482,776 +868,104 @@
       const res = await apiFetch(`/api/files?source=${state.currentSource}&page=${state.currentPage}&limit=15`);
       if (!res.ok) return;
       const data = await res.json();
+      const tbody = $('#files-tbody');
 
-      if (!data.files || data.files.length === 0) {
-        dom.filesTbody.innerHTML = `
-          <tr><td colspan="6" class="files-empty">
-            <div style="opacity:0.3;font-size:2rem;margin-bottom:var(--space-2)">📂</div>
-            Chưa có file nào
-          </td></tr>`;
-        dom.filesPagination.style.display = 'none';
+      if (!data.files?.length) {
+        tbody.innerHTML = '<tr><td colspan="5" class="files-empty">Chưa có file nào</td></tr>';
+        $('#files-pagination').style.display = 'none';
         return;
       }
 
-      dom.filesTbody.innerHTML = data.files.map(f => {
+      tbody.innerHTML = data.files.map(f => {
         const info = getFileTypeInfo(f.filename || f.name || '');
         const source = f.source === 'web' ? '🌐 Web' : '📁 Manual';
-        const fileId = escapeHtml(f.id || '');
         const fname = f.filename || f.name || '';
-        const ext = getFileExt(fname).toLowerCase();
-        const isViewable = ['.md', '.txt', '.csv', '.json', '.yaml', '.yml'].includes(ext);
-        return `
-          <tr>
-            <td>
-              <div class="file-name-cell">
-                <input type="checkbox" class="file-row-checkbox" data-id="${fileId}" aria-label="Chọn ${escapeHtml(fname)}" style="margin-right:6px;cursor:pointer;flex-shrink:0;">
-                <div class="file-icon ${info.cls}" style="width:28px;height:28px;font-size:0.6rem;flex-shrink:0">${info.label}</div>
-                <span class="file-name-text" title="${escapeHtml(fname)}" style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:260px;display:inline-block">${escapeHtml(fname)}</span>
-              </div>
-            </td>
-            <td>${source}</td>
-            <td class="file-size-cell">${formatSize(f.size || 0)}</td>
-            <td class="file-date">${formatDate(f.uploaded_at || f.mtime)}</td>
-            <td class="file-actions-cell" style="display:flex;gap:4px;align-items:center">
-              ${isViewable && fileId ? `<button class="btn btn-ghost btn-icon" data-action="view" data-file-id="${fileId}" data-file-name="${escapeHtml(fname)}" aria-label="Xem nội dung ${escapeHtml(fname)}" title="Xem nội dung">
-                <i data-lucide="eye" aria-hidden="true"></i>
-              </button>` : ''}
-              <button class="btn btn-ghost btn-icon" data-action="delete" data-file-id="${fileId}" aria-label="Xóa file" ${!fileId ? 'disabled' : ''} title="Xóa file">
-                <i data-lucide="trash-2" aria-hidden="true"></i>
-              </button>
-            </td>
-          </tr>`;
+        const fid = f.id || '';
+        const ext = getFileExt(fname);
+        const viewable = ['.md', '.txt', '.csv', '.json', '.yaml', '.yml'].includes(ext);
+        return `<tr>
+          <td><div class="file-name-cell"><div class="file-icon ${info.cls}" style="width:28px;height:28px;font-size:0.6rem">${info.label}</div>
+            <span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:260px;display:inline-block">${escapeHtml(fname)}</span></div></td>
+          <td>${source}</td>
+          <td>${formatSize(f.size || 0)}</td>
+          <td>${formatDate(f.uploaded_at || f.mtime)}</td>
+          <td style="display:flex;gap:4px">
+            ${viewable && fid ? `<button class="btn btn-ghost btn-icon btn-xs" data-action="view" data-id="${escapeHtml(fid)}" data-name="${escapeHtml(fname)}" title="Xem"><i data-lucide="eye"></i></button>` : ''}
+            <button class="btn btn-ghost btn-icon btn-xs" data-action="delete" data-id="${escapeHtml(fid)}" title="Xóa" ${!fid ? 'disabled' : ''}><i data-lucide="trash-2"></i></button>
+          </td></tr>`;
       }).join('');
 
-      // Wire up file action buttons via event delegation (CSP-safe, no inline onclick)
-      dom.filesTbody.querySelectorAll('[data-action="view"]').forEach(btn => {
-        btn.addEventListener('click', () => {
-          viewFile(btn.dataset.fileId, btn.dataset.fileName);
-        });
-      });
-      dom.filesTbody.querySelectorAll('[data-action="delete"]').forEach(btn => {
-        btn.addEventListener('click', () => {
-          deleteFile(btn.dataset.fileId);
-        });
-      });
-
+      tbody.querySelectorAll('[data-action="view"]').forEach(b => b.addEventListener('click', () => viewFile(b.dataset.id, b.dataset.name)));
+      tbody.querySelectorAll('[data-action="delete"]').forEach(b => b.addEventListener('click', () => deleteFile(b.dataset.id)));
       lucide.createIcons();
 
-      // Wire up Select All checkbox
-      const selectAll = document.getElementById('select-all-files');
-      if (selectAll) {
-        selectAll.checked = false;
-        selectAll.addEventListener('change', () => {
-          document.querySelectorAll('.file-row-checkbox').forEach(cb => {
-            cb.checked = selectAll.checked;
-          });
-          updateBulkDeleteBtn();
-        });
-      }
-      document.querySelectorAll('.file-row-checkbox').forEach(cb => {
-        cb.addEventListener('change', () => {
-          if (selectAll) selectAll.checked = [...document.querySelectorAll('.file-row-checkbox')].every(c => c.checked);
-          updateBulkDeleteBtn();
-        });
-      });
-
-      // Pagination
       const total = data.total || 0;
-      const totalPages = Math.ceil(total / 15);
-      if (totalPages > 1) {
-        dom.filesPagination.style.display = 'flex';
-        const start = (state.currentPage - 1) * 15 + 1;
-        const end = Math.min(state.currentPage * 15, total);
-        dom.filesInfo.textContent = `${start}-${end} / ${total}`;
-        dom.btnPrevPage.disabled = state.currentPage <= 1;
-        dom.btnNextPage.disabled = state.currentPage >= totalPages;
-      } else {
-        dom.filesPagination.style.display = 'none';
-      }
+      const pages = Math.ceil(total / 15);
+      if (pages > 1) {
+        $('#files-pagination').style.display = 'flex';
+        $('#files-info').textContent = `${(state.currentPage - 1) * 15 + 1}-${Math.min(state.currentPage * 15, total)} / ${total}`;
+        $('#btn-prev-page').disabled = state.currentPage <= 1;
+        $('#btn-next-page').disabled = state.currentPage >= pages;
+      } else { $('#files-pagination').style.display = 'none'; }
     } catch { /* silent */ }
   }
 
-  // File source tabs
-  $$('.files-tab').forEach(tab => {
-    tab.addEventListener('click', () => {
-      $$('.files-tab').forEach(t => {
-        t.classList.remove('active');
-        t.setAttribute('aria-selected', 'false');
-      });
-      tab.classList.add('active');
-      tab.setAttribute('aria-selected', 'true');
-      state.currentSource = tab.dataset.source;
-      state.currentPage = 1;
-      loadFiles();
-    });
-  });
+  $$('.files-tab').forEach(tab => tab.addEventListener('click', () => {
+    $$('.files-tab').forEach(t => { t.classList.remove('active'); t.setAttribute('aria-selected', 'false'); });
+    tab.classList.add('active'); tab.setAttribute('aria-selected', 'true');
+    state.currentSource = tab.dataset.source; state.currentPage = 1; loadFiles();
+  }));
+  $('#btn-prev-page')?.addEventListener('click', () => { if (state.currentPage > 1) { state.currentPage--; loadFiles(); } });
+  $('#btn-next-page')?.addEventListener('click', () => { state.currentPage++; loadFiles(); });
 
-  dom.btnPrevPage.addEventListener('click', () => {
-    if (state.currentPage > 1) { state.currentPage--; loadFiles(); }
-  });
-
-  dom.btnNextPage.addEventListener('click', () => {
-    state.currentPage++;
-    loadFiles();
-  });
-
-  // Delete file (event delegation, no inline onclick for CSP compliance)
   async function deleteFile(id) {
     if (!id) return;
-    const ok = await showModal('Xóa file', 'File sẽ bị xóa vĩnh viễn. Tiếp tục?', 'Xóa');
+    const ok = await showModal('Xóa file', 'File sẽ bị xóa vĩnh viễn.', 'Xóa');
     if (!ok) return;
-
     try {
       const res = await apiFetch('/api/files/' + encodeURIComponent(id), { method: 'DELETE' });
-      if (res.ok) {
-        toast('success', 'Đã xóa file');
-        loadFiles();
-        loadStatus();
-      } else {
-        toast('error', 'Xóa thất bại');
-      }
-    } catch (e) {
-      toast('error', 'Lỗi', e.message);
-    }
+      if (res.ok) { toast('success', 'Đã xóa'); loadFiles(); } else toast('error', 'Xóa thất bại');
+    } catch (e) { toast('error', 'Lỗi', e.message); }
   }
 
-  // View file content in modal (text files only, event delegation for CSP compliance)
   async function viewFile(id, filename) {
     if (!id) return;
     try {
       const res = await apiFetch('/api/files/' + encodeURIComponent(id) + '/content');
-      if (!res.ok) {
-        const err = await res.json().catch(() => ({}));
-        toast('error', 'Không thể xem file', err.error || 'Lỗi');
-        return;
-      }
+      if (!res.ok) { toast('error', 'Không thể xem file'); return; }
       const data = await res.json();
-      const content = data.content || '';
-      const lines = content.split('\n').length;
-
-      // Show file content in wider modal
-      dom.modalTitle.textContent = filename;
-      dom.modalMessage.innerHTML = '';
-
+      $('#modal-title').textContent = filename;
+      const msgEl = $('#modal-message');
+      msgEl.innerHTML = '';
       const pre = document.createElement('pre');
-      pre.style.cssText = 'max-height:60vh;overflow:auto;font-size:0.75rem;white-space:pre-wrap;word-break:break-word;text-align:left;background:var(--surface-2,#1a1a2e);padding:var(--space-3);border-radius:6px;margin:0 0 var(--space-2)';
-      pre.textContent = content;
-      dom.modalMessage.appendChild(pre);
-
-      const meta = document.createElement('div');
-      meta.style.cssText = 'font-size:0.75rem;opacity:0.5';
-      meta.textContent = `${lines} dòng · ${formatSize(data.size || content.length)}`;
-      dom.modalMessage.appendChild(meta);
-
-      // Expand modal for file viewing
-      const modalCard = dom.modalOverlay.querySelector('.modal');
-      if (modalCard) modalCard.style.maxWidth = '800px';
-
-      dom.modalConfirm.textContent = 'Đóng';
-      dom.modalCancel.style.display = 'none';
-      dom.modalOverlay.classList.add('active');
-      dom.modalConfirm.focus();
-      // Override confirm to close and restore modal
-      const cleanup = () => {
-        dom.modalConfirm.textContent = 'Xác nhận';
-        dom.modalCancel.style.display = '';
-        if (modalCard) modalCard.style.maxWidth = '';
-      };
-      modalResolve = () => { cleanup(); };
-    } catch (e) {
-      toast('error', 'Lỗi kết nối', e.message);
-    }
-  }
-
-  // Update selection counter (checkboxes are for selection only — no bulk action)
-  function updateBulkDeleteBtn() {
-    const info = document.getElementById('files-selected-info');
-    if (!info) return;
-    const checked = [...document.querySelectorAll('.file-row-checkbox:checked')];
-    if (checked.length > 0) {
-      info.style.display = 'inline';
-      info.textContent = `Đã chọn ${checked.length} file`;
-    } else {
-      info.style.display = 'none';
-    }
+      pre.textContent = data.content || '';
+      msgEl.appendChild(pre);
+      $('#modal-confirm').textContent = 'Đóng';
+      $('#modal-cancel').style.display = 'none';
+      const mod = $('#modal-overlay');
+      const card = mod.querySelector('.modal');
+      if (card) card.style.maxWidth = '800px';
+      mod.classList.add('active');
+      modalResolve = () => { if (card) card.style.maxWidth = ''; };
+    } catch (e) { toast('error', 'Lỗi', e.message); }
   }
 
   // ============================================================
-  // TAB NAVIGATION
+  // BREADCRUMB CLICK — go back to category index
   // ============================================================
-  function switchTab(tabName) {
-    state.currentTab = tabName;
-
-    // Update nav buttons
-    $$('.nav-tab').forEach(btn => {
-      const active = btn.dataset.tab === tabName;
-      btn.classList.toggle('active', active);
-      btn.setAttribute('aria-selected', active ? 'true' : 'false');
-    });
-
-    // Show/hide main panels
-    const mainEl = $('#main-content');
-    const wikiEl = $('#wiki-page');
-
-    if (tabName === 'dashboard') {
-      mainEl.style.display = '';
-      wikiEl.style.display = 'none';
-    } else if (tabName === 'wiki') {
-      mainEl.style.display = 'none';
-      wikiEl.style.display = 'flex';
-      loadWikiList();
-    }
-    lucide.createIcons();
-  }
-
-  $$('.nav-tab').forEach(btn => {
-    btn.addEventListener('click', async () => {
-      if (btn.dataset.tab === state.currentTab) return;
-      // Warn about unsaved changes when leaving wiki tab
-      if (state.currentTab === 'wiki' && state.wikiDirty) {
-        const ok = await showModal(
-          'Thay đổi chưa lưu',
-          'Bạn có thay đổi chưa lưu. Rời khỏi trang này?',
-          'Rời đi'
-        );
-        if (!ok) return;
-        state.wikiDirty = false;
-      }
-      switchTab(btn.dataset.tab);
-    });
+  $('#bc-category')?.addEventListener('click', () => {
+    if (state.wikiCurrentCategory) navigateToPage(state.wikiCurrentCategory, 'tong-quan');
   });
-
-  // ============================================================
-  // WIKI EDITOR — HELPERS
-  // ============================================================
-  const CATEGORY_LABELS = {
-    hosting: 'Hosting',
-    vps: 'VPS',
-    ssl: 'SSL',
-    'ten-mien': 'Tên Miền',
-    email: 'Email',
-    server: 'Server',
-    software: 'Software',
-    other: 'Other',
-    uncategorized: 'Chưa phân loại',
-  };
-
-  const REVIEW_STATE_CONFIG = {
-    approved:   { label: 'Approved',   cls: 'badge-success' },
-    pending:    { label: 'Pending',    cls: 'badge-warning' },
-    unknown:    { label: 'Unknown',    cls: 'badge-muted' },
-  };
-
-  function renderWikiPreview(markdown) {
-    if (typeof marked === 'undefined') return '<em>marked.js chưa tải</em>';
-    try {
-      const html = marked.parse(markdown, { breaks: true, gfm: true });
-
-      // Process links: intercept relative .md links for wiki navigation,
-      // open external links in new tab
-      const wrapper = document.createElement('div');
-      wrapper.innerHTML = html;
-      wrapper.querySelectorAll('a[href]').forEach(a => {
-        const href = a.getAttribute('href');
-        if (href && href.endsWith('.md') && !href.startsWith('http')) {
-          // Relative wiki link — extract category from path
-          // e.g. "../hosting/tong-quan.md" → category = "hosting"
-          const parts = href.replace(/\.md$/, '').split('/');
-          const category = parts.length >= 2 ? parts[parts.length - 2] : parts[0];
-          a.setAttribute('href', '#');
-          a.setAttribute('data-wiki-link', category);
-          a.style.cursor = 'pointer';
-          a.title = `Mở wiki: ${CATEGORY_LABELS[category] || category}`;
-        } else {
-          // External link — open in new tab
-          a.setAttribute('target', '_blank');
-          a.setAttribute('rel', 'noopener noreferrer');
-        }
-      });
-
-      return wrapper.innerHTML;
-    } catch {
-      return '<em>Lỗi render markdown</em>';
-    }
-  }
-
-  function updateWordCount(text) {
-    const words = text.trim() ? text.trim().split(/\s+/).length : 0;
-    const chars = text.length;
-    $('#wiki-word-count').textContent = words.toLocaleString('vi-VN') + ' từ';
-    $('#wiki-char-count').textContent = chars.toLocaleString('vi-VN') + ' ký tự';
-  }
-
-  function setSaveStatus(status, message) {
-    const el = $('#wiki-save-status');
-    if (!el) return;
-    el.className = 'wiki-save-status ' + (status || '');
-    el.textContent = message || '';
-  }
-
-  function markDirty() {
-    if (!state.wikiDirty) {
-      state.wikiDirty = true;
-      setSaveStatus('dirty', '● Chưa lưu');
-    }
-  }
-
-  function markClean() {
-    state.wikiDirty = false;
-    state.wikiOriginalContent = $('#wiki-textarea') ? $('#wiki-textarea').value : '';
-    setSaveStatus('saved', '✓ Đã lưu');
-    setTimeout(() => setSaveStatus('', ''), 3000);
-  }
-
-  // ============================================================
-  // WIKI EDITOR — LIST
-  // ============================================================
-  async function loadWikiList() {
-    const listEl = $('#wiki-page-list');
-    listEl.innerHTML = '<li class="wiki-page-list-empty"><i data-lucide="loader" style="animation:spin 1s linear infinite"></i> Đang tải...</li>';
-    lucide.createIcons();
-
-    try {
-      const res = await apiFetch('/api/wiki');
-      if (!res.ok) throw new Error('Failed');
-      const data = await res.json();
-
-      if (!data.pages || data.pages.length === 0) {
-        listEl.innerHTML = '<li class="wiki-page-list-empty">Không có wiki page nào</li>';
-        return;
-      }
-
-      listEl.innerHTML = data.pages.map(p => {
-        const label = CATEGORY_LABELS[p.category] || p.category;
-        const rc = REVIEW_STATE_CONFIG[p.review_state] || REVIEW_STATE_CONFIG.unknown;
-        const existsIcon = p.exists ? '' : ' wiki-page-missing';
-        const activeClass = p.category === state.wikiCurrentCategory ? ' active' : '';
-        return `
-          <li class="wiki-page-item${existsIcon}${activeClass}"
-              data-category="${escapeHtml(p.category)}"
-              role="option"
-              aria-selected="${p.category === state.wikiCurrentCategory ? 'true' : 'false'}"
-              tabindex="0">
-            <div class="wiki-page-item-name">
-              <i data-lucide="${p.exists ? 'file-text' : 'file-x'}" class="wiki-page-item-icon" aria-hidden="true"></i>
-              <span>${escapeHtml(label)}</span>
-            </div>
-            <div class="wiki-page-item-meta">
-              <span class="wiki-badge ${rc.cls}">${rc.label}</span>
-              ${p.sensitivity === 'high' ? '<span class="wiki-badge badge-error">Nhạy cảm</span>' : ''}
-            </div>
-            ${p.exists ? `<div class="wiki-page-item-date">${p.updated || ''}</div>` : '<div class="wiki-page-item-date">Chưa compile</div>'}
-          </li>`;
-      }).join('');
-
-      lucide.createIcons();
-
-      // Click & keyboard handlers
-      listEl.querySelectorAll('.wiki-page-item:not(.wiki-page-missing)').forEach(item => {
-        item.addEventListener('click', () => loadWikiPage(item.dataset.category));
-        item.addEventListener('keydown', (e) => {
-          if (e.key === 'Enter' || e.key === ' ') {
-            e.preventDefault();
-            loadWikiPage(item.dataset.category);
-          }
-        });
-      });
-    } catch {
-      listEl.innerHTML = '<li class="wiki-page-list-empty">Lỗi tải danh sách</li>';
-    }
-  }
-
-  // ============================================================
-  // WIKI EDITOR — LOAD PAGE
-  // ============================================================
-  async function loadWikiPage(category) {
-    // Warn about unsaved changes
-    if (state.wikiDirty) {
-      const ok = await showModal(
-        'Thay đổi chưa lưu',
-        'Chuyển sang trang khác sẽ mất thay đổi chưa lưu. Tiếp tục?',
-        'Tiếp tục'
-      );
-      if (!ok) return;
-    }
-
-    state.wikiCurrentCategory = category;
-    state.wikiDirty = false;
-    setSaveStatus('', '');
-
-    // Update active state in sidebar
-    $$('.wiki-page-item').forEach(el => {
-      const active = el.dataset.category === category;
-      el.classList.toggle('active', active);
-      el.setAttribute('aria-selected', active ? 'true' : 'false');
-    });
-
-    // Show editor panel, hide empty state
-    $('#wiki-empty-state').style.display = 'none';
-    const panel = $('#wiki-editor-panel');
-    panel.style.display = 'flex';
-
-    // Show loading state
-    const textarea = $('#wiki-textarea');
-    const preview = $('#wiki-preview');
-    textarea.value = 'Đang tải...';
-    textarea.disabled = true;
-    preview.innerHTML = '<div class="wiki-preview-loading"><i data-lucide="loader" style="animation:spin 1s linear infinite"></i><span>Đang tải nội dung...</span></div>';
-    lucide.createIcons();
-
-    try {
-      const res = await apiFetch(`/api/wiki/${encodeURIComponent(category)}`);
-      if (!res.ok) throw new Error('Failed to load');
-      const data = await res.json();
-
-      textarea.value = data.content;
-      textarea.disabled = false;
-      state.wikiOriginalContent = data.content;
-
-      // Update breadcrumb
-      $('#wiki-editor-category').textContent = category;
-
-      // Render frontmatter badges
-      renderFrontmatterBadges(data.frontmatter);
-
-      // Render preview
-      preview.innerHTML = renderWikiPreview(data.content);
-
-      // Update word count
-      updateWordCount(data.content);
-
-      // Focus editor
-      textarea.focus();
-
-      lucide.createIcons();
-    } catch {
-      textarea.value = '';
-      textarea.disabled = false;
-      preview.innerHTML = '<div class="wiki-preview-error">Lỗi tải nội dung</div>';
-      toast('error', 'Lỗi tải wiki page', `Không thể tải ${category}`);
-    }
-  }
-
-  function renderFrontmatterBadges(fm) {
-    const badgesEl = $('#wiki-editor-badges');
-    if (!badgesEl || !fm) return;
-
-    const badges = [];
-
-    if (fm.review_state) {
-      const rc = REVIEW_STATE_CONFIG[fm.review_state] || REVIEW_STATE_CONFIG.unknown;
-      badges.push(`<span class="wiki-badge ${rc.cls}"><i data-lucide="check-circle" aria-hidden="true"></i> ${rc.label}</span>`);
-    }
-    if (fm.sensitivity === 'high') {
-      badges.push('<span class="wiki-badge badge-error"><i data-lucide="alert-triangle" aria-hidden="true"></i> Nhạy cảm cao</span>');
-    }
-    if (fm.updated) {
-      badges.push(`<span class="wiki-badge badge-muted"><i data-lucide="calendar" aria-hidden="true"></i> ${fm.updated}</span>`);
-    }
-
-    badgesEl.innerHTML = badges.join('');
-    lucide.createIcons();
-  }
-
-  // ============================================================
-  // WIKI EDITOR — TEXTAREA INPUT (live preview)
-  // ============================================================
-  document.addEventListener('DOMContentLoaded', () => { /* handled in showApp */ });
-
-  function bindWikiTextarea() {
-    const textarea = $('#wiki-textarea');
-    if (!textarea || textarea._wikibound) return;
-    textarea._wikibound = true;
-
-    let previewTimer = null;
-
-    textarea.addEventListener('input', () => {
-      markDirty();
-      updateWordCount(textarea.value);
-
-      // Debounced preview update (150ms)
-      clearTimeout(previewTimer);
-      previewTimer = setTimeout(() => {
-        const preview = $('#wiki-preview');
-        if (preview && $('#wiki-preview-pane').style.display !== 'none') {
-          preview.innerHTML = renderWikiPreview(textarea.value);
-          lucide.createIcons();
-        }
-      }, 150);
-    });
-
-    // Ctrl+S / Cmd+S to save
-    textarea.addEventListener('keydown', (e) => {
-      if ((e.ctrlKey || e.metaKey) && e.key === 's') {
-        e.preventDefault();
-        saveWikiPage();
-      }
-      // Tab key inserts 2 spaces
-      if (e.key === 'Tab') {
-        e.preventDefault();
-        const start = textarea.selectionStart;
-        const end = textarea.selectionEnd;
-        textarea.value = textarea.value.slice(0, start) + '  ' + textarea.value.slice(end);
-        textarea.selectionStart = textarea.selectionEnd = start + 2;
-        markDirty();
-      }
-    });
-  }
-
-  // ============================================================
-  // WIKI EDITOR — VIEW TOGGLE
-  // ============================================================
-  function bindViewToggle() {
-    $$('.wiki-view-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        $$('.wiki-view-btn').forEach(b => {
-          b.classList.remove('active');
-          b.setAttribute('aria-pressed', 'false');
-        });
-        btn.classList.add('active');
-        btn.setAttribute('aria-pressed', 'true');
-
-        const view = btn.dataset.view;
-        const editPane = $('#wiki-edit-pane');
-        const previewPane = $('#wiki-preview-pane');
-        const resizeHandle = $('#wiki-resize-handle');
-        const splitPane = $('#wiki-split-pane');
-
-        splitPane.className = 'wiki-split-pane view-' + view;
-
-        if (view === 'split') {
-          editPane.style.display = '';
-          previewPane.style.display = '';
-          resizeHandle.style.display = '';
-          // Refresh preview
-          const preview = $('#wiki-preview');
-          const textarea = $('#wiki-textarea');
-          if (preview && textarea) preview.innerHTML = renderWikiPreview(textarea.value);
-          lucide.createIcons();
-        } else if (view === 'edit') {
-          editPane.style.display = '';
-          previewPane.style.display = 'none';
-          resizeHandle.style.display = 'none';
-          $('#wiki-textarea').focus();
-        } else if (view === 'preview') {
-          editPane.style.display = 'none';
-          previewPane.style.display = '';
-          resizeHandle.style.display = 'none';
-          const preview = $('#wiki-preview');
-          const textarea = $('#wiki-textarea');
-          if (preview && textarea) preview.innerHTML = renderWikiPreview(textarea.value);
-          lucide.createIcons();
-        }
-      });
-    });
-  }
-
-  // ============================================================
-  // WIKI EDITOR — RESIZE HANDLE
-  // ============================================================
-  function bindResizeHandle() {
-    const handle = $('#wiki-resize-handle');
-    const splitPane = $('#wiki-split-pane');
-    if (!handle || !splitPane) return;
-
-    let dragging = false;
-    let startX = 0;
-    let startLeftWidth = 0;
-
-    handle.addEventListener('mousedown', (e) => {
-      dragging = true;
-      startX = e.clientX;
-      const editPane = $('#wiki-edit-pane');
-      startLeftWidth = editPane.getBoundingClientRect().width;
-      document.body.style.cursor = 'col-resize';
-      document.body.style.userSelect = 'none';
-      e.preventDefault();
-    });
-
-    document.addEventListener('mousemove', (e) => {
-      if (!dragging) return;
-      const dx = e.clientX - startX;
-      const totalWidth = splitPane.getBoundingClientRect().width;
-      const newLeft = Math.max(200, Math.min(totalWidth - 200, startLeftWidth + dx));
-      const pct = (newLeft / totalWidth) * 100;
-      $('#wiki-edit-pane').style.flex = `0 0 ${pct}%`;
-      $('#wiki-preview-pane').style.flex = `0 0 ${100 - pct - 0.5}%`;
-    });
-
-    document.addEventListener('mouseup', () => {
-      if (!dragging) return;
-      dragging = false;
-      document.body.style.cursor = '';
-      document.body.style.userSelect = '';
-    });
-  }
-
-  // ============================================================
-  // WIKI EDITOR — SAVE
-  // ============================================================
-  async function saveWikiPage() {
-    if (!state.wikiCurrentCategory) return;
-    if (!state.wikiDirty) {
-      toast('info', 'Không có thay đổi', 'Nội dung chưa được chỉnh sửa');
-      return;
-    }
-
-    const textarea = $('#wiki-textarea');
-    const content = textarea.value;
-
-    if (!content.trim()) {
-      toast('warning', 'Nội dung trống', 'Không thể lưu trang wiki trống');
-      return;
-    }
-
-    const saveBtn = $('#btn-wiki-save');
-    saveBtn.disabled = true;
-    setSaveStatus('saving', '⏳ Đang lưu...');
-
-    try {
-      const res = await apiFetch(`/api/wiki/${encodeURIComponent(state.wikiCurrentCategory)}`, {
-        method: 'PUT',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ content }),
-      });
-
-      if (res.ok) {
-        const data = await res.json();
-        markClean();
-        renderFrontmatterBadges(data.frontmatter);
-        toast('success', 'Đã lưu thành công',
-          `${CATEGORY_LABELS[state.wikiCurrentCategory] || state.wikiCurrentCategory} — ${(data.size / 1024).toFixed(1)} KB`);
-        // Refresh sidebar dates
-        loadWikiList().then(() => {
-          // Re-select current item in list
-          const item = $(`[data-category="${state.wikiCurrentCategory}"]`);
-          if (item) { item.classList.add('active'); item.setAttribute('aria-selected', 'true'); }
-        });
-      } else {
-        const err = await res.json().catch(() => ({}));
-        setSaveStatus('dirty', '● Chưa lưu');
-        toast('error', 'Lưu thất bại', err.error || 'Lỗi không xác định');
-      }
-    } catch (e) {
-      setSaveStatus('dirty', '● Chưa lưu');
-      toast('error', 'Lỗi kết nối', e.message);
-    } finally {
-      saveBtn.disabled = false;
-    }
-  }
-
-  // ============================================================
-  // WIKI EDITOR — BACKUPS
-  // ============================================================
-  async function loadWikiBackups(category) {
-    const listEl = $('#wiki-backups-list');
-    listEl.innerHTML = '<li class="wiki-backups-empty"><i data-lucide="loader" style="animation:spin 1s linear infinite"></i> Đang tải...</li>';
-    lucide.createIcons();
-
-    try {
-      const res = await apiFetch(`/api/wiki/${encodeURIComponent(category)}/backups`);
-      if (!res.ok) throw new Error('Failed');
-      const data = await res.json();
-
-      if (!data.backups || data.backups.length === 0) {
-        listEl.innerHTML = '<li class="wiki-backups-empty">Chưa có backup nào</li>';
-        return;
-      }
-
-      listEl.innerHTML = data.backups.map(b => `
-        <li class="wiki-backup-item">
-          <i data-lucide="file-clock" class="wiki-backup-icon" aria-hidden="true"></i>
-          <div class="wiki-backup-info">
-            <div class="wiki-backup-name">${escapeHtml(b.filename)}</div>
-            <div class="wiki-backup-meta">${formatDate(b.mtime)} · ${formatSize(b.size)}</div>
-          </div>
-        </li>`).join('');
-      lucide.createIcons();
-    } catch {
-      listEl.innerHTML = '<li class="wiki-backups-empty">Lỗi tải backups</li>';
-    }
-  }
-
-  // ============================================================
-  // WIKI EDITOR — EVENT BINDING (called after showApp)
-  // ============================================================
-  function bindWikiEvents() {
-    // Save button
-    const saveBtn = $('#btn-wiki-save');
-    if (saveBtn) saveBtn.addEventListener('click', saveWikiPage);
-
-    // Refresh list
-    const refreshBtn = $('#btn-wiki-refresh');
-    if (refreshBtn) refreshBtn.addEventListener('click', loadWikiList);
-
-    // Backups toggle
-    const backupsBtn = $('#btn-wiki-backups');
-    const backupsDrawer = $('#wiki-backups-drawer');
-    const closeBackupsBtn = $('#btn-close-backups');
-
-    if (backupsBtn) {
-      backupsBtn.addEventListener('click', () => {
-        const isOpen = backupsDrawer.style.display !== 'none';
-        if (isOpen) {
-          backupsDrawer.style.display = 'none';
-        } else {
-          backupsDrawer.style.display = 'block';
-          if (state.wikiCurrentCategory) loadWikiBackups(state.wikiCurrentCategory);
-        }
-      });
-    }
-
-    if (closeBackupsBtn) {
-      closeBackupsBtn.addEventListener('click', () => {
-        backupsDrawer.style.display = 'none';
-      });
-    }
-
-    // Wiki preview link interception — handle relative .md links
-    const previewEl = $('#wiki-preview');
-    if (previewEl) {
-      previewEl.addEventListener('click', (e) => {
-        const link = e.target.closest('[data-wiki-link]');
-        if (link) {
-          e.preventDefault();
-          const category = link.dataset.wikiLink;
-          if (category) loadWikiPage(category);
-        }
-      });
-    }
-
-    // Bind textarea, view toggle, resize
-    bindWikiTextarea();
-    bindViewToggle();
-    bindResizeHandle();
-
-    // Warn on browser close with unsaved changes
-    window.addEventListener('beforeunload', (e) => {
-      if (state.wikiDirty) {
-        e.preventDefault();
-      }
-    });
-  }
-
-  // ============================================================
-  // DASHBOARD LOAD
-  // ============================================================
-  function loadDashboard() {
-    loadStatus();
-    loadFiles();
-  }
 
   // ============================================================
   // INIT
   // ============================================================
   if (state.token) {
-    // Verify token
+    // Auto-login with stored token
     apiFetch('/api/status').then(res => {
       if (res.ok) showApp();
       else logout();
     }).catch(() => logout());
   }
-
-  lucide.createIcons();
 
 })();

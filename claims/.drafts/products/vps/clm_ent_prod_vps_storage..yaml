@@ -1,0 +1,16 @@
+claim_id: CLM-ENT-PROD-VPS-STORAGE.
+entity_id: ENT-PROD-VPS-CLOUD
+entity_type: product_plan
+entity_name: Cloud VPS
+attribute: storage.platform
+value: Ceph Distributed Storage
+unit: ''
+qualifiers: null
+source_ids:
+- SRC-TRAINING_DICH_VU_VPS_2026_04_06
+observed_at: '2026-04-07T01:05:15.882625+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng ở mục 4.1.1: ''Nền tảng lưu trữ: Ceph Distributed Storage'''

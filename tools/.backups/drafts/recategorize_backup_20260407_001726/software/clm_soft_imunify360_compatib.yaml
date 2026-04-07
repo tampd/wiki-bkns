@@ -1,0 +1,17 @@
+claim_id: CLM-SOFT-IMUNIFY360-COMPATIB
+entity_id: product.software.imunify360
+entity_type: product
+entity_name: Imunify360
+attribute: compatibility
+value: DirectAdmin
+unit: null
+qualifiers:
+  version: v.3.1.3+
+source_ids:
+- SRC-IMUNIFY360_WEB_2026_04_05
+observed_at: '2026-04-05T22:06:04.986515+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ phần Hỗ trợ Control Panel: ''- DirectAdmin (v.3.1.3+)'''

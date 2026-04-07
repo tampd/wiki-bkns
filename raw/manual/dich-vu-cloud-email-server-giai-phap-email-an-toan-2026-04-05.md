@@ -8,10 +8,12 @@ original_format: docx
 page_title: Dịch vụ Cloud Email Server - Giải pháp Email An Toàn
 content_hash: sha256:83b81cdbaae2ef1de235134c26c654b91d9dfccdd7a6176f907481364496327a
 word_count: 1211
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/email
 crawl_method: manual_upload
 source_date: '2026-02-08'
+skipped_reason: Duplicate of dich-vu-cloud-email-server-giai-phap-email-an-toan-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.317828+07:00'
 ---
 
 ═══ Dịch vụ Cloud Email Server

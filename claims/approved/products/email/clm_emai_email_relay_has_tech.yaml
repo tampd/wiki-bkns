@@ -1,0 +1,19 @@
+claim_id: CLM-EMAI-EMAIL_RELAY-HAS_TECH
+entity_id: product.email.email_relay
+entity_type: product
+entity_name: Email Relay
+attribute: has_technical_support
+value: true
+unit: null
+qualifiers: null
+source_ids:
+- SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_TIN_CAY_2026_04_06
+observed_at: '2026-04-07T00:21:09.794835+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ mục Tính năng / Thành phần: • Hỗ trợ khách hàng: Cung cấp
+  hỗ trợ kỹ thuật liên quan đến dịch vụ.'
+approved_at: '2026-04-07T13:00:11.190023+07:00'
+approved_by: admin-batch

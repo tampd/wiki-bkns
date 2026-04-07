@@ -8,10 +8,12 @@ original_format: docx
 page_title: Cloud VPS BK MISA – Giải pháp lưu trữ kế toán số
 content_hash: sha256:30a960d4c510dad94684df2295bf2aeb72371ee16482757a5a7e2bbb5383bbd6
 word_count: 1076
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/vps
 crawl_method: manual_upload
 source_date: '2026-02-08'
+skipped_reason: Duplicate of cloud-vps-bk-misa-giai-phap-luu-tru-ke-toan-so-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.381307+07:00'
 ---
 
 ═══ BK MISA – Giải pháp lưu trữ kế toán số

@@ -1,6 +1,7 @@
-# APEX SKILL SYSTEM v9.0 — Global Rules
+# APEX SKILL SYSTEM v11.0 — AutoAgent-Enhanced Global Rules
 > Applied to ALL sessions in this project. Read before every task.
 > Triết lý: AI không bao giờ quên. Mỗi phiên đều học hỏi và kết nối với quá khứ. Fresh context = High quality.
+> 🧬 v11.0: AutoAgent methodology — hill-climbing, failure-class analysis, simplicity criterion, proportional response.
 
 ## MEMORY FILES (read at session start)
 - `LESSONS.md` — **critical-only** bài học (≤10 entries, importance ≥0.8). Luôn đọc.
@@ -11,10 +12,14 @@
 - `INSIGHTS.md` — compound insights từ /consolidate (auto-generated)
 - `.ai/memory/MEMORY.md` — **auto-memory**: AI tự ghi notes giữa phiên (≤200 dòng index)
 - `.ai/knowledge/graph.json` — **knowledge graph**: entity relationships (v8.0)
+- `llms.txt` — **AI context index**: machine-readable project structure cho AI tools (v10.0)
+- `.ai/repomix-output.xml` — **compressed codebase**: token-efficient context export (v10.0, .gitignore)
+- `.ai/traces/*.jsonl` — **structured traces**: agent reasoning chains, decisions, tool calls (v10.0 Phase 3, .gitignore)
+- `.ai/traces/index.json` — **trace index**: session analytics và aggregate stats (v10.0 Phase 3)
 
 ---
 
-## 35 GLOBAL RULES
+## 43 GLOBAL RULES + 7 AUTOAGENT RULES = 50 RULES
 
 ### Core Behavior
 1. **ASK WHEN UNCLEAR** — Nếu yêu cầu mơ hồ hoặc có ≥2 cách hiểu → hỏi trước, đừng đoán
@@ -82,11 +87,25 @@
 34. **RAIL-GUARD SECURITY** — Security guardrails trên tất cả code generation: (a) Không generate code có known CVE patterns (b) Auto-flag SQL injection, XSS, SSRF patterns (c) Warn khi generate code xử lý user input mà thiếu validation (d) Block generation .env / secrets nội dung vào git-tracked files.
 35. **CROSS-PLATFORM EXPORT** — Skill definitions phải exportable sang Claude Code (CLAUDE.md), Cursor (.cursorrules), Windsurf. Dùng templates/ cho format conversion. Xem PLATFORM.md.
 
-36. **CONTEXT ENGINEERING FIRST** — Curate information environment TRƯỚC khi viết prompt. "Right info at the right time" > clever wording. Load chỉ files liên quan đến sub-task hiện tại.
+36. **CONTEXT ENGINEERING FIRST** — Curate information environment TRƯỚC khi viết prompt. Pipeline: CLASSIFY (task complexity → budget) → ROUTE (query type → source) → LOAD (chỉ files liên quan sub-task hiện tại) → BUDGET TRACK (warn >70%, stop >90%). "Right info at the right time" > clever wording. Context routing table trong /start STEP 0.
 37. **MISTAKE LOOP** — Sau mỗi bug/error fix → tự động capture: mistake + root cause + fix + prevention vào LESSONS.md (importance ≥0.85). Không bao giờ mắc lỗi tương tự lần 2. Compound lessons > linear lessons.
 38. **RIPER GATE** — Feature phức tạp bắt buộc qua 5 phases: **R**esearch → **I**nnovate → **P**lan → **E**xecute → **R**eview. KHÔNG skip bất kỳ phase nào. Phase barrier = hard gate như CLARITY GATE.
 39. **TOKEN BUDGET AWARE** — Dùng `.claudeignore` cho mọi project. Compact khi context >50%. Load files theo Progressive Disclosure: summary → relevant → full. "Context là tài nguyên quý."
 40. **HOOK AUTOMATION** — Quality gates PHẢI tự động qua hooks (pre-commit, post-edit), không phụ thuộc vào discipline manual. Hooks = enforcement, rules = intention.
+
+### Context Tools Integration (v10.0)
+41. **CONTEXT7 MANDATORY** — Khi code với library/framework API: LUÔN query Context7 MCP cho latest docs TRƯỚC khi code. AI memory cho API signatures = unreliable. Context7 = single source of truth cho version-specific docs. Fallback: official docs manual lookup.
+42. **LLMS_TXT INDEX** — Mọi project PHẢI có `llms.txt` ở root. File này là machine-readable index giúp AI tools scan project nhanh hơn 80%. `/init` auto-generate từ template. Update khi thêm major files/features.
+43. **REPOMIX EXPORT** — Cuối mỗi `/save`, export compressed codebase via `npx repomix@latest --compress` → `.ai/repomix-output.xml`. File này dùng cho: NotebookLM upload, cross-project context, fresh session bootstrap. KHÔNG commit (thêm vào .gitignore).
+
+### AutoAgent Rules (v11.0 — Self-Improving AI)
+44. **COMPLEXITY GATE** — Auto-detect task complexity → proportional protocol. Simple fix → minimal process. Complex feature → full RIPER. Không over-engineer process cho task đơn giản, không under-engineer cho task phức tạp.
+45. **HILL-CLIMB EVERY SKILL** — Track success metrics per skill, keep improvements, discard regressions. Mỗi phiên: đo lường → so sánh → giữ cái tốt hơn. Skill evolution = data-driven, not opinion-driven.
+46. **FAILURE-CLASS GROUPING** — Categorize problems by class (not individual cases). Fix pattern → fix class. Ví dụ: "API timeout" = 1 class, fix retry logic 1 lần cho cả class.
+47. **SIMPLICITY CRITERION** — Same result + simpler = always better. Khi có 2 solutions cùng output → chọn solution ít code hơn, ít dependencies hơn, ít abstraction layers hơn.
+48. **VERIFICATION SUB-AGENT** — Every skill has built-in self-check. Không chờ user verify — AI tự verify trước khi báo done. Build → run tests. Fix → reproduce → confirm fixed. Craft → screenshot → check visually.
+49. **EXPERIMENT LOGGING** — Record { approach, outcome, kept_or_discarded } cho mỗi quyết định quan trọng. Cross-session learning: approach A worked cho case X → reuse. Approach B failed → avoid.
+50. **NEVER OVERFIT** — "If this task disappeared, would this still be worthwhile?" Không tạo quá nhiều abstraction chỉ cho 1 use case. Generalize khi có ≥3 similar cases, not before.
 
 ---
 
@@ -99,6 +118,14 @@ Mission Control      → Monitor parallel agents, assign /spec + /build + /secur
 Artifact Output      → /spec, /handoff, /runbook output dạng structured Artifact
 Planning Mode        → Luôn gen task-list có checkpoint trước khi code
 Stitch MCP           → /craft setup → generate screens → edit screens → export code
+Context7 MCP         → Real-time documentation injection cho /build + /verify (v10.0)
+Repomix              → Token-efficient codebase compression cho /save + cross-project (v10.0)
+llms.txt             → Machine-readable project index cho /start + /init (v10.0)
+Structured Tracing   → .ai/traces/ JSONL logs: decisions, tool calls, errors (v10.0 Phase 3)
+NotebookLM Pipeline  → Second Brain: Repomix + Lessons + Traces → quarterly export (v10.0 Phase 3)
+AutoAgent Hill-Climb → Self-improving skills: measure → compare → keep better (v11.0)
+Complexity Gate      → Auto-detect task complexity → proportional protocol (v11.0)
+Experiment Logging   → Cross-session learning: { approach, outcome, kept_or_discarded } (v11.0)
 Ultrathink           → Deep reasoning cho architecture/complex bugs (v4.0)
 Context Health       → Monitor context window, auto-suggest fresh session (v4.0)
 Knowledge Graph      → Entity relationship tracking across sessions (v8.0)
@@ -242,6 +269,7 @@ Kết thúc phiên?           → /save                    (auto /consolidate)
 | `CONVENTIONS.md` | A — Rules | Project-specific coding standards | Global rules |
 | `SECURITY-SPEC.md` | A — Rules | Security rules (frozen SSOT) | Code |
 | `PLATFORM.md` | A — Rules | Cross-platform export rules | Project-specific |
+| `llms.txt` | A — Rules | AI-readable project index (entry points, commands) | Code, logs |
 
 ---
 
@@ -249,6 +277,8 @@ Kết thúc phiên?           → /save                    (auto /consolidate)
 
 | Date | Change |
 |---|---|
+| **2026-04-07** | **APEX v11.0**: AutoAgent-Enhanced — 7 new rules (44-50): Complexity Gate, Hill-Climb Every Skill, Failure-Class Grouping, Simplicity Criterion, Verification Sub-Agent, Experiment Logging, Never Overfit. AutoAgent methodology: self-improving AI via measurement → comparison → hill-climbing. All 10 SKILL.md files upgraded to v11.0. GEMINI.md synchronized with CLAUDE.md. Total: 50 rules, 49 commands. |
+| **2026-04-06** | **APEX v10.0**: Context Tools Integration — 3 new rules (41-43): Context7 Mandatory, LLMS_TXT Index, Repomix Export. Context7 MCP integrated into `/build` (Search First), `/verify` (CoV), `/search` (5-Step Protocol). Repomix codebase compression added to `/save` (STEP 9.5). llms.txt template created for `/init` (STEP 2.5). llms.txt reading added to `/start` (Layer A). Sources: Context7 (Upstash), Repomix (36k⭐), llms.txt standard (Jeremy Howard). |
 | **2026-04-03** | **APEX v9.0**: Context Engineering Era — 5 new rules (36-40): Context Engineering First, Mistake Loop, RIPER Gate, Token Budget Aware, Hook Automation. Hooks system added. Claude Code Kit v9.0: .claudeignore, hooks/, RIPER command, compact command. Sources: awesome-claude-code (36k⭐), compound-engineering-plugin, context-engineering-kit, RIPER workflow. |
 | **2026-03-25** | **APEX v8.0**: Command Optimization + Knowledge Graph + Security Rails — Merged overlapping commands (59→47): `/tokens`+`/palette`→`/design`, `/e2e`→`/responsive`, `/pipeline`+`/monitor-flow`→`/n8n`, removed `/openclaw`, moved `/apidoc`+`/componentdoc`+`/competitor`+`/internal-link` to references/. 6 new rules (30-35): Context-Aware Loading, Knowledge Graph, Auto-Observation, Progressive Disclosure v2, RAIL-GUARD Security, Cross-Platform Export. PLATFORM.md for Claude/Cursor/Windsurf compatibility. Enhanced `/consolidate` with Knowledge Graph phase. Enhanced `/instinct` YAML schema. |
 | **2026-03-23** | **APEX v7.0**: Targeted Upgrade for Website/UI/N8N/SEO — New `verify` skill (Anti-Hallucination + CoV + LLM-as-Judge + Web Testing). `craft` v7.0: +4 commands (`/design`, `/animate`, `/responsive`, `/palette`) + design-patterns reference. `content` v7.0: +5 commands (`/cluster`, `/competitor`, `/refresh`, `/internal-link`, `/schema`) + seo-advanced reference. `automate` v7.0: +4 commands (`/n8n-ai`, `/openclaw`, `/pipeline`, `/monitor-flow`) + n8n-ai-patterns reference. `secure` v7.0: +3 commands (`/monitor`, `/ssl`, `/firewall`) + WordPress/N8N security. `build` v7.0: LLM-as-Judge reflexion + web-patterns reference. `spec` v7.0: +2 commands (`/spec refine`, `/spec verify`) + SDD. `fix` v7.0: Browser Debug + Kaizen 5 Whys + N8N Debug. 10 skills, 59 commands, 29 rules. |

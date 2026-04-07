@@ -1,0 +1,18 @@
+claim_id: CLM-ENT-PROD-EMA-IS_VAT_I
+entity_id: ENT-PROD-EMAIL
+entity_type: product_category
+entity_name: BẢNG GIÁ EMAIL
+attribute: is_vat_included
+value: false
+unit: null
+qualifiers: null
+source_ids:
+- SRC-BANG_GIA_EMAIL_2026_04_06
+observed_at: '2026-04-06T23:15:48.763239+07:00'
+valid_from: '2026-04-06'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ tiêu đề: BẢNG GIÁ EMAIL ( Chưa bao gồm VAT)'
+approved_at: '2026-04-07T13:00:11.538980+07:00'
+approved_by: admin-batch

@@ -1,0 +1,17 @@
+claim_id: CLM-EMAI-BKNS-OUTGOING
+entity_id: product.email_hosting.bkns.goi_1
+entity_type: product_plan
+entity_name: Email Hosting Gói 4
+attribute: outgoing_email_limit
+value: 200
+unit: email/giờ
+qualifiers: {}
+source_ids:
+- SRC-BKNS_CAMNANG_EMAIL_TENMIEN_DOT1_2026_04_06
+observed_at: '2026-04-06T23:29:48.065092+07:00'
+valid_from: '2026-04-06'
+confidence: high
+review_state: drafted
+risk_class: medium
+compiler_note: 'Trích từ bảng thông số kỹ thuật Email Hosting, dòng ''Gói 4'', cột
+  ''Giới hạn gửi ra'': ''200 email/giờ'''

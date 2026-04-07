@@ -1,0 +1,24 @@
+claim_id: CLM-ENT-PROD-SSL-NAME
+entity_id: ENT-PROD-SSL-GEOTRUST-TRUE-BUSINESSID
+entity_type: product
+entity_name: GeoTrust True BusinessID
+attribute: name
+value: GeoTrust True BusinessID
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-GEOTRUST_TRUE_BUSINESSID_CHUNG_CHI_SSL_XAC_THUC_DOANH_NGHI_2026_04_04
+- SRC-CHUNG_CHI_SSL_INSTANTSSL_OV_2026_04_06
+- SRC-COMODO_EV_SSL_CHUNG_CHI_SSL_XAC_THUC_MO_RONG_2026_04_06
+- SRC-COMODO_SSL_WILDCARD_CERTIFICATE_DV_CHUNG_CHI_SSL_2026_04_06
+- SRC-GEOTRUST_TRUE_BUSINESSID_CHUNG_CHI_SSL_XAC_THUC_DOANH_NGHI_2026_04_06
+observed_at: '2026-04-07T00:31:37.483315+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: none
+compiler_note: 'Trích từ tiêu đề: ═══ GeoTrust True BusinessID'
+value_changed_from: Comodo SSL Wildcard Certificate (DV)
+value_changed_at: '2026-04-07T00:31:37.483333+07:00'
+approved_at: '2026-04-07T01:09:12.890496+07:00'
+approved_by: admin-batch

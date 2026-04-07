@@ -1,0 +1,16 @@
+claim_id: CLM-SEO-SEO01-REGISTRA
+entity_id: ENT-PROD-VPS.seo.seo01
+entity_type: product_plan
+entity_name: SEO 01
+attribute: registration_url
+value: https://my.bkns.net/?cmd=cart&action=add&id=450
+unit: ''
+qualifiers: {}
+source_ids:
+- SRC-DICH_VU_CLOUD_VPS_SEO_MAY_CHU_AO_TOI_UU_CHO_SEO_2026_04_04
+observed_at: '2026-04-04T20:48:08.039521+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng giá, dòng ''Đăng ký'', cột ''SEO 01'': [Đăng ký](https://my.bkns.net/?cmd=cart&action=add&id=450)'

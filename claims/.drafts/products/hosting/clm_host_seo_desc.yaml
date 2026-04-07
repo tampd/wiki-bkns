@@ -1,0 +1,18 @@
+claim_id: CLM-HOST-SEO-DESC
+entity_id: product.hosting.seo
+entity_type: product
+entity_name: Hosting SEO
+attribute: description
+value: Dịch vụ hosting chuyên biệt cho SEO
+unit: ''
+qualifiers: {}
+source_ids:
+- SRC-SEO_HOSTING_WEB_2026_04_05
+- SRC-DICH_VU_HOSTING_SEO_TOI_UU_WEBSITE_CHO_CONG_CU_TIM_KIEM_2026_04_04
+observed_at: '2026-04-05T22:12:42.217416+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ phần Giới thiệu: ''SEO Hosting là dịch vụ hosting chuyên
+  biệt cho SEO...'''

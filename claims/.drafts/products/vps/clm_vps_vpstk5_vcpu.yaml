@@ -1,0 +1,16 @@
+claim_id: CLM-VPS-VPSTK5-VCPU
+entity_id: product.vps.vpstk5
+entity_type: product_plan
+entity_name: VPSTK5
+attribute: vcpu
+value: 2
+unit: core
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_VPS_SIEU_TIET_KIEM_VPS_SIEU_RE_TAI_BKNS_2026_04_06
+observed_at: '2026-04-07T00:18:36.358986+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng giá, dòng ''vCPU'', cột ''VPSTK5'': ''02 Core'''

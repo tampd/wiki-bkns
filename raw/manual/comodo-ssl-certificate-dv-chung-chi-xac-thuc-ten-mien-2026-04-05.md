@@ -9,10 +9,12 @@ original_format: docx
 page_title: Comodo SSL Certificate (DV) - Chứng chỉ xác thực tên miền
 content_hash: sha256:796742632df6a03f33bc854132789aa5c957ec19073b119a0211bb29b998ec85
 word_count: 550
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/ten-mien
 crawl_method: manual_upload
 source_date: '2026-02-08'
+skipped_reason: Duplicate of comodo-ssl-certificate-dv-chung-chi-xac-thuc-ten-mien-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.449181+07:00'
 ---
 
 ═══ Comodo SSL Certificate \(DV\)

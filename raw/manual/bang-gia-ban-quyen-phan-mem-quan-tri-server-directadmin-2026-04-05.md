@@ -9,10 +9,12 @@ original_format: docx
 page_title: Bảng giá bản quyền phần mềm quản trị server DirectAdmin
 content_hash: sha256:f1e3b325f255c25eb731d8608049b2333a2c2182f94d5e7a36c3310dcc6311f4
 word_count: 934
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/server
 crawl_method: manual_upload
 source_date: '2026-02-08'
+skipped_reason: Duplicate of bang-gia-ban-quyen-phan-mem-quan-tri-server-directadmin-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.468650+07:00'
 ---
 
 ═══ Bản quyền phần mềm DirectAdmin

@@ -1,0 +1,19 @@
+claim_id: CLM-ENT-PROD-BAC-FEATURE
+entity_id: ENT-PROD-BACKUP-001
+entity_type: product
+entity_name: Dịch vụ Backup Dữ liệu
+attribute: feature
+value: Hỗ trợ phục hồi dữ liệu nhanh chóng theo yêu cầu
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_BACKUP_DU_LIEU_SAO_LUU_VA_PHUC_HOI_DU_LIEU_UY_TIN_2026_04_06
+observed_at: '2026-04-06T23:56:23.795967+07:00'
+valid_from: '2026-04-06'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ Chính sách / Điều khoản / Lưu ý: ''Dịch vụ hỗ trợ phục hồi
+  dữ liệu nhanh chóng khi khách hàng có yêu cầu.'''
+value_changed_from: Lên lịch backup tự động theo giờ, ngày, tuần hoặc tháng
+value_changed_at: '2026-04-06T23:56:23.796006+07:00'

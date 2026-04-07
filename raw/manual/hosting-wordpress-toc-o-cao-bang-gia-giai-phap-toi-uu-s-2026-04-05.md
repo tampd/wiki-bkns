@@ -9,10 +9,12 @@ original_format: docx
 page_title: Hosting WordPress Tốc Độ Cao – Bảng Giá & Giải Pháp Tối Ưu SEO
 content_hash: sha256:db3f77bd89ce5a066a574456fcb72cca297d352562159aae4a37b0d409470bed
 word_count: 1434
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/hosting
 crawl_method: manual_upload
 source_date: '2026-02-08'
+skipped_reason: Duplicate of hosting-wordpress-toc-o-cao-bang-gia-giai-phap-toi-uu-s-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.343977+07:00'
 ---
 
 ═══ Hosting WordPress

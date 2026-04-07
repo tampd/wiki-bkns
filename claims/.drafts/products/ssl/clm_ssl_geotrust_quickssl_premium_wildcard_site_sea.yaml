@@ -1,0 +1,16 @@
+claim_id: CLM-SSL-GEOTRUST_QUICKSSL_PREMIUM_WILDCARD-SITE_SEA
+entity_id: product.ssl.geotrust_quickssl_premium_wildcard
+entity_type: product
+entity_name: GeoTrust QuickSSL Premium Wildcard
+attribute: site_seal_type
+value: Dynamic
+unit: null
+qualifiers: null
+source_ids:
+- SRC-CHUNG_CHI_SSL_GEOTRUST_QUICKSSL_PREMIUM_WILDCARD_2026_04_06
+observed_at: '2026-04-06T23:36:10.718787+07:00'
+valid_from: '2026-04-06'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ bảng ''Thông số kỹ thuật / Giới hạn'': ''Biểu tượng | Động'''

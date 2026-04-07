@@ -1,0 +1,19 @@
+claim_id: CLM-ENT-PROD-DOM-PROTECTI
+entity_id: ENT-PROD-DOMAIN-REGISTRY-LOCK
+entity_type: product
+entity_name: Xác thực 2 bước (2FA)
+attribute: protection_level
+value: Mức tăng cường
+unit: ''
+qualifiers: null
+source_ids:
+- SRC-BAO_VE_TEN_MIEN_CAP_CAO_NHAT_GIAI_PHAP_AN_TOAN_TUYET_OI_2026_04_06
+observed_at: '2026-04-06T23:24:53.222804+07:00'
+valid_from: '2026-04-06'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng so sánh: | Mức độ bảo vệ | Mức cơ bản | Mức tăng cường
+  | Mức cao nhất |'
+value_changed_from: Mức cơ bản
+value_changed_at: '2026-04-06T23:24:53.222823+07:00'

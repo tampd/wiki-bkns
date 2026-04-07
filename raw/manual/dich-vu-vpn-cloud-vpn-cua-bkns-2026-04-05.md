@@ -7,10 +7,12 @@ original_format: docx
 page_title: Dịch vụ VPN (Cloud VPN) của BKNS
 content_hash: sha256:4c4cae2c9f51b641e28ab897a858e8360f462895b487d616d233cb546916cbec
 word_count: 344
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/vps
 crawl_method: manual_upload
 source_date: '2026-02-08'
+skipped_reason: Duplicate of dich-vu-vpn-cloud-vpn-cua-bkns-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.247383+07:00'
 ---
 
 ═══ Dịch vụ VPN

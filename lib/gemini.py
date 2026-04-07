@@ -37,10 +37,13 @@ def get_client() -> genai.Client:
 
 
 # ── Cost Calculator ────────────────────────────────────────
-# Pricing per 1M tokens (USD)
+# Pricing per 1M tokens (USD) — updated 2026-04
 PRICING = {
     MODEL_FLASH: {"input": 0.30, "input_cached": 0.030, "output": 2.50},
-    MODEL_PRO: {"input": 1.25, "input_cached": 0.125, "output": 10.00},
+    # gemini-3.1-pro-preview: $2/$0.20 input, $12 output (≤200K context)
+    MODEL_PRO: {"input": 2.00, "input_cached": 0.20, "output": 12.00},
+    # Legacy fallback for gemini-2.5-pro if referenced directly
+    "gemini-2.5-pro": {"input": 1.25, "input_cached": 0.125, "output": 10.00},
 }
 
 
@@ -298,6 +301,8 @@ def generate_with_image(
     skill: str = "ingest-image",
     temperature: float = 0.1,
     max_output_tokens: int = 8192,
+    retry_count: int = 2,
+    retry_interval: float = 5.0,
 ) -> dict:
     """Generate text from image using Gemini Vision.
 
@@ -306,6 +311,8 @@ def generate_with_image(
         prompt: Extraction prompt
         model: Model name (defaults to Flash)
         skill: Skill name for logging
+        retry_count: Number of retries on failure  # [C4]
+        retry_interval: Seconds between retries    # [C4]
 
     Returns:
         dict with same keys as generate()
@@ -330,34 +337,64 @@ def generate_with_image(
         ]),
     ]
 
-    start_time = time.time()
-
     config = types.GenerateContentConfig(
         temperature=temperature,
         max_output_tokens=max_output_tokens,
     )
 
-    response = client.models.generate_content(
-        model=model,
-        contents=contents,
-        config=config,
+    last_error = None
+
+    # [C4] Retry loop mirrors generate() pattern
+    for attempt in range(retry_count + 1):
+        try:
+            start_time = time.time()
+
+            response = client.models.generate_content(
+                model=model,
+                contents=contents,
+                config=config,
+            )
+
+            elapsed_ms = int((time.time() - start_time) * 1000)
+
+            usage = response.usage_metadata
+            input_tokens = getattr(usage, "prompt_token_count", 0) or 0
+            cached_tokens = getattr(usage, "cached_content_token_count", 0) or 0
+            output_tokens = getattr(usage, "candidates_token_count", 0) or 0
+
+            cost = calculate_cost(model, input_tokens, cached_tokens, output_tokens)
+
+            log_entry(
+                skill=skill,
+                action="llm_call_vision",
+                detail=f"model={model} in={input_tokens} out={output_tokens} image={image_path}",
+                cost_usd=cost,
+                extra={"model": model, "input_tokens": input_tokens,
+                       "output_tokens": output_tokens, "elapsed_ms": elapsed_ms,
+                       "attempt": attempt + 1},
+            )
+
+            return {
+                "text": response.text,
+                "input_tokens": input_tokens,
+                "cached_tokens": cached_tokens,
+                "output_tokens": output_tokens,
+                "cost_usd": cost,
+                "model": model,
+                "elapsed_ms": elapsed_ms,
+            }
+
+        except Exception as e:
+            last_error = e
+            log_entry(
+                skill=skill,
+                action="error",
+                detail=f"generate_with_image error (attempt {attempt + 1}): {str(e)}",
+                severity="high" if attempt < retry_count else "critical",
+            )
+            if attempt < retry_count:
+                time.sleep(retry_interval)
+
+    raise RuntimeError(
+        f"generate_with_image failed after {retry_count + 1} attempts: {last_error}"
     )
-
-    elapsed_ms = int((time.time() - start_time) * 1000)
-
-    usage = response.usage_metadata
-    input_tokens = getattr(usage, "prompt_token_count", 0) or 0
-    cached_tokens = getattr(usage, "cached_content_token_count", 0) or 0
-    output_tokens = getattr(usage, "candidates_token_count", 0) or 0
-
-    cost = calculate_cost(model, input_tokens, cached_tokens, output_tokens)
-
-    return {
-        "text": response.text,
-        "input_tokens": input_tokens,
-        "cached_tokens": cached_tokens,
-        "output_tokens": output_tokens,
-        "cost_usd": cost,
-        "model": model,
-        "elapsed_ms": elapsed_ms,
-    }

@@ -1,0 +1,19 @@
+claim_id: CLM-SOFT-DTI_EVALUATION-USER_ACC
+entity_id: product.software.dti_evaluation.basic
+entity_type: product_plan
+entity_name: Gói Vĩnh viễn
+attribute: user_accounts_limit
+value: unlimited
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-PHAN_MEM_ANH_GIA_CHUYEN_OI_SO_DTI_2026_04_06
+observed_at: '2026-04-07T00:45:52.690109+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng giá, cột ''Gói Vĩnh viễn'', hàng ''Số lượng tài khoản'':
+  Không giới hạn'
+value_changed_from: 200
+value_changed_at: '2026-04-07T00:45:52.672954+07:00'

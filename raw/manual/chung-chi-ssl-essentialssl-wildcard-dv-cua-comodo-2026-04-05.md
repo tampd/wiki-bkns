@@ -8,10 +8,12 @@ original_format: docx
 page_title: Chứng chỉ SSL EssentialSSL Wildcard (DV) của Comodo
 content_hash: sha256:72d59dc9b330283b816d2c88e6a34ac634584bc4414661cc40b848d0f8082250
 word_count: 623
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/ssl
 crawl_method: manual_upload
 source_date: '2026-02-08'
+skipped_reason: Duplicate of chung-chi-ssl-essentialssl-wildcard-dv-cua-comodo-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.436301+07:00'
 ---
 
 ═══ EssentialSSL Wildcard \(DV\)

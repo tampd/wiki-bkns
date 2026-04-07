@@ -1,0 +1,16 @@
+claim_id: CLM-HOST-SEO-CPU_LIMI
+entity_id: product.hosting.seo.bkseo02
+entity_type: product_plan
+entity_name: BKSEO-02
+attribute: cpu_limit
+value: 2
+unit: core
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_HOSTING_SEO_TOI_UU_WEBSITE_CHO_CONG_CU_TIM_KIEM_2026_04_04
+observed_at: '2026-04-04T20:49:16.457715+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng giá, dòng CPU limit, cột BKSEO-02: 2 core'

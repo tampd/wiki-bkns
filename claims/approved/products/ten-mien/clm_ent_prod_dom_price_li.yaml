@@ -1,0 +1,18 @@
+claim_id: CLM-ENT-PROD-DOM-PRICE_LI
+entity_id: ENT-PROD-DOMAIN
+entity_type: product_family
+entity_name: Tên miền Việt Nam
+attribute: price_list_effective_date
+value: '2025-09-01'
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-BANG_GIA_TEN_MIEN_VN_WEB_2026_04_05
+observed_at: '2026-04-05T21:43:54.957715+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ tiêu đề: # Bảng Giá Tên Miền Việt Nam (Hiệu lực từ 01/09/2025)'
+approved_at: '2026-04-07T13:00:10.570492+07:00'
+approved_by: admin-batch

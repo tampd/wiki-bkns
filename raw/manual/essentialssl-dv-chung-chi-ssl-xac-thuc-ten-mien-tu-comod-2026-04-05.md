@@ -9,10 +9,12 @@ original_format: docx
 page_title: EssentialSSL (DV) - Chứng chỉ SSL xác thực tên miền từ Comodo
 content_hash: sha256:4f2ea9219cb6f17a30c6aa0ab48545f2bdb86f6fecf1c325c3614cef2714b086
 word_count: 593
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/ten-mien
 crawl_method: manual_upload
 source_date: '2026-02-08'
+skipped_reason: Duplicate of essentialssl-dv-chung-chi-ssl-xac-thuc-ten-mien-tu-comod-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.368872+07:00'
 ---
 
 ═══ EssentialSSL \(DV\)

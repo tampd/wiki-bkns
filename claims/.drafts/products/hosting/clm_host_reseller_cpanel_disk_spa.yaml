@@ -1,0 +1,18 @@
+claim_id: CLM-HOST-RESELLER_CPANEL-DISK_SPA
+entity_id: product.hosting.reseller_cpanel.rl01
+entity_type: product_plan
+entity_name: RL03
+attribute: disk_space
+value: 20
+unit: GB
+qualifiers: {}
+source_ids:
+- SRC-RESELLER_HOSTING_CPANEL_QUAN_LY_NHIEU_HOSTING_CHI_VOI_MOT_T_2026_04_06
+observed_at: '2026-04-07T01:00:34.603155+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng giá: ''Disk space | 20GB'''
+value_changed_from: 15
+value_changed_at: '2026-04-07T01:00:34.603174+07:00'

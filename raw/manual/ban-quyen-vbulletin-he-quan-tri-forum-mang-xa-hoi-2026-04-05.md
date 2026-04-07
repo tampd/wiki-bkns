@@ -9,10 +9,12 @@ original_format: docx
 page_title: Bản quyền vBulletin - Hệ quản trị Forum & Mạng xã hội
 content_hash: sha256:5d6f1178dfe2fd3996aea490196510360d68cbb6eab390d2c09302f9077b7ed9
 word_count: 683
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/server
 crawl_method: manual_upload
 source_date: '2026-02-08'
+skipped_reason: Duplicate of ban-quyen-vbulletin-he-quan-tri-forum-mang-xa-hoi-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.199011+07:00'
 ---
 
 ═══ Bản quyền vBulletin

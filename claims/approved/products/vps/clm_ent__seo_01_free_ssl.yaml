@@ -1,0 +1,18 @@
+claim_id: CLM-ENT--SEO_01-FREE_SSL
+entity_id: ENT-PROD-VPS.seo_01
+entity_type: product_plan
+entity_name: SEO 01
+attribute: free_ssl_included
+value: false
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_CLOUD_VPS_SEO_MAY_CHU_AO_TOI_UU_CHO_SEO_2026_04_06
+observed_at: '2026-04-07T00:03:36.868745+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: medium
+compiler_note: 'Trích xuất từ bảng giá, dòng ''SSL Miễn Phí'', cột ''SEO 01'': Không'
+approved_at: '2026-04-07T13:00:14.161769+07:00'
+approved_by: admin-batch

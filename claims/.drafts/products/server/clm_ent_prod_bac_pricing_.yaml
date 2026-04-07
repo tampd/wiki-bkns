@@ -1,0 +1,20 @@
+claim_id: CLM-ENT-PROD-BAC-PRICING_
+entity_id: ENT-PROD-BACKUP-001
+entity_type: product
+entity_name: Dịch vụ Backup Dữ liệu
+attribute: pricing_factor
+value: Bảng giá chi tiết không được cung cấp trên trang web
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_BACKUP_DU_LIEU_SAO_LUU_VA_PHUC_HOI_DU_LIEU_UY_TIN_2026_04_06
+observed_at: '2026-04-06T23:56:23.761387+07:00'
+valid_from: '2026-04-06'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ Gói dịch vụ và bảng giá: ''⚠️ CHƯA TRÍCH XUẤT ĐỦ: Trang không
+  cung cấp bảng giá chi tiết cho các gói dịch vụ backup.'''
+value_changed_from: Cung cấp các gói dịch vụ linh hoạt, phù hợp với nhu cầu và ngân
+  sách
+value_changed_at: '2026-04-06T23:56:23.761419+07:00'

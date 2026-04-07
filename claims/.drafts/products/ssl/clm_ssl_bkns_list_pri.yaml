@@ -1,0 +1,18 @@
+claim_id: CLM-SSL-BKNS-LIST_PRI
+entity_id: product.ssl.bkns.instantssl_ov
+entity_type: product
+entity_name: InstantSSL (OV)
+attribute: list_price
+value: 2598700
+unit: VND
+qualifiers:
+  billing_cycle: year
+source_ids:
+- SRC-CHUNG_CHI_SSL_INSTANTSSL_OV_2026_04_04
+observed_at: '2026-04-04T20:37:35.322675+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ Bảng giá: | Giá nhà cung cấp | <del>2.598.700đ/năm</del>
+  |'

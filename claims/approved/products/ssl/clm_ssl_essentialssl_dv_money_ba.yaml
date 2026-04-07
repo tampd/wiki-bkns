@@ -1,0 +1,19 @@
+claim_id: CLM-SSL-ESSENTIALSSL_DV-MONEY_BA
+entity_id: product.ssl.essentialssl_dv
+entity_type: product_plan
+entity_name: EssentialSSL (DV)
+attribute: money_back_guarantee_days
+value: 30
+unit: days
+qualifiers: {}
+source_ids:
+- SRC-ESSENTIALSSL_DV_CHUNG_CHI_SSL_XAC_THUC_TEN_MIEN_TU_COMOD_2026_04_06
+observed_at: '2026-04-07T00:25:55.205127+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ Chính sách / Điều khoản / Lưu ý: ''Chính sách hoàn tiền:
+  30 ngày.'''
+approved_at: '2026-04-07T13:00:13.408236+07:00'
+approved_by: admin-batch

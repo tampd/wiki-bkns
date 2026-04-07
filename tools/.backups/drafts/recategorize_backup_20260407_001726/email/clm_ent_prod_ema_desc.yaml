@@ -1,0 +1,23 @@
+claim_id: CLM-ENT-PROD-EMA-DESC
+entity_id: ENT-PROD-EMAIL
+entity_type: product
+entity_name: Cloud Email Server
+attribute: description
+value: Giải pháp email server trên nền tảng đám mây, cung cấp hệ thống email riêng
+  theo tên miền cho doanh nghiệp.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-EMAIL_HOSTING_WEB_2026_04_05
+- SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_VA_TIN_CAY_2026_04_04
+- SRC-DICH_VU_CLOUD_EMAIL_SERVER_AN_TOAN_HIEU_SUAT_CAO_2026_04_06
+observed_at: '2026-04-06T23:58:41.559990+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: • Dịch vụ này là gì: Giải pháp email server
+  trên nền tảng đám mây, cung cấp hệ thống email riêng theo tên miền cho doanh nghiệp.'
+value_changed_from: Email Hosting theo tên miền riêng, nền tảng Zimbra, tỉ lệ inbox
+  99%.
+value_changed_at: '2026-04-06T23:58:41.560030+07:00'

@@ -1,0 +1,20 @@
+claim_id: CLM-HOST-WORDPRESS-CONTROL_
+entity_id: product.hosting.wordpress
+entity_type: product
+entity_name: Hosting WordPress
+attribute: control_panel
+value: cPanel
+unit: null
+qualifiers: null
+source_ids:
+- SRC-HOSTING_WORDPRESS_TOC_O_CAO_BANG_GIA_GIAI_PHAP_TOI_UU_S_2026_04_04
+- SRC-HOSTING_WORDPRESS_TOC_O_CAO_BANG_GIA_GIAI_PHAP_TOI_UU_S_2026_04_06
+observed_at: '2026-04-07T00:40:11.113046+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ Tính năng / Thành phần: • Quản trị dễ dàng: Sử dụng control
+  panel cPanel phổ biến.'
+approved_at: '2026-04-07T13:00:12.619253+07:00'
+approved_by: admin-batch

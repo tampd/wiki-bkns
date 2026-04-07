@@ -1,0 +1,19 @@
+claim_id: CLM-ENT-COMPANY--MONEY_BA
+entity_id: ENT-COMPANY-001
+entity_type: company
+entity_name: BKNS
+attribute: money_back_guarantee_days
+value: 30
+unit: days
+qualifiers:
+  product_scope: ENT-PROD-SSL-COMODO-WILDCARD-DV
+source_ids:
+- SRC-COMODO_SSL_WILDCARD_CERTIFICATE_DV_CHUNG_CHI_SSL_2026_04_04
+- SRC-COMODO_SSL_WILDCARD_CERTIFICATE_DV_CHUNG_CHI_SSL_2026_04_06
+observed_at: '2026-04-06T23:50:22.227934+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ mục ''Chính sách / Điều khoản / Lưu ý'': ''• Hoàn tiền trong
+  30 ngày'''

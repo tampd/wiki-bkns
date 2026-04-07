@@ -1,0 +1,20 @@
+claim_id: CLM-ENT-PROD-EMA-PLATFORM
+entity_id: ENT-PROD-EMAIL
+entity_type: product
+entity_name: Cloud Email Server
+attribute: platform
+value: Kerio, Zimbra
+unit: null
+qualifiers: null
+source_ids:
+- SRC-EMAIL_HOSTING_WEB_2026_04_05
+- SRC-BKNS_CAMNANG_EMAIL_TENMIEN_DOT1_2026_04_06
+- SRC-DICH_VU_CLOUD_EMAIL_SERVER_AN_TOAN_HIEU_SUAT_CAO_2026_04_06
+observed_at: '2026-04-06T23:58:41.618031+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: • Điểm chính: ...nền tảng Kerio hoặc Zimbra.'
+value_changed_from: Zimbra
+value_changed_at: '2026-04-06T23:58:41.618071+07:00'

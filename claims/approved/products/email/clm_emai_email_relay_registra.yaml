@@ -1,0 +1,21 @@
+claim_id: CLM-EMAI-EMAIL_RELAY-REGISTRA
+entity_id: product.email.email_relay.bk_relay01
+entity_type: product_plan
+entity_name: BK-RELAY04
+attribute: registration_url
+value: https://my.bkns.net/?cmd=cart&action=add&id=408
+unit: ''
+qualifiers: null
+source_ids:
+- SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_TIN_CAY_2026_04_06
+observed_at: '2026-04-07T00:21:09.852678+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ bảng giá: | Đăng ký | [Đăng ký](https://my.bkns.net/?cmd=cart&action=add&id=408)
+  |'
+value_changed_from: https://my.bkns.net/?cmd=cart&action=add&id=407
+value_changed_at: '2026-04-07T00:21:09.852695+07:00'
+approved_at: '2026-04-07T13:00:11.206685+07:00'
+approved_by: admin-batch

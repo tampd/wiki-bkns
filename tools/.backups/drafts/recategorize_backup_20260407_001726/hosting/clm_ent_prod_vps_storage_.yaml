@@ -1,0 +1,22 @@
+claim_id: CLM-ENT-PROD-VPS-STORAGE_
+entity_id: ENT-PROD-VPS
+entity_type: product_plan
+entity_name: Dịch vụ Backup
+attribute: storage_technology
+value: 70
+unit: '%'
+qualifiers:
+  backup_type: incremental
+  comparison: full_backup
+source_ids:
+- SRC-BKNS_CAMNAG_HOSTING_DOT3_2026_04_04
+- SRC-BKNS_CAMNAG_HOSTING_DOT3_2026_04_06
+- SRC-BKNS_CAMNANG_HOSTING_DOT4_2026_04_06
+observed_at: '2026-04-06T23:33:48.223372+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: medium
+compiler_note: 'Trích từ BK4: Tiết kiệm 70% storage và time[1].'
+value_changed_from: NVMe
+value_changed_at: '2026-04-06T23:33:48.223406+07:00'

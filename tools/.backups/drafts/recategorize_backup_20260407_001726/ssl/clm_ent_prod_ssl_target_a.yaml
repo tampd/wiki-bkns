@@ -1,0 +1,28 @@
+claim_id: CLM-ENT-PROD-SSL-TARGET_A
+entity_id: ENT-PROD-SSL-GEOTRUST-TRUE-BUSINESSID
+entity_type: ENT-PROD-SSL
+entity_name: PositiveSSL EV
+attribute: target_audience
+value: Các doanh nghiệp và tổ chức cần mức độ đảm bảo và xác thực cao, đặc biệt là
+  các trang thương mại điện tử, tài chính, ngân hàng.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-GEOTRUST_TRUE_BUSINESSID_CHUNG_CHI_SSL_XAC_THUC_DOANH_NGHI_2026_04_04
+- SRC-CHUNG_CHI_SSL_ESSENTIALSSL_WILDCARD_DV_CUA_COMODO_2026_04_06
+- SRC-CHUNG_CHI_SSL_GEOTRUST_TRUE_BUSINESSID_EV_FLEX_2026_04_06
+- SRC-CHUNG_CHI_SSL_INSTANTSSL_OV_2026_04_06
+- SRC-COMODO_SSL_WILDCARD_CERTIFICATE_DV_CHUNG_CHI_SSL_2026_04_06
+- SRC-GEOTRUST_TRUE_BUSINESSID_CHUNG_CHI_SSL_XAC_THUC_DOANH_NGHI_2026_04_06
+- SRC-POSITIVESSL_EV_CHUNG_CHI_SSL_XAC_THUC_MO_RONG_EV_2026_04_06
+observed_at: '2026-04-07T00:52:37.748660+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tóm tắt nhanh: • Phù hợp với: Các doanh nghiệp và tổ
+  chức cần mức độ đảm bảo và xác thực cao, đặc biệt là các trang thương mại điện tử,
+  tài chính, ngân hàng.'
+value_changed_from: Các doanh nghiệp cần xác thực danh tính, tăng độ tin cậy cho website
+  và bảo mật giao dịch.
+value_changed_at: '2026-04-07T00:52:37.748701+07:00'

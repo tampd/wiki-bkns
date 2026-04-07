@@ -1,0 +1,17 @@
+claim_id: CLM-VPS-VPSTK3-MINIMUM_
+entity_id: product.vps.vpstk3
+entity_type: product_plan
+entity_name: VPSTK3
+attribute: minimum_billing_cycle
+value: 1
+unit: month
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_VPS_SIEU_TIET_KIEM_VPS_SIEU_RE_TAI_BKNS_2026_04_06
+observed_at: '2026-04-07T00:18:36.330306+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng giá, dòng ''Thanh Toán Tối Thiểu'', cột ''VPSTK3'':
+  ''1 tháng'''

@@ -1,0 +1,21 @@
+claim_id: CLM-ENT-PROD-MAN-TARGET_A
+entity_id: ENT-PROD-MANAGED-SERVER
+entity_type: product
+entity_name: Dịch vụ Quản trị Máy chủ Trọn gói
+attribute: target_audience
+value: Các cá nhân và doanh nghiệp sử dụng máy chủ nhưng không có đội ngũ kỹ thuật
+  chuyên trách hoặc muốn tiết kiệm chi phí nhân sự IT.
+unit: ''
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_QUAN_TRI_MAY_CHU_TRON_GOI_TAI_BKNS_2026_04_06
+observed_at: '2026-04-07T00:10:11.602857+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ mục Tóm tắt nhanh: Phù hợp với: Các cá nhân và doanh nghiệp
+  sử dụng máy chủ nhưng không có đội ngũ kỹ thuật chuyên trách hoặc muốn tiết kiệm
+  chi phí nhân sự IT.'
+approved_at: '2026-04-07T13:00:09.990967+07:00'
+approved_by: admin-batch

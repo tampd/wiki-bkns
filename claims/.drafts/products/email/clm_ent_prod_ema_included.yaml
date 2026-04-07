@@ -1,0 +1,17 @@
+claim_id: CLM-ENT-PROD-EMA-INCLUDED
+entity_id: ENT-PROD-EMAIL
+entity_type: product
+entity_name: Email Hosting
+attribute: included_feature
+value: Managed DNS
+unit: null
+qualifiers:
+  cost: free
+source_ids:
+- SRC-BKNS_CAMNANG_EMAIL_TENMIEN_DOT1_2026_04_06
+observed_at: '2026-04-06T23:29:48.067986+07:00'
+valid_from: '2026-04-06'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ: ''Tính năng đi kèm miễn phí: - Managed DNS (Quản trị DNS)'''

@@ -9,10 +9,12 @@ original_format: docx
 page_title: Bản quyền Softaculous - Trình cài đặt ứng dụng tự động
 content_hash: sha256:f16a08c617b376b34884dd8ba2da0f7a7fc116eb092502c59a833a5f319d3566
 word_count: 643
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/software
 crawl_method: manual_upload
 source_date: '2026-02-08'
+skipped_reason: Duplicate of ban-quyen-softaculous-trinh-cai-at-ung-dung-tu-ong-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.338466+07:00'
 ---
 
 ═══ Bản quyền Softaculous

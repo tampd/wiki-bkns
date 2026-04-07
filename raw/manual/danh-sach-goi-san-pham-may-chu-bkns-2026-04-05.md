@@ -7,10 +7,12 @@ original_format: docx
 page_title: Danh Sách Gói Sản Phẩm Máy Chủ BKNS
 content_hash: sha256:554d3402ecbba0bdfb91a90bf3fb39c99ae00f497e51af57a8b427a506bbcc56
 word_count: 996
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/server
 crawl_method: manual_upload
 source_date: '2026-02-08'
+skipped_reason: Duplicate of danh-sach-goi-san-pham-may-chu-bkns-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.293429+07:00'
 ---
 
 ═══ Danh Mục Gói Sản Phẩm Máy Chủ

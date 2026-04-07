@@ -1,0 +1,19 @@
+claim_id: CLM-EMAI-BK-RELAY-04-TARGET_A
+entity_id: product.email.bk-relay-04
+entity_type: product_plan
+entity_name: BK-RELAY 04
+attribute: target_audience
+value: Doanh nghiệp cần gửi email marketing số lượng lớn
+unit: null
+qualifiers: null
+source_ids:
+- SRC-EMAIL_RELAY_WEB_2026_04_05
+observed_at: '2026-04-05T22:01:16.558955+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ Giới thiệu: Phù hợp cho doanh nghiệp cần gửi email marketing
+  số lượng lớn.'
+approved_at: '2026-04-07T13:00:10.833581+07:00'
+approved_by: admin-batch

@@ -1,0 +1,17 @@
+claim_id: CLM-HOST-WORDPRESS-DISK_SPA
+entity_id: product.hosting.wordpress.wpcp01
+entity_type: product_plan
+entity_name: WPCP02
+attribute: disk_space
+value: Trống
+unit: null
+qualifiers:
+  note: Thông tin trên trang web bị trống và có cảnh báo mâu thuẫn dữ liệu.
+source_ids:
+- SRC-HOSTING_WORDPRESS_TOC_O_CAO_BANG_GIA_GIAI_PHAP_TOI_UU_S_2026_04_06
+observed_at: '2026-04-07T00:40:11.277948+07:00'
+valid_from: '2026-04-07'
+confidence: medium
+review_state: drafted
+risk_class: medium
+compiler_note: 'Trích từ bảng giá: | Disk space | ⚠️ Trống |'

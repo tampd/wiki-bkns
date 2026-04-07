@@ -1,0 +1,19 @@
+claim_id: CLM-VPS-VPSTK7-PRICE
+entity_id: product.vps.vpstk7
+entity_type: product_plan
+entity_name: VPSTK7
+attribute: price
+value: 299000
+unit: VND
+qualifiers:
+  billing_cycle: month
+source_ids:
+- SRC-DICH_VU_VPS_SIEU_TIET_KIEM_VPS_SIEU_RE_TAI_BKNS_2026_04_06
+observed_at: '2026-04-07T00:18:36.373940+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: high
+compiler_note: 'Trích từ bảng giá, dòng ''Giá/Tháng'', cột ''VPSTK7'': ''299.000đ'''
+approved_at: '2026-04-07T13:00:15.451499+07:00'
+approved_by: admin-batch

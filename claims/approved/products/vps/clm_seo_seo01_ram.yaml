@@ -1,0 +1,18 @@
+claim_id: CLM-SEO-SEO01-RAM
+entity_id: ENT-PROD-VPS.seo.seo01
+entity_type: product_plan
+entity_name: SEO 01
+attribute: ram
+value: 3
+unit: GB
+qualifiers: {}
+source_ids:
+- SRC-DICH_VU_CLOUD_VPS_SEO_MAY_CHU_AO_TOI_UU_CHO_SEO_2026_04_04
+observed_at: '2026-04-04T20:48:08.028996+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ bảng giá, dòng ''RAM'', cột ''SEO 01'': 03 GB'
+approved_at: '2026-04-07T13:00:14.702363+07:00'
+approved_by: admin-batch

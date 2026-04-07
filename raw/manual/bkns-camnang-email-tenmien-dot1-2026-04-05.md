@@ -7,10 +7,12 @@ original_format: docx
 page_title: BKNS_Camnang_email_tenmien_dot1
 content_hash: sha256:f8e6474087e6dfa6202c8d856be4aaa29b3629f35f54f9babd2ce1aabc693eb9
 word_count: 1764
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/email
 crawl_method: manual_upload
 source_date: '2026-04-05'
+skipped_reason: Duplicate of bkns-camnang-email-tenmien-dot1-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.227306+07:00'
 ---
 
 __BỘ CẨM NANG SẢN PHẨM NỘI BỘ BKNS__

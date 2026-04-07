@@ -9,10 +9,12 @@ original_format: docx
 page_title: PositiveSSL Multi-Domain (DV)_ Chứng chỉ SSL cho nhiều tên miền
 content_hash: sha256:363adf1f0c856dae260ab601318f831dee3acc1d1a39680aacc7b81d351a1a5f
 word_count: 721
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/ten-mien
 crawl_method: manual_upload
 source_date: '2026-02-08'
+skipped_reason: Duplicate of positivessl-multi-domain-dv-chung-chi-ssl-cho-nhieu-ten-m-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.277640+07:00'
 ---
 
 ═══ PositiveSSL Multi\-Domain \(DV\)

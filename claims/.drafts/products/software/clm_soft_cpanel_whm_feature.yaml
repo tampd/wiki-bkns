@@ -1,0 +1,21 @@
+claim_id: CLM-SOFT-CPANEL_WHM-FEATURE
+entity_id: product.software.cpanel_whm
+entity_type: product
+entity_name: Bản quyền cPanel/WHM
+attribute: feature
+value: 'Preferences: cho phép người dùng tùy chỉnh giao diện, ngôn ngữ, mật khẩu.'
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-BAN_QUYEN_CPANEL_WHM_2026_04_06
+observed_at: '2026-04-06T23:00:29.740844+07:00'
+valid_from: '2026-04-06'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ bảng Tính năng / Thành phần: | Preferences | Cho phép người
+  dùng tùy chỉnh giao diện, ngôn ngữ, mật khẩu, và các thiết lập khác của cPanel.
+  |'
+value_changed_from: 'Metrics: cung cấp các công cụ thống kê và phân tích để theo dõi
+  lưu lượng truy cập, tài nguyên sử dụng.'
+value_changed_at: '2026-04-06T23:00:29.740888+07:00'

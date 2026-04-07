@@ -7,10 +7,12 @@ original_format: pdf
 page_title: BẢNG GIÁ EMAIL ( Chưa bao gồm VAT)
 content_hash: sha256:9d93ac0b27bcd0265c37293eb99748eb845bcbdadc85cd7334193d36de0ff604
 word_count: 300
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/email
 crawl_method: manual_upload
 source_date: '2026-04-05'
+skipped_reason: Duplicate of bang-gia-email-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.360872+07:00'
 ---
 
 BẢNG GIÁ EMAIL ( Chưa bao gồm VAT)

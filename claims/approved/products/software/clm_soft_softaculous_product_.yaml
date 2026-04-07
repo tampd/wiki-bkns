@@ -1,0 +1,19 @@
+claim_id: CLM-SOFT-SOFTACULOUS-PRODUCT_
+entity_id: prod.software.softaculous
+entity_type: product_software
+entity_name: Softaculous
+attribute: product_category
+value: Trình Cài Đặt Ứng Dụng Tự Động
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-SOFTACULOUS_WEB_2026_04_05
+observed_at: '2026-04-05T22:13:59.470070+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ tiêu đề chính của trang: ''# Bản Quyền Softaculous - Trình
+  Cài Đặt Ứng Dụng Tự Động'''
+approved_at: '2026-04-07T13:00:16.265970+07:00'
+approved_by: admin-batch

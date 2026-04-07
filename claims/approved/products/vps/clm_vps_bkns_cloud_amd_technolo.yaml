@@ -1,0 +1,19 @@
+claim_id: CLM-VPS-BKNS_CLOUD_AMD-TECHNOLO
+entity_id: product.vps.bkns_cloud_amd
+entity_type: product
+entity_name: Cloud VPS AMD
+attribute: technology
+value: CPU AMD EPYC™
+unit: null
+qualifiers: null
+source_ids:
+- SRC-CLOUD_VPS_AMD_GIAI_PHAP_VPS_HIEU_SUAT_CAO_VOI_CPU_AMD_EPYCTM_2026_04_06
+observed_at: '2026-04-06T23:44:27.849942+07:00'
+valid_from: '2026-04-06'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ mục Tóm tắt nhanh: • Dịch vụ này là gì: Cloud VPS AMD là
+  một giải pháp máy chủ ảo (VPS) thế hệ mới sử dụng bộ xử lý CPU AMD EPYC™.'
+approved_at: '2026-04-07T13:00:14.931338+07:00'
+approved_by: admin-batch

@@ -1,0 +1,17 @@
+claim_id: CLM-SSL-INSTANTSSL_PRO_OV-REQUIRED
+entity_id: product.ssl.instantssl_pro_ov
+entity_type: product_plan
+entity_name: InstantSSL Pro (OV)
+attribute: required_documents
+value: Đăng ký kinh doanh
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-INSTANTSSL_PRO_OV_CHUNG_CHI_SSL_XAC_THUC_TO_CHUC_CUA_COM_2026_04_06
+observed_at: '2026-04-07T00:42:11.448441+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: Điều kiện/giới hạn nổi bật (nếu có): Yêu cầu
+  giấy tờ Đăng ký kinh doanh để xác thực.'

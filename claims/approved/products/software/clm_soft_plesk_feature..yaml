@@ -1,0 +1,21 @@
+claim_id: CLM-SOFT-PLESK-FEATURE.
+entity_id: product.software.plesk.edition.web_admin
+entity_type: product_edition
+entity_name: Plesk Obsidian - Web Pro Edition
+attribute: feature.reseller_management
+value: true
+unit: null
+qualifiers: null
+source_ids:
+- SRC-PHAN_MEM_QUAN_TRI_HOSTING_PLESK_OBSIDIAN_2026_04_06
+observed_at: '2026-04-07T00:47:54.151964+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ bảng so sánh, dòng Account Management, cột Web Pro Edition:
+  ✅'
+value_changed_from: false
+value_changed_at: '2026-04-07T00:47:54.152005+07:00'
+approved_at: '2026-04-07T13:00:16.178836+07:00'
+approved_by: admin-batch

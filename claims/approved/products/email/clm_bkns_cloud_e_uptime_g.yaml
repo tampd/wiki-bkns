@@ -1,0 +1,19 @@
+claim_id: CLM-BKNS_CLOUD_E-UPTIME_G
+entity_id: bkns_cloud_email_server
+entity_type: product
+entity_name: Dịch vụ Cloud Email Server
+attribute: uptime_guarantee
+value: 99
+unit: '%'
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_04
+observed_at: '2026-04-04T20:47:01.888979+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ mục Tính năng / Thành phần: Đảm bảo tỷ lệ email vào inbox
+  lên đến 99% và uptime 99%.'
+approved_at: '2026-04-07T13:00:10.797992+07:00'
+approved_by: admin-batch

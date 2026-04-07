@@ -3,7 +3,7 @@ page_id: wiki.products.uncategorized.tong-quan
 title: BKNS — Uncategorized
 category: products/uncategorized
 updated: '2026-04-04'
-review_state: approved
+review_state: published
 sensitivity: high
 compiled_from:
 - CLM-EMAI-EMAIL_1-EMAIL_AC-20260404
@@ -19,7 +19,6 @@ compiled_from:
 compile_cost_usd: 0.0111
 corrections: 0
 self_review_verdict: pass
-approved_at: '2026-04-04T23:03:04.062133+07:00'
 ---
 
 # BKNS — Uncategorized

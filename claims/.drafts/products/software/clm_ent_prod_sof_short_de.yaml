@@ -1,0 +1,19 @@
+claim_id: CLM-ENT-PROD-SOF-SHORT_DE
+entity_id: ENT-PROD-SOFTWARE-VBLT
+entity_type: product
+entity_name: Bản quyền vBulletin
+attribute: short_description
+value: Cung cấp bản quyền phần mềm vBulletin, một hệ quản trị nội dung (CMS) chuyên
+  dụng để xây dựng diễn đàn (forum) và mạng xã hội.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-BAN_QUYEN_VBULLETIN_HE_QUAN_TRI_FORUM_MANG_XA_HOI_2026_04_06
+observed_at: '2026-04-06T23:04:02.956655+07:00'
+valid_from: '2026-04-06'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục ''Tóm tắt nhanh'': • Dịch vụ này là gì: Cung cấp bản
+  quyền phần mềm vBulletin, một hệ quản trị nội dung (CMS) chuyên dụng để xây dựng
+  diễn đàn (forum) và mạng xã hội.'

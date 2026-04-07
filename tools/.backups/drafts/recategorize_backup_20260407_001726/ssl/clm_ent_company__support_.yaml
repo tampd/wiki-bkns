@@ -1,0 +1,18 @@
+claim_id: CLM-ENT-COMPANY--SUPPORT_
+entity_id: ENT-COMPANY-001
+entity_type: company
+entity_name: BKNS
+attribute: support_availability
+value: 24/7/365
+unit: null
+qualifiers:
+  product_scope: ENT-PROD-SSL-COMODO-WILDCARD-DV
+source_ids:
+- SRC-COMODO_SSL_WILDCARD_CERTIFICATE_DV_CHUNG_CHI_SSL_2026_04_06
+observed_at: '2026-04-06T23:50:22.234598+07:00'
+valid_from: '2026-04-06'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ mục ''Chính sách / Điều khoản / Lưu ý'': ''• Hỗ trợ kỹ thuật
+  24/7/365'''

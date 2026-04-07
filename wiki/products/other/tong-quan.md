@@ -3,7 +3,7 @@ page_id: wiki.products.other.tong-quan
 title: BKNS — Other
 category: products/other
 updated: '2026-04-04'
-review_state: approved
+review_state: published
 sensitivity: high
 compiled_from:
 - CLM-ENT-PROD-BAC-BACKUP:F-20260404
@@ -19,7 +19,6 @@ compiled_from:
 compile_cost_usd: 0.0302
 corrections: 1
 self_review_verdict: fail
-approved_at: '2026-04-04T23:02:59.929167+07:00'
 ---
 
 # BKNS — Other

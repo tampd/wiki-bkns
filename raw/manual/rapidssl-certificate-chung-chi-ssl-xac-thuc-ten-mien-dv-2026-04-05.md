@@ -9,10 +9,12 @@ original_format: docx
 page_title: RapidSSL Certificate - Chứng chỉ SSL xác thực tên miền (DV)
 content_hash: sha256:ede0d5c83f4225c9a1548bdb2be67c138d045b12ddb24edb985715e30dab2f93
 word_count: 589
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/ten-mien
 crawl_method: manual_upload
 source_date: '2026-02-08'
+skipped_reason: Duplicate of rapidssl-certificate-chung-chi-ssl-xac-thuc-ten-mien-dv-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.281483+07:00'
 ---
 
 ═══ RapidSSL Certificate

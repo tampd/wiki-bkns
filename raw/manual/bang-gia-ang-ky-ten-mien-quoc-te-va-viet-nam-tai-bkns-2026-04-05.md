@@ -9,10 +9,12 @@ original_format: docx
 page_title: Bảng giá đăng ký tên miền Quốc tế và Việt Nam tại BKNS
 content_hash: sha256:a37e584b5aef0cc74bcf9b46d4593aa4910970407ca89b250671e4bc108e7854
 word_count: 992
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/ten-mien
 crawl_method: manual_upload
 source_date: '2026-02-08'
+skipped_reason: Duplicate of bang-gia-ang-ky-ten-mien-quoc-te-va-viet-nam-tai-bkns-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.356949+07:00'
 ---
 
 ═══ Bảng giá Tên miền Quốc tế & Việt Nam

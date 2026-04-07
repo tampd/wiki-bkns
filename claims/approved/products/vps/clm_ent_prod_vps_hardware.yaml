@@ -1,0 +1,21 @@
+claim_id: CLM-ENT-PROD-VPS-HARDWARE
+entity_id: ENT-PROD-VPS
+entity_type: product_plan
+entity_name: Cloud VPS
+attribute: hardware.storage_capacity
+value: SSD Enterprise
+unit: ''
+qualifiers: null
+source_ids:
+- SRC-TRAINING_DICH_VU_VPS_2026_04_06
+observed_at: '2026-04-07T01:05:15.910899+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ bảng ở mục 4.1.1: ''Hạ tầng phần cứng: CPU Intel Xeon E5-xxxx,
+  RAM ECC, Ổ cứng SSD Enterprise'''
+value_changed_from: ECC
+value_changed_at: '2026-04-07T01:05:15.910918+07:00'
+approved_at: '2026-04-07T13:00:14.364266+07:00'
+approved_by: admin-batch

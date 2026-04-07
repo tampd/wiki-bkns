@@ -1,0 +1,21 @@
+claim_id: CLM-ENT-PROD-VPS-RESOURCE
+entity_id: ENT-PROD-VPS
+entity_type: product_category
+entity_name: VPS
+attribute: resource_allocation
+value: Được chia nhỏ từ một máy chủ nhưng tài nguyên được fix cứng không chia sẻ với
+  người dùng khác
+unit: null
+qualifiers: null
+source_ids:
+- SRC-TRAINING_DICH_VU_VPS_2026_04_04
+- SRC-TRAINING_DICH_VU_VPS_2026_04_06
+observed_at: '2026-04-07T01:05:15.850736+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng so sánh ở mục 3: ''Được chia nhỏ từ một máy chủ nhưng
+  tài nguyên được fix cứng không chia sẻ với người dùng khác'''
+value_changed_from: dedicated
+value_changed_at: '2026-04-07T01:05:15.850753+07:00'

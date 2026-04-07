@@ -1,0 +1,19 @@
+claim_id: CLM-ENT--SEO-USER_PRI
+entity_id: ENT-PROD-VPS.seo
+entity_type: product
+entity_name: VPS SEO
+attribute: user_privilege
+value: full_administrative_rights
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_CLOUD_VPS_SEO_MAY_CHU_AO_TOI_UU_CHO_SEO_2026_04_06
+observed_at: '2026-04-07T00:03:36.841858+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích xuất từ mục ''Mô tả dịch vụ'': Khách hàng có toàn quyền quản
+  trị và sử dụng tài nguyên được cấp phát.'
+approved_at: '2026-04-07T13:00:14.252203+07:00'
+approved_by: admin-batch

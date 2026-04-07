@@ -1,0 +1,16 @@
+claim_id: CLM-ENT-PROD-VPS-PRICING.
+entity_id: ENT-PROD-VPS
+entity_type: product_category
+entity_name: VPS
+attribute: pricing.level
+value: Vừa phải
+unit: ''
+qualifiers: null
+source_ids:
+- SRC-TRAINING_DICH_VU_VPS_2026_04_06
+observed_at: '2026-04-07T01:05:15.857270+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng so sánh ở mục 3: ''Giá thành: Vừa phải'''

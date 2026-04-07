@@ -1,0 +1,17 @@
+claim_id: CLM-SOFT-DIRECTADMIN-PROMOTIO
+entity_id: product.software.directadmin
+entity_type: product
+entity_name: Bản quyền phần mềm DirectAdmin
+attribute: promotion
+value: Khách hàng Thuê Server tại BKNS sẽ được miễn phí License DirectAdmin.
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-BANG_GIA_BAN_QUYEN_PHAN_MEM_QUAN_TRI_SERVER_DIRECTADMIN_2026_04_06
+observed_at: '2026-04-06T23:11:14.294868+07:00'
+valid_from: '2026-04-06'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Chính sách / Điều khoản / Lưu ý: ''Ưu đãi cho khách hàng
+  tại BKNS: Khách hàng Thuê Server tại BKNS sẽ được miễn phí License DirectAdmin...'''

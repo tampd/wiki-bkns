@@ -9,10 +9,12 @@ original_format: docx
 page_title: Hosting Giá Rẻ_ Bảng giá và thông số kỹ thuật tại BKNS
 content_hash: sha256:c43722259812cda91c47f53e107187b139ed33dce555bdad2ed013a38c140151
 word_count: 819
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/hosting
 crawl_method: manual_upload
 source_date: '2026-02-08'
+skipped_reason: Duplicate of hosting-gia-re-bang-gia-va-thong-so-ky-thuat-tai-bkns-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.402931+07:00'
 ---
 
 ═══ Hosting Giá Rẻ

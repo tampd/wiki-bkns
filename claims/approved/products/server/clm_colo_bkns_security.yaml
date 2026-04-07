@@ -1,0 +1,19 @@
+claim_id: CLM-COLO-BKNS-SECURITY
+entity_id: product.colocation.bkns
+entity_type: product
+entity_name: Thuê Chỗ Đặt Máy Chủ (Colocation)
+attribute: security_feature
+value: Hệ thống an ninh nhiều lớp bao gồm kiểm soát ra vào, camera giám sát
+unit: ''
+qualifiers: {}
+source_ids:
+- SRC-DICH_VU_THUE_CHO_AT_MAY_CHU_COLOCATION_TAI_BKNS_2026_04_06
+observed_at: '2026-04-07T00:12:22.833229+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ Tính năng / Thành phần: Bảo mật: Hệ thống an ninh nhiều lớp
+  bao gồm kiểm soát ra vào, camera giám sát để bảo vệ thiết bị.'
+approved_at: '2026-04-07T13:00:09.725447+07:00'
+approved_by: admin-batch

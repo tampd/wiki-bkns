@@ -9,10 +9,12 @@ original_format: docx
 page_title: Cloud VPS AMD_ Giải pháp VPS hiệu suất cao với CPU AMD EPYC™
 content_hash: sha256:f862fd330fdfb4bf3b08c4fea6b1d1d00c7f82177d9a5714e0c0c93867c59e6e
 word_count: 373
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/vps
 crawl_method: manual_upload
 source_date: '2026-02-08'
+skipped_reason: Duplicate of cloud-vps-amd-giai-phap-vps-hieu-suat-cao-voi-cpu-amd-epyctm-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.407794+07:00'
 ---
 
 ═══ Cloud VPS AMD

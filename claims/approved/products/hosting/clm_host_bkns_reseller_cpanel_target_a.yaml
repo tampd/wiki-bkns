@@ -1,0 +1,19 @@
+claim_id: CLM-HOST-BKNS_RESELLER_CPANEL-TARGET_A
+entity_id: product.hosting.bkns_reseller_cpanel
+entity_type: product
+entity_name: Reseller Hosting cPanel
+attribute: target_audience
+value: Freelancer quản lý nhiều website khách hàng
+unit: null
+qualifiers: null
+source_ids:
+- SRC-RESELLER_HOSTING_WEB_2026_04_05
+observed_at: '2026-04-05T22:11:26.614197+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ mục Phù hợp cho: - Freelancer quản lý nhiều website khách
+  hàng'
+approved_at: '2026-04-07T13:00:11.981578+07:00'
+approved_by: admin-batch

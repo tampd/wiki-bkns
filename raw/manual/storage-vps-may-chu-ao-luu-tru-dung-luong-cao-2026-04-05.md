@@ -8,10 +8,12 @@ original_format: docx
 page_title: Storage VPS – Máy chủ ảo lưu trữ dung lượng cao
 content_hash: sha256:e301697d172297a3a50a016b51b445839a19d421a8ba49624163ddd9634416c0
 word_count: 738
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/vps
 crawl_method: manual_upload
 source_date: '2026-02-08'
+skipped_reason: Duplicate of storage-vps-may-chu-ao-luu-tru-dung-luong-cao-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.364817+07:00'
 ---
 
 ═══ Storage VPS – Máy chủ ảo lưu trữ dung lượng cao

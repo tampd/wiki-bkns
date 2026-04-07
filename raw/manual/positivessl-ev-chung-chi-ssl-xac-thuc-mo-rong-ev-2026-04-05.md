@@ -8,10 +8,12 @@ original_format: docx
 page_title: PositiveSSL EV - Chứng chỉ SSL Xác thực Mở rộng (EV)
 content_hash: sha256:97e9d365f9b4bf34e5a04c4561e9a21c3ec042744a49f033bb05213faec8b2f4
 word_count: 621
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/ssl
 crawl_method: manual_upload
 source_date: '2026-02-08'
+skipped_reason: Duplicate of positivessl-ev-chung-chi-ssl-xac-thuc-mo-rong-ev-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.285345+07:00'
 ---
 
 ═══ PositiveSSL EV

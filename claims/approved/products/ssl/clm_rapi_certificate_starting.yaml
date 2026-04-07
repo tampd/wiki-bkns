@@ -1,0 +1,19 @@
+claim_id: CLM-RAPI-CERTIFICATE-STARTING
+entity_id: ENT-PROD-SSL.RapidSSL.Certificate
+entity_type: product
+entity_name: RapidSSL Certificate
+attribute: starting_price
+value: 215000
+unit: VND
+qualifiers:
+  billing_cycle: year
+source_ids:
+- SRC-SSL_TONG_HOP_WEB_2026_04_05
+observed_at: '2026-04-05T22:15:35.973908+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: approved
+risk_class: high
+compiler_note: 'Trích từ mục ''RapidSSL'': RapidSSL Certificate: từ 215.000đ/năm (DV)'
+approved_at: '2026-04-07T13:00:13.270543+07:00'
+approved_by: admin-batch

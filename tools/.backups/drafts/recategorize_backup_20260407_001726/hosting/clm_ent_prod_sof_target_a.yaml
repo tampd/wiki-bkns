@@ -1,0 +1,19 @@
+claim_id: CLM-ENT-PROD-SOF-TARGET_A
+entity_id: ENT-PROD-SOFTWARE-001
+entity_type: product
+entity_name: Bản Quyền CloudLinux OS
+attribute: target_audience
+value: Quản trị viên máy chủ chia sẻ
+unit: null
+qualifiers: null
+source_ids:
+- SRC-BAN_QUYEN_CLOUDLINUX_OS_TANG_ON_INH_VA_BAO_MAT_CHO_SHARED_2026_04_06
+observed_at: '2026-04-06T22:58:12.944376+07:00'
+valid_from: '2026-04-06'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: ''Phù hợp với: Các nhà cung cấp dịch vụ Web
+  Hosting và quản trị viên máy chủ chia sẻ.'''
+value_changed_from: Các nhà cung cấp dịch vụ Web Hosting
+value_changed_at: '2026-04-06T22:58:12.944409+07:00'

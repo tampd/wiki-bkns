@@ -1,0 +1,20 @@
+claim_id: CLM-ENT-PROD-SSL-POLICY
+entity_id: ENT-PROD-SSL-RAPIDSSL
+entity_type: product
+entity_name: RapidSSL Certificate
+attribute: policy
+value: Dịch vụ được miễn phí cài đặt.
+unit: null
+qualifiers:
+  policy_type: installation
+source_ids:
+- SRC-RAPIDSSL_CERTIFICATE_CHUNG_CHI_SSL_XAC_THUC_TEN_MIEN_DV_2026_04_06
+observed_at: '2026-04-07T00:57:06.322026+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ mục Chính sách / Điều khoản / Lưu ý: • Phí cài đặt: Dịch
+  vụ được miễn phí cài đặt.'
+approved_at: '2026-04-07T13:00:13.073988+07:00'
+approved_by: admin-batch

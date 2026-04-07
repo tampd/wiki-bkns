@@ -1,0 +1,21 @@
+claim_id: CLM-ENT-PROD-SSL-MAX_DOMA
+entity_id: ENT-PROD-SSL-COMODO-POSITIVESSL-MULTI-DOMAIN
+entity_type: product
+entity_name: PositiveSSL Multi-Domain (DV)
+attribute: max_domains
+value: 250
+unit: domains
+qualifiers:
+  source: description
+source_ids:
+- SRC-POSITIVESSL_MULTI_DOMAIN_DV_CHUNG_CHI_SSL_CHO_NHIEU_TEN_M_2026_04_04
+- SRC-POSITIVESSL_MULTI_DOMAIN_DV_CHUNG_CHI_SSL_CHO_NHIEU_TEN_M_2026_04_06
+observed_at: '2026-04-07T00:54:07.048901+07:00'
+valid_from: '2026-04-04'
+confidence: medium
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ phần Mô tả dịch vụ: Chứng chỉ này có thể bảo mật tối đa 250
+  miền'
+value_changed_from: 1000
+value_changed_at: '2026-04-07T00:54:07.048919+07:00'

@@ -187,36 +187,22 @@ def generate_claim_id(
     attribute: str,
     date_str: Optional[str] = None,
 ) -> str:
-    """Generate a claim ID.
+    """Generate a collision-proof deterministic claim ID via SHA256.
 
-    Format: CLM-{ENTITY_SHORT}-{ATTRIBUTE_SHORT}-{DATE}
-    Example: CLM-HOST-BKCP01-PRICE-20260404
+    Format: CLM-{SHA256[:12]}
+    Example: CLM-3A7F2C1D9E4B
+
+    Fully deterministic: same entity_id + attribute → same ID always.
+    Collision-proof: SHA256 hash avoids the truncation collision risk
+    of the old CLM-{ENTITY_SHORT}-{ATTR_SHORT} format.
+
+    BREAKING CHANGE from v1 format (CLM-HOST-BKCP01-PRICE).
+    Existing claim YAML files with old IDs will be treated as orphans
+    on next extract — they will not be overwritten, just left in place.
+    Run `python tools/recategorize_claims.py` to clean up if needed.
+
+    date_str parameter is kept for backward compatibility but ignored.
     """
-    date_str = date_str or datetime.now(VN_TZ).strftime("%Y%m%d")
-
-    # Shorten entity_id: product.hosting.bkcp01 -> HOST-BKCP01
-    parts = entity_id.split(".")
-    if len(parts) >= 3:
-        entity_short = f"{parts[1][:4].upper()}-{parts[2].upper()}"
-    elif len(parts) >= 2:
-        entity_short = f"{parts[0][:4].upper()}-{parts[1].upper()}"
-    else:
-        entity_short = entity_id.upper()[:12]
-
-    # Shorten attribute
-    attr_map = {
-        "monthly_price": "PRICE",
-        "yearly_price": "YPRICE",
-        "one_time_price": "OPRICE",
-        "ram": "RAM",
-        "cpu": "CPU",
-        "ssd": "SSD",
-        "bandwidth": "BW",
-        "description": "DESC",
-        "hotline": "PHONE",
-        "email": "EMAIL",
-        "address": "ADDR",
-    }
-    attr_short = attr_map.get(attribute, attribute[:8].upper())
-
-    return f"CLM-{entity_short}-{attr_short}-{date_str}"
+    key = f"{entity_id}:{attribute}"
+    digest = hashlib.sha256(key.encode("utf-8")).hexdigest()[:12].upper()
+    return f"CLM-{digest}"

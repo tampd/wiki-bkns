@@ -1,0 +1,17 @@
+claim_id: CLM-SSL-GEOTRUST_QUICKSSL_PREMIUM_SAN-USE_CASE
+entity_id: product.ssl.geotrust_quickssl_premium_san
+entity_type: product_plan
+entity_name: GeoTrust QuickSSL Premium SAN
+attribute: use_case
+value: Bảo mật Exchange Server
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-GEOTRUST_QUICKSSL_PREMIUM_SAN_2026_04_04
+observed_at: '2026-04-04T21:00:08.727878+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích xuất từ Mô tả dịch vụ: SSL này phù hợp để bảo mật cho Exchange
+  Server.'

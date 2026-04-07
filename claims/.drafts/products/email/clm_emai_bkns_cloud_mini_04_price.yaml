@@ -1,0 +1,17 @@
+claim_id: CLM-EMAI-BKNS_CLOUD_MINI_04-PRICE
+entity_id: product.email.bkns_cloud_mini_04
+entity_type: product_plan
+entity_name: MINI EMAIL 04
+attribute: monthly_price
+value: 671000
+unit: VND
+qualifiers:
+  billing_cycle: month
+source_ids:
+- SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_06
+observed_at: '2026-04-07T00:01:11.848469+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ bảng giá: | Giá/Tháng | 671.000đ |'

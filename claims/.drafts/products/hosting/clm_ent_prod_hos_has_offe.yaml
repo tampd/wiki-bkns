@@ -1,0 +1,17 @@
+claim_id: CLM-ENT-PROD-HOS-HAS_OFFE
+entity_id: ENT-PROD-HOSTING
+entity_type: product_offering
+entity_name: Hosting Giá Rẻ
+attribute: has_offer
+value: Tặng theme và plugin bản quyền
+unit: ''
+qualifiers: {}
+source_ids:
+- SRC-HOSTING_GIA_RE_BANG_GIA_VA_THONG_SO_KY_THUAT_TAI_BKNS_2026_04_06
+observed_at: '2026-04-07T00:36:08.667892+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tính năng / Thành phần: ''• Ưu đãi: Tặng theme và plugin
+  bản quyền.'''

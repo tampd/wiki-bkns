@@ -7,10 +7,12 @@ original_format: docx
 page_title: GeoTrust True BusinessID Multi-Domain Wildcard
 content_hash: sha256:561208cc907ad5a5784fe63d638636161739382c84f003b6db4432d946452639
 word_count: 595
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/ten-mien
 crawl_method: manual_upload
 source_date: '2026-02-08'
+skipped_reason: Duplicate of geotrust-true-businessid-multi-domain-wildcard-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.326021+07:00'
 ---
 
 ═══ GeoTrust True BusinessID Multi\-Domain Wildcard

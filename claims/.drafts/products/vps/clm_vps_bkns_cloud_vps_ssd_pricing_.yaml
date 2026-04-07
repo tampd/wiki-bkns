@@ -1,0 +1,17 @@
+claim_id: CLM-VPS-BKNS_CLOUD_VPS_SSD-PRICING_
+entity_id: product.vps.bkns_cloud_vps_ssd
+entity_type: product_offering
+entity_name: Thuê Cloud VPS SSD
+attribute: pricing_note
+value: Giá chưa bao gồm VAT
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_THUE_CLOUD_VPS_SSD_GIA_RE_TAI_BKNS_2026_04_06
+observed_at: '2026-04-07T00:13:45.677267+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Chính sách / Điều khoản / Lưu ý: ''Giá trên bảng là giá
+  hàng tháng và chưa bao gồm VAT.'''

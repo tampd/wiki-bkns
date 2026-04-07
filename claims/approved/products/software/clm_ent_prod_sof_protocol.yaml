@@ -1,0 +1,18 @@
+claim_id: CLM-ENT-PROD-SOF-PROTOCOL
+entity_id: ENT-PROD-SOFTWARE-LITESPEED
+entity_type: product
+entity_name: LiteSpeed Web Server
+attribute: protocol_support
+value: QUIC
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-LITESPEED_WEB_2026_04_05
+observed_at: '2026-04-05T22:07:23.266149+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ: ''HTTP/3 và QUIC support'''
+approved_at: '2026-04-07T13:00:15.716596+07:00'
+approved_by: admin-batch

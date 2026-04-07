@@ -1,0 +1,20 @@
+claim_id: CLM-ENT--SEO_01-CONTROL_
+entity_id: ENT-PROD-VPS.seo_01
+entity_type: product_plan
+entity_name: SEO 01
+attribute: control_panel_support
+value: DirectAdmin
+unit: null
+qualifiers:
+  supported: false
+source_ids:
+- SRC-DICH_VU_CLOUD_VPS_SEO_MAY_CHU_AO_TOI_UU_CHO_SEO_2026_04_06
+observed_at: '2026-04-07T00:03:36.861897+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: medium
+compiler_note: 'Trích xuất từ bảng giá, dòng ''DirectAdmin'', cột ''SEO 01'': Không
+  hỗ trợ'
+approved_at: '2026-04-07T13:00:14.157979+07:00'
+approved_by: admin-batch

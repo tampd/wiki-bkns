@@ -1,0 +1,18 @@
+claim_id: CLM-ENT-PROD-SSL-INSURANC
+entity_id: ENT-PROD-SSL-RAPIDSSL
+entity_type: product
+entity_name: RapidSSL Certificate
+attribute: insurance_amount
+value: 10000
+unit: USD
+qualifiers: null
+source_ids:
+- SRC-RAPIDSSL_CERTIFICATE_CHUNG_CHI_SSL_XAC_THUC_TEN_MIEN_DV_2026_04_06
+observed_at: '2026-04-07T00:57:06.300432+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ bảng Thông số kỹ thuật: | Mức bảo hiểm | 10.000$ |'
+approved_at: '2026-04-07T13:00:12.991590+07:00'
+approved_by: admin-batch

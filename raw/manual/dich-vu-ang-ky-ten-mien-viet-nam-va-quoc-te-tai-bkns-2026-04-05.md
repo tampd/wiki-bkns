@@ -9,10 +9,12 @@ original_format: docx
 page_title: Dịch vụ Đăng ký Tên miền Việt Nam và Quốc tế tại BKNS
 content_hash: sha256:adbfa12428cbe5b444ff2e376edd6bc93ff6faacc317629dfc2db4fed2f8d2e9
 word_count: 1358
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/ten-mien
 crawl_method: manual_upload
 source_date: '2026-02-08'
+skipped_reason: Duplicate of dich-vu-ang-ky-ten-mien-viet-nam-va-quoc-te-tai-bkns-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.215158+07:00'
 ---
 
 ═══ Đăng ký Tên miền

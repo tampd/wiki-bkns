@@ -1,0 +1,19 @@
+claim_id: CLM-HOST-FREE_PLAN-SERVICE_
+entity_id: product.hosting.free_plan
+entity_type: product_plan
+entity_name: Hosting Miễn phí
+attribute: service_type
+value: web_hosting
+unit: ''
+qualifiers: {}
+source_ids:
+- SRC-HOSTING_MIEN_PHI_GIAI_PHAP_KHOI_TAO_WEBSITE_0_2026_04_06
+observed_at: '2026-04-07T00:38:31.599804+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ ''Tóm tắt nhanh'': Dịch vụ này là gì: Cung cấp dịch vụ lưu
+  trữ web (hosting) với chi phí 0 đồng.'
+approved_at: '2026-04-07T13:00:12.068691+07:00'
+approved_by: admin-batch

@@ -1,0 +1,16 @@
+claim_id: CLM-ENT-PROD-MEE-SOURCE.U
+entity_id: ENT-PROD-MEETING-001
+entity_type: product
+entity_name: Cloud Meeting (E-meeting)
+attribute: source.url
+value: https://www.bkns.vn/dich-vu-cloud-meeting.html
+unit: null
+qualifiers: null
+source_ids:
+- SRC-CLOUD_MEETING_E_MEETING_GIAI_PHAP_HOP_TRUC_TUYEN_TAI_BKNS_2026_04_06
+observed_at: '2026-04-06T23:43:08.264987+07:00'
+valid_from: '2026-04-06'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: '• URL: https://www.bkns.vn/dich-vu-cloud-meeting.html'

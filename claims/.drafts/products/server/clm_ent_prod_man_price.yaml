@@ -1,0 +1,19 @@
+claim_id: CLM-ENT-PROD-MAN-PRICE
+entity_id: ENT-PROD-MANAGED-SERVER-BASIC
+entity_type: product_plan
+entity_name: Quản trị Máy chủ - Nâng cao
+attribute: price
+value: 990000
+unit: VND
+qualifiers:
+  billing_cycle: month
+source_ids:
+- SRC-DICH_VU_QUAN_TRI_MAY_CHU_TRON_GOI_TAI_BKNS_2026_04_06
+observed_at: '2026-04-07T00:10:11.616910+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ bảng giá: Đơn giá/tháng | 990.000đ'
+value_changed_from: 330000
+value_changed_at: '2026-04-07T00:10:11.616943+07:00'

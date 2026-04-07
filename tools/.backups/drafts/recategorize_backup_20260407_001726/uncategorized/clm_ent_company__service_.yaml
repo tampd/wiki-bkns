@@ -1,0 +1,17 @@
+claim_id: CLM-ENT-COMPANY--SERVICE_
+entity_id: ENT-COMPANY-001
+entity_type: company
+entity_name: BKNS
+attribute: service_policy
+value: flexible_upgrade_downgrade
+unit: ''
+qualifiers: {}
+source_ids:
+- SRC-BANG_GIA_DICH_VU_BKNS_TEXT_2026_04_06
+observed_at: '2026-04-06T23:13:40.802318+07:00'
+valid_from: '2026-04-06'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ GHI CHÚ: Các gói dịch vụ có thể nâng cấp hoặc hạ cấp linh
+  hoạt'

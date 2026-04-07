@@ -9,10 +9,12 @@ original_format: docx
 page_title: Bản Quyền CloudLinux OS - Tăng ổn định và bảo mật cho Shared Hosting
 content_hash: sha256:dbd6b031555ca8fea9a218e49c656e9cd22e9ed8edfd0b64d976fabb3b80e546
 word_count: 874
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/hosting
 crawl_method: manual_upload
 source_date: '2026-02-08'
+skipped_reason: Duplicate of ban-quyen-cloudlinux-os-tang-on-inh-va-bao-mat-cho-shared-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.425300+07:00'
 ---
 
 ═══ Bản Quyền CloudLinux OS

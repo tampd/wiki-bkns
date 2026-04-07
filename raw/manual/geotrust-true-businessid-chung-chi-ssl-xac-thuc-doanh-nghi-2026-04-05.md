@@ -9,10 +9,12 @@ original_format: docx
 page_title: GeoTrust True BusinessID - Chứng chỉ SSL xác thực doanh nghiệp
 content_hash: sha256:371231f1c09cc461490ea6efa5ffd6d721ac9daf52ee25e9c3ed336d085aa407
 word_count: 553
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/ssl
 crawl_method: manual_upload
 source_date: '2026-02-08'
+skipped_reason: Duplicate of geotrust-true-businessid-chung-chi-ssl-xac-thuc-doanh-nghi-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.390326+07:00'
 ---
 
 ═══ GeoTrust True BusinessID

@@ -1,0 +1,17 @@
+claim_id: CLM-SSL-GEOTRUST_QUICKSSL_PREMIUM-DESC
+entity_id: product.ssl.geotrust_quickssl_premium
+entity_type: product
+entity_name: GeoTrust QuickSSL Premium
+attribute: description
+value: GeoTrust QuickSSL Premium là một chứng chỉ SSL phổ biến cho phép bảo mật một
+  tên miền đủ điều kiện (có www hoặc không có www) với mã hóa lên đến 256-bit.
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-GEOTRUST_QUICKSSL_PREMIUM_CHUNG_CHI_SSL_XAC_THUC_TEN_MIEN_2026_04_06
+observed_at: '2026-04-07T00:27:28.242966+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: Trích từ mục 'Mô tả dịch vụ'

@@ -1,0 +1,18 @@
+claim_id: CLM-SOFT-CPANEL_WHM-DESC
+entity_id: product.software.cpanel_whm
+entity_type: product
+entity_name: Bản quyền cPanel/WHM
+attribute: description
+value: Cung cấp bản quyền cPanel/WHM, một phần mềm quản lý hosting cho máy chủ chạy
+  hệ điều hành Linux.
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-BAN_QUYEN_CPANEL_WHM_2026_04_06
+observed_at: '2026-04-06T23:00:29.623211+07:00'
+valid_from: '2026-04-06'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ mục Tóm tắt nhanh: • Dịch vụ này là gì: Cung cấp bản quyền
+  cPanel/WHM, một phần mềm quản lý hosting cho máy chủ chạy hệ điều hành Linux.'

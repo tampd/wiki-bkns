@@ -1,0 +1,17 @@
+claim_id: CLM-ENT-PROD-EMA-PLATFORM
+entity_id: ENT-PROD-EMAIL
+entity_type: product
+entity_name: Dịch vụ Email Hosting
+attribute: platform
+value: Zimbra
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_04
+- SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_06
+observed_at: '2026-04-07T00:05:00.791374+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tính năng / Thành phần: ''Nền tảng: Zimbra'''

@@ -7,10 +7,12 @@ original_format: docx
 page_title: BKNS_camnang_hosting_dot4
 content_hash: sha256:7e54d8d6a089c4e51cdd543766fbb84e95f439640c8d30f9d786170c6170db78
 word_count: 2921
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/hosting
 crawl_method: manual_upload
 source_date: '2026-04-05'
+skipped_reason: Duplicate of bkns-camnang-hosting-dot4-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.348338+07:00'
 ---
 
 <a id="bộ_cẩm_nang_sản_phẩm_nội_bộ_bkns"></a>__BỘ CẨM NANG SẢN PHẨM NỘI BỘ BKNS__

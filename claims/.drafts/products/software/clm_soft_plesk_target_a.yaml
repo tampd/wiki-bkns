@@ -1,0 +1,18 @@
+claim_id: CLM-SOFT-PLESK-TARGET_A
+entity_id: product.software.plesk.obsidian
+entity_type: product_offering
+entity_name: Plesk Obsidian License
+attribute: target_audience
+value: Quản trị viên máy chủ, nhà cung cấp dịch vụ hosting, và các nhà phát triển
+  web cần một giao diện để quản lý máy chủ.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-PHAN_MEM_QUAN_TRI_HOSTING_PLESK_OBSIDIAN_2026_04_06
+observed_at: '2026-04-07T00:47:54.052385+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Phù hợp với: Quản trị viên máy chủ, nhà cung cấp dịch vụ hosting,
+  và các nhà phát triển web cần một giao diện để quản lý máy chủ.'

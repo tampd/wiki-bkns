@@ -1,0 +1,16 @@
+claim_id: CLM-VBLT_5_CONNE-INCLUDED
+entity_id: vblt_5_connect_mobile_new
+entity_type: product_plan
+entity_name: vBulletin 5 Connect + Mobile Suite Bundle - New license
+attribute: included_feature
+value: Mobile Suite Bundle
+unit: null
+qualifiers: null
+source_ids:
+- SRC-BAN_QUYEN_VBULLETIN_HE_QUAN_TRI_FORUM_MANG_XA_HOI_2026_04_06
+observed_at: '2026-04-06T23:04:03.054120+07:00'
+valid_from: '2026-04-06'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng giá: | vBulletin 5 Connect + Mobile Suite Bundle | ...'

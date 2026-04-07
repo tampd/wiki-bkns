@@ -1,0 +1,17 @@
+claim_id: CLM-ENT-PROD-SSL-PROTECTE
+entity_id: ENT-PROD-SSL-COMODO-DV
+entity_type: product
+entity_name: RapidSSL Certificate
+attribute: protected_domain_type
+value: Tên miền chính
+unit: null
+qualifiers: null
+source_ids:
+- SRC-COMODO_SSL_CERTIFICATE_DV_CHUNG_CHI_XAC_THUC_TEN_MIEN_2026_04_06
+- SRC-RAPIDSSL_CERTIFICATE_CHUNG_CHI_SSL_XAC_THUC_TEN_MIEN_DV_2026_04_06
+observed_at: '2026-04-07T00:57:06.248303+07:00'
+valid_from: '2026-04-06'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng Thông số kỹ thuật: | Bảo vệ cho | Tên miền chính |'

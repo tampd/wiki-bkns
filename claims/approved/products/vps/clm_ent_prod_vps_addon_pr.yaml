@@ -1,0 +1,22 @@
+claim_id: CLM-ENT-PROD-VPS-ADDON_PR
+entity_id: ENT-PROD-VPS-SIEU-RE
+entity_type: product_line
+entity_name: VPS Siêu Tiết Kiệm
+attribute: addon_price
+value: 30000
+unit: VND
+qualifiers:
+  resource: RAM
+  billing_cycle: month
+  tax_policy: exclusive_of_vat
+source_ids:
+- SRC-VPS_SIEU_RE_WEB_2026_04_05
+observed_at: '2026-04-05T22:24:38.271099+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: approved
+risk_class: high
+compiler_note: 'Trích từ bảng giá nâng cấp: | RAM thêm | 30.000đ | và ghi chú ''(Giá
+  chính xác từ bảng giá nội bộ, chưa VAT)''. Không rõ dung lượng RAM thêm.'
+approved_at: '2026-04-07T13:00:14.283239+07:00'
+approved_by: admin-batch

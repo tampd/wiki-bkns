@@ -1,0 +1,21 @@
+claim_id: CLM-SSL-GEOTRUST_QUICKSSL_PREMIUM_SAN-DATA_CON
+entity_id: product.ssl.geotrust_quickssl_premium_san
+entity_type: product_plan
+entity_name: GeoTrust QuickSSL Premium SAN
+attribute: data_contradiction
+value: 'Contradiction on number of protected domains: ''1 Tên miền'' vs ''04 SAN cho
+  Subdomain'''
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-GEOTRUST_QUICKSSL_PREMIUM_SAN_2026_04_06
+observed_at: '2026-04-07T00:29:33.304058+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: none
+compiler_note: 'Trích từ ghi chú: ⚠️ MÂU THUẪN TRONG TRANG: Phần icon tính năng đầu
+  trang ghi bảo vệ "1 Tên miền", trong khi bảng thông số kỹ thuật ghi "Bảo vệ cho
+  04 SAN cho Subdomain".'
+approved_at: '2026-04-07T13:00:13.592952+07:00'
+approved_by: admin-batch

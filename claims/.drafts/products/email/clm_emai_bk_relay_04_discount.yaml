@@ -1,0 +1,18 @@
+claim_id: CLM-EMAI-BK-RELAY-04-DISCOUNT
+entity_id: product.email.bk-relay-04
+entity_type: product_plan
+entity_name: BK-RELAY 04
+attribute: discount_percentage
+value: 30
+unit: '%'
+qualifiers:
+  billing_cycle: year
+  duration_years: 3
+source_ids:
+- SRC-EMAIL_RELAY_WEB_2026_04_05
+observed_at: '2026-04-05T22:01:16.556434+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng giá gói BK-RELAY 04: | 3 năm (giảm 30%) |'

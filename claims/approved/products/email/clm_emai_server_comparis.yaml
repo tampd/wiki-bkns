@@ -1,0 +1,23 @@
+claim_id: CLM-EMAI-SERVER-COMPARIS
+entity_id: product.email.server
+entity_type: product
+entity_name: Email Server
+attribute: comparison
+value: BKNS quản lý IP gửi của Email Server cho khách hàng.
+unit: null
+qualifiers:
+  compared_to: Email Relay
+source_ids:
+- SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_TIN_CAY_2026_04_04
+- SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_VA_TIN_CAY_2026_04_06
+observed_at: '2026-04-07T00:23:42.980687+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ bảng So sánh Email Relay và Email Server: | EMAIL SERVER
+  | BKNS quản lý IP gửi của Email Server cho khách hàng. |'
+value_changed_from: Mail Server đặt tại trung tâm dữ liệu (DC) của BKNS.
+value_changed_at: '2026-04-07T00:23:42.980704+07:00'
+approved_at: '2026-04-07T13:00:11.434114+07:00'
+approved_by: admin-batch

@@ -1,125 +1,95 @@
 ---
 page_id: wiki.products.software.tong-quan
-title: Phần Mềm & Bản Quyền BKNS
+title: Phần Mềm & Bản Quyền BKNS — Tổng Quan Chi Tiết
 category: products/software
-updated: '2026-04-05'
+updated: '2026-04-07'
 review_state: drafted
-sensitivity: high
-compiled_from:
-- CLM-DTI_-ADVANCED-BILLING_-20260404
-- CLM-DTI_-ADVANCED-PRICE-20260404
-- CLM-DTI_-ADVANCED-SUPPORT_-20260404
-- CLM-DTI_-ADVANCED-USER_ACC-20260404
-- CLM-DTI_-BASIC-BILLING_-20260404
-- CLM-DTI_-BASIC-PRICE-20260404
-- CLM-DTI_-BASIC-SUPPORT_-20260404
-- CLM-DTI_-BASIC-USER_ACC-20260404
-- CLM-DTI_-PERMANENT-BILLING_-20260404
-- CLM-DTI_-PERMANENT-HAS_FEAT-20260404
-compile_cost_usd: 0.0585
-corrections: 0
-self_review_verdict: error
+claims_used: 75
+compile_cost_usd: 0.0295
+self_review: fail
+corrections: 1
 ---
 
-# Phần Mềm & Bản Quyền BKNS
+# Phần Mềm & Bản Quyền BKNS — Tổng Quan Chi Tiết
 
-Trang này tổng hợp thông tin về các sản phẩm phần mềm và bản quyền do BKNS cung cấp, dựa trên các dữ liệu đã được xác thực.
+## Tổng quan
 
-## Phần Mềm Đánh Giá Chuyển Đổi Số DTI
+Dịch vụ **Phần Mềm & Bản Quyền** tại BKNS cung cấp các giấy phép sử dụng (bản quyền) cho những phần mềm thiết yếu và các ứng dụng chuyên dụng, giúp khách hàng quản trị, bảo mật, tối ưu hóa và mở rộng chức năng cho hạ tầng máy chủ và website của mình.
 
-Phần Mềm Đánh Giá Chuyển Đổi Số DTI (Digital Transformation Index) là một công cụ dùng để đánh giá mức độ chuyển đổi số theo phân cấp địa phương, dựa trên bộ chỉ số DTI do Bộ Thông tin và Truyền thông ban hành (CLM-DTI_SOFTWARE-DESC-20260404, CLM-SOFT-DTI-ACRONYM-20260405, CLM-SOFT-DTI-ACRONYM_-20260405).
+Các sản phẩm này giải quyết những bài toán cốt lõi trong vận hành hệ thống số:
+*   **Quản trị máy chủ:** Đơn giản hóa việc quản lý hosting, VPS, máy chủ với giao diện đồ họa trực quan thông qua các control panel như cPanel, Plesk, DirectAdmin.
+*   **Tăng tốc website:** Cải thiện hiệu năng và khả năng chịu tải của máy chủ web với LiteSpeed Web Server.
+*   **Bảo mật toàn diện:** Bảo vệ máy chủ khỏi mã độc, tấn công và các truy cập trái phép bằng giải pháp an ninh dựa trên AI như Imunify360.
+*   **Tự động hóa & Mở rộng:** Dễ dàng cài đặt hàng trăm ứng dụng web với Softaculous hoặc xây dựng các nền tảng cộng đồng mạnh mẽ với vBulletin.
+*   **Đánh giá chiến lược:** Cung cấp công cụ đo lường và đánh giá mức độ chuyển đổi số cho các cơ quan và doanh nghiệp với Phần mềm DTI.
 
-Giải pháp này phù hợp với các cơ quan, đơn vị, tỉnh thành cần một công cụ để theo dõi, báo cáo, và so sánh tiến độ chuyển đổi số (CLM-DTI_SOFTWARE-TARGET_C-20260404).
+## Các Sản Phẩm & Dịch Vụ Chính
 
-**Các đặc điểm chính:**
-*   Tuân thủ theo tiêu chuẩn của Bộ TT&TT (CLM-SOFT-DTI-COMPLIAN-20260405).
-*   Cung cấp tính năng bản đồ số liệu trong tỉnh (CLM-DTI_SOFTWARE-HAS_FEAT-20260404).
-*   Đề xuất lộ trình chuyển đổi số cho đơn vị (CLM-SOFT-DTI-FEATURE-20260405).
+BKNS cung cấp một danh mục đa dạng các phần mềm và bản quyền, đáp ứng nhiều nhu cầu khác nhau.
 
-### Bảng giá và Tính năng các gói
+### 1. Phần Mềm Quản Trị Hosting (Control Panel)
 
-| Tính năng | Gói Cơ bản | Gói Nâng cao | Gói Vĩnh viễn |
+| Phần Mềm | Mô Tả | Đối Tượng Phù Hợp | Nền Tảng Hỗ Trợ |
 | :--- | :--- | :--- | :--- |
-| **Giá** | 650.000.000 VNĐ (CLM-DTI_-BASIC-PRICE-20260404) | 910.000.000 VNĐ (CLM-DTI_-ADVANCED-PRICE-20260404) | 1.910.000.000 VNĐ (CLM-DTI_-PERMANENT-PRICE-20260404) |
-| **Thời gian sử dụng** | 1 năm (CLM-DTI_-BASIC-BILLING_-20260404) | 1 năm (CLM-DTI_-ADVANCED-BILLING_-20260404) | Vĩnh viễn (CLM-DTI_-PERMANENT-BILLING_-20260404) |
-| **Số lượng tài khoản** | 200 tài khoản (CLM-DTI_-BASIC-USER_ACC-20260404) | Không giới hạn (CLM-DTI_-ADVANCED-USER_ACC-20260404) | Không giới hạn (CLM-DTI_-PERMANENT-USER_ACC-20260404) |
-| **Hỗ trợ kỹ thuật** | 24/7 (CLM-DTI_-BASIC-SUPPORT_-20260404) | 24/7 (CLM-DTI_-ADVANCED-SUPPORT_-20260404) | 24/7 trong vòng 3 năm (CLM-DTI_-PERMANENT-SUPPORT_-20260404) |
-| **Tính năng riêng** | | | Cấu hình và phát triển theo yêu cầu của Tỉnh (CLM-DTI_-PERMANENT-HAS_FEAT-20260404) |
+| **cPanel/WHM** | Phần mềm quản lý hosting phổ biến cho máy chủ Linux với giao diện đồ họa trực quan, dễ sử dụng. | Cá nhân và doanh nghiệp cần công cụ quản lý hosting đơn giản. | Linux |
+| **Plesk Obsidian** | Phần mềm quản trị hosting cho VPS và máy chủ riêng, nổi bật với khả năng hỗ trợ cả Linux và Windows. | Quản trị viên máy chủ, nhà cung cấp hosting, nhà phát triển web. | Linux, Windows |
+| **DirectAdmin** | Giải pháp control panel có giao diện đồ họa, được xem là một sự thay thế hiệu quả cho cPanel. | Đơn vị cung cấp dịch vụ chuyên nghiệp, thiết kế web, kinh doanh Hosting. | Linux (CentOS, Rocky Linux, AlmaLinux, Ubuntu, Debian) |
 
-*Nguồn: [https://www.bkns.vn/phan-mem-danh-gia-chuyen-doi-so-dti.html](https://www.bkns.vn/phan-mem-danh-gia-chuyen-doi-so-dti.html) (CLM-SOFT-DTI-SOURCE_U-20260405)*
-*Dữ liệu crawl ngày: 2026-04-05T14:25:00+07:00 (CLM-SOFT-DTI-DATA_CRA-20260405)*
+### 2. Phần Mềm Tăng Tốc & Tối Ưu Web Server
 
----
+*   **LiteSpeed Web Server:** Là một web server hiệu năng cao với kiến trúc hướng sự kiện, giúp giảm tải CPU và có khả năng xử lý hàng ngàn kết nối đồng thời. BKNS cung cấp cả phiên bản thương mại (LiteSpeed Enterprise) và phiên bản mã nguồn mở (OpenLiteSpeed) phù hợp cho các trang web không yêu cầu tính năng doanh nghiệp. LiteSpeed hỗ trợ các giao thức hiện đại như HTTP/3 và QUIC.
 
-## Các Phần Mềm & Bản Quyền Khác
+### 3. Phần Mềm Bảo Mật
 
-### cPanel/WHM
+*   **Imunify360:** Là một giải pháp bảo mật toàn diện dành cho server, được xây dựng dựa trên công nghệ Trí tuệ nhân tạo (AI) để tự động phát hiện, ngăn chặn các mối đe dọa như mã độc và các cuộc tấn công từ hacker. Phần mềm phù hợp cho các cá nhân, doanh nghiệp quản trị server trên các hệ điều hành như Ubuntu.
 
-cPanel/WHM là control panel hosting phổ biến nhất thế giới (CLM-ENT-PROD-SOF-DESC-20260405), thuộc danh mục phần mềm (CLM-SOFT-BKNS_CPANEL_WHM-CATEGORY-20260404).
+### 4. Hệ Điều Hành Chuyên Dụng
 
-**Bảng giá gói lẻ:**
-| Gói | Đối tượng | Giá/tháng |
+*   **CloudLinux OS:** Là hệ điều hành dựa trên CentOS/RHEL, được thiết kế chuyên biệt cho môi trường hosting chia sẻ, giúp tăng cường sự ổn định, bảo mật và cô lập tài nguyên giữa các tài khoản người dùng trên cùng một máy chủ.
+
+### 5. Tiện Ích & Nền Tảng Chuyên Biệt
+
+*   **Softaculous:** Là trình cài đặt ứng dụng tự động, cho phép người dùng cài đặt hơn 400 ứng dụng và tập lệnh phổ biến (như WordPress, Joomla, Magento) chỉ bằng một cú nhấp chuột. Một tính năng nổi bật là Staging, cho phép tạo môi trường thử nghiệm an toàn.
+*   **vBulletin:** Là một hệ quản trị nội dung (CMS) mạnh mẽ, chuyên dụng để xây dựng và quản lý các diễn đàn trực tuyến (forum) và mạng xã hội. BKNS cung cấp các gói bản quyền chính hãng, phù hợp cho các cá nhân và tổ chức muốn tạo một cộng đồng trực tuyến.
+
+### 6. Giải Pháp Đánh Giá Chuyển Đổi Số
+
+*   **Phần Mềm Đánh Giá Chuyển Đổi Số DTI:** Là công cụ dùng để đánh giá mức độ chuyển đổi số theo phân cấp địa phương (dựa trên bộ chỉ số DTI của Bộ TTTT) hoặc cho doanh nghiệp. Phần mềm giúp theo dõi, báo cáo, so sánh tiến độ và đề xuất lộ trình chuyển đổi số.
+
+| Gói Dịch Vụ | Tính Năng Nổi Bật | Hỗ Trợ |
 | :--- | :--- | :--- |
-| 5 Account (CLM-SOFT-CPANEL-ACCOUNT_-20260405) | VPS (CLM-SOFT-CPANEL-TARGET_P-20260405) | 697.000đ (CLM-SOFT-CPANEL-PRICE-20260405) |
+| **Gói Cơ bản** | Bản đồ số liệu trong tỉnh | 24/7 |
+| **Gói Nâng cao** | Bản đồ số liệu trong tỉnh | 24/7 |
+| **Gói Vĩnh viễn** | Cấu hình và phát triển theo yêu cầu của Tỉnh | 24/7 trong vòng 3 năm |
 
-*Nguồn: [https://www.bkns.vn/phan-mem/cpanel-whm.html](https://www.bkns.vn/phan-mem/cpanel-whm.html) (CLM-SOFT-BKNS_CPANEL_WHM-SOURCE_U-20260404)*
-*Dữ liệu crawl ngày: 2026-04-05T14:25:00+07:00 (CLM-ENT-PROD-SOF-CRAWL_TI-20260405)*
+## Đối Tượng Phù Hợp
 
-### LiteSpeed Web Server - Web Server Hiệu Suất Cao
+*   **Quản trị viên máy chủ & Nhà cung cấp hosting:** Cần các công cụ control panel (cPanel, Plesk, DirectAdmin), hệ điều hành chuyên dụng (CloudLinux OS), và bảo mật (Imunify360) để quản lý và bảo vệ hạ tầng.
+*   **Nhà phát triển & Đơn vị thiết kế web:** Tận dụng Softaculous để triển khai nhanh ứng dụng và các control panel để quản lý môi trường phát triển cho khách hàng.
+*   **Doanh nghiệp & Tổ chức:** Xây dựng cộng đồng với vBulletin hoặc sử dụng phần mềm DTI để đánh giá và hoạch định chiến lược chuyển đổi số.
+*   **Các cơ quan, đơn vị, tỉnh thành:** Là đối tượng chính của Phần mềm DTI, cần một công cụ để theo dõi, báo cáo và so sánh tiến độ chuyển đổi số.
 
-LiteSpeed là một web server hiệu suất cao (CLM-ENT-PROD-SOF-PRODUCT_-20260405, CLM-ENT-PROD-SOF-TAGLINE-20260405) được dùng để thay thế Apache với tốc độ nhanh hơn nhiều lần (CLM-ENT-PROD-SOF-IS_REPLA-20260405, CLM-ENT-PROD-SOF-PERFORMA-20260405).
+## Điểm Nổi Bật (USP)
 
-*   **Lợi ích:** Giảm tải CPU server (CLM-ENT-PROD-SOF-BENEFIT-20260405).
-*   **Tương thích:** 100% với .htaccess của Apache (CLM-ENT-PROD-SOF-COMPATIB-20260405).
-*   **Hỗ trợ giao thức:** HTTP/3 và QUIC (CLM-ENT-PROD-SOF-PROTOCOL-20260405).
+*   **Danh mục đa dạng:** Cung cấp đầy đủ các phần mềm từ quản trị, bảo mật, tối ưu hiệu năng đến các ứng dụng chuyên ngành.
+*   **Giải pháp hiệu năng cao:** Cung cấp LiteSpeed Web Server, giúp website chịu tải tốt hơn và giảm chi phí tài nguyên phần cứng.
+*   **Bảo mật bằng AI:** Đi đầu với giải pháp Imunify360, sử dụng Trí tuệ nhân tạo để bảo vệ server một cách chủ động.
+*   **Hỗ trợ chuyên nghiệp:** Đi kèm dịch vụ hỗ trợ cài đặt và tối ưu miễn phí cho một số sản phẩm (ví dụ: DirectAdmin Standard).
+*   **Linh hoạt trên nhiều nền tảng:** Hỗ trợ nhiều hệ điều hành phổ biến, đặc biệt là Plesk có thể hoạt động trên cả Linux và Windows.
 
-*Nguồn: [https://www.bkns.vn/phan-mem/litespeed.html](https://www.bkns.vn/phan-mem/litespeed.html) (CLM-ENT-PROD-SOF-SOURCE_U-20260405)*
+## Khi Nào Nên Chọn Phần Mềm & Bản Quyền?
 
-### DirectAdmin
+Bạn nên lựa chọn các dịch vụ trong danh mục này khi:
+*   Bạn đã sở hữu [Cloud VPS BKNS](../vps/index.md) hoặc [Máy Chủ BKNS](../server/index.md) và cần các công cụ chuyên nghiệp để quản lý, bảo mật và tối ưu hóa.
+*   Các gói [Web Hosting BKNS](../hosting/index.md) tích hợp sẵn chưa đáp ứng được yêu cầu tùy chỉnh sâu về control panel hoặc các phần mềm chuyên dụng khác.
+*   Bạn là nhà cung cấp dịch vụ hosting, cần trang bị bản quyền phần mềm cho hạ tầng của mình để kinh doanh.
+*   Bạn cần triển khai nhanh chóng các ứng dụng web phức tạp hoặc xây dựng các nền tảng đặc thù như diễn đàn, mạng xã hội.
 
-DirectAdmin là phần mềm quản trị server trên Linux (CLM-ENT-PROD-SOF-CATEGORY-20260405).
+## Sản Phẩm Liên Quan
 
-**Cấu hình tối thiểu:**
-*   **CPU:** 1 Core (CLM-ENT-PROD-SOF-MIN_CPU_-20260405).
-*   **RAM:** 1 GB (CLM-ENT-PROD-SOF-MIN_RAM-20260405).
-*   **Hệ điều hành hỗ trợ:** Debian (CLM-ENT-PROD-SOF-SUPPORTE-20260405).
-
-*Dữ liệu crawl ngày: 2026-04-05T14:25:00+07:00 (CLM-ENT-PROD-SOF-CRAWL_DA-20260405)*
-
-### Softaculous - Trình Cài Đặt Ứng Dụng Tự Động
-
-Softaculous là một trình cài đặt ứng dụng tự động (Auto Installer) cho hơn 400 script/ứng dụng web, cho phép người dùng cài đặt chỉ bằng một cú nhấp chuột (CLM-ENT-PROD-SOF-DESC-20260404, CLM-SOFT-SOFTACULOUS-DESC-20260405, CLM-SOFT-SOFTACULOUS-PRODUCT_-20260405).
-
-*   **Đối tượng:** Quản trị viên máy chủ, người dùng hosting/VPS muốn đơn giản hóa việc cài đặt mã nguồn mở như WordPress, Joomla, Magento... (CLM-ENT-PROD-SOF-TARGET_A-20260404, CLM-SOFT-SOFTACULOUS-SUPPORTE-20260405).
-*   **Tính năng:** Hỗ trợ Staging environment (CLM-SOFT-SOFTACULOUS-FEATURE-20260405).
-*   **Tương thích:** Hoạt động trên nhiều control panel như cPanel, Plesk, DirectAdmin (CLM-ENT-PROD-SOF-FEATURE-20260404).
-*   **Yêu cầu:** Cần có máy chủ hoặc VPS đã cài đặt một trong các control panel được hỗ trợ (CLM-ENT-PROD-SOF-REQUIREM-20260404).
-*   **Giá:** Giá bản quyền không được công bố và cần liên hệ trực tiếp (CLM-ENT-PROD-SOF-PRICING_-20260404).
-
-*Nguồn: [https://www.bkns.vn/phan-mem/softaculous.html](https://www.bkns.vn/phan-mem/softaculous.html) (CLM-META-SOFTACULOUS-SOURCE_U-20260405)*
-*Dữ liệu crawl ngày: 2026-04-05T14:25:00+07:00 (CLM-META-SOFTACULOUS-CRAWL_TI-20260405)*
-
-### Imunify360 - Giải Pháp Bảo Mật Server Bằng AI
-
-Imunify360 là giải pháp bảo mật server toàn diện, sử dụng trí tuệ nhân tạo (AI) để phát hiện và ngăn chặn các mối đe dọa (CLM-SOFT-IMUNIFY360-DESC-20260405, CLM-SOFT-IMUNIFY360-PRODUCT_-20260405).
-
-*   **Chính sách bản quyền:** Tính theo IP và có thể thay đổi IP (CLM-SOFT-IMUNIFY360-LICENSIN-20260405).
-*   **Hệ điều hành hỗ trợ:** Ubuntu 16.04 (CLM-SOFT-IMUNIFY360-SUPPORTE-20260405).
-*   **Control Panel tương thích:** DirectAdmin (CLM-SOFT-IMUNIFY360-COMPATIB-20260405).
-
-### Plesk Obsidian
-
-Plesk Obsidian là một control panel premium (CLM-SOFT-PLESK_OBSIDIAN-PRODUCT_-20260405).
-
-*   **Tính năng nổi bật:** Security Advisor (CLM-SOFT-PLESK_OBSIDIAN-FEATURE-20260405).
-*   **Hệ điều hành hỗ trợ:** Linux và Windows (CLM-SOFT-PLESK_OBSIDIAN-SUPPORTE-20260405).
-
-*Nguồn: [https://www.bkns.vn/phan-mem/plesk-obsidian.html](https://www.bkns.vn/phan-mem/plesk-obsidian.html) (CLM-SOFT-PLESK_OBSIDIAN-SOURCE_U-20260405)*
-*Dữ liệu crawl ngày: 2026-04-05T14:25:00+07:00 (CLM-SOFT-PLESK_OBSIDIAN-CRAWL_DA-20260405)*
-
-### Bản quyền vBulletin
-
-*   **Đặc điểm:** Giao diện có hỗ trợ Mobile responsive (CLM-ENT-PROD-SOF-FEATURE-20260405).
+*   [Web Hosting BKNS](../hosting/index.md)
+*   [Cloud VPS BKNS](../vps/index.md)
+*   [Máy Chủ BKNS](../server/index.md)
 
 ---
-Compiled by BKNS Wiki Bot • 2026-04-05
+*Compiled by BKNS Wiki Bot*

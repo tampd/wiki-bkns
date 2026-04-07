@@ -8,10 +8,12 @@ original_format: docx
 page_title: Email Relay - Giải Pháp Gửi Email An Toàn và Tin Cậy
 content_hash: sha256:8d0bb4f20e27264ef2d5176145d6ddd06d84cc14e2f22cdd8986ebbb23e43402
 word_count: 1019
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/email
 crawl_method: manual_upload
 source_date: '2026-02-08'
+skipped_reason: Duplicate of email-relay-giai-phap-gui-email-an-toan-va-tin-cay-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.416870+07:00'
 ---
 
 ═══ Email Relay

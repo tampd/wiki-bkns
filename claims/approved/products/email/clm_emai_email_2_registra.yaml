@@ -1,0 +1,18 @@
+claim_id: CLM-EMAI-EMAIL_2-REGISTRA
+entity_id: bkns.email_hosting.email_2
+entity_type: product_plan
+entity_name: EMAIL 2
+attribute: registration_url
+value: https://my.bkns.net/?cmd=cart&action=add&id=264
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_06
+observed_at: '2026-04-07T00:05:00.890347+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: Trích từ bảng giá, dòng Đăng ký của gói EMAIL 2.
+approved_at: '2026-04-07T13:00:11.123699+07:00'
+approved_by: admin-batch

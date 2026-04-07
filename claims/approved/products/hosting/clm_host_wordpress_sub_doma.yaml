@@ -1,0 +1,18 @@
+claim_id: CLM-HOST-WORDPRESS-SUB_DOMA
+entity_id: product.hosting.wordpress.wpcp01
+entity_type: product_plan
+entity_name: WPCP01
+attribute: sub_domains
+value: 5
+unit: subdomains
+qualifiers: {}
+source_ids:
+- SRC-HOSTING_WORDPRESS_TOC_O_CAO_BANG_GIA_GIAI_PHAP_TOI_UU_S_2026_04_06
+observed_at: '2026-04-07T00:40:11.162260+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ bảng giá: | Sub Domains | 5 |'
+approved_at: '2026-04-07T13:00:12.717144+07:00'
+approved_by: admin-batch

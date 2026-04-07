@@ -1024,3 +1024,718 @@ entities:
   type: product_plan
   status: draft
   description: Auto-discovered from extraction
+- entity_id: ENT-PROD-SOFTWARE-001
+  name: Bản Quyền CloudLinux OS
+  type: product
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.software.cpanel_whm
+  name: Bản quyền cPanel/WHM
+  type: product
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: ENT-PROD-SOFTWARE-VBLT
+  name: Bản quyền vBulletin
+  type: product
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: vblt_5_connect_new
+  name: vBulletin 5 Connect - New license
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: vblt_5_connect_upgrade
+  name: vBulletin 5 Connect - Upgrade
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: vblt_5_connect_mobile_new
+  name: vBulletin 5 Connect + Mobile Suite Bundle - New license
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: vblt_5_connect_mobile_upgrade
+  name: vBulletin 5 Connect + Mobile Suite Bundle - Upgrade
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: vblt_cloud_monthly
+  name: vBulletin Cloud - Monthly
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: ENT-PROD-DOMAIN.COM
+  name: .com
+  type: product_variant
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: ENT-PROD-DOMAIN.NET
+  name: .net
+  type: product_variant
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: ENT-PROD-DOMAIN.ORG
+  name: .org
+  type: product_variant
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: ENT-PROD-DOMAIN.INFO
+  name: .info
+  type: product_variant
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: ENT-PROD-DOMAIN.ID
+  name: .id
+  type: product_variant
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: ENT-PROD-DOMAIN.BIZ
+  name: .biz
+  type: product_variant
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: ENT-PROD-DOMAIN.ASIA
+  name: .asia
+  type: product_variant
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.software.directadmin
+  name: Bản quyền phần mềm DirectAdmin
+  type: product
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.software.directadmin.lite
+  name: DirectAdmin Lite
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.software.directadmin.standard
+  name: DirectAdmin Standard
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.email_hosting.email_3
+  name: EMAIL 3
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.email.hosting.email_2
+  name: EMAIL 2
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.email.hosting.email_3
+  name: EMAIL 3
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.hosting.bkcp01
+  name: BKCP01
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: ENT-PROD-DOMAIN-REGISTRY-LOCK
+  name: Bảo vệ tên miền cấp cao nhất (Registry Lock)
+  type: product
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: ENT-PROD-DOMAIN-LOCK
+  name: Khóa tên miền (Domain Lock)
+  type: product
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: ENT-PROD-DOMAIN-2FA
+  name: Xác thực 2 bước (2FA)
+  type: product
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.vps.bkns.amd
+  name: CLOUD VPS AMD (HIỆU NĂNG CAO)
+  type: product_line
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.vps.bkns.amd.amd1
+  name: AMD 1
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.email_hosting.bkns.goi_1
+  name: Email Hosting Gói 1
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.email_hosting.bkns.goi_2
+  name: Email Hosting Gói 2
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.email_hosting.bkns.goi_3
+  name: Email Hosting Gói 3
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.email_hosting.bkns.goi_4
+  name: Email Hosting Gói 4
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.hosting.bkns.platinum
+  name: Platinum Web Hosting
+  type: product_family
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.hosting.bkns.platinum.1
+  name: Platinum 1
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.hosting.bkns.platinum.2
+  name: Platinum 2
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.hosting.bkns.platinum.3
+  name: Platinum 3
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.hosting.bkns.platinum.4
+  name: Platinum 4
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.ssl.geotrust_quickssl_premium_wildcard
+  name: GeoTrust QuickSSL Premium Wildcard
+  type: product
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: ENT-PROD-SSL-002
+  name: GeoTrust True BusinessID EV (FLEX)
+  type: ENT-PROD-SSL
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: ENT-PROD-SSL-GEOTRUST-TRUE-BUSINESSID-WILDCARD
+  name: GeoTrust True BusinessID Wildcard
+  type: product
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: ENT-PROD-SSL-INSTANTSSL-OV
+  name: InstantSSL (OV)
+  type: product
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: ENT-PROD-MEETING-001
+  name: Cloud Meeting (E-meeting)
+  type: product
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.vps.bkns_cloud_amd
+  name: Cloud VPS AMD
+  type: product
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: ENT-PROD-VPS.bk_misa
+  name: BK MISA
+  type: product
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.dedicated_server
+  name: Máy Chủ Vật Lý BKNS
+  type: product_line
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.dedicated_server.mccb01
+  name: MCCB01
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.dedicated_server.mccb02
+  name: MCCB02
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.dedicated_server.addon.sas_600g
+  name: Thêm ổ cứng SAS 600G 2.5″ 6Gb ST600MM0006
+  type: product_addon
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.dedicated_server.addon.sas_900g
+  name: Thêm ổ SAS ST900MM0006 900G HDD 2.5″
+  type: product_addon
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.dedicated_server.addon.sas_1.2t
+  name: 'Thêm ổ SAS 1.2T 10K Ổ 2.5 Model: HUC101812CSS200'
+  type: product_addon
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.dedicated_server.addon.ssd_sm863a_240g
+  name: SSD Samsung Enterprise SM863a 240GB
+  type: product_addon
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.dedicated_server.addon.ssd_enterprise_480g
+  name: SSD Enterprise 400G /480G
+  type: product_addon
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.dedicated_server.addon.ssd_pm863_960g
+  name: SSD Samsung Enterprise PM863 960GB
+  type: product_addon
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.email.mini_email_01
+  name: MINI EMAIL 01
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.email.mini_email_02
+  name: MINI EMAIL 02
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.email.mini_email_03
+  name: MINI EMAIL 03
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.email.mini_email_04
+  name: MINI EMAIL 04
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.email.es_01
+  name: ES 01
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.email.es_02
+  name: ES 02
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.email.es_03
+  name: ES 03
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.email.es_04
+  name: ES 04
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.email.bkns_cloud_server
+  name: Cloud Email Server
+  type: product
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.email.bkns_cloud_mini_01
+  name: MINI EMAIL 01
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.email.bkns_cloud_mini_02
+  name: MINI EMAIL 02
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.email.bkns_cloud_mini_03
+  name: MINI EMAIL 03
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.email.bkns_cloud_mini_04
+  name: MINI EMAIL 04
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.email.bkns_cloud_es_01
+  name: ES 01
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.email.bkns_cloud_es_02
+  name: ES 02
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.email.bkns_cloud_es_03
+  name: ES 03
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.email.bkns_cloud_es_04
+  name: ES 04
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: ENT-PROD-VPS.seo_01
+  name: SEO 01
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: ENT-PROD-VPS.seo_02
+  name: SEO 02
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: bkns.email_hosting.email_1
+  name: EMAIL 1
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: bkns.email_hosting.email_2
+  name: EMAIL 2
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: bkns.email_hosting.email_3
+  name: EMAIL 3
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: bkns.email_hosting.email_4
+  name: EMAIL 4
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.hosting.windows.bksw01
+  name: BKSW01
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: ENT-PROD-MANAGED-SERVER
+  name: Dịch vụ Quản trị Máy chủ Trọn gói
+  type: product
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: ENT-PROD-MANAGED-SERVER-BASIC
+  name: Quản trị Máy chủ - Cơ bản
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: ENT-PROD-MANAGED-SERVER-ADVANCED
+  name: Quản trị Máy chủ - Nâng cao
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.colocation.bkns
+  name: Thuê Chỗ Đặt Máy Chủ (Colocation)
+  type: product
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.vps.bkns_cloud_vps_ssd
+  name: Thuê Cloud VPS SSD
+  type: product_offering
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.vps.bkns_cloud_vps_ssd_vm01
+  name: CLOUD-VM01
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.vps.bkns_cloud_vps_ssd_vm02
+  name: CLOUD-VM02
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.vps.bkns_cloud_vps_ssd_vm03
+  name: CLOUD-VM03
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: vps.gia_re.vps-mm01
+  name: VPS-MM01
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.vps.vpstk1
+  name: VPSTK1
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.vps.vpstk2
+  name: VPSTK2
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.vps.vpstk3
+  name: VPSTK3
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.vps.vpstk4
+  name: VPSTK4
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.vps.vpstk5
+  name: VPSTK5
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.vps.vpstk6
+  name: VPSTK6
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.vps.vpstk7
+  name: VPSTK7
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.email.email_relay
+  name: Email Relay
+  type: product
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.email.email_relay.bk_relay01
+  name: BK-RELAY01
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.email.email_relay.bk_relay02
+  name: BK-RELAY02
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.email.email_relay.bk_relay03
+  name: BK-RELAY03
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.email.email_relay.bk_relay04
+  name: BK-RELAY04
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.email.email_server
+  name: Email Server
+  type: product
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.email.relay.bk_relay01
+  name: BK-RELAY01
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.email.relay.bk_relay02
+  name: BK-RELAY02
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.email.relay.bk_relay03
+  name: BK-RELAY03
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.email.relay.bk_relay04
+  name: BK-RELAY04
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.ssl.essentialssl_dv
+  name: EssentialSSL (DV)
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.ssl.geotrust_quickssl_premium
+  name: GeoTrust QuickSSL Premium
+  type: product
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: ENT-PROD-SSL-GEOTRUST-TRUE-BUSINESSID-MULTI-DOMAIN-WILDCARD
+  name: GeoTrust True BusinessID Multi-Domain Wildcard
+  type: product
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.ssl.geotrust_true_businessid_ev_multi_domain
+  name: GeoTrust True BusinessID with EV Multi-Domain
+  type: product
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.hosting.bkh01
+  name: BKH01
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.hosting.bkh02
+  name: BKH02
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.hosting.bkh03
+  name: BKH03
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.hosting.bkh04
+  name: BKH04
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.hosting.free_plan
+  name: Hosting Miễn phí
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.hosting.wordpress.wpcp02
+  name: WPCP02
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.ssl.instantssl_pro_ov
+  name: InstantSSL Pro (OV)
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.software.litespeed_web_server
+  name: LiteSpeed Web Server
+  type: product_software
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.software.litespeed_web_server.enterprise
+  name: LiteSpeed Enterprise
+  type: product_software_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.software.dti_evaluation
+  name: Phần Mềm Đánh Giá Chuyển Đổi Số DTI
+  type: product
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.software.dti_evaluation.basic
+  name: Gói Cơ bản
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.software.dti_evaluation.advanced
+  name: Gói Nâng cao
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.software.dti_evaluation.perpetual
+  name: Gói Vĩnh viễn
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.software.plesk.obsidian
+  name: Plesk Obsidian License
+  type: product_offering
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.software.plesk.vps.web_admin
+  name: Plesk Obsidian - Web Admin Edition (10 Domains) – VPS
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.software.plesk.vps.web_pro
+  name: Plesk Obsidian - Web Pro Edition (30 Domains) – VPS
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.software.plesk.vps.web_host
+  name: Plesk Obsidian - Web Host Edition (Unlimited Domains) – VPS
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.software.plesk.vps.developer_pack
+  name: Plesk Obsidian - Developer Pack – VPS
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.software.plesk.dedicated.web_admin
+  name: Plesk Obsidian - Web Admin Edition (10 Domains) - Dedicated
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.software.plesk.dedicated.web_pro
+  name: Plesk Obsidian - Web Pro Edition (30 Domains) - Dedicated
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.software.plesk.dedicated.web_host
+  name: Plesk Obsidian - Web Host Edition (Unlimited Domains) - Dedicated
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.software.plesk.dedicated.developer_pack
+  name: Plesk Obsidian - Developer Pack - Dedicated
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.software.plesk.edition.web_admin
+  name: Plesk Obsidian - Web Admin Edition
+  type: product_edition
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.software.plesk.edition.web_pro
+  name: Plesk Obsidian - Web Pro Edition
+  type: product_edition
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.software.plesk.edition.web_host
+  name: Plesk Obsidian - Web Host Edition
+  type: product_edition
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: ENT-PROD-SSL-POSITIVESSL-DV
+  name: PositiveSSL (DV)
+  type: product
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: ENT-PROD-SSL-COMODO-POSITIVESSL-MULTI-DOMAIN-DV
+  name: PositiveSSL Multi-Domain (DV)
+  type: product
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: bkns.ssl.positivessl_wildcard_dv
+  name: PositiveSSL Wildcard (DV)
+  type: product
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: ENT-PROD-SSL-RAPIDSSL-WILDCARD
+  name: RapidSSL Wildcard Certificate
+  type: product
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: bkns.vps.storage.vps1
+  name: STORAGE VPS 1
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: bkns.vps.storage.vps2
+  name: STORAGE VPS 2
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: bkns.vps.storage.vps3
+  name: STORAGE VPS 3
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: ENT-PROD-SERVER
+  name: Server (Máy chủ)
+  type: product_category
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: ENT-PROD-VPS-CLOUD
+  name: Cloud VPS
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: product.domain
+  name: Tên miền
+  type: product_line
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: ENT-PROD-VPS.n8n_ai
+  name: VPS N8N – AI
+  type: product
+  status: draft
+  description: Auto-discovered from extraction
+- entity_id: ENT-PROD-VPS.n8n_ai.n8n_ai01
+  name: N8N-AI01
+  type: product_plan
+  status: draft
+  description: Auto-discovered from extraction

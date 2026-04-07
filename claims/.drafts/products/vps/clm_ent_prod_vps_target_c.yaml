@@ -1,0 +1,22 @@
+claim_id: CLM-ENT-PROD-VPS-TARGET_C
+entity_id: ENT-PROD-VPS
+entity_type: product_offering
+entity_name: VPS Siêu Rẻ
+attribute: target_customer
+value: Người dùng cần một VPS với chi phí tối ưu, hiệu năng cơ bản cho các dự án nhỏ
+  hoặc cá nhân.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-VPS_N8N_AI_DICH_VU_TU_ONG_HOA_QUY_TRINH_TAI_BKNS_2026_04_04
+- SRC-DICH_VU_VPS_SIEU_TIET_KIEM_VPS_SIEU_RE_TAI_BKNS_2026_04_06
+observed_at: '2026-04-07T00:18:36.235952+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tóm tắt nhanh: ''Phù hợp với: Người dùng cần một VPS
+  với chi phí tối ưu, hiệu năng cơ bản cho các dự án nhỏ hoặc cá nhân.'''
+value_changed_from: Người dùng cần triển khai các quy trình tự động hóa (workflow
+  automation) một cách nhanh chóng, an toàn và ổn định trên một môi trường riêng biệt.
+value_changed_at: '2026-04-07T00:18:36.235977+07:00'

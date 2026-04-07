@@ -1,0 +1,20 @@
+claim_id: CLM-ENT-PROD-BAC-SALES_PR
+entity_id: ENT-PROD-BACKUP-001
+entity_type: product
+entity_name: Dịch vụ Backup Dữ liệu
+attribute: sales_process:contact_method
+value: Liên hệ với BKNS qua hotline, email hoặc các kênh liên lạc khác
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_BACKUP_DU_LIEU_SAO_LUU_VA_PHUC_HOI_DU_LIEU_UY_TIN_2026_04_04
+- SRC-DICH_VU_BACKUP_DU_LIEU_SAO_LUU_VA_PHUC_HOI_DU_LIEU_UY_TIN_2026_04_06
+observed_at: '2026-04-06T23:56:23.777912+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ Quy trình đăng ký / Triển khai / Kích hoạt: ''Khách hàng
+  có nhu cầu cần liên hệ với BKNS qua hotline, email hoặc các kênh liên lạc khác.'''
+value_changed_from: Cần liên hệ để nhận báo giá
+value_changed_at: '2026-04-06T23:56:23.777946+07:00'

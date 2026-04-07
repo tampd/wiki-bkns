@@ -1,0 +1,16 @@
+claim_id: CLM-HOST-BKSW05_PLUS-DOMAIN_L
+entity_id: product.hosting.bksw05_plus
+entity_type: product_plan
+entity_name: BKSW05+
+attribute: domain_limit
+value: 15
+unit: domain
+qualifiers: {}
+source_ids:
+- SRC-WINDOWS_HOSTING_WEB_2026_04_05
+observed_at: '2026-04-05T22:25:30.888425+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Bảng giá gói BKSW05+: ''| Domain | 15 |'''

@@ -1,0 +1,17 @@
+claim_id: CLM-VPS-SIEU_RE-ALTERNAT
+entity_id: vps.sieu_re
+entity_type: product
+entity_name: VPS Siêu Rẻ
+attribute: alternative_name
+value: VPS Siêu Tiết Kiệm
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_VPS_SIEU_TIET_KIEM_VPS_SIEU_RE_TAI_BKNS_2026_04_04
+observed_at: '2026-04-04T20:55:44.979373+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: VPS Siêu Rẻ (hay VPS Siêu Tiết Kiệm) là dịch vụ máy chủ ảo được thiết
+  kế để tối ưu hiệu năng với chi phí thấp.

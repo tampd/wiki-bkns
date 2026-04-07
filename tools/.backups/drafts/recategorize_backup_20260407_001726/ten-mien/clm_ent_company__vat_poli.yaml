@@ -1,0 +1,16 @@
+claim_id: CLM-ENT-COMPANY--VAT_POLI
+entity_id: ENT-COMPANY-001
+entity_type: company
+entity_name: BKNS
+attribute: vat_policy
+value: excluded
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-BANG_GIA_TEN_MIEN_VN_WEB_2026_04_05
+observed_at: '2026-04-05T21:43:54.960071+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Ghi chú: - Giá chưa bao gồm VAT'

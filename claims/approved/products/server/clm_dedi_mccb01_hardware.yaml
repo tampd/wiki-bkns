@@ -1,0 +1,19 @@
+claim_id: CLM-DEDI-MCCB01-HARDWARE
+entity_id: product.dedicated_server.mccb01
+entity_type: product_plan
+entity_name: MCCB01
+attribute: hardware_model
+value: Dell R620 / HPDL360 G8
+unit: ''
+qualifiers: {}
+source_ids:
+- SRC-DANH_SACH_GOI_SAN_PHAM_MAY_CHU_BKNS_2026_04_06
+observed_at: '2026-04-06T23:52:20.182469+07:00'
+valid_from: '2026-04-06'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ bảng thông số Gói MCCB01: | Server | Dell R620 / HPDL360
+  G8 |'
+approved_at: '2026-04-07T13:00:09.752691+07:00'
+approved_by: admin-batch

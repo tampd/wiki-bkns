@@ -1,0 +1,17 @@
+claim_id: CLM-EMAI-EMAIL_4-PRICE
+entity_id: bkns.email_hosting.email_4
+entity_type: product_plan
+entity_name: EMAIL 4
+attribute: monthly_price
+value: 285000
+unit: VND
+qualifiers:
+  billing_cycle: month
+source_ids:
+- SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_06
+observed_at: '2026-04-07T00:05:00.901852+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ bảng giá: ''Giá | 285.000đ/tháng'''

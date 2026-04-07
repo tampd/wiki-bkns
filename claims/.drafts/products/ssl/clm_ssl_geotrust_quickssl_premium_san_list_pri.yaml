@@ -1,0 +1,19 @@
+claim_id: CLM-SSL-GEOTRUST_QUICKSSL_PREMIUM_SAN-LIST_PRI
+entity_id: product.ssl.geotrust_quickssl_premium_san
+entity_type: product_plan
+entity_name: GeoTrust QuickSSL Premium SAN
+attribute: list_price
+value: 4680000
+unit: VND
+qualifiers:
+  billing_cycle: year
+source_ids:
+- SRC-GEOTRUST_QUICKSSL_PREMIUM_SAN_2026_04_04
+- SRC-GEOTRUST_QUICKSSL_PREMIUM_SAN_2026_04_06
+observed_at: '2026-04-07T00:29:33.287706+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ mục Gói dịch vụ và bảng giá: | Giá nhà cung cấp | <del>4.680.000đ/năm</del>
+  |'

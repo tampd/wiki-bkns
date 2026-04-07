@@ -1,0 +1,16 @@
+claim_id: CLM-META-SOFTACULOUS-SOURCE_U
+entity_id: doc.metadata.softaculous.20260405
+entity_type: document_metadata
+entity_name: Softaculous Page Crawl
+attribute: source_url
+value: https://www.bkns.vn/phan-mem/softaculous.html
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-SOFTACULOUS_WEB_2026_04_05
+observed_at: '2026-04-05T22:13:59.506818+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ nội dung trang: ''- Nguồn: https://www.bkns.vn/phan-mem/softaculous.html'''

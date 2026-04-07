@@ -1,0 +1,17 @@
+claim_id: CLM-SERV-DEDICATED-DISCOUNT
+entity_id: product.server.dedicated.bkns
+entity_type: product
+entity_name: Cho thuê máy chủ vật lý (Dedicated Server) BKNS
+attribute: discount_policy
+value: Giá thuê ưu đãi hơn khi đăng ký chu kỳ dài hạn.
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-DANH_SACH_GOI_SAN_PHAM_MAY_CHU_BKNS_2026_04_04
+observed_at: '2026-04-04T20:42:43.387899+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: ''Điều kiện/giới hạn nổi bật (nếu có): Giá
+  thuê ưu đãi hơn khi đăng ký chu kỳ dài hạn.'''

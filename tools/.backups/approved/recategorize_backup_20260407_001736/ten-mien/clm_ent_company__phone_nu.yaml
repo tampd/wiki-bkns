@@ -1,0 +1,19 @@
+claim_id: CLM-ENT-COMPANY--PHONE_NU
+entity_id: ENT-COMPANY-001
+entity_type: company
+entity_name: BKNS
+attribute: phone_number
+value: 1800 646 884
+unit: null
+qualifiers:
+  type: sales
+source_ids:
+- SRC-DANG_KY_TEN_MIEN_2026_04_05
+observed_at: '2026-04-05T21:53:55.776370+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: approved
+risk_class: high
+compiler_note: 'Trích từ mục Hỗ trợ: ''Hotline kinh doanh: 1800 646 884 (miễn phí)'''
+approved_at: '2026-04-07T01:09:09.215452+07:00'
+approved_by: admin-batch

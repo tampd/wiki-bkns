@@ -9,10 +9,12 @@ original_format: docx
 page_title: Bảo Vệ Tên Miền Cấp Cao Nhất – Giải Pháp An Toàn Tuyệt Đối
 content_hash: sha256:9fcb8a08d1f4c213c395af4da004c6ae75f81c9e7bf891ec0f51e02aaa68d6c3
 word_count: 1053
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/ten-mien
 crawl_method: manual_upload
 source_date: '2026-02-08'
+skipped_reason: Duplicate of bao-ve-ten-mien-cap-cao-nhat-giai-phap-an-toan-tuyet-oi-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.219806+07:00'
 ---
 
 ═══ Bảo vệ tên miền cấp cao nhất \(Registry Lock\)

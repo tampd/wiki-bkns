@@ -139,6 +139,94 @@ def handle_build(chat_id: int):
         send_message(chat_id, f"❌ Build failed: {str(e)}")
 
 
+def handle_extract(chat_id: int):
+    """[W6] Handle /extract command — extract claims from all pending raw files."""
+    if str(chat_id) != str(ADMIN_TELEGRAM_ID):
+        send_message(chat_id, "⛔ Chỉ admin mới được sử dụng lệnh này.")
+        return
+
+    send_typing(chat_id)
+    send_message(chat_id, "⏳ Đang extract claims từ raw files...")
+    try:
+        sys.path.insert(0, str(WORKSPACE / "skills" / "extract-claims" / "scripts"))
+        from extract import extract_all_pending
+        results = extract_all_pending()
+        total_claims = sum(r.get("claims_count", 0) for r in results)
+        total_cost = sum(r.get("cost_usd", 0) for r in results)
+        total_conflicts = sum(r.get("conflicts", 0) for r in results)
+        cached = sum(1 for r in results if r.get("cached"))
+        send_message(
+            chat_id,
+            f"✅ *Extract hoàn tất!*\n\n"
+            f"Files xử lý: {len(results)}\n"
+            f"Cache hits: {cached}\n"
+            f"Total claims: {total_claims}\n"
+            f"Conflicts: {total_conflicts}\n"
+            f"Cost: ${total_cost:.4f}",
+        )
+    except Exception as e:
+        send_message(chat_id, f"❌ Extract failed: {str(e)}")
+        log_entry("wiki-bot", "error", f"Extract error: {e}", severity="high")
+
+
+def handle_compile(chat_id: int, category: str):
+    """[W6] Handle /compile [category] command."""
+    if str(chat_id) != str(ADMIN_TELEGRAM_ID):
+        send_message(chat_id, "⛔ Chỉ admin mới được sử dụng lệnh này.")
+        return
+
+    if not category:
+        send_message(
+            chat_id,
+            "❓ Cú pháp: `/compile [category]`\n"
+            "Categories: hosting, vps, email, ssl, ten-mien, server, software\n"
+            "Hoặc: `/compile --all` để compile tất cả",
+        )
+        return
+
+    send_typing(chat_id)
+    send_message(chat_id, f"⏳ Đang compile wiki cho *{category}*...")
+    try:
+        sys.path.insert(0, str(WORKSPACE / "skills" / "compile-wiki" / "scripts"))
+        from compile import compile_category, SUBPAGE_DEFS
+
+        if category == "--all":
+            total_cost = 0.0
+            total_pages = 0
+            errors = []
+            for cat in SUBPAGE_DEFS.keys():
+                result = compile_category(cat)
+                if result["status"] == "success":
+                    total_pages += result.get("pages_compiled", 0)
+                    total_cost += result.get("cost_usd", 0)
+                elif result["status"] not in ("skip",):
+                    errors.append(cat)
+            reply = (
+                f"✅ *Compile ALL hoàn tất!*\n\n"
+                f"Total pages: {total_pages}\n"
+                f"Cost: ${total_cost:.4f}"
+            )
+            if errors:
+                reply += f"\n⚠️ Errors: {', '.join(errors)}"
+        else:
+            result = compile_category(category)
+            if result["status"] == "success":
+                reply = (
+                    f"✅ *Compile {category} hoàn tất!*\n\n"
+                    f"Pages: {result['pages_compiled']}\n"
+                    f"Skeletons: {result.get('pages_skipped', 0)}\n"
+                    f"Claims: {result['total_claims']}\n"
+                    f"Cost: ${result['cost_usd']:.4f}"
+                )
+            else:
+                reply = f"⚠️ {result.get('detail', result['status'])}"
+
+        send_message(chat_id, reply)
+    except Exception as e:
+        send_message(chat_id, f"❌ Compile failed: {str(e)}")
+        log_entry("wiki-bot", "error", f"Compile error: {e}", severity="high")
+
+
 def handle_lint(chat_id: int):
     """Handle /lint command."""
     if str(chat_id) != str(ADMIN_TELEGRAM_ID):
@@ -163,16 +251,19 @@ def handle_help(chat_id: int):
     """Send help message."""
     help_text = (
         "📚 *BKNS Wiki Bot — Trợ lý thông tin sản phẩm*\n\n"
-        "*Lệnh có sẵn:*\n"
+        "*Lệnh công khai:*\n"
         "`/hoi [câu hỏi]` — Hỏi về sản phẩm BKNS\n"
         "`/status` — Xem trạng thái wiki\n"
-        "`/build` — Tạo build mới (admin)\n"
-        "`/lint` — Kiểm tra chất lượng wiki (admin)\n"
         "`/help` — Xem hướng dẫn\n\n"
+        "*Lệnh admin:*\n"
+        "`/extract` — Extract claims từ raw files mới\n"
+        "`/compile [category]` — Compile wiki (hoặc `--all`)\n"
+        "`/build` — Tạo build snapshot mới\n"
+        "`/lint` — Kiểm tra chất lượng wiki\n\n"
         "*Ví dụ:*\n"
         "• `/hoi Giá hosting rẻ nhất?`\n"
         "• `/hoi Tên miền .com giá bao nhiêu?`\n"
-        "• `/hoi So sánh VPS AMD và VPS SSD`\n\n"
+        "• `/compile hosting`\n\n"
         "_Gõ câu hỏi trực tiếp (không /hoi) cũng được!_"
     )
     send_message(chat_id, help_text)
@@ -200,6 +291,11 @@ def process_message(message: dict):
         handle_build(chat_id)
     elif text.startswith("/lint"):
         handle_lint(chat_id)
+    elif text.startswith("/extract"):
+        handle_extract(chat_id)  # [W6]
+    elif text.startswith("/compile"):
+        category = text[8:].strip()  # [W6]
+        handle_compile(chat_id, category)
     elif text.startswith("/help") or text.startswith("/start"):
         handle_help(chat_id)
     elif not text.startswith("/"):

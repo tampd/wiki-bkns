@@ -1,0 +1,20 @@
+claim_id: CLM-ENT-PROD-VPS-ACCESS.R
+entity_id: ENT-PROD-VPS
+entity_type: product_category
+entity_name: VPS
+attribute: access.root
+value: true
+unit: ''
+qualifiers:
+  description: Người dùng có toàn quyền truy cập root/administrator để cài đặt phần
+    mềm, cấu hình hệ thống và quản lý như trên một máy chủ vật lý thực thụ.
+source_ids:
+- SRC-TRAINING_DICH_VU_VPS_2026_04_06
+observed_at: '2026-04-07T01:05:15.826159+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục 2: ''Quyền quản lý cao: Người dùng có toàn quyền truy
+  cập root/administrator để cài đặt phần mềm, cấu hình hệ thống và quản lý như trên
+  một máy chủ vật lý thực thụ.'''

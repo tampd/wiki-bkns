@@ -1,0 +1,18 @@
+claim_id: CLM-ENT--SEO_01-VCPU
+entity_id: ENT-PROD-VPS.seo_01
+entity_type: product_plan
+entity_name: SEO 01
+attribute: vcpu
+value: 3
+unit: core
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_CLOUD_VPS_SEO_MAY_CHU_AO_TOI_UU_CHO_SEO_2026_04_06
+observed_at: '2026-04-07T00:03:36.855526+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: medium
+compiler_note: 'Trích xuất từ bảng giá, dòng ''vCPU'', cột ''SEO 01'': 03 Core'
+approved_at: '2026-04-07T13:00:14.192228+07:00'
+approved_by: admin-batch

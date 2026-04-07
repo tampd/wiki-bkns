@@ -1,0 +1,16 @@
+claim_id: CLM-ENT-PROD-SSL-SETUP_SU
+entity_id: ENT-PROD-SSL-GEOTRUST-TRUE-BUSINESSID
+entity_type: product
+entity_name: GeoTrust True BusinessID
+attribute: setup_support
+value: true
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-GEOTRUST_TRUE_BUSINESSID_CHUNG_CHI_SSL_XAC_THUC_DOANH_NGHI_2026_04_06
+observed_at: '2026-04-07T00:31:37.554670+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ Tính năng / Thành phần: • Hỗ trợ cài đặt: Có.'

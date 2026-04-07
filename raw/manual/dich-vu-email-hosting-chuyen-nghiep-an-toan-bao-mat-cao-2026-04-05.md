@@ -9,10 +9,12 @@ original_format: docx
 page_title: Dịch Vụ Email Hosting Chuyên Nghiệp, An Toàn, Bảo Mật Cao
 content_hash: sha256:9b2a880c03befa24acca9c15d7e5fe051ceb0f2a46da6e6cd5f0cede2f77b02a
 word_count: 805
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/hosting
 crawl_method: manual_upload
 source_date: '2026-02-08'
+skipped_reason: Duplicate of dich-vu-email-hosting-chuyen-nghiep-an-toan-bao-mat-cao-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.376916+07:00'
 ---
 
 ═══ Dịch vụ Email Hosting

@@ -1,0 +1,20 @@
+claim_id: CLM-ENT-PROD-SSL-INCLUDED
+entity_id: ENT-PROD-SSL-COMODO-POSITIVESSL-MULTI-DOMAIN
+entity_type: product
+entity_name: PositiveSSL Multi-Domain (DV)
+attribute: included_domains
+value: 3
+unit: domains
+qualifiers: {}
+source_ids:
+- SRC-POSITIVESSL_MULTI_DOMAIN_DV_CHUNG_CHI_SSL_CHO_NHIEU_TEN_M_2026_04_04
+- SRC-POSITIVESSL_MULTI_DOMAIN_DV_CHUNG_CHI_SSL_CHO_NHIEU_TEN_M_2026_04_06
+observed_at: '2026-04-07T00:54:07.030227+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ bảng Thông số kỹ thuật: | Bảo vệ cho | 3 tên miền (mặc định)
+  |'
+approved_at: '2026-04-07T13:00:12.982361+07:00'
+approved_by: admin-batch

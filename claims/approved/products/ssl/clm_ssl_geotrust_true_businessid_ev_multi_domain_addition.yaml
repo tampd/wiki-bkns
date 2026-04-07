@@ -1,0 +1,22 @@
+claim_id: CLM-SSL-GEOTRUST_TRUE_BUSINESSID_EV_MULTI_DOMAIN-ADDITION
+entity_id: product.ssl.geotrust_true_businessid_ev_multi_domain
+entity_type: product
+entity_name: GeoTrust True BusinessID with EV Multi-Domain
+attribute: additional_san_limit
+value: 1255000
+unit: VND
+qualifiers:
+  billing_cycle: year
+  unit: SAN
+source_ids:
+- SRC-GEOTRUST_TRUE_BUSINESSID_WITH_EV_MULTI_DOMAIN_2026_04_06
+observed_at: '2026-04-07T00:34:23.321536+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: high
+compiler_note: 'Trích từ bảng giá: | Bổ sung SAN domain | 1.255.000 đ/SAN/năm |'
+value_changed_from: 245
+value_changed_at: '2026-04-07T00:34:23.321583+07:00'
+approved_at: '2026-04-07T13:00:13.810345+07:00'
+approved_by: admin-batch

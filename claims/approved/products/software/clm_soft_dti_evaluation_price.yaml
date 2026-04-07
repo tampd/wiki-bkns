@@ -1,0 +1,22 @@
+claim_id: CLM-SOFT-DTI_EVALUATION-PRICE
+entity_id: product.software.dti_evaluation.basic
+entity_type: product_plan
+entity_name: Gói Vĩnh viễn
+attribute: price
+value: 1910000000
+unit: VND
+qualifiers:
+  billing_cycle: one-time
+source_ids:
+- SRC-PHAN_MEM_ANH_GIA_CHUYEN_OI_SO_DTI_2026_04_06
+observed_at: '2026-04-07T00:45:52.702581+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: high
+compiler_note: 'Trích từ bảng giá, cột ''Gói Vĩnh viễn (trả phí một lần)'', hàng ''Giá'':
+  1.910.000.000 VNĐ'
+value_changed_from: 910000000
+value_changed_at: '2026-04-07T00:45:52.702600+07:00'
+approved_at: '2026-04-07T13:00:16.053250+07:00'
+approved_by: admin-batch

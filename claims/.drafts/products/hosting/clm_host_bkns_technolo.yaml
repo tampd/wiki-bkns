@@ -1,0 +1,19 @@
+claim_id: CLM-HOST-BKNS-TECHNOLO
+entity_id: product.hosting.bkns.platinum
+entity_type: product_family
+entity_name: Platinum Web Hosting
+attribute: technology
+value: Ổ cứng NVMe U.2
+unit: ''
+qualifiers: {}
+source_ids:
+- SRC-BKNS_CAMNANG_HOSTING_DOT2_2026_04_06
+observed_at: '2026-04-06T23:31:49.613758+07:00'
+valid_from: '2026-04-06'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục 3.1: Công nghệ lõi: CPU Intel Xeon Platinum Gen 2 + Ổ
+  cứng NVMe U.2'
+value_changed_from: CPU Intel Xeon Platinum Gen 2
+value_changed_at: '2026-04-06T23:31:49.613776+07:00'

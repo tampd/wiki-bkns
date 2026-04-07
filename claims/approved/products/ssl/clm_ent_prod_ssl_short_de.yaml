@@ -1,0 +1,21 @@
+claim_id: CLM-ENT-PROD-SSL-SHORT_DE
+entity_id: ENT-PROD-SSL-COMODO-POSITIVESSL-MULTI-DOMAIN-DV
+entity_type: product
+entity_name: PositiveSSL Multi-Domain (DV)
+attribute: short_description
+value: Chứng chỉ SSL xác thực tên miền (Domain Validation - DV) cho phép bảo mật nhiều
+  tên miền khác nhau trên cùng một chứng chỉ duy nhất.
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-POSITIVESSL_MULTI_DOMAIN_DV_CHUNG_CHI_SSL_CHO_NHIEU_TEN_M_2026_04_06
+observed_at: '2026-04-07T00:54:06.953130+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ phần Tóm tắt nhanh: • Dịch vụ này là gì: Chứng chỉ SSL xác
+  thực tên miền (Domain Validation - DV) cho phép bảo mật nhiều tên miền khác nhau
+  trên cùng một chứng chỉ duy nhất.'
+approved_at: '2026-04-07T13:00:13.189424+07:00'
+approved_by: admin-batch

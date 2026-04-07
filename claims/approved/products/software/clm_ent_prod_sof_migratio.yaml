@@ -1,0 +1,19 @@
+claim_id: CLM-ENT-PROD-SOF-MIGRATIO
+entity_id: ENT-PROD-SOFTWARE-001
+entity_type: product
+entity_name: Bản Quyền CloudLinux OS
+attribute: migration_process
+value: Quá trình chuyển đổi từ CentOS hoặc RHEL sang CloudLinux dễ dàng.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-BAN_QUYEN_CLOUDLINUX_OS_TANG_ON_INH_VA_BAO_MAT_CHO_SHARED_2026_04_06
+observed_at: '2026-04-06T22:58:13.070424+07:00'
+valid_from: '2026-04-06'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ Quy trình đăng ký / Triển khai / Kích hoạt: ''Quá trình chuyển
+  đổi từ CentOS hoặc RHEL sang CloudLinux được mô tả là dễ dàng.'''
+approved_at: '2026-04-07T13:00:15.633058+07:00'
+approved_by: admin-batch

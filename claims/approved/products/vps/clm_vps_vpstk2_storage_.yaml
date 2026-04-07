@@ -1,0 +1,19 @@
+claim_id: CLM-VPS-VPSTK2-STORAGE_
+entity_id: product.vps.vpstk2
+entity_type: product_plan
+entity_name: VPSTK2
+attribute: storage_capacity
+value: 25
+unit: GB
+qualifiers:
+  storage_type: SSD
+source_ids:
+- SRC-DICH_VU_VPS_SIEU_TIET_KIEM_VPS_SIEU_RE_TAI_BKNS_2026_04_06
+observed_at: '2026-04-07T00:18:36.308347+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ bảng giá, dòng ''Dung Lượng'', cột ''VPSTK2'': ''25 GB'''
+approved_at: '2026-04-07T13:00:15.358785+07:00'
+approved_by: admin-batch

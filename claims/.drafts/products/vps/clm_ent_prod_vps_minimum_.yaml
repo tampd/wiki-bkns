@@ -1,0 +1,17 @@
+claim_id: CLM-ENT-PROD-VPS-MINIMUM_
+entity_id: ENT-PROD-VPS
+entity_type: product_offering
+entity_name: VPS Siêu Rẻ
+attribute: minimum_billing_cycle
+value: 1
+unit: month
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_VPS_SIEU_TIET_KIEM_VPS_SIEU_RE_TAI_BKNS_2026_04_06
+observed_at: '2026-04-07T00:18:36.291533+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Điều kiện/giới hạn nổi bật: ''Chu kỳ thanh toán tối thiểu
+  là 1 tháng cho tất cả các gói.'''

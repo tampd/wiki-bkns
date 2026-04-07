@@ -9,10 +9,12 @@ original_format: docx
 page_title: Platinum Web Hosting - Hosting NVMe Tốc Độ Cao, Backup 3 Lần_Ngày
 content_hash: sha256:7c03bd866714efc1378ecf43d0f71c4de11dfd48fdf394b25869aa207b0a24b3
 word_count: 1149
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/hosting
 crawl_method: manual_upload
 source_date: '2026-02-08'
+skipped_reason: Duplicate of platinum-web-hosting-hosting-nvme-toc-o-cao-backup-3-lan-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.486929+07:00'
 ---
 
 ═══ PLATINUM WEB HOSTING

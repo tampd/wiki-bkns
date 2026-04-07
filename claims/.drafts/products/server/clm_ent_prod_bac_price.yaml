@@ -1,0 +1,19 @@
+claim_id: CLM-ENT-PROD-BAC-PRICE
+entity_id: ENT-PROD-BACKUP
+entity_type: product
+entity_name: Dịch vụ Backup
+attribute: monthly_price
+value:
+  min: 200000
+  max: 300000
+unit: VND
+qualifiers:
+  backup_frequency: hourly
+source_ids:
+- SRC-BKNS_CAMNANG_HOSTING_DOT4_2026_04_04
+observed_at: '2026-04-04T20:34:06.110868+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ BK2: hourly 200-300K/tháng.'

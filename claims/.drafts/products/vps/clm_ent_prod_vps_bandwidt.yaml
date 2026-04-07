@@ -1,0 +1,20 @@
+claim_id: CLM-ENT-PROD-VPS-BANDWIDT
+entity_id: ENT-PROD-VPS
+entity_type: product
+entity_name: Storage VPS
+attribute: bandwidth_limit
+value: Unlimited
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-DICH_VU_VPS_GIA_RE_MAY_CHU_AO_CAU_HINH_ON_INH_2026_04_04
+- SRC-STORAGE_VPS_MAY_CHU_AO_LUU_TRU_DUNG_LUONG_CAO_2026_04_06
+observed_at: '2026-04-07T01:03:06.810061+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục ''Tính năng / Thành phần'': • Băng thông không giới hạn:
+  Không có giới hạn về lưu lượng truyền tải dữ liệu.'
+value_changed_from: unlimited
+value_changed_at: '2026-04-07T01:03:06.810079+07:00'

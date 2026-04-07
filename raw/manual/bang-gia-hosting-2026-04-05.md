@@ -7,10 +7,12 @@ original_format: pdf
 page_title: BẢNG GIÁ HOSTING ( Chưa bao gồm VAT)
 content_hash: sha256:3f9725f838dc3525b6ef6aa76e0f68ecb5507964fe3a626af94c98a95d8b6693
 word_count: 329
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/hosting
 crawl_method: manual_upload
 source_date: '2026-04-05'
+skipped_reason: Duplicate of bang-gia-hosting-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.194970+07:00'
 ---
 
 BẢNG GIÁ HOSTING ( Chưa bao gồm VAT)

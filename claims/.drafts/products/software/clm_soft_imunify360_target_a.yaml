@@ -1,0 +1,18 @@
+claim_id: CLM-SOFT-IMUNIFY360-TARGET_A
+entity_id: product.software.imunify360
+entity_type: product
+entity_name: Imunify360
+attribute: target_audience
+value: Các cá nhân, doanh nghiệp quản trị server
+unit: null
+qualifiers: null
+source_ids:
+- SRC-BANG_GIA_IMUNIFY360_GIAI_PHAP_BAO_MAT_SERVER_BANG_AI_2026_04_06
+observed_at: '2026-04-06T23:18:21.974300+07:00'
+valid_from: '2026-04-06'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ mục Tóm tắt nhanh: • Phù hợp với: Các cá nhân, doanh nghiệp
+  quản trị server và muốn bảo vệ hệ thống khỏi các mối đe dọa như mã độc, tấn công
+  từ hacker.'

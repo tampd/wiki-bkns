@@ -1,0 +1,21 @@
+claim_id: CLM-ENT-PROD-VPS-PROVISIO
+entity_id: ENT-PROD-VPS-AMD
+entity_type: product
+entity_name: Storage VPS
+attribute: provisioning_time
+value: 5-10
+unit: minutes
+qualifiers: {}
+source_ids:
+- SRC-CLOUD_VPS_AMD_WEB_2026_04_05
+- SRC-STORAGE_VPS_MAY_CHU_AO_LUU_TRU_DUNG_LUONG_CAO_2026_04_06
+observed_at: '2026-04-07T01:03:06.881621+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục ''Quy trình đăng ký / Triển khai / Kích hoạt'': Sau khi
+  khách hàng hoàn tất thanh toán, hệ thống sẽ tự động khởi tạo dịch vụ trong khoảng
+  5-10 phút.'
+value_changed_from: 1
+value_changed_at: '2026-04-07T01:03:06.881649+07:00'

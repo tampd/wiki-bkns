@@ -1,0 +1,19 @@
+claim_id: CLM-ENT-PROD-SER-HARDWARE
+entity_id: ENT-PROD-SERVER
+entity_type: product_category
+entity_name: Server (Máy chủ)
+attribute: hardware.storage_capacity
+value: hàng trăm GB hoặc TB
+unit: ''
+qualifiers: null
+source_ids:
+- SRC-TRAINING_DICH_VU_VPS_2026_04_06
+observed_at: '2026-04-07T01:05:15.861346+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ bảng so sánh ở mục 3: ''Dung lượng cao Có thể lưu trữ hàng
+  tram GB hoặc TB'''
+approved_at: '2026-04-07T13:00:10.005982+07:00'
+approved_by: admin-batch

@@ -8,10 +8,12 @@ original_format: docx
 page_title: Dịch vụ Cloud Email Server An Toàn, Hiệu Suất Cao
 content_hash: sha256:d6daeef45494a9152da3f3dbc3ef9c091d483616180eb2cd790f8acf4c9918f7
 word_count: 1115
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/email
 crawl_method: manual_upload
 source_date: '2026-02-08'
+skipped_reason: Duplicate of dich-vu-cloud-email-server-an-toan-hieu-suat-cao-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.309075+07:00'
 ---
 
 ═══ Dịch vụ Email Server \(Cloud Email Server\)

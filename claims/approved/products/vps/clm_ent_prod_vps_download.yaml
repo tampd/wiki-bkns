@@ -1,0 +1,18 @@
+claim_id: CLM-ENT-PROD-VPS-DOWNLOAD
+entity_id: ENT-PROD-VPS-AMD-5
+entity_type: product_plan
+entity_name: AMD 5
+attribute: download_speed
+value: 500
+unit: Mbps
+qualifiers: {}
+source_ids:
+- SRC-CLOUD_VPS_AMD_WEB_2026_04_05
+observed_at: '2026-04-05T21:46:05.035079+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ bảng giá gói AMD 5: Download speed | 500Mbps'
+approved_at: '2026-04-07T13:00:14.351628+07:00'
+approved_by: admin-batch

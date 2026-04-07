@@ -1,0 +1,23 @@
+claim_id: CLM-ENT-PROD-DOM-TARGET_A
+entity_id: ENT-PROD-DOMAIN
+entity_type: product
+entity_name: Bảo vệ tên miền cấp cao nhất (Registry Lock)
+attribute: target_audience
+value: bất kỳ ai sở hữu tên miền quan trọng
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_ANG_KY_TEN_MIEN_VIET_NAM_VA_QUOC_TE_TAI_BKNS_2026_04_04
+- SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_06
+- SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_06
+- SRC-BAO_VE_TEN_MIEN_CAP_CAO_NHAT_GIAI_PHAP_AN_TOAN_TUYET_OI_2026_04_06
+observed_at: '2026-04-06T23:24:53.113951+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: Phù hợp với: Các tổ chức tài chính, ngân hàng,
+  cơ quan chính phủ, công ty thương mại điện tử lớn, tập đoàn, và bất kỳ ai sở hữu
+  tên miền quan trọng.'
+value_changed_from: tập đoàn
+value_changed_at: '2026-04-06T23:24:53.113968+07:00'

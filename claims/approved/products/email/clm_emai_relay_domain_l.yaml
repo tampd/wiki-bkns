@@ -1,0 +1,21 @@
+claim_id: CLM-EMAI-RELAY-DOMAIN_L
+entity_id: product.email.relay
+entity_type: product_plan
+entity_name: BK-RELAY04
+attribute: domain_limit
+value: Không giới hạn
+unit: null
+qualifiers: null
+source_ids:
+- SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_TIN_CAY_2026_04_04
+- SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_VA_TIN_CAY_2026_04_06
+observed_at: '2026-04-07T00:23:42.895320+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ bảng giá: | Số lượng tên miền | Không giới hạn |'
+value_changed_from: unlimited
+value_changed_at: '2026-04-07T00:23:42.750925+07:00'
+approved_at: '2026-04-07T13:00:11.370955+07:00'
+approved_by: admin-batch

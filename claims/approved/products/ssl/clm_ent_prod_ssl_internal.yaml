@@ -1,0 +1,23 @@
+claim_id: CLM-ENT-PROD-SSL-INTERNAL
+entity_id: ENT-PROD-SSL-GEOTRUST-TRUE-BUSINESSID-MULTI-DOMAIN-WILDCARD
+entity_type: product
+entity_name: GeoTrust True BusinessID Multi-Domain Wildcard
+attribute: internal_note
+value: Nút 'Mua ngay' trên trang trỏ đến một sản phẩm khác (true-businessid-ev-multi-domain-san)
+  là loại xác thực EV, trong khi nội dung trang mô tả sản phẩm OV.
+unit: null
+qualifiers:
+  note_type: data_discrepancy
+source_ids:
+- SRC-GEOTRUST_TRUE_BUSINESSID_MULTI_DOMAIN_WILDCARD_2026_04_06
+observed_at: '2026-04-07T00:32:46.944274+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: none
+compiler_note: 'Trích từ mục ''Ghi chú trích xuất'' và ''Chính sách / Điều khoản /
+  Lưu ý'': ''⚠️ MÂU THUẪN TRONG TRANG: Nút "Mua ngay" trên trang trỏ đến một sản phẩm
+  khác (`true-businessid-ev-multi-domain-san`) là loại xác thực EV, trong khi nội
+  dung trang mô tả sản phẩm OV.'''
+approved_at: '2026-04-07T13:00:12.995708+07:00'
+approved_by: admin-batch

@@ -1,0 +1,18 @@
+claim_id: CLM-SSL-BKNS-PRODUCT_
+entity_id: product.ssl.bkns.instantssl_ov
+entity_type: product
+entity_name: InstantSSL (OV)
+attribute: product_name
+value: Chứng chỉ SSL InstantSSL (OV)
+unit: null
+qualifiers: null
+source_ids:
+- SRC-CHUNG_CHI_SSL_INSTANTSSL_OV_2026_04_04
+observed_at: '2026-04-04T20:37:35.280399+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: none
+compiler_note: 'Trích từ tiêu đề trang: ═══ Chứng chỉ SSL InstantSSL \(OV\)'
+approved_at: '2026-04-07T13:00:13.330218+07:00'
+approved_by: admin-batch

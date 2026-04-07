@@ -1,0 +1,19 @@
+claim_id: CLM-HOST-PLATINUM-HARDWARE
+entity_id: product.hosting.platinum
+entity_type: product
+entity_name: Platinum Web Hosting
+attribute: hardware_storage
+value: Intel Platinum
+unit: null
+qualifiers: null
+source_ids:
+- SRC-PLATINUM_WEB_HOSTING_HOSTING_NVME_TOC_O_CAO_BACKUP_3_LAN_2026_04_06
+observed_at: '2026-04-07T00:49:55.439694+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: drafted
+risk_class: null
+compiler_note: 'Trích từ mục Tóm tắt nhanh: ...và CPU Intel Platinum để đạt hiệu suất
+  cao.'
+value_changed_from: 100% ổ cứng NVMe U.2
+value_changed_at: '2026-04-07T00:49:55.439720+07:00'

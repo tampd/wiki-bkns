@@ -7,10 +7,12 @@ original_format: docx
 page_title: Phần Mềm Đánh Giá Chuyển Đổi Số DTI
 content_hash: sha256:2524f70370aed71d641d956267e46abf4e0c144b656a46bcb2f7e86ebdc1cf79
 word_count: 1022
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/software
 crawl_method: manual_upload
 source_date: '2026-02-08'
+skipped_reason: Duplicate of phan-mem-anh-gia-chuyen-oi-so-dti-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.242955+07:00'
 ---
 
 ═══ Phần Mềm Đánh Giá Chuyển Đổi Số DTI

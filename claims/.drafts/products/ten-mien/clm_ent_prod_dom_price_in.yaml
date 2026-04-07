@@ -1,0 +1,19 @@
+claim_id: CLM-ENT-PROD-DOM-PRICE_IN
+entity_id: ENT-PROD-DOMAIN-REGISTRY-LOCK
+entity_type: product
+entity_name: Xác thực 2 bước (2FA)
+attribute: price_info
+value: Miễn phí
+unit: ''
+qualifiers: null
+source_ids:
+- SRC-BAO_VE_TEN_MIEN_CAP_CAO_NHAT_GIAI_PHAP_AN_TOAN_TUYET_OI_2026_04_06
+observed_at: '2026-04-06T23:24:53.232857+07:00'
+valid_from: '2026-04-06'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ bảng so sánh: | Chi phí | Miễn phí | Miễn phí | Có phí (Liên
+  hệ BKNS) |'
+value_changed_from: Có phí (Liên hệ BKNS)
+value_changed_at: '2026-04-06T23:24:53.217371+07:00'

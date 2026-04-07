@@ -8,10 +8,12 @@ original_format: docx
 page_title: Dịch vụ Thuê Chỗ Đặt Máy Chủ (Colocation) tại BKNS
 content_hash: sha256:c0c6f1c411b82932126b7376291b7071463a38765fceeef9e38193eec0090591
 word_count: 986
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/server
 crawl_method: manual_upload
 source_date: '2026-02-08'
+skipped_reason: Duplicate of dich-vu-thue-cho-at-may-chu-colocation-tai-bkns-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.483445+07:00'
 ---
 
 ═══ Thuê Chỗ Đặt Máy Chủ \(Colocation\)

@@ -8,10 +8,12 @@ original_format: docx
 page_title: Dịch vụ VPS Siêu Tiết Kiệm (VPS Siêu Rẻ) tại BKNS
 content_hash: sha256:838ed94a48819b6f4f973b0fad24bce3d3b0b11dc0dce9a2333c99174a8c3aef
 word_count: 813
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/vps
 crawl_method: manual_upload
 source_date: '2026-02-08'
+skipped_reason: Duplicate of dich-vu-vps-sieu-tiet-kiem-vps-sieu-re-tai-bkns-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.297213+07:00'
 ---
 
 ═══ Thuê VPS Siêu Rẻ

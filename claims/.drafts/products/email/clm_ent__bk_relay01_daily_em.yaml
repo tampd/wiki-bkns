@@ -1,0 +1,16 @@
+claim_id: CLM-ENT--BK-RELAY01-DAILY_EM
+entity_id: ENT-PROD-EMAIL-RELAY.BK-RELAY01
+entity_type: product_plan
+entity_name: BK-RELAY01
+attribute: daily_email_limit
+value: 350
+unit: email
+qualifiers: null
+source_ids:
+- SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_VA_TIN_CAY_2026_04_04
+observed_at: '2026-04-04T20:57:41.653404+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng giá: | Số lượng email/ngày | 350 |'

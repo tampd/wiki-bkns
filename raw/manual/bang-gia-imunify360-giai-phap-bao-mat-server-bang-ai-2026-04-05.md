@@ -9,10 +9,12 @@ original_format: docx
 page_title: Bảng giá Imunify360 - Giải pháp bảo mật server bằng AI
 content_hash: sha256:df8f1bec3b17fe5b40801d9ec086b11e78ff405e9263666f001630b61e2c10ed
 word_count: 453
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/server
 crawl_method: manual_upload
 source_date: '2026-02-08'
+skipped_reason: Duplicate of bang-gia-imunify360-giai-phap-bao-mat-server-bang-ai-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.238653+07:00'
 ---
 
 ═══ Phần mềm bảo mật Imunify360

@@ -1,0 +1,17 @@
+claim_id: CLM-ENT-PROD-SSL-TRUST_SE
+entity_id: ENT-PROD-SSL-COMODO-POSITIVESSL-MULTI-DOMAIN
+entity_type: product
+entity_name: PositiveSSL Multi-Domain (DV)
+attribute: trust_seal_type
+value: Tĩnh
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-POSITIVESSL_MULTI_DOMAIN_DV_CHUNG_CHI_SSL_CHO_NHIEU_TEN_M_2026_04_04
+- SRC-POSITIVESSL_MULTI_DOMAIN_DV_CHUNG_CHI_SSL_CHO_NHIEU_TEN_M_2026_04_06
+observed_at: '2026-04-07T00:54:07.077034+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng Thông số kỹ thuật: | Biểu tượng | Tĩnh |'

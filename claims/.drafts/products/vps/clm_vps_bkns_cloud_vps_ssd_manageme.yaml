@@ -1,0 +1,17 @@
+claim_id: CLM-VPS-BKNS_CLOUD_VPS_SSD-MANAGEME
+entity_id: product.vps.bkns_cloud_vps_ssd
+entity_type: product_offering
+entity_name: Thuê Cloud VPS SSD
+attribute: management_panel
+value: Bảng điều khiển VPS
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_THUE_CLOUD_VPS_SSD_GIA_RE_TAI_BKNS_2026_04_06
+observed_at: '2026-04-07T00:13:45.672386+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tính năng / Thành phần: ''Quản lý: Cung cấp Bảng điều
+  khiển VPS'''

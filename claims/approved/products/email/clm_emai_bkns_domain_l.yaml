@@ -1,0 +1,22 @@
+claim_id: CLM-EMAI-BKNS-DOMAIN_L
+entity_id: product.email.bkns.miniem01
+entity_type: product_plan
+entity_name: Email Hosting Gói 4
+attribute: domain_limit
+value: 1
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-DICH_VU_CLOUD_EMAIL_SERVER_AN_TOAN_HIEU_SUAT_CAO_2026_04_04
+- SRC-BKNS_CAMNANG_EMAIL_TENMIEN_DOT1_2026_04_06
+observed_at: '2026-04-06T23:29:48.056283+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: medium
+compiler_note: 'Trích từ bảng thông số kỹ thuật Email Hosting, dòng ''Gói 4'', cột
+  ''Số lượng tên miền'': ''01'''
+value_changed_from: Unlimited
+value_changed_at: '2026-04-06T23:29:47.913832+07:00'
+approved_at: '2026-04-07T13:00:10.992728+07:00'
+approved_by: admin-batch

@@ -1,0 +1,21 @@
+claim_id: CLM-SSL-INSTANTSSL_PRO_OV-TARGET_C
+entity_id: product.ssl.instantssl_pro_ov
+entity_type: product_plan
+entity_name: InstantSSL Pro (OV)
+attribute: target_customer
+value: Các trang web thương mại điện tử và các công ty, doanh nghiệp muốn tăng độ
+  tin cậy và xác thực danh tính tổ chức của mình.
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-INSTANTSSL_PRO_OV_CHUNG_CHI_SSL_XAC_THUC_TO_CHUC_CUA_COM_2026_04_06
+observed_at: '2026-04-07T00:42:11.438113+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: Phù hợp với: Các trang web thương mại điện
+  tử và các công ty, doanh nghiệp muốn tăng độ tin cậy và xác thực danh tính tổ chức
+  của mình.'
+approved_at: '2026-04-07T13:00:13.947023+07:00'
+approved_by: admin-batch

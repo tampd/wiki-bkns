@@ -1,0 +1,21 @@
+claim_id: CLM-ENT-PROD-VPS-SERVICE_
+entity_id: ENT-PROD-VPS
+entity_type: ENT-PROD-VPS
+entity_name: Dịch vụ Server/VPS BKNS
+attribute: service_description
+value: Đa dạng hóa nhu cầu, từ sinh viên tập sự đến doanh nghiệp lớn cần xử lý Big
+  Data.
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-TRANNING_KINH_DOANH_HOSTING_EMAIL_2026_04_04
+- SRC-BKNS_CAMNAG_HOSTING_DOT3_2026_04_06
+observed_at: '2026-04-06T23:27:50.945341+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ: Dịch vụ Server/VPS của BKNS tập trung vào tính __đa dạng
+  hóa__ nhu cầu, từ sinh viên tập sự đến doanh nghiệp lớn cần xử lý Big Data.'
+value_changed_from: Máy chủ ảo riêng, tài nguyên linh hoạt
+value_changed_at: '2026-04-06T23:27:50.945380+07:00'

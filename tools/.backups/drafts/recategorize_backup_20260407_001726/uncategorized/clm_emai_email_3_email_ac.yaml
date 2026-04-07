@@ -1,0 +1,16 @@
+claim_id: CLM-EMAI-EMAIL_3-EMAIL_AC
+entity_id: product.email_hosting.email_3
+entity_type: product_plan
+entity_name: EMAIL 3
+attribute: email_accounts
+value: 50
+unit: email
+qualifiers: {}
+source_ids:
+- SRC-BANG_GIA_DICH_VU_BKNS_TEXT_2026_04_06
+observed_at: '2026-04-06T23:13:40.972394+07:00'
+valid_from: '2026-04-06'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Gói EMAIL 3: - Số lượng email: 50 email'

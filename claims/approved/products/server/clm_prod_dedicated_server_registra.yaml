@@ -1,0 +1,19 @@
+claim_id: CLM-PROD-DEDICATED_SERVER-REGISTRA
+entity_id: product.dedicated_server
+entity_type: product_line
+entity_name: Máy Chủ Vật Lý BKNS
+attribute: registration_process
+value: Để đăng ký dịch vụ, khách hàng nhấn vào nút "Đăng ký" trên mỗi gói sản phẩm.
+  Nút này sẽ chuyển hướng đến Zalo của BKNS để được tư vấn và hỗ trợ.
+unit: ''
+qualifiers: {}
+source_ids:
+- SRC-DANH_SACH_GOI_SAN_PHAM_MAY_CHU_BKNS_2026_04_06
+observed_at: '2026-04-06T23:52:20.178553+07:00'
+valid_from: '2026-04-06'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: Trích từ mục Quy trình đăng ký / Triển khai / Kích hoạt.
+approved_at: '2026-04-07T13:00:10.077632+07:00'
+approved_by: admin-batch

@@ -1,0 +1,22 @@
+claim_id: CLM-SOFT-DIRECTADMIN-DESC
+entity_id: product.software.directadmin
+entity_type: product
+entity_name: Bản quyền phần mềm DirectAdmin
+attribute: description
+value: DirectAdmin là một phần mềm quản trị server (control panel) có giao diện đồ
+  họa, được biết đến như một giải pháp thay thế cho cPanel.
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-BANG_GIA_BAN_QUYEN_PHAN_MEM_QUAN_TRI_SERVER_DIRECTADMIN_2026_04_06
+observed_at: '2026-04-06T23:11:14.224103+07:00'
+valid_from: '2026-04-06'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Mô tả dịch vụ: ''DirectAdmin là một phần mềm quản trị
+  server (control panel) có giao diện đồ họa, được biết đến như một giải pháp thay
+  thế cho cPanel.'''
+value_changed_from: Cung cấp bản quyền phần mềm DirectAdmin, một control panel đồ
+  họa để quản trị web hosting, VPS và server.
+value_changed_at: '2026-04-06T23:11:14.224122+07:00'

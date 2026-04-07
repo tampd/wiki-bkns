@@ -1,0 +1,17 @@
+claim_id: CLM-ENT-PROD-VPS-TECHNICA
+entity_id: ENT-PROD-VPS
+entity_type: product
+entity_name: VPS Giá Rẻ
+attribute: technical_support
+value: 24/7
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_VPS_GIA_RE_MAY_CHU_AO_CAU_HINH_ON_INH_2026_04_04
+observed_at: '2026-04-04T20:54:42.959864+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tính năng / Thành phần: • Hỗ trợ kỹ thuật: Đội ngũ kỹ
+  thuật hỗ trợ 24/7.'

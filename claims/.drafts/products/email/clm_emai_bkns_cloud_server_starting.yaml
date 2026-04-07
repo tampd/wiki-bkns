@@ -1,0 +1,19 @@
+claim_id: CLM-EMAI-BKNS_CLOUD_SERVER-STARTING
+entity_id: product.email.bkns_cloud_server
+entity_type: product
+entity_name: Cloud Email Server
+attribute: starting_price
+value: 239000
+unit: VND
+qualifiers:
+  billing_cycle: month
+source_ids:
+- SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_06
+observed_at: '2026-04-07T00:01:11.814963+07:00'
+valid_from: '2026-04-07'
+confidence: low
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ mục ''Ghi chú trích xuất'': ⚠️ MÂU THUẪN TRONG TRANG: Meta
+  description ghi giá ''CHỈ TỪ 239K/THÁNG'', nhưng trong bảng giá, gói thấp nhất là
+  MINI EMAIL 01 có giá ''314.000đ/Tháng''.'

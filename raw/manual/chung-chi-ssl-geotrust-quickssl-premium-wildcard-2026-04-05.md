@@ -8,10 +8,12 @@ original_format: docx
 page_title: Chứng chỉ SSL GeoTrust QuickSSL Premium Wildcard
 content_hash: sha256:b5f93ff46afb85b3f3e0f07e0e10383e5b2d33a4a192ffdd08c1be9254529ee8
 word_count: 661
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/ssl
 crawl_method: manual_upload
 source_date: '2026-02-08'
+skipped_reason: Duplicate of chung-chi-ssl-geotrust-quickssl-premium-wildcard-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.202723+07:00'
 ---
 
 ═══ Chứng chỉ SSL GeoTrust QuickSSL Premium Wildcard

@@ -1,0 +1,18 @@
+claim_id: CLM-VPS-SEO-BACKUP_F
+entity_id: product.vps.seo
+entity_type: product_line
+entity_name: Cloud VPS SEO
+attribute: backup_frequency
+value: weekly
+unit: null
+qualifiers: null
+source_ids:
+- SRC-VPS_SEO_WEB_2026_04_05
+observed_at: '2026-04-05T22:23:09.204467+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ Đặc điểm: ''Backup hàng tuần'''
+approved_at: '2026-04-07T13:00:15.242314+07:00'
+approved_by: admin-batch

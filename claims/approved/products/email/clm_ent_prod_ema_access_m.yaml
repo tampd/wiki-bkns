@@ -1,0 +1,21 @@
+claim_id: CLM-ENT-PROD-EMA-ACCESS_M
+entity_id: ENT-PROD-EMAIL
+entity_type: product
+entity_name: Dịch vụ Email Hosting
+attribute: access_method
+value: Outlook
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_06
+observed_at: '2026-04-07T00:05:00.860426+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ mục Tính năng / Thành phần: ''Truy cập: Có thể sử dụng qua
+  Webmail và tương thích với Outlook'''
+value_changed_from: Webmail
+value_changed_at: '2026-04-07T00:05:00.860445+07:00'
+approved_at: '2026-04-07T13:00:11.469447+07:00'
+approved_by: admin-batch

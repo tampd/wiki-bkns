@@ -1,0 +1,19 @@
+claim_id: CLM-HOST-WORDPRESS-HAS_TRIA
+entity_id: product.hosting.wordpress
+entity_type: product
+entity_name: Hosting WordPress
+attribute: has_trial
+value: true
+unit: ''
+qualifiers:
+  duration: 7
+  unit: days
+source_ids:
+- SRC-HOSTING_WORDPRESS_TOC_O_CAO_BANG_GIA_GIAI_PHAP_TOI_UU_S_2026_04_06
+observed_at: '2026-04-07T00:40:11.089532+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: • Điều kiện/giới hạn nổi bật (nếu có): Cung
+  cấp 7 ngày dùng thử miễn phí cho tất cả các gói.'

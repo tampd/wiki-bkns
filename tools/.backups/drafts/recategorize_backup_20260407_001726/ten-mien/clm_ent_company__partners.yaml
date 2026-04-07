@@ -1,0 +1,22 @@
+claim_id: CLM-ENT-COMPANY--PARTNERS
+entity_id: ENT-COMPANY-001
+entity_type: company
+entity_name: BKNS
+attribute: partnership_status
+value: Authorized Reseller
+unit: null
+qualifiers:
+  partner_company: GeoTrust
+source_ids:
+- SRC-RAPIDSSL_CERTIFICATE_CHUNG_CHI_SSL_XAC_THUC_TEN_MIEN_DV_2026_04_04
+- SRC-ESSENTIALSSL_DV_CHUNG_CHI_SSL_XAC_THUC_TEN_MIEN_TU_COMOD_2026_04_06
+- SRC-GEOTRUST_TRUE_BUSINESSID_MULTI_DOMAIN_WILDCARD_2026_04_06
+observed_at: '2026-04-07T00:32:46.934598+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ mục ''Chính sách / Điều khoản / Lưu ý'': ''• Nhà cung cấp:
+  BKNS là đại lý được ủy quyền (Authorized Reseller) của GeoTrust.'''
+value_changed_from: Đại lý ủy quyền của Comodo
+value_changed_at: '2026-04-07T00:32:46.934621+07:00'

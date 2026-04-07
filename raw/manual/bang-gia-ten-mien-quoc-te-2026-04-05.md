@@ -7,10 +7,12 @@ original_format: pdf
 page_title: Loại tên miền
 content_hash: sha256:40c261368b88cce21a988b6dff9bd8677bfa6fd5fa1e25e5b825c7958f363803
 word_count: 174
-status: pending_extract
+status: duplicate_skipped
 suggested_category: uncategorized
 crawl_method: manual_upload
 source_date: '2026-04-05'
+skipped_reason: Duplicate of bang-gia-ten-mien-quoc-te-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.444224+07:00'
 ---
 
 Loại tên miền

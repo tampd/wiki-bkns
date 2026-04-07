@@ -1,0 +1,22 @@
+claim_id: CLM-SOFT-DIRECTADMIN-POLICY
+entity_id: product.software.directadmin
+entity_type: product
+entity_name: Bản quyền phần mềm DirectAdmin
+attribute: policy
+value: Khách hàng Thuê Server tại BKNS được hỗ trợ đổi IP miễn phí (áp dụng cho IP
+  thuộc BKNS).
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-BANG_GIA_BAN_QUYEN_PHAN_MEM_QUAN_TRI_SERVER_DIRECTADMIN_2026_04_06
+observed_at: '2026-04-06T23:11:14.300644+07:00'
+valid_from: '2026-04-06'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ mục Chính sách / Điều khoản / Lưu ý: ''...và được hỗ trợ
+  đổi IP miễn phí (áp dụng cho IP thuộc BKNS).'''
+value_changed_from: DirectAdmin ngừng hỗ trợ đổi địa chỉ IP cho bản quyền lifetime.
+value_changed_at: '2026-04-06T23:11:14.300672+07:00'
+approved_at: '2026-04-07T13:00:15.986856+07:00'
+approved_by: admin-batch

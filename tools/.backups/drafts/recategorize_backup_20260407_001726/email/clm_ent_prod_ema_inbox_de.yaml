@@ -1,0 +1,17 @@
+claim_id: CLM-ENT-PROD-EMA-INBOX_DE
+entity_id: ENT-PROD-EMAIL-RELAY
+entity_type: product
+entity_name: Cloud Email Server
+attribute: inbox_delivery_rate
+value: 99
+unit: '%'
+qualifiers: null
+source_ids:
+- SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_VA_TIN_CAY_2026_04_04
+- SRC-DICH_VU_CLOUD_EMAIL_SERVER_AN_TOAN_HIEU_SUAT_CAO_2026_04_06
+observed_at: '2026-04-06T23:58:41.579282+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: • Điểm chính: Tỷ lệ vào inbox 99%...'

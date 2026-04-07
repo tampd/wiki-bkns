@@ -1,0 +1,16 @@
+claim_id: CLM-ENT-PROD-EMA-SECURITY
+entity_id: ENT-PROD-EMAIL
+entity_type: product
+entity_name: Cloud Email Server
+attribute: security_features
+value: Chống spam/virus
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_CLOUD_EMAIL_SERVER_AN_TOAN_HIEU_SUAT_CAO_2026_04_06
+observed_at: '2026-04-06T23:58:41.589508+07:00'
+valid_from: '2026-04-06'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: • Điểm chính: ...bảo mật chống spam/virus...'

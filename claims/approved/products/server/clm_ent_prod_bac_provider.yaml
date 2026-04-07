@@ -1,0 +1,18 @@
+claim_id: CLM-ENT-PROD-BAC-PROVIDER
+entity_id: ENT-PROD-BACKUP-001
+entity_type: product
+entity_name: Dịch vụ Backup Dữ liệu
+attribute: provider
+value: ENT-COMPANY-001
+unit: null
+qualifiers: null
+source_ids:
+- SRC-BACKUP_DU_LIEU_WEB_2026_04_05
+observed_at: '2026-04-05T21:42:29.922091+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ phần Giới thiệu: ''...uy tín tại BKNS...'''
+approved_at: '2026-04-07T13:00:09.843479+07:00'
+approved_by: admin-batch

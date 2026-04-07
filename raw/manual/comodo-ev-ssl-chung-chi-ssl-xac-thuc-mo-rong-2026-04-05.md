@@ -7,10 +7,12 @@ original_format: docx
 page_title: Comodo EV SSL - Chứng chỉ SSL xác thực mở rộng
 content_hash: sha256:53e05c38c31bf30f60b86e5a57cb77bd5e0f516d5c793949b256915de8429ee4
 word_count: 719
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/ssl
 crawl_method: manual_upload
 source_date: '2026-02-08'
+skipped_reason: Duplicate of comodo-ev-ssl-chung-chi-ssl-xac-thuc-mo-rong-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.352550+07:00'
 ---
 
 ═══ Comodo EV SSL

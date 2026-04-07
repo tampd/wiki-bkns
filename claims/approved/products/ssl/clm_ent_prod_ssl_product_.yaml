@@ -1,0 +1,25 @@
+claim_id: CLM-ENT-PROD-SSL-PRODUCT_
+entity_id: ENT-PROD-SSL-COMODO-POSITIVESSL-MULTI-DOMAIN
+entity_type: product
+entity_name: PositiveSSL Multi-Domain (DV)
+attribute: product_type
+value: PositiveSSL Multi-Domain (DV)
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-POSITIVESSL_MULTI_DOMAIN_DV_CHUNG_CHI_SSL_CHO_NHIEU_TEN_M_2026_04_04
+- SRC-COMODO_SSL_CERTIFICATE_DV_CHUNG_CHI_XAC_THUC_TEN_MIEN_2026_04_06
+- SRC-GEOTRUST_TRUE_BUSINESSID_MULTI_DOMAIN_WILDCARD_2026_04_06
+- SRC-POSITIVESSL_MULTI_DOMAIN_DV_CHUNG_CHI_SSL_CHO_NHIEU_TEN_M_2026_04_06
+observed_at: '2026-04-07T00:54:06.935459+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ tiêu đề trang: ═══ PositiveSSL Multi-Domain (DV)'
+value_changed_from: Đây là một chứng chỉ SSL xác thực doanh nghiệp (Organization Validation
+  - OV) từ GeoTrust, kết hợp tính năng bảo vệ nhiều tên miền (Multi-Domain) và nhiều
+  tên miền con (Wildcard).
+value_changed_at: '2026-04-07T00:54:06.935478+07:00'
+approved_at: '2026-04-07T13:00:13.095209+07:00'
+approved_by: admin-batch

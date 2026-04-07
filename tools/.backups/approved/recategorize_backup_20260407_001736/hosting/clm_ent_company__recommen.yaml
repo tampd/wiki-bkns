@@ -1,0 +1,21 @@
+claim_id: CLM-ENT-COMPANY--RECOMMEN
+entity_id: ENT-COMPANY-001
+entity_type: company
+entity_name: BKNS
+attribute: recommended_rpo
+value: 12
+unit: hours
+qualifiers:
+  business_type: blog
+source_ids:
+- SRC-BKNS_CAMNANG_HOSTING_DOT4_2026_04_06
+observed_at: '2026-04-06T23:33:48.251612+07:00'
+valid_from: '2026-04-06'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ BK7: Blog: RPO 24h, RTO 12h.'
+value_changed_from: 24
+value_changed_at: '2026-04-06T23:33:48.251647+07:00'
+approved_at: '2026-04-07T01:09:10.855688+07:00'
+approved_by: admin-batch

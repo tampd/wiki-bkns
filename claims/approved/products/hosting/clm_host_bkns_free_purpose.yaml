@@ -1,0 +1,18 @@
+claim_id: CLM-HOST-BKNS_FREE-PURPOSE
+entity_id: product.hosting.bkns_free
+entity_type: product_plan
+entity_name: Hosting Miễn Phí
+attribute: purpose
+value: khởi tạo website
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-HOSTING_MIEN_PHI_WEB_2026_04_05
+observed_at: '2026-04-05T22:03:59.630795+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ câu: ''...giúp khởi tạo website với chi phí 0đ.'''
+approved_at: '2026-04-07T13:00:11.920520+07:00'
+approved_by: admin-batch

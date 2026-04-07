@@ -1,0 +1,16 @@
+claim_id: CLM-ENT-PROD-EMA-INBOX_RA
+entity_id: ENT-PROD-EMAIL
+entity_type: product
+entity_name: Email Hosting
+attribute: inbox_rate
+value: 99
+unit: '%'
+qualifiers: {}
+source_ids:
+- SRC-EMAIL_HOSTING_WEB_2026_04_05
+observed_at: '2026-04-05T21:59:38.384611+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Giới thiệu: ''tỉ lệ inbox 99%'''

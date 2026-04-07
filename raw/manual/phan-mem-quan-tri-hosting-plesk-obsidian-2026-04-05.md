@@ -7,10 +7,12 @@ original_format: docx
 page_title: Phần mềm quản trị Hosting Plesk Obsidian
 content_hash: sha256:384862b4cfc3f724d97012201251e7017b4914da5923cd9a2ce51dfb9e9a6b11
 word_count: 889
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/hosting
 crawl_method: manual_upload
 source_date: '2026-02-08'
+skipped_reason: Duplicate of phan-mem-quan-tri-hosting-plesk-obsidian-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.385336+07:00'
 ---
 
 ═══ Phần mềm Plesk Obsidian

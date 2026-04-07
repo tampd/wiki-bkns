@@ -1,0 +1,17 @@
+claim_id: CLM-ENT-PROD-MAN-POLICY.V
+entity_id: ENT-PROD-MANAGED-SERVER
+entity_type: product
+entity_name: Dịch vụ Quản trị Máy chủ Trọn gói
+attribute: policy.vat
+value: Giá chưa bao gồm 10% VAT
+unit: ''
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_QUAN_TRI_MAY_CHU_TRON_GOI_TAI_BKNS_2026_04_06
+observed_at: '2026-04-07T00:10:11.607518+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: drafted
+risk_class: medium
+compiler_note: 'Trích từ mục Chính sách / Điều khoản / Lưu ý: Giá các gói dịch vụ
+  được niêm yết trên chưa bao gồm 10% thuế VAT.'

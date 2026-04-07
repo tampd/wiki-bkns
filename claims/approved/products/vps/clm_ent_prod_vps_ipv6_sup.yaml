@@ -1,0 +1,20 @@
+claim_id: CLM-ENT-PROD-VPS-IPV6_SUP
+entity_id: ENT-PROD-VPS
+entity_type: product_offering
+entity_name: VPS Siêu Rẻ
+attribute: ipv6_support
+value: true
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_THUE_CLOUD_VPS_SSD_GIA_RE_TAI_BKNS_2026_04_04
+- SRC-DICH_VU_VPS_SIEU_TIET_KIEM_VPS_SIEU_RE_TAI_BKNS_2026_04_06
+observed_at: '2026-04-07T00:18:36.262459+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ mục Tính năng / Thành phần: ''Hỗ trợ IPv6: Dịch vụ có hỗ
+  trợ địa chỉ IPv6.'''
+approved_at: '2026-04-07T13:00:14.396521+07:00'
+approved_by: admin-batch

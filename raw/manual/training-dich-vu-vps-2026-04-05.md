@@ -7,10 +7,12 @@ original_format: pdf
 page_title: Training Dịch vụ VPS
 content_hash: sha256:57f12be8495c78ae5ee8e66d8a5d9322ceb279dbf28d7e542be6af95a43f7446
 word_count: 3222
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/vps
 crawl_method: manual_upload
 source_date: '2026-04-05'
+skipped_reason: Duplicate of training-dich-vu-vps-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.259419+07:00'
 ---
 
 Training Dịch vụ VPS 

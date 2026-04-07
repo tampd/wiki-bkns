@@ -1,0 +1,20 @@
+claim_id: CLM-SOFT-DTI_EVALUATION-BASED_ON
+entity_id: product.software.dti_evaluation
+entity_type: product
+entity_name: Phần Mềm Đánh Giá Chuyển Đổi Số DTI
+attribute: based_on_standard
+value: Bộ chỉ số đánh giá chuyển đổi số (DTI) được ban hành bởi Bộ Thông tin và Truyền
+  thông
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-PHAN_MEM_ANH_GIA_CHUYEN_OI_SO_DTI_2026_04_06
+observed_at: '2026-04-07T00:45:52.615373+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ phần ''Mô tả dịch vụ'': Công cụ này hoạt động dựa trên Bộ
+  chỉ số đánh giá chuyển đổi số (DTI) được ban hành bởi Bộ Thông tin và Truyền thông,
+  giúp các đơn vị có một hệ thống tham chiếu chuẩn để theo dõi tiến độ, tổng hợp số
+  liệu và đưa ra các báo cáo cần thiết.'

@@ -1,0 +1,21 @@
+claim_id: CLM-SSL-ESSENTIALSSL_DV-TARGET_A
+entity_id: product.ssl.essentialssl_dv
+entity_type: product_plan
+entity_name: EssentialSSL (DV)
+attribute: target_audience
+value: Các trang web cá nhân, blog, trang web thương mại điện tử nhẹ, và các miền
+  thử nghiệm nội bộ
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-ESSENTIALSSL_DV_CHUNG_CHI_SSL_XAC_THUC_TEN_MIEN_TU_COMOD_2026_04_06
+observed_at: '2026-04-07T00:25:55.171751+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: ''Phù hợp với: Các trang web cá nhân, blog,
+  trang web thương mại điện tử nhẹ, và các miền thử nghiệm nội bộ cần cấp phát SSL
+  nhanh chóng.'''
+approved_at: '2026-04-07T13:00:13.457059+07:00'
+approved_by: admin-batch

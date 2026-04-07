@@ -9,10 +9,12 @@ original_format: docx
 page_title: Dịch vụ Backup Dữ liệu_ Sao lưu và Phục hồi Dữ liệu Uy tín
 content_hash: sha256:65a1ffc13ea385b0dc86ee8560ad2bd42d892a403919e7344c47c8ea7a6f6bc2
 word_count: 1087
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/other
 crawl_method: manual_upload
 source_date: '2026-02-08'
+skipped_reason: Duplicate of dich-vu-backup-du-lieu-sao-luu-va-phuc-hoi-du-lieu-uy-tin-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.255660+07:00'
 ---
 
 ═══ Dịch vụ Backup Dữ liệu

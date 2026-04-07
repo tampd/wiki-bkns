@@ -8,10 +8,12 @@ original_format: docx
 page_title: Chứng chỉ SSL GeoTrust True BusinessID EV (FLEX)
 content_hash: sha256:fd22e2e4df75bdbbdd5732633761b402af26bb6ca06b6eea0ccf1cc07963bf1c
 word_count: 688
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/ssl
 crawl_method: manual_upload
 source_date: '2026-02-08'
+skipped_reason: Duplicate of chung-chi-ssl-geotrust-true-businessid-ev-flex-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.373086+07:00'
 ---
 
 ═══ GeoTrust True BusinessID EV \(FLEX\)

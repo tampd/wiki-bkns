@@ -1,0 +1,20 @@
+claim_id: CLM-ENT-PROD-VPS-UPTIME_C
+entity_id: ENT-PROD-VPS
+entity_type: product
+entity_name: Storage VPS
+attribute: uptime_commitment
+value: 99.99
+unit: '%'
+qualifiers: {}
+source_ids:
+- SRC-CLOUD_VPS_VM_WEB_2026_04_05
+- SRC-STORAGE_VPS_MAY_CHU_AO_LUU_TRU_DUNG_LUONG_CAO_2026_04_06
+observed_at: '2026-04-07T01:03:06.833178+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ mục ''Mô tả dịch vụ'': Dữ liệu của khách hàng được đảm bảo
+  an toàn và ổn định với cam kết 99,99%.'
+approved_at: '2026-04-07T13:00:14.568060+07:00'
+approved_by: admin-batch

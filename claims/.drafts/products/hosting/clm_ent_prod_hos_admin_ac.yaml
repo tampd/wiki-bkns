@@ -1,0 +1,16 @@
+claim_id: CLM-ENT-PROD-HOS-ADMIN_AC
+entity_id: ENT-PROD-HOSTING
+entity_type: product_category
+entity_name: Hosting
+attribute: admin_access
+value: Chỉ có quyền cơ bản, không cài được các phần mềm tuỳ biến
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-TRAINING_DICH_VU_VPS_2026_04_04
+observed_at: '2026-04-04T21:16:50.677396+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: Trích từ bảng so sánh mục 3, dòng 'Quyền quản trị' cho Hosting.

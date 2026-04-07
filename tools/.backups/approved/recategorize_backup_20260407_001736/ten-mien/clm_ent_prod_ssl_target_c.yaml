@@ -1,0 +1,25 @@
+claim_id: CLM-ENT-PROD-SSL-TARGET_C
+entity_id: ENT-PROD-SSL-COMODO-POSITIVESSL-MULTI-DOMAIN
+entity_type: product
+entity_name: GeoTrust True BusinessID Multi-Domain Wildcard
+attribute: target_customer
+value: Doanh nghiệp cần bảo mật cho một tên miền chính, nhiều tên miền con dưới dạng
+  wildcard, đồng thời muốn hiển thị thông tin xác thực của tổ chức.
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-POSITIVESSL_MULTI_DOMAIN_DV_CHUNG_CHI_SSL_CHO_NHIEU_TEN_M_2026_04_04
+- SRC-GEOTRUST_TRUE_BUSINESSID_MULTI_DOMAIN_WILDCARD_2026_04_06
+observed_at: '2026-04-07T00:32:46.760939+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: none
+compiler_note: 'Trích từ mục ''Tóm tắt nhanh'': ''• Phù hợp với: Doanh nghiệp cần
+  bảo mật cho một tên miền chính, nhiều tên miền con dưới dạng wildcard, đồng thời
+  muốn hiển thị thông tin xác thực của tổ chức.'''
+value_changed_from: Các trang web thương mại điện tử mới, doanh nghiệp nhỏ, và các
+  cá nhân cần bảo mật nhiều trang web
+value_changed_at: '2026-04-07T00:32:46.760962+07:00'
+approved_at: '2026-04-07T01:09:09.647882+07:00'
+approved_by: admin-batch

@@ -1,0 +1,18 @@
+claim_id: CLM-ENT--BK_MISA-SCALABIL
+entity_id: ENT-PROD-VPS.bk_misa
+entity_type: product
+entity_name: BK MISA
+attribute: scalability
+value: Có thể mở rộng theo khối lượng công việc và nhu cầu sử dụng
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-CLOUD_VPS_BK_MISA_GIAI_PHAP_LUU_TRU_KE_TOAN_SO_2026_04_06
+observed_at: '2026-04-06T23:45:51.843242+07:00'
+valid_from: '2026-04-06'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ: ━━━ Tính năng / Thành phần • Mở rộng linh hoạt: Cung cấp
+  tài nguyên không giới hạn, có thể mở rộng theo khối lượng công việc và nhu cầu sử
+  dụng.'

@@ -1,0 +1,19 @@
+claim_id: CLM-EMAI-EMAIL_1-EMAIL_FO
+entity_id: product.email_hosting.email_1
+entity_type: product_plan
+entity_name: EMAIL 1
+attribute: email_forwarder_limit
+value: 5
+unit: forwarder
+qualifiers: {}
+source_ids:
+- SRC-BANG_GIA_DICH_VU_BKNS_TEXT_2026_04_04
+- SRC-BANG_GIA_DICH_VU_BKNS_TEXT_2026_04_06
+observed_at: '2026-04-06T23:13:40.817584+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ Gói EMAIL 1: - Email forwarders: 5'
+approved_at: '2026-04-07T01:09:12.359030+07:00'
+approved_by: admin-batch

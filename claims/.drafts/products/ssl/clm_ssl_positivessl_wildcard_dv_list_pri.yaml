@@ -1,0 +1,17 @@
+claim_id: CLM-SSL-POSITIVESSL_WILDCARD_DV-LIST_PRI
+entity_id: bkns.ssl.positivessl_wildcard_dv
+entity_type: product
+entity_name: PositiveSSL Wildcard (DV)
+attribute: list_price
+value: 6474000
+unit: VND
+qualifiers:
+  billing_cycle: year
+source_ids:
+- SRC-POSITIVESSL_WILDCARD_DV_CHUNG_CHI_SSL_GIA_RE_2026_04_06
+observed_at: '2026-04-07T00:55:31.459430+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ Gói dịch vụ và bảng giá: ''Giá nhà cung cấp | <del>6.474.000đ/năm</del>'''

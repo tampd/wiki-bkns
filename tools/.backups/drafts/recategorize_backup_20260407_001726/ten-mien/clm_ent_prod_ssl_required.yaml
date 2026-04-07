@@ -1,0 +1,22 @@
+claim_id: CLM-ENT-PROD-SSL-REQUIRED
+entity_id: ENT-PROD-SSL-RAPIDSSL
+entity_type: product
+entity_name: RapidSSL Certificate
+attribute: required_documents
+value: Không yêu cầu
+unit: null
+qualifiers: null
+source_ids:
+- SRC-RAPIDSSL_CERTIFICATE_CHUNG_CHI_SSL_XAC_THUC_TEN_MIEN_DV_2026_04_04
+- SRC-GEOTRUST_TRUE_BUSINESSID_MULTI_DOMAIN_WILDCARD_2026_04_06
+- SRC-POSITIVESSL_MULTI_DOMAIN_DV_CHUNG_CHI_SSL_CHO_NHIEU_TEN_M_2026_04_06
+- SRC-RAPIDSSL_CERTIFICATE_CHUNG_CHI_SSL_XAC_THUC_TEN_MIEN_DV_2026_04_06
+observed_at: '2026-04-07T00:57:06.271687+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng Thông số kỹ thuật: | Giấy tờ kèm theo | Không yêu cầu
+  |'
+value_changed_from: Đăng ký kinh doanh
+value_changed_at: '2026-04-07T00:54:07.067475+07:00'

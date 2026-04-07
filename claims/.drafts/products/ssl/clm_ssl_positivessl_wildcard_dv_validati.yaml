@@ -1,0 +1,19 @@
+claim_id: CLM-SSL-POSITIVESSL_WILDCARD_DV-VALIDATI
+entity_id: bkns.ssl.positivessl_wildcard_dv
+entity_type: product
+entity_name: PositiveSSL Wildcard (DV)
+attribute: validation_type
+value: Chỉ xác thực quyền sở hữu tên miền, không xác thực thông tin tổ chức.
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-POSITIVESSL_WILDCARD_DV_CHUNG_CHI_SSL_GIA_RE_2026_04_06
+observed_at: '2026-04-07T00:55:31.452413+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ Tóm tắt nhanh: ''Điều kiện/giới hạn nổi bật (nếu có): Chỉ
+  xác thực quyền sở hữu tên miền, không xác thực thông tin tổ chức.'''
+value_changed_from: Domain Validation (DV)
+value_changed_at: '2026-04-07T00:55:31.452431+07:00'

@@ -1,0 +1,17 @@
+claim_id: CLM-ENT-PROD-VPS-DATA_GAP
+entity_id: ENT-PROD-VPS
+entity_type: product
+entity_name: VPS Giá Rẻ
+attribute: data_gap
+value: 'Loại ổ cứng sử dụng (ví dụ: SSD, NVMe, HDD) không được nêu rõ'
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_VPS_GIA_RE_MAY_CHU_AO_CAU_HINH_ON_INH_2026_04_06
+observed_at: '2026-04-07T00:16:39.039929+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục ''Ghi chú trích xuất'': ⚠️ CHƯA TRÍCH XUẤT ĐỦ: Loại ổ
+  cứng sử dụng (ví dụ: SSD, NVMe, HDD) không được nêu rõ trong nội dung trang.'

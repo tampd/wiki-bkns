@@ -1,0 +1,17 @@
+claim_id: CLM-VPS-VPS_N8N_AI-STARTING
+entity_id: product.vps.vps_n8n_ai
+entity_type: product
+entity_name: VPS N8N AI
+attribute: starting_price
+value: 140000
+unit: VND
+qualifiers:
+  billing_cycle: month
+source_ids:
+- SRC-VPS_N8N_AI_WEB_2026_04_05
+observed_at: '2026-04-05T22:22:11.934740+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ phần Giới thiệu: Giá từ 140.000đ/tháng.'

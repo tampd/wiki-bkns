@@ -1,0 +1,21 @@
+claim_id: CLM-ENT-PROD-SOF-TARGET_A
+entity_id: ENT-PROD-SOFTWARE-SOFTACULOUS
+entity_type: product
+entity_name: Bản quyền Softaculous
+attribute: target_audience
+value: người dùng VPS
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-BAN_QUYEN_SOFTACULOUS_TRINH_CAI_AT_UNG_DUNG_TU_ONG_2026_04_04
+- SRC-BAN_QUYEN_SOFTACULOUS_TRINH_CAI_AT_UNG_DUNG_TU_ONG_2026_04_06
+observed_at: '2026-04-06T23:02:27.127709+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ: • Phù hợp với: Quản trị viên máy chủ, người dùng hosting,
+  VPS muốn đơn giản hóa việc cài đặt và quản lý các mã nguồn mở phổ biến (WordPress,
+  Joomla, Magento...).'
+value_changed_from: người dùng hosting
+value_changed_at: '2026-04-06T23:02:27.127730+07:00'

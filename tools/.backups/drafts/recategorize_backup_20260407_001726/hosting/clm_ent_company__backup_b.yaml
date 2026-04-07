@@ -1,0 +1,17 @@
+claim_id: CLM-ENT-COMPANY--BACKUP_B
+entity_id: ENT-COMPANY-001
+entity_type: company
+entity_name: BKNS
+attribute: backup_best_practice
+value: '3-2-1 rule: 3 data copies, 2 different media types, 1 offsite copy'
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-BKNS_CAMNANG_HOSTING_DOT4_2026_04_06
+observed_at: '2026-04-06T23:33:48.217968+07:00'
+valid_from: '2026-04-06'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ BK3: 3-2-1 backup rule là gì? 3 bản sao dữ liệu, 2 loại media
+  khác nhau (disk + cloud), 1 bản offsite (datacenter khác).'

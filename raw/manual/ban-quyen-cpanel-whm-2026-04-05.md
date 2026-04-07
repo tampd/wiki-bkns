@@ -7,10 +7,12 @@ original_format: docx
 page_title: Bản quyền cPanel_WHM
 content_hash: sha256:53fd9352d589b2d45de07bc47ddc3be8b0ffb2ffdcfc3abc8edd3e703df1a400
 word_count: 806
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/software
 crawl_method: manual_upload
 source_date: '2026-02-08'
+skipped_reason: Duplicate of ban-quyen-cpanel-whm-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.393713+07:00'
 ---
 
 ═══ Bản quyền cPanel/WHM

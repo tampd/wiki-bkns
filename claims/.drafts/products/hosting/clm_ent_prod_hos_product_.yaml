@@ -1,0 +1,18 @@
+claim_id: CLM-ENT-PROD-HOS-PRODUCT_
+entity_id: ENT-PROD-HOSTING
+entity_type: product
+entity_name: Hosting WordPress
+attribute: product_name
+value: Hosting WordPress
+unit: null
+qualifiers:
+  product_line: Hosting WordPress
+source_ids:
+- SRC-HOSTING_WORDPRESS_WEB_2026_04_05
+observed_at: '2026-04-05T22:04:52.731032+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ tiêu đề: ''# Hosting WordPress Tốc Độ Cao – Bảng Giá & Giải
+  Pháp Tối Ưu SEO'''

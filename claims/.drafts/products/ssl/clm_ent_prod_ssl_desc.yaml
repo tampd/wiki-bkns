@@ -1,0 +1,27 @@
+claim_id: CLM-ENT-PROD-SSL-DESC
+entity_id: ENT-PROD-SSL-001
+entity_type: product
+entity_name: RapidSSL Certificate
+attribute: description
+value: RapidSSL Certificate là một sản phẩm thuộc phân khúc giá rẻ của DigiCert. Với
+  ưu điểm xác thực nhanh và cấp phát tức thời, RapidSSL được sử dụng để bảo mật cho
+  hầu hết các website trên internet. Đây là giải pháp phù hợp cho các trang web cần
+  mã hóa cơ bản một cách nhanh chóng.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-GEOTRUST_TRUE_BUSINESSID_WITH_EV_MULTI_DOMAIN_2026_04_04
+- SRC-RAPIDSSL_CERTIFICATE_CHUNG_CHI_SSL_XAC_THUC_TEN_MIEN_DV_2026_04_06
+observed_at: '2026-04-07T00:57:06.163877+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Mô tả dịch vụ: RapidSSL Certificate là một sản phẩm thuộc
+  phân khúc giá rẻ của DigiCert. Với ưu điểm xác thực nhanh và cấp phát tức thời,
+  RapidSSL được sử dụng để bảo mật cho hầu hết các website trên internet. Đây là giải
+  pháp phù hợp cho các trang web cần mã hóa cơ bản một cách nhanh chóng.'
+value_changed_from: Đây là chứng chỉ SSL với mức xác thực mở rộng (EV - Extended Validation)
+  cao nhất, cho phép bảo mật nhiều tên miền (Multi-Domain) khác nhau chỉ với một chứng
+  chỉ duy nhất.
+value_changed_at: '2026-04-07T00:57:06.163898+07:00'

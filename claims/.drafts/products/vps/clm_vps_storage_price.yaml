@@ -1,0 +1,21 @@
+claim_id: CLM-VPS-STORAGE-PRICE
+entity_id: bkns.vps.storage.vps1
+entity_type: product_plan
+entity_name: STORAGE VPS 2
+attribute: monthly_price
+value: 360000
+unit: VND
+qualifiers:
+  billing_cycle: month
+  vat_policy: exclusive
+source_ids:
+- SRC-STORAGE_VPS_MAY_CHU_AO_LUU_TRU_DUNG_LUONG_CAO_2026_04_06
+observed_at: '2026-04-07T01:03:06.927137+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ bảng giá: | STORAGE VPS 2 | 2 Core | 2 GB | 200 GB | 1 |
+  Không giới hạn | 360.000 đ/tháng |'
+value_changed_from: 180000
+value_changed_at: '2026-04-07T01:03:06.927156+07:00'

@@ -1,0 +1,18 @@
+claim_id: CLM-ENT--WS-TRANSFER
+entity_id: ENT-PROD-DOMAIN.ws
+entity_type: product_plan
+entity_name: .ws
+attribute: transfer_in_fee
+value: 1075000
+unit: VND
+qualifiers: null
+source_ids:
+- SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_04
+- SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_06
+observed_at: '2026-04-06T23:06:04.111974+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ Bảng giá tên miền Quốc tế: .ws | Miễn phí | 505.000 | 1.075.000
+  | 1.075.000'

@@ -9,10 +9,12 @@ original_format: docx
 page_title: LiteSpeed Web Server_ Tính năng, phiên bản và so sánh
 content_hash: sha256:1f970cf4d3848a9a5f624233da1c4eb5a00eaad6f0722d2cc03df386f73863bf
 word_count: 816
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/hosting
 crawl_method: manual_upload
 source_date: '2026-02-08'
+skipped_reason: Duplicate of litespeed-web-server-tinh-nang-phien-ban-va-so-sanh-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.421427+07:00'
 ---
 
 ═══ LiteSpeed Web Server

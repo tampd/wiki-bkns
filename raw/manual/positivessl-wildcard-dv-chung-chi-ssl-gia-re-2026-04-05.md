@@ -8,10 +8,12 @@ original_format: docx
 page_title: PositiveSSL Wildcard (DV) - Chứng chỉ SSL giá rẻ
 content_hash: sha256:838595ca1ddafcdd1eb8ce23fea1f9df965309595e659b64b2fbe9fa57e0a0e1
 word_count: 590
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/ssl
 crawl_method: manual_upload
 source_date: '2026-02-08'
+skipped_reason: Duplicate of positivessl-wildcard-dv-chung-chi-ssl-gia-re-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.476122+07:00'
 ---
 
 ═══ PositiveSSL Wildcard \(DV\)

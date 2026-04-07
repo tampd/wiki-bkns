@@ -9,10 +9,12 @@ original_format: docx
 page_title: GeoTrust QuickSSL Premium - Chứng chỉ SSL xác thực tên miền (DV)
 content_hash: sha256:bf62184556e7b3f4cb86d22c19f456d6b07868fb156dd3b018ccadd120297cb5
 word_count: 588
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/ten-mien
 crawl_method: manual_upload
 source_date: '2026-02-08'
+skipped_reason: Duplicate of geotrust-quickssl-premium-chung-chi-ssl-xac-thuc-ten-mien-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.440028+07:00'
 ---
 
 ═══ GeoTrust QuickSSL Premium

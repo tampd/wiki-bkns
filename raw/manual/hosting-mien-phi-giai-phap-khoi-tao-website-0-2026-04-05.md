@@ -8,10 +8,12 @@ original_format: docx
 page_title: Hosting Miễn Phí - Giải pháp khởi tạo website 0đ
 content_hash: sha256:ba06b2b62cf0e479f832817dc80c3cacf7bb7fa05901757325e365eefecf0ec6
 word_count: 470
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/hosting
 crawl_method: manual_upload
 source_date: '2026-02-08'
+skipped_reason: Duplicate of hosting-mien-phi-giai-phap-khoi-tao-website-0-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.322078+07:00'
 ---
 
 ═══ Hosting Miễn phí

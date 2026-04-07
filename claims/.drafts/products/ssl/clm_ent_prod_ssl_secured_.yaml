@@ -1,0 +1,19 @@
+claim_id: CLM-ENT-PROD-SSL-SECURED_
+entity_id: ENT-PROD-SSL-COMODO-WILDCARD-DV
+entity_type: product
+entity_name: Comodo SSL Wildcard Certificate (DV)
+attribute: secured_domains_count
+value: Unlimited
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-COMODO_SSL_WILDCARD_CERTIFICATE_DV_CHUNG_CHI_SSL_2026_04_06
+observed_at: '2026-04-06T23:50:22.091192+07:00'
+valid_from: '2026-04-06'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ mục ''Tính năng / Thành phần'': ''• Bảo vệ tên miền và tên
+  miền phụ: Bảo mật cho 1 tên miền chính và không giới hạn tên miền phụ (subdomains).'''
+value_changed_from: 1
+value_changed_at: '2026-04-06T23:50:22.091211+07:00'

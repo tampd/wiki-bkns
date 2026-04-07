@@ -9,10 +9,12 @@ original_format: docx
 page_title: Bảng giá đăng ký, gia hạn và transfer tên miền 2026 tại BKNS
 content_hash: sha256:83c03fbf662bf4b32ffe5d3eb00d393800676deb9b5495f132fc462624ca5890
 word_count: 1220
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/ten-mien
 crawl_method: manual_upload
 source_date: '2026-02-08'
+skipped_reason: Duplicate of bang-gia-ang-ky-gia-han-va-transfer-ten-mien-2026-tai-bkns-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.289531+07:00'
 ---
 
 ═══ Bảng Giá Dịch Vụ Tên Miền

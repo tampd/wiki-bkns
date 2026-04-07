@@ -1,0 +1,18 @@
+claim_id: CLM-HOST-WORDPRESS-CPU_LIMI
+entity_id: product.hosting.wordpress.wpcp01
+entity_type: product_plan
+entity_name: WPCP01
+attribute: cpu_limit
+value: 1
+unit: core
+qualifiers: {}
+source_ids:
+- SRC-HOSTING_WORDPRESS_TOC_O_CAO_BANG_GIA_GIAI_PHAP_TOI_UU_S_2026_04_06
+observed_at: '2026-04-07T00:40:11.211779+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: medium
+compiler_note: 'Trích từ bảng giá: | CPU limit | 01 core |'
+approved_at: '2026-04-07T13:00:12.624135+07:00'
+approved_by: admin-batch

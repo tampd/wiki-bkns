@@ -1,0 +1,18 @@
+claim_id: CLM-VPS-BKNS_CLOUD_VPS_SSD-ACTIVATI
+entity_id: product.vps.bkns_cloud_vps_ssd
+entity_type: product_offering
+entity_name: Thuê Cloud VPS SSD
+attribute: activation_type
+value: Automatic
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_THUE_CLOUD_VPS_SSD_GIA_RE_TAI_BKNS_2026_04_06
+observed_at: '2026-04-07T00:13:45.674938+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ mục Tính năng / Thành phần: ''Kích hoạt: Kích hoạt tự động'''
+approved_at: '2026-04-07T13:00:14.934902+07:00'
+approved_by: admin-batch

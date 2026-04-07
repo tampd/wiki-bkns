@@ -1,0 +1,19 @@
+claim_id: CLM-EMAI-EMAIL_2-EMAIL_FO
+entity_id: product.email.email_2
+entity_type: product_plan
+entity_name: EMAIL 2
+attribute: email_forwarders_limit
+value: 10
+unit: forwarder
+qualifiers: {}
+source_ids:
+- SRC-EMAIL_HOSTING_WEB_2026_04_05
+observed_at: '2026-04-05T21:59:38.440839+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ Bảng giá các gói Email Hosting (website): ''EMAIL 2 | ...
+  | 10'''
+approved_at: '2026-04-07T01:09:10.198518+07:00'
+approved_by: admin-batch

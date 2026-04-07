@@ -7,10 +7,12 @@ original_format: docx
 page_title: Dịch vụ Quản trị Máy chủ Trọn gói tại BKNS
 content_hash: sha256:9a36b87826289c28a1f1e1829dccd9cbdfe10f66bc589ecf23e475837058aff5
 word_count: 793
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/server
 crawl_method: manual_upload
 source_date: '2026-02-08'
+skipped_reason: Duplicate of dich-vu-quan-tri-may-chu-tron-goi-tai-bkns-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.428990+07:00'
 ---
 
 ═══ Dịch vụ Quản trị Máy chủ Trọn gói

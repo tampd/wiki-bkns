@@ -1,0 +1,17 @@
+claim_id: CLM-VPS-SIEU_RE-PROVIDER
+entity_id: vps.sieu_re
+entity_type: product
+entity_name: VPS Siêu Rẻ
+attribute: provider
+value: ENT-COMPANY-001
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_VPS_SIEU_TIET_KIEM_VPS_SIEU_RE_TAI_BKNS_2026_04_04
+observed_at: '2026-04-04T20:55:44.974988+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: Bạn là chuyên gia trích xuất dữ liệu (data extraction specialist) cho
+  BKNS.

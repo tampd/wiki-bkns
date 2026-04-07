@@ -1,0 +1,20 @@
+claim_id: CLM-DEDI-MCCB01-PRICE
+entity_id: product.dedicated_server.mccb01
+entity_type: product_plan
+entity_name: MCCB01
+attribute: price
+value: 1600000
+unit: VND
+qualifiers:
+  billing_cycle: 24 months
+  price_per: month
+source_ids:
+- SRC-DANH_SACH_GOI_SAN_PHAM_MAY_CHU_BKNS_2026_04_06
+observed_at: '2026-04-06T23:52:20.206504+07:00'
+valid_from: '2026-04-06'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ bảng giá Gói MCCB01: | 24 tháng | 1.600.000 |'
+value_changed_from: 1750000
+value_changed_at: '2026-04-06T23:52:20.206522+07:00'

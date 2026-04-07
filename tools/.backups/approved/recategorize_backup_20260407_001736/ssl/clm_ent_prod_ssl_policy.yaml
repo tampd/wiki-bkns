@@ -1,0 +1,19 @@
+claim_id: CLM-ENT-PROD-SSL-POLICY
+entity_id: ENT-PROD-SSL-INSTANTSSL-PRO-OV
+entity_type: product_plan
+entity_name: InstantSSL Pro (OV)
+attribute: policy
+value: BKNS ĐẢM BẢO
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-INSTANTSSL_PRO_OV_CHUNG_CHI_SSL_XAC_THUC_TO_CHUC_CUA_COM_2026_04_04
+observed_at: '2026-04-04T21:05:51.105878+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: none
+compiler_note: 'Trích từ Chính sách / Điều khoản / Lưu ý: ''Trang sản phẩm có dòng
+  chữ "BKNS ĐẢM BẢO".'''
+approved_at: '2026-04-07T01:09:12.908872+07:00'
+approved_by: admin-batch

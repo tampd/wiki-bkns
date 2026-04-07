@@ -7,10 +7,12 @@ original_format: docx
 page_title: Dịch vụ Thuê Cloud VPS SSD Giá Rẻ tại BKNS
 content_hash: sha256:9d5a0bcb90aefd2351d7cc7081bb09bfe1ed1de99fe824e7bdd7c31dda7f50b3
 word_count: 804
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/vps
 crawl_method: manual_upload
 source_date: '2026-02-08'
+skipped_reason: Duplicate of dich-vu-thue-cloud-vps-ssd-gia-re-tai-bkns-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.206516+07:00'
 ---
 
 ═══ Thuê Cloud VPS SSD

@@ -9,10 +9,12 @@ original_format: docx
 page_title: InstantSSL Pro (OV) - Chứng chỉ SSL xác thực tổ chức của Comodo
 content_hash: sha256:65a8b406a94c07ceaf929410e6e700084b06b623da50bbffdaf09c235945390d
 word_count: 552
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/ssl
 crawl_method: manual_upload
 source_date: '2026-02-08'
+skipped_reason: Duplicate of instantssl-pro-ov-chung-chi-ssl-xac-thuc-to-chuc-cua-com-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.211322+07:00'
 ---
 
 ═══ InstantSSL Pro \(OV\)

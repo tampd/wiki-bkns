@@ -1,0 +1,19 @@
+claim_id: CLM-SOFT-DTI_EVALUATION-FEATURE
+entity_id: product.software.dti_evaluation
+entity_type: product_plan
+entity_name: Gói Vĩnh viễn
+attribute: feature
+value: Cấu hình và phát triển theo yêu cầu của Tỉnh
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-PHAN_MEM_ANH_GIA_CHUYEN_OI_SO_DTI_2026_04_06
+observed_at: '2026-04-07T00:45:52.694449+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng giá, cột ''Gói Vĩnh viễn'', hàng ''Chức năng'': Cấu
+  hình và phát triển theo yêu cầu của Tỉnh'
+value_changed_from: Bản đồ số liệu trong tỉnh
+value_changed_at: '2026-04-07T00:45:52.694467+07:00'

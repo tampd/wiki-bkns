@@ -9,10 +9,12 @@ original_format: docx
 page_title: Reseller Hosting cPanel_ Quản lý nhiều hosting chỉ với một tài khoản
 content_hash: sha256:a16693e70e5149883e39d4ee798af05761137b922e135e5dfdce6cb0841a30af
 word_count: 909
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/hosting
 crawl_method: manual_upload
 source_date: '2026-02-08'
+skipped_reason: Duplicate of reseller-hosting-cpanel-quan-ly-nhieu-hosting-chi-voi-mot-t-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.251703+07:00'
 ---
 
 ═══ Reseller Hosting cPanel

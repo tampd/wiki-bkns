@@ -1,0 +1,17 @@
+claim_id: CLM-VBLT_5_CONNE-PRICE_ST
+entity_id: vblt_5_connect_new
+entity_type: product_plan
+entity_name: vBulletin 5 Connect + Mobile Suite Bundle - Upgrade
+attribute: price_string
+value: Giá liên hệ
+unit: null
+qualifiers: null
+source_ids:
+- SRC-BAN_QUYEN_VBULLETIN_HE_QUAN_TRI_FORUM_MANG_XA_HOI_2026_04_06
+observed_at: '2026-04-06T23:04:03.071160+07:00'
+valid_from: '2026-04-06'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ bảng giá, dòng ''Upgrade'' thứ hai, được liệt kê ngay sau
+  gói ''vBulletin 5 Connect + Mobile Suite Bundle'': | Upgrade | Giá liên hệ | ...'

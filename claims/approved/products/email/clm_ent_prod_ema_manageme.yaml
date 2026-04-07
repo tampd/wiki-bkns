@@ -1,0 +1,19 @@
+claim_id: CLM-ENT-PROD-EMA-MANAGEME
+entity_id: ENT-PROD-EMAIL
+entity_type: product
+entity_name: Dịch vụ Email Hosting
+attribute: management_account
+value: Tài khoản quản trị BKNS
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_06
+observed_at: '2026-04-07T00:05:00.806769+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ mục Tính năng / Thành phần: ''Quản trị: Cung cấp tài khoản
+  quản trị BKNS'''
+approved_at: '2026-04-07T13:00:11.542840+07:00'
+approved_by: admin-batch

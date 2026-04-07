@@ -7,10 +7,12 @@ original_format: docx
 page_title: PositiveSSL (DV) - Chứng chỉ SSL giá rẻ
 content_hash: sha256:aec969e92d7300f46426bc6c56cb9676876d4c879bc4048ad3e06afdeaca1c93
 word_count: 597
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/ssl
 crawl_method: manual_upload
 source_date: '2026-02-08'
+skipped_reason: Duplicate of positivessl-dv-chung-chi-ssl-gia-re-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.190996+07:00'
 ---
 
 ═══ PositiveSSL \(DV\)

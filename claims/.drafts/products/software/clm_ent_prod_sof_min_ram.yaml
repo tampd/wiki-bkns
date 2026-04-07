@@ -1,0 +1,16 @@
+claim_id: CLM-ENT-PROD-SOF-MIN_RAM
+entity_id: ENT-PROD-SOFTWARE-DIRECTADMIN
+entity_type: product
+entity_name: DirectAdmin
+attribute: min_ram
+value: 1
+unit: GB
+qualifiers: {}
+source_ids:
+- SRC-DIRECTADMIN_WEB_2026_04_05
+observed_at: '2026-04-05T21:56:38.832117+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Cấu hình tối thiểu: ''- RAM: 1 GB'''

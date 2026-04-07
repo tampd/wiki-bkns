@@ -1,0 +1,19 @@
+claim_id: CLM-HOST-RESELLER_CPANEL-REGISTRA
+entity_id: product.hosting.reseller_cpanel.rl04
+entity_type: product_plan
+entity_name: RL03
+attribute: registration_link
+value: https://my.bkns.net/?cmd=cart&action=add&id=307
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-RESELLER_HOSTING_CPANEL_QUAN_LY_NHIEU_HOSTING_CHI_VOI_MOT_T_2026_04_04
+- SRC-RESELLER_HOSTING_CPANEL_QUAN_LY_NHIEU_HOSTING_CHI_VOI_MOT_T_2026_04_06
+observed_at: '2026-04-07T01:00:34.641699+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: Trích từ bảng giá, dòng Đăng ký của gói RL03.
+value_changed_from: https://my.bkns.net/?cmd=cart&action=add&id=304
+value_changed_at: '2026-04-07T01:00:34.641717+07:00'

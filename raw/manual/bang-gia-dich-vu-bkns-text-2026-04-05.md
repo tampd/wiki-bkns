@@ -7,10 +7,12 @@ original_format: docx
 page_title: Bang_gia_dich_vu_bkns_text
 content_hash: sha256:6c539bba744a3bbf871a45961f38971172607c26989d1fa81718f18d1b44b02b
 word_count: 4130
-status: pending_extract
+status: duplicate_skipped
 suggested_category: uncategorized
 crawl_method: manual_upload
 source_date: '2026-04-05'
+skipped_reason: Duplicate of bang-gia-dich-vu-bkns-text-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.301395+07:00'
 ---
 
 <a id="bảng_giá_dịch_vụ_bkns_diễn_giải_chi_tiết"></a>__BẢNG GIÁ DỊCH VỤ BKNS \- DIỄN GIẢI CHI TIẾT__

@@ -1,0 +1,18 @@
+claim_id: CLM-ENT--GEOTRUST_QUICKSSL_PREMIUM-CATEGORY
+entity_id: ENT-PROD-SSL.GEOTRUST_QUICKSSL_PREMIUM
+entity_type: product_plan
+entity_name: GeoTrust QuickSSL Premium
+attribute: category
+value: SSL Bảo mật
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-GEOTRUST_QUICKSSL_PREMIUM_CHUNG_CHI_SSL_XAC_THUC_TEN_MIEN_2026_04_04
+observed_at: '2026-04-04T20:59:23.995843+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ mục Thông tin nguồn: ''• Danh mục: SSL Bảo mật'''
+approved_at: '2026-04-07T13:00:12.774622+07:00'
+approved_by: admin-batch

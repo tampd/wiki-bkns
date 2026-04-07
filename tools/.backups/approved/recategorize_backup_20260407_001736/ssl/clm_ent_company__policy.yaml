@@ -1,0 +1,20 @@
+claim_id: CLM-ENT-COMPANY--POLICY
+entity_id: ENT-COMPANY-001
+entity_type: company
+entity_name: BKNS
+attribute: policy
+value: Giá tốt nhất thị trường
+unit: ''
+qualifiers:
+  product_scope: ENT-PROD-SSL-COMODO-WILDCARD-DV
+source_ids:
+- SRC-COMODO_SSL_WILDCARD_CERTIFICATE_DV_CHUNG_CHI_SSL_2026_04_06
+observed_at: '2026-04-06T23:50:22.223958+07:00'
+valid_from: '2026-04-06'
+confidence: high
+review_state: approved
+risk_class: none
+compiler_note: 'Trích từ mục ''Chính sách / Điều khoản / Lưu ý'': ''• Giá tốt nhất
+  thị trường'''
+approved_at: '2026-04-07T01:09:12.727685+07:00'
+approved_by: admin-batch

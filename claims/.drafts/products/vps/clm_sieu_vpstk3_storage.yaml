@@ -1,0 +1,17 @@
+claim_id: CLM-SIEU-VPSTK3-STORAGE
+entity_id: vps.sieu_re.vpstk3
+entity_type: product_plan
+entity_name: VPSTK3
+attribute: storage
+value: 30
+unit: GB
+qualifiers:
+  storage_type: SSD
+source_ids:
+- SRC-DICH_VU_VPS_SIEU_TIET_KIEM_VPS_SIEU_RE_TAI_BKNS_2026_04_04
+observed_at: '2026-04-04T20:55:45.025803+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng giá, dòng VPSTK3: | Dung Lượng | 30 GB |'

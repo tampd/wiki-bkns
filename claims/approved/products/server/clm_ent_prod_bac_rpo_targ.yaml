@@ -1,0 +1,19 @@
+claim_id: CLM-ENT-PROD-BAC-RPO_TARG
+entity_id: ENT-PROD-BACKUP
+entity_type: product
+entity_name: Dịch vụ Backup
+attribute: rpo_target
+value: 24
+unit: giờ
+qualifiers:
+  customer_type: Blog
+source_ids:
+- SRC-BKNS_CAMNANG_HOSTING_DOT4_2026_04_04
+observed_at: '2026-04-04T20:34:06.135756+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ BK7: Blog: RPO 24h'
+approved_at: '2026-04-07T13:00:09.859280+07:00'
+approved_by: admin-batch

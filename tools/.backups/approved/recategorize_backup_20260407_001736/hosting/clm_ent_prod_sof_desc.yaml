@@ -1,0 +1,26 @@
+claim_id: CLM-ENT-PROD-SOF-DESC
+entity_id: ENT-PROD-SOFTWARE-LITESPEED
+entity_type: product
+entity_name: Bản Quyền CloudLinux OS
+attribute: description
+value: CloudLinux là một hệ điều hành thương mại dựa trên nền tảng CentOS, được thiết
+  kế để cải thiện độ ổn định, mật độ và bảo mật của các máy chủ trong môi trường shared
+  hosting.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-LITESPEED_WEB_SERVER_TINH_NANG_PHIEN_BAN_VA_SO_SANH_2026_04_04
+- SRC-BAN_QUYEN_CLOUDLINUX_OS_TANG_ON_INH_VA_BAO_MAT_CHO_SHARED_2026_04_06
+observed_at: '2026-04-06T22:58:12.919808+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: ''Dịch vụ này là gì: CloudLinux là một hệ
+  điều hành thương mại dựa trên nền tảng CentOS, được thiết kế để cải thiện độ ổn
+  định, mật độ và bảo mật của các máy chủ trong môi trường shared hosting.'''
+value_changed_from: LiteSpeed Web Server (LSWS) là một phần mềm máy chủ web độc quyền,
+  hiệu suất cao, được thiết kế để thay thế cho Apache.
+value_changed_at: '2026-04-06T22:58:12.919861+07:00'
+approved_at: '2026-04-07T01:09:11.180074+07:00'
+approved_by: admin-batch

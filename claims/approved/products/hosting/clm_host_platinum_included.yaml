@@ -1,0 +1,20 @@
+claim_id: CLM-HOST-PLATINUM-INCLUDED
+entity_id: product.hosting.platinum
+entity_type: product
+entity_name: Platinum Web Hosting
+attribute: included_ssl
+value: true
+unit: null
+qualifiers:
+  type: free
+source_ids:
+- SRC-PLATINUM_WEB_HOSTING_HOSTING_NVME_TOC_O_CAO_BACKUP_3_LAN_2026_04_06
+observed_at: '2026-04-07T00:49:55.494727+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: null
+compiler_note: 'Trích từ mục Tính năng / Thành phần: Cung cấp chứng chỉ SSL miễn phí
+  để mã hóa dữ liệu.'
+approved_at: '2026-04-07T13:00:12.206089+07:00'
+approved_by: admin-batch

@@ -1,0 +1,20 @@
+claim_id: CLM-ENT-PROD-DOM-LIMITATI
+entity_id: ENT-PROD-DOMAIN-REGISTRY-LOCK
+entity_type: product
+entity_name: Bảo vệ tên miền cấp cao nhất (Registry Lock)
+attribute: limitation
+value: Quy trình mở khóa đòi hỏi thời gian và sự phối hợp giữa các bên
+unit: ''
+qualifiers: null
+source_ids:
+- SRC-BAO_VE_TEN_MIEN_CAP_CAO_NHAT_GIAI_PHAP_AN_TOAN_TUYET_OI_2026_04_06
+observed_at: '2026-04-06T23:24:53.268395+07:00'
+valid_from: '2026-04-06'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Chính sách / Điều khoản / Lưu ý: Quy trình mở khóa được thiết
+  kế để đảm bảo chỉ chủ thể hợp pháp mới có thể thực hiện thay đổi, nhưng đòi hỏi
+  thời gian và sự phối hợp giữa các bên.'
+value_changed_from: làm tăng độ phức tạp khi cần thay đổi thông tin tên miền
+value_changed_at: '2026-04-06T23:24:53.268413+07:00'

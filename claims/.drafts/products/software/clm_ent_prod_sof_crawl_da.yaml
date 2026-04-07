@@ -1,0 +1,16 @@
+claim_id: CLM-ENT-PROD-SOF-CRAWL_DA
+entity_id: ENT-PROD-SOFTWARE-DIRECTADMIN
+entity_type: product
+entity_name: DirectAdmin
+attribute: crawl_date
+value: '2026-04-05T14:25:00+07:00'
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-DIRECTADMIN_WEB_2026_04_05
+observed_at: '2026-04-05T21:56:38.900514+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ dòng: ''- Ngày crawl: 2026-04-05T14:25:00+07:00'''

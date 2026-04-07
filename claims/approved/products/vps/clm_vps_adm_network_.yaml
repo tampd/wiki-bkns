@@ -1,0 +1,19 @@
+claim_id: CLM-VPS-ADM-NETWORK_
+entity_id: product.vps.adm.epyc_1
+entity_type: product_plan
+entity_name: EPYC 1
+attribute: network_speed
+value: 100
+unit: Mbps
+qualifiers: null
+source_ids:
+- SRC-BANG_GIA_VPS_2026_04_04
+- SRC-BANG_GIA_VPS_2026_04_06
+observed_at: '2026-04-06T23:23:38.749052+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ bảng giá VPS ADM, cột EPYC 1, hàng Tốc độ: ''100 Mbps'''
+approved_at: '2026-04-07T13:00:14.811595+07:00'
+approved_by: admin-batch

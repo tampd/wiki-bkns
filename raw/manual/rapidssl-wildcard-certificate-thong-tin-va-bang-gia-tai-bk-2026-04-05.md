@@ -9,10 +9,12 @@ original_format: docx
 page_title: RapidSSL Wildcard Certificate - Thông tin và Bảng giá tại BKNS
 content_hash: sha256:5b26431d5097c4e80933371bf8552bfb3dd9fe686fb253758b9dbbd8ff743769
 word_count: 721
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/ssl
 crawl_method: manual_upload
 source_date: '2026-02-08'
+skipped_reason: Duplicate of rapidssl-wildcard-certificate-thong-tin-va-bang-gia-tai-bk-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.263526+07:00'
 ---
 
 ═══ RapidSSL Wildcard Certificate

@@ -7,10 +7,12 @@ original_format: docx
 page_title: BKNS_camnang_hosting_dot2
 content_hash: sha256:ed19e8c6b09524be26e139ee59595e380cd2365ae32297382d8ecc2752fb7463
 word_count: 2195
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/hosting
 crawl_method: manual_upload
 source_date: '2026-04-05'
+skipped_reason: Duplicate of bkns-camnang-hosting-dot2-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.479984+07:00'
 ---
 
 __CẨM NANG SẢN PHẨM BKNS \- ĐỢT 2: DỊCH VỤ HOSTING \(BẢN SALES PRO\)__

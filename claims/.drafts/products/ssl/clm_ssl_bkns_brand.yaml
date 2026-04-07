@@ -1,0 +1,16 @@
+claim_id: CLM-SSL-BKNS-BRAND
+entity_id: product.ssl.bkns.geotrust_true_businessid_wildcard
+entity_type: product_plan
+entity_name: GeoTrust True BusinessID Wildcard
+attribute: brand
+value: GeoTrust
+unit: null
+qualifiers: null
+source_ids:
+- SRC-CHUNG_CHI_SSL_GEOTRUST_TRUE_BUSINESSID_WILDCARD_2026_04_04
+observed_at: '2026-04-04T20:36:56.276525+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: ''... cung cấp bởi GeoTrust (DigiCert).'''

@@ -1,0 +1,19 @@
+claim_id: CLM-ENT-PROD-SER-RESOURCE
+entity_id: ENT-PROD-SERVER
+entity_type: product_category
+entity_name: Server (Máy chủ)
+attribute: resource.allocation_model
+value: Thuê toàn bộ máy chủ, không chia sẻ với bất kỳ ai
+unit: ''
+qualifiers: null
+source_ids:
+- SRC-TRAINING_DICH_VU_VPS_2026_04_06
+observed_at: '2026-04-07T01:05:15.863419+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ bảng so sánh ở mục 3: ''Thuê toàn bộ máy chủ, không chia
+  sẻ với bất kỳ ai'''
+approved_at: '2026-04-07T13:00:10.025931+07:00'
+approved_by: admin-batch

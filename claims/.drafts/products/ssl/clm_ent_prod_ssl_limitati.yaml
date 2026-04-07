@@ -1,0 +1,17 @@
+claim_id: CLM-ENT-PROD-SSL-LIMITATI
+entity_id: ENT-PROD-SSL-COMODO-POSITIVESSL-MULTI-DOMAIN-DV
+entity_type: product
+entity_name: PositiveSSL Multi-Domain (DV)
+attribute: limitation
+value: Chỉ xác thực quyền sở hữu tên miền, không xác thực thông tin tổ chức.
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-POSITIVESSL_MULTI_DOMAIN_DV_CHUNG_CHI_SSL_CHO_NHIEU_TEN_M_2026_04_06
+observed_at: '2026-04-07T00:54:06.966354+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ phần Tóm tắt nhanh: • Điều kiện/giới hạn nổi bật (nếu có):
+  Chỉ xác thực quyền sở hữu tên miền, không xác thực thông tin tổ chức.'

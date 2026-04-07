@@ -1,0 +1,19 @@
+claim_id: CLM-ENT--STORAGE-MARKETIN
+entity_id: ENT-PROD-VPS.STORAGE
+entity_type: product_offering
+entity_name: Storage VPS
+attribute: marketing_claim
+value: giá rẻ
+unit: null
+qualifiers: null
+source_ids:
+- SRC-STORAGE_VPS_WEB_2026_04_05
+observed_at: '2026-04-05T22:17:19.574385+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ đoạn ''Giới thiệu'': ''Storage VPS là giải pháp máy chủ ảo
+  lưu trữ dung lượng cao, giá rẻ.'''
+approved_at: '2026-04-07T13:00:14.259764+07:00'
+approved_by: admin-batch

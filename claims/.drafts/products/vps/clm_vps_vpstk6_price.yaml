@@ -1,0 +1,17 @@
+claim_id: CLM-VPS-VPSTK6-PRICE
+entity_id: product.vps.vpstk6
+entity_type: product_plan
+entity_name: VPSTK6
+attribute: price
+value: 239000
+unit: VND
+qualifiers:
+  billing_cycle: month
+source_ids:
+- SRC-DICH_VU_VPS_SIEU_TIET_KIEM_VPS_SIEU_RE_TAI_BKNS_2026_04_06
+observed_at: '2026-04-07T00:18:36.363411+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ bảng giá, dòng ''Giá/Tháng'', cột ''VPSTK6'': ''239.000đ'''

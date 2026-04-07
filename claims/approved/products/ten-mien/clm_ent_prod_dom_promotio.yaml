@@ -1,0 +1,19 @@
+claim_id: CLM-ENT-PROD-DOM-PROMOTIO
+entity_id: ENT-PROD-DOMAIN
+entity_type: product
+entity_name: Tên miền Quốc tế
+attribute: promotion_end_date
+value: '2025-01-06'
+unit: null
+qualifiers: null
+source_ids:
+- SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_06
+observed_at: '2026-04-06T23:08:52.477678+07:00'
+valid_from: '2026-04-06'
+confidence: high
+review_state: approved
+risk_class: medium
+compiler_note: 'Trích từ Chương trình khuyến mại (Tên miền Quốc tế): Chương trình
+  khuyến mại cho phí đăng ký mới, áp dụng đến ngày 06/01/2025'
+approved_at: '2026-04-07T13:00:10.601344+07:00'
+approved_by: admin-batch

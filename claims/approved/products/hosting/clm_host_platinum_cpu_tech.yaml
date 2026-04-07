@@ -1,0 +1,19 @@
+claim_id: CLM-HOST-PLATINUM-CPU_TECH
+entity_id: product.hosting.platinum
+entity_type: product_line
+entity_name: Platinum Web Hosting
+attribute: cpu_technology
+value: Intel Xeon Platinum Gen 2
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-BKNS_CAMNANG_HOSTING_DOT2_2026_04_04
+observed_at: '2026-04-04T20:33:10.469194+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ phần Công nghệ lõi: ''Công nghệ lõi: CPU Intel Xeon Platinum
+  Gen 2 + Ổ cứng NVMe U.2'''
+approved_at: '2026-04-07T13:00:12.186814+07:00'
+approved_by: admin-batch

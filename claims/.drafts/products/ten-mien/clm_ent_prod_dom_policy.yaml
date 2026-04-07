@@ -1,0 +1,21 @@
+claim_id: CLM-ENT-PROD-DOM-POLICY
+entity_id: ENT-PROD-DOMAIN
+entity_type: product
+entity_name: Tên miền
+attribute: policy
+value: Giá được tính theo năm.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_ANG_KY_TEN_MIEN_VIET_NAM_VA_QUOC_TE_TAI_BKNS_2026_04_04
+- SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_06
+- SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_06
+observed_at: '2026-04-06T23:08:52.456935+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Chính sách / Điều khoản / Lưu ý: Các mức giá trên là phí/năm,
+  đơn vị tính là VNĐ và chưa bao gồm VAT.'
+value_changed_from: Giá chưa bao gồm VAT.
+value_changed_at: '2026-04-06T23:08:52.456955+07:00'

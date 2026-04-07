@@ -8,10 +8,12 @@ original_format: docx
 page_title: Comodo SSL Wildcard Certificate (DV) - Chứng chỉ SSL
 content_hash: sha256:cf4ad3964619d6e96317bfab25a376b3d94e0a8092bfbd68f1232ff5cadda519
 word_count: 638
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/ssl
 crawl_method: manual_upload
 source_date: '2026-02-08'
+skipped_reason: Duplicate of comodo-ssl-wildcard-certificate-dv-chung-chi-ssl-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.313527+07:00'
 ---
 
 ═══ Comodo SSL Wildcard Certificate \(DV\)

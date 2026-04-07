@@ -1,0 +1,19 @@
+claim_id: CLM-HOST-WORDPRESS-FTP_ACCO
+entity_id: product.hosting.wordpress.wpcp01
+entity_type: product_plan
+entity_name: WPCP01
+attribute: ftp_accounts
+value: 3
+unit: accounts
+qualifiers: null
+source_ids:
+- SRC-HOSTING_WORDPRESS_TOC_O_CAO_BANG_GIA_GIAI_PHAP_TOI_UU_S_2026_04_04
+- SRC-HOSTING_WORDPRESS_TOC_O_CAO_BANG_GIA_GIAI_PHAP_TOI_UU_S_2026_04_06
+observed_at: '2026-04-07T00:40:11.184441+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ bảng giá: | FTP Accounts | 3 |'
+approved_at: '2026-04-07T13:00:12.652897+07:00'
+approved_by: admin-batch

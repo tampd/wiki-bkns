@@ -7,10 +7,12 @@ original_format: docx
 page_title: GeoTrust True BusinessID with EV Multi-Domain
 content_hash: sha256:73d29d7320103c65cbf19b2f305c9c27c0c3c03561f92517715146378161b27b
 word_count: 712
-status: pending_extract
+status: duplicate_skipped
 suggested_category: products/ten-mien
 crawl_method: manual_upload
 source_date: '2026-02-08'
+skipped_reason: Duplicate of geotrust-true-businessid-with-ev-multi-domain-2026-04-06.md
+skipped_at: '2026-04-06T22:55:43.398361+07:00'
 ---
 
 ═══ GeoTrust True BusinessID with EV Multi\-Domain

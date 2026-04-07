@@ -1,0 +1,17 @@
+claim_id: CLM-EMAI-BKNS_CLOUD_SERVER-INBOX_DE
+entity_id: product.email.bkns_cloud_server
+entity_type: product
+entity_name: Cloud Email Server
+attribute: inbox_delivery_rate
+value: 99
+unit: '%'
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_06
+observed_at: '2026-04-07T00:01:11.778443+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục ''Tính năng / Thành phần'': Độ tin cậy: Đảm bảo tỷ lệ
+  email vào inbox lên đến 99% và uptime 99%.'

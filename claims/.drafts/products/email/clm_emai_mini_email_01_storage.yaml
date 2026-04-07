@@ -1,0 +1,17 @@
+claim_id: CLM-EMAI-MINI_EMAIL_01-STORAGE
+entity_id: product.email.mini_email_01
+entity_type: product_plan
+entity_name: MINI EMAIL 01
+attribute: storage
+value: 100
+unit: GB
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_CLOUD_EMAIL_SERVER_AN_TOAN_HIEU_SUAT_CAO_2026_04_06
+observed_at: '2026-04-06T23:58:41.653352+07:00'
+valid_from: '2026-04-06'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng giá: | MINI EMAIL 01 | ... | Dung lượng gói | 100GB
+  |'

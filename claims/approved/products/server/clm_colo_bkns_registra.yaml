@@ -1,0 +1,20 @@
+claim_id: CLM-COLO-BKNS-REGISTRA
+entity_id: product.colocation.bkns
+entity_type: product
+entity_name: Thuê Chỗ Đặt Máy Chủ (Colocation)
+attribute: registration_process_step
+value: Khách hàng liên hệ với BKNS qua các kênh hỗ trợ.
+unit: ''
+qualifiers:
+  step: 1
+source_ids:
+- SRC-DICH_VU_THUE_CHO_AT_MAY_CHU_COLOCATION_TAI_BKNS_2026_04_06
+observed_at: '2026-04-07T00:12:22.838812+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ Quy trình đăng ký / Triển khai / Kích hoạt: 1. Liên hệ: Khách
+  hàng liên hệ với BKNS qua các kênh hỗ trợ.'
+approved_at: '2026-04-07T13:00:09.721596+07:00'
+approved_by: admin-batch
