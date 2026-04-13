@@ -133,7 +133,7 @@
     $('#app').classList.add('active');
     lucide.createIcons();
     switchTab('wiki');
-    loadWikiTree();
+    loadWikiTree().then(() => setTimeout(updateSidebarHealthDots, 500));
     state.statusInterval = setInterval(loadStatus, 15000);
     loadStatus();
   }
@@ -149,11 +149,10 @@
       btn.setAttribute('aria-selected', active ? 'true' : 'false');
     });
     // Hide all tabs
-    $('#tab-wiki').style.display = 'none';
-    $('#tab-dashboard').style.display = 'none';
-    $('#tab-upload').style.display = 'none';
-    $('#tab-pipeline').style.display = 'none';
-    $('#tab-review').style.display = 'none';
+    ['wiki', 'dashboard', 'upload', 'pipeline', 'review', 'history'].forEach(t => {
+      const el = $(`#tab-${t}`);
+      if (el) el.style.display = 'none';
+    });
     // Show selected
     const el = $(`#tab-${tabName}`);
     if (el) el.style.display = tabName === 'wiki' ? 'flex' : 'block';
@@ -161,6 +160,7 @@
     if (tabName === 'dashboard') { loadDashboard(); loadChangelog(); }
     if (tabName === 'upload') loadFiles();
     if (tabName === 'review') { loadReviewStats(); loadReviewQueue(); }
+    if (tabName === 'history') { loadHealth(); loadBuilds(); loadActivity(); }
     lucide.createIcons();
   }
 
@@ -989,7 +989,87 @@
     } catch { /* silent */ }
   }
 
+  async function loadConflictsView() {
+    const tbody = $('#review-tbody');
+    tbody.innerHTML = '<tr><td colspan="7" class="files-empty">Đang tải conflicts...</td></tr>';
+    $('#review-pagination').style.display = 'none';
+
+    try {
+      const res = await apiFetch('/api/review/conflicts');
+      if (!res.ok) return;
+      const data = await res.json();
+
+      if (!data.groups?.length) {
+        tbody.innerHTML = '<tr><td colspan="7" class="files-empty">✅ Không có conflicts nào!</td></tr>';
+        return;
+      }
+
+      tbody.innerHTML = data.groups.map(group => {
+        const vals = group.values.map((v, i) => {
+          const confBadge = {
+            ground_truth: '<span class="conf-badge gt">GT</span>',
+            high: '<span class="conf-badge high">High</span>',
+            medium: '<span class="conf-badge med">Med</span>',
+            low: '<span class="conf-badge low">Low</span>',
+          }[v.confidence] || `<span class="conf-badge">${escapeHtml(v.confidence || '?')}</span>`;
+
+          const valDisplay = typeof v.value === 'number'
+            ? v.value.toLocaleString('vi-VN')
+            : escapeHtml(String(v.value ?? ''));
+
+          const loserIds = group.values
+            .filter((_, j) => j !== i)
+            .map(x => x.claim_id);
+
+          return `<span class="conflict-option">
+            ${valDisplay} ${confBadge}
+            <button class="btn btn-xs btn-success" data-winner="${escapeHtml(v.claim_id)}" data-losers="${escapeHtml(JSON.stringify(loserIds))}" title="Chọn giá trị này là đúng">✓ Chọn</button>
+          </span>`;
+        }).join('<span class="conflict-vs">vs</span>');
+
+        return `<tr>
+          <td title="${escapeHtml(group.entity_id)}">${escapeHtml(group.entity_name || group.entity_id)}</td>
+          <td>${escapeHtml(group.attribute)}</td>
+          <td colspan="4" class="conflict-values">${vals}</td>
+          <td></td>
+        </tr>`;
+      }).join('');
+
+      // Bind resolve buttons
+      tbody.querySelectorAll('[data-winner]').forEach(btn => {
+        btn.addEventListener('click', async () => {
+          const winnerId = btn.dataset.winner;
+          const loserIds = JSON.parse(btn.dataset.losers || '[]');
+          try {
+            const r = await apiFetch('/api/review/resolve-conflict', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ winner_claim_id: winnerId, loser_claim_ids: loserIds }),
+            });
+            if (r.ok) {
+              toast('success', 'Resolved', `Winner: ${winnerId}`);
+              loadConflictsView();
+              loadReviewStats();
+            } else {
+              const err = await r.json().catch(() => ({}));
+              toast('error', 'Lỗi', err.error || 'Failed');
+            }
+          } catch (e) {
+            toast('error', 'Lỗi kết nối', e.message);
+          }
+        });
+      });
+    } catch (e) {
+      tbody.innerHTML = `<tr><td colspan="7" class="files-empty">Lỗi: ${escapeHtml(e.message)}</td></tr>`;
+    }
+  }
+
   async function loadReviewQueue() {
+    // Use dedicated conflict view for better UX
+    if (reviewState.filter === 'conflicts') {
+      return loadConflictsView();
+    }
+
     try {
       const params = new URLSearchParams({
         filter: reviewState.filter,
@@ -1029,7 +1109,8 @@
 
         const val = typeof c.value === 'number' ? c.value.toLocaleString('vi-VN') : escapeHtml(String(c.value || ''));
 
-        return `<tr data-claim-id="${escapeHtml(c.claim_id || '')}">
+        return `<tr data-claim-id="${escapeHtml(c.claim_id || '')}" data-risk-class="${escapeHtml(c.risk_class || '')}">
+          <td style="width:36px"><input type="checkbox" class="review-checkbox review-row-check" data-claim-id="${escapeHtml(c.claim_id || '')}" data-risk-class="${escapeHtml(c.risk_class || '')}" aria-label="Chọn claim"></td>
           <td title="${escapeHtml(c.entity_id || '')}">${escapeHtml(c.entity_name || c.entity_id || '—')}</td>
           <td>${escapeHtml(c.attribute || '')}</td>
           <td class="review-value">${val}</td>
@@ -1043,6 +1124,25 @@
           </td>
         </tr>`;
       }).join('');
+
+      // Bind row checkboxes for bulk select
+      tbody.querySelectorAll('.review-row-check').forEach(cb => {
+        cb.checked = selectedClaims.has(cb.dataset.claimId);
+        cb.addEventListener('change', () => {
+          const id = cb.dataset.claimId;
+          if (cb.checked) selectedClaims.add(id);
+          else selectedClaims.delete(id);
+          // Update header state
+          const allChecks = [...$$('.review-row-check')];
+          const checkedCount = allChecks.filter(c => c.checked).length;
+          const hdr = $('#review-select-all');
+          if (hdr) {
+            hdr.checked = checkedCount === allChecks.length && allChecks.length > 0;
+            hdr.indeterminate = checkedCount > 0 && checkedCount < allChecks.length;
+          }
+          updateBulkBar();
+        });
+      });
 
       // Bind action buttons
       tbody.querySelectorAll('[data-action]').forEach(btn => {
@@ -1077,7 +1177,7 @@
       } else {
         $('#review-pagination').style.display = 'none';
       }
-    } catch { /* silent */ }
+    } catch (e) { console.error('[ReviewQueue] Load error:', e); }
   }
 
   async function reviewAction(endpoint, body) {
@@ -1088,9 +1188,12 @@
         body: JSON.stringify(body),
       });
       if (res.ok) {
-        toast('success', 'Done', `${body.claim_id} → ${endpoint.split('/').pop()}`);
-        loadReviewQueue();
-        loadReviewStats();
+        const action = endpoint.split('/').pop();
+        toast('success', 'Done', `${body.claim_id} → ${action}`);
+        // Immediately remove the row with animation for instant feedback
+        removeClaimRow(body.claim_id);
+        // Then refresh data in background
+        setTimeout(() => { loadReviewQueue(); loadReviewStats(); }, 600);
       } else {
         const err = await res.json().catch(() => ({}));
         toast('error', 'Lỗi', err.error || 'Failed');
@@ -1100,15 +1203,32 @@
     }
   }
 
+  /**
+   * Animate-remove a claim row from the review table
+   */
+  function removeClaimRow(claimId) {
+    const row = document.querySelector(`tr[data-claim-id="${CSS.escape(claimId)}"]`);
+    if (!row) return;
+    row.style.transition = 'opacity 0.3s, transform 0.3s';
+    row.style.opacity = '0';
+    row.style.transform = 'translateX(30px)';
+    setTimeout(() => row.remove(), 350);
+    // Also remove from selectedClaims set
+    selectedClaims.delete(claimId);
+    updateBulkBar();
+  }
+
   // Review filters
   $('#review-filter')?.addEventListener('change', (e) => {
     reviewState.filter = e.target.value;
     reviewState.page = 1;
+    clearSelection();
     loadReviewQueue();
   });
   $('#review-category')?.addEventListener('change', (e) => {
     reviewState.category = e.target.value;
     reviewState.page = 1;
+    clearSelection();
     loadReviewQueue();
   });
   $('#btn-refresh-review')?.addEventListener('click', () => {
@@ -1121,6 +1241,368 @@
   $('#btn-review-next')?.addEventListener('click', () => {
     reviewState.page++; loadReviewQueue();
   });
+
+  // History tab is handled by the updated switchTab above.
+
+  // ============================================================
+  // CONTENT HEALTH
+  // ============================================================
+  const HEALTH_LABELS = {
+    good:    { dot: '🟢', text: 'Tốt',       cls: 'good' },
+    warning: { dot: '🟡', text: 'Cảnh báo',  cls: 'warning' },
+    stale:   { dot: '🔴', text: 'Cũ',        cls: 'stale' },
+    error:   { dot: '🔴', text: 'Lỗi',       cls: 'error' },
+    empty:   { dot: '⚪', text: 'Trống',     cls: 'empty' },
+    unknown: { dot: '⚫', text: 'Chưa rõ',   cls: 'unknown' },
+  };
+
+  const CATEGORY_LABELS_HEALTH = {
+    hosting: 'Hosting', vps: 'VPS', ssl: 'SSL',
+    'ten-mien': 'Tên Miền', email: 'Email',
+    server: 'Server', software: 'Software',
+    other: 'Khác', uncategorized: 'Chưa phân loại',
+  };
+
+  async function loadHealth() {
+    const grid = $('#health-grid');
+    if (!grid) return;
+    try {
+      const res = await apiFetch('/api/wiki/health');
+      if (!res.ok) { grid.innerHTML = '<div class="health-loading">Không thể tải dữ liệu sức khoẻ</div>'; return; }
+      const data = await res.json();
+      const entries = Object.values(data.health || {});
+
+      if (!entries.length) {
+        grid.innerHTML = '<div class="health-loading">Chưa có dữ liệu</div>';
+        return;
+      }
+
+      grid.innerHTML = entries.map(h => {
+        const info = HEALTH_LABELS[h.health_status] || HEALTH_LABELS.unknown;
+        const daysMod = h.days_since_modified !== null ? `${h.days_since_modified} ngày` : '—';
+        const daysVer = h.days_since_verify !== null ? `${h.days_since_verify} ngày` : '—';
+        const lintBadge = h.lint_errors === null ? '—'
+          : h.lint_errors === 0 ? '<span class="health-ok">✓ 0 lỗi</span>'
+          : `<span class="health-err">${h.lint_errors} lỗi</span>`;
+
+        return `<div class="health-card health-${info.cls}">
+          <div class="health-card-header">
+            <span class="health-dot">${info.dot}</span>
+            <span class="health-cat">${escapeHtml(CATEGORY_LABELS_HEALTH[h.category] || h.category)}</span>
+            <span class="health-status-tag ${info.cls}">${info.text}</span>
+          </div>
+          <div class="health-card-stats">
+            <div class="health-stat">
+              <span class="health-stat-label">Trang</span>
+              <span class="health-stat-val">${h.pages}</span>
+            </div>
+            <div class="health-stat">
+              <span class="health-stat-label">Sửa đổi</span>
+              <span class="health-stat-val">${daysMod} trước</span>
+            </div>
+            <div class="health-stat">
+              <span class="health-stat-label">Verify</span>
+              <span class="health-stat-val">${daysVer} trước</span>
+            </div>
+            <div class="health-stat">
+              <span class="health-stat-label">Lint</span>
+              <span class="health-stat-val">${lintBadge}</span>
+            </div>
+          </div>
+        </div>`;
+      }).join('');
+    } catch (e) {
+      grid.innerHTML = `<div class="health-loading">Lỗi: ${escapeHtml(e.message)}</div>`;
+    }
+  }
+
+  $('#btn-refresh-health')?.addEventListener('click', loadHealth);
+
+  // ============================================================
+  // VERSION DIFF
+  // ============================================================
+  let buildsCache = [];
+
+  async function loadBuilds() {
+    if (buildsCache.length > 0) return; // Already loaded
+    try {
+      const res = await apiFetch('/api/builds');
+      if (!res.ok) return;
+      const data = await res.json();
+      buildsCache = data.builds || [];
+      populateBuildSelectors(buildsCache);
+    } catch { /* silent */ }
+  }
+
+  function populateBuildSelectors(builds) {
+    const v1 = $('#diff-v1');
+    const v2 = $('#diff-v2');
+    if (!v1 || !v2) return;
+
+    const opts = builds.map(b =>
+      `<option value="${escapeHtml(b.id)}">${escapeHtml(b.display)} — ${escapeHtml(b.version || '—')}</option>`
+    ).join('');
+
+    v1.innerHTML = '<option value="">-- Chọn phiên bản --</option>' + opts;
+    v2.innerHTML = '<option value="">-- Chọn phiên bản --</option>' + opts;
+
+    // Default: v1 = second latest, v2 = latest
+    if (builds.length >= 2) {
+      v1.value = builds[1].id;
+      v2.value = builds[0].id;
+    } else if (builds.length === 1) {
+      v2.value = builds[0].id;
+    }
+  }
+
+  $('#btn-diff')?.addEventListener('click', async () => {
+    const v1 = $('#diff-v1')?.value;
+    const v2 = $('#diff-v2')?.value;
+    if (!v1 || !v2) { toast('warning', 'Chọn đủ 2 phiên bản'); return; }
+    if (v1 === v2) { toast('warning', 'Chọn 2 phiên bản khác nhau'); return; }
+
+    try {
+      const res = await apiFetch(`/api/builds/diff?v1=${encodeURIComponent(v1)}&v2=${encodeURIComponent(v2)}`);
+      if (!res.ok) {
+        const err = await res.json().catch(() => ({}));
+        toast('error', 'Không thể so sánh', err.error || 'Lỗi'); return;
+      }
+      const data = await res.json();
+      renderDiff(data);
+    } catch (e) {
+      toast('error', 'Lỗi kết nối', e.message);
+    }
+  });
+
+  function renderDiff(data) {
+    const result = $('#diff-result');
+    const empty = $('#diff-empty');
+    if (!result) return;
+
+    $('#diff-label-v1').textContent = data.base.display;
+    $('#diff-label-v2').textContent = data.compare.display;
+    $('#diff-th-v1').textContent = data.base.display;
+    $('#diff-th-v2').textContent = data.compare.display;
+
+    const changes = data.changes;
+    const rows = [
+      { label: 'Wiki pages', key: 'wiki_files' },
+      { label: 'Claims', key: 'claims_count' },
+      { label: 'Tokens (ước tính)', key: 'wiki_token_estimate' },
+    ];
+
+    $('#diff-tbody').innerHTML = rows.map(r => {
+      const c = changes[r.key];
+      if (!c) return '';
+      const delta = c.delta;
+      const deltaCls = delta > 0 ? 'diff-added' : delta < 0 ? 'diff-removed' : 'diff-same';
+      const deltaStr = delta > 0 ? `+${delta}` : String(delta);
+      return `<tr>
+        <td>${escapeHtml(r.label)}</td>
+        <td>${c.before.toLocaleString('vi-VN')}</td>
+        <td>${c.after.toLocaleString('vi-VN')}</td>
+        <td><span class="diff-delta ${deltaCls}">${deltaStr}</span></td>
+      </tr>`;
+    }).join('');
+
+    // Version row
+    if (data.base.version !== data.compare.version) {
+      $('#diff-tbody').innerHTML += `<tr>
+        <td>Version</td>
+        <td>${escapeHtml(data.base.version)}</td>
+        <td>${escapeHtml(data.compare.version)}</td>
+        <td><span class="diff-delta diff-added">↑ mới</span></td>
+      </tr>`;
+    }
+
+    result.style.display = '';
+    empty.style.display = 'none';
+
+    if (data.same_version) {
+      toast('info', 'Hai phiên bản giống nhau', 'Không có thay đổi nào được phát hiện');
+    }
+    lucide.createIcons();
+  }
+
+  // ============================================================
+  // ACTIVITY LOG
+  // ============================================================
+  const ACTIVITY_ICON_MAP = {
+    edit: 'pencil', create: 'plus-circle', pipeline: 'workflow',
+    upload: 'upload-cloud', review: 'shield-check', build: 'package',
+  };
+
+  async function loadActivity() {
+    const timeline = $('#activity-timeline');
+    if (!timeline) return;
+    try {
+      const res = await apiFetch('/api/activity?limit=60');
+      if (!res.ok) { timeline.innerHTML = '<div class="health-loading">Không thể tải nhật ký</div>'; return; }
+      const data = await res.json();
+
+      if (!data.events?.length) {
+        timeline.innerHTML = '<div class="health-loading">Chưa có hoạt động nào</div>';
+        return;
+      }
+
+      // Group events by date
+      const groups = {};
+      for (const e of data.events) {
+        const d = e.ts ? new Date(e.ts).toLocaleDateString('vi-VN', { weekday: 'short', day: '2-digit', month: '2-digit', year: 'numeric' }) : 'Không rõ ngày';
+        if (!groups[d]) groups[d] = [];
+        groups[d].push(e);
+      }
+
+      timeline.innerHTML = Object.entries(groups).map(([date, evts]) => {
+        const items = evts.map(e => {
+          const icon = e.icon || ACTIVITY_ICON_MAP[e.type] || 'circle';
+          const okCls = e.ok === false ? 'act-fail' : e.ok === true ? 'act-ok' : '';
+          const time = e.ts ? new Date(e.ts).toLocaleTimeString('vi-VN', { hour: '2-digit', minute: '2-digit' }) : '';
+          const detailHtml = e.detail ? `<span class="act-detail">${escapeHtml(e.detail)}</span>` : '';
+          return `<div class="act-item ${okCls}">
+            <div class="act-icon-wrap"><i data-lucide="${icon}" aria-hidden="true"></i></div>
+            <div class="act-body">
+              <span class="act-label">${escapeHtml(e.label)}</span>
+              ${detailHtml}
+            </div>
+            <span class="act-time">${time}</span>
+          </div>`;
+        }).join('');
+
+        return `<div class="act-group">
+          <div class="act-group-date">${escapeHtml(date)}</div>
+          ${items}
+        </div>`;
+      }).join('');
+
+      lucide.createIcons();
+    } catch (e) {
+      timeline.innerHTML = `<div class="health-loading">Lỗi: ${escapeHtml(e.message)}</div>`;
+    }
+  }
+
+  $('#btn-refresh-activity')?.addEventListener('click', loadActivity);
+
+  // ============================================================
+  // BULK CLAIM ACTIONS
+  // ============================================================
+  let selectedClaims = new Set();
+
+  function updateBulkBar() {
+    const bar = $('#bulk-bar');
+    const countEl = $('#bulk-count');
+    if (!bar || !countEl) return;
+    const n = selectedClaims.size;
+    if (n === 0) {
+      bar.style.display = 'none';
+    } else {
+      bar.style.display = 'flex';
+      countEl.textContent = `${n} đã chọn`;
+    }
+  }
+
+  function clearSelection() {
+    selectedClaims.clear();
+    $$('.review-row-check').forEach(c => c.checked = false);
+    const all = $('#review-select-all');
+    if (all) { all.checked = false; all.indeterminate = false; }
+    updateBulkBar();
+  }
+
+  // Header checkbox — select/deselect all visible
+  $('#review-select-all')?.addEventListener('change', (e) => {
+    const checked = e.target.checked;
+    $$('.review-row-check').forEach(cb => {
+      cb.checked = checked;
+      const claimId = cb.dataset.claimId;
+      if (claimId) {
+        if (checked) selectedClaims.add(claimId);
+        else selectedClaims.delete(claimId);
+      }
+    });
+    updateBulkBar();
+  });
+
+  async function doBulkAction(action) {
+    if (!selectedClaims.size) return;
+    const ids = [...selectedClaims];
+
+    let confirmMsg = `${action === 'approve' ? 'Duyệt' : action === 'reject' ? 'Từ chối' : 'Flag'} ${ids.length} claims?`;
+
+    // Extra warning for high-risk (price) items
+    const highRiskSelected = [...$$('.review-row-check')]
+      .filter(cb => cb.checked && cb.dataset.riskClass === 'high');
+    if (highRiskSelected.length > 0) {
+      confirmMsg += `\n\n⚠️ ${highRiskSelected.length} claim có risk_class: high (giá tiền). Tiếp tục?`;
+    }
+
+    const ok = await showModal(`Bulk ${action}`, confirmMsg, action === 'reject' ? 'Từ chối tất cả' : 'Xác nhận');
+    if (!ok) return;
+
+    // Show loading state
+    const bulkBtns = $$('#bulk-bar button');
+    bulkBtns.forEach(b => b.disabled = true);
+    const loadingToast = toast('info', `Đang ${action === 'approve' ? 'duyệt' : action === 'reject' ? 'từ chối' : 'flag'}...`, `${ids.length} claims`, 0);
+
+    try {
+      const res = await apiFetch('/api/review/bulk', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ action, claim_ids: ids }),
+      });
+      removeToast(loadingToast);
+      bulkBtns.forEach(b => b.disabled = false);
+
+      if (res.ok) {
+        const data = await res.json();
+        toast('success', `Bulk ${action} xong`,
+          `${data.success_count}/${data.total} thành công${data.failed_count > 0 ? ` • ${data.failed_count} thất bại` : ''}`
+        );
+        // Animate-remove all successfully processed rows
+        for (const id of ids) {
+          removeClaimRow(id);
+        }
+        clearSelection();
+        // Refresh data in background after animations
+        setTimeout(() => { loadReviewQueue(); loadReviewStats(); }, 600);
+      } else {
+        const err = await res.json().catch(() => ({}));
+        toast('error', 'Bulk action thất bại', err.error || 'Lỗi');
+      }
+    } catch (e) {
+      removeToast(loadingToast);
+      bulkBtns.forEach(b => b.disabled = false);
+      toast('error', 'Lỗi kết nối', e.message);
+    }
+  }
+
+  $('#btn-bulk-approve')?.addEventListener('click', () => doBulkAction('approve'));
+  $('#btn-bulk-flag')?.addEventListener('click', () => doBulkAction('flag'));
+  $('#btn-bulk-reject')?.addEventListener('click', () => doBulkAction('reject'));
+  $('#btn-bulk-clear')?.addEventListener('click', () => clearSelection());
+
+
+  // Also expose health dot in sidebar (after health loads)
+  async function updateSidebarHealthDots() {
+    try {
+      const res = await apiFetch('/api/wiki/health');
+      if (!res.ok) return;
+      const data = await res.json();
+      for (const [cat, h] of Object.entries(data.health || {})) {
+        const btn = $(`.tree-category-btn[data-cat="${cat}"]`);
+        if (!btn) continue;
+        let dot = btn.querySelector('.health-indicator');
+        if (!dot) {
+          dot = document.createElement('span');
+          dot.className = 'health-indicator';
+          btn.appendChild(dot);
+        }
+        const info = HEALTH_LABELS[h.health_status] || HEALTH_LABELS.unknown;
+        dot.textContent = info.dot;
+        dot.title = `Sức khoẻ: ${info.text} | Sửa đổi: ${h.days_since_modified !== null ? h.days_since_modified + ' ngày trước' : 'không rõ'}`;
+      }
+    } catch { /* silent */ }
+  }
 
   // ============================================================
   // INIT

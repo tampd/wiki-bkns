@@ -149,6 +149,83 @@ function buildCategoryTree(category) {
 }
 
 // ============================================================
+// HEALTH HELPERS
+// ============================================================
+const LINT_DIR = path.resolve(__dirname, '../../logs/lint');
+const VERIFY_DIR = path.resolve(__dirname, '../../logs/verify');
+
+function loadLatestJson(dir) {
+  if (!fs.existsSync(dir)) return null;
+  try {
+    const files = fs.readdirSync(dir).filter(f => f.endsWith('.json')).sort().reverse();
+    if (!files.length) return null;
+    const data = JSON.parse(fs.readFileSync(path.join(dir, files[0]), 'utf8'));
+    data._filename = files[0];
+    return data;
+  } catch { return null; }
+}
+
+function computeCategoryHealth(category) {
+  const catDir = path.join(WIKI_DIR, category);
+  if (!fs.existsSync(catDir)) return null;
+
+  const files = listMdFiles(catDir);
+
+  // Latest modified file in this category
+  let latestMtime = null;
+  for (const file of files) {
+    try {
+      const stat = fs.statSync(path.join(catDir, file));
+      if (!latestMtime || stat.mtime > latestMtime) latestMtime = stat.mtime;
+    } catch { /* skip */ }
+  }
+
+  const daysSinceModified = latestMtime
+    ? Math.floor((Date.now() - latestMtime.getTime()) / 86400000)
+    : null;
+
+  // Lint status (global report — not per-category)
+  const lintReport = loadLatestJson(LINT_DIR);
+  const lintErrors = lintReport ? (lintReport.syntax_issues || 0) + (lintReport.semantic_issues || 0) : null;
+  const lintDate = lintReport ? (lintReport.ts || null) : null;
+
+  // Verify report
+  const verifyReport = loadLatestJson(VERIFY_DIR);
+  const verifyDate = verifyReport ? (verifyReport.ts || null) : null;
+  const verifyIssues = verifyReport
+    ? (verifyReport.critical_issues || 0) + (verifyReport.high_issues || 0)
+    : null;
+  const daysSinceVerify = verifyDate
+    ? Math.floor((Date.now() - new Date(verifyDate).getTime()) / 86400000)
+    : null;
+
+  // Health status: good / warning / stale / error / unknown
+  let healthStatus = 'unknown';
+  if (files.length === 0) {
+    healthStatus = 'empty';
+  } else if (lintErrors !== null && lintErrors > 0) {
+    healthStatus = 'error';
+  } else if (daysSinceModified !== null) {
+    if (daysSinceModified <= 7) healthStatus = 'good';
+    else if (daysSinceModified <= 14) healthStatus = 'warning';
+    else healthStatus = 'stale';
+  }
+
+  return {
+    category,
+    pages: files.length,
+    last_modified: latestMtime ? latestMtime.toISOString() : null,
+    days_since_modified: daysSinceModified,
+    days_since_verify: daysSinceVerify,
+    verify_date: verifyDate,
+    verify_issues: verifyIssues,
+    lint_errors: lintErrors,
+    lint_date: lintDate,
+    health_status: healthStatus,
+  };
+}
+
+// ============================================================
 // IN-MEMORY SEARCH INDEX
 // ============================================================
 let searchIndex = [];
@@ -247,6 +324,24 @@ function wikiRoute(router) {
 
   // Build index on startup
   setTimeout(() => buildSearchIndex(), 2000);
+
+  // ----------------------------------------------------------
+  // GET /api/wiki/health — Health status per category
+  // ----------------------------------------------------------
+  router.get('/api/wiki/health', (req, res) => {
+    try {
+      const categories = getCategories();
+      const health = {};
+      for (const cat of categories) {
+        const h = computeCategoryHealth(cat);
+        if (h) health[cat] = h;
+      }
+      res.json({ health, computed_at: new Date().toISOString() });
+    } catch (err) {
+      console.error('[WIKI HEALTH] Error:', err);
+      res.status(500).json({ error: 'Failed to compute health' });
+    }
+  });
 
   // ----------------------------------------------------------
   // GET /api/wiki — List all categories with page counts

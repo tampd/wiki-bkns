@@ -6,6 +6,7 @@ const yaml = require('js-yaml');
 
 const CLAIMS_DIR = path.resolve(__dirname, '../../claims/approved');
 const VERIFY_LOGS_DIR = path.resolve(__dirname, '../../logs/verify');
+const LOGS_DIR = path.resolve(__dirname, '../../logs');
 
 /**
  * Review Queue API — Human-in-the-loop verification
@@ -39,18 +40,27 @@ function reviewRoute(app) {
           filtered = findConflicts(claims);
           break;
         case 'unverified':
-          filtered = claims.filter(c => 
-            c.confidence !== 'ground_truth' && 
+          filtered = claims.filter(c =>
+            c.confidence !== 'ground_truth' &&
             !c.verified_by_layer2
           );
           break;
         case 'image':
-          filtered = claims.filter(c => 
+          filtered = claims.filter(c =>
             (c.source_ids || []).some(s => s.startsWith('IMG-'))
           );
           break;
+        case 'approved':
+          filtered = claims.filter(c => c.review_state === 'approved');
+          break;
+        case 'rejected':
+          filtered = claims.filter(c => c.review_state === 'rejected');
+          break;
         default:
-          filtered = claims;
+          // 'all' = pending review items (exclude already approved/rejected)
+          filtered = claims.filter(c =>
+            !c.review_state || c.review_state === 'pending' || c.review_state === 'flagged'
+          );
       }
 
       // Sort: flagged first, then by confidence (low → high)
@@ -185,26 +195,151 @@ function reviewRoute(app) {
     }
   });
 
-  // ── Get conflicts ────────────────────────────────────
+  // ── Get conflicts (grouped diff view) ─────────────────
   app.get('/api/review/conflicts', (req, res) => {
     try {
       const claims = loadAllClaims();
       const conflicts = findConflicts(claims);
 
-      // Group conflicts by entity
-      const grouped = {};
+      // Group conflicts by entity_id + attribute
+      const groupMap = {};
       for (const c of conflicts) {
         const key = `${c.entity_id}:${c.attribute}`;
-        if (!grouped[key]) grouped[key] = [];
-        grouped[key].push(c);
+        if (!groupMap[key]) groupMap[key] = [];
+        groupMap[key].push(c);
       }
 
+      // Convert to array format for easier frontend rendering
+      const groups = Object.entries(groupMap).map(([key, claimsInGroup]) => {
+        const [entityId, attribute] = key.split(':', 2);
+        return {
+          conflict_key: key,
+          entity_id: entityId,
+          attribute: attribute,
+          entity_name: claimsInGroup[0]?.entity_name || entityId,
+          values: claimsInGroup.map(c => ({
+            claim_id: c.claim_id,
+            value: c.value,
+            confidence: c.confidence,
+            source_url: c.source_url || '',
+            extracted_at: c.extracted_at || '',
+            review_state: c.review_state || 'pending',
+          })),
+        };
+      });
+
       res.json({
-        total: Object.keys(grouped).length,
-        groups: grouped,
+        total: groups.length,
+        groups,
       });
     } catch (err) {
       console.error('[REVIEW] Conflicts error:', err);
+      res.status(500).json({ error: err.message });
+    }
+  });
+
+  // ── Bulk action on multiple claims ───────────────────────
+  app.post('/api/review/bulk', (req, res) => {
+    try {
+      const { action, claim_ids, reason } = req.body;
+      if (!action || !Array.isArray(claim_ids) || claim_ids.length === 0) {
+        return res.status(400).json({ error: 'action và claim_ids bắt buộc' });
+      }
+      if (!['approve', 'reject', 'flag'].includes(action)) {
+        return res.status(400).json({ error: 'action phải là approve | reject | flag' });
+      }
+      if (claim_ids.length > 300) {
+        return res.status(400).json({ error: 'Tối đa 300 claims mỗi lần' });
+      }
+
+      const newState = action === 'approve' ? 'approved'
+        : action === 'reject' ? 'rejected'
+        : 'flagged';
+
+      // Load all claims ONCE for the entire bulk operation
+      const allClaims = loadAllClaims();
+      const claimMap = new Map();
+      for (const c of allClaims) {
+        if (c.claim_id) claimMap.set(c.claim_id, c);
+      }
+
+      const success = [];
+      const failed = [];
+
+      for (const claimId of claim_ids) {
+        if (typeof claimId !== 'string' || !claimId.trim()) { failed.push(claimId); continue; }
+        const trimmedId = claimId.trim();
+        const claim = claimMap.get(trimmedId);
+        if (!claim || !claim._file) { failed.push(trimmedId); continue; }
+
+        try {
+          const content = fs.readFileSync(claim._file, 'utf-8');
+          const data = yaml.load(content);
+
+          data.review_state = newState;
+          data.reviewed_at = new Date().toISOString();
+          data.reviewed_by = 'admin';
+          data.review_note = reason || `bulk_${action}`;
+
+          fs.writeFileSync(claim._file, yaml.dump(data, {
+            lineWidth: -1, sortKeys: false, noRefs: true,
+          }), 'utf-8');
+
+          logReviewAction(trimmedId, newState, reason || `bulk_${action}`);
+          success.push(trimmedId);
+        } catch (err) {
+          console.error(`[REVIEW] Bulk update ${trimmedId} error:`, err);
+          failed.push(trimmedId);
+        }
+      }
+
+      res.json({
+        action,
+        new_state: newState,
+        total: claim_ids.length,
+        success_count: success.length,
+        failed_count: failed.length,
+        failed_ids: failed,
+      });
+    } catch (err) {
+      console.error('[REVIEW] Bulk error:', err);
+      res.status(500).json({ error: err.message });
+    }
+  });
+
+  // ── Resolve conflict: pick winner, reject losers ───────
+  app.post('/api/review/resolve-conflict', (req, res) => {
+    try {
+      const { winner_claim_id, loser_claim_ids } = req.body;
+      if (!winner_claim_id || !Array.isArray(loser_claim_ids)) {
+        return res.status(400).json({ error: 'winner_claim_id and loser_claim_ids required' });
+      }
+
+      const allIds = [winner_claim_id, ...loser_claim_ids];
+      const updated = [];
+      const errors = [];
+
+      for (const claimId of allIds) {
+        const state = claimId === winner_claim_id ? 'approved' : 'rejected';
+        const note = claimId === winner_claim_id
+          ? 'conflict_resolved_winner'
+          : 'conflict_resolved_loser';
+        const result = updateClaimState(claimId, state, note);
+        if (result) {
+          updated.push({ claim_id: claimId, state });
+        } else {
+          errors.push(claimId);
+        }
+      }
+
+      res.json({
+        status: errors.length === 0 ? 'success' : 'partial',
+        updated,
+        errors,
+        message: `Conflict resolved: ${winner_claim_id} wins, ${loser_claim_ids.length} rejected`,
+      });
+    } catch (err) {
+      console.error('[REVIEW] Resolve conflict error:', err);
       res.status(500).json({ error: err.message });
     }
   });
@@ -274,30 +409,79 @@ function findConflicts(claims) {
 }
 
 function updateClaimState(claimId, newState, note) {
-  const claims = loadAllClaims();
-  const claim = claims.find(c => c.claim_id === claimId);
-  
-  if (!claim || !claim._file) return null;
+  // Use direct file search instead of loading ALL claims
+  const filePath = findClaimFile(claimId);
+  if (!filePath) return null;
 
   try {
-    const content = fs.readFileSync(claim._file, 'utf-8');
+    const content = fs.readFileSync(filePath, 'utf-8');
     const data = yaml.load(content);
-    
+
     data.review_state = newState;
     data.reviewed_at = new Date().toISOString();
     data.reviewed_by = 'admin';
     if (note) data.review_note = note;
 
-    fs.writeFileSync(claim._file, yaml.dump(data, {
+    fs.writeFileSync(filePath, yaml.dump(data, {
       lineWidth: -1,
       sortKeys: false,
       noRefs: true,
     }), 'utf-8');
 
+    logReviewAction(claimId, newState, note);
     return data;
   } catch (err) {
     console.error(`[REVIEW] Update claim ${claimId} error:`, err);
     return null;
+  }
+}
+
+/**
+ * Find a claim file by ID without loading all claims.
+ * Walks the directory with early exit on match.
+ */
+function findClaimFile(claimId) {
+  if (!fs.existsSync(CLAIMS_DIR)) return null;
+
+  const walk = (dir) => {
+    const entries = fs.readdirSync(dir, { withFileTypes: true });
+    for (const entry of entries) {
+      const fullPath = path.join(dir, entry.name);
+      if (entry.isDirectory()) {
+        const found = walk(fullPath);
+        if (found) return found;
+      } else if (entry.name.endsWith('.yaml') || entry.name.endsWith('.yml')) {
+        try {
+          const content = fs.readFileSync(fullPath, 'utf-8');
+          const claim = yaml.load(content);
+          if (claim && claim.claim_id === claimId) return fullPath;
+        } catch (e) { /* skip */ }
+      }
+    }
+    return null;
+  };
+
+  return walk(CLAIMS_DIR);
+}
+
+/**
+ * Append a review action to the daily approve JSONL log.
+ */
+function logReviewAction(claimId, newState, note) {
+  try {
+    fs.mkdirSync(LOGS_DIR, { recursive: true });
+    const dateStr = new Date().toISOString().slice(0, 10);
+    const logFile = path.join(LOGS_DIR, `approve-${dateStr}.jsonl`);
+    const entry = JSON.stringify({
+      claim_id: claimId,
+      review_state: newState,
+      review_note: note || '',
+      reviewed_by: 'admin',
+      reviewed_at: new Date().toISOString(),
+    });
+    fs.appendFileSync(logFile, entry + '\n', 'utf-8');
+  } catch (err) {
+    console.error('[REVIEW] Log error:', err);
   }
 }
 

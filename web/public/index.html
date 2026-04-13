@@ -105,6 +105,10 @@
             <span>Review</span>
             <span class="nav-badge" id="review-badge" style="display:none">0</span>
           </button>
+          <button class="nav-tab" data-tab="history" aria-selected="false">
+            <i data-lucide="clock" aria-hidden="true"></i>
+            <span>Lịch sử</span>
+          </button>
         </nav>
 
         <div class="header-actions">
@@ -467,11 +471,13 @@
             </h2>
             <div class="review-filters">
               <select id="review-filter" class="input" style="width:auto;min-width:160px">
-                <option value="all">Tất cả</option>
+                <option value="all">Chờ duyệt</option>
                 <option value="flagged">🚩 Flagged</option>
                 <option value="conflicts">⚡ Conflicts</option>
                 <option value="unverified">❓ Chưa verify</option>
                 <option value="image">📸 From Images</option>
+                <option value="approved">✅ Đã duyệt</option>
+                <option value="rejected">❌ Đã từ chối</option>
               </select>
               <select id="review-category" class="input" style="width:auto;min-width:160px">
                 <option value="">Tất cả category</option>
@@ -489,11 +495,31 @@
             </div>
           </div>
 
+          <!-- Bulk Action Bar -->
+          <div class="bulk-bar" id="bulk-bar" style="display:none" role="toolbar" aria-label="Bulk actions">
+            <span class="bulk-count" id="bulk-count">0 đã chọn</span>
+            <div class="bulk-actions">
+              <button class="btn btn-success btn-sm" id="btn-bulk-approve">
+                <i data-lucide="check" aria-hidden="true"></i> Duyệt tất cả
+              </button>
+              <button class="btn btn-ghost btn-sm" id="btn-bulk-flag">
+                <i data-lucide="flag" aria-hidden="true"></i> Flag tất cả
+              </button>
+              <button class="btn btn-danger btn-sm" id="btn-bulk-reject">
+                <i data-lucide="x" aria-hidden="true"></i> Từ chối tất cả
+              </button>
+              <button class="btn btn-ghost btn-sm" id="btn-bulk-clear">Bỏ chọn</button>
+            </div>
+          </div>
+
           <!-- Claims Table -->
           <div style="overflow-x:auto">
             <table class="files-table review-table" aria-label="Danh sách claims cần review">
               <thead>
                 <tr>
+                  <th scope="col" style="width:36px">
+                    <input type="checkbox" id="review-select-all" class="review-checkbox" aria-label="Chọn tất cả" title="Chọn / bỏ chọn tất cả">
+                  </th>
                   <th scope="col">Entity</th>
                   <th scope="col">Attribute</th>
                   <th scope="col">Value</th>
@@ -504,7 +530,7 @@
                 </tr>
               </thead>
               <tbody id="review-tbody">
-                <tr><td colspan="7" class="files-empty">Đang tải...</td></tr>
+                <tr><td colspan="8" class="files-empty">Đang tải...</td></tr>
               </tbody>
             </table>
           </div>
@@ -518,6 +544,101 @@
             </div>
           </div>
         </section>
+      </div>
+    </div>
+
+    <!-- ==================== LỊCH SỬ TAB ==================== -->
+    <div class="tab-content" id="tab-history" style="display:none">
+      <div class="history-wrap">
+
+        <!-- ── Content Health ─────────────────────────── -->
+        <section class="card" aria-labelledby="health-title">
+          <div class="section-header">
+            <h2 class="section-title" id="health-title">
+              <i data-lucide="heart-pulse" aria-hidden="true"></i>
+              Sức Khoẻ Nội Dung
+            </h2>
+            <button class="btn btn-ghost btn-sm" id="btn-refresh-health" title="Làm mới">
+              <i data-lucide="refresh-cw" aria-hidden="true"></i>
+            </button>
+          </div>
+          <div class="health-grid" id="health-grid">
+            <div class="health-loading">
+              <div class="spinner"></div> Đang kiểm tra...
+            </div>
+          </div>
+        </section>
+
+        <!-- ── Version Diff ───────────────────────────── -->
+        <section class="card" aria-labelledby="diff-title">
+          <div class="section-header">
+            <h2 class="section-title" id="diff-title">
+              <i data-lucide="git-compare" aria-hidden="true"></i>
+              So Sánh Phiên Bản
+            </h2>
+          </div>
+
+          <div class="diff-controls">
+            <div class="input-group" style="flex:1;margin-bottom:0">
+              <label for="diff-v1">Phiên bản gốc</label>
+              <select id="diff-v1" class="input">
+                <option value="">-- Chọn phiên bản --</option>
+              </select>
+            </div>
+            <div class="diff-vs-label">
+              <i data-lucide="arrow-right" aria-hidden="true"></i>
+            </div>
+            <div class="input-group" style="flex:1;margin-bottom:0">
+              <label for="diff-v2">Phiên bản so sánh</label>
+              <select id="diff-v2" class="input">
+                <option value="">-- Chọn phiên bản --</option>
+              </select>
+            </div>
+            <button class="btn btn-primary" id="btn-diff" style="margin-top:20px">
+              <i data-lucide="git-compare" aria-hidden="true"></i>
+              So sánh
+            </button>
+          </div>
+
+          <div id="diff-result" style="display:none">
+            <div class="diff-result-header">
+              <span id="diff-label-v1" class="diff-version-tag base"></span>
+              <i data-lucide="arrow-right" aria-hidden="true"></i>
+              <span id="diff-label-v2" class="diff-version-tag compare"></span>
+            </div>
+            <table class="diff-table" aria-label="Kết quả so sánh phiên bản">
+              <thead>
+                <tr>
+                  <th>Chỉ số</th>
+                  <th id="diff-th-v1">Phiên bản gốc</th>
+                  <th id="diff-th-v2">So sánh</th>
+                  <th>Thay đổi</th>
+                </tr>
+              </thead>
+              <tbody id="diff-tbody"></tbody>
+            </table>
+          </div>
+          <div id="diff-empty" class="diff-empty-msg">Chọn 2 phiên bản để so sánh</div>
+        </section>
+
+        <!-- ── Activity Log ───────────────────────────── -->
+        <section class="card" aria-labelledby="activity-title">
+          <div class="section-header">
+            <h2 class="section-title" id="activity-title">
+              <i data-lucide="activity" aria-hidden="true"></i>
+              Nhật Ký Hoạt Động
+            </h2>
+            <button class="btn btn-ghost btn-sm" id="btn-refresh-activity" title="Làm mới">
+              <i data-lucide="refresh-cw" aria-hidden="true"></i>
+            </button>
+          </div>
+          <div class="activity-timeline" id="activity-timeline">
+            <div class="health-loading">
+              <div class="spinner"></div> Đang tải...
+            </div>
+          </div>
+        </section>
+
       </div>
     </div>
 

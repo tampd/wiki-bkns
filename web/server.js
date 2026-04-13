@@ -17,6 +17,8 @@ const { triggerRoute } = require('./routes/trigger');
 const { statusRoute } = require('./routes/status');
 const { wikiRoute } = require('./routes/wiki');
 const { reviewRoute } = require('./routes/review');
+const { buildsRoute } = require('./routes/builds');
+const { activityRoute } = require('./routes/activity');
 const { PipelineRunner } = require('./lib/pipeline-runner');
 
 // ============================================================
@@ -70,7 +72,7 @@ app.use(cors({
 // Rate limiting
 const apiLimiter = rateLimit({
   windowMs: 15 * 60 * 1000,
-  max: 200, // Increased for wiki browsing
+  max: 500, // Increased for review + wiki browsing sessions
   standardHeaders: true,
   legacyHeaders: false,
   message: { error: 'Quá nhiều request. Vui lòng thử lại sau.' },
@@ -153,6 +155,8 @@ triggerRoute(app, pipelineRunner);
 statusRoute(app, pipelineRunner);
 wikiRoute(app);
 reviewRoute(app);
+buildsRoute(app);
+activityRoute(app);
 
 // ============================================================
 // FALLBACK — SPA
