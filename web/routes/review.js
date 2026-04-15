@@ -490,6 +490,20 @@ function reviewRoute(app) {
       data.decided_by = 'admin';
       if (note) data.decision_note = note;
 
+      // Persist winner text so downstream pipeline can consume it without re-parsing.
+      // reject_both → winner is null; legacy items without source_file → marked as orphaned.
+      if (decision === 'pick_a') {
+        data.winner_text = data.text_a || '';
+        data.winner_model = data.model_a || null;
+      } else if (decision === 'pick_b') {
+        data.winner_text = data.text_b || '';
+        data.winner_model = data.model_b || null;
+      } else {
+        data.winner_text = null;
+        data.winner_model = null;
+      }
+      data.has_source = !!data.source_file;
+
       // Move to resolved/
       fs.mkdirSync(DUAL_QUEUE_RESOLVED_DIR, { recursive: true });
       fs.writeFileSync(
@@ -501,7 +515,13 @@ function reviewRoute(app) {
 
       logDualDecision(req.params.id, decision, note, data);
 
-      res.json({ success: true, id: req.params.id, decision });
+      res.json({
+        success: true,
+        id: req.params.id,
+        decision,
+        source_file: data.source_file || null,
+        has_source: data.has_source,
+      });
     } catch (err) {
       console.error('[DUAL-QUEUE] Decide error:', err);
       res.status(500).json({ error: 'Failed to record decision' });

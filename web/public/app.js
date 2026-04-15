@@ -1673,6 +1673,109 @@
     }
   }
 
+  // Strip markdown fences (```json ... ```) from LLM output — see LESSONS BUG-003
+  function stripMarkdownFence(text) {
+    if (!text) return '';
+    return text.replace(/^\s*```[a-z]*\s*\n?/i, '').replace(/\n?\s*```\s*$/i, '').trim();
+  }
+
+  function tryParseJSON(text) {
+    try { return JSON.parse(stripMarkdownFence(text)); } catch { return null; }
+  }
+
+  // Compute algorithmic disagreement between two LLM outputs.
+  // Returns { diffs: [{type, path, a, b}], summary: string } or null.
+  function computeDisagreement(textA, textB) {
+    const jA = tryParseJSON(textA);
+    const jB = tryParseJSON(textB);
+    if (jA !== null && jB !== null) return diffStructured(jA, jB);
+    return diffLineCount(textA, textB);
+  }
+
+  function diffStructured(a, b) {
+    const diffs = [];
+    const walk = (va, vb, path) => {
+      const tA = Array.isArray(va) ? 'array' : (va === null ? 'null' : typeof va);
+      const tB = Array.isArray(vb) ? 'array' : (vb === null ? 'null' : typeof vb);
+      if (tA !== tB) { diffs.push({ type: 'type', path, a: va, b: vb }); return; }
+      if (tA === 'object') {
+        const keys = new Set([...Object.keys(va || {}), ...Object.keys(vb || {})]);
+        for (const k of keys) {
+          const sub = path ? `${path}.${k}` : k;
+          if (!(k in va)) { diffs.push({ type: 'missing_a', path: sub, b: vb[k] }); continue; }
+          if (!(k in vb)) { diffs.push({ type: 'missing_b', path: sub, a: va[k] }); continue; }
+          walk(va[k], vb[k], sub);
+        }
+      } else if (tA === 'array') {
+        const n = Math.max(va.length, vb.length);
+        for (let i = 0; i < n; i++) {
+          const sub = `${path}[${i}]`;
+          if (i >= va.length) { diffs.push({ type: 'missing_a', path: sub, b: vb[i] }); continue; }
+          if (i >= vb.length) { diffs.push({ type: 'missing_b', path: sub, a: va[i] }); continue; }
+          walk(va[i], vb[i], sub);
+        }
+      } else if (va !== vb) {
+        diffs.push({ type: 'value', path, a: va, b: vb });
+      }
+    };
+    walk(a, b, '');
+    return { diffs, kind: 'structured' };
+  }
+
+  function diffLineCount(a, b) {
+    const la = (a || '').split('\n').length;
+    const lb = (b || '').split('\n').length;
+    return { diffs: [], kind: 'text', line_a: la, line_b: lb };
+  }
+
+  function renderDisagreement(result) {
+    const el = $('#dual-disagreement');
+    if (!el) return;
+    if (!result) { el.innerHTML = ''; return; }
+    if (result.kind === 'text') {
+      el.innerHTML = `<div class="dv-headline">Không parse được JSON — so sánh dạng text</div>
+        <ul><li>A: ${result.line_a} dòng · B: ${result.line_b} dòng</li>
+        <li>Hãy đối chiếu 2 panel bên dưới thủ công.</li></ul>`;
+      return;
+    }
+    const { diffs } = result;
+    if (!diffs.length) {
+      el.innerHTML = `<div class="dv-headline">Dữ liệu JSON match — không có sai khác về cấu trúc</div>
+        <ul><li>Có thể LLM khác nhau về format/whitespace. Chọn bên nào cũng được.</li></ul>`;
+      return;
+    }
+    const counts = diffs.reduce((acc, d) => { acc[d.type] = (acc[d.type] || 0) + 1; return acc; }, {});
+    const headline = [
+      counts.value ? `${counts.value} giá trị khác` : null,
+      counts.type ? `${counts.type} sai kiểu` : null,
+      counts.missing_a ? `${counts.missing_a} trường A thiếu` : null,
+      counts.missing_b ? `${counts.missing_b} trường B thiếu` : null,
+    ].filter(Boolean).join(' · ');
+    const fmt = (v) => {
+      if (v === undefined) return '∅';
+      if (typeof v === 'string') return `"${v.length > 40 ? v.slice(0, 40) + '…' : v}"`;
+      if (v === null) return 'null';
+      if (typeof v === 'object') return Array.isArray(v) ? `[${v.length}]` : '{…}';
+      return String(v);
+    };
+    const tagMap = {
+      value: { cls: 'dv-tag-diff', label: 'DIFF' },
+      type: { cls: 'dv-tag-type', label: 'TYPE' },
+      missing_a: { cls: 'dv-tag-missing-a', label: 'A∅' },
+      missing_b: { cls: 'dv-tag-missing-b', label: 'B∅' },
+    };
+    const items = diffs.slice(0, 12).map(d => {
+      const tag = tagMap[d.type];
+      const tagHtml = `<span class="dv-tag ${tag.cls}">${tag.label}</span>`;
+      const key = `<span class="dv-key">${escapeHtml(d.path || '(root)')}</span>`;
+      const aHtml = d.type === 'missing_a' ? '' : ` · A=<span class="dv-a">${escapeHtml(fmt(d.a))}</span>`;
+      const bHtml = d.type === 'missing_b' ? '' : ` · B=<span class="dv-b">${escapeHtml(fmt(d.b))}</span>`;
+      return `<li>${tagHtml}${key}${aHtml}${bHtml}</li>`;
+    }).join('');
+    const more = diffs.length > 12 ? `<li>… và ${diffs.length - 12} sai khác khác</li>` : '';
+    el.innerHTML = `<div class="dv-headline">${escapeHtml(headline)}</div><ul>${items}${more}</ul>`;
+  }
+
   async function openDualModal(id) {
     dualModalCurrentId = id;
     try {
@@ -1688,14 +1791,30 @@
         data.ts ? new Date(data.ts).toLocaleString('vi-VN', { hour12: false }) : '',
       ].filter(Boolean).join('  |  ');
 
-      $('#dual-modal-prompt').textContent = data.prompt_preview
-        ? 'Prompt: ' + data.prompt_preview
-        : '';
+      const sourceEl = $('#dual-modal-source');
+      if (data.source_file) {
+        sourceEl.textContent = `📄 Source: ${data.source_file}${data.category ? ' · ' + data.category : ''}`;
+        sourceEl.classList.add('has-source');
+      } else {
+        sourceEl.textContent = '⚠️ Legacy item — không có source_file (sẽ không auto-apply downstream)';
+        sourceEl.classList.remove('has-source');
+      }
+
+      $('#dual-modal-prompt').textContent = data.prompt_preview || '(không có prompt)';
 
       $('#dual-model-a-name').textContent = data.model_a || '';
       $('#dual-model-b-name').textContent = data.model_b || '';
-      $('#dual-output-a').textContent = data.text_a || '(empty)';
-      $('#dual-output-b').textContent = data.text_b || '(empty)';
+      const cleanA = stripMarkdownFence(data.text_a || '');
+      const cleanB = stripMarkdownFence(data.text_b || '');
+      $('#dual-output-a').textContent = cleanA || '(empty)';
+      $('#dual-output-b').textContent = cleanB || '(empty)';
+
+      // Algorithmic disagreement card
+      renderDisagreement(computeDisagreement(data.text_a, data.text_b));
+
+      // Reset note
+      const noteEl = $('#dual-modal-note-text');
+      if (noteEl) noteEl.value = '';
 
       // Show modal
       const overlay = $('#dual-modal-overlay');
@@ -1719,11 +1838,12 @@
   async function submitDualDecision(decision) {
     if (!dualModalCurrentId) return;
     const id = dualModalCurrentId;
+    const note = ($('#dual-modal-note-text')?.value || '').trim();
     try {
       const res = await apiFetch(`/api/review/dual/${encodeURIComponent(id)}/decide`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ decision }),
+        body: JSON.stringify({ decision, note: note || undefined }),
       });
       if (res.ok) {
         const labels = { pick_a: 'Chọn A (Gemini)', pick_b: 'Chọn B (GPT)', reject_both: 'Loại bỏ cả hai' };
@@ -1739,15 +1859,23 @@
     }
   }
 
-  // Dual modal bindings
-  $('#dual-modal-close')?.addEventListener('click', closeDualModal);
-  $('#dual-modal-cancel')?.addEventListener('click', closeDualModal);
-  $('#dual-modal-overlay')?.addEventListener('click', (e) => {
-    if (e.target === e.currentTarget) closeDualModal();
+  // Dual modal bindings — event delegation (script loads before modal HTML is parsed)
+  document.addEventListener('click', (e) => {
+    const closeBtn = e.target.closest('[data-dv-close]');
+    if (closeBtn) { closeDualModal(); return; }
+    const actionBtn = e.target.closest('[data-dv-action]');
+    if (actionBtn) { submitDualDecision(actionBtn.dataset.dvAction); return; }
+    const overlay = e.target.closest('#dual-modal-overlay');
+    if (overlay && e.target === overlay) closeDualModal();
   });
-  $('#btn-pick-a')?.addEventListener('click', () => submitDualDecision('pick_a'));
-  $('#btn-pick-b')?.addEventListener('click', () => submitDualDecision('pick_b'));
-  $('#btn-reject-both')?.addEventListener('click', () => submitDualDecision('reject_both'));
+  document.addEventListener('keydown', (e) => {
+    if (!dualModalCurrentId) return;
+    if (e.key === 'Escape') { closeDualModal(); return; }
+    if (e.target.matches('textarea, input')) return;
+    if (e.key === 'a' || e.key === 'A') submitDualDecision('pick_a');
+    else if (e.key === 'b' || e.key === 'B') submitDualDecision('pick_b');
+    else if (e.key === 'r' || e.key === 'R') submitDualDecision('reject_both');
+  });
   $('#btn-refresh-dual')?.addEventListener('click', loadDualQueue);
 
   // ============================================================

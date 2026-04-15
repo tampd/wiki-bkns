@@ -115,6 +115,10 @@ def extract_claims_dual(raw_file: Path, force: bool = False) -> dict:
         vote = run_dual(
             prompt=prompt,
             skill="extract-claims-dual",
+            context={
+                "source_file": str(raw_file),
+                "category": category,
+            },
         )
     except Exception as e:
         error_msg = f"Dual-vote error: {e}"

@@ -804,18 +804,24 @@
 
   <!-- ── Dual-Vote Side-by-Side Modal ── -->
   <div class="dual-modal-overlay" id="dual-modal-overlay" role="dialog" aria-modal="true" aria-labelledby="dual-modal-title" style="display:none">
-    <div class="dual-modal">
+    <div class="dual-modal" id="dual-modal-box">
       <div class="dual-modal-header">
-        <div>
+        <div class="dual-modal-title-wrap">
           <h3 id="dual-modal-title">So sánh Dual-Vote</h3>
           <div class="dual-modal-meta" id="dual-modal-meta"></div>
+          <div class="dual-modal-source" id="dual-modal-source"></div>
         </div>
-        <button class="btn btn-ghost btn-icon" id="dual-modal-close" aria-label="Đóng">
+        <button class="btn btn-ghost btn-icon" data-dv-close aria-label="Đóng">
           <i data-lucide="x"></i>
         </button>
       </div>
 
-      <div class="dual-modal-prompt" id="dual-modal-prompt"></div>
+      <details class="dual-modal-prompt-wrap" id="dual-modal-prompt-wrap">
+        <summary>Prompt context</summary>
+        <div class="dual-modal-prompt" id="dual-modal-prompt"></div>
+      </details>
+
+      <div class="dual-disagreement" id="dual-disagreement" aria-live="polite"></div>
 
       <div class="dual-compare">
         <!-- Agent A — Gemini -->
@@ -837,20 +843,25 @@
         </div>
       </div>
 
+      <div class="dual-modal-note">
+        <label for="dual-modal-note-text">Ghi chú (tùy chọn)</label>
+        <textarea id="dual-modal-note-text" rows="1" placeholder="Lý do quyết định..."></textarea>
+      </div>
+
       <div class="dual-modal-actions">
-        <button class="btn btn-primary dual-pick" id="btn-pick-a">
+        <button class="btn btn-primary dual-pick" data-dv-action="pick_a">
           <i data-lucide="check-circle" aria-hidden="true"></i>
-          Chọn A (Gemini)
+          Chọn A (Gemini) <kbd>A</kbd>
         </button>
-        <button class="btn btn-accent dual-pick" id="btn-pick-b">
+        <button class="btn btn-accent dual-pick" data-dv-action="pick_b">
           <i data-lucide="check-circle" aria-hidden="true"></i>
-          Chọn B (GPT)
+          Chọn B (GPT) <kbd>B</kbd>
         </button>
-        <button class="btn btn-ghost" id="btn-reject-both">
+        <button class="btn btn-ghost" data-dv-action="reject_both">
           <i data-lucide="x-circle" aria-hidden="true"></i>
-          Loại bỏ cả hai
+          Loại bỏ cả hai <kbd>R</kbd>
         </button>
-        <button class="btn btn-ghost" id="dual-modal-cancel">Đóng</button>
+        <button class="btn btn-ghost" data-dv-close>Đóng <kbd>Esc</kbd></button>
       </div>
     </div>
   </div>

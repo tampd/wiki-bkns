@@ -47,6 +47,7 @@ def run_dual(
     skill: str = "dual-vote",
     model_a: Optional[str] = None,
     model_b: Optional[str] = None,
+    context: Optional[dict] = None,
 ) -> dict:
     """Run Gemini (A) + GPT (B) in parallel, return voting result.
 
@@ -122,7 +123,7 @@ def run_dual(
 
     # ── Write review queue item if flagged ─────────────────
     if vote.get("flag") in ("needs_review", "human_review_required"):
-        _write_review_queue(vote, prompt, skill)
+        _write_review_queue(vote, prompt, skill, context=context)
 
     # ── Audit log ──────────────────────────────────────────
     _log_vote(vote, prompt, skill)
@@ -210,7 +211,7 @@ def _analyze(
 QUEUE_ALERT_THRESHOLD = 5  # Send Telegram when pending items reach this count
 
 
-def _write_review_queue(vote: dict, prompt: str, skill: str) -> None:
+def _write_review_queue(vote: dict, prompt: str, skill: str, context: Optional[dict] = None) -> None:
     """Write flagged item to .review-queue/ for human review."""
     REVIEW_QUEUE_DIR.mkdir(parents=True, exist_ok=True)
     ts = datetime.now(VN_TZ).strftime("%Y%m%d-%H%M%S")
@@ -228,6 +229,10 @@ def _write_review_queue(vote: dict, prompt: str, skill: str) -> None:
         "text_b": vote.get("agent_b", {}).get("text", "") if "agent_b" in vote else "",
         "prompt_preview": prompt[:500],
     }
+    if context:
+        for key in ("source_file", "category", "target_claim_ids"):
+            if key in context and context[key] is not None:
+                item[key] = context[key]
     item_file.write_text(json.dumps(item, ensure_ascii=False, indent=2), encoding="utf-8")
 
     # Count pending items (exclude resolved/) and alert if threshold hit
