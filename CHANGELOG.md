@@ -1,0 +1,129 @@
+# CHANGELOG — BKNS Agent Wiki
+
+All notable changes to this project are documented here.
+Format: [Semantic Versioning](https://semver.org/) | dates in YYYY-MM-DD
+
+---
+
+## [v1.1.0] — 2026-04-14 — Optimization Release
+
+### Removed
+- `lib/gemini.py`: Explicit Context Caching (275 dòng dead code) — `_CACHE_META_PATH`, `create_wiki_cache()`, `generate_with_explicit_cache()`, v.v.
+- `lib/logger.py`: Duplicate utility functions (12 dòng) — `_now_iso()`, `_today_str()`, `_ensure_dir()` (thay bằng import từ `lib.utils`)
+- `web/routes/wiki.js`: Dead route `POST /api/upload/image` (stub rỗng, gây hanging requests)
+- `web/public/app.js`: Dead `addImageBlobHook` handler (gọi route đã xóa)
+- `web/public/index.html`: Dead `<div class="welcome-recent">` (không được JS populate)
+- `web/public/style.css`: Duplicate `.btn-xs`, duplicate `.btn-success` hardcoded override, unused `.dv-agree`
+
+### Added
+- `bot/wiki_bot.py`: `/them [URL]` command — crawl URL mới vào raw/ (admin-only, subprocess, timeout 60s)
+- `lib/logger.py`: `log_gemini_call()` — ghi per-call JSONL vào `logs/gemini-calls-YYYY-MM.jsonl`
+- `web/server.js`: Structured error logging tới `logs/web-errors-YYYY-MM-DD.jsonl`
+- `wiki/requirements.txt`: Python dependency management với pinned versions
+- `tests/test_pipeline_smoke.py`: 7 pipeline smoke tests
+- `tests/test_bot.py`: 13 bot unit tests (`_validate_url`, `_safe_error`, `handle_them`)
+- `HANDOVER.md`: Tài liệu bàn giao đầy đủ
+
+### Fixed
+- `bot/wiki_bot.py`: `sys.path.insert` hacks → `importlib.util.spec_from_file_location` (không pollute sys.path)
+- `bot/wiki_bot.py`: Input sanitization — URL validation, category allowlist, question length cap (500 chars)
+- `bot/wiki_bot.py`: Error messages không còn leak internal file paths (`_safe_error()`)
+- `lib/gemini.py`: `PRICING` dict dùng config constants (`MODEL_PRO`, `MODEL_PRO_NEW`) thay vì hardcoded strings
+- `web/routes/review.js`: 11x `err.message` không còn expose tới API response
+- `web/routes/activity.js`, `builds.js`, `trigger.js`, `upload.js`: `err.message` → opaque error strings
+- `web/public/style.css`: 3 undefined CSS variables (`--surface-2`, `--border`, `--text-muted`), 2 hardcoded `font-size` → design tokens
+
+### Improved
+- `bot/wiki_bot.py`: `send_message()` retry 3 lần với exponential backoff (1s, 2s) trên network errors
+- `lib/gemini.py`: Per-request cost alert khi vượt `MAX_QUERY_COST_USD`
+- `lib/gemini.py`, `lib/logger.py`: Type hints Python 3.10+ style (`X | None` thay vì `Optional[X]`)
+
+---
+
+## [v0.4.0] — 2026-04-14
+
+### Breaking Changes
+- None. Pipeline v0.3 continues to run unchanged. v0.4 is additive.
+
+### Added
+
+#### Markitdown Integration (PART 02–03)
+- `tools/converters/markitdown_adapter.py` — unified converter for 15+ formats
+  (DOCX, PDF, XLSX, PPTX, EPUB, HTML, ZIP, MP3, WAV, YouTube, images+EXIF)
+- `tools/ingest_youtube.py` — YouTube transcript ingest via yt-dlp
+- `tools/ingest_html.py` — HTML page ingest with BeautifulSoup cleanup
+- `tools/ingest_audio.py` — audio/video transcript ingest
+- `convert_manual.py` now uses markitdown backend (backward compatible with old DOCX/PDF)
+- 73 existing raw files re-converted through markitdown for format consistency
+
+#### Gemini 3.1 Pro Support (PART 04)
+- `MODEL_PRO_NEW=gemini-3.1-pro-preview` in `.env`
+- `MODEL_PRO_NEW_LOCATION=global` (required — not available per-region)
+- Feature flag `USE_PRO_NEW=false` (enable after A/B test validation)
+- A/B test results in `trienkhai/upgrade-v0.4/ab-test-extract.md` and `ab-test-compile.md`
+
+#### Dual-Vote Cross-Validation (PART 05–06)
+- `lib/openai_client.py` — OpenAI GPT-5.4 client with retry, cost tracking, max_completion_tokens
+- `lib/dual_vote.py` — semantic similarity + consensus engine
+- `skills/dual-vote/scripts/dual_vote_skill.py` — CLI wrapper
+- `skills/extract-claims/scripts/extract_dual.py` — dual-vote extract (Gemini + GPT-5.4)
+- `skills/compile-wiki/scripts/compile_dual.py` — dual-vote compile
+- Feature flag `DUAL_VOTE_ENABLED=true`
+- Logs: `logs/dual-vote-YYYY-MM.jsonl` — status (AGREE/PARTIAL/DISAGREE), costs, scores
+- Review queue: `claims/.review-queue/*.json` — human review for DISAGREE cases
+
+#### Regression & Testing Tools (PART 07)
+- `tools/regression_test.py` — orchestrator for full v0.4 rebuild (extract_dual + compile_dual)
+- `tools/wiki_diff.py` — HTML side-by-side diff engine (v0.3 vs v0.4)
+- `trienkhai/upgrade-v0.4/benchmark.md` — v0.3 baseline + v0.4 target metrics
+- `trienkhai/upgrade-v0.4/bot-qa-test.md` — 30 QA questions across 6 categories
+- `trienkhai/upgrade-v0.4/regression-review.md` — human review template
+
+#### Production & Monitoring (PART 08)
+- `scripts/rollback-v0.4.sh` — 1-click rollback to v0.3 (with `--dry-run` mode)
+- `tools/cron_tasks.py` — added `dual-vote-check` (hourly DISAGREE alert) and `daily-digest` (8h summary)
+- `tools/quality_dashboard.py` — added `--v04` tab for dual-vote agreement rate + cost split
+- `docs/runbook.md` — operational runbook for v0.4 production
+
+### Changed
+- `.env` — `DUAL_VOTE_ENABLED=true` (enabled after PART 06 validation)
+- `.env` — Added `OPENAI_API_KEY`, `OPENAI_MODEL=gpt-5.4`, `OPENAI_BASE_URL`
+- `PROJECT_SUMMARY.md` — Updated to reflect v0.4 architecture
+
+### Fixed
+- `lib/openai_client.py:176` — changed `max_tokens` → `max_completion_tokens` for GPT-5.4 (BUG-001)
+- `lib/dual_vote.py` — `_strip_markdown_fence()` before JSON parse for Gemini responses (BUG-003)
+- `lib/openai_client.py` — base URL validation: `sk-or-v1-` → OpenRouter, `sk-proj-` → OpenAI (BUG-001)
+
+### Known Issues / Pending USER ACTIONs
+- `USE_PRO_NEW=false` — Gemini 3.1 Pro not yet enabled pending API quota confirmation
+- Regression test (`tools/regression_test.py --full`) not yet run — requires human to trigger
+- Bot QA test (`trienkhai/upgrade-v0.4/bot-qa-test.md`) not yet executed
+
+---
+
+## [v0.3.0] — 2026-04-08
+
+### Summary
+Production MVP: 7 categories, 2,252 approved claims, 213 wiki pages, Telegram bot live.
+
+### Architecture
+- Single Gemini 2.5 Pro for extract + compile
+- Manual DOCX/PDF ingest only
+- 25 known conflicts (manual detection)
+- Cost per full build: $6.50
+- Snapshot: `build/snapshots/v0.3-pre-upgrade-2026-04-13/`
+
+---
+
+## [v0.2.0] — 2026-04-05
+
+### Summary
+7-stage pipeline stable. Batch approval workflow. Telegram bot with context caching.
+
+---
+
+## [v0.1.0] — 2026-04-04
+
+### Summary
+Initial MVP. Single-category proof of concept (hosting).
