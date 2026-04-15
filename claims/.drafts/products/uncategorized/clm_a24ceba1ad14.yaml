@@ -1,0 +1,16 @@
+claim_id: CLM-A24CEBA1AD14
+entity_id: company.bkns
+entity_type: company
+entity_name: BKNS
+attribute: payment_policy
+value: 24/7 payment support through multiple methods
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-BANG_GIA_DICH_VU_BKNS_TEXT_2026_04_13
+observed_at: '2026-04-13T21:40:29.161763+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ ghi chú: ''Hỗ trợ thanh toán 24/7 qua nhiều phương thức'''

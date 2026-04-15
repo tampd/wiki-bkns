@@ -2,7 +2,7 @@
 page_id: wiki.products.server.so-sanh
 title: Máy Chủ BKNS — So Sánh
 category: products/server
-updated: '2026-04-07'
+updated: '2026-04-14'
 review_state: drafted
 claims_used: 0
 compile_cost_usd: 0

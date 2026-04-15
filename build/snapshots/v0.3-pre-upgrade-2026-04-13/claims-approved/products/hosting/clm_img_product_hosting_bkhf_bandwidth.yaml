@@ -1,0 +1,16 @@
+claim_id: CLM-IMG-product.hosting.bkhf-bandwidth
+entity_id: product.hosting.bkhf
+entity_type: product_plan
+entity_name: Gói Hosting Miễn Phí BKHF
+attribute: bandwidth
+value: Unlimited
+confidence: high
+review_state: approved
+risk_class: verified
+source_ids:
+- IMG-BKHF
+observed_at: '2026-04-07T16:34:59.550356+07:00'
+valid_from: '2026-04-07'
+approved_at: '2026-04-07T16:34:59.550356+07:00'
+approved_by: image-extraction
+compiler_note: From bkns.vn screenshot (BKHF)

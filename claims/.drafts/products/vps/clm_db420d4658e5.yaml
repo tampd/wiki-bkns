@@ -1,0 +1,17 @@
+claim_id: CLM-DB420D4658E5
+entity_id: product.vps.bkmisa
+entity_type: product
+entity_name: BK MISA
+attribute: uptime_commitment
+value: 99.99
+unit: '%'
+qualifiers: {}
+source_ids:
+- SRC-CLOUD_VPS_BK_MISA_GIAI_PHAP_LUU_TRU_KE_TOAN_SO_2026_04_13
+observed_at: '2026-04-13T22:05:38.501322+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: • Điểm chính: ...hoạt động ổn định với cam
+  kết uptime 99.99%...'

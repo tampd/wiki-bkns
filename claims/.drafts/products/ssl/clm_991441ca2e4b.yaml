@@ -1,0 +1,22 @@
+claim_id: CLM-991441CA2E4B
+entity_id: ENT-PROD-SSL-COMODO-WILDCARD-DV
+entity_type: product_plan
+entity_name: Comodo SSL Wildcard Certificate (DV)
+attribute: money_back_guarantee
+value: 30
+unit: days
+qualifiers: {}
+source_ids:
+- SRC-COMODO_SSL_WILDCARD_CERTIFICATE_DV_CHUNG_CHI_SSL_2026_04_05
+observed_at: '2026-04-14T16:27:17.994092+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Chính sách / Điều khoản / Lưu ý: • Hoàn tiền trong 30
+  ngày'
+dual_vote:
+  status: DISAGREE
+  score: 0.3687
+  confidence: LOW
+  flag: human_review_required

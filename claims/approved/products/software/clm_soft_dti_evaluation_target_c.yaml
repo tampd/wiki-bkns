@@ -3,18 +3,18 @@ entity_id: product.software.dti_evaluation
 entity_type: product
 entity_name: Phần Mềm Đánh Giá Chuyển Đổi Số DTI
 attribute: target_customer
-value: Các cơ quan, đơn vị, tỉnh thành cần một công cụ để theo dõi, báo cáo, và so
-  sánh tiến độ chuyển đổi số.
+value: Các cơ quan, đơn vị, tỉnh thành cần một công cụ để theo dõi, báo cáo, và so sánh tiến độ chuyển đổi số.
 unit: null
 qualifiers: {}
 source_ids:
-- SRC-PHAN_MEM_ANH_GIA_CHUYEN_OI_SO_DTI_2026_04_06
+  - SRC-PHAN_MEM_ANH_GIA_CHUYEN_OI_SO_DTI_2026_04_06
 observed_at: '2026-04-07T00:45:52.612980+07:00'
 valid_from: '2026-04-07'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ phần ''Tóm tắt nhanh'': • Phù hợp với: Các cơ quan, đơn vị,
-  tỉnh thành cần một công cụ để theo dõi, báo cáo, và so sánh tiến độ chuyển đổi số.'
-approved_at: '2026-04-07T13:00:16.062518+07:00'
+compiler_note: 'Trích từ phần ''Tóm tắt nhanh'': • Phù hợp với: Các cơ quan, đơn vị, tỉnh thành cần một công cụ để theo dõi, báo cáo, và so sánh tiến độ chuyển đổi số.'
+approved_at: '2026-04-08T13:00:15.895415+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.421Z'

@@ -1,0 +1,22 @@
+claim_id: CLM-E207F6F3A272
+entity_id: ENT-PROD-SSL-COMODO-EV
+entity_type: product
+entity_name: Comodo EV SSL
+attribute: site_seal_type
+value: Động
+unit: null
+qualifiers: null
+source_ids:
+- SRC-COMODO_EV_SSL_CHUNG_CHI_SSL_XAC_THUC_MO_RONG_2026_04_13
+- SRC-COMODO_EV_SSL_CHUNG_CHI_SSL_XAC_THUC_MO_RONG_2026_04_05
+observed_at: '2026-04-14T16:26:39.541222+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng Thông số kỹ thuật: | Biểu tượng | Động |'
+dual_vote:
+  status: DISAGREE
+  score: 0.3281
+  confidence: LOW
+  flag: human_review_required

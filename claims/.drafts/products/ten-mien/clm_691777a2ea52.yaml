@@ -1,0 +1,22 @@
+claim_id: CLM-691777A2EA52
+entity_id: ENT-PROD-DOMAIN
+entity_type: service
+entity_name: Dịch vụ Tên miền BKNS
+attribute: promotion_availability
+value: Có các chương trình khuyến mại cho một số loại tên miền.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_05
+observed_at: '2026-04-14T16:43:52.693029+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: Điểm chính: Có các chương trình khuyến mại
+  cho một số loại tên miền.'
+dual_vote:
+  status: DISAGREE
+  score: 0.5466
+  confidence: LOW
+  flag: human_review_required

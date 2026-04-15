@@ -1,0 +1,21 @@
+claim_id: CLM-E746FFD8706F
+entity_id: ENT-PROD-HOSTING-FREE
+entity_type: product
+entity_name: Hosting Miễn phí
+attribute: name
+value: Hosting Miễn phí
+unit: null
+qualifiers: null
+source_ids:
+- SRC-HOSTING_MIEN_PHI_GIAI_PHAP_KHOI_TAO_WEBSITE_0_2026_04_13
+observed_at: '2026-04-14T12:14:44.304959+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ tiêu đề chính của nội dung: ═══ Hosting Miễn phí'
+dual_vote:
+  status: DISAGREE
+  score: 0.4487
+  confidence: LOW
+  flag: human_review_required

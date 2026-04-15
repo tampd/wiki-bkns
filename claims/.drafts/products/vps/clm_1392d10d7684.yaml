@@ -1,0 +1,17 @@
+claim_id: CLM-1392D10D7684
+entity_id: vps.sieu_re.vpstk1
+entity_type: product_plan
+entity_name: VPSTK1
+attribute: monthly_price
+value: 69000
+unit: VND
+qualifiers:
+  billing_cycle: month
+source_ids:
+- SRC-DICH_VU_VPS_SIEU_TIET_KIEM_VPS_SIEU_RE_TAI_BKNS_2026_04_13
+observed_at: '2026-04-13T22:32:55.342741+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ bảng giá, dòng Giá/Tháng, cột VPSTK1: 69.000đ'

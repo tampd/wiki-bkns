@@ -1,0 +1,1109 @@
+{
+  "ts": "2026-04-15T07:00:22.450514+07:00",
+  "syntax_issues": 183,
+  "semantic_issues": 0,
+  "total_cost_usd": 0,
+  "syntax": [
+    {
+      "type": "error",
+      "rule": "missing_frontmatter",
+      "message": "Thiếu YAML frontmatter",
+      "line": 1,
+      "file": "_templates/checklist-review.md"
+    },
+    {
+      "type": "error",
+      "rule": "missing_frontmatter",
+      "message": "Thiếu YAML frontmatter",
+      "line": 1,
+      "file": "_templates/frontmatter-example.md"
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: so-sanh-tong-hop.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: support/lien-he.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: _templates/frontmatter-example.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: _templates/checklist-review.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: _templates/product-detail.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/server/dedicated.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/server/quan-tri.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/server/colocation.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/server/tong-quan.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/server/cau-hoi-thuong-gap.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/server/tinh-nang.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/server/huong-dan.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/server/thong-so.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/server/so-sanh.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/server/chinh-sach.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/server/bang-gia.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/ten-mien/chuyen-doi.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/ten-mien/tong-quan.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/ten-mien/cau-hoi-thuong-gap.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/ten-mien/tinh-nang.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/ten-mien/huong-dan.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/ten-mien/thong-so.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/ten-mien/so-sanh.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/ten-mien/chinh-sach.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/ten-mien/bang-gia.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/email/tong-quan.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/email/cau-hoi-thuong-gap.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/email/tinh-nang.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/email/huong-dan.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/email/email-relay.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/email/thong-so.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/email/cloud-email-server.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/email/so-sanh.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/email/email-hosting.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/email/chinh-sach.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/email/bang-gia.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/hosting/tong-quan.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/hosting/cau-hoi-thuong-gap.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/hosting/tinh-nang.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/hosting/huong-dan.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/hosting/thong-so.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/hosting/so-sanh.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/hosting/chinh-sach.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/hosting/bang-gia.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/uncategorized/tong-quan.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/other/tong-quan.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/ssl/tong-quan.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/ssl/cau-hoi-thuong-gap.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/ssl/tinh-nang.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/ssl/huong-dan.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/ssl/thong-so.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/ssl/so-sanh.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/ssl/chinh-sach.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/ssl/bang-gia.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/vps/vps-sieu-re.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/vps/vps-n8n-ai.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/vps/tong-quan.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/vps/cau-hoi-thuong-gap.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/vps/tinh-nang.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/vps/huong-dan.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/vps/vps-misa.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/vps/vps-gia-re.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/vps/thong-so.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/vps/vps-seo.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/vps/so-sanh.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/vps/vps-storage.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/vps/cloud-vps-ssd.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/vps/chinh-sach.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/vps/bang-gia.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/vps/cloud-vps-amd.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/software/chi-tiet.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/software/tong-quan.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/software/cau-hoi-thuong-gap.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/software/tinh-nang.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/software/huong-dan.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/software/thong-so.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/software/so-sanh.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/software/chinh-sach.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/software/bang-gia.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/server/san-pham/thue-cho-dat-may-chu.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/server/san-pham/quan-tri-may-chu-tron-goi.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/server/san-pham/thue-may-chu.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/ten-mien/san-pham/chuyen-ten-mien.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/ten-mien/san-pham/dang-ky-ten-mien.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/email/san-pham/email-relay.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/email/san-pham/cloud-email-server.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/email/san-pham/email-hosting.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/vps/san-pham/vps-n8n.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/vps/san-pham/storage-vps.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/vps/san-pham/vps-mmo.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/vps/san-pham/vps-gia-re.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/vps/san-pham/vps-seo.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/vps/san-pham/vps-bk-misa.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/vps/san-pham/cloud-vps-vm.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products.v0.3-backup/vps/san-pham/cloud-vps-amd.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: support/support/huong-dan-chung.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: support/support/chinh-sach-chung.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: support/support/lien-he.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: support/support/faq-tong-hop.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/server/dedicated.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/server/quan-tri.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/server/colocation.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/server/tong-quan.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/server/cau-hoi-thuong-gap.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/server/tinh-nang.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/server/huong-dan.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/server/thong-so.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/server/so-sanh.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/server/chinh-sach.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/server/bang-gia.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/ten-mien/chuyen-doi.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/ten-mien/tong-quan.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/ten-mien/cau-hoi-thuong-gap.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/ten-mien/tinh-nang.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/ten-mien/huong-dan.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/ten-mien/thong-so.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/ten-mien/so-sanh.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/ten-mien/chinh-sach.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/ten-mien/bang-gia.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/email/tong-quan.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/email/cau-hoi-thuong-gap.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/email/tinh-nang.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/email/huong-dan.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/email/email-relay.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/email/thong-so.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/email/cloud-email-server.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/email/so-sanh.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/email/email-hosting.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/email/chinh-sach.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/email/bang-gia.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/hosting/tong-quan.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/hosting/cau-hoi-thuong-gap.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/hosting/tinh-nang.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/hosting/huong-dan.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/hosting/thong-so.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/hosting/so-sanh.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/hosting/chinh-sach.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/hosting/bang-gia.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/uncategorized/tong-quan.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/other/tong-quan.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/ssl/tong-quan.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/ssl/cau-hoi-thuong-gap.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/ssl/tinh-nang.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/ssl/huong-dan.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/ssl/thong-so.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/ssl/so-sanh.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/ssl/chinh-sach.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/ssl/bang-gia.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/vps/vps-sieu-re.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/vps/vps-n8n-ai.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/vps/tong-quan.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/vps/cau-hoi-thuong-gap.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/vps/tinh-nang.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/vps/huong-dan.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/vps/vps-misa.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/vps/vps-gia-re.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/vps/thong-so.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/vps/vps-seo.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/vps/so-sanh.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/vps/vps-storage.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/vps/cloud-vps-ssd.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/vps/chinh-sach.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/vps/bang-gia.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/vps/cloud-vps-amd.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/software/chi-tiet.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/software/tong-quan.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/software/cau-hoi-thuong-gap.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/software/tinh-nang.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/software/huong-dan.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/software/thong-so.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/software/so-sanh.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/software/chinh-sach.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: products/software/bang-gia.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: _templates/subpages/tong-quan.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: _templates/subpages/cau-hoi-thuong-gap.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: _templates/subpages/tinh-nang.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: _templates/subpages/huong-dan.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: _templates/subpages/thong-so.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: _templates/subpages/so-sanh.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: _templates/subpages/chinh-sach.md",
+      "line": 0
+    },
+    {
+      "type": "info",
+      "rule": "orphan_file",
+      "message": "File chưa được link từ index: _templates/subpages/bang-gia.md",
+      "line": 0
+    }
+  ],
+  "semantic": []
+}

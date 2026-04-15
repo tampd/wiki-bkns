@@ -1,0 +1,21 @@
+claim_id: CLM-53F72E48A33C
+entity_id: ENT-PROD-SSL-PositiveSSL-Multi-Domain-DV
+entity_type: product
+entity_name: PositiveSSL Multi-Domain (DV)
+attribute: product_name
+value: PositiveSSL Multi-Domain (DV)
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-POSITIVESSL_MULTI_DOMAIN_DV_CHUNG_CHI_SSL_CHO_NHIEU_TEN_M_2026_04_13
+observed_at: '2026-04-14T16:56:05.070395+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ tiêu đề: ═══ PositiveSSL Multi-Domain (DV)'
+dual_vote:
+  status: DISAGREE
+  score: 0.2078
+  confidence: LOW
+  flag: human_review_required

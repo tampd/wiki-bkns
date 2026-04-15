@@ -1,0 +1,18 @@
+claim_id: CLM-HOST-SEO-URL
+entity_id: product.hosting.seo
+entity_type: product
+entity_name: Hosting SEO
+attribute: url
+value: https://www.bkns.vn/hosting/seo-hosting.html
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_HOSTING_SEO_TOI_UU_WEBSITE_CHO_CONG_CU_TIM_KIEM_2026_04_06
+observed_at: '2026-04-07T00:07:08.156971+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: none
+compiler_note: 'Trích từ Thông tin nguồn: • URL: https://www.bkns.vn/hosting/seo-hosting.html'
+approved_at: '2026-04-08T13:00:11.760961+07:00'
+approved_by: admin-batch

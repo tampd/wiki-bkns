@@ -1,0 +1,21 @@
+claim_id: CLM-AEE7A1550755
+entity_id: product.vps.bkms-02
+entity_type: product_plan
+entity_name: BKMS - 02
+attribute: cpu_cores
+value: 4
+unit: Core
+qualifiers: null
+source_ids:
+- SRC-CLOUD_VPS_BK_MISA_GIAI_PHAP_LUU_TRU_KE_TOAN_SO_2026_04_05
+observed_at: '2026-04-14T16:08:16.072100+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: medium
+compiler_note: 'Trích từ bảng giá: | BKMS - 02 | ... | 04 Core |'
+dual_vote:
+  status: PARTIAL
+  score: 0.7201
+  confidence: MEDIUM
+  flag: needs_review

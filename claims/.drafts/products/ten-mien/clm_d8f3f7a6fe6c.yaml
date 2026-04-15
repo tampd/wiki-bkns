@@ -1,0 +1,20 @@
+claim_id: CLM-D8F3F7A6FE6C
+entity_id: bkns:prod:domain:registry_lock
+entity_type: product
+entity_name: Bảo vệ tên miền cấp cao nhất (Registry Lock)
+attribute: limitation
+value: Quy trình mở khóa đòi hỏi thời gian và sự phối hợp giữa các bên.
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-BAO_VE_TEN_MIEN_CAP_CAO_NHAT_GIAI_PHAP_AN_TOAN_TUYET_OI_2026_04_13
+observed_at: '2026-04-13T21:50:55.032047+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Chính sách / Điều khoản / Lưu ý: ''Quy trình mở khóa được
+  thiết kế để đảm bảo chỉ chủ thể hợp pháp mới có thể thực hiện thay đổi, nhưng đòi
+  hỏi thời gian và sự phối hợp giữa các bên.'''
+value_changed_from: Làm tăng độ phức tạp khi cần thay đổi thông tin tên miền.
+value_changed_at: '2026-04-13T21:50:55.032066+07:00'

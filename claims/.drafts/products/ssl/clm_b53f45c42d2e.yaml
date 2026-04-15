@@ -1,0 +1,21 @@
+claim_id: CLM-B53F45C42D2E
+entity_id: ENT-PROD-SSL.rapidssl
+entity_type: product
+entity_name: RapidSSL Certificate
+attribute: domain_protection_scope
+value: Tên miền chính
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-RAPIDSSL_CERTIFICATE_CHUNG_CHI_SSL_XAC_THUC_TEN_MIEN_DV_2026_04_05
+observed_at: '2026-04-14T16:57:24.779118+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: '| Bảo vệ cho | Tên miền chính |'
+dual_vote:
+  status: DISAGREE
+  score: 0.3892
+  confidence: LOW
+  flag: human_review_required

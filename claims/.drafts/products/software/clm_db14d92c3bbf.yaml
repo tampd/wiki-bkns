@@ -1,0 +1,23 @@
+claim_id: CLM-DB14D92C3BBF
+entity_id: ENT-PROD-SOFTWARE-LITESPEED
+entity_type: product
+entity_name: LiteSpeed Web Server
+attribute: benefit
+value: tiết kiệm chi phí đầu tư vào máy chủ
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-LITESPEED_WEB_SERVER_TINH_NANG_PHIEN_BAN_VA_SO_SANH_2026_04_05
+observed_at: '2026-04-14T12:20:31.155479+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tính năng / Thành phần: Tiết kiệm chi phí: Do yêu cầu ít
+  tài nguyên phần cứng hơn để xử lý cùng một lượng truy cập, giúp tiết kiệm chi phí
+  đầu tư vào máy chủ.'
+dual_vote:
+  status: DISAGREE
+  score: 0.0
+  confidence: LOW
+  flag: human_review_required

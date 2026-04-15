@@ -1,0 +1,12 @@
+{
+  "ts": "2026-04-14T11:33:16.826822+07:00",
+  "skill": "test-20claims",
+  "status": "PARTIAL",
+  "flag": "needs_review",
+  "score": 0.826,
+  "model_a": "gemini-2.5-pro",
+  "model_b": "gpt-5.4",
+  "text_a": "```json\n{\n  \"attribute\": \"pricing_note\",\n  \"value\": \"Chưa bao gồm thuế VAT\",\n  \"confidence\": 1.0,\n  \"agrees\": true,\n  \"reason\": \"The official BKNS domain price list explicitly states at the bottom of the table: 'Bảng giá trên chưa bao gồm 10% VAT' (The above price list does not include 10% VAT).\"\n}\n```",
+  "text_b": "{\"attribute\":\"pricing_note\",\"value\":\"Chưa bao gồm thuế VAT\",\"confidence\":0.93,\"agrees\":true,\"reason\":\"BKNS domain service pricing is stated as excluding VAT; the note 'Chưa bao gồm thuế VAT' matches the product pricing disclaimer.\"}",
+  "prompt_preview": "Verify the following claim about BKNS products and return JSON:\nEntity: Dịch vụ Tên miền BKNS\nAttribute: pricing_note\nClaimed value: Chưa bao gồm thuế VAT\n\nReturn JSON: {\"attribute\": \"...\", \"value\": \"...\", \"confidence\": 0.0-1.0, \"agrees\": true/false, \"reason\": \"brief explanation\"}"
+}

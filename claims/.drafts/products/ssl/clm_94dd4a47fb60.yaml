@@ -1,0 +1,21 @@
+claim_id: CLM-94DD4A47FB60
+entity_id: ENT-PROD-SSL.geotrust_true_businessid
+entity_type: product_plan
+entity_name: GeoTrust True BusinessID
+attribute: insurance_amount
+value: 1250000
+unit: USD
+qualifiers: null
+source_ids:
+- SRC-GEOTRUST_TRUE_BUSINESSID_CHUNG_CHI_SSL_XAC_THUC_DOANH_NGHI_2026_04_05
+observed_at: '2026-04-14T16:31:00.131736+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: medium
+compiler_note: 'Trích từ Tóm tắt nhanh: ''Bảo hiểm $1,250,000'''
+dual_vote:
+  status: DISAGREE
+  score: 0.3515
+  confidence: LOW
+  flag: human_review_required

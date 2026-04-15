@@ -1,0 +1,19 @@
+claim_id: CLM-83B340A75039
+entity_id: ENT-PROD-BACKUP-001
+entity_type: service
+entity_name: Dịch vụ Backup Dữ liệu
+attribute: registration_process
+value: Liên hệ trực tiếp với BKNS (hotline, email, kênh liên lạc khác) để được tư
+  vấn và triển khai
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_BACKUP_DU_LIEU_SAO_LUU_VA_PHUC_HOI_DU_LIEU_UY_TIN_2026_04_13
+observed_at: '2026-04-13T22:14:37.726532+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Quy trình đăng ký / Triển khai / Kích hoạt: ''Quy trình đăng
+  ký dịch vụ được thực hiện thông qua tư vấn trực tiếp. Khách hàng có nhu cầu cần
+  liên hệ với BKNS qua hotline, email hoặc các kênh liên lạc khác.'''

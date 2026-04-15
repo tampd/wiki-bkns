@@ -1,0 +1,23 @@
+claim_id: CLM-A6CF40D6259A
+entity_id: ENT-PROD-EMAIL
+entity_type: product
+entity_name: Email Hosting
+attribute: plan_comparison_basis
+value: Sự khác biệt chính giữa các gói nằm ở Số lượng tài khoản email và Số lượng
+  email forward.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_05
+observed_at: '2026-04-14T12:06:40.760352+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục So sánh các gói (nếu có): Sự khác biệt chính giữa các
+  gói nằm ở Số lượng tài khoản email và Số lượng email forward.'
+dual_vote:
+  status: DISAGREE
+  score: 0.4556
+  confidence: LOW
+  flag: human_review_required

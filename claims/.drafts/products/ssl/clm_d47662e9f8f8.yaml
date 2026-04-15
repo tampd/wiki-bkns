@@ -1,0 +1,21 @@
+claim_id: CLM-D47662E9F8F8
+entity_id: product.ssl.comodo_instantssl_pro
+entity_type: product_plan
+entity_name: InstantSSL Pro (OV)
+attribute: encryption_strength
+value: 256
+unit: bit
+qualifiers: {}
+source_ids:
+- SRC-INSTANTSSL_PRO_OV_CHUNG_CHI_SSL_XAC_THUC_TO_CHUC_CUA_COM_2026_04_13
+observed_at: '2026-04-14T16:33:35.238213+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tóm tắt nhanh: • Điểm chính: Cung cấp mã hóa 256 bit'
+dual_vote:
+  status: DISAGREE
+  score: 0.35
+  confidence: LOW
+  flag: human_review_required

@@ -3,18 +3,18 @@ entity_id: product.hosting.platinum
 entity_type: product_family
 entity_name: Platinum Web Hosting
 attribute: target_audience
-value: Các website có lượng truy cập lớn, website thương mại điện tử, báo chí, tin
-  tức yêu cầu tốc độ và sự ổn định.
+value: Các website có lượng truy cập lớn, website thương mại điện tử, báo chí, tin tức yêu cầu tốc độ và sự ổn định.
 unit: null
 qualifiers: {}
 source_ids:
-- SRC-PLATINUM_WEB_HOSTING_HOSTING_NVME_TOC_O_CAO_BACKUP_3_LAN_2026_04_04
+  - SRC-PLATINUM_WEB_HOSTING_HOSTING_NVME_TOC_O_CAO_BACKUP_3_LAN_2026_04_04
 observed_at: '2026-04-04T21:09:45.405165+07:00'
 valid_from: '2026-04-04'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ mục Tóm tắt nhanh: • Phù hợp với: Các website có lượng truy
-  cập lớn, website thương mại điện tử, báo chí, tin tức yêu cầu tốc độ và sự ổn định.'
-approved_at: '2026-04-07T13:00:12.267339+07:00'
+compiler_note: 'Trích từ mục Tóm tắt nhanh: • Phù hợp với: Các website có lượng truy cập lớn, website thương mại điện tử, báo chí, tin tức yêu cầu tốc độ và sự ổn định.'
+approved_at: '2026-04-08T13:00:11.447210+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.056Z'

@@ -1,0 +1,18 @@
+claim_id: CLM-864052A551E1
+entity_id: ENT-PROD-SSL-COMODO-DV
+entity_type: product_plan
+entity_name: Comodo SSL Certificate (DV)
+attribute: short_description
+value: Chứng chỉ bảo mật SSL xác thực tên miền (Domain Validation - DV) do Comodo
+  cung cấp.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-COMODO_SSL_CERTIFICATE_DV_CHUNG_CHI_XAC_THUC_TEN_MIEN_2026_04_13
+observed_at: '2026-04-13T22:09:21.994064+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: '• Dịch vụ này là gì: Chứng chỉ bảo mật SSL xác thực tên miền (Domain
+  Validation - DV) do Comodo cung cấp.'

@@ -1,0 +1,19 @@
+claim_id: CLM-EMAI-ES_01-PRICE
+entity_id: product.email.es_01
+entity_type: product_plan
+entity_name: ES 01
+attribute: monthly_price
+value: 734000
+unit: VND
+qualifiers:
+  billing_cycle: month
+source_ids:
+- SRC-DICH_VU_CLOUD_EMAIL_SERVER_AN_TOAN_HIEU_SUAT_CAO_2026_04_06
+observed_at: '2026-04-06T23:58:41.689786+07:00'
+valid_from: '2026-04-06'
+confidence: high
+review_state: approved
+risk_class: high
+compiler_note: 'Trích từ bảng giá: | ES 01 | ... | Giá/Tháng | 734.000đ |'
+approved_at: '2026-04-08T13:00:10.231547+07:00'
+approved_by: admin-batch

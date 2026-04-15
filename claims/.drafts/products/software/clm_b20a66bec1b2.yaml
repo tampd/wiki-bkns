@@ -1,0 +1,22 @@
+claim_id: CLM-B20A66BEC1B2
+entity_id: product.software.dti_assessment
+entity_type: product
+entity_name: Phần Mềm Đánh Giá Chuyển Đổi Số DTI
+attribute: name
+value: Phần Mềm Đánh Giá Chuyển Đổi Số DTI
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-PHAN_MEM_ANH_GIA_CHUYEN_OI_SO_DTI_2026_04_05
+- SRC-PHAN_MEM_ANH_GIA_CHUYEN_OI_SO_DTI_2026_04_13
+observed_at: '2026-04-14T17:20:54.488868+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ tiêu đề: ═══ Phần Mềm Đánh Giá Chuyển Đổi Số DTI'
+dual_vote:
+  status: DISAGREE
+  score: 0.0
+  confidence: LOW
+  flag: human_review_required

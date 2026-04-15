@@ -1,0 +1,21 @@
+claim_id: CLM-681A0DA49B78
+entity_id: product.server_management.bkns.basic
+entity_type: product_plan
+entity_name: Quản trị Máy chủ - Cơ bản
+attribute: response_time
+value: 30
+unit: minute
+qualifiers: {}
+source_ids:
+- SRC-DICH_VU_QUAN_TRI_MAY_CHU_TRON_GOI_TAI_BKNS_2026_04_05
+observed_at: '2026-04-14T17:14:28.638199+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng giá, dòng Thời gian phản hồi, cột Cơ bản: 30 phút'
+dual_vote:
+  status: DISAGREE
+  score: 0.5497
+  confidence: LOW
+  flag: human_review_required

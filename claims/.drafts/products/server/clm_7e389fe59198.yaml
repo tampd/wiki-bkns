@@ -1,0 +1,19 @@
+claim_id: CLM-7E389FE59198
+entity_id: product.server.dedicated
+entity_type: product_service
+entity_name: Cho thuê máy chủ vật lý BKNS
+attribute: filter_option
+value: 256 GB
+unit: null
+qualifiers:
+  filter_by: RAM
+source_ids:
+- SRC-DANH_SACH_GOI_SAN_PHAM_MAY_CHU_BKNS_2026_04_13
+observed_at: '2026-04-13T22:11:57.760746+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tính năng / Thành phần: ''Lọc theo RAM: - 256 GB'''
+value_changed_from: 192 GB
+value_changed_at: '2026-04-13T22:11:57.760798+07:00'

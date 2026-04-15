@@ -1,0 +1,21 @@
+claim_id: CLM-EB2ADB08C959
+entity_id: bkns.hosting.platinum.p5
+entity_type: product_plan
+entity_name: Platinum 5
+attribute: ram
+value: 5
+unit: GB
+qualifiers: {}
+source_ids:
+- SRC-BKNS_CAMNANG_HOSTING_DOT2_2026_04_05
+observed_at: '2026-04-14T12:04:01.380965+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng thông số Platinum Web Hosting: ''Platinum 5 | 5 GB'''
+dual_vote:
+  status: DISAGREE
+  score: 0.3651
+  confidence: LOW
+  flag: human_review_required

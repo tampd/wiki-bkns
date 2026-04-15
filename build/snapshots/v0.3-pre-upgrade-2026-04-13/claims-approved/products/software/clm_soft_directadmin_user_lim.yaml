@@ -1,0 +1,19 @@
+claim_id: CLM-SOFT-DIRECTADMIN-USER_LIM
+entity_id: product.software.directadmin.standard
+entity_type: product_plan
+entity_name: DirectAdmin Standard
+attribute: user_limit
+value: unlimited
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-BANG_GIA_BAN_QUYEN_PHAN_MEM_QUAN_TRI_SERVER_DIRECTADMIN_2026_04_06
+observed_at: '2026-04-06T23:11:14.335024+07:00'
+valid_from: '2026-04-06'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ bảng giá: ''Standard | Giới hạn | Không giới hạn số User,
+  domain'''
+approved_at: '2026-04-08T13:00:15.822717+07:00'
+approved_by: admin-batch

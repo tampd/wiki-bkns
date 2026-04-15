@@ -7,14 +7,16 @@ value: Domain (DV)
 unit: null
 qualifiers: {}
 source_ids:
-- SRC-GEOTRUST_QUICKSSL_PREMIUM_CHUNG_CHI_SSL_XAC_THUC_TEN_MIEN_2026_04_06
+  - SRC-GEOTRUST_QUICKSSL_PREMIUM_CHUNG_CHI_SSL_XAC_THUC_TEN_MIEN_2026_04_06
 observed_at: '2026-04-07T00:27:28.260756+07:00'
 valid_from: '2026-04-07'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
 compiler_note: 'Trích từ bảng ''Thông số kỹ thuật'': ''| Xác thực | Domain (DV) |'''
 value_changed_from: chỉ yêu cầu quy trình xác minh tên miền đơn giản
 value_changed_at: '2026-04-07T00:27:28.260774+07:00'
-approved_at: '2026-04-07T13:00:13.719003+07:00'
+approved_at: '2026-04-08T13:00:13.236822+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.560Z'

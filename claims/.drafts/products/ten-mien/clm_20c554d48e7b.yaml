@@ -1,0 +1,18 @@
+claim_id: CLM-20C554D48E7B
+entity_id: product.domain.international.org
+entity_type: product_plan
+entity_name: .org
+attribute: renewal_fee
+value: 535000
+unit: VND
+qualifiers:
+  billing_cycle: year
+source_ids:
+- SRC-BANG_GIA_TEN_MIEN_QUOC_TE_2026_04_13
+observed_at: '2026-04-13T21:46:27.475147+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ bảng giá: | .org    | Miễn phí | 365.000   | 535.000   |
+  535.000   |'

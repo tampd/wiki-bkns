@@ -1,0 +1,25 @@
+claim_id: CLM-59A3B11114E8
+entity_id: ENT-PROD-DOMAIN
+entity_type: product
+entity_name: Tên miền
+attribute: price
+value: 0
+unit: VND
+qualifiers:
+  service_name: Xác thực 2 bước (2FA)
+source_ids:
+- SRC-BAO_VE_TEN_MIEN_CAP_CAO_NHAT_GIAI_PHAP_AN_TOAN_TUYET_OI_2026_04_05
+observed_at: '2026-04-14T16:45:21.109687+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ bảng So sánh các gói: | Xác thực 2 bước (2FA) | Miễn phí
+  |'
+dual_vote:
+  status: DISAGREE
+  score: 0.2797
+  confidence: LOW
+  flag: human_review_required
+value_changed_from: Có phí
+value_changed_at: '2026-04-14T16:45:21.066412+07:00'

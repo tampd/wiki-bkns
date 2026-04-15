@@ -1,0 +1,20 @@
+claim_id: CLM-58805F14B404
+entity_id: product.software.cloudlinux_os
+entity_type: product_service
+entity_name: Bản Quyền CloudLinux OS
+attribute: key_technology
+value: Lightweight Virtualized Environment (LVE) giúp cô lập tài nguyên (CPU, I/O,
+  bộ nhớ) của mỗi người dùng, ngăn chặn một tài khoản làm ảnh hưởng đến toàn bộ máy
+  chủ.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-BAN_QUYEN_CLOUDLINUX_OS_TANG_ON_INH_VA_BAO_MAT_CHO_SHARED_2026_04_13
+observed_at: '2026-04-13T21:36:10.226601+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: ''Điểm chính: Công nghệ chính là Lightweight
+  Virtualized Environment (LVE) giúp cô lập tài nguyên (CPU, I/O, bộ nhớ) của mỗi
+  người dùng, ngăn chặn một tài khoản làm ảnh hưởng đến toàn bộ máy chủ.'''

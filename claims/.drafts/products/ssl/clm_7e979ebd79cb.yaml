@@ -1,0 +1,17 @@
+claim_id: CLM-7E979EBD79CB
+entity_id: ENT-PROD-SSL-ESSENTIALSSL-WILDCARD-DV
+entity_type: product_plan
+entity_name: EssentialSSL Wildcard (DV)
+attribute: domain_coverage
+value: 1 main domain + all level 1 subdomains
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-CHUNG_CHI_SSL_ESSENTIALSSL_WILDCARD_DV_CUA_COMODO_2026_04_13
+observed_at: '2026-04-13T21:57:30.111207+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng thông số kỹ thuật: | Bảo vệ cho | 1 tên miền chính +
+  tất cả tên miền con cấp 1 |'

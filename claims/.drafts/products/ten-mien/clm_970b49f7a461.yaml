@@ -1,0 +1,25 @@
+claim_id: CLM-970B49F7A461
+entity_id: ENT-COMPANY-001
+entity_type: company
+entity_name: BKNS
+attribute: accreditation
+value: Nhà đăng ký chính thức được ICANN công nhận
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_ANG_KY_TEN_MIEN_VIET_NAM_VA_QUOC_TE_TAI_BKNS_2026_04_13
+- SRC-DICH_VU_ANG_KY_TEN_MIEN_VIET_NAM_VA_QUOC_TE_TAI_BKNS_2026_04_05
+observed_at: '2026-04-14T16:47:42.365890+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: Điểm chính: BKNS là nhà đăng ký chính thức
+  được VNNIC và ICANN công nhận.'
+value_changed_from: Nhà đăng ký chính thức được VNNIC công nhận
+value_changed_at: '2026-04-14T16:47:42.365923+07:00'
+dual_vote:
+  status: PARTIAL
+  score: 0.6047
+  confidence: MEDIUM
+  flag: needs_review

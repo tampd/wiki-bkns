@@ -1,0 +1,23 @@
+claim_id: CLM-22F2BD31E674
+entity_id: ENT-PROD-HOSTING.platinum_web_hosting
+entity_type: product
+entity_name: Platinum Web Hosting
+attribute: feature_wordpress_toolkit
+value: true
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-PLATINUM_WEB_HOSTING_HOSTING_NVME_TOC_O_CAO_BACKUP_3_LAN_2026_04_05
+observed_at: '2026-04-14T12:28:23.657507+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Câu hỏi thường gặp (FAQ): Hosting Platinum có hỗ trợ
+  WordPress Toolkit không? - Có, dịch vụ Hosting Platinum có tích hợp sẵn WordPress
+  Toolkit, giúp quản lý website WordPress dễ dàng.'
+dual_vote:
+  status: DISAGREE
+  score: 0.5159
+  confidence: LOW
+  flag: human_review_required

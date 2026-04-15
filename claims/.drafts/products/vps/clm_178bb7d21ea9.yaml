@@ -1,0 +1,17 @@
+claim_id: CLM-178BB7D21EA9
+entity_id: ENT-PROD-VPS:vps_seo
+entity_type: product_service
+entity_name: VPS SEO
+attribute: backup_frequency
+value: hàng tuần
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-DICH_VU_CLOUD_VPS_SEO_MAY_CHU_AO_TOI_UU_CHO_SEO_2026_04_13
+observed_at: '2026-04-13T22:18:36.349901+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tính năng / Thành phần: ''• Sao Lưu Dữ Liệu Hàng Tuần:
+  Dữ liệu trên VPS được tự động sao lưu định kỳ mỗi tuần.'''

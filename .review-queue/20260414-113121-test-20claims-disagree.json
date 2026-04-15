@@ -1,0 +1,12 @@
+{
+  "ts": "2026-04-14T11:31:21.388930+07:00",
+  "skill": "test-20claims",
+  "status": "DISAGREE",
+  "flag": "human_review_required",
+  "score": 0.4555,
+  "model_a": "gemini-2.5-pro",
+  "model_b": "gpt-5.4",
+  "text_a": "```json\n{\n  \"attribute\": \"vcpu\",\n  \"value\": \"4\",\n  \"confidence\": 1.0,\n  \"agrees\": false,\n  \"reason\": \"The VPSTK5 plan includes 4 vCPU cores. The plans with 2 vCPU cores are VPSTK3 and VPSTK4.\"\n}\n```",
+  "text_b": "{\"attribute\":\"vcpu\",\"value\":\"2\",\"confidence\":0.18,\"agrees\":false,\"reason\":\"The claim record only provides the asserted value for VPSTK5 and does not include any source evidence or product specification to verify it. Without supporting BKNS product data, the vCPU count cannot be confirmed.\"}",
+  "prompt_preview": "Verify the following claim about BKNS products and return JSON:\nEntity: VPSTK5\nAttribute: vcpu\nClaimed value: 2\n\nReturn JSON: {\"attribute\": \"...\", \"value\": \"...\", \"confidence\": 0.0-1.0, \"agrees\": true/false, \"reason\": \"brief explanation\"}"
+}

@@ -1,0 +1,20 @@
+claim_id: CLM-564C0A3D5A3E
+entity_id: ENT-PROD-DOMAIN
+entity_type: product
+entity_name: Dịch vụ Tên miền
+attribute: pricing_policy
+value: Bảng giá chưa bao gồm VAT
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_13
+- SRC-DICH_VU_ANG_KY_TEN_MIEN_VIET_NAM_VA_QUOC_TE_TAI_BKNS_2026_04_13
+observed_at: '2026-04-13T22:13:15.206211+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ phần ''Gói dịch vụ và bảng giá'': Lưu ý: Bảng giá dưới đây
+  chưa bao gồm VAT và có thể thay đổi.'
+value_changed_from: Phí đăng ký mới và phí duy trì hàng năm có thể khác nhau.
+value_changed_at: '2026-04-13T22:13:15.206267+07:00'

@@ -7,13 +7,14 @@ value: 1 tên miền chính và tất cả các tên miền con
 unit: null
 qualifiers: {}
 source_ids:
-- SRC-RAPIDSSL_WILDCARD_CERTIFICATE_THONG_TIN_VA_BANG_GIA_TAI_BK_2026_04_06
+  - SRC-RAPIDSSL_WILDCARD_CERTIFICATE_THONG_TIN_VA_BANG_GIA_TAI_BK_2026_04_06
 observed_at: '2026-04-07T00:58:40.349437+07:00'
 valid_from: '2026-04-07'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ bảng Thông số kỹ thuật / Giới hạn: | Bảo vệ cho | 1 tên miền
-  chính và tất cả các tên miền con |'
-approved_at: '2026-04-07T13:00:13.099523+07:00'
+compiler_note: 'Trích từ bảng Thông số kỹ thuật / Giới hạn: | Bảo vệ cho | 1 tên miền chính và tất cả các tên miền con |'
+approved_at: '2026-04-08T13:00:12.584578+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.480Z'

@@ -7,14 +7,16 @@ value: 12
 unit: null
 qualifiers: {}
 source_ids:
-- SRC-RESELLER_HOSTING_CPANEL_QUAN_LY_NHIEU_HOSTING_CHI_VOI_MOT_T_2026_04_06
+  - SRC-RESELLER_HOSTING_CPANEL_QUAN_LY_NHIEU_HOSTING_CHI_VOI_MOT_T_2026_04_06
 observed_at: '2026-04-07T01:00:34.619281+07:00'
 valid_from: '2026-04-07'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
 compiler_note: 'Trích từ bảng giá: ''MySQL Accounts | 12'''
 value_changed_from: 10
 value_changed_at: '2026-04-07T01:00:34.619298+07:00'
-approved_at: '2026-04-07T13:00:12.368539+07:00'
+approved_at: '2026-04-08T13:00:11.568294+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.068Z'

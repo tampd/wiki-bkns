@@ -1,0 +1,17 @@
+claim_id: CLM-C3F739BBB26C
+entity_id: ENT-PROD-EMAIL-RELAY-02
+entity_type: product_plan
+entity_name: BK-RELAY02
+attribute: monthly_price
+value: 290000
+unit: VND
+qualifiers:
+  billing_cycle: month
+source_ids:
+- SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_VA_TIN_CAY_2026_04_13
+observed_at: '2026-04-13T22:35:10.236474+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ bảng giá: | Giá/Tháng | 290.000đ |'

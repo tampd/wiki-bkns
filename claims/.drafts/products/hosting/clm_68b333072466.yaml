@@ -1,0 +1,24 @@
+claim_id: CLM-68B333072466
+entity_id: product.hosting.seo
+entity_type: product
+entity_name: Hosting SEO
+attribute: target_customer
+value: Các cá nhân và doanh nghiệp cần tối ưu hóa website cho công cụ tìm kiếm, đặc
+  biệt là các hệ thống website vệ tinh (PBN) cần nhiều IP khác nhau.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_HOSTING_SEO_TOI_UU_WEBSITE_CHO_CONG_CU_TIM_KIEM_2026_04_05
+observed_at: '2026-04-14T12:09:18.705289+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ mục Tóm tắt nhanh: ''• Phù hợp với: Các cá nhân và doanh
+  nghiệp cần tối ưu hóa website cho công cụ tìm kiếm, đặc biệt là các hệ thống website
+  vệ tinh (PBN) cần nhiều IP khác nhau.'''
+dual_vote:
+  status: DISAGREE
+  score: 0.5032
+  confidence: LOW
+  flag: human_review_required

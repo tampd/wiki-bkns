@@ -1,0 +1,12 @@
+{
+  "ts": "2026-04-14T11:34:21.525699+07:00",
+  "skill": "test-20claims",
+  "status": "DISAGREE",
+  "flag": "human_review_required",
+  "score": 0.484,
+  "model_a": "gemini-2.5-pro",
+  "model_b": "gpt-5.4",
+  "text_a": "```json\n{\n  \"attribute\": \"daily_email_limit\",\n  \"value\": 500,\n  \"confidence\": 1.0,\n  \"agrees\": false,\n  \"reason\": \"The claimed value is 350, but the actual daily email limit for the BK-RELAY01 (Email Relay 1) plan is 500 emails/day.\"\n}\n```",
+  "text_b": "{\"attribute\":\"daily_email_limit\",\"value\":\"350\",\"confidence\":0.12,\"agrees\":false,\"reason\":\"No source record or product specification for BK-RELAY01 was provided to verify the claimed daily email limit of 350.\"}",
+  "prompt_preview": "Verify the following claim about BKNS products and return JSON:\nEntity: BK-RELAY01\nAttribute: daily_email_limit\nClaimed value: 350\n\nReturn JSON: {\"attribute\": \"...\", \"value\": \"...\", \"confidence\": 0.0-1.0, \"agrees\": true/false, \"reason\": \"brief explanation\"}"
+}

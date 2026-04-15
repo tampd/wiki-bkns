@@ -1,0 +1,19 @@
+claim_id: CLM-D213C7153DBD
+entity_id: product.email.email_relay
+entity_type: product
+entity_name: Email Relay
+attribute: feature
+value: Sử dụng hệ thống IP đã được whitelist để gửi email.
+unit: ''
+qualifiers: null
+source_ids:
+- SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_TIN_CAY_2026_04_13
+observed_at: '2026-04-13T22:34:09.041750+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tính năng / Thành phần: ''IP uy tín: Sử dụng hệ thống
+  IP đã được whitelist để gửi email.'''
+value_changed_from: Cung cấp hệ thống với IP uy tín
+value_changed_at: '2026-04-13T22:34:09.041778+07:00'

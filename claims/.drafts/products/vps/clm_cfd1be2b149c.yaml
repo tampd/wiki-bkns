@@ -1,0 +1,21 @@
+claim_id: CLM-CFD1BE2B149C
+entity_id: product.vps.bkns.vpstk2
+entity_type: product_plan
+entity_name: VPSTK2
+attribute: vcpu
+value: 1
+unit: core
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_VPS_SIEU_TIET_KIEM_VPS_SIEU_RE_TAI_BKNS_2026_04_05
+observed_at: '2026-04-14T16:13:24.822915+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ bảng giá, cột VPSTK2: ''vCPU | 01 Core'''
+dual_vote:
+  status: DISAGREE
+  score: 0.599
+  confidence: LOW
+  flag: human_review_required

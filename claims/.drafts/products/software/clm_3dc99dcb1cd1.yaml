@@ -1,0 +1,26 @@
+claim_id: CLM-3DC99DCB1CD1
+entity_id: ENT-PROD-SOFTWARE-LITESPEED
+entity_type: product
+entity_name: LiteSpeed Web Server
+attribute: compatibility
+value: tương thích với mod_security
+unit: null
+qualifiers:
+  with: Apache
+source_ids:
+- SRC-LITESPEED_WEB_SERVER_TINH_NANG_PHIEN_BAN_VA_SO_SANH_2026_04_05
+observed_at: '2026-04-14T12:20:31.144526+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Mô tả dịch vụ: LSWS được thiết kế như một sự thay thế trực
+  tiếp cho Apache, tương thích với các tính năng phổ biến của Apache như `.htaccess`,
+  `mod_rewrite`, và `mod_security`.'
+dual_vote:
+  status: DISAGREE
+  score: 0.0
+  confidence: LOW
+  flag: human_review_required
+value_changed_from: tương thích với mod_rewrite
+value_changed_at: '2026-04-14T12:20:31.144597+07:00'

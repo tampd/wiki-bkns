@@ -7,13 +7,14 @@ value: Reseller Hosting cPanel
 unit: null
 qualifiers: null
 source_ids:
-- SRC-RESELLER_HOSTING_WEB_2026_04_05
+  - SRC-RESELLER_HOSTING_WEB_2026_04_05
 observed_at: '2026-04-05T22:11:26.578889+07:00'
 valid_from: '2026-04-05'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ tiêu đề: # Reseller Hosting cPanel - Quản Lý Nhiều Hosting
-  Chỉ Với Một Tài Khoản'
-approved_at: '2026-04-07T13:00:11.966671+07:00'
+compiler_note: 'Trích từ tiêu đề: # Reseller Hosting cPanel - Quản Lý Nhiều Hosting Chỉ Với Một Tài Khoản'
+approved_at: '2026-04-08T13:00:11.080155+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.018Z'

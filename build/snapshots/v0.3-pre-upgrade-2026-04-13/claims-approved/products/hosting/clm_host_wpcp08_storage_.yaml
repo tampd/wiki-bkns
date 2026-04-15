@@ -1,0 +1,18 @@
+claim_id: CLM-HOST-WPCP08-STORAGE_
+entity_id: product.hosting.wpcp08
+entity_type: product_plan
+entity_name: WPCP08
+attribute: storage_ssd
+value: 30
+unit: GB
+qualifiers: {}
+source_ids:
+- SRC-HOSTING_WORDPRESS_WEB_2026_04_05
+observed_at: '2026-04-05T22:04:52.753539+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ bảng giá gói WPCP08: ''| SSD Disk space | 30 GB |'''
+approved_at: '2026-04-08T13:00:12.056530+07:00'
+approved_by: admin-batch

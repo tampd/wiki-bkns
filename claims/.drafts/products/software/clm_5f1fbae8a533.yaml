@@ -1,0 +1,27 @@
+claim_id: CLM-5F1FBAE8A533
+entity_id: product.software.litespeed_web_server
+entity_type: product
+entity_name: LiteSpeed Web Server (LSWS)
+attribute: benefit
+value: tiết kiệm chi phí đầu tư vào máy chủ
+unit: null
+qualifiers:
+  reason: yêu cầu ít tài nguyên phần cứng hơn để xử lý cùng một lượng truy cập
+source_ids:
+- SRC-LITESPEED_WEB_SERVER_TINH_NANG_PHIEN_BAN_VA_SO_SANH_2026_04_13
+observed_at: '2026-04-14T12:21:39.467992+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tính năng / Thành phần: Tiết kiệm chi phí: Do yêu cầu ít
+  tài nguyên phần cứng hơn để xử lý cùng một lượng truy cập, giúp tiết kiệm chi phí
+  đầu tư vào máy chủ.'
+dual_vote:
+  status: DISAGREE
+  score: 0.0
+  confidence: LOW
+  flag: human_review_required
+value_changed_from: xử lý hàng ngàn kết nối đồng thời với việc sử dụng ít tài nguyên
+  (CPU/RAM) hơn so với Apache
+value_changed_at: '2026-04-14T12:21:39.468042+07:00'

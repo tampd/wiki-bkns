@@ -7,15 +7,16 @@ value: Nâng cấp từ phiên bản vbullentin 4 lên vbulletin 5 connect
 unit: null
 qualifiers: null
 source_ids:
-- SRC-BAN_QUYEN_VBULLETIN_HE_QUAN_TRI_FORUM_MANG_XA_HOI_2026_04_06
+  - SRC-BAN_QUYEN_VBULLETIN_HE_QUAN_TRI_FORUM_MANG_XA_HOI_2026_04_06
 observed_at: '2026-04-06T23:04:03.084864+07:00'
 valid_from: '2026-04-06'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ bảng giá, dòng ''Upgrade'' thứ hai: | Upgrade | Giá liên
-  hệ | Bản upgrade cho phép bạn nâng cấp phiên bản vbullentin 4 lên vbulletin 5 connect.'
+compiler_note: 'Trích từ bảng giá, dòng ''Upgrade'' thứ hai: | Upgrade | Giá liên hệ | Bản upgrade cho phép bạn nâng cấp phiên bản vbullentin 4 lên vbulletin 5 connect.'
 value_changed_from: Cho phép nâng cấp các phiên bản mới nhất của vbulletin 5 connect
 value_changed_at: '2026-04-06T23:04:03.044027+07:00'
-approved_at: '2026-04-07T13:00:16.316488+07:00'
+approved_at: '2026-04-08T13:00:16.092606+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.441Z'

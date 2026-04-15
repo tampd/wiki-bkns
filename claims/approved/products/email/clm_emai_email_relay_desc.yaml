@@ -3,21 +3,18 @@ entity_id: product.email.email_relay
 entity_type: product
 entity_name: Email Relay
 attribute: description
-value: Email Relay là một giải pháp trung gian giúp định tuyến toàn bộ email gửi ra
-  từ hệ thống Email Server của khách hàng qua hệ thống của BKNS để xử lý, nhằm tăng
-  uy tín IP và đảm bảo tỷ lệ email vào inbox cao.
+value: Email Relay là một giải pháp trung gian giúp định tuyến toàn bộ email gửi ra từ hệ thống Email Server của khách hàng qua hệ thống của BKNS để xử lý, nhằm tăng uy tín IP và đảm bảo tỷ lệ email vào inbox cao.
 unit: ''
 qualifiers: null
 source_ids:
-- SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_TIN_CAY_2026_04_06
+  - SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_TIN_CAY_2026_04_06
 observed_at: '2026-04-07T00:21:09.772235+07:00'
 valid_from: '2026-04-07'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ mục Tóm tắt nhanh: • Dịch vụ này là gì: Email Relay là một
-  giải pháp trung gian giúp định tuyến toàn bộ email gửi ra từ hệ thống Email Server
-  của khách hàng qua hệ thống của BKNS để xử lý, nhằm tăng uy tín IP và đảm bảo tỷ
-  lệ email vào inbox cao.'
-approved_at: '2026-04-07T13:00:11.170538+07:00'
+compiler_note: 'Trích từ mục Tóm tắt nhanh: • Dịch vụ này là gì: Email Relay là một giải pháp trung gian giúp định tuyến toàn bộ email gửi ra từ hệ thống Email Server của khách hàng qua hệ thống của BKNS để xử lý, nhằm tăng uy tín IP và đảm bảo tỷ lệ email vào inbox cao.'
+approved_at: '2026-04-08T13:00:10.175778+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:58.913Z'

@@ -1,0 +1,25 @@
+claim_id: CLM-38841EB4C130
+entity_id: ENT-PROD-SOFTWARE-DIRECTADMIN
+entity_type: product
+entity_name: DirectAdmin License
+attribute: policy
+value: DirectAdmin ngừng hỗ trợ đổi địa chỉ IP cho bản quyền lifetime.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-BANG_GIA_BAN_QUYEN_PHAN_MEM_QUAN_TRI_SERVER_DIRECTADMIN_2026_04_05
+observed_at: '2026-04-14T17:10:42.520434+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: medium
+compiler_note: 'Trích từ mục Chính sách / Điều khoản / Lưu ý: Kể từ ngày 01/07/2020,
+  DirectAdmin đã ngừng bán bản quyền lifetime và ngừng hỗ trợ đổi địa chỉ IP cho loại
+  bản quyền này.'
+dual_vote:
+  status: PARTIAL
+  score: 0.6814
+  confidence: MEDIUM
+  flag: needs_review
+value_changed_from: Kể từ ngày 01/07/2020, DirectAdmin đã ngừng bán bản quyền lifetime.
+value_changed_at: '2026-04-14T17:10:42.520479+07:00'

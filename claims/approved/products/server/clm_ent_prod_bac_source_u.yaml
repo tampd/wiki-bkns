@@ -7,12 +7,14 @@ value: https://www.bkns.vn/server/backup-du-lieu.html
 unit: null
 qualifiers: null
 source_ids:
-- SRC-BACKUP_DU_LIEU_WEB_2026_04_05
+  - SRC-BACKUP_DU_LIEU_WEB_2026_04_05
 observed_at: '2026-04-05T21:42:29.956524+07:00'
 valid_from: '2026-04-05'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
 compiler_note: 'Trích từ metadata trong nội dung: ''Nguồn: https://www.bkns.vn/server/backup-du-lieu.html'''
-approved_at: '2026-04-07T13:00:09.884471+07:00'
+approved_at: '2026-04-08T13:00:08.984226+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.297Z'

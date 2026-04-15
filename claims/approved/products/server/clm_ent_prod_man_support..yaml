@@ -7,15 +7,16 @@ value: 15
 unit: minute
 qualifiers: null
 source_ids:
-- SRC-DICH_VU_QUAN_TRI_MAY_CHU_TRON_GOI_TAI_BKNS_2026_04_06
+  - SRC-DICH_VU_QUAN_TRI_MAY_CHU_TRON_GOI_TAI_BKNS_2026_04_06
 observed_at: '2026-04-07T00:10:11.644676+07:00'
 valid_from: '2026-04-07'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ bảng giá, hàng ''Thời gian phản hồi'', cột ''Nâng cao'':
-  15 phút'
+compiler_note: 'Trích từ bảng giá, hàng ''Thời gian phản hồi'', cột ''Nâng cao'': 15 phút'
 value_changed_from: 30
 value_changed_at: '2026-04-07T00:10:11.644738+07:00'
-approved_at: '2026-04-07T13:00:09.982922+07:00'
+approved_at: '2026-04-08T13:00:09.116435+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.313Z'

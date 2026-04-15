@@ -1,0 +1,21 @@
+claim_id: CLM-0627F96F59A2
+entity_id: ENT-PROD-SSL-POSITIVE-WILDCARD-DV
+entity_type: product
+entity_name: PositiveSSL Wildcard (DV)
+attribute: source_url
+value: https://ssl.bkns.vn/ssl-bao-mat/positivessl-wildcard-dv
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-POSITIVESSL_WILDCARD_DV_CHUNG_CHI_SSL_GIA_RE_2026_04_05
+observed_at: '2026-04-14T16:38:10.363703+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ mục Thông tin nguồn: • URL: https://ssl.bkns.vn/ssl-bao-mat/positivessl-wildcard-dv'
+dual_vote:
+  status: DISAGREE
+  score: 0.4561
+  confidence: LOW
+  flag: human_review_required

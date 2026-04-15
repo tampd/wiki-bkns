@@ -1,0 +1,21 @@
+claim_id: CLM-SSL-GEOTRUST_TRUE_BUSINESSID_EV_MULTI_DOMAIN-VALIDATI
+entity_id: product.ssl.geotrust_true_businessid_ev_multi_domain
+entity_type: product
+entity_name: GeoTrust True BusinessID with EV Multi-Domain
+attribute: validation_type
+value: Tên miền + Doanh nghiệp (EV)
+unit: ''
+qualifiers: null
+source_ids:
+- SRC-GEOTRUST_TRUE_BUSINESSID_WITH_EV_MULTI_DOMAIN_2026_04_06
+observed_at: '2026-04-07T00:34:23.326284+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ bảng ''Thông số kỹ thuật / Giới hạn'': | Xác thực | Tên miền
+  + Doanh nghiệp (EV) |'
+value_changed_from: Extended Validation (EV)
+value_changed_at: '2026-04-07T00:34:23.326301+07:00'
+approved_at: '2026-04-08T13:00:13.381187+07:00'
+approved_by: admin-batch

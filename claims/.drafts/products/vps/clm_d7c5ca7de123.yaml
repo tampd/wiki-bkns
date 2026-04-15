@@ -1,0 +1,22 @@
+claim_id: CLM-D7C5CA7DE123
+entity_id: ENT-PROD-VPS
+entity_type: product
+entity_name: VPS Siêu Rẻ
+attribute: has_control_panel
+value: true
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_VPS_SIEU_TIET_KIEM_VPS_SIEU_RE_TAI_BKNS_2026_04_05
+observed_at: '2026-04-14T16:13:24.783871+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ mục Tính năng / Thành phần: ''• Bảng điều khiển VPS: Người
+  dùng được cung cấp bảng điều khiển để quản lý VPS của mình.'''
+dual_vote:
+  status: DISAGREE
+  score: 0.599
+  confidence: LOW
+  flag: human_review_required

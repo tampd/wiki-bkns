@@ -1,0 +1,12 @@
+{
+  "ts": "2026-04-14T11:30:21.340464+07:00",
+  "skill": "test-20claims",
+  "status": "PARTIAL",
+  "flag": "needs_review",
+  "score": 0.8088,
+  "model_a": "gemini-2.5-pro",
+  "model_b": "gpt-5.4",
+  "text_a": "```json\n{\n  \"attribute\": \"description\",\n  \"value\": \"Đây là dịch vụ lưu trữ web được thiết kế và tối ưu hóa đặc biệt cho các website sử dụng mã nguồn WordPress.\",\n  \"confidence\": 1.0,\n  \"agrees\": true,\n  \"reason\": \"The provided claim is the correct and standard definition for BKNS's 'Hosting WordPress' service. This service is specifically engineered and optimized for websites built on the WordPress platform, distinguishing it from general web hosting.\"\n}\n```",
+  "text_b": "{\"attribute\":\"description\",\"value\":\"Đây là dịch vụ lưu trữ web được thiết kế và tối ưu hóa đặc biệt cho các website sử dụng mã nguồn WordPress.\",\"confidence\":0.98,\"agrees\":true,\"reason\":\"Mô tả này phù hợp trực tiếp với sản phẩm Hosting WordPress của BKNS: dịch vụ hosting được tối ưu riêng cho website chạy WordPress.\"}",
+  "prompt_preview": "Verify the following claim about BKNS products and return JSON:\nEntity: Hosting WordPress\nAttribute: description\nClaimed value: Đây là dịch vụ lưu trữ web được thiết kế và tối ưu hóa đặc biệt cho các website sử dụng mã nguồn WordPress.\n\nReturn JSON: {\"attribute\": \"...\", \"value\": \"...\", \"confidence\": 0.0-1.0, \"agrees\": true/false, \"reason\": \"brief explanation\"}"
+}

@@ -1,0 +1,21 @@
+claim_id: CLM-CF3555E7A796
+entity_id: product.ssl.comodo_instantssl_ov
+entity_type: product_plan
+entity_name: InstantSSL (OV)
+attribute: source_url
+value: https://ssl.bkns.vn/ssl-bao-mat/instantssl
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-CHUNG_CHI_SSL_INSTANTSSL_OV_2026_04_05
+observed_at: '2026-04-14T16:25:29.374706+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ: • URL: https://ssl.bkns.vn/ssl-bao-mat/instantssl'
+dual_vote:
+  status: DISAGREE
+  score: 0.2098
+  confidence: LOW
+  flag: human_review_required

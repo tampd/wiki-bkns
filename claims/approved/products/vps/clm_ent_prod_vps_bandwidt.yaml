@@ -7,16 +7,17 @@ value: Unlimited
 unit: null
 qualifiers: {}
 source_ids:
-- SRC-DICH_VU_VPS_GIA_RE_MAY_CHU_AO_CAU_HINH_ON_INH_2026_04_04
-- SRC-STORAGE_VPS_MAY_CHU_AO_LUU_TRU_DUNG_LUONG_CAO_2026_04_06
+  - SRC-DICH_VU_VPS_GIA_RE_MAY_CHU_AO_CAU_HINH_ON_INH_2026_04_04
+  - SRC-STORAGE_VPS_MAY_CHU_AO_LUU_TRU_DUNG_LUONG_CAO_2026_04_06
 observed_at: '2026-04-07T01:03:06.810061+07:00'
 valid_from: '2026-04-04'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ mục ''Tính năng / Thành phần'': • Băng thông không giới hạn:
-  Không có giới hạn về lưu lượng truyền tải dữ liệu.'
+compiler_note: 'Trích từ mục ''Tính năng / Thành phần'': • Băng thông không giới hạn: Không có giới hạn về lưu lượng truyền tải dữ liệu.'
 value_changed_from: unlimited
 value_changed_at: '2026-04-07T01:03:06.810079+07:00'
-approved_at: '2026-04-07T13:00:14.302999+07:00'
+approved_at: '2026-04-08T13:00:13.865600+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.677Z'

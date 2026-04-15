@@ -1,0 +1,21 @@
+claim_id: CLM-284061AFD792
+entity_id: product.hosting.seo.bkseo01
+entity_type: product_plan
+entity_name: BKSEO-01
+attribute: bandwidth
+value: unlimited
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_HOSTING_SEO_TOI_UU_WEBSITE_CHO_CONG_CU_TIM_KIEM_2026_04_05
+observed_at: '2026-04-14T12:09:18.729360+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ bảng giá, cột BKSEO-01, dòng Bandwidth: ''Unlimited'''
+dual_vote:
+  status: DISAGREE
+  score: 0.5032
+  confidence: LOW
+  flag: human_review_required

@@ -1,0 +1,22 @@
+claim_id: CLM-1D82DE9EAE5E
+entity_id: product.software.cloudlinux_os
+entity_type: product
+entity_name: Bản Quyền CloudLinux OS
+attribute: platform
+value: CentOS/RHEL
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-BAN_QUYEN_CLOUDLINUX_OS_TANG_ON_INH_VA_BAO_MAT_CHO_SHARED_2026_04_05
+observed_at: '2026-04-14T11:59:30.178615+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Thông số kỹ thuật / Giới hạn: ''Nền tảng: Dựa trên hệ điều
+  hành CentOS/RHEL.'''
+dual_vote:
+  status: DISAGREE
+  score: 0.0371
+  confidence: LOW
+  flag: human_review_required

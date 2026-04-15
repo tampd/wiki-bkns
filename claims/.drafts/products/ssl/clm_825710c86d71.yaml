@@ -1,0 +1,21 @@
+claim_id: CLM-825710C86D71
+entity_id: ENT-PROD-SSL-011
+entity_type: ENT-PROD-SSL
+entity_name: GeoTrust True BusinessID with EV Multi-Domain
+attribute: max_domains
+value: 250
+unit: tên miền
+qualifiers: {}
+source_ids:
+- SRC-GEOTRUST_TRUE_BUSINESSID_WITH_EV_MULTI_DOMAIN_2026_04_05
+observed_at: '2026-04-14T16:53:51.052460+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ mục ''Tóm tắt nhanh'': ''...có thể mở rộng tới 250 tên miền.'''
+dual_vote:
+  status: DISAGREE
+  score: 0.2759
+  confidence: LOW
+  flag: human_review_required

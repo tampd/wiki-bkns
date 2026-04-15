@@ -1,0 +1,22 @@
+claim_id: CLM-9E26C9122E3E
+entity_id: product.ssl.rapidssl_wildcard
+entity_type: product_plan
+entity_name: RapidSSL Wildcard Certificate
+attribute: money_back_guarantee
+value: 30
+unit: days
+qualifiers: {}
+source_ids:
+- SRC-RAPIDSSL_WILDCARD_CERTIFICATE_THONG_TIN_VA_BANG_GIA_TAI_BK_2026_04_13
+observed_at: '2026-04-14T16:40:52.123612+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Chính sách / Điều khoản / Lưu ý: • Hoàn tiền: Cam kết
+  hoàn tiền trong 30 ngày (30 Days Money Back).'
+dual_vote:
+  status: PARTIAL
+  score: 0.6575
+  confidence: MEDIUM
+  flag: needs_review

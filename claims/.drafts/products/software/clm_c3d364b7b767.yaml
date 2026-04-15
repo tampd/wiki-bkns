@@ -1,0 +1,21 @@
+claim_id: CLM-C3D364B7B767
+entity_id: product.software.plesk_obsidian
+entity_type: product
+entity_name: Plesk Obsidian
+attribute: category
+value: Phần mềm
+unit: null
+qualifiers: null
+source_ids:
+- SRC-PHAN_MEM_QUAN_TRI_HOSTING_PLESK_OBSIDIAN_2026_04_13
+observed_at: '2026-04-14T12:27:16.789461+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ: • Danh mục: Phần mềm'
+dual_vote:
+  status: DISAGREE
+  score: 0.1463
+  confidence: LOW
+  flag: human_review_required

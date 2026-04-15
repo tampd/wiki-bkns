@@ -1,0 +1,19 @@
+claim_id: CLM-ENT-PROD-HOS-BACKUP_F
+entity_id: ENT-PROD-HOSTING
+entity_type: product_offering
+entity_name: Hosting Giá Rẻ
+attribute: backup_frequency
+value: daily
+unit: ''
+qualifiers: {}
+source_ids:
+- SRC-HOSTING_GIA_RE_BANG_GIA_VA_THONG_SO_KY_THUAT_TAI_BKNS_2026_04_06
+observed_at: '2026-04-07T00:36:08.637578+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ Tính năng / Thành phần: ''• Backup hàng ngày: Dữ liệu được
+  tự động sao lưu mỗi ngày, đảm bảo an toàn.'''
+approved_at: '2026-04-08T13:00:10.697884+07:00'
+approved_by: admin-batch

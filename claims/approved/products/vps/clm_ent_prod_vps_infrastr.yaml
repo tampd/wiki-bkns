@@ -8,17 +8,18 @@ unit: null
 qualifiers:
   location: Việt Nam
 source_ids:
-- SRC-DICH_VU_VPS_GIA_RE_MAY_CHU_AO_CAU_HINH_ON_INH_2026_04_04
-- SRC-DICH_VU_VPS_GIA_RE_MAY_CHU_AO_CAU_HINH_ON_INH_2026_04_06
-- SRC-TRAINING_DICH_VU_VPS_2026_04_06
+  - SRC-DICH_VU_VPS_GIA_RE_MAY_CHU_AO_CAU_HINH_ON_INH_2026_04_04
+  - SRC-DICH_VU_VPS_GIA_RE_MAY_CHU_AO_CAU_HINH_ON_INH_2026_04_06
+  - SRC-TRAINING_DICH_VU_VPS_2026_04_06
 observed_at: '2026-04-07T01:05:15.874646+07:00'
 valid_from: '2026-04-04'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ mục 4.1: ''...vận hành tại Data Center chuẩn Tier III tại
-  Việt Nam.'''
+compiler_note: 'Trích từ mục 4.1: ''...vận hành tại Data Center chuẩn Tier III tại Việt Nam.'''
 value_changed_from: Hệ thống được đặt tại các Data Center đạt chuẩn quốc tế.
 value_changed_at: '2026-04-07T01:05:15.874664+07:00'
-approved_at: '2026-04-07T13:00:14.392530+07:00'
+approved_at: '2026-04-08T13:00:13.983095+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.687Z'

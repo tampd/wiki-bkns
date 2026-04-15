@@ -1,0 +1,21 @@
+claim_id: CLM-7F19C87007A3
+entity_id: ENT-PROD-VPS-CLOUD-AMD
+entity_type: product
+entity_name: Cloud VPS AMD
+attribute: backup_policy
+value: 1 lần / tuần
+unit: ''
+qualifiers: null
+source_ids:
+- SRC-TRAINING_DICH_VU_VPS_2026_04_05
+observed_at: '2026-04-14T16:17:36.150752+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: Trích từ mục '4.2 Cloud VPS AMD', dòng 'Backup & Snapshot'.
+dual_vote:
+  status: DISAGREE
+  score: 0.5333
+  confidence: LOW
+  flag: human_review_required

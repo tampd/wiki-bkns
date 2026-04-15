@@ -1,0 +1,24 @@
+claim_id: CLM-BC486B825103
+entity_id: product.hosting.bkh03
+entity_type: product_plan
+entity_name: BKH03
+attribute: bandwidth
+value: unlimited
+unit: null
+qualifiers: null
+source_ids:
+- SRC-HOSTING_GIA_RE_BANG_GIA_VA_THONG_SO_KY_THUAT_TAI_BKNS_2026_04_05
+- SRC-HOSTING_GIA_RE_BANG_GIA_VA_THONG_SO_KY_THUAT_TAI_BKNS_2026_04_13
+observed_at: '2026-04-14T12:13:27.302643+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng giá, dòng ''Bandwidth'', cột ''BKH03'': Unlimited'
+dual_vote:
+  status: DISAGREE
+  score: 0.519
+  confidence: LOW
+  flag: human_review_required
+value_changed_from: Unlimited
+value_changed_at: '2026-04-14T12:13:27.302667+07:00'

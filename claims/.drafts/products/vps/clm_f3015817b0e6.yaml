@@ -1,0 +1,22 @@
+claim_id: CLM-F3015817B0E6
+entity_id: product.vps.cloud_vps_amd
+entity_type: product
+entity_name: Cloud VPS AMD
+attribute: product.category
+value: VPS
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-CLOUD_VPS_AMD_GIAI_PHAP_VPS_HIEU_SUAT_CAO_VOI_CPU_AMD_EPYCTM_2026_04_05
+observed_at: '2026-04-14T16:06:46.861282+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tóm tắt nhanh: • Dịch vụ này là gì: Cloud VPS AMD là
+  một giải pháp máy chủ ảo (VPS) thế hệ mới...'
+dual_vote:
+  status: DISAGREE
+  score: 0.4092
+  confidence: LOW
+  flag: human_review_required

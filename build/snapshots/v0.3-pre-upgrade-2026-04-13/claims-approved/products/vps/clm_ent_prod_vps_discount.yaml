@@ -1,0 +1,19 @@
+claim_id: CLM-ENT-PROD-VPS-DISCOUNT
+entity_id: ENT-PROD-VPS
+entity_type: product_policy
+entity_name: Cloud VPS VM Discount
+attribute: discount_percentage
+value: 45
+unit: '%'
+qualifiers:
+  billing_cycle: 60 months
+source_ids:
+- SRC-CLOUD_VPS_VM_WEB_2026_04_05
+observed_at: '2026-04-05T21:49:02.622959+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ bảng chính sách giảm giá: ''| 60 tháng | Giảm 45% |'''
+approved_at: '2026-04-08T13:00:13.931234+07:00'
+approved_by: admin-batch

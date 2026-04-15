@@ -1,0 +1,16 @@
+claim_id: CLM-BBD0E8F89F92
+entity_id: ENT-PROD-EMAIL.hosting.email2
+entity_type: product_plan
+entity_name: EMAIL 2
+attribute: num_email_forwarders
+value: 10
+unit: emails
+qualifiers: {}
+source_ids:
+- SRC-BANG_GIA_EMAIL_2026_04_13
+observed_at: '2026-04-13T21:41:46.300668+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ dòng: Email trong Forwarders: 10'

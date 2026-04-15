@@ -1,0 +1,26 @@
+claim_id: CLM-40792AE56F17
+entity_id: product.software.litespeed_web_server
+entity_type: product
+entity_name: LiteSpeed Web Server (LSWS)
+attribute: performance_comparison
+value: Nhanh
+unit: null
+qualifiers:
+  context: xử lý tiến trình PHP
+  compared_to: Apache
+source_ids:
+- SRC-LITESPEED_WEB_SERVER_TINH_NANG_PHIEN_BAN_VA_SO_SANH_2026_04_13
+observed_at: '2026-04-14T12:21:39.485180+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ So sánh các gói: | Khả năng xử lý tiến trình PHP | Nhanh
+  | Chậm |'
+dual_vote:
+  status: DISAGREE
+  score: 0.0
+  confidence: LOW
+  flag: human_review_required
+value_changed_from: Nhanh hơn 6 lần so với Apache
+value_changed_at: '2026-04-14T12:21:39.485221+07:00'

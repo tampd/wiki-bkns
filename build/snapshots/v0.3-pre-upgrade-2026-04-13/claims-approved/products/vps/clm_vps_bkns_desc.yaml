@@ -1,0 +1,19 @@
+claim_id: CLM-VPS-BKNS-DESC
+entity_id: product.vps.bkns.cloud_vps_amd
+entity_type: product_line
+entity_name: CLOUD VPS AMD (HIỆU NĂNG CAO)
+attribute: description
+value: Dòng VPS cao cấp nhất (Flagship) của BKNS
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-BKNS_CAMNAG_HOSTING_DOT3_2026_04_04
+- SRC-BKNS_CAMNAG_HOSTING_DOT3_2026_04_06
+observed_at: '2026-04-06T23:27:51.003267+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ: Dòng VPS cao cấp nhất (Flagship) của BKNS'
+approved_at: '2026-04-08T13:00:14.828934+07:00'
+approved_by: admin-batch

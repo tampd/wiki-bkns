@@ -7,17 +7,18 @@ value: 1 tên miền chính
 unit: null
 qualifiers: null
 source_ids:
-- SRC-POSITIVESSL_DV_CHUNG_CHI_SSL_GIA_RE_2026_04_04
-- SRC-POSITIVESSL_DV_CHUNG_CHI_SSL_GIA_RE_2026_04_06
-- SRC-POSITIVESSL_EV_CHUNG_CHI_SSL_XAC_THUC_MO_RONG_EV_2026_04_06
+  - SRC-POSITIVESSL_DV_CHUNG_CHI_SSL_GIA_RE_2026_04_04
+  - SRC-POSITIVESSL_DV_CHUNG_CHI_SSL_GIA_RE_2026_04_06
+  - SRC-POSITIVESSL_EV_CHUNG_CHI_SSL_XAC_THUC_MO_RONG_EV_2026_04_06
 observed_at: '2026-04-07T00:52:37.861588+07:00'
 valid_from: '2026-04-04'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ mục Tính năng / Thành phần: • Bảo vệ tên miền: Hỗ trợ 1 tên
-  miền chính.'
+compiler_note: 'Trích từ mục Tính năng / Thành phần: • Bảo vệ tên miền: Hỗ trợ 1 tên miền chính.'
 value_changed_from: 1
 value_changed_at: '2026-04-07T00:52:37.861618+07:00'
-approved_at: '2026-04-07T13:00:12.957185+07:00'
+approved_at: '2026-04-08T13:00:12.351612+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.467Z'

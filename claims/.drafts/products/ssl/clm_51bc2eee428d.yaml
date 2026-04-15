@@ -1,0 +1,26 @@
+claim_id: CLM-51BC2EEE428D
+entity_id: product.ssl.rapidssl_wildcard
+entity_type: product_plan
+entity_name: RapidSSL Wildcard Certificate
+attribute: validation_method
+value: email hoặc DNS
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-RAPIDSSL_WILDCARD_CERTIFICATE_THONG_TIN_VA_BANG_GIA_TAI_BK_2026_04_05
+- SRC-RAPIDSSL_WILDCARD_CERTIFICATE_THONG_TIN_VA_BANG_GIA_TAI_BK_2026_04_13
+observed_at: '2026-04-14T16:40:52.041374+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tính năng / Thành phần: • Xác thực Tên miền (DV): Quá
+  trình xác thực đơn giản và nhanh chóng qua email hoặc DNS, không yêu cầu giấy tờ
+  doanh nghiệp.'
+dual_vote:
+  status: DISAGREE
+  score: 0.5213
+  confidence: LOW
+  flag: human_review_required
+value_changed_from: DNS
+value_changed_at: '2026-04-14T16:40:52.041416+07:00'

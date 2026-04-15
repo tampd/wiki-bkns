@@ -1,0 +1,17 @@
+claim_id: CLM-7D7D7EDEB984
+entity_id: product.vps.vps_mm05
+entity_type: product_plan
+entity_name: VPS-MM05
+attribute: monthly_price
+value: 310000
+unit: VND
+qualifiers:
+  billing_cycle: month
+source_ids:
+- SRC-DICH_VU_VPS_GIA_RE_MAY_CHU_AO_CAU_HINH_ON_INH_2026_04_13
+observed_at: '2026-04-13T22:31:41.575503+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ bảng giá: ''VPS-MM05 | Giá/Tháng | 310.000đ'''

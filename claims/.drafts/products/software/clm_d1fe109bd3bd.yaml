@@ -1,0 +1,18 @@
+claim_id: CLM-D1FE109BD3BD
+entity_id: ENT-PROD-SOFTWARE-VBULLETIN-MOBILE-UPGRADE
+entity_type: product_plan
+entity_name: Upgrade (dưới mục Mobile Suite)
+attribute: description
+value: Bản upgrade cho phép bạn nâng cấp phiên bản vbullentin 4 lên vbulletin 5 connect.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-BAN_QUYEN_VBULLETIN_HE_QUAN_TRI_FORUM_MANG_XA_HOI_2026_04_13
+observed_at: '2026-04-13T21:35:38.808113+07:00'
+valid_from: '2026-04-13'
+confidence: low
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ dòng ''Upgrade'' thứ hai trong bảng giá, có vị trí không
+  rõ ràng: | Upgrade | Giá liên hệ | Bản upgrade cho phép bạn nâng cấp phiên bản vbullentin
+  4 lên vbulletin 5 connect. |'

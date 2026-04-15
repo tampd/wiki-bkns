@@ -1,0 +1,25 @@
+claim_id: CLM-A2BBDBE1B0AC
+entity_id: product.hosting.free_hosting
+entity_type: product_plan
+entity_name: Hosting Miễn phí
+attribute: included_feature
+value: cPanel
+unit: null
+qualifiers: null
+source_ids:
+- SRC-HOSTING_MIEN_PHI_GIAI_PHAP_KHOI_TAO_WEBSITE_0_2026_04_05
+observed_at: '2026-04-14T12:14:07.273963+07:00'
+valid_from: '2026-04-14'
+confidence: medium
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tính năng / Thành phần: Nội dung trang có đề cập đến
+  các tính năng như SSL và cPanel, nhưng không có mô tả chi tiết về chúng trong dữ
+  liệu được cung cấp.'
+dual_vote:
+  status: DISAGREE
+  score: 0.4325
+  confidence: LOW
+  flag: human_review_required
+value_changed_from: SSL
+value_changed_at: '2026-04-14T12:14:07.274004+07:00'

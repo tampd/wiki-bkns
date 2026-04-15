@@ -1,0 +1,17 @@
+claim_id: CLM-7F4359F745D1
+entity_id: bkns:prod:domain:domain_lock
+entity_type: product
+entity_name: Khóa tên miền (Domain Lock)
+attribute: unlock_process
+value: Chủ thể tự mở khóa tại nhà đăng ký
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-BAO_VE_TEN_MIEN_CAP_CAO_NHAT_GIAI_PHAP_AN_TOAN_TUYET_OI_2026_04_13
+observed_at: '2026-04-13T21:50:55.053379+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng So sánh các gói: ''| Quy trình mở khóa | Chủ thể tự
+  mở khóa tại nhà đăng ký | ... |'''

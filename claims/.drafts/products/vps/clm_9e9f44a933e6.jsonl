@@ -1,0 +1,2 @@
+{"ts": "2026-04-13T21:52:17.046891+07:00", "action": "extracted", "claim_id": "CLM-9E9F44A933E6", "source": "SRC-BKNS_CAMNAG_HOSTING_DOT3_2026_04_13", "raw_file": "raw/manual/bkns-camnag-hosting-dot3-2026-04-13.md", "model": "gemini-2.5-pro", "cost_usd": 0.021921}
+{"ts": "2026-04-13T22:32:55.324665+07:00", "action": "extracted", "claim_id": "CLM-9E9F44A933E6", "source": "SRC-DICH_VU_VPS_SIEU_TIET_KIEM_VPS_SIEU_RE_TAI_BKNS_2026_04_13", "raw_file": "raw/manual/dich-vu-vps-sieu-tiet-kiem-vps-sieu-re-tai-bkns-2026-04-13.md", "model": "gemini-2.5-pro", "cost_usd": 0.018396}

@@ -7,13 +7,14 @@ value: Kerio, Zimbra
 unit: null
 qualifiers: null
 source_ids:
-- SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_06
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_06
 observed_at: '2026-04-07T00:01:11.801118+07:00'
 valid_from: '2026-04-07'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ mục ''Tóm tắt nhanh'': ...và cung cấp hai lựa chọn nền tảng
-  là Kerio và Zimbra.'
-approved_at: '2026-04-07T13:00:10.968310+07:00'
+compiler_note: 'Trích từ mục ''Tóm tắt nhanh'': ...và cung cấp hai lựa chọn nền tảng là Kerio và Zimbra.'
+approved_at: '2026-04-08T13:00:09.962525+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:58.884Z'

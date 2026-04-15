@@ -1,0 +1,16 @@
+claim_id: CLM-0722115C88C0
+entity_id: product.email.hosting.email1
+entity_type: product_plan
+entity_name: EMAIL 1
+attribute: email_account_limit
+value: 5
+unit: email
+qualifiers: {}
+source_ids:
+- SRC-BANG_GIA_DICH_VU_BKNS_TEXT_2026_04_13
+observed_at: '2026-04-13T21:40:29.163616+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ: ''Gói EMAIL 1: * Số lượng email: 5 email'''

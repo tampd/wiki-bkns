@@ -1,0 +1,21 @@
+claim_id: CLM-E9D1DD037DC6
+entity_id: product.hosting.windows
+entity_type: product
+entity_name: Hosting Windows
+attribute: storage_type
+value: SSD Enterprise
+unit: ''
+qualifiers: {}
+source_ids:
+- SRC-DICH_VU_HOSTING_WINDOWS_TAI_BKNS_2026_04_05
+observed_at: '2026-04-14T12:10:47.030789+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tính năng / Thành phần: ''Ổ cứng: SSD Enterprise.'''
+dual_vote:
+  status: PARTIAL
+  score: 0.6404
+  confidence: MEDIUM
+  flag: needs_review

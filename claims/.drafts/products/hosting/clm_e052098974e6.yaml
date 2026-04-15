@@ -1,0 +1,17 @@
+claim_id: CLM-E052098974E6
+entity_id: product.hosting.platium.bkcp01
+entity_type: product_plan
+entity_name: BKCP01
+attribute: domain_limit
+value: 1
+unit: Domains
+qualifiers: {}
+source_ids:
+- SRC-BANG_GIA_HOSTING_2026_04_13
+observed_at: '2026-04-13T21:43:02.375773+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: medium
+compiler_note: 'Trích từ bảng ''Platium web hosting'', cột ''BKCP01'', dòng ''Domain'':
+  ''1''. (Nguồn: manual://Bang_Gia_Hosting.pdf, 2026-04-13T21:29:54.660388+07:00)'

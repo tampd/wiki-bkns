@@ -1,0 +1,19 @@
+claim_id: CLM-6DB274D224E1
+entity_id: ENT-PROD-DOMAIN
+entity_type: product
+entity_name: Dịch vụ Tên miền
+attribute: supported_domain_type
+value: Tên miền quốc tế
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-DICH_VU_ANG_KY_TEN_MIEN_VIET_NAM_VA_QUOC_TE_TAI_BKNS_2026_04_13
+observed_at: '2026-04-13T22:13:15.126677+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ phần ''Mô tả dịch vụ'': Dịch vụ hỗ trợ cả tên miền quốc gia
+  Việt Nam (quản lý bởi VNNIC) và tên miền quốc tế (quản lý bởi ICANN).'
+value_changed_from: Tên miền quốc gia Việt Nam
+value_changed_at: '2026-04-13T22:13:15.126702+07:00'

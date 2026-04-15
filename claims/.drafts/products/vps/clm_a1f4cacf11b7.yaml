@@ -1,0 +1,24 @@
+claim_id: CLM-A1F4CACF11B7
+entity_id: product.vps.bk-misa
+entity_type: product
+entity_name: BK MISA
+attribute: target_audience
+value: Các doanh nghiệp đang sử dụng MISA SME, đặc biệt là các doanh nghiệp có nhiều
+  chi nhánh cần làm việc chung trên cùng một cơ sở dữ liệu kế toán.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-CLOUD_VPS_BK_MISA_GIAI_PHAP_LUU_TRU_KE_TOAN_SO_2026_04_05
+observed_at: '2026-04-14T16:08:15.999915+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: Phù hợp với: Các doanh nghiệp đang sử dụng
+  MISA SME, đặc biệt là các doanh nghiệp có nhiều chi nhánh cần làm việc chung trên
+  cùng một cơ sở dữ liệu kế toán.'
+dual_vote:
+  status: PARTIAL
+  score: 0.7201
+  confidence: MEDIUM
+  flag: needs_review

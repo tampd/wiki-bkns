@@ -1,0 +1,16 @@
+claim_id: CLM-516D70ACA0AC
+entity_id: product.email.cloud_email_server
+entity_type: product
+entity_name: Cloud Email Server
+attribute: product_url
+value: https://www.bkns.vn/email/cloud-email-server.html
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-DICH_VU_CLOUD_EMAIL_SERVER_AN_TOAN_HIEU_SUAT_CAO_2026_04_13
+observed_at: '2026-04-13T22:16:15.042008+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Thông tin nguồn: ''• URL: https://www.bkns.vn/email/cloud-email-server.html'''

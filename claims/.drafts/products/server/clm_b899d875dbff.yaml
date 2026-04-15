@@ -1,0 +1,22 @@
+claim_id: CLM-B899D875DBFF
+entity_id: product.dedicated_server
+entity_type: product
+entity_name: Cho thuê máy chủ vật lý (Dedicated Server)
+attribute: registration_process
+value: Để đăng ký dịch vụ, khách hàng nhấn vào nút "Đăng ký" trên mỗi gói sản phẩm.
+  Nút này sẽ chuyển hướng đến Zalo của BKNS để được tư vấn và hỗ trợ.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DANH_SACH_GOI_SAN_PHAM_MAY_CHU_BKNS_2026_04_05
+observed_at: '2026-04-14T17:13:15.596045+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: Trích từ phần 'Quy trình đăng ký / Triển khai / Kích hoạt'.
+dual_vote:
+  status: DISAGREE
+  score: 0.5083
+  confidence: LOW
+  flag: human_review_required

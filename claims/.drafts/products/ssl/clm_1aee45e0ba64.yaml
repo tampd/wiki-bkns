@@ -1,0 +1,23 @@
+claim_id: CLM-1AEE45E0BA64
+entity_id: ssl.geotrust.true_business_id
+entity_type: product_plan
+entity_name: GeoTrust True BusinessID
+attribute: price
+value: 2172000
+unit: VND
+qualifiers:
+  billing_cycle: year
+source_ids:
+- SRC-GEOTRUST_TRUE_BUSINESSID_CHUNG_CHI_SSL_XAC_THUC_DOANH_NGHI_2026_04_13
+observed_at: '2026-04-14T16:31:44.063633+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ mục Gói dịch vụ và bảng giá: ''| Giá tại BKNS | 2.172.000đ
+  |'''
+dual_vote:
+  status: DISAGREE
+  score: 0.2607
+  confidence: LOW
+  flag: human_review_required

@@ -1,0 +1,23 @@
+claim_id: CLM-E1F7A8EAB296
+entity_id: ENT-PROD-SSL-COMODO-WILDCARD-DV
+entity_type: product_plan
+entity_name: Comodo SSL Wildcard Certificate (DV)
+attribute: policy
+value: Cài đặt miễn phí
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-COMODO_SSL_WILDCARD_CERTIFICATE_DV_CHUNG_CHI_SSL_2026_04_05
+observed_at: '2026-04-14T16:27:18.006658+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Chính sách / Điều khoản / Lưu ý: • Cài đặt miễn phí'
+dual_vote:
+  status: DISAGREE
+  score: 0.3687
+  confidence: LOW
+  flag: human_review_required
+value_changed_from: Giá tốt nhất thị trường
+value_changed_at: '2026-04-14T16:27:18.006709+07:00'

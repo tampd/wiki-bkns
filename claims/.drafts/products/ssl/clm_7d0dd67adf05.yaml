@@ -1,0 +1,22 @@
+claim_id: CLM-7D0DD67ADF05
+entity_id: ENT-PROD-SSL.geotrust_true_businessid
+entity_type: product_plan
+entity_name: GeoTrust True BusinessID
+attribute: list_price
+value: 6968000
+unit: VND
+qualifiers:
+  billing_cycle: year
+source_ids:
+- SRC-GEOTRUST_TRUE_BUSINESSID_CHUNG_CHI_SSL_XAC_THUC_DOANH_NGHI_2026_04_05
+observed_at: '2026-04-14T16:31:00.161534+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ Gói dịch vụ và bảng giá: ''Giá nhà cung cấp | <del>6.968.000đ</del>'''
+dual_vote:
+  status: DISAGREE
+  score: 0.3515
+  confidence: LOW
+  flag: human_review_required

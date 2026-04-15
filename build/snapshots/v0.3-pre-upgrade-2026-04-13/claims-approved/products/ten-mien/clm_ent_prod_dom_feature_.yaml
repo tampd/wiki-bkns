@@ -1,0 +1,22 @@
+claim_id: CLM-ENT-PROD-DOM-FEATURE_
+entity_id: ENT-PROD-DOMAIN
+entity_type: product
+entity_name: Dịch vụ Tên miền BKNS
+attribute: feature_description
+value: Cho phép thay đổi địa chỉ IPv6 của tên miền thông qua Control Panel.
+unit: ''
+qualifiers:
+  feature_name: DNS có hỗ trợ IPv6
+source_ids:
+- SRC-DICH_VU_ANG_KY_TEN_MIEN_VIET_NAM_VA_QUOC_TE_TAI_BKNS_2026_04_06
+observed_at: '2026-04-06T23:54:35.223070+07:00'
+valid_from: '2026-04-06'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ bảng Tính năng / Thành phần: | DNS có hỗ trợ IPv6 | ... |
+  Cho phép thay đổi địa chỉ IPv6 của tên miền thông qua Control Panel. |'
+value_changed_from: Toàn bộ thông tin Whois của chủ sở hữu tên miền sẽ được giấu kín.
+value_changed_at: '2026-04-06T23:54:35.223111+07:00'
+approved_at: '2026-04-08T13:00:09.671697+07:00'
+approved_by: admin-batch

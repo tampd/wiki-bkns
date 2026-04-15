@@ -7,14 +7,14 @@ value: Các cá nhân, doanh nghiệp quản trị server
 unit: null
 qualifiers: null
 source_ids:
-- SRC-BANG_GIA_IMUNIFY360_GIAI_PHAP_BAO_MAT_SERVER_BANG_AI_2026_04_06
+  - SRC-BANG_GIA_IMUNIFY360_GIAI_PHAP_BAO_MAT_SERVER_BANG_AI_2026_04_06
 observed_at: '2026-04-06T23:18:21.974300+07:00'
 valid_from: '2026-04-06'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: none
-compiler_note: 'Trích từ mục Tóm tắt nhanh: • Phù hợp với: Các cá nhân, doanh nghiệp
-  quản trị server và muốn bảo vệ hệ thống khỏi các mối đe dọa như mã độc, tấn công
-  từ hacker.'
-approved_at: '2026-04-07T13:00:16.131227+07:00'
+compiler_note: 'Trích từ mục Tóm tắt nhanh: • Phù hợp với: Các cá nhân, doanh nghiệp quản trị server và muốn bảo vệ hệ thống khỏi các mối đe dọa như mã độc, tấn công từ hacker.'
+approved_at: '2026-04-08T13:00:15.958668+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.426Z'

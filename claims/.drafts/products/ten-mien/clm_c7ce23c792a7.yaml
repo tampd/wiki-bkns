@@ -1,0 +1,18 @@
+claim_id: CLM-C7CE23C792A7
+entity_id: ENT-PROD-DOMAIN
+entity_type: product
+entity_name: Tên miền .info
+attribute: original_registration_fee
+value: 890000
+unit: VND
+qualifiers:
+  tld: .info
+source_ids:
+- SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_13
+observed_at: '2026-04-13T21:38:21.229968+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ Chương trình khuyến mại: ''.info: Giá KM `170.000` (giá gốc
+  `890.000`).'''

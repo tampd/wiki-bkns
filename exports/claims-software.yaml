@@ -1,0 +1,2951 @@
+- approved_at: '2026-04-07T13:00:15.466791+07:00'
+  approved_by: admin-batch
+  attribute: billing_term
+  claim_id: CLM-DTI_-ADVANCED-BILLING_
+  compiler_note: 'Trích từ bảng giá: ''| Thời gian | ... | 1 năm | ... |'''
+  confidence: high
+  entity_id: dti_software.advanced
+  entity_name: Gói Nâng cao
+  entity_type: product_plan
+  observed_at: '2026-04-04T21:07:35.190016+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-PHAN_MEM_ANH_GIA_CHUYEN_OI_SO_DTI_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: 1 năm
+- approved_at: '2026-04-07T13:00:15.472108+07:00'
+  approved_by: admin-batch
+  attribute: price
+  claim_id: CLM-DTI_-ADVANCED-PRICE
+  compiler_note: 'Trích từ bảng giá: ''| Giá | ... | 910.000.000 VNĐ | ... |'''
+  confidence: high
+  entity_id: dti_software.advanced
+  entity_name: Gói Nâng cao
+  entity_type: product_plan
+  observed_at: '2026-04-04T21:07:35.188214+07:00'
+  qualifiers:
+    billing_cycle: 1 năm
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-PHAN_MEM_ANH_GIA_CHUYEN_OI_SO_DTI_2026_04_04
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 910000000
+- approved_at: '2026-04-07T13:00:15.475677+07:00'
+  approved_by: admin-batch
+  attribute: support_hours
+  claim_id: CLM-DTI_-ADVANCED-SUPPORT_
+  compiler_note: 'Trích từ bảng giá: ''| Hỗ trợ | ... | 24/7 | ... |'''
+  confidence: high
+  entity_id: dti_software.advanced
+  entity_name: Gói Nâng cao
+  entity_type: product_plan
+  observed_at: '2026-04-04T21:07:35.193633+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-PHAN_MEM_ANH_GIA_CHUYEN_OI_SO_DTI_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: 24/7
+- approved_at: '2026-04-07T13:00:15.479508+07:00'
+  approved_by: admin-batch
+  attribute: user_accounts_limit
+  claim_id: CLM-DTI_-ADVANCED-USER_ACC
+  compiler_note: 'Trích từ bảng giá: ''| Số lượng tài khoản | ... | Không giới hạn
+    | ... |'''
+  confidence: high
+  entity_id: dti_software.advanced
+  entity_name: Gói Nâng cao
+  entity_type: product_plan
+  observed_at: '2026-04-04T21:07:35.191889+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-PHAN_MEM_ANH_GIA_CHUYEN_OI_SO_DTI_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: unlimited
+- approved_at: '2026-04-07T13:00:15.483739+07:00'
+  approved_by: admin-batch
+  attribute: billing_term
+  claim_id: CLM-DTI_-BASIC-BILLING_
+  compiler_note: 'Trích từ bảng giá: ''| Thời gian | 1 năm | ... |'''
+  confidence: high
+  entity_id: dti_software.basic
+  entity_name: Gói Cơ bản
+  entity_type: product_plan
+  observed_at: '2026-04-04T21:07:35.182715+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-PHAN_MEM_ANH_GIA_CHUYEN_OI_SO_DTI_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: 1 năm
+- approved_at: '2026-04-07T13:00:15.487470+07:00'
+  approved_by: admin-batch
+  attribute: price
+  claim_id: CLM-DTI_-BASIC-PRICE
+  compiler_note: 'Trích từ bảng giá: ''| Giá | 650.000.000 VNĐ | ... |'''
+  confidence: high
+  entity_id: dti_software.basic
+  entity_name: Gói Cơ bản
+  entity_type: product_plan
+  observed_at: '2026-04-04T21:07:35.180629+07:00'
+  qualifiers:
+    billing_cycle: 1 năm
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-PHAN_MEM_ANH_GIA_CHUYEN_OI_SO_DTI_2026_04_04
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 650000000
+- approved_at: '2026-04-07T13:00:15.490776+07:00'
+  approved_by: admin-batch
+  attribute: support_hours
+  claim_id: CLM-DTI_-BASIC-SUPPORT_
+  compiler_note: 'Trích từ bảng giá: ''| Hỗ trợ | 24/7 | ... |'''
+  confidence: high
+  entity_id: dti_software.basic
+  entity_name: Gói Cơ bản
+  entity_type: product_plan
+  observed_at: '2026-04-04T21:07:35.186489+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-PHAN_MEM_ANH_GIA_CHUYEN_OI_SO_DTI_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: 24/7
+- approved_at: '2026-04-07T13:00:15.494153+07:00'
+  approved_by: admin-batch
+  attribute: user_accounts_limit
+  claim_id: CLM-DTI_-BASIC-USER_ACC
+  compiler_note: 'Trích từ bảng giá: ''| Số lượng tài khoản | 200 | ... |'''
+  confidence: high
+  entity_id: dti_software.basic
+  entity_name: Gói Cơ bản
+  entity_type: product_plan
+  observed_at: '2026-04-04T21:07:35.184670+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-PHAN_MEM_ANH_GIA_CHUYEN_OI_SO_DTI_2026_04_04
+  unit: tài khoản
+  valid_from: '2026-04-04'
+  value: 200
+- approved_at: '2026-04-07T13:00:15.498252+07:00'
+  approved_by: admin-batch
+  attribute: billing_term
+  claim_id: CLM-DTI_-PERMANENT-BILLING_
+  compiler_note: 'Trích từ bảng giá: ''| Thời gian | ... | Vĩnh viễn |'''
+  confidence: high
+  entity_id: dti_software.permanent
+  entity_name: Gói Vĩnh viễn
+  entity_type: product_plan
+  observed_at: '2026-04-04T21:07:35.197670+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-PHAN_MEM_ANH_GIA_CHUYEN_OI_SO_DTI_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: Vĩnh viễn
+- approved_at: '2026-04-07T13:00:15.502259+07:00'
+  approved_by: admin-batch
+  attribute: has_feature
+  claim_id: CLM-DTI_-PERMANENT-HAS_FEAT
+  compiler_note: 'Trích từ bảng giá, cột Gói Vĩnh viễn: ''- Cấu hình và phát triển
+    theo yêu cầu của Tỉnh'''
+  confidence: high
+  entity_id: dti_software.permanent
+  entity_name: Gói Vĩnh viễn
+  entity_type: product_plan
+  observed_at: '2026-04-04T21:07:35.204021+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-PHAN_MEM_ANH_GIA_CHUYEN_OI_SO_DTI_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: Cấu hình và phát triển theo yêu cầu của Tỉnh
+- approved_at: '2026-04-07T13:00:15.506207+07:00'
+  approved_by: admin-batch
+  attribute: price
+  claim_id: CLM-DTI_-PERMANENT-PRICE
+  compiler_note: 'Trích từ bảng giá: ''| Giá | ... | 1.910.000.000 VNĐ |'''
+  confidence: high
+  entity_id: dti_software.permanent
+  entity_name: Gói Vĩnh viễn
+  entity_type: product_plan
+  observed_at: '2026-04-04T21:07:35.195428+07:00'
+  qualifiers:
+    billing_cycle: one-time
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-PHAN_MEM_ANH_GIA_CHUYEN_OI_SO_DTI_2026_04_04
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 1910000000
+- approved_at: '2026-04-07T13:00:15.510414+07:00'
+  approved_by: admin-batch
+  attribute: support_hours
+  claim_id: CLM-DTI_-PERMANENT-SUPPORT_
+  compiler_note: 'Trích từ bảng giá: ''| Hỗ trợ | ... | 24/7 trong vòng 3 năm |'''
+  confidence: high
+  entity_id: dti_software.permanent
+  entity_name: Gói Vĩnh viễn
+  entity_type: product_plan
+  observed_at: '2026-04-04T21:07:35.201996+07:00'
+  qualifiers:
+    duration: 3 năm
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-PHAN_MEM_ANH_GIA_CHUYEN_OI_SO_DTI_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: 24/7
+- approved_at: '2026-04-07T13:00:15.514636+07:00'
+  approved_by: admin-batch
+  attribute: user_accounts_limit
+  claim_id: CLM-DTI_-PERMANENT-USER_ACC
+  compiler_note: 'Trích từ bảng giá: ''| Số lượng tài khoản | ... | Không giới hạn
+    |'''
+  confidence: high
+  entity_id: dti_software.permanent
+  entity_name: Gói Vĩnh viễn
+  entity_type: product_plan
+  observed_at: '2026-04-04T21:07:35.199825+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-PHAN_MEM_ANH_GIA_CHUYEN_OI_SO_DTI_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: unlimited
+- approved_at: '2026-04-07T13:00:15.519009+07:00'
+  approved_by: admin-batch
+  attribute: description
+  claim_id: CLM-DTI_SOFTWARE-DESC
+  compiler_note: 'Trích từ phần Tóm tắt nhanh: ''Dịch vụ này là gì: Là một công cụ
+    phần mềm dùng để đánh giá mức độ chuyển đổi số theo phân cấp địa phương, dựa trên
+    bộ chỉ số DTI (Digital Transformation Index) do Bộ Thông tin và Truyền thông ban
+    hành.'''
+  confidence: high
+  entity_id: dti_software
+  entity_name: Phần Mềm Đánh Giá Chuyển Đổi Số DTI
+  entity_type: product
+  observed_at: '2026-04-04T21:07:35.175242+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-PHAN_MEM_ANH_GIA_CHUYEN_OI_SO_DTI_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: Là một công cụ phần mềm dùng để đánh giá mức độ chuyển đổi số theo phân cấp
+    địa phương, dựa trên bộ chỉ số DTI (Digital Transformation Index) do Bộ Thông
+    tin và Truyền thông ban hành.
+- approved_at: '2026-04-07T13:00:15.523326+07:00'
+  approved_by: admin-batch
+  attribute: has_feature
+  claim_id: CLM-DTI_SOFTWARE-HAS_FEAT
+  compiler_note: 'Trích từ phần Tính năng / Thành phần: ''• Bản đồ số liệu trong tỉnh'''
+  confidence: high
+  entity_id: dti_software
+  entity_name: Phần Mềm Đánh Giá Chuyển Đổi Số DTI
+  entity_type: product
+  observed_at: '2026-04-04T21:07:35.257517+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-PHAN_MEM_ANH_GIA_CHUYEN_OI_SO_DTI_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: Bản đồ số liệu trong tỉnh
+- approved_at: '2026-04-07T13:00:15.528488+07:00'
+  approved_by: admin-batch
+  attribute: target_customer
+  claim_id: CLM-DTI_SOFTWARE-TARGET_C
+  compiler_note: 'Trích từ phần Tóm tắt nhanh: ''Phù hợp với: Các cơ quan, đơn vị,
+    tỉnh thành cần một công cụ để theo dõi, báo cáo, và so sánh tiến độ chuyển đổi
+    số.'''
+  confidence: high
+  entity_id: dti_software
+  entity_name: Phần Mềm Đánh Giá Chuyển Đổi Số DTI
+  entity_type: product
+  observed_at: '2026-04-04T21:07:35.178115+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-PHAN_MEM_ANH_GIA_CHUYEN_OI_SO_DTI_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: Các cơ quan, đơn vị, tỉnh thành cần một công cụ để theo dõi, báo cáo, và
+    so sánh tiến độ chuyển đổi số.
+- approved_at: '2026-04-07T13:00:15.533368+07:00'
+  approved_by: admin-batch
+  attribute: account_limit
+  claim_id: CLM-ENT-PROD-SOF-ACCOUNT_
+  compiler_note: 'Trích từ bảng giá: ''Giới hạn | 10 Account, 50 domain'''
+  confidence: high
+  entity_id: ENT-PROD-SOFTWARE-DIRECTADMIN-LITE
+  entity_name: DirectAdmin Lite
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:21:35.389798+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BANG_GIA_BAN_QUYEN_PHAN_MEM_QUAN_TRI_SERVER_DIRECTADMIN_2026_04_04
+  unit: Account
+  valid_from: '2026-04-04'
+  value: 10
+- approved_at: '2026-04-07T13:00:15.537903+07:00'
+  approved_by: admin-batch
+  attribute: architecture
+  claim_id: CLM-ENT-PROD-SOF-ARCHITEC
+  compiler_note: 'Trích từ phần ''Tóm tắt nhanh'': • Điểm chính: ... kiến trúc hướng
+    sự kiện...'
+  confidence: high
+  entity_id: ENT-PROD-SOFTWARE-LITESPEED
+  entity_name: LiteSpeed Web Server
+  entity_type: product
+  observed_at: '2026-04-04T21:06:48.395938+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-LITESPEED_WEB_SERVER_TINH_NANG_PHIEN_BAN_VA_SO_SANH_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: hướng sự kiện
+- approved_at: '2026-04-07T13:00:15.542763+07:00'
+  approved_by: admin-batch
+  attribute: attribute
+  claim_id: CLM-ENT-PROD-SOF-ATTRIBUT
+  compiler_note: 'Trích từ phần ''Thông số kỹ thuật / Giới hạn'': • LiteSpeed Enterprise
+    (LSWS): Là phiên bản thương mại, ổn định và có hiệu suất cao hơn.'
+  confidence: high
+  entity_id: ENT-PROD-SOFTWARE-LITESPEED-ENTERPRISE
+  entity_name: LiteSpeed Enterprise
+  entity_type: product_version
+  observed_at: '2026-04-04T21:06:48.520673+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-LITESPEED_WEB_SERVER_TINH_NANG_PHIEN_BAN_VA_SO_SANH_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: ổn định
+- approved_at: '2026-04-07T13:00:15.549318+07:00'
+  approved_by: admin-batch
+  attribute: benefit
+  claim_id: CLM-ENT-PROD-SOF-BENEFIT
+  compiler_note: 'Trích từ: ''Giảm tải CPU server'''
+  confidence: high
+  entity_id: ENT-PROD-SOFTWARE-LITESPEED
+  entity_name: LiteSpeed Web Server
+  entity_type: product
+  observed_at: '2026-04-05T22:07:23.268426+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-LITESPEED_WEB_2026_04_05
+  unit: null
+  valid_from: '2026-04-05'
+  value: Giảm tải CPU server
+- approved_at: '2026-04-07T13:00:15.558984+07:00'
+  approved_by: admin-batch
+  attribute: capability
+  claim_id: CLM-ENT-PROD-SOF-CAPABILI
+  compiler_note: 'Trích từ phần ''Mô tả dịch vụ'': ...giúp xử lý hàng ngàn kết nối
+    đồng thời với việc sử dụng ít tài nguyên (CPU/RAM) hơn so với Apache.'
+  confidence: high
+  entity_id: ENT-PROD-SOFTWARE-LITESPEED
+  entity_name: LiteSpeed Web Server
+  entity_type: product
+  observed_at: '2026-04-04T21:06:48.430332+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-LITESPEED_WEB_SERVER_TINH_NANG_PHIEN_BAN_VA_SO_SANH_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: xử lý hàng ngàn kết nối đồng thời
+- approved_at: '2026-04-07T13:00:15.567367+07:00'
+  approved_by: admin-batch
+  attribute: category
+  claim_id: CLM-ENT-PROD-SOF-CATEGORY
+  compiler_note: 'Trích từ: • Danh mục: Phần mềm'
+  confidence: high
+  entity_id: ENT-PROD-SOFTWARE-DIRECTADMIN
+  entity_name: Bản quyền Softaculous
+  entity_type: product
+  observed_at: '2026-04-06T23:02:27.082116+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DIRECTADMIN_WEB_2026_04_05
+  - SRC-BAN_QUYEN_SOFTACULOUS_TRINH_CAI_AT_UNG_DUNG_TU_ONG_2026_04_06
+  unit: null
+  valid_from: '2026-04-05'
+  value: Phần mềm
+  value_changed_at: '2026-04-06T23:02:27.082142+07:00'
+  value_changed_from: Phần mềm quản trị server trên Linux
+- approved_at: '2026-04-07T13:00:15.575156+07:00'
+  approved_by: admin-batch
+  attribute: compatibility
+  claim_id: CLM-ENT-PROD-SOF-COMPATIB
+  compiler_note: 'Trích từ Thông số kỹ thuật / Giới hạn: ''Tương thích Control Panel:
+    CloudLinux tương thích với các control panel phổ biến bao gồm cPanel, Plesk, và
+    DirectAdmin.'''
+  confidence: high
+  entity_id: ENT-PROD-SOFTWARE-LITESPEED-ENTERPRISE
+  entity_name: Bản Quyền CloudLinux OS
+  entity_type: product
+  observed_at: '2026-04-06T22:58:13.057674+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-LITESPEED_WEB_SERVER_TINH_NANG_PHIEN_BAN_VA_SO_SANH_2026_04_04
+  - SRC-BAN_QUYEN_CLOUDLINUX_OS_TANG_ON_INH_VA_BAO_MAT_CHO_SHARED_2026_04_06
+  unit: null
+  valid_from: '2026-04-04'
+  value: DirectAdmin
+  value_changed_at: '2026-04-06T22:58:13.057695+07:00'
+  value_changed_from: Plesk
+- approved_at: '2026-04-07T13:00:15.582233+07:00'
+  approved_by: admin-batch
+  attribute: crawl_date
+  claim_id: CLM-ENT-PROD-SOF-CRAWL_DA
+  compiler_note: 'Trích từ dòng: ''- Ngày crawl: 2026-04-05T14:25:00+07:00'''
+  confidence: high
+  entity_id: ENT-PROD-SOFTWARE-DIRECTADMIN
+  entity_name: DirectAdmin
+  entity_type: product
+  observed_at: '2026-04-05T21:56:38.900514+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DIRECTADMIN_WEB_2026_04_05
+  unit: null
+  valid_from: '2026-04-05'
+  value: '2026-04-05T14:25:00+07:00'
+- approved_at: '2026-04-07T13:00:15.588696+07:00'
+  approved_by: admin-batch
+  attribute: crawl_timestamp
+  claim_id: CLM-ENT-PROD-SOF-CRAWL_TI
+  compiler_note: 'Trích từ nội dung: ''- Ngày crawl: 2026-04-05T14:25:00+07:00'''
+  confidence: high
+  entity_id: ENT-PROD-SOFTWARE-CPANEL
+  entity_name: Bản quyền cPanel/WHM
+  entity_type: product
+  observed_at: '2026-04-05T21:52:26.300486+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-CPANEL_WHM_WEB_2026_04_05
+  unit: null
+  valid_from: '2026-04-05'
+  value: '2026-04-05T14:25:00+07:00'
+- approved_at: '2026-04-07T13:00:15.598275+07:00'
+  approved_by: admin-batch
+  attribute: description
+  claim_id: CLM-ENT-PROD-SOF-DESC
+  compiler_note: 'Trích từ mục ''Mô tả dịch vụ'': vBulletin là một hệ quản trị nội
+    dung mạnh mẽ và lâu đời, được thiết kế chuyên biệt để xây dựng và quản lý các
+    diễn đàn trực tuyến và mạng xã hội. Dịch vụ này cung cấp các gói bản quyền chính
+    hãng cho phần mềm vBulletin, cho phép người dùng triển khai một nền tảng cộng
+    đồng cho website của mình.'
+  confidence: high
+  entity_id: ENT-PROD-SOFTWARE-DIRECTADMIN
+  entity_name: Bản quyền vBulletin
+  entity_type: product
+  observed_at: '2026-04-06T23:04:02.990497+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BANG_GIA_BAN_QUYEN_PHAN_MEM_QUAN_TRI_SERVER_DIRECTADMIN_2026_04_04
+  - SRC-BAN_QUYEN_VBULLETIN_HE_QUAN_TRI_FORUM_MANG_XA_HOI_2026_04_06
+  unit: null
+  valid_from: '2026-04-04'
+  value: vBulletin là một hệ quản trị nội dung mạnh mẽ và lâu đời, được thiết kế chuyên
+    biệt để xây dựng và quản lý các diễn đàn trực tuyến và mạng xã hội. Dịch vụ này
+    cung cấp các gói bản quyền chính hãng cho phần mềm vBulletin, cho phép người dùng
+    triển khai một nền tảng cộng đồng cho website của mình.
+  value_changed_at: '2026-04-06T23:04:02.990517+07:00'
+  value_changed_from: DirectAdmin là một phần mềm quản trị server (control panel)
+    có giao diện đồ họa, được biết đến như một giải pháp thay thế cho cPanel.
+- approved_at: '2026-04-07T13:00:15.606260+07:00'
+  approved_by: admin-batch
+  attribute: domain_limit
+  claim_id: CLM-ENT-PROD-SOF-DOMAIN_L
+  compiler_note: 'Trích từ bảng giá: ''Giới hạn | Không giới hạn số User, domain'''
+  confidence: high
+  entity_id: ENT-PROD-SOFTWARE-DIRECTADMIN-STANDARD
+  entity_name: DirectAdmin Standard
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:21:35.402198+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BANG_GIA_BAN_QUYEN_PHAN_MEM_QUAN_TRI_SERVER_DIRECTADMIN_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: unlimited
+- approved_at: '2026-04-07T13:00:15.611037+07:00'
+  approved_by: admin-batch
+  attribute: feature
+  claim_id: CLM-ENT-PROD-SOF-FEATURE
+  compiler_note: 'Trích từ: • Cài đặt bằng một cú nhấp chuột: Cài đặt nhanh chóng
+    hơn 400 ứng dụng và tập lệnh.'
+  confidence: high
+  entity_id: ENT-PROD-SOFTWARE-VBULLETIN
+  entity_name: Bản quyền Softaculous
+  entity_type: product
+  observed_at: '2026-04-06T23:02:27.181887+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-VBULLETIN_WEB_2026_04_05
+  - SRC-BAN_QUYEN_SOFTACULOUS_TRINH_CAI_AT_UNG_DUNG_TU_ONG_2026_04_04
+  - SRC-BAN_QUYEN_SOFTACULOUS_TRINH_CAI_AT_UNG_DUNG_TU_ONG_2026_04_06
+  unit: null
+  valid_from: '2026-04-05'
+  value: Cài đặt bằng một cú nhấp chuột
+  value_changed_at: '2026-04-06T23:02:27.181905+07:00'
+  value_changed_from: Tự động sao lưu
+- approved_at: '2026-04-07T13:00:15.616800+07:00'
+  approved_by: admin-batch
+  attribute: installation_option
+  claim_id: CLM-ENT-PROD-SOF-INSTALLA
+  compiler_note: 'Trích từ Quy trình đăng ký / Triển khai / Kích hoạt: ''CloudLinux
+    có thể được cài đặt trên các máy chủ hiện tại.'''
+  confidence: high
+  entity_id: ENT-PROD-SOFTWARE-001
+  entity_name: Bản Quyền CloudLinux OS
+  entity_type: product
+  observed_at: '2026-04-06T22:58:13.068159+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BAN_QUYEN_CLOUDLINUX_OS_TANG_ON_INH_VA_BAO_MAT_CHO_SHARED_2026_04_06
+  unit: null
+  valid_from: '2026-04-06'
+  value: Có thể được cài đặt trên các máy chủ hiện tại.
+- approved_at: '2026-04-07T13:00:15.622319+07:00'
+  approved_by: admin-batch
+  attribute: is_replacement_for
+  claim_id: CLM-ENT-PROD-SOF-IS_REPLA
+  compiler_note: 'Trích từ: ''...thay thế Apache với tốc độ nhanh hơn nhiều lần.'''
+  confidence: high
+  entity_id: ENT-PROD-SOFTWARE-LITESPEED
+  entity_name: LiteSpeed Web Server
+  entity_type: product
+  observed_at: '2026-04-05T22:07:23.254225+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-LITESPEED_WEB_2026_04_05
+  unit: null
+  valid_from: '2026-04-05'
+  value: Apache
+- approved_at: '2026-04-07T13:00:15.627529+07:00'
+  approved_by: admin-batch
+  attribute: max_price
+  claim_id: CLM-ENT-PROD-SOF-MAX_PRIC
+  compiler_note: 'Trích từ Gói dịch vụ và bảng giá: ''Khoảng giá tham khảo: Giá bản
+    quyền CloudLinux dao động từ $14/tháng đến $26/tháng...'''
+  confidence: high
+  entity_id: ENT-PROD-SOFTWARE-001
+  entity_name: Bản Quyền CloudLinux OS
+  entity_type: product
+  observed_at: '2026-04-06T22:58:12.965198+07:00'
+  qualifiers:
+    billing_cycle: month
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BAN_QUYEN_CLOUDLINUX_OS_TANG_ON_INH_VA_BAO_MAT_CHO_SHARED_2026_04_06
+  unit: USD
+  valid_from: '2026-04-06'
+  value: 26
+- approved_at: '2026-04-07T13:00:15.633058+07:00'
+  approved_by: admin-batch
+  attribute: migration_process
+  claim_id: CLM-ENT-PROD-SOF-MIGRATIO
+  compiler_note: 'Trích từ Quy trình đăng ký / Triển khai / Kích hoạt: ''Quá trình
+    chuyển đổi từ CentOS hoặc RHEL sang CloudLinux được mô tả là dễ dàng.'''
+  confidence: high
+  entity_id: ENT-PROD-SOFTWARE-001
+  entity_name: Bản Quyền CloudLinux OS
+  entity_type: product
+  observed_at: '2026-04-06T22:58:13.070424+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BAN_QUYEN_CLOUDLINUX_OS_TANG_ON_INH_VA_BAO_MAT_CHO_SHARED_2026_04_06
+  unit: null
+  valid_from: '2026-04-06'
+  value: Quá trình chuyển đổi từ CentOS hoặc RHEL sang CloudLinux dễ dàng.
+- approved_at: '2026-04-07T13:00:15.637352+07:00'
+  approved_by: admin-batch
+  attribute: min_cpu_cores
+  claim_id: CLM-ENT-PROD-SOF-MIN_CPU_
+  compiler_note: 'Trích từ mục Cấu hình tối thiểu: ''- CPU: 1 Core'''
+  confidence: high
+  entity_id: ENT-PROD-SOFTWARE-DIRECTADMIN
+  entity_name: DirectAdmin
+  entity_type: product
+  observed_at: '2026-04-05T21:56:38.828976+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DIRECTADMIN_WEB_2026_04_05
+  unit: core
+  valid_from: '2026-04-05'
+  value: 1
+- approved_at: '2026-04-07T13:00:15.643068+07:00'
+  approved_by: admin-batch
+  attribute: min_price
+  claim_id: CLM-ENT-PROD-SOF-MIN_PRIC
+  compiler_note: 'Trích từ Gói dịch vụ và bảng giá: ''Khoảng giá tham khảo: Giá bản
+    quyền CloudLinux dao động từ $14/tháng đến $26/tháng...'''
+  confidence: high
+  entity_id: ENT-PROD-SOFTWARE-001
+  entity_name: Bản Quyền CloudLinux OS
+  entity_type: product
+  observed_at: '2026-04-06T22:58:12.963070+07:00'
+  qualifiers:
+    billing_cycle: month
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BAN_QUYEN_CLOUDLINUX_OS_TANG_ON_INH_VA_BAO_MAT_CHO_SHARED_2026_04_06
+  unit: USD
+  valid_from: '2026-04-06'
+  value: 14
+- approved_at: '2026-04-07T13:00:15.649699+07:00'
+  approved_by: admin-batch
+  attribute: min_ram
+  claim_id: CLM-ENT-PROD-SOF-MIN_RAM
+  compiler_note: 'Trích từ mục Cấu hình tối thiểu: ''- RAM: 1 GB'''
+  confidence: high
+  entity_id: ENT-PROD-SOFTWARE-DIRECTADMIN
+  entity_name: DirectAdmin
+  entity_type: product
+  observed_at: '2026-04-05T21:56:38.832117+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DIRECTADMIN_WEB_2026_04_05
+  unit: GB
+  valid_from: '2026-04-05'
+  value: 1
+- approved_at: '2026-04-07T13:00:15.655673+07:00'
+  approved_by: admin-batch
+  attribute: ordering_process
+  claim_id: CLM-ENT-PROD-SOF-ORDERING
+  compiler_note: 'Trích từ Quy trình đăng ký / Triển khai / Kích hoạt (nếu có): Trang
+    có nút "ĐẶT MUA" dẫn đến giỏ hàng.'
+  confidence: high
+  entity_id: ENT-PROD-SOFTWARE-VBULLETIN
+  entity_name: Bản quyền vBulletin
+  entity_type: product
+  observed_at: '2026-04-04T20:19:43.203782+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BAN_QUYEN_VBULLETIN_HE_QUAN_TRI_FORUM_MANG_XA_HOI_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: Có nút 'ĐẶT MUA' dẫn đến giỏ hàng.
+- approved_at: '2026-04-07T13:00:15.662927+07:00'
+  approved_by: admin-batch
+  attribute: performance_claim
+  claim_id: CLM-ENT-PROD-SOF-PERFORMA
+  compiler_note: 'Trích từ: ''Nhanh hơn Apache gấp nhiều lần'''
+  confidence: high
+  entity_id: ENT-PROD-SOFTWARE-LITESPEED
+  entity_name: LiteSpeed Web Server
+  entity_type: product
+  observed_at: '2026-04-05T22:07:23.256766+07:00'
+  qualifiers:
+    compared_to: Apache
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-LITESPEED_WEB_2026_04_05
+  unit: null
+  valid_from: '2026-04-05'
+  value: Nhanh hơn gấp nhiều lần
+- approved_at: '2026-04-07T13:00:15.669732+07:00'
+  approved_by: admin-batch
+  attribute: platform
+  claim_id: CLM-ENT-PROD-SOF-PLATFORM
+  compiler_note: 'Trích từ Thông số kỹ thuật / Giới hạn: ''Nền tảng: Dựa trên hệ điều
+    hành CentOS/RHEL.'''
+  confidence: high
+  entity_id: ENT-PROD-SOFTWARE-001
+  entity_name: Bản Quyền CloudLinux OS
+  entity_type: product
+  observed_at: '2026-04-06T22:58:13.065970+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BAN_QUYEN_CLOUDLINUX_OS_TANG_ON_INH_VA_BAO_MAT_CHO_SHARED_2026_04_06
+  unit: null
+  valid_from: '2026-04-06'
+  value: CentOS/RHEL
+- approved_at: '2026-04-07T13:00:15.677092+07:00'
+  approved_by: admin-batch
+  attribute: policy
+  claim_id: CLM-ENT-PROD-SOF-POLICY
+  compiler_note: 'Trích từ mục Chính sách / Điều khoản / Lưu ý: ''Bản quyền Lifetime:
+    Kể từ ngày 01/07/2020, DirectAdmin đã ngừng bán bản quyền lifetime và ngừng hỗ
+    trợ đổi địa chỉ IP cho loại bản quyền này.'''
+  confidence: high
+  entity_id: ENT-PROD-SOFTWARE-DIRECTADMIN
+  entity_name: Bản quyền phần mềm DirectAdmin
+  entity_type: product
+  observed_at: '2026-04-04T20:21:35.385675+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BANG_GIA_BAN_QUYEN_PHAN_MEM_QUAN_TRI_SERVER_DIRECTADMIN_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: Kể từ ngày 01/07/2020, DirectAdmin đã ngừng bán bản quyền lifetime và ngừng
+    hỗ trợ đổi địa chỉ IP cho loại bản quyền này.
+- approved_at: '2026-04-07T13:00:15.684499+07:00'
+  approved_by: admin-batch
+  attribute: monthly_price
+  claim_id: CLM-ENT-PROD-SOF-PRICE
+  compiler_note: 'Trích từ bảng giá: ''Standard | 790.000/ Tháng'''
+  confidence: high
+  entity_id: ENT-PROD-SOFTWARE-DIRECTADMIN-STANDARD
+  entity_name: DirectAdmin Standard
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:21:35.397893+07:00'
+  qualifiers:
+    billing_cycle: month
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_BAN_QUYEN_PHAN_MEM_QUAN_TRI_SERVER_DIRECTADMIN_2026_04_04
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 790000
+- approved_at: '2026-04-07T13:00:15.691871+07:00'
+  approved_by: admin-batch
+  attribute: price_note
+  claim_id: CLM-ENT-PROD-SOF-PRICE_NO
+  compiler_note: 'Trích từ Gói dịch vụ và bảng giá: ''...tùy thuộc vào loại giấy phép
+    (cho VPS hoặc máy chủ riêng) và số lượng máy chủ.'''
+  confidence: high
+  entity_id: ENT-PROD-SOFTWARE-001
+  entity_name: Bản Quyền CloudLinux OS
+  entity_type: product
+  observed_at: '2026-04-06T22:58:12.967429+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BAN_QUYEN_CLOUDLINUX_OS_TANG_ON_INH_VA_BAO_MAT_CHO_SHARED_2026_04_06
+  unit: null
+  valid_from: '2026-04-06'
+  value: Giá tùy thuộc vào loại giấy phép (cho VPS hoặc máy chủ riêng) và số lượng
+    máy chủ.
+- approved_at: '2026-04-07T13:00:15.700803+07:00'
+  approved_by: admin-batch
+  attribute: pricing_policy
+  claim_id: CLM-ENT-PROD-SOF-PRICING_
+  compiler_note: 'Trích từ mục ''Điều kiện/giới hạn nổi bật (nếu có)'': Chi phí cho
+    tất cả các gói dịch vụ không được niêm yết công khai và yêu cầu khách hàng phải
+    liên hệ để nhận báo giá.'
+  confidence: high
+  entity_id: ENT-PROD-SOFTWARE-DIRECTADMIN
+  entity_name: Bản quyền vBulletin
+  entity_type: product
+  observed_at: '2026-04-06T23:04:02.977687+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BANG_GIA_BAN_QUYEN_PHAN_MEM_QUAN_TRI_SERVER_DIRECTADMIN_2026_04_04
+  - SRC-BAN_QUYEN_VBULLETIN_HE_QUAN_TRI_FORUM_MANG_XA_HOI_2026_04_06
+  unit: null
+  valid_from: '2026-04-04'
+  value: Chi phí cho tất cả các gói dịch vụ không được niêm yết công khai và yêu cầu
+    khách hàng phải liên hệ để nhận báo giá.
+  value_changed_at: '2026-04-06T23:04:02.977707+07:00'
+  value_changed_from: Bảng giá áp dụng cho khách hàng sử dụng Cloud VPS / Server có
+    IP ngoài BKNS (External license).
+- approved_at: '2026-04-07T13:00:15.708928+07:00'
+  approved_by: admin-batch
+  attribute: product_type
+  claim_id: CLM-ENT-PROD-SOF-PRODUCT_
+  compiler_note: 'Trích từ: ''LiteSpeed là web server hiệu suất cao...'''
+  confidence: high
+  entity_id: ENT-PROD-SOFTWARE-LITESPEED
+  entity_name: LiteSpeed Web Server
+  entity_type: product
+  observed_at: '2026-04-05T22:07:23.252136+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-LITESPEED_WEB_2026_04_05
+  unit: null
+  valid_from: '2026-04-05'
+  value: web server hiệu suất cao
+- approved_at: '2026-04-07T13:00:15.716596+07:00'
+  approved_by: admin-batch
+  attribute: protocol_support
+  claim_id: CLM-ENT-PROD-SOF-PROTOCOL
+  compiler_note: 'Trích từ: ''HTTP/3 và QUIC support'''
+  confidence: high
+  entity_id: ENT-PROD-SOFTWARE-LITESPEED
+  entity_name: LiteSpeed Web Server
+  entity_type: product
+  observed_at: '2026-04-05T22:07:23.266149+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-LITESPEED_WEB_2026_04_05
+  unit: null
+  valid_from: '2026-04-05'
+  value: QUIC
+- approved_at: '2026-04-07T13:00:15.723810+07:00'
+  approved_by: admin-batch
+  attribute: registration_process
+  claim_id: CLM-ENT-PROD-SOF-REGISTRA
+  compiler_note: 'Trích từ mục ''Quy trình đăng ký / Triển khai / Kích hoạt (nếu có)'':
+    Trang có nút "ĐẶT MUA" dẫn đến giỏ hàng.'
+  confidence: high
+  entity_id: ENT-PROD-SOFTWARE-VBLT
+  entity_name: Bản quyền vBulletin
+  entity_type: product
+  observed_at: '2026-04-06T23:04:03.000538+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BAN_QUYEN_VBULLETIN_HE_QUAN_TRI_FORUM_MANG_XA_HOI_2026_04_06
+  unit: null
+  valid_from: '2026-04-06'
+  value: Trang có nút 'ĐẶT MUA' dẫn đến giỏ hàng.
+- approved_at: '2026-04-07T13:00:15.731435+07:00'
+  approved_by: admin-batch
+  attribute: requirement
+  claim_id: CLM-ENT-PROD-SOF-REQUIREM
+  compiler_note: 'Trích từ: • Điều kiện/giới hạn nổi bật (nếu có): Cần có máy chủ
+    hoặc VPS đã cài đặt một trong các control panel được hỗ trợ.'
+  confidence: high
+  entity_id: ENT-PROD-SOFTWARE-SOFTACULOUS
+  entity_name: Bản quyền Softaculous
+  entity_type: product
+  observed_at: '2026-04-06T23:02:27.164955+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BAN_QUYEN_SOFTACULOUS_TRINH_CAI_AT_UNG_DUNG_TU_ONG_2026_04_04
+  - SRC-BAN_QUYEN_SOFTACULOUS_TRINH_CAI_AT_UNG_DUNG_TU_ONG_2026_04_06
+  unit: null
+  valid_from: '2026-04-04'
+  value: Cần có máy chủ hoặc VPS đã cài đặt một trong các control panel được hỗ trợ.
+- approved_at: '2026-04-07T13:00:15.739635+07:00'
+  approved_by: admin-batch
+  attribute: resource_usage_comparison
+  claim_id: CLM-ENT-PROD-SOF-RESOURCE
+  compiler_note: 'Trích từ phần ''Mô tả dịch vụ'': ...giúp xử lý hàng ngàn kết nối
+    đồng thời với việc sử dụng ít tài nguyên (CPU/RAM) hơn so với Apache.'
+  confidence: high
+  entity_id: ENT-PROD-SOFTWARE-LITESPEED
+  entity_name: LiteSpeed Web Server
+  entity_type: product
+  observed_at: '2026-04-04T21:06:48.432673+07:00'
+  qualifiers:
+    compared_to: Apache
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-LITESPEED_WEB_SERVER_TINH_NANG_PHIEN_BAN_VA_SO_SANH_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: sử dụng ít tài nguyên (CPU/RAM) hơn so với Apache
+- approved_at: '2026-04-07T13:00:15.747827+07:00'
+  approved_by: admin-batch
+  attribute: sales_policy
+  claim_id: CLM-ENT-PROD-SOF-SALES_PO
+  compiler_note: 'Trích từ Gói dịch vụ và bảng giá: ''Để có giá chính xác và thông
+    tin về các chương trình khuyến mại, khách hàng cần liên hệ trực tiếp với BKNS.'''
+  confidence: high
+  entity_id: ENT-PROD-SOFTWARE-001
+  entity_name: Bản Quyền CloudLinux OS
+  entity_type: product
+  observed_at: '2026-04-06T22:58:13.033008+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BAN_QUYEN_CLOUDLINUX_OS_TANG_ON_INH_VA_BAO_MAT_CHO_SHARED_2026_04_06
+  unit: null
+  valid_from: '2026-04-06'
+  value: Khách hàng cần liên hệ trực tiếp với BKNS để có giá chính xác và thông tin
+    về các chương trình khuyến mại.
+- approved_at: '2026-04-07T13:00:15.755528+07:00'
+  approved_by: admin-batch
+  attribute: short_description
+  claim_id: CLM-ENT-PROD-SOF-SHORT_DE
+  compiler_note: 'Trích từ mục ''Tóm tắt nhanh'': • Dịch vụ này là gì: Cung cấp bản
+    quyền phần mềm vBulletin, một hệ quản trị nội dung (CMS) chuyên dụng để xây dựng
+    diễn đàn (forum) và mạng xã hội.'
+  confidence: high
+  entity_id: ENT-PROD-SOFTWARE-VBLT
+  entity_name: Bản quyền vBulletin
+  entity_type: product
+  observed_at: '2026-04-06T23:04:02.956655+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BAN_QUYEN_VBULLETIN_HE_QUAN_TRI_FORUM_MANG_XA_HOI_2026_04_06
+  unit: null
+  valid_from: '2026-04-06'
+  value: Cung cấp bản quyền phần mềm vBulletin, một hệ quản trị nội dung (CMS) chuyên
+    dụng để xây dựng diễn đàn (forum) và mạng xã hội.
+- approved_at: '2026-04-07T13:00:15.761229+07:00'
+  approved_by: admin-batch
+  attribute: source_url
+  claim_id: CLM-ENT-PROD-SOF-SOURCE_U
+  compiler_note: 'Trích từ: ''Nguồn: https://www.bkns.vn/phan-mem/litespeed.html'''
+  confidence: high
+  entity_id: ENT-PROD-SOFTWARE-LITESPEED
+  entity_name: LiteSpeed Web Server
+  entity_type: product
+  observed_at: '2026-04-05T22:07:23.270610+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-LITESPEED_WEB_2026_04_05
+  unit: null
+  valid_from: '2026-04-05'
+  value: https://www.bkns.vn/phan-mem/litespeed.html
+- approved_at: '2026-04-07T13:00:15.766483+07:00'
+  approved_by: admin-batch
+  attribute: support
+  claim_id: CLM-ENT-PROD-SOF-SUPPORT
+  compiler_note: 'Trích từ bảng giá: ''Hỗ trợ | Hỗ trợ cài đặt và tối ưu miễn phí.'''
+  confidence: high
+  entity_id: ENT-PROD-SOFTWARE-DIRECTADMIN-STANDARD
+  entity_name: DirectAdmin Standard
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:21:35.406261+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BANG_GIA_BAN_QUYEN_PHAN_MEM_QUAN_TRI_SERVER_DIRECTADMIN_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: Hỗ trợ cài đặt và tối ưu miễn phí.
+- approved_at: '2026-04-07T13:00:15.770468+07:00'
+  approved_by: admin-batch
+  attribute: supported_os_distro
+  claim_id: CLM-ENT-PROD-SOF-SUPPORTE
+  compiler_note: 'Trích từ mục Cấu hình tối thiểu: ''- Hệ điều hành: Linux (CentOS,
+    Rocky Linux, AlmaLinux, Ubuntu, Debian)'''
+  confidence: high
+  entity_id: ENT-PROD-SOFTWARE-DIRECTADMIN
+  entity_name: DirectAdmin
+  entity_type: product
+  observed_at: '2026-04-05T21:56:38.860727+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DIRECTADMIN_WEB_2026_04_05
+  unit: null
+  valid_from: '2026-04-05'
+  value: Debian
+- approved_at: '2026-04-07T13:00:15.774902+07:00'
+  approved_by: admin-batch
+  attribute: tagline
+  claim_id: CLM-ENT-PROD-SOF-TAGLINE
+  compiler_note: 'Trích từ tiêu đề: ''# LiteSpeed Web Server - Web Server Hiệu Suất
+    Cao'''
+  confidence: high
+  entity_id: ENT-PROD-SOFTWARE-LITESPEED
+  entity_name: LiteSpeed Web Server
+  entity_type: product
+  observed_at: '2026-04-05T22:07:23.250096+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-LITESPEED_WEB_2026_04_05
+  unit: null
+  valid_from: '2026-04-05'
+  value: Web Server Hiệu Suất Cao
+- approved_at: '2026-04-07T13:00:15.780474+07:00'
+  approved_by: admin-batch
+  attribute: target_audience
+  claim_id: CLM-ENT-PROD-SOF-TARGET_A
+  compiler_note: 'Trích từ mục ''Tóm tắt nhanh'': • Phù hợp với: Các cá nhân, doanh
+    nghiệp và tổ chức muốn tạo và quản lý một cộng đồng trực tuyến, diễn đàn thảo
+    luận.'
+  confidence: high
+  entity_id: ENT-PROD-SOFTWARE-VBULLETIN
+  entity_name: Bản quyền vBulletin
+  entity_type: product
+  observed_at: '2026-04-06T23:04:02.965007+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BAN_QUYEN_VBULLETIN_HE_QUAN_TRI_FORUM_MANG_XA_HOI_2026_04_04
+  - SRC-BAN_QUYEN_VBULLETIN_HE_QUAN_TRI_FORUM_MANG_XA_HOI_2026_04_06
+  unit: null
+  valid_from: '2026-04-04'
+  value: Các cá nhân, doanh nghiệp và tổ chức muốn tạo và quản lý một cộng đồng trực
+    tuyến, diễn đàn thảo luận.
+- approved_at: '2026-04-07T13:00:15.786679+07:00'
+  approved_by: admin-batch
+  attribute: target_customer
+  claim_id: CLM-ENT-PROD-SOF-TARGET_C
+  compiler_note: 'Trích từ phần ''Thông số kỹ thuật / Giới hạn'': • OpenLiteSpeed
+    (OLS): ... và phù hợp cho các trang web không yêu cầu các tính năng của phiên
+    bản Enterprise.'
+  confidence: high
+  entity_id: ENT-PROD-SOFTWARE-OPENLITESPEED
+  entity_name: OpenLiteSpeed
+  entity_type: product_version
+  observed_at: '2026-04-04T21:06:48.518338+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-LITESPEED_WEB_SERVER_TINH_NANG_PHIEN_BAN_VA_SO_SANH_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: phù hợp cho các trang web không yêu cầu các tính năng của phiên bản Enterprise
+- approved_at: '2026-04-07T13:00:15.793479+07:00'
+  approved_by: admin-batch
+  attribute: tax_policy
+  claim_id: CLM-ENT-PROD-SOF-TAX_POLI
+  compiler_note: 'Trích từ mục ''Chính sách / Điều khoản / Lưu ý'': • Bản quyền phần
+    mềm không chịu thuế.'
+  confidence: high
+  entity_id: ENT-PROD-SOFTWARE-VBULLETIN
+  entity_name: Bản quyền vBulletin
+  entity_type: product
+  observed_at: '2026-04-06T23:04:03.006642+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BAN_QUYEN_VBULLETIN_HE_QUAN_TRI_FORUM_MANG_XA_HOI_2026_04_04
+  - SRC-BAN_QUYEN_VBULLETIN_HE_QUAN_TRI_FORUM_MANG_XA_HOI_2026_04_06
+  unit: null
+  valid_from: '2026-04-04'
+  value: Bản quyền phần mềm không chịu thuế.
+- approved_at: '2026-04-07T13:00:15.799789+07:00'
+  approved_by: admin-batch
+  attribute: url
+  claim_id: CLM-ENT-PROD-SOF-URL
+  compiler_note: 'Trích từ: • URL: https://www.bkns.vn/phan-mem/softaculous.html'
+  confidence: high
+  entity_id: ENT-PROD-SOFTWARE-SOFTACULOUS
+  entity_name: Bản quyền Softaculous
+  entity_type: product
+  observed_at: '2026-04-06T23:02:27.076738+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BAN_QUYEN_SOFTACULOUS_TRINH_CAI_AT_UNG_DUNG_TU_ONG_2026_04_06
+  unit: null
+  valid_from: '2026-04-06'
+  value: https://www.bkns.vn/phan-mem/softaculous.html
+- approved_at: '2026-04-07T13:00:15.806000+07:00'
+  approved_by: admin-batch
+  attribute: user_limit
+  claim_id: CLM-ENT-PROD-SOF-USER_LIM
+  compiler_note: 'Trích từ bảng giá: ''Giới hạn | Không giới hạn số User, domain'''
+  confidence: high
+  entity_id: ENT-PROD-SOFTWARE-DIRECTADMIN-STANDARD
+  entity_name: DirectAdmin Standard
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:21:35.400330+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BANG_GIA_BAN_QUYEN_PHAN_MEM_QUAN_TRI_SERVER_DIRECTADMIN_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: unlimited
+- approved_at: '2026-04-07T13:00:15.812028+07:00'
+  approved_by: admin-batch
+  attribute: version_count
+  claim_id: CLM-ENT-PROD-SOF-VERSION_
+  compiler_note: 'Trích từ phần ''Thông số kỹ thuật / Giới hạn'': LiteSpeed Web Server
+    có 3 phiên bản chính:'
+  confidence: high
+  entity_id: ENT-PROD-SOFTWARE-LITESPEED
+  entity_name: LiteSpeed Web Server
+  entity_type: product
+  observed_at: '2026-04-04T21:06:48.506333+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-LITESPEED_WEB_SERVER_TINH_NANG_PHIEN_BAN_VA_SO_SANH_2026_04_04
+  unit: phiên bản chính
+  valid_from: '2026-04-04'
+  value: 3
+- approved_at: '2026-04-07T13:00:15.818168+07:00'
+  approved_by: admin-batch
+  attribute: crawl_timestamp
+  claim_id: CLM-META-SOFTACULOUS-CRAWL_TI
+  compiler_note: 'Trích từ nội dung trang: ''- Ngày crawl: 2026-04-05T14:25:00+07:00'''
+  confidence: high
+  entity_id: doc.metadata.softaculous.20260405
+  entity_name: Softaculous Page Crawl
+  entity_type: document_metadata
+  observed_at: '2026-04-05T22:13:59.509290+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-SOFTACULOUS_WEB_2026_04_05
+  unit: null
+  valid_from: '2026-04-05'
+  value: '2026-04-05T14:25:00+07:00'
+- approved_at: '2026-04-07T13:00:15.824518+07:00'
+  approved_by: admin-batch
+  attribute: source_url
+  claim_id: CLM-META-SOFTACULOUS-SOURCE_U
+  compiler_note: 'Trích từ nội dung trang: ''- Nguồn: https://www.bkns.vn/phan-mem/softaculous.html'''
+  confidence: high
+  entity_id: doc.metadata.softaculous.20260405
+  entity_name: Softaculous Page Crawl
+  entity_type: document_metadata
+  observed_at: '2026-04-05T22:13:59.506818+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-SOFTACULOUS_WEB_2026_04_05
+  unit: null
+  valid_from: '2026-04-05'
+  value: https://www.bkns.vn/phan-mem/softaculous.html
+- approved_at: '2026-04-07T13:00:15.830917+07:00'
+  approved_by: admin-batch
+  attribute: category
+  claim_id: CLM-PROD-SOFTWARE-CATEGORY
+  compiler_note: 'Trích từ thông tin nguồn: ''• Danh mục: phan-mem'''
+  confidence: high
+  entity_id: bkns.product.software.imunify360
+  entity_name: Imunify360
+  entity_type: product
+  observed_at: '2026-04-04T20:25:41.427120+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BANG_GIA_IMUNIFY360_GIAI_PHAP_BAO_MAT_SERVER_BANG_AI_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: phan-mem
+- approved_at: '2026-04-07T13:00:15.837815+07:00'
+  approved_by: admin-batch
+  attribute: data_completeness_note
+  claim_id: CLM-PROD-SOFTWARE-DATA_COM
+  compiler_note: 'Trích từ mục Gói dịch vụ và bảng giá: ''⚠️ CHƯA TRÍCH XUẤT ĐỦ: Mặc
+    dù H1 của trang là "Bảng giá Imunify360", không có bảng giá nào được tìm thấy
+    trong nội dung trích xuất.'''
+  confidence: high
+  entity_id: bkns.product.software.imunify360
+  entity_name: Imunify360
+  entity_type: product
+  observed_at: '2026-04-04T20:25:41.449083+07:00'
+  qualifiers:
+    scope: Gói dịch vụ và bảng giá
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BANG_GIA_IMUNIFY360_GIAI_PHAP_BAO_MAT_SERVER_BANG_AI_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: Không có bảng giá nào được tìm thấy trong nội dung trích xuất.
+- approved_at: '2026-04-07T13:00:15.845287+07:00'
+  approved_by: admin-batch
+  attribute: description
+  claim_id: CLM-PROD-SOFTWARE-DESC
+  compiler_note: 'Trích từ tóm tắt nhanh: ''• Dịch vụ này là gì: Imunify360 là một
+    giải pháp bảo mật dành cho server, được xây dựng dựa trên công nghệ Trí tuệ nhân
+    tạo (AI).'''
+  confidence: high
+  entity_id: bkns.product.software.imunify360
+  entity_name: Imunify360
+  entity_type: product
+  observed_at: '2026-04-04T20:25:41.428980+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BANG_GIA_IMUNIFY360_GIAI_PHAP_BAO_MAT_SERVER_BANG_AI_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: Imunify360 là một giải pháp bảo mật dành cho server, được xây dựng dựa trên
+    công nghệ Trí tuệ nhân tạo (AI).
+- approved_at: '2026-04-07T13:00:15.852239+07:00'
+  approved_by: admin-batch
+  attribute: feature
+  claim_id: CLM-PROD-SOFTWARE-FEATURE
+  compiler_note: 'Trích từ tóm tắt nhanh: ''• Điểm chính: ...và ngăn chặn sự tiếp
+    cận trái phép từ hacker.'''
+  confidence: high
+  entity_id: bkns.product.software.imunify360
+  entity_name: Imunify360
+  entity_type: product
+  observed_at: '2026-04-04T20:25:41.436533+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BANG_GIA_IMUNIFY360_GIAI_PHAP_BAO_MAT_SERVER_BANG_AI_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: Ngăn chặn sự tiếp cận trái phép từ hacker
+- approved_at: '2026-04-07T13:00:15.858662+07:00'
+  approved_by: admin-batch
+  attribute: name
+  claim_id: CLM-PROD-SOFTWARE-NAME
+  compiler_note: 'Trích từ tiêu đề chính của nội dung: ''═══ Phần mềm bảo mật Imunify360'''
+  confidence: high
+  entity_id: bkns.product.software.imunify360
+  entity_name: Imunify360
+  entity_type: product
+  observed_at: '2026-04-04T20:25:41.422596+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BANG_GIA_IMUNIFY360_GIAI_PHAP_BAO_MAT_SERVER_BANG_AI_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: Phần mềm bảo mật Imunify360
+- approved_at: '2026-04-07T13:00:15.865271+07:00'
+  approved_by: admin-batch
+  attribute: related_service
+  claim_id: CLM-PROD-SOFTWARE-RELATED_
+  compiler_note: 'Trích từ mục Liên kết liên quan: ''• CloudLinux'''
+  confidence: high
+  entity_id: bkns.product.software.imunify360
+  entity_name: Imunify360
+  entity_type: product
+  observed_at: '2026-04-04T20:25:41.455930+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BANG_GIA_IMUNIFY360_GIAI_PHAP_BAO_MAT_SERVER_BANG_AI_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: CloudLinux
+- approved_at: '2026-04-07T13:00:15.874791+07:00'
+  approved_by: admin-batch
+  attribute: target_audience
+  claim_id: CLM-PROD-SOFTWARE-TARGET_A
+  compiler_note: 'Trích từ tóm tắt nhanh: ''• Phù hợp với: Các cá nhân, doanh nghiệp
+    quản trị server...'''
+  confidence: high
+  entity_id: bkns.product.software.imunify360
+  entity_name: Imunify360
+  entity_type: product
+  observed_at: '2026-04-04T20:25:41.431188+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BANG_GIA_IMUNIFY360_GIAI_PHAP_BAO_MAT_SERVER_BANG_AI_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: Các cá nhân, doanh nghiệp quản trị server
+- approved_at: '2026-04-07T13:00:15.879682+07:00'
+  approved_by: admin-batch
+  attribute: url
+  claim_id: CLM-PROD-SOFTWARE-URL
+  compiler_note: 'Trích từ thông tin nguồn: ''• URL: https://www.bkns.vn/phan-mem/imunify360.html'''
+  confidence: high
+  entity_id: bkns.product.software.imunify360
+  entity_name: Imunify360
+  entity_type: product
+  observed_at: '2026-04-04T20:25:41.425258+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BANG_GIA_IMUNIFY360_GIAI_PHAP_BAO_MAT_SERVER_BANG_AI_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: https://www.bkns.vn/phan-mem/imunify360.html
+- approved_at: '2026-04-07T13:00:15.884279+07:00'
+  approved_by: admin-batch
+  attribute: category
+  claim_id: CLM-SOFT-BKNS_CLOUDLINUX_OS-CATEGORY
+  compiler_note: 'Trích từ phần Thông tin nguồn: ''• Danh mục: phan-mem'''
+  confidence: high
+  entity_id: product.software.bkns_cloudlinux_os
+  entity_name: Bản Quyền CloudLinux OS
+  entity_type: product
+  observed_at: '2026-04-04T20:16:52.775162+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BAN_QUYEN_CLOUDLINUX_OS_TANG_ON_INH_VA_BAO_MAT_CHO_SHARED_2026_04_04
+  unit: ''
+  valid_from: '2026-04-04'
+  value: phan-mem
+- approved_at: '2026-04-07T13:00:15.888733+07:00'
+  approved_by: admin-batch
+  attribute: name
+  claim_id: CLM-SOFT-BKNS_CLOUDLINUX_OS-NAME
+  compiler_note: 'Trích từ tiêu đề: ''═══ Bản Quyền CloudLinux OS'''
+  confidence: high
+  entity_id: product.software.bkns_cloudlinux_os
+  entity_name: Bản Quyền CloudLinux OS
+  entity_type: product
+  observed_at: '2026-04-04T20:16:52.767551+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BAN_QUYEN_CLOUDLINUX_OS_TANG_ON_INH_VA_BAO_MAT_CHO_SHARED_2026_04_04
+  unit: ''
+  valid_from: '2026-04-04'
+  value: Bản Quyền CloudLinux OS
+- approved_at: '2026-04-07T13:00:15.893462+07:00'
+  approved_by: admin-batch
+  attribute: source_url
+  claim_id: CLM-SOFT-BKNS_CLOUDLINUX_OS-SOURCE_U
+  compiler_note: 'Trích từ phần Thông tin nguồn: ''• URL: https://www.bkns.vn/phan-mem/cloudlinux.html'''
+  confidence: high
+  entity_id: product.software.bkns_cloudlinux_os
+  entity_name: Bản Quyền CloudLinux OS
+  entity_type: product
+  observed_at: '2026-04-04T20:16:52.771526+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BAN_QUYEN_CLOUDLINUX_OS_TANG_ON_INH_VA_BAO_MAT_CHO_SHARED_2026_04_04
+  unit: ''
+  valid_from: '2026-04-04'
+  value: https://www.bkns.vn/phan-mem/cloudlinux.html
+- approved_at: '2026-04-07T13:00:15.897649+07:00'
+  approved_by: admin-batch
+  attribute: category
+  claim_id: CLM-SOFT-BKNS_CPANEL_WHM-CATEGORY
+  compiler_note: 'Trích từ: • Danh mục: Phần mềm'
+  confidence: high
+  entity_id: product.software.bkns_cpanel_whm
+  entity_name: Bản quyền cPanel/WHM
+  entity_type: product
+  observed_at: '2026-04-04T20:18:00.288739+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BAN_QUYEN_CPANEL_WHM_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: Phần mềm
+- approved_at: '2026-04-07T13:00:15.901387+07:00'
+  approved_by: admin-batch
+  attribute: source_url
+  claim_id: CLM-SOFT-BKNS_CPANEL_WHM-SOURCE_U
+  compiler_note: 'Trích từ: • URL: https://www.bkns.vn/phan-mem/cpanel-whm.html'
+  confidence: high
+  entity_id: product.software.bkns_cpanel_whm
+  entity_name: Bản quyền cPanel/WHM
+  entity_type: product
+  observed_at: '2026-04-04T20:18:00.286428+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BAN_QUYEN_CPANEL_WHM_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: https://www.bkns.vn/phan-mem/cpanel-whm.html
+- approved_at: '2026-04-07T13:00:15.905539+07:00'
+  approved_by: admin-batch
+  attribute: account_limit
+  claim_id: CLM-SOFT-CPANEL-ACCOUNT_
+  compiler_note: 'Trích từ Bảng giá, cột Gói: ''5 Account'''
+  confidence: high
+  entity_id: product.software.cpanel.5acc
+  entity_name: 5 Account
+  entity_type: product_plan
+  observed_at: '2026-04-05T21:52:26.265952+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-CPANEL_WHM_WEB_2026_04_05
+  unit: account
+  valid_from: '2026-04-05'
+  value: 5
+- approved_at: '2026-04-07T13:00:15.909048+07:00'
+  approved_by: admin-batch
+  attribute: monthly_price
+  claim_id: CLM-SOFT-CPANEL-PRICE
+  compiler_note: 'Trích từ Bảng giá: ''| 5 Account | VPS | 697.000đ |'''
+  confidence: high
+  entity_id: product.software.cpanel.5acc
+  entity_name: 5 Account
+  entity_type: product_plan
+  observed_at: '2026-04-05T21:52:26.262460+07:00'
+  qualifiers:
+    billing_cycle: month
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-CPANEL_WHM_WEB_2026_04_05
+  unit: VND
+  valid_from: '2026-04-05'
+  value: 697000
+- approved_at: '2026-04-07T13:00:15.912770+07:00'
+  approved_by: admin-batch
+  attribute: target_product
+  claim_id: CLM-SOFT-CPANEL-TARGET_P
+  compiler_note: 'Trích từ Bảng giá, cột Đối tượng: ''VPS'''
+  confidence: high
+  entity_id: product.software.cpanel.5acc
+  entity_name: 5 Account
+  entity_type: product_plan
+  observed_at: '2026-04-05T21:52:26.268168+07:00'
+  qualifiers:
+    target_entity_id: ENT-PROD-VPS
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-CPANEL_WHM_WEB_2026_04_05
+  unit: null
+  valid_from: '2026-04-05'
+  value: VPS
+- approved_at: '2026-04-07T13:00:15.917783+07:00'
+  approved_by: admin-batch
+  attribute: category
+  claim_id: CLM-SOFT-CPANEL_WHM-CATEGORY
+  compiler_note: 'Trích từ mục Thông tin nguồn: • Danh mục: Phần mềm'
+  confidence: high
+  entity_id: product.software.cpanel_whm
+  entity_name: Bản quyền cPanel/WHM
+  entity_type: product
+  observed_at: '2026-04-06T23:00:29.619818+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: none
+  source_ids:
+  - SRC-BAN_QUYEN_CPANEL_WHM_2026_04_06
+  unit: null
+  valid_from: '2026-04-06'
+  value: Phần mềm
+- approved_at: '2026-04-07T13:00:15.922756+07:00'
+  approved_by: admin-batch
+  attribute: comparison
+  claim_id: CLM-SOFT-CPANEL_WHM-COMPARIS
+  compiler_note: 'Trích từ bảng So sánh các gói: | Tiêu chí | cPanel | DirectAdmin
+    | | Giao diện | Đẹp, hiện đại, dễ dùng | Đơn giản |'
+  confidence: high
+  entity_id: product.software.cpanel_whm
+  entity_name: Bản quyền cPanel/WHM
+  entity_type: product
+  observed_at: '2026-04-06T23:00:29.745773+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: none
+  source_ids:
+  - SRC-BAN_QUYEN_CPANEL_WHM_2026_04_06
+  unit: null
+  valid_from: '2026-04-06'
+  value: Giao diện được đánh giá là đẹp, hiện đại, dễ dùng so với DirectAdmin (đơn
+    giản).
+- approved_at: '2026-04-07T13:00:15.927977+07:00'
+  approved_by: admin-batch
+  attribute: component
+  claim_id: CLM-SOFT-CPANEL_WHM-COMPONEN
+  compiler_note: 'Trích từ mục Tóm tắt nhanh: Nó bao gồm giao diện cPanel cho người
+    dùng cuối và giao diện WHM (WebHost Manager) cho quản trị viên máy chủ.'
+  confidence: high
+  entity_id: product.software.cpanel_whm
+  entity_name: Bản quyền cPanel/WHM
+  entity_type: product
+  observed_at: '2026-04-06T23:00:29.635228+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: none
+  source_ids:
+  - SRC-BAN_QUYEN_CPANEL_WHM_2026_04_06
+  unit: null
+  valid_from: '2026-04-06'
+  value: WHM (WebHost Manager) (giao diện quản trị viên)
+  value_changed_at: '2026-04-06T23:00:29.635266+07:00'
+  value_changed_from: cPanel (giao diện người dùng cuối)
+- approved_at: '2026-04-07T13:00:15.934510+07:00'
+  approved_by: admin-batch
+  attribute: description
+  claim_id: CLM-SOFT-CPANEL_WHM-DESC
+  compiler_note: 'Trích từ mục Tóm tắt nhanh: • Dịch vụ này là gì: Cung cấp bản quyền
+    cPanel/WHM, một phần mềm quản lý hosting cho máy chủ chạy hệ điều hành Linux.'
+  confidence: high
+  entity_id: product.software.cpanel_whm
+  entity_name: Bản quyền cPanel/WHM
+  entity_type: product
+  observed_at: '2026-04-06T23:00:29.623211+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: none
+  source_ids:
+  - SRC-BAN_QUYEN_CPANEL_WHM_2026_04_06
+  unit: null
+  valid_from: '2026-04-06'
+  value: Cung cấp bản quyền cPanel/WHM, một phần mềm quản lý hosting cho máy chủ chạy
+    hệ điều hành Linux.
+- approved_at: '2026-04-07T13:00:15.939791+07:00'
+  approved_by: admin-batch
+  attribute: feature
+  claim_id: CLM-SOFT-CPANEL_WHM-FEATURE
+  compiler_note: 'Trích từ bảng Tính năng / Thành phần: | Preferences | Cho phép người
+    dùng tùy chỉnh giao diện, ngôn ngữ, mật khẩu, và các thiết lập khác của cPanel.
+    |'
+  confidence: high
+  entity_id: product.software.cpanel_whm
+  entity_name: Bản quyền cPanel/WHM
+  entity_type: product
+  observed_at: '2026-04-06T23:00:29.740844+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: none
+  source_ids:
+  - SRC-BAN_QUYEN_CPANEL_WHM_2026_04_06
+  unit: null
+  valid_from: '2026-04-06'
+  value: 'Preferences: cho phép người dùng tùy chỉnh giao diện, ngôn ngữ, mật khẩu.'
+  value_changed_at: '2026-04-06T23:00:29.740888+07:00'
+  value_changed_from: 'Metrics: cung cấp các công cụ thống kê và phân tích để theo
+    dõi lưu lượng truy cập, tài nguyên sử dụng.'
+- approved_at: '2026-04-07T13:00:15.944830+07:00'
+  approved_by: admin-batch
+  attribute: name
+  claim_id: CLM-SOFT-CPANEL_WHM-NAME
+  compiler_note: 'Trích từ tiêu đề chính: ═══ Bản quyền cPanel/WHM'
+  confidence: high
+  entity_id: product.software.cpanel_whm
+  entity_name: Bản quyền cPanel/WHM
+  entity_type: product
+  observed_at: '2026-04-06T23:00:29.611753+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: none
+  source_ids:
+  - SRC-BAN_QUYEN_CPANEL_WHM_2026_04_06
+  unit: null
+  valid_from: '2026-04-06'
+  value: Bản quyền cPanel/WHM
+- approved_at: '2026-04-07T13:00:15.949363+07:00'
+  approved_by: admin-batch
+  attribute: source_url
+  claim_id: CLM-SOFT-CPANEL_WHM-SOURCE_U
+  compiler_note: 'Trích từ mục Thông tin nguồn: • URL: https://www.bkns.vn/phan-mem/cpanel-whm.html'
+  confidence: high
+  entity_id: product.software.cpanel_whm
+  entity_name: Bản quyền cPanel/WHM
+  entity_type: product
+  observed_at: '2026-04-06T23:00:29.616127+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: none
+  source_ids:
+  - SRC-BAN_QUYEN_CPANEL_WHM_2026_04_06
+  unit: null
+  valid_from: '2026-04-06'
+  value: https://www.bkns.vn/phan-mem/cpanel-whm.html
+- approved_at: '2026-04-07T13:00:15.954623+07:00'
+  approved_by: admin-batch
+  attribute: system_requirement
+  claim_id: CLM-SOFT-CPANEL_WHM-SYSTEM_R
+  compiler_note: 'Trích từ mục Tóm tắt nhanh: • Điều kiện/giới hạn nổi bật (nếu có):
+    Dành riêng cho máy chủ sử dụng hệ điều hành Linux.'
+  confidence: high
+  entity_id: product.software.cpanel_whm
+  entity_name: Bản quyền cPanel/WHM
+  entity_type: product
+  observed_at: '2026-04-06T23:00:29.656207+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: none
+  source_ids:
+  - SRC-BAN_QUYEN_CPANEL_WHM_2026_04_06
+  unit: null
+  valid_from: '2026-04-06'
+  value: Hệ điều hành Linux
+- approved_at: '2026-04-07T13:00:15.958859+07:00'
+  approved_by: admin-batch
+  attribute: target_customer
+  claim_id: CLM-SOFT-CPANEL_WHM-TARGET_C
+  compiler_note: 'Trích từ mục Tóm tắt nhanh: • Phù hợp với: Cá nhân và doanh nghiệp
+    cần một công cụ quản lý máy chủ hosting với giao diện đồ họa trực quan, dễ sử
+    dụng.'
+  confidence: high
+  entity_id: product.software.cpanel_whm
+  entity_name: Bản quyền cPanel/WHM
+  entity_type: product
+  observed_at: '2026-04-06T23:00:29.639933+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: none
+  source_ids:
+  - SRC-BAN_QUYEN_CPANEL_WHM_2026_04_06
+  unit: null
+  valid_from: '2026-04-06'
+  value: Cá nhân và doanh nghiệp cần một công cụ quản lý máy chủ hosting với giao
+    diện đồ họa trực quan, dễ sử dụng.
+- approved_at: '2026-04-07T13:00:15.965006+07:00'
+  approved_by: admin-batch
+  attribute: account_limit
+  claim_id: CLM-SOFT-DIRECTADMIN-ACCOUNT_
+  compiler_note: 'Trích từ bảng giá: ''Lite | Giới hạn | 10 Account, 50 domain'''
+  confidence: high
+  entity_id: product.software.directadmin.lite
+  entity_name: DirectAdmin Lite
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:11:14.307549+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BANG_GIA_BAN_QUYEN_PHAN_MEM_QUAN_TRI_SERVER_DIRECTADMIN_2026_04_06
+  unit: Account
+  valid_from: '2026-04-06'
+  value: 10
+- approved_at: '2026-04-07T13:00:15.971476+07:00'
+  approved_by: admin-batch
+  attribute: description
+  claim_id: CLM-SOFT-DIRECTADMIN-DESC
+  compiler_note: 'Trích từ mục Mô tả dịch vụ: ''DirectAdmin là một phần mềm quản trị
+    server (control panel) có giao diện đồ họa, được biết đến như một giải pháp thay
+    thế cho cPanel.'''
+  confidence: high
+  entity_id: product.software.directadmin
+  entity_name: Bản quyền phần mềm DirectAdmin
+  entity_type: product
+  observed_at: '2026-04-06T23:11:14.224103+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BANG_GIA_BAN_QUYEN_PHAN_MEM_QUAN_TRI_SERVER_DIRECTADMIN_2026_04_06
+  unit: null
+  valid_from: '2026-04-06'
+  value: DirectAdmin là một phần mềm quản trị server (control panel) có giao diện
+    đồ họa, được biết đến như một giải pháp thay thế cho cPanel.
+  value_changed_at: '2026-04-06T23:11:14.224122+07:00'
+  value_changed_from: Cung cấp bản quyền phần mềm DirectAdmin, một control panel đồ
+    họa để quản trị web hosting, VPS và server.
+- approved_at: '2026-04-07T13:00:15.976779+07:00'
+  approved_by: admin-batch
+  attribute: domain_limit
+  claim_id: CLM-SOFT-DIRECTADMIN-DOMAIN_L
+  compiler_note: 'Trích từ bảng giá: ''Standard | Giới hạn | Không giới hạn số User,
+    domain'''
+  confidence: high
+  entity_id: product.software.directadmin.lite
+  entity_name: DirectAdmin Standard
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:11:14.339484+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BANG_GIA_BAN_QUYEN_PHAN_MEM_QUAN_TRI_SERVER_DIRECTADMIN_2026_04_06
+  unit: null
+  valid_from: '2026-04-06'
+  value: unlimited
+  value_changed_at: '2026-04-06T23:11:14.339509+07:00'
+  value_changed_from: 50
+- approved_at: '2026-04-07T13:00:15.981704+07:00'
+  approved_by: admin-batch
+  attribute: feature
+  claim_id: CLM-SOFT-DIRECTADMIN-FEATURE
+  compiler_note: 'Trích từ bảng giá: ''Standard | Loại License | Sử dụng cho IP theo
+    yêu cầu của khách hàng.'''
+  confidence: high
+  entity_id: product.software.directadmin
+  entity_name: DirectAdmin Standard
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:11:14.354385+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BANG_GIA_BAN_QUYEN_PHAN_MEM_QUAN_TRI_SERVER_DIRECTADMIN_2026_04_06
+  unit: null
+  valid_from: '2026-04-06'
+  value: Sử dụng cho IP theo yêu cầu của khách hàng.
+  value_changed_at: '2026-04-06T23:11:14.354406+07:00'
+  value_changed_from: Hỗ trợ cài đặt và tối ưu miễn phí.
+- approved_at: '2026-04-07T13:00:15.986856+07:00'
+  approved_by: admin-batch
+  attribute: policy
+  claim_id: CLM-SOFT-DIRECTADMIN-POLICY
+  compiler_note: 'Trích từ mục Chính sách / Điều khoản / Lưu ý: ''...và được hỗ trợ
+    đổi IP miễn phí (áp dụng cho IP thuộc BKNS).'''
+  confidence: high
+  entity_id: product.software.directadmin
+  entity_name: Bản quyền phần mềm DirectAdmin
+  entity_type: product
+  observed_at: '2026-04-06T23:11:14.300644+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BANG_GIA_BAN_QUYEN_PHAN_MEM_QUAN_TRI_SERVER_DIRECTADMIN_2026_04_06
+  unit: null
+  valid_from: '2026-04-06'
+  value: Khách hàng Thuê Server tại BKNS được hỗ trợ đổi IP miễn phí (áp dụng cho
+    IP thuộc BKNS).
+  value_changed_at: '2026-04-06T23:11:14.300672+07:00'
+  value_changed_from: DirectAdmin ngừng hỗ trợ đổi địa chỉ IP cho bản quyền lifetime.
+- approved_at: '2026-04-07T13:00:15.992310+07:00'
+  approved_by: admin-batch
+  attribute: price
+  claim_id: CLM-SOFT-DIRECTADMIN-PRICE
+  compiler_note: 'Trích từ bảng giá: ''Standard | Giá | 790.000/ Tháng''. Ghi chú
+    chung của bảng giá: ''áp dụng cho khách hàng sử dụng Cloud VPS / Server có IP
+    ngoài BKNS (External license)''.'
+  confidence: high
+  entity_id: product.software.directadmin.lite
+  entity_name: DirectAdmin Standard
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:11:14.332184+07:00'
+  qualifiers:
+    billing_cycle: month
+    license_type: external
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_BAN_QUYEN_PHAN_MEM_QUAN_TRI_SERVER_DIRECTADMIN_2026_04_06
+  unit: VND
+  valid_from: '2026-04-06'
+  value: 790000
+  value_changed_at: '2026-04-06T23:11:14.332239+07:00'
+  value_changed_from: 450000
+- approved_at: '2026-04-07T13:00:15.997292+07:00'
+  approved_by: admin-batch
+  attribute: promotion
+  claim_id: CLM-SOFT-DIRECTADMIN-PROMOTIO
+  compiler_note: 'Trích từ mục Chính sách / Điều khoản / Lưu ý: ''Ưu đãi cho khách
+    hàng tại BKNS: Khách hàng Thuê Server tại BKNS sẽ được miễn phí License DirectAdmin...'''
+  confidence: high
+  entity_id: product.software.directadmin
+  entity_name: Bản quyền phần mềm DirectAdmin
+  entity_type: product
+  observed_at: '2026-04-06T23:11:14.294868+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BANG_GIA_BAN_QUYEN_PHAN_MEM_QUAN_TRI_SERVER_DIRECTADMIN_2026_04_06
+  unit: null
+  valid_from: '2026-04-06'
+  value: Khách hàng Thuê Server tại BKNS sẽ được miễn phí License DirectAdmin.
+- approved_at: '2026-04-07T13:00:16.002366+07:00'
+  approved_by: admin-batch
+  attribute: target_audience
+  claim_id: CLM-SOFT-DIRECTADMIN-TARGET_A
+  compiler_note: 'Trích từ bảng giá: ''Standard | Đối tượng phù hợp | Đơn vị cung
+    cấp dịch vụ chuyên nghiệp, thiết kế web, kinh doanh Hosting.'''
+  confidence: high
+  entity_id: product.software.directadmin
+  entity_name: DirectAdmin Standard
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:11:14.344393+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BANG_GIA_BAN_QUYEN_PHAN_MEM_QUAN_TRI_SERVER_DIRECTADMIN_2026_04_06
+  unit: null
+  valid_from: '2026-04-06'
+  value: Đơn vị cung cấp dịch vụ chuyên nghiệp, thiết kế web, kinh doanh Hosting.
+  value_changed_at: '2026-04-06T23:11:14.344413+07:00'
+  value_changed_from: Cá nhân, nội bộ công ty, quy mô nhỏ, cần tạo ít tài khoản.
+- approved_at: '2026-04-07T13:00:16.007425+07:00'
+  approved_by: admin-batch
+  attribute: user_limit
+  claim_id: CLM-SOFT-DIRECTADMIN-USER_LIM
+  compiler_note: 'Trích từ bảng giá: ''Standard | Giới hạn | Không giới hạn số User,
+    domain'''
+  confidence: high
+  entity_id: product.software.directadmin.standard
+  entity_name: DirectAdmin Standard
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:11:14.335024+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BANG_GIA_BAN_QUYEN_PHAN_MEM_QUAN_TRI_SERVER_DIRECTADMIN_2026_04_06
+  unit: null
+  valid_from: '2026-04-06'
+  value: unlimited
+- approved_at: '2026-04-07T13:00:16.011595+07:00'
+  approved_by: admin-batch
+  attribute: acronym
+  claim_id: CLM-SOFT-DTI-ACRONYM
+  compiler_note: 'Trích từ đoạn giới thiệu: ''DTI (Digital Transformation Index) là
+    giải pháp...'''
+  confidence: high
+  entity_id: product.software.dti
+  entity_name: Phần Mềm Đánh Giá Chuyển Đổi Số DTI
+  entity_type: product
+  observed_at: '2026-04-05T21:58:27.988588+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DTI_WEB_2026_04_05
+  unit: ''
+  valid_from: '2026-04-05'
+  value: DTI
+- approved_at: '2026-04-07T13:00:16.015636+07:00'
+  approved_by: admin-batch
+  attribute: acronym_expansion
+  claim_id: CLM-SOFT-DTI-ACRONYM_
+  compiler_note: 'Trích từ đoạn giới thiệu: ''DTI (Digital Transformation Index) là
+    giải pháp...'''
+  confidence: high
+  entity_id: product.software.dti
+  entity_name: Phần Mềm Đánh Giá Chuyển Đổi Số DTI
+  entity_type: product
+  observed_at: '2026-04-05T21:58:27.992486+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DTI_WEB_2026_04_05
+  unit: ''
+  valid_from: '2026-04-05'
+  value: Digital Transformation Index
+- approved_at: '2026-04-07T13:00:16.020471+07:00'
+  approved_by: admin-batch
+  attribute: compliance
+  claim_id: CLM-SOFT-DTI-COMPLIAN
+  compiler_note: 'Trích từ mục Đặc điểm: ''- Theo tiêu chuẩn Bộ TT&TT'''
+  confidence: high
+  entity_id: product.software.dti
+  entity_name: Phần Mềm Đánh Giá Chuyển Đổi Số DTI
+  entity_type: product
+  observed_at: '2026-04-05T21:58:28.011163+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DTI_WEB_2026_04_05
+  unit: ''
+  valid_from: '2026-04-05'
+  value: Theo tiêu chuẩn Bộ TT&TT
+- approved_at: '2026-04-07T13:00:16.025462+07:00'
+  approved_by: admin-batch
+  attribute: data_crawl_timestamp
+  claim_id: CLM-SOFT-DTI-DATA_CRA
+  compiler_note: 'Trích từ: ''- Ngày crawl: 2026-04-05T14:25:00+07:00'''
+  confidence: high
+  entity_id: product.software.dti
+  entity_name: Phần Mềm Đánh Giá Chuyển Đổi Số DTI
+  entity_type: product
+  observed_at: '2026-04-05T21:58:28.017305+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DTI_WEB_2026_04_05
+  unit: ''
+  valid_from: '2026-04-05'
+  value: '2026-04-05T14:25:00+07:00'
+- approved_at: '2026-04-07T13:00:16.029869+07:00'
+  approved_by: admin-batch
+  attribute: description
+  claim_id: CLM-SOFT-DTI-DESC
+  compiler_note: 'Trích từ đoạn giới thiệu: ''DTI (Digital Transformation Index) là
+    giải pháp đánh giá mức độ chuyển đổi số của doanh nghiệp.'''
+  confidence: high
+  entity_id: product.software.dti
+  entity_name: Phần Mềm Đánh Giá Chuyển Đổi Số DTI
+  entity_type: product
+  observed_at: '2026-04-05T21:58:27.995811+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DTI_WEB_2026_04_05
+  unit: ''
+  valid_from: '2026-04-05'
+  value: Là giải pháp đánh giá mức độ chuyển đổi số của doanh nghiệp.
+- approved_at: '2026-04-07T13:00:16.034358+07:00'
+  approved_by: admin-batch
+  attribute: based_on_standard
+  claim_id: CLM-SOFT-DTI_EVALUATION-BASED_ON
+  compiler_note: 'Trích từ phần ''Mô tả dịch vụ'': Công cụ này hoạt động dựa trên
+    Bộ chỉ số đánh giá chuyển đổi số (DTI) được ban hành bởi Bộ Thông tin và Truyền
+    thông, giúp các đơn vị có một hệ thống tham chiếu chuẩn để theo dõi tiến độ, tổng
+    hợp số liệu và đưa ra các báo cáo cần thiết.'
+  confidence: high
+  entity_id: product.software.dti_evaluation
+  entity_name: Phần Mềm Đánh Giá Chuyển Đổi Số DTI
+  entity_type: product
+  observed_at: '2026-04-07T00:45:52.615373+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-PHAN_MEM_ANH_GIA_CHUYEN_OI_SO_DTI_2026_04_06
+  unit: null
+  valid_from: '2026-04-07'
+  value: Bộ chỉ số đánh giá chuyển đổi số (DTI) được ban hành bởi Bộ Thông tin và
+    Truyền thông
+- approved_at: '2026-04-07T13:00:16.038879+07:00'
+  approved_by: admin-batch
+  attribute: category
+  claim_id: CLM-SOFT-DTI_EVALUATION-CATEGORY
+  compiler_note: 'Trích từ phần ''Thông tin nguồn'': • Danh mục: Phần mềm'
+  confidence: high
+  entity_id: product.software.dti_evaluation
+  entity_name: Phần Mềm Đánh Giá Chuyển Đổi Số DTI
+  entity_type: product
+  observed_at: '2026-04-07T00:45:52.607357+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-PHAN_MEM_ANH_GIA_CHUYEN_OI_SO_DTI_2026_04_06
+  unit: null
+  valid_from: '2026-04-07'
+  value: Phần mềm
+- approved_at: '2026-04-07T13:00:16.043432+07:00'
+  approved_by: admin-batch
+  attribute: description
+  claim_id: CLM-SOFT-DTI_EVALUATION-DESC
+  compiler_note: 'Trích từ phần ''Tóm tắt nhanh'': • Dịch vụ này là gì: Là một công
+    cụ phần mềm dùng để đánh giá mức độ chuyển đổi số theo phân cấp địa phương, dựa
+    trên bộ chỉ số DTI (Digital Transformation Index) do Bộ Thông tin và Truyền thông
+    ban hành.'
+  confidence: high
+  entity_id: product.software.dti_evaluation
+  entity_name: Phần Mềm Đánh Giá Chuyển Đổi Số DTI
+  entity_type: product
+  observed_at: '2026-04-07T00:45:52.610142+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-PHAN_MEM_ANH_GIA_CHUYEN_OI_SO_DTI_2026_04_06
+  unit: null
+  valid_from: '2026-04-07'
+  value: Là một công cụ phần mềm dùng để đánh giá mức độ chuyển đổi số theo phân cấp
+    địa phương, dựa trên bộ chỉ số DTI (Digital Transformation Index) do Bộ Thông
+    tin và Truyền thông ban hành.
+- approved_at: '2026-04-07T13:00:16.048357+07:00'
+  approved_by: admin-batch
+  attribute: feature
+  claim_id: CLM-SOFT-DTI_EVALUATION-FEATURE
+  compiler_note: 'Trích từ bảng giá, cột ''Gói Vĩnh viễn'', hàng ''Chức năng'': Cấu
+    hình và phát triển theo yêu cầu của Tỉnh'
+  confidence: high
+  entity_id: product.software.dti_evaluation
+  entity_name: Gói Vĩnh viễn
+  entity_type: product_plan
+  observed_at: '2026-04-07T00:45:52.694449+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-PHAN_MEM_ANH_GIA_CHUYEN_OI_SO_DTI_2026_04_06
+  unit: null
+  valid_from: '2026-04-07'
+  value: Cấu hình và phát triển theo yêu cầu của Tỉnh
+  value_changed_at: '2026-04-07T00:45:52.694467+07:00'
+  value_changed_from: Bản đồ số liệu trong tỉnh
+- approved_at: '2026-04-07T13:00:16.053250+07:00'
+  approved_by: admin-batch
+  attribute: price
+  claim_id: CLM-SOFT-DTI_EVALUATION-PRICE
+  compiler_note: 'Trích từ bảng giá, cột ''Gói Vĩnh viễn (trả phí một lần)'', hàng
+    ''Giá'': 1.910.000.000 VNĐ'
+  confidence: high
+  entity_id: product.software.dti_evaluation.basic
+  entity_name: Gói Vĩnh viễn
+  entity_type: product_plan
+  observed_at: '2026-04-07T00:45:52.702581+07:00'
+  qualifiers:
+    billing_cycle: one-time
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-PHAN_MEM_ANH_GIA_CHUYEN_OI_SO_DTI_2026_04_06
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 1910000000
+  value_changed_at: '2026-04-07T00:45:52.702600+07:00'
+  value_changed_from: 910000000
+- approved_at: '2026-04-07T13:00:16.057722+07:00'
+  approved_by: admin-batch
+  attribute: support_type
+  claim_id: CLM-SOFT-DTI_EVALUATION-SUPPORT_
+  compiler_note: 'Trích từ bảng giá, cột ''Gói Vĩnh viễn'', hàng ''Hỗ trợ'': 24/7
+    trong vòng 3 năm'
+  confidence: high
+  entity_id: product.software.dti_evaluation.basic
+  entity_name: Gói Vĩnh viễn
+  entity_type: product_plan
+  observed_at: '2026-04-07T00:45:52.698391+07:00'
+  qualifiers:
+    support_type: 24/7
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-PHAN_MEM_ANH_GIA_CHUYEN_OI_SO_DTI_2026_04_06
+  unit: year
+  valid_from: '2026-04-07'
+  value: 3
+  value_changed_at: '2026-04-07T00:45:52.698408+07:00'
+  value_changed_from: 24/7
+- approved_at: '2026-04-07T13:00:16.062518+07:00'
+  approved_by: admin-batch
+  attribute: target_customer
+  claim_id: CLM-SOFT-DTI_EVALUATION-TARGET_C
+  compiler_note: 'Trích từ phần ''Tóm tắt nhanh'': • Phù hợp với: Các cơ quan, đơn
+    vị, tỉnh thành cần một công cụ để theo dõi, báo cáo, và so sánh tiến độ chuyển
+    đổi số.'
+  confidence: high
+  entity_id: product.software.dti_evaluation
+  entity_name: Phần Mềm Đánh Giá Chuyển Đổi Số DTI
+  entity_type: product
+  observed_at: '2026-04-07T00:45:52.612980+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-PHAN_MEM_ANH_GIA_CHUYEN_OI_SO_DTI_2026_04_06
+  unit: null
+  valid_from: '2026-04-07'
+  value: Các cơ quan, đơn vị, tỉnh thành cần một công cụ để theo dõi, báo cáo, và
+    so sánh tiến độ chuyển đổi số.
+- approved_at: '2026-04-07T13:00:16.067698+07:00'
+  approved_by: admin-batch
+  attribute: term
+  claim_id: CLM-SOFT-DTI_EVALUATION-TERM
+  compiler_note: 'Trích từ bảng giá, cột ''Gói Vĩnh viễn'', hàng ''Thời gian'': Vĩnh
+    viễn'
+  confidence: high
+  entity_id: product.software.dti_evaluation.perpetual
+  entity_name: Gói Vĩnh viễn
+  entity_type: product_plan
+  observed_at: '2026-04-07T00:45:52.685757+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-PHAN_MEM_ANH_GIA_CHUYEN_OI_SO_DTI_2026_04_06
+  unit: null
+  valid_from: '2026-04-07'
+  value: perpetual
+- approved_at: '2026-04-07T13:00:16.072017+07:00'
+  approved_by: admin-batch
+  attribute: term_duration
+  claim_id: CLM-SOFT-DTI_EVALUATION-TERM_DUR
+  compiler_note: 'Trích từ bảng giá, cột ''Gói Nâng cao'', hàng ''Thời gian'': 1 năm'
+  confidence: high
+  entity_id: product.software.dti_evaluation.basic
+  entity_name: Gói Nâng cao
+  entity_type: product_plan
+  observed_at: '2026-04-07T00:45:52.669197+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-PHAN_MEM_ANH_GIA_CHUYEN_OI_SO_DTI_2026_04_06
+  unit: year
+  valid_from: '2026-04-07'
+  value: 1
+- approved_at: '2026-04-07T13:00:16.076379+07:00'
+  approved_by: admin-batch
+  attribute: url
+  claim_id: CLM-SOFT-DTI_EVALUATION-URL
+  compiler_note: 'Trích từ phần ''Thông tin nguồn'': • URL: https://www.bkns.vn/phan-mem-danh-gia-chuyen-doi-so-dti.html'
+  confidence: high
+  entity_id: product.software.dti_evaluation
+  entity_name: Phần Mềm Đánh Giá Chuyển Đổi Số DTI
+  entity_type: product
+  observed_at: '2026-04-07T00:45:52.604519+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-PHAN_MEM_ANH_GIA_CHUYEN_OI_SO_DTI_2026_04_06
+  unit: null
+  valid_from: '2026-04-07'
+  value: https://www.bkns.vn/phan-mem-danh-gia-chuyen-doi-so-dti.html
+- approved_at: '2026-04-07T13:00:16.080791+07:00'
+  approved_by: admin-batch
+  attribute: user_accounts_limit
+  claim_id: CLM-SOFT-DTI_EVALUATION-USER_ACC
+  compiler_note: 'Trích từ bảng giá, cột ''Gói Vĩnh viễn'', hàng ''Số lượng tài khoản'':
+    Không giới hạn'
+  confidence: high
+  entity_id: product.software.dti_evaluation.basic
+  entity_name: Gói Vĩnh viễn
+  entity_type: product_plan
+  observed_at: '2026-04-07T00:45:52.690109+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-PHAN_MEM_ANH_GIA_CHUYEN_OI_SO_DTI_2026_04_06
+  unit: null
+  valid_from: '2026-04-07'
+  value: unlimited
+  value_changed_at: '2026-04-07T00:45:52.672954+07:00'
+  value_changed_from: 200
+- approved_at: '2026-04-07T13:00:16.086272+07:00'
+  approved_by: admin-batch
+  attribute: feature
+  claim_id: CLM-SOFT-DTI-FEATURE
+  compiler_note: 'Trích từ mục Đặc điểm: ''- Đề xuất lộ trình chuyển đổi số'''
+  confidence: high
+  entity_id: product.software.dti
+  entity_name: Phần Mềm Đánh Giá Chuyển Đổi Số DTI
+  entity_type: product
+  observed_at: '2026-04-05T21:58:28.005097+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DTI_WEB_2026_04_05
+  unit: ''
+  valid_from: '2026-04-05'
+  value: Đề xuất lộ trình chuyển đổi số
+- approved_at: '2026-04-07T13:00:16.091080+07:00'
+  approved_by: admin-batch
+  attribute: source_url
+  claim_id: CLM-SOFT-DTI-SOURCE_U
+  compiler_note: 'Trích từ: ''- Nguồn: https://www.bkns.vn/phan-mem-danh-gia-chuyen-doi-so-dti.html'''
+  confidence: high
+  entity_id: product.software.dti
+  entity_name: Phần Mềm Đánh Giá Chuyển Đổi Số DTI
+  entity_type: product
+  observed_at: '2026-04-05T21:58:28.014192+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DTI_WEB_2026_04_05
+  unit: ''
+  valid_from: '2026-04-05'
+  value: https://www.bkns.vn/phan-mem-danh-gia-chuyen-doi-so-dti.html
+- approved_at: '2026-04-07T13:00:16.096003+07:00'
+  approved_by: admin-batch
+  attribute: compatibility
+  claim_id: CLM-SOFT-IMUNIFY360-COMPATIB
+  compiler_note: 'Trích từ mục Liên kết liên quan: • cPanel'
+  confidence: high
+  entity_id: product.software.imunify360
+  entity_name: Imunify360
+  entity_type: product
+  observed_at: '2026-04-06T23:18:22.017086+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: none
+  source_ids:
+  - SRC-BANG_GIA_IMUNIFY360_GIAI_PHAP_BAO_MAT_SERVER_BANG_AI_2026_04_06
+  unit: null
+  valid_from: '2026-04-06'
+  value: cPanel
+  value_changed_at: '2026-04-06T23:18:22.017106+07:00'
+  value_changed_from: Softaculous
+- approved_at: '2026-04-07T13:00:16.102428+07:00'
+  approved_by: admin-batch
+  attribute: description
+  claim_id: CLM-SOFT-IMUNIFY360-DESC
+  compiler_note: 'Trích từ phần Giới thiệu: ''Imunify360 là giải pháp bảo mật server
+    toàn diện, sử dụng AI để phát hiện và ngăn chặn mối đe dọa.'''
+  confidence: high
+  entity_id: product.software.imunify360
+  entity_name: Imunify360
+  entity_type: product
+  observed_at: '2026-04-05T22:06:04.975936+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-IMUNIFY360_WEB_2026_04_05
+  unit: null
+  valid_from: '2026-04-05'
+  value: giải pháp bảo mật server toàn diện, sử dụng AI để phát hiện và ngăn chặn
+    mối đe dọa
+- approved_at: '2026-04-07T13:00:16.107960+07:00'
+  approved_by: admin-batch
+  attribute: feature
+  claim_id: CLM-SOFT-IMUNIFY360-FEATURE
+  compiler_note: 'Trích từ mục Điểm chính: Giúp bảo vệ server khỏi việc bị nhiễm mã
+    độc và ngăn chặn sự tiếp cận trái phép từ hacker.'
+  confidence: high
+  entity_id: product.software.imunify360
+  entity_name: Imunify360
+  entity_type: product
+  observed_at: '2026-04-06T23:18:21.983169+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: none
+  source_ids:
+  - SRC-BANG_GIA_IMUNIFY360_GIAI_PHAP_BAO_MAT_SERVER_BANG_AI_2026_04_06
+  unit: null
+  valid_from: '2026-04-06'
+  value: Ngăn chặn sự tiếp cận trái phép từ hacker
+  value_changed_at: '2026-04-06T23:18:21.983218+07:00'
+  value_changed_from: Bảo vệ server khỏi việc bị nhiễm mã độc
+- approved_at: '2026-04-07T13:00:16.113684+07:00'
+  approved_by: admin-batch
+  attribute: licensing_policy
+  claim_id: CLM-SOFT-IMUNIFY360-LICENSIN
+  compiler_note: 'Trích từ phần Bản quyền: ''- Tính theo IP (có thể thay đổi IP)'''
+  confidence: high
+  entity_id: product.software.imunify360
+  entity_name: Imunify360
+  entity_type: product
+  observed_at: '2026-04-05T22:06:05.021781+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-IMUNIFY360_WEB_2026_04_05
+  unit: null
+  valid_from: '2026-04-05'
+  value: có thể thay đổi IP
+- approved_at: '2026-04-07T13:00:16.119306+07:00'
+  approved_by: admin-batch
+  attribute: product_name
+  claim_id: CLM-SOFT-IMUNIFY360-PRODUCT_
+  compiler_note: 'Trích từ mục Tóm tắt nhanh: • Dịch vụ này là gì: Imunify360 là một
+    giải pháp bảo mật dành cho server, được xây dựng dựa trên công nghệ Trí tuệ nhân
+    tạo (AI).'
+  confidence: high
+  entity_id: product.software.imunify360
+  entity_name: Imunify360
+  entity_type: product
+  observed_at: '2026-04-06T23:18:21.969270+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: none
+  source_ids:
+  - SRC-BANG_GIA_IMUNIFY360_GIAI_PHAP_BAO_MAT_SERVER_BANG_AI_2026_04_06
+  unit: null
+  valid_from: '2026-04-06'
+  value: Giải pháp bảo mật dành cho server
+  value_changed_at: '2026-04-06T23:18:21.969288+07:00'
+  value_changed_from: https://www.bkns.vn/phan-mem/imunify360.html
+- approved_at: '2026-04-07T13:00:16.125148+07:00'
+  approved_by: admin-batch
+  attribute: supported_os
+  claim_id: CLM-SOFT-IMUNIFY360-SUPPORTE
+  compiler_note: 'Trích từ phần Hệ điều hành hỗ trợ: ''- Ubuntu 16.04'''
+  confidence: high
+  entity_id: product.software.imunify360
+  entity_name: Imunify360
+  entity_type: product
+  observed_at: '2026-04-05T22:06:05.010262+07:00'
+  qualifiers:
+    version: '16.04'
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-IMUNIFY360_WEB_2026_04_05
+  unit: null
+  valid_from: '2026-04-05'
+  value: Ubuntu
+- approved_at: '2026-04-07T13:00:16.131227+07:00'
+  approved_by: admin-batch
+  attribute: target_audience
+  claim_id: CLM-SOFT-IMUNIFY360-TARGET_A
+  compiler_note: 'Trích từ mục Tóm tắt nhanh: • Phù hợp với: Các cá nhân, doanh nghiệp
+    quản trị server và muốn bảo vệ hệ thống khỏi các mối đe dọa như mã độc, tấn công
+    từ hacker.'
+  confidence: high
+  entity_id: product.software.imunify360
+  entity_name: Imunify360
+  entity_type: product
+  observed_at: '2026-04-06T23:18:21.974300+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: none
+  source_ids:
+  - SRC-BANG_GIA_IMUNIFY360_GIAI_PHAP_BAO_MAT_SERVER_BANG_AI_2026_04_06
+  unit: null
+  valid_from: '2026-04-06'
+  value: Các cá nhân, doanh nghiệp quản trị server
+- approved_at: '2026-04-07T13:00:16.137372+07:00'
+  approved_by: admin-batch
+  attribute: technology
+  claim_id: CLM-SOFT-IMUNIFY360-TECHNOLO
+  compiler_note: 'Trích từ mục Tóm tắt nhanh: • Dịch vụ này là gì: Imunify360 là một
+    giải pháp bảo mật dành cho server, được xây dựng dựa trên công nghệ Trí tuệ nhân
+    tạo (AI).'
+  confidence: high
+  entity_id: product.software.imunify360
+  entity_name: Imunify360
+  entity_type: product
+  observed_at: '2026-04-06T23:18:21.971709+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: none
+  source_ids:
+  - SRC-BANG_GIA_IMUNIFY360_GIAI_PHAP_BAO_MAT_SERVER_BANG_AI_2026_04_06
+  unit: null
+  valid_from: '2026-04-06'
+  value: Trí tuệ nhân tạo (AI)
+- approved_at: '2026-04-07T13:00:16.146787+07:00'
+  approved_by: admin-batch
+  attribute: product.description
+  claim_id: CLM-SOFT-LITESPEED_WEB_SERVER-PRODUCT.
+  compiler_note: 'Trích từ Điều kiện/giới hạn nổi bật: Phiên bản LiteSpeed Enterprise
+    là phần mềm thương mại có tính phí...'
+  confidence: high
+  entity_id: product.software.litespeed_web_server
+  entity_name: LiteSpeed Enterprise
+  entity_type: product_software_plan
+  observed_at: '2026-04-07T00:44:12.008589+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-LITESPEED_WEB_SERVER_TINH_NANG_PHIEN_BAN_VA_SO_SANH_2026_04_06
+  unit: null
+  valid_from: '2026-04-07'
+  value: thương mại
+  value_changed_at: '2026-04-07T00:44:12.008611+07:00'
+  value_changed_from: Hiệu quả hơn so với Mod_Rewrite của Apache do được viết lại
+- approved_at: '2026-04-07T13:00:16.157470+07:00'
+  approved_by: admin-batch
+  attribute: description
+  claim_id: CLM-SOFT-PLESK-DESC
+  compiler_note: 'Dịch vụ này là gì: Cung cấp bản quyền phần mềm quản trị hosting
+    Plesk Obsidian cho VPS và máy chủ riêng (Dedicated Server).'
+  confidence: high
+  entity_id: product.software.plesk.obsidian
+  entity_name: Plesk Obsidian License
+  entity_type: product_offering
+  observed_at: '2026-04-07T00:47:54.048219+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-PHAN_MEM_QUAN_TRI_HOSTING_PLESK_OBSIDIAN_2026_04_06
+  unit: null
+  valid_from: '2026-04-07'
+  value: Cung cấp bản quyền phần mềm quản trị hosting Plesk Obsidian cho VPS và máy
+    chủ riêng (Dedicated Server).
+- approved_at: '2026-04-07T13:00:16.168053+07:00'
+  approved_by: admin-batch
+  attribute: domain_limit
+  claim_id: CLM-SOFT-PLESK-DOMAIN_L
+  compiler_note: 'Web Host Edition: Không giới hạn domain, phù hợp để hosting và bán
+    lại hosting.'
+  confidence: high
+  entity_id: product.software.plesk.edition.web_admin
+  entity_name: Plesk Obsidian - Web Host Edition
+  entity_type: product_edition
+  observed_at: '2026-04-07T00:47:54.113375+07:00'
+  qualifiers:
+    limit_type: unlimited
+  review_state: approved
+  risk_class: medium
+  source_ids:
+  - SRC-PHAN_MEM_QUAN_TRI_HOSTING_PLESK_OBSIDIAN_2026_04_06
+  unit: domains
+  valid_from: '2026-04-07'
+  value: -1
+  value_changed_at: '2026-04-07T00:47:54.113413+07:00'
+  value_changed_from: 30
+- approved_at: '2026-04-07T13:00:16.178836+07:00'
+  approved_by: admin-batch
+  attribute: feature.reseller_management
+  claim_id: CLM-SOFT-PLESK-FEATURE.
+  compiler_note: 'Trích từ bảng so sánh, dòng Account Management, cột Web Pro Edition:
+    ✅'
+  confidence: high
+  entity_id: product.software.plesk.edition.web_admin
+  entity_name: Plesk Obsidian - Web Pro Edition
+  entity_type: product_edition
+  observed_at: '2026-04-07T00:47:54.151964+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-PHAN_MEM_QUAN_TRI_HOSTING_PLESK_OBSIDIAN_2026_04_06
+  unit: null
+  valid_from: '2026-04-07'
+  value: true
+  value_changed_at: '2026-04-07T00:47:54.152005+07:00'
+  value_changed_from: false
+- approved_at: '2026-04-07T13:00:16.188407+07:00'
+  approved_by: admin-batch
+  attribute: crawl_date
+  claim_id: CLM-SOFT-PLESK_OBSIDIAN-CRAWL_DA
+  compiler_note: 'Trích từ: ''Ngày crawl: 2026-04-05T14:25:00+07:00'''
+  confidence: high
+  entity_id: product.software.plesk_obsidian
+  entity_name: Plesk Obsidian
+  entity_type: product
+  observed_at: '2026-04-05T22:09:26.922354+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-PLESK_OBSIDIAN_WEB_2026_04_05
+  unit: ''
+  valid_from: '2026-04-05'
+  value: '2026-04-05T14:25:00+07:00'
+- approved_at: '2026-04-07T13:00:16.197845+07:00'
+  approved_by: admin-batch
+  attribute: description
+  claim_id: CLM-SOFT-PLESK_OBSIDIAN-DESC
+  compiler_note: 'Trích từ Tóm tắt nhanh: Dịch vụ này là gì: Cung cấp bản quyền phần
+    mềm quản trị hosting Plesk Obsidian cho VPS và máy chủ riêng (Dedicated Server).'
+  confidence: high
+  entity_id: product.software.plesk_obsidian
+  entity_name: Plesk Obsidian
+  entity_type: product
+  observed_at: '2026-04-04T21:08:50.860233+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-PHAN_MEM_QUAN_TRI_HOSTING_PLESK_OBSIDIAN_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: Cung cấp bản quyền phần mềm quản trị hosting Plesk Obsidian cho VPS và máy
+    chủ riêng (Dedicated Server).
+- approved_at: '2026-04-07T13:00:16.207044+07:00'
+  approved_by: admin-batch
+  attribute: feature
+  claim_id: CLM-SOFT-PLESK_OBSIDIAN-FEATURE
+  compiler_note: 'Trích từ: ''Security Advisor'''
+  confidence: high
+  entity_id: product.software.plesk_obsidian
+  entity_name: Plesk Obsidian
+  entity_type: product
+  observed_at: '2026-04-05T22:09:26.910493+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-PLESK_OBSIDIAN_WEB_2026_04_05
+  unit: ''
+  valid_from: '2026-04-05'
+  value: Security Advisor
+- approved_at: '2026-04-07T13:00:16.215527+07:00'
+  approved_by: admin-batch
+  attribute: product_type
+  claim_id: CLM-SOFT-PLESK_OBSIDIAN-PRODUCT_
+  compiler_note: 'Trích từ: ''Plesk Obsidian là control panel premium...'''
+  confidence: high
+  entity_id: product.software.plesk_obsidian
+  entity_name: Plesk Obsidian
+  entity_type: product
+  observed_at: '2026-04-05T22:09:26.869688+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-PLESK_OBSIDIAN_WEB_2026_04_05
+  unit: ''
+  valid_from: '2026-04-05'
+  value: control panel premium
+- approved_at: '2026-04-07T13:00:16.220449+07:00'
+  approved_by: admin-batch
+  attribute: source_url
+  claim_id: CLM-SOFT-PLESK_OBSIDIAN-SOURCE_U
+  compiler_note: 'Trích từ: ''Nguồn: https://www.bkns.vn/phan-mem/plesk-obsidian.html'''
+  confidence: high
+  entity_id: product.software.plesk_obsidian
+  entity_name: Plesk Obsidian
+  entity_type: product
+  observed_at: '2026-04-05T22:09:26.917922+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-PLESK_OBSIDIAN_WEB_2026_04_05
+  unit: ''
+  valid_from: '2026-04-05'
+  value: https://www.bkns.vn/phan-mem/plesk-obsidian.html
+- approved_at: '2026-04-07T13:00:16.224336+07:00'
+  approved_by: admin-batch
+  attribute: supported_os
+  claim_id: CLM-SOFT-PLESK_OBSIDIAN-SUPPORTE
+  compiler_note: 'Trích từ: ''Hỗ trợ Linux + Windows'''
+  confidence: high
+  entity_id: product.software.plesk_obsidian
+  entity_name: Plesk Obsidian
+  entity_type: product
+  observed_at: '2026-04-05T22:09:26.877298+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-PLESK_OBSIDIAN_WEB_2026_04_05
+  unit: ''
+  valid_from: '2026-04-05'
+  value: Windows
+- approved_at: '2026-04-07T13:00:16.228594+07:00'
+  approved_by: admin-batch
+  attribute: target_customer
+  claim_id: CLM-SOFT-PLESK_OBSIDIAN-TARGET_C
+  compiler_note: 'Trích từ Tóm tắt nhanh: Phù hợp với: Quản trị viên máy chủ, nhà
+    cung cấp dịch vụ hosting, và các nhà phát triển web cần một giao diện để quản
+    lý máy chủ.'
+  confidence: high
+  entity_id: product.software.plesk_obsidian
+  entity_name: Plesk Obsidian
+  entity_type: product
+  observed_at: '2026-04-04T21:08:50.864227+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-PHAN_MEM_QUAN_TRI_HOSTING_PLESK_OBSIDIAN_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: Quản trị viên máy chủ
+- approved_at: '2026-04-07T13:00:16.234122+07:00'
+  approved_by: admin-batch
+  attribute: policy.add_on
+  claim_id: CLM-SOFT-PLESK-POLICY.A
+  compiler_note: Các tính năng có ghi chú là "Available as Add-on" (biểu tượng ➕ trong
+    bảng so sánh) là các tùy chọn cần mua thêm, không bao gồm trong giá gói cơ bản.
+  confidence: high
+  entity_id: product.software.plesk.obsidian
+  entity_name: Plesk Obsidian License
+  entity_type: product_offering
+  observed_at: '2026-04-07T00:47:54.097608+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-PHAN_MEM_QUAN_TRI_HOSTING_PLESK_OBSIDIAN_2026_04_06
+  unit: null
+  valid_from: '2026-04-07'
+  value: Các tính năng có ghi chú là 'Available as Add-on' (biểu tượng ➕) là các tùy
+    chọn cần mua thêm và không bao gồm trong giá gói cơ bản.
+- approved_at: '2026-04-07T13:00:16.239690+07:00'
+  approved_by: admin-batch
+  attribute: monthly_price
+  claim_id: CLM-SOFT-PLESK-PRICE
+  compiler_note: 'Trích từ bảng giá PLESK DEDICATED LICENSE: | Developer Pack | 500.000
+    |'
+  confidence: high
+  entity_id: product.software.plesk.vps.web_admin
+  entity_name: Plesk Obsidian - Developer Pack - Dedicated
+  entity_type: product_plan
+  observed_at: '2026-04-07T00:47:54.091548+07:00'
+  qualifiers:
+    billing_cycle: month
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-PHAN_MEM_QUAN_TRI_HOSTING_PLESK_OBSIDIAN_2026_04_06
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 500000
+  value_changed_at: '2026-04-07T00:47:54.091635+07:00'
+  value_changed_from: 1975000
+- approved_at: '2026-04-07T13:00:16.245411+07:00'
+  approved_by: admin-batch
+  attribute: registration_process
+  claim_id: CLM-SOFT-PLESK-REGISTRA
+  compiler_note: Khách hàng có thể đặt mua license trực tiếp trên trang dịch vụ bằng
+    cách nhấn vào nút "ĐẶT MUA" tương ứng với gói đã chọn. Hệ thống sẽ chuyển hướng
+    đến giỏ hàng trên trang my.bkns.net để hoàn tất thanh toán.
+  confidence: high
+  entity_id: product.software.plesk.obsidian
+  entity_name: Plesk Obsidian License
+  entity_type: product_offering
+  observed_at: '2026-04-07T00:47:54.094604+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-PHAN_MEM_QUAN_TRI_HOSTING_PLESK_OBSIDIAN_2026_04_06
+  unit: null
+  valid_from: '2026-04-07'
+  value: Đặt mua license trực tiếp trên trang dịch vụ bằng cách nhấn vào nút 'ĐẶT
+    MUA', sau đó hoàn tất thanh toán trên trang my.bkns.net.
+- approved_at: '2026-04-07T13:00:16.250348+07:00'
+  approved_by: admin-batch
+  attribute: target_audience
+  claim_id: CLM-SOFT-PLESK-TARGET_A
+  compiler_note: 'Phù hợp với: Quản trị viên máy chủ, nhà cung cấp dịch vụ hosting,
+    và các nhà phát triển web cần một giao diện để quản lý máy chủ.'
+  confidence: high
+  entity_id: product.software.plesk.obsidian
+  entity_name: Plesk Obsidian License
+  entity_type: product_offering
+  observed_at: '2026-04-07T00:47:54.052385+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-PHAN_MEM_QUAN_TRI_HOSTING_PLESK_OBSIDIAN_2026_04_06
+  unit: null
+  valid_from: '2026-04-07'
+  value: Quản trị viên máy chủ, nhà cung cấp dịch vụ hosting, và các nhà phát triển
+    web cần một giao diện để quản lý máy chủ.
+- approved_at: '2026-04-07T13:00:16.255623+07:00'
+  approved_by: admin-batch
+  attribute: description
+  claim_id: CLM-SOFT-SOFTACULOUS-DESC
+  compiler_note: 'Trích từ mục ''Giới thiệu'': ''Softaculous là auto-installer cho
+    400+ script/ứng dụng web phổ biến.'''
+  confidence: high
+  entity_id: prod.software.softaculous
+  entity_name: Softaculous
+  entity_type: product_software
+  observed_at: '2026-04-05T22:13:59.472122+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-SOFTACULOUS_WEB_2026_04_05
+  unit: null
+  valid_from: '2026-04-05'
+  value: Softaculous là auto-installer cho 400+ script/ứng dụng web phổ biến.
+- approved_at: '2026-04-07T13:00:16.261405+07:00'
+  approved_by: admin-batch
+  attribute: feature
+  claim_id: CLM-SOFT-SOFTACULOUS-FEATURE
+  compiler_note: 'Trích từ mục ''Đặc điểm'': ''- Staging environment'''
+  confidence: high
+  entity_id: prod.software.softaculous
+  entity_name: Softaculous
+  entity_type: product_software
+  observed_at: '2026-04-05T22:13:59.501412+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-SOFTACULOUS_WEB_2026_04_05
+  unit: null
+  valid_from: '2026-04-05'
+  value: Staging environment
+- approved_at: '2026-04-07T13:00:16.265970+07:00'
+  approved_by: admin-batch
+  attribute: product_category
+  claim_id: CLM-SOFT-SOFTACULOUS-PRODUCT_
+  compiler_note: 'Trích từ tiêu đề chính của trang: ''# Bản Quyền Softaculous - Trình
+    Cài Đặt Ứng Dụng Tự Động'''
+  confidence: high
+  entity_id: prod.software.softaculous
+  entity_name: Softaculous
+  entity_type: product_software
+  observed_at: '2026-04-05T22:13:59.470070+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-SOFTACULOUS_WEB_2026_04_05
+  unit: null
+  valid_from: '2026-04-05'
+  value: Trình Cài Đặt Ứng Dụng Tự Động
+- approved_at: '2026-04-07T13:00:16.269993+07:00'
+  approved_by: admin-batch
+  attribute: supported_script_example
+  claim_id: CLM-SOFT-SOFTACULOUS-SUPPORTE
+  compiler_note: 'Trích từ mục ''Đặc điểm'': ''- Hỗ trợ 400+ script (WordPress, Joomla,
+    Drupal, Magento...)'''
+  confidence: high
+  entity_id: prod.software.softaculous
+  entity_name: Softaculous
+  entity_type: product_software
+  observed_at: '2026-04-05T22:13:59.487889+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-SOFTACULOUS_WEB_2026_04_05
+  unit: null
+  valid_from: '2026-04-05'
+  value: Magento
+- approved_at: '2026-04-07T13:00:16.274799+07:00'
+  approved_by: admin-batch
+  attribute: description
+  claim_id: CLM-SOFT-VBULLETIN-DESC
+  compiler_note: 'Trích từ bảng giá: | vBulletin Cloud | Giá liên hệ | Chi phí theo
+    năm vBulletin 5 Connect |'
+  confidence: high
+  entity_id: product.software.vbulletin.cloud_yearly
+  entity_name: vBulletin Cloud
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:19:43.240788+07:00'
+  qualifiers:
+    billing_cycle: year
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BAN_QUYEN_VBULLETIN_HE_QUAN_TRI_FORUM_MANG_XA_HOI_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: Chi phí theo năm vBulletin 5 Connect
+- approved_at: '2026-04-07T13:00:16.280327+07:00'
+  approved_by: admin-batch
+  attribute: included_features
+  claim_id: CLM-SOFT-VBULLETIN-INCLUDED
+  compiler_note: 'Trích từ bảng giá: | vBulletin 5 Connect + Mobile Suite Bundle |
+    Giá liên hệ | Ứng dụng trên Face Book, IOS … Phiên bản Lifetime. |'
+  confidence: high
+  entity_id: product.software.vbulletin.connect_mobile
+  entity_name: vBulletin 5 Connect + Mobile Suite Bundle
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:19:43.222144+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BAN_QUYEN_VBULLETIN_HE_QUAN_TRI_FORUM_MANG_XA_HOI_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: Ứng dụng trên Face Book, IOS …
+- approved_at: '2026-04-07T13:00:16.285113+07:00'
+  approved_by: admin-batch
+  attribute: license_term
+  claim_id: CLM-SOFT-VBULLETIN-LICENSE_
+  compiler_note: 'Trích từ bảng giá: | vBulletin 5 Connect + Mobile Suite Bundle |
+    Giá liên hệ | ... Phiên bản Lifetime. |'
+  confidence: high
+  entity_id: product.software.vbulletin.connect_mobile
+  entity_name: vBulletin 5 Connect + Mobile Suite Bundle
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:19:43.225201+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BAN_QUYEN_VBULLETIN_HE_QUAN_TRI_FORUM_MANG_XA_HOI_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: Lifetime
+- approved_at: '2026-04-07T13:00:16.289243+07:00'
+  approved_by: admin-batch
+  attribute: price
+  claim_id: CLM-SOFT-VBULLETIN-PRICE
+  compiler_note: 'Trích từ bảng giá: | vBulletin Cloud | Giá liên hệ | Chi phí theo
+    năm vBulletin 5 Connect |'
+  confidence: high
+  entity_id: product.software.vbulletin.cloud_yearly
+  entity_name: vBulletin Cloud
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:19:43.237124+07:00'
+  qualifiers:
+    billing_cycle: year
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BAN_QUYEN_VBULLETIN_HE_QUAN_TRI_FORUM_MANG_XA_HOI_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: contact_for_price
+- approved_at: '2026-04-07T13:00:16.294325+07:00'
+  approved_by: admin-batch
+  attribute: feature_description
+  claim_id: CLM-VBLT_5_CONNE-FEATURE_
+  compiler_note: 'Trích từ bảng giá: | vBulletin 5 Connect + Mobile Suite Bundle |
+    Giá liên hệ | Ứng dụng trên Face Book, IOS …'
+  confidence: high
+  entity_id: vblt_5_connect_mobile_new
+  entity_name: vBulletin 5 Connect + Mobile Suite Bundle - New license
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:04:03.058036+07:00'
+  qualifiers:
+    feature_name: Mobile Suite Bundle
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BAN_QUYEN_VBULLETIN_HE_QUAN_TRI_FORUM_MANG_XA_HOI_2026_04_06
+  unit: null
+  valid_from: '2026-04-06'
+  value: Ứng dụng trên Face Book, IOS …
+- approved_at: '2026-04-07T13:00:16.299548+07:00'
+  approved_by: admin-batch
+  attribute: included_feature
+  claim_id: CLM-VBLT_5_CONNE-INCLUDED
+  compiler_note: 'Trích từ bảng giá: | vBulletin 5 Connect + Mobile Suite Bundle |
+    ...'
+  confidence: high
+  entity_id: vblt_5_connect_mobile_new
+  entity_name: vBulletin 5 Connect + Mobile Suite Bundle - New license
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:04:03.054120+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BAN_QUYEN_VBULLETIN_HE_QUAN_TRI_FORUM_MANG_XA_HOI_2026_04_06
+  unit: null
+  valid_from: '2026-04-06'
+  value: Mobile Suite Bundle
+- approved_at: '2026-04-07T13:00:16.304984+07:00'
+  approved_by: admin-batch
+  attribute: license_type
+  claim_id: CLM-VBLT_5_CONNE-LICENSE_
+  compiler_note: 'Trích từ bảng giá, dòng ''Upgrade'' thứ hai: | Upgrade | Giá liên
+    hệ | Bản upgrade...'
+  confidence: high
+  entity_id: vblt_5_connect_new
+  entity_name: vBulletin 5 Connect + Mobile Suite Bundle - Upgrade
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:04:03.077659+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BAN_QUYEN_VBULLETIN_HE_QUAN_TRI_FORUM_MANG_XA_HOI_2026_04_06
+  unit: null
+  valid_from: '2026-04-06'
+  value: upgrade
+  value_changed_at: '2026-04-06T23:04:03.077699+07:00'
+  value_changed_from: lifetime
+- approved_at: '2026-04-07T13:00:16.310444+07:00'
+  approved_by: admin-batch
+  attribute: price_string
+  claim_id: CLM-VBLT_5_CONNE-PRICE_ST
+  compiler_note: 'Trích từ bảng giá, dòng ''Upgrade'' thứ hai, được liệt kê ngay sau
+    gói ''vBulletin 5 Connect + Mobile Suite Bundle'': | Upgrade | Giá liên hệ | ...'
+  confidence: high
+  entity_id: vblt_5_connect_new
+  entity_name: vBulletin 5 Connect + Mobile Suite Bundle - Upgrade
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:04:03.071160+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BAN_QUYEN_VBULLETIN_HE_QUAN_TRI_FORUM_MANG_XA_HOI_2026_04_06
+  unit: null
+  valid_from: '2026-04-06'
+  value: Giá liên hệ
+- approved_at: '2026-04-07T13:00:16.316488+07:00'
+  approved_by: admin-batch
+  attribute: upgrade_policy
+  claim_id: CLM-VBLT_5_CONNE-UPGRADE_
+  compiler_note: 'Trích từ bảng giá, dòng ''Upgrade'' thứ hai: | Upgrade | Giá liên
+    hệ | Bản upgrade cho phép bạn nâng cấp phiên bản vbullentin 4 lên vbulletin 5
+    connect.'
+  confidence: high
+  entity_id: vblt_5_connect_new
+  entity_name: vBulletin 5 Connect + Mobile Suite Bundle - Upgrade
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:04:03.084864+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BAN_QUYEN_VBULLETIN_HE_QUAN_TRI_FORUM_MANG_XA_HOI_2026_04_06
+  unit: null
+  valid_from: '2026-04-06'
+  value: Nâng cấp từ phiên bản vbullentin 4 lên vbulletin 5 connect
+  value_changed_at: '2026-04-06T23:04:03.044027+07:00'
+  value_changed_from: Cho phép nâng cấp các phiên bản mới nhất của vbulletin 5 connect
+- approved_at: '2026-04-07T13:00:16.321882+07:00'
+  approved_by: admin-batch
+  attribute: billing_cycle
+  claim_id: CLM-VBLT_CLOUD_M-BILLING_
+  compiler_note: 'Trích từ bảng giá: | vBulletin Cloud | Giá liên hệ | Chi phí theo
+    tháng vBulletin 5 Connect |'
+  confidence: high
+  entity_id: vblt_cloud_monthly
+  entity_name: vBulletin Cloud - Monthly
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:04:03.091004+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BAN_QUYEN_VBULLETIN_HE_QUAN_TRI_FORUM_MANG_XA_HOI_2026_04_06
+  unit: null
+  valid_from: '2026-04-06'
+  value: month
+- approved_at: '2026-04-07T13:00:16.326900+07:00'
+  approved_by: admin-batch
+  attribute: price_string
+  claim_id: CLM-VBLT_CLOUD_M-PRICE_ST
+  compiler_note: 'Trích từ bảng giá: | vBulletin Cloud | Giá liên hệ | Chi phí theo
+    tháng vBulletin 5 Connect |'
+  confidence: high
+  entity_id: vblt_cloud_monthly
+  entity_name: vBulletin Cloud - Monthly
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:04:03.088185+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BAN_QUYEN_VBULLETIN_HE_QUAN_TRI_FORUM_MANG_XA_HOI_2026_04_06
+  unit: null
+  valid_from: '2026-04-06'
+  value: Giá liên hệ

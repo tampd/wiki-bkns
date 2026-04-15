@@ -1,0 +1,22 @@
+claim_id: CLM-D693BB3BA97F
+entity_id: ENT-PROD-SSL.GEOTRUST.QUICKSSL_PREMIUM_SAN
+entity_type: product
+entity_name: GeoTrust QuickSSL Premium SAN
+attribute: max_sans
+value: 250
+unit: SANs
+qualifiers: {}
+source_ids:
+- SRC-GEOTRUST_QUICKSSL_PREMIUM_SAN_2026_04_13
+observed_at: '2026-04-14T16:29:29.424297+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ mục ''Thông số kỹ thuật / Giới hạn'': ''| Hỗ trợ SAN | Lên
+  đến 250 |'''
+dual_vote:
+  status: DISAGREE
+  score: 0.3785
+  confidence: LOW
+  flag: human_review_required

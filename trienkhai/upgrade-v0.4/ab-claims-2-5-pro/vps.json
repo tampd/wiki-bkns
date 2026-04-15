@@ -1,0 +1,62 @@
+```json
+{
+  "claims": [
+    {
+      "entity_name": "Cloud VPS AMD",
+      "attribute": "product_type",
+      "value": "VPS Hiệu Suất Cao",
+      "unit": null,
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Cloud VPS AMD",
+      "attribute": "CPU_brand",
+      "value": "AMD EPYC™",
+      "unit": null,
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Cloud VPS AMD",
+      "attribute": "CPU_model",
+      "value": "AMD EPYC™ Gen 2",
+      "unit": null,
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Cloud VPS AMD",
+      "attribute": "storage_type",
+      "value": "NVMe Raid 10",
+      "unit": null,
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Cloud VPS AMD",
+      "attribute": "starting_price",
+      "value": 165000,
+      "unit": "đ/tháng",
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Cloud VPS AMD",
+      "attribute": "CPU_clock_speed_base",
+      "value": 2.6,
+      "unit": "GHz",
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Cloud VPS AMD",
+      "attribute": "CPU_clock_speed_boost",
+      "value": 3.9,
+      "unit": "GHz",
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Cloud VPS AMD",
+      "attribute": "bandwidth",
+      "value": "Không giới hạn",
+      "unit": null,
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Cloud VPS AMD",
+      "attribute": "setup_time

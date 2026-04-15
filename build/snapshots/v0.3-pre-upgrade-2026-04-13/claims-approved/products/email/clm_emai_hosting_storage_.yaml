@@ -1,0 +1,19 @@
+claim_id: CLM-EMAI-HOSTING-STORAGE_
+entity_id: product.email.hosting.goi1
+entity_type: product_plan
+entity_name: EMAIL 2
+attribute: storage_per_email
+value: 5
+unit: GB
+qualifiers: null
+source_ids:
+- SRC-BKNS_CAMNANG_EMAIL_TENMIEN_DOT1_2026_04_04
+- SRC-BANG_GIA_EMAIL_2026_04_06
+observed_at: '2026-04-06T23:15:48.775268+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ: Dung lượng: 5GB/ email'
+approved_at: '2026-04-08T13:00:10.299070+07:00'
+approved_by: admin-batch

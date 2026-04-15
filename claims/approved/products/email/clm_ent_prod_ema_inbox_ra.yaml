@@ -7,12 +7,14 @@ value: 99
 unit: '%'
 qualifiers: {}
 source_ids:
-- SRC-EMAIL_HOSTING_WEB_2026_04_05
+  - SRC-EMAIL_HOSTING_WEB_2026_04_05
 observed_at: '2026-04-05T21:59:38.384611+07:00'
 valid_from: '2026-04-05'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
 compiler_note: 'Trích từ mục Giới thiệu: ''tỉ lệ inbox 99%'''
-approved_at: '2026-04-07T13:00:11.530494+07:00'
+approved_at: '2026-04-08T13:00:10.584511+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:58.965Z'

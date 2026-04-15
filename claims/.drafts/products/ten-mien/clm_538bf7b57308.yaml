@@ -1,0 +1,18 @@
+claim_id: CLM-538BF7B57308
+entity_id: product.domain.international.net
+entity_type: product_plan
+entity_name: Tên miền .net
+attribute: renewal_fee
+value: 505000
+unit: VND
+qualifiers: {}
+source_ids:
+- SRC-BANG_GIA_TEN_MIEN_QUOC_TE_2026_04_13
+- SRC-DICH_VU_ANG_KY_TEN_MIEN_VIET_NAM_VA_QUOC_TE_TAI_BKNS_2026_04_13
+observed_at: '2026-04-13T22:13:15.282721+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ ''Bảng giá Tên miền Quốc tế'': | .net | Miễn phí | 435.000
+  | 505.000 | 505.000 |'

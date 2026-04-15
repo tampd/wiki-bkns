@@ -1,0 +1,21 @@
+claim_id: CLM-462E2DC7E2AB
+entity_id: product.ssl.rapidssl
+entity_type: product
+entity_name: RapidSSL Certificate
+attribute: parent_brand
+value: DigiCert
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-RAPIDSSL_CERTIFICATE_CHUNG_CHI_SSL_XAC_THUC_TEN_MIEN_DV_2026_04_13
+observed_at: '2026-04-14T16:58:55.826743+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: RapidSSL Certificate là một sản phẩm thuộc phân khúc giá rẻ của DigiCert.
+dual_vote:
+  status: DISAGREE
+  score: 0.3997
+  confidence: LOW
+  flag: human_review_required

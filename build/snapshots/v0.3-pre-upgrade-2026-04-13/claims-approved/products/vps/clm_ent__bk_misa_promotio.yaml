@@ -1,0 +1,21 @@
+claim_id: CLM-ENT--BK_MISA-PROMOTIO
+entity_id: ENT-PROD-VPS.bk_misa
+entity_type: product
+entity_name: BK MISA
+attribute: promotion
+value: Tặng thêm dung lượng lưu trữ HDD
+unit: null
+qualifiers:
+  condition: Thanh toán dịch vụ từ 12 tháng trở lên
+source_ids:
+- SRC-CLOUD_VPS_BK_MISA_GIAI_PHAP_LUU_TRU_KE_TOAN_SO_2026_04_06
+observed_at: '2026-04-06T23:45:51.820188+07:00'
+valid_from: '2026-04-06'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ: ━━━ Tóm tắt nhanh • Điều kiện/giới hạn nổi bật (nếu có):
+  Khách hàng được tặng thêm dung lượng lưu trữ HDD khi thanh toán dịch vụ từ 12 tháng
+  trở lên.'
+approved_at: '2026-04-08T13:00:13.589591+07:00'
+approved_by: admin-batch

@@ -1,0 +1,25 @@
+claim_id: CLM-982E077437CF
+entity_id: ENT-PROD-VPS
+entity_type: product
+entity_name: VPS Siêu Rẻ
+attribute: service_name
+value: VPS Siêu Tiết Kiệm
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_VPS_SIEU_TIET_KIEM_VPS_SIEU_RE_TAI_BKNS_2026_04_13
+- SRC-DICH_VU_VPS_SIEU_TIET_KIEM_VPS_SIEU_RE_TAI_BKNS_2026_04_05
+observed_at: '2026-04-14T16:13:24.740020+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ tóm tắt và mô tả: ''...được giới thiệu là "VPS Siêu Tiết
+  Kiệm"'' và ''VPS Siêu Rẻ (hay VPS Siêu Tiết Kiệm)...'''
+dual_vote:
+  status: DISAGREE
+  score: 0.599
+  confidence: LOW
+  flag: human_review_required
+value_changed_from: VPS Siêu Rẻ
+value_changed_at: '2026-04-14T16:13:24.740054+07:00'

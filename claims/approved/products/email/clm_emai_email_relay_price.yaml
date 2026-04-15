@@ -8,14 +8,16 @@ unit: VND
 qualifiers:
   billing_cycle: month
 source_ids:
-- SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_TIN_CAY_2026_04_06
+  - SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_TIN_CAY_2026_04_06
 observed_at: '2026-04-07T00:21:09.844195+07:00'
 valid_from: '2026-04-07'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: high
 compiler_note: 'Trích từ bảng giá: | Giá/Tháng | 980.000đ |'
 value_changed_from: 500000
 value_changed_at: '2026-04-07T00:21:09.844214+07:00'
-approved_at: '2026-04-07T13:00:11.202646+07:00'
+approved_at: '2026-04-08T13:00:10.206316+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:58.919Z'

@@ -1,0 +1,24 @@
+claim_id: CLM-007CFC3C4485
+entity_id: ENT-PROD-SSL-COMODO-EV
+entity_type: product
+entity_name: Comodo EV SSL
+attribute: registration_process
+value: Để đăng ký chứng chỉ Comodo EV SSL, khách hàng cần cung cấp Giấy đăng ký kinh
+  doanh để Tổ chức chứng thực số (CA) xác minh thông tin doanh nghiệp.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-COMODO_EV_SSL_CHUNG_CHI_SSL_XAC_THUC_MO_RONG_2026_04_05
+observed_at: '2026-04-14T16:26:39.555488+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ: Để đăng ký chứng chỉ Comodo EV SSL, khách hàng cần cung
+  cấp Giấy đăng ký kinh doanh để Tổ chức chứng thực số (CA) xác minh thông tin doanh
+  nghiệp.'
+dual_vote:
+  status: DISAGREE
+  score: 0.3281
+  confidence: LOW
+  flag: human_review_required

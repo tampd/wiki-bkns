@@ -7,13 +7,14 @@ value: Tăng cường lòng tin của khách hàng bằng cách hiển thị tê
 unit: ''
 qualifiers: null
 source_ids:
-- SRC-COMODO_EV_SSL_CHUNG_CHI_SSL_XAC_THUC_MO_RONG_2026_04_04
+  - SRC-COMODO_EV_SSL_CHUNG_CHI_SSL_XAC_THUC_MO_RONG_2026_04_04
 observed_at: '2026-04-04T20:39:57.458222+07:00'
 valid_from: '2026-04-04'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: none
-compiler_note: 'Trích từ mục ''Tóm tắt nhanh'': ''• Điểm chính: Tăng cường lòng tin
-  của khách hàng bằng cách hiển thị tên doanh nghiệp.'''
-approved_at: '2026-04-07T13:00:12.906014+07:00'
+compiler_note: 'Trích từ mục ''Tóm tắt nhanh'': ''• Điểm chính: Tăng cường lòng tin của khách hàng bằng cách hiển thị tên doanh nghiệp.'''
+approved_at: '2026-04-08T13:00:12.283236+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.462Z'

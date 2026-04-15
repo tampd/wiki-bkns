@@ -1,0 +1,19 @@
+claim_id: CLM-2BA298A55FEB
+entity_id: ENT-PROD-BACKUP-001
+entity_type: service
+entity_name: Dịch vụ Backup Dữ liệu
+attribute: benefit
+value: Đảm bảo kinh doanh liên tục
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_BACKUP_DU_LIEU_SAO_LUU_VA_PHUC_HOI_DU_LIEU_UY_TIN_2026_04_13
+observed_at: '2026-04-13T22:14:37.644543+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Mô tả dịch vụ: ''• Đảm bảo kinh doanh liên tục: Phục hồi
+  hệ thống nhanh chóng sau sự cố.'''
+value_changed_from: Tuân thủ quy định pháp lý về lưu trữ và bảo vệ dữ liệu
+value_changed_at: '2026-04-13T22:14:37.644582+07:00'

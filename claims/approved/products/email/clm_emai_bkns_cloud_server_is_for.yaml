@@ -3,19 +3,18 @@ entity_id: product.email.bkns_cloud_server
 entity_type: product
 entity_name: Cloud Email Server
 attribute: is_for
-value: Dịch vụ Cloud Email Server là giải pháp cung cấp một hệ thống máy chủ email
-  riêng hoạt động trên nền tảng điện toán đám mây, dành cho các tổ chức và doanh nghiệp.
+value: Dịch vụ Cloud Email Server là giải pháp cung cấp một hệ thống máy chủ email riêng hoạt động trên nền tảng điện toán đám mây, dành cho các tổ chức và doanh nghiệp.
 unit: null
 qualifiers: null
 source_ids:
-- SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_06
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_06
 observed_at: '2026-04-07T00:01:11.744246+07:00'
 valid_from: '2026-04-07'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ mục ''Tóm tắt nhanh'': Dịch vụ này là gì: Dịch vụ Cloud Email
-  Server là giải pháp cung cấp một hệ thống máy chủ email riêng hoạt động trên nền
-  tảng điện toán đám mây, dành cho các tổ chức và doanh nghiệp.'
-approved_at: '2026-04-07T13:00:10.964151+07:00'
+compiler_note: 'Trích từ mục ''Tóm tắt nhanh'': Dịch vụ này là gì: Dịch vụ Cloud Email Server là giải pháp cung cấp một hệ thống máy chủ email riêng hoạt động trên nền tảng điện toán đám mây, dành cho các tổ chức và doanh nghiệp.'
+approved_at: '2026-04-08T13:00:09.958712+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:58.884Z'

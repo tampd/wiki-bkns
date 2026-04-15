@@ -7,12 +7,14 @@ value: VPS N8N – AI
 unit: null
 qualifiers: {}
 source_ids:
-- SRC-VPS_N8N_AI_DICH_VU_TU_ONG_HOA_QUY_TRINH_TAI_BKNS_2026_04_06
+  - SRC-VPS_N8N_AI_DICH_VU_TU_ONG_HOA_QUY_TRINH_TAI_BKNS_2026_04_06
 observed_at: '2026-04-07T01:08:24.828834+07:00'
 valid_from: '2026-04-07'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
 compiler_note: 'Trích từ tiêu đề trang: ═══ VPS N8N – AI'
-approved_at: '2026-04-07T13:00:14.130814+07:00'
+approved_at: '2026-04-08T13:00:13.647453+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.657Z'

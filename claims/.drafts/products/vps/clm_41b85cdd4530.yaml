@@ -1,0 +1,24 @@
+claim_id: CLM-41B85CDD4530
+entity_id: ENT-PROD-VPS
+entity_type: product
+entity_name: Storage VPS
+attribute: product.limitation
+value: Sử dụng ổ cứng HDD, phù hợp cho lưu trữ nhưng không tối ưu cho các tác vụ cần
+  tốc độ truy xuất cao như ổ SSD.
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-STORAGE_VPS_MAY_CHU_AO_LUU_TRU_DUNG_LUONG_CAO_2026_04_13
+observed_at: '2026-04-14T16:16:09.786112+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tóm tắt nhanh: • Điều kiện/giới hạn nổi bật (nếu có):
+  Sử dụng ổ cứng HDD, phù hợp cho lưu trữ nhưng không tối ưu cho các tác vụ cần tốc
+  độ truy xuất cao như ổ SSD.'
+dual_vote:
+  status: PARTIAL
+  score: 0.7558
+  confidence: MEDIUM
+  flag: needs_review

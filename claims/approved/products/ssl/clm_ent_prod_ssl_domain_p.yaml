@@ -7,13 +7,14 @@ value: 1
 unit: tên miền
 qualifiers: null
 source_ids:
-- SRC-RAPIDSSL_CERTIFICATE_CHUNG_CHI_SSL_XAC_THUC_TEN_MIEN_DV_2026_04_04
+  - SRC-RAPIDSSL_CERTIFICATE_CHUNG_CHI_SSL_XAC_THUC_TEN_MIEN_DV_2026_04_04
 observed_at: '2026-04-04T21:12:48.694092+07:00'
 valid_from: '2026-04-04'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: medium
-compiler_note: 'Trích từ Tính năng / Thành phần: ''Bảo vệ tên miền: Bảo mật cho 1
-  tên miền duy nhất.'''
-approved_at: '2026-04-07T13:00:12.952757+07:00'
+compiler_note: 'Trích từ Tính năng / Thành phần: ''Bảo vệ tên miền: Bảo mật cho 1 tên miền duy nhất.'''
+approved_at: '2026-04-08T13:00:12.345999+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.467Z'

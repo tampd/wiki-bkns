@@ -1,0 +1,17 @@
+claim_id: CLM-EA5AA89161C4
+entity_id: ENT-PROD-DOMAIN
+entity_type: product
+entity_name: Dịch vụ Tên miền
+attribute: promotion_policy
+value: Một số tên miền có giá khuyến mãi cho năm đầu tiên.
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-DICH_VU_ANG_KY_TEN_MIEN_VIET_NAM_VA_QUOC_TE_TAI_BKNS_2026_04_13
+observed_at: '2026-04-13T22:13:15.110375+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ phần ''Tóm tắt nhanh'': • Điều kiện/giới hạn nổi bật (nếu
+  có): Một số tên miền có giá khuyến mãi cho năm đầu tiên.'

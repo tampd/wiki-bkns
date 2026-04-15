@@ -1,0 +1,17 @@
+claim_id: CLM-44D7802F0169
+entity_id: ENT-PROD-SSL-COMODO-EV
+entity_type: product
+entity_name: Comodo EV SSL
+attribute: insurance_coverage
+value: 1750000
+unit: USD
+qualifiers: null
+source_ids:
+- SRC-COMODO_EV_SSL_CHUNG_CHI_SSL_XAC_THUC_MO_RONG_2026_04_13
+observed_at: '2026-04-13T22:07:20.035152+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục ''Tính năng / Thành phần'': • Bảo hiểm: Mức bảo hiểm
+  lên đến 1.750.000$.'

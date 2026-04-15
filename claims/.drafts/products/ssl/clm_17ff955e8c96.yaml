@@ -1,0 +1,22 @@
+claim_id: CLM-17FF955E8C96
+entity_id: ENT-PROD-SSL-POSWILDDV
+entity_type: product_plan
+entity_name: PositiveSSL Wildcard (DV)
+attribute: validation_type
+value: Domain Validated (DV)
+unit: null
+qualifiers: null
+source_ids:
+- SRC-POSITIVESSL_WILDCARD_DV_CHUNG_CHI_SSL_GIA_RE_2026_04_13
+observed_at: '2026-04-14T16:38:50.421469+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ danh mục và thông số kỹ thuật: ''Danh mục: Wildcard SSL /
+  Domain Validation (DV)'', ''Xác thực: Domain (DV)'''
+dual_vote:
+  status: DISAGREE
+  score: 0.2497
+  confidence: LOW
+  flag: human_review_required

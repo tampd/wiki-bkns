@@ -1,0 +1,16 @@
+claim_id: CLM-FC5742A7CE3F
+entity_id: product.email.hosting
+entity_type: product
+entity_name: Email Hosting
+attribute: url
+value: https://www.bkns.vn/email/email-hosting.html
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-BKNS_CAMNANG_EMAIL_TENMIEN_DOT1_2026_04_13
+observed_at: '2026-04-13T21:53:38.057656+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục 1.1. EMAIL HOSTING: ''Link tham khảo: https://www.bkns.vn/email/email-hosting.html'''

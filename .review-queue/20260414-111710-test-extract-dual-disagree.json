@@ -1,0 +1,12 @@
+{
+  "ts": "2026-04-14T11:17:10.471158+07:00",
+  "skill": "test-extract-dual",
+  "status": "DISAGREE",
+  "flag": "human_review_required",
+  "score": 0.28,
+  "model_a": "gemini-2.5-pro",
+  "model_b": "gpt-5.4",
+  "text_a": "```json\n[\n  {\n    \"attribute\": \"uptime\",\n    \"value\": \"99.9%\",\n    \"confidence\": 1.0\n  },\n  {\n    \"attribute\": \"hỗ trợ kỹ thuật\",\n    \"value\": \"24/7\",\n    \"confidence\": 1.0\n  }\n]\n```",
+  "text_b": "[\n  {\n    \"attribute\": \"giá dịch vụ hosting\",\n    \"value\": \"từ 99.000đ/năm\",\n    \"confidence\": 0.98\n  },\n  {\n    \"attribute\": \"uptime cam kết\",\n    \"value\": \"99.9%\",\n    \"confidence\": 0.99\n  }\n]",
+  "prompt_preview": "Trích xuất 1-2 claims từ đoạn văn sau. Trả về JSON list:\n[{\"attribute\": \"...\", \"value\": \"...\", \"confidence\": 0.0-1.0}]\n\nĐoạn văn: BKNS cung cấp dịch vụ hosting với giá từ 99.000đ/năm, \nuptime cam kết 99.9%, hỗ trợ kỹ thuật 24/7."
+}

@@ -1,0 +1,22 @@
+claim_id: CLM-D121F59F59E2
+entity_id: ENT-PROD-DOMAIN
+entity_type: product
+entity_name: Dịch vụ Tên miền
+attribute: included_feature
+value: DNS có hỗ trợ IPv6
+unit: null
+qualifiers:
+  fee: Miễn phí
+  maintenance_fee: Miễn phí
+source_ids:
+- SRC-DICH_VU_ANG_KY_TEN_MIEN_VIET_NAM_VA_QUOC_TE_TAI_BKNS_2026_04_13
+observed_at: '2026-04-13T22:13:15.191124+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng ''Các dịch vụ sau được cung cấp miễn phí khi đăng ký
+  tên miền tại BKNS'': | DNS có hỗ trợ IPv6 | Miễn phí | Miễn phí | Cho phép thay
+  đổi địa chỉ IPv6 của tên miền thông qua Control Panel. |'
+value_changed_from: Bảo mật thông tin tên miền
+value_changed_at: '2026-04-13T22:13:15.191169+07:00'

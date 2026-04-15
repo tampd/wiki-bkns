@@ -1,0 +1,22 @@
+claim_id: CLM-31425E72D3AC
+entity_id: product.ssl.rapidssl_wildcard
+entity_type: product
+entity_name: RapidSSL Wildcard Certificate
+attribute: brand
+value: DigiCert
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-RAPIDSSL_WILDCARD_CERTIFICATE_THONG_TIN_VA_BANG_GIA_TAI_BK_2026_04_05
+observed_at: '2026-04-14T16:39:47.282418+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mô tả dịch vụ: RapidSSL Wildcard Certificate là một giải
+  pháp bảo mật đến từ DigiCert'
+dual_vote:
+  status: DISAGREE
+  score: 0.5213
+  confidence: LOW
+  flag: human_review_required

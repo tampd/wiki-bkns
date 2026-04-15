@@ -1,0 +1,20 @@
+# Core AI
+google-genai>=1.0.0
+openai>=1.30.0
+
+# Telegram
+requests>=2.31.0
+
+# Data
+pyyaml>=6.0.1
+python-dotenv>=1.0.0
+
+# File conversion
+markitdown>=0.4.0
+
+# Utilities
+openpyxl>=3.1.2
+yt-dlp>=2024.1.0
+
+# Dev
+pytest>=8.0.0

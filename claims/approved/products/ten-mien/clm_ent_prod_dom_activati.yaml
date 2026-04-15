@@ -8,13 +8,14 @@ unit: seconds
 qualifiers:
   type: automatic
 source_ids:
-- SRC-DANG_KY_TEN_MIEN_2026_04_05
+  - SRC-DANG_KY_TEN_MIEN_2026_04_05
 observed_at: '2026-04-05T21:53:55.725815+07:00'
 valid_from: '2026-04-05'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ tiêu đề và mục Tại sao chọn BKNS?: ''Kích Hoạt Tự Động Trong
-  30s'', ''Kích hoạt tự động trong 30 giây'''
-approved_at: '2026-04-07T13:00:10.489063+07:00'
+compiler_note: 'Trích từ tiêu đề và mục Tại sao chọn BKNS?: ''Kích Hoạt Tự Động Trong 30s'', ''Kích hoạt tự động trong 30 giây'''
+approved_at: '2026-04-08T13:00:09.650323+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.626Z'

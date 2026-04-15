@@ -1,0 +1,19 @@
+claim_id: CLM-DOMA-COM-SETUP_FE
+entity_id: product.domain.com
+entity_type: product_plan
+entity_name: .com
+attribute: setup_fee
+value: 0
+unit: VND
+qualifiers: null
+source_ids:
+- SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_04
+observed_at: '2026-04-04T20:03:20.155926+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: high
+compiler_note: 'Trích từ bảng giá tên miền Quốc tế, dòng ''.com'', cột ''Phí cài đặt'':
+  Miễn phí'
+approved_at: '2026-04-08T13:00:09.371823+07:00'
+approved_by: admin-batch

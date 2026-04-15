@@ -1,0 +1,16 @@
+claim_id: CLM-C01491723FDE
+entity_id: bkns:prod:domain:domain_lock
+entity_type: product
+entity_name: Khóa tên miền (Domain Lock)
+attribute: price
+value: 0
+unit: VND
+qualifiers: {}
+source_ids:
+- SRC-BAO_VE_TEN_MIEN_CAP_CAO_NHAT_GIAI_PHAP_AN_TOAN_TUYET_OI_2026_04_13
+observed_at: '2026-04-13T21:50:55.056193+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ bảng So sánh các gói: ''| Chi phí | Miễn phí | ... |'''

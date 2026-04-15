@@ -1,0 +1,20 @@
+claim_id: CLM-57FA829D4C8C
+entity_id: ENT-PROD-BACKUP-001
+entity_type: service
+entity_name: Dịch vụ Backup Dữ liệu
+attribute: supported_platforms
+value: cơ sở dữ liệu
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_BACKUP_DU_LIEU_SAO_LUU_VA_PHUC_HOI_DU_LIEU_UY_TIN_2026_04_13
+observed_at: '2026-04-13T22:14:37.688701+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tính năng / Thành phần: ''• Hỗ trợ đa nền tảng: Tương thích
+  với nhiều hệ thống khác nhau bao gồm máy chủ vật lý, máy chủ ảo (VPS), website,
+  cơ sở dữ liệu.'''
+value_changed_from: website
+value_changed_at: '2026-04-13T22:14:37.688732+07:00'

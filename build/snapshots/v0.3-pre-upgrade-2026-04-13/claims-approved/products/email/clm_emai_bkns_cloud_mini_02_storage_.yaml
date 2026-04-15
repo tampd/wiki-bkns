@@ -1,0 +1,18 @@
+claim_id: CLM-EMAI-BKNS_CLOUD_MINI_02-STORAGE_
+entity_id: product.email.bkns_cloud_mini_02
+entity_type: product_plan
+entity_name: MINI EMAIL 02
+attribute: storage_capacity
+value: 150
+unit: GB
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_06
+observed_at: '2026-04-07T00:01:11.831918+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: medium
+compiler_note: 'Trích từ bảng giá: | Dung lượng gói | 150GB |'
+approved_at: '2026-04-08T13:00:09.921310+07:00'
+approved_by: admin-batch

@@ -1,0 +1,23 @@
+claim_id: CLM-4218770C45EA
+entity_id: ENT-PROD-DOMAIN.ORG
+entity_type: product_plan
+entity_name: .org
+attribute: registration_price
+value: 365000
+unit: VND
+qualifiers:
+  billing_cycle: year
+source_ids:
+- SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_05
+observed_at: '2026-04-14T16:43:52.755588+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ Bảng giá Tên miền Quốc tế, dòng .org: Phí đăng ký mới (VNĐ)
+  365.000'
+dual_vote:
+  status: DISAGREE
+  score: 0.5466
+  confidence: LOW
+  flag: human_review_required

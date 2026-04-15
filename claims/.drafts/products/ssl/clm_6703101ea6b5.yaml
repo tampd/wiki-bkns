@@ -1,0 +1,23 @@
+claim_id: CLM-6703101EA6B5
+entity_id: product.ssl.rapidssl
+entity_type: product
+entity_name: RapidSSL Certificate
+attribute: registration_process
+value: Khách hàng có thể đăng ký dịch vụ bằng cách nhấn vào nút "Mua ngay" trên trang
+  sản phẩm để thêm vào giỏ hàng và tiến hành thanh toán.
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-RAPIDSSL_CERTIFICATE_CHUNG_CHI_SSL_XAC_THUC_TEN_MIEN_DV_2026_04_13
+observed_at: '2026-04-14T16:58:55.876669+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: Khách hàng có thể đăng ký dịch vụ bằng cách nhấn vào nút "Mua ngay"
+  trên trang sản phẩm để thêm vào giỏ hàng và tiến hành thanh toán.
+dual_vote:
+  status: DISAGREE
+  score: 0.3997
+  confidence: LOW
+  flag: human_review_required

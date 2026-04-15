@@ -1,0 +1,19 @@
+claim_id: CLM-ENT-PROD-SOF-ARCHITEC
+entity_id: ENT-PROD-SOFTWARE-LITESPEED
+entity_type: product
+entity_name: LiteSpeed Web Server
+attribute: architecture
+value: hướng sự kiện
+unit: null
+qualifiers: null
+source_ids:
+- SRC-LITESPEED_WEB_SERVER_TINH_NANG_PHIEN_BAN_VA_SO_SANH_2026_04_04
+observed_at: '2026-04-04T21:06:48.395938+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ phần ''Tóm tắt nhanh'': • Điểm chính: ... kiến trúc hướng
+  sự kiện...'
+approved_at: '2026-04-08T13:00:15.428931+07:00'
+approved_by: admin-batch

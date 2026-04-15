@@ -1,0 +1,24 @@
+claim_id: CLM-9E7F5CCFCCEB
+entity_id: ENT-PROD-SSL-POSITIVESSL-DV
+entity_type: product_plan
+entity_name: PositiveSSL (DV)
+attribute: feature
+value: mã hóa tiêu chuẩn ngành
+unit: null
+qualifiers: null
+source_ids:
+- SRC-POSITIVESSL_DV_CHUNG_CHI_SSL_GIA_RE_2026_04_13
+observed_at: '2026-04-14T16:35:13.663383+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: '• Điểm chính: Chi phí thấp, cấp phát nhanh trong 5 phút, mã hóa tiêu
+  chuẩn ngành.'
+dual_vote:
+  status: DISAGREE
+  score: 0.5432
+  confidence: LOW
+  flag: human_review_required
+value_changed_from: cấp phát nhanh trong 5 phút
+value_changed_at: '2026-04-14T16:35:13.663424+07:00'

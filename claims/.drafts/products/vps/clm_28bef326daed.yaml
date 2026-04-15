@@ -1,0 +1,23 @@
+claim_id: CLM-28BEF326DAED
+entity_id: ENT-PROD-VPS-STORAGE
+entity_type: product
+entity_name: Storage VPS
+attribute: description
+value: Máy chủ ảo (VPS) được tối ưu hóa cho nhu cầu lưu trữ dung lượng lớn, sử dụng
+  ổ cứng HDD.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-STORAGE_VPS_MAY_CHU_AO_LUU_TRU_DUNG_LUONG_CAO_2026_04_05
+observed_at: '2026-04-14T16:14:49.833365+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tóm tắt nhanh: Dịch vụ này là gì: Máy chủ ảo (VPS) được
+  tối ưu hóa cho nhuodu cầu lưu trữ dung lượng lớn, sử dụng ổ cứng HDD.'
+dual_vote:
+  status: DISAGREE
+  score: 0.5676
+  confidence: LOW
+  flag: human_review_required

@@ -7,13 +7,14 @@ value: giải pháp máy chủ ảo lưu trữ dung lượng cao
 unit: null
 qualifiers: null
 source_ids:
-- SRC-STORAGE_VPS_WEB_2026_04_05
+  - SRC-STORAGE_VPS_WEB_2026_04_05
 observed_at: '2026-04-05T22:17:19.570877+07:00'
 valid_from: '2026-04-05'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ đoạn ''Giới thiệu'': ''Storage VPS là giải pháp máy chủ ảo
-  lưu trữ dung lượng cao, giá rẻ.'''
-approved_at: '2026-04-07T13:00:14.263936+07:00'
+compiler_note: 'Trích từ đoạn ''Giới thiệu'': ''Storage VPS là giải pháp máy chủ ảo lưu trữ dung lượng cao, giá rẻ.'''
+approved_at: '2026-04-08T13:00:13.817243+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.672Z'

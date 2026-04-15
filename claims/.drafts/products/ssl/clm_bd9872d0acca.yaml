@@ -1,0 +1,23 @@
+claim_id: CLM-BD9872D0ACCA
+entity_id: ENT-PROD-SSL-POSITIVESSL-DV
+entity_type: product_plan
+entity_name: PositiveSSL (DV)
+attribute: target_audience
+value: Các trang web cần bảo mật cơ bản một cách nhanh chóng và đơn giản, như blog,
+  website cá nhân.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-POSITIVESSL_DV_CHUNG_CHI_SSL_GIA_RE_2026_04_13
+observed_at: '2026-04-14T16:35:13.643927+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: '• Phù hợp với: Các trang web cần bảo mật cơ bản một cách nhanh chóng
+  và đơn giản, như blog, website cá nhân.'
+dual_vote:
+  status: DISAGREE
+  score: 0.5432
+  confidence: LOW
+  flag: human_review_required

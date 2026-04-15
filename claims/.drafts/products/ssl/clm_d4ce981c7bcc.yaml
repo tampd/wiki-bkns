@@ -1,0 +1,23 @@
+claim_id: CLM-D4CE981C7BCC
+entity_id: ENT-PROD-SSL.geotrust_true_businessid
+entity_type: product_plan
+entity_name: GeoTrust True BusinessID
+attribute: validation_type
+value: Organization Validation (OV)
+unit: null
+qualifiers: null
+source_ids:
+- SRC-GEOTRUST_TRUE_BUSINESSID_CHUNG_CHI_SSL_XAC_THUC_DOANH_NGHI_2026_04_05
+observed_at: '2026-04-14T16:31:00.128101+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: medium
+compiler_note: 'Trích từ Thông số kỹ thuật: ''Xác thực | Tên miền + Doanh nghiệp (OV)''
+  và Tóm tắt nhanh: ''Dịch vụ này là gì: Chứng chỉ SSL xác thực doanh nghiệp (Organization
+  Validation - OV)'''
+dual_vote:
+  status: DISAGREE
+  score: 0.3515
+  confidence: LOW
+  flag: human_review_required

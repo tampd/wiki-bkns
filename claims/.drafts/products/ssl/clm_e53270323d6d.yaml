@@ -1,0 +1,22 @@
+claim_id: CLM-E53270323D6D
+entity_id: ENT-PROD-SSL-GT-EV-MD-01
+entity_type: product
+entity_name: GeoTrust True BusinessID with EV Multi-Domain
+attribute: validation_level
+value: Extended Validation (EV)
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-GEOTRUST_TRUE_BUSINESSID_WITH_EV_MULTI_DOMAIN_2026_04_13
+observed_at: '2026-04-14T16:54:21.905637+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tính năng / Thành phần: Xác thực mở rộng (EV): Cung cấp
+  mức độ tin cậy cao nhất, hiển thị tên công ty trên thanh địa chỉ trình duyệt.'
+dual_vote:
+  status: DISAGREE
+  score: 0.375
+  confidence: LOW
+  flag: human_review_required

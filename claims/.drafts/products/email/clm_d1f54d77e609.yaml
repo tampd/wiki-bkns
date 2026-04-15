@@ -1,0 +1,22 @@
+claim_id: CLM-D1F54D77E609
+entity_id: product.email_relay.bkns.bk-relay03
+entity_type: product_plan
+entity_name: BK-RELAY03
+attribute: registration_url
+value: https://my.bkns.net/?cmd=cart&action=add&id=407
+unit: null
+qualifiers: null
+source_ids:
+- SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_TIN_CAY_2026_04_05
+observed_at: '2026-04-14T17:05:51.500493+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng giá: | Đăng ký | [Đăng ký](https://my.bkns.net/?cmd=cart&action=add&id=407)
+  |'
+dual_vote:
+  status: DISAGREE
+  score: 0.5608
+  confidence: LOW
+  flag: human_review_required

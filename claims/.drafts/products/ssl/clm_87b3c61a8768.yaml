@@ -1,0 +1,22 @@
+claim_id: CLM-87B3C61A8768
+entity_id: ENT-PROD-SSL-POSITIVESSL-DV
+entity_type: product_plan
+entity_name: PositiveSSL (DV)
+attribute: server_license
+value: không giới hạn
+unit: null
+qualifiers: null
+source_ids:
+- SRC-POSITIVESSL_DV_CHUNG_CHI_SSL_GIA_RE_2026_04_13
+observed_at: '2026-04-14T16:35:13.687910+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: '• Giấy phép máy chủ không giới hạn: Có thể cài đặt trên nhiều máy
+  chủ mà không phát sinh thêm chi phí.'
+dual_vote:
+  status: DISAGREE
+  score: 0.5432
+  confidence: LOW
+  flag: human_review_required

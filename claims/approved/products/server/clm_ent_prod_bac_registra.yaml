@@ -7,13 +7,14 @@ value: Thực hiện thông qua tư vấn trực tiếp
 unit: null
 qualifiers: null
 source_ids:
-- SRC-DICH_VU_BACKUP_DU_LIEU_SAO_LUU_VA_PHUC_HOI_DU_LIEU_UY_TIN_2026_04_06
+  - SRC-DICH_VU_BACKUP_DU_LIEU_SAO_LUU_VA_PHUC_HOI_DU_LIEU_UY_TIN_2026_04_06
 observed_at: '2026-04-06T23:56:23.769847+07:00'
 valid_from: '2026-04-06'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: none
-compiler_note: 'Trích từ Quy trình đăng ký / Triển khai / Kích hoạt: ''Quy trình đăng
-  ký dịch vụ được thực hiện thông qua tư vấn trực tiếp.'''
-approved_at: '2026-04-07T13:00:09.851481+07:00'
+compiler_note: 'Trích từ Quy trình đăng ký / Triển khai / Kích hoạt: ''Quy trình đăng ký dịch vụ được thực hiện thông qua tư vấn trực tiếp.'''
+approved_at: '2026-04-08T13:00:08.944295+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.293Z'

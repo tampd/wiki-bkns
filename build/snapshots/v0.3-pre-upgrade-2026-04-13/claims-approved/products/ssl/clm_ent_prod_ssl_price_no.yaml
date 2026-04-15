@@ -1,0 +1,19 @@
+claim_id: CLM-ENT-PROD-SSL-PRICE_NO
+entity_id: ENT-PROD-SSL-COMODO-POSITIVESSL-MULTI-DOMAIN-DV
+entity_type: product
+entity_name: PositiveSSL Multi-Domain (DV)
+attribute: price_note
+value: Đã bao gồm 3 tên miền.
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-POSITIVESSL_MULTI_DOMAIN_DV_CHUNG_CHI_SSL_CHO_NHIEU_TEN_M_2026_04_06
+observed_at: '2026-04-07T00:54:06.987404+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ bảng giá: | Giá tại BKNS | 624.000đ/năm | Đã bao gồm 3 tên
+  miền. |'
+approved_at: '2026-04-08T13:00:12.560978+07:00'
+approved_by: admin-batch

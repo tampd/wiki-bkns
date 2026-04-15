@@ -1,0 +1,16 @@
+claim_id: CLM-8F97C94F12C5
+entity_id: ENT-COMPANY-001
+entity_type: company
+entity_name: BKNS
+attribute: internal_document_name
+value: BỘ CẨM NANG SẢN PHẨM NỘI BỘ BKNS
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-BKNS_CAMNAG_HOSTING_DOT3_2026_04_13
+observed_at: '2026-04-13T21:52:17.012067+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ tiêu đề chính: ''BỘ CẨM NANG SẢN PHẨM NỘI BỘ BKNS'''

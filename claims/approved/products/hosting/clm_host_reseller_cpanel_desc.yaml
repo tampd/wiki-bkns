@@ -3,22 +3,19 @@ entity_id: product.hosting.reseller_cpanel
 entity_type: product
 entity_name: Reseller Hosting cPanel
 attribute: description
-value: Reseller Hosting cPanel là dịch vụ cho phép người dùng mua một gói tài nguyên
-  hosting lớn, sau đó chia nhỏ thành các gói hosting con để cung cấp cho khách hàng
-  của mình. Việc quản lý được thực hiện thông qua control panel cPanel.
+value: Reseller Hosting cPanel là dịch vụ cho phép người dùng mua một gói tài nguyên hosting lớn, sau đó chia nhỏ thành các gói hosting con để cung cấp cho khách hàng của mình. Việc quản lý được thực hiện thông qua control panel cPanel.
 unit: null
 qualifiers: {}
 source_ids:
-- SRC-RESELLER_HOSTING_CPANEL_QUAN_LY_NHIEU_HOSTING_CHI_VOI_MOT_T_2026_04_04
-- SRC-RESELLER_HOSTING_CPANEL_QUAN_LY_NHIEU_HOSTING_CHI_VOI_MOT_T_2026_04_06
+  - SRC-RESELLER_HOSTING_CPANEL_QUAN_LY_NHIEU_HOSTING_CHI_VOI_MOT_T_2026_04_04
+  - SRC-RESELLER_HOSTING_CPANEL_QUAN_LY_NHIEU_HOSTING_CHI_VOI_MOT_T_2026_04_06
 observed_at: '2026-04-07T01:00:34.417638+07:00'
 valid_from: '2026-04-04'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ mục Tóm tắt nhanh: ''Dịch vụ này là gì: Reseller Hosting
-  cPanel là dịch vụ cho phép người dùng mua một gói tài nguyên hosting lớn, sau đó
-  chia nhỏ thành các gói hosting con để cung cấp cho khách hàng của mình. Việc quản
-  lý được thực hiện thông qua control panel cPanel.'''
-approved_at: '2026-04-07T13:00:12.341302+07:00'
+compiler_note: 'Trích từ mục Tóm tắt nhanh: ''Dịch vụ này là gì: Reseller Hosting cPanel là dịch vụ cho phép người dùng mua một gói tài nguyên hosting lớn, sau đó chia nhỏ thành các gói hosting con để cung cấp cho khách hàng của mình. Việc quản lý được thực hiện thông qua control panel cPanel.'''
+approved_at: '2026-04-08T13:00:11.527225+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.065Z'

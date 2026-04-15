@@ -1,0 +1,23 @@
+claim_id: CLM-C2EEB8458A9B
+entity_id: product.email.cloud_email_server
+entity_type: product
+entity_name: Cloud Email Server
+attribute: email_forwarder_limit
+value: Unlimited
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_13
+- SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_05
+observed_at: '2026-04-14T17:04:23.543125+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tính năng / Thành phần: ''Không giới hạn: ... và email
+  forwarder.'''
+dual_vote:
+  status: DISAGREE
+  score: 0.3931
+  confidence: LOW
+  flag: human_review_required

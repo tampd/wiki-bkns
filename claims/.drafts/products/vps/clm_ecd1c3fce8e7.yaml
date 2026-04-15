@@ -1,0 +1,22 @@
+claim_id: CLM-ECD1C3FCE8E7
+entity_id: product.vps.epyc1
+entity_type: product_plan
+entity_name: EPYC 1
+attribute: price
+value: 2970000
+unit: VND
+qualifiers:
+  product_line: VPS ADM
+  billing_cycle: 24_months
+  tax_inclusive: false
+source_ids:
+- SRC-BANG_GIA_HOSTING_VPS_EMAIL_2026_04_13
+observed_at: '2026-04-13T21:44:20.692475+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ bảng giá VPS ADM, dòng ''Giá 24 tháng'', cột ''EPYC 1'':
+  2970000'
+value_changed_from: 1683000
+value_changed_at: '2026-04-13T21:44:20.692501+07:00'

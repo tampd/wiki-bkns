@@ -1,0 +1,21 @@
+claim_id: CLM-A79DE0F167CD
+entity_id: product.software.dti_assessment.advanced
+entity_type: product_plan
+entity_name: Gói Nâng cao
+attribute: term
+value: 1
+unit: năm
+qualifiers: {}
+source_ids:
+- SRC-PHAN_MEM_ANH_GIA_CHUYEN_OI_SO_DTI_2026_04_13
+observed_at: '2026-04-14T17:20:54.531551+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng giá: | Thời gian | 1 năm | 1 năm | Vĩnh viễn |'
+dual_vote:
+  status: DISAGREE
+  score: 0.0
+  confidence: LOW
+  flag: human_review_required

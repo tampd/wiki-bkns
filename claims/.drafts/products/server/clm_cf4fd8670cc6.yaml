@@ -1,0 +1,18 @@
+claim_id: CLM-CF4FD8670CC6
+entity_id: ENT-PROD-BACKUP-001
+entity_type: service
+entity_name: Dịch vụ Backup Dữ liệu
+attribute: data_recovery_process
+value: Liên hệ với đội ngũ hỗ trợ kỹ thuật của BKNS
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_BACKUP_DU_LIEU_SAO_LUU_VA_PHUC_HOI_DU_LIEU_UY_TIN_2026_04_13
+observed_at: '2026-04-13T22:14:37.767251+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Câu hỏi thường gặp (FAQ): ''• Làm thế nào để phục hồi dữ
+  liệu khi cần? - Bạn chỉ cần liên hệ với đội ngũ hỗ trợ kỹ thuật của BKNS. Chúng
+  tôi sẽ hỗ trợ bạn phục hồi dữ liệu một cách nhanh chóng và hiệu quả.'''

@@ -1,0 +1,26 @@
+claim_id: CLM-A12C8A8C195C
+entity_id: product.software.dti_assessment
+entity_type: product
+entity_name: Phần Mềm Đánh Giá Chuyển Đổi Số DTI
+attribute: description
+value: Là một công cụ phần mềm dùng để đánh giá mức độ chuyển đổi số theo phân cấp
+  địa phương, dựa trên bộ chỉ số DTI (Digital Transformation Index) do Bộ Thông tin
+  và Truyền thông ban hành.
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-PHAN_MEM_ANH_GIA_CHUYEN_OI_SO_DTI_2026_04_05
+- SRC-PHAN_MEM_ANH_GIA_CHUYEN_OI_SO_DTI_2026_04_13
+observed_at: '2026-04-14T17:20:54.507846+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tóm tắt nhanh: • Dịch vụ này là gì: Là một công cụ phần
+  mềm dùng để đánh giá mức độ chuyển đổi số theo phân cấp địa phương, dựa trên bộ
+  chỉ số DTI (Digital Transformation Index) do Bộ Thông tin và Truyền thông ban hành.'
+dual_vote:
+  status: DISAGREE
+  score: 0.0
+  confidence: LOW
+  flag: human_review_required

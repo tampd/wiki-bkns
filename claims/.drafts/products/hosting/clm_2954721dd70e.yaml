@@ -1,0 +1,22 @@
+claim_id: CLM-2954721DD70E
+entity_id: ENT-PROD-HOSTING
+entity_type: product_category
+entity_name: Hosting (Web Hosting)
+attribute: hardware_storage_type
+value: NVME
+unit: null
+qualifiers: null
+source_ids:
+- SRC-TRANNING_KINH_DOANH_HOSTING_EMAIL_2026_04_13
+observed_at: '2026-04-14T12:35:14.364661+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng Giới thiệu dịch vụ BKNS cung cấp, hàng Hosting (Web
+  Hosting), cột Điểm mạnh cạnh tranh: ''Uptime >99.9%, NVME, hỗ trợ kỹ thuật 24/7'''
+dual_vote:
+  status: DISAGREE
+  score: 0.5
+  confidence: LOW
+  flag: human_review_required

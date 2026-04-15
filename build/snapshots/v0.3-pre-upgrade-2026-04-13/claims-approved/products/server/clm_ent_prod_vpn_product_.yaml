@@ -1,0 +1,22 @@
+claim_id: CLM-ENT-PROD-VPN-PRODUCT_
+entity_id: ENT-PROD-VPN-001
+entity_type: product
+entity_name: Dịch vụ VPN
+attribute: product_category
+value: Cloud VPN
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-DICH_VU_VPN_CLOUD_VPN_CUA_BKNS_2026_04_04
+- SRC-DICH_VU_VPN_CLOUD_VPN_CUA_BKNS_2026_04_06
+observed_at: '2026-04-07T00:15:17.540832+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ mục ''Tóm tắt nhanh'': Dịch vụ này là gì: Một dịch vụ Mạng
+  riêng ảo (VPN), được BKNS gọi là Cloud VPN.'
+value_changed_from: VPN
+value_changed_at: '2026-04-07T00:15:17.540850+07:00'
+approved_at: '2026-04-08T13:00:09.190136+07:00'
+approved_by: admin-batch

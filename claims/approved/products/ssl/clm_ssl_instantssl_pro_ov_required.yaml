@@ -7,13 +7,14 @@ value: Đăng ký kinh doanh
 unit: null
 qualifiers: {}
 source_ids:
-- SRC-INSTANTSSL_PRO_OV_CHUNG_CHI_SSL_XAC_THUC_TO_CHUC_CUA_COM_2026_04_06
+  - SRC-INSTANTSSL_PRO_OV_CHUNG_CHI_SSL_XAC_THUC_TO_CHUC_CUA_COM_2026_04_06
 observed_at: '2026-04-07T00:42:11.448441+07:00'
 valid_from: '2026-04-07'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ Tóm tắt nhanh: Điều kiện/giới hạn nổi bật (nếu có): Yêu cầu
-  giấy tờ Đăng ký kinh doanh để xác thực.'
-approved_at: '2026-04-07T13:00:13.935489+07:00'
+compiler_note: 'Trích từ Tóm tắt nhanh: Điều kiện/giới hạn nổi bật (nếu có): Yêu cầu giấy tờ Đăng ký kinh doanh để xác thực.'
+approved_at: '2026-04-08T13:00:13.444329+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.581Z'

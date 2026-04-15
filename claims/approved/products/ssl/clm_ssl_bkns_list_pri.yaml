@@ -8,13 +8,14 @@ unit: VND
 qualifiers:
   billing_cycle: year
 source_ids:
-- SRC-CHUNG_CHI_SSL_INSTANTSSL_OV_2026_04_04
+  - SRC-CHUNG_CHI_SSL_INSTANTSSL_OV_2026_04_04
 observed_at: '2026-04-04T20:37:35.322675+07:00'
 valid_from: '2026-04-04'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: high
-compiler_note: 'Trích từ Bảng giá: | Giá nhà cung cấp | <del>2.598.700đ/năm</del>
-  |'
-approved_at: '2026-04-07T13:00:13.322251+07:00'
+compiler_note: 'Trích từ Bảng giá: | Giá nhà cung cấp | <del>2.598.700đ/năm</del> |'
+approved_at: '2026-04-08T13:00:12.820038+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.508Z'

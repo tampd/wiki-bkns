@@ -1,0 +1,18 @@
+claim_id: CLM-A27D99F923EE
+entity_id: product.email.cloud_email_server
+entity_type: product
+entity_name: Cloud Email Server
+attribute: data_completeness_note
+value: Phần mô tả chi tiết về dịch vụ Cloud Email Server không có trong nội dung được
+  cung cấp.
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_13
+observed_at: '2026-04-13T22:17:31.472231+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục ''Mô tả dịch vụ'': ''⚠️ CHƯA TRÍCH XUẤT ĐỦ: Phần mô tả
+  chi tiết về dịch vụ Cloud Email Server không có trong nội dung được cung cấp.'''

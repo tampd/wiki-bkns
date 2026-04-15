@@ -1,0 +1,19 @@
+claim_id: CLM-VPS-BKNS-PERFORMA
+entity_id: product.vps.bkns.amd
+entity_type: product_line
+entity_name: CLOUD VPS AMD (HIỆU NĂNG CAO)
+attribute: performance_claim
+value: tốc độ xử lý PHP nhanh hơn 30% so với chip thường
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-BKNS_CAMNAG_HOSTING_DOT3_2026_04_06
+observed_at: '2026-04-06T23:27:51.012330+07:00'
+valid_from: '2026-04-06'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ: *"Anh/chị đang chạy web trên hosting mà thấy chậm? Chuyển
+  sang AMD VPS bên em, tốc độ xử lý PHP nhanh hơn 30% so với chip thường."*'
+approved_at: '2026-04-08T13:00:14.832818+07:00'
+approved_by: admin-batch

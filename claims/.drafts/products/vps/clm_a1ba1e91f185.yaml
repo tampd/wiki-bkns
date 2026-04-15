@@ -1,0 +1,16 @@
+claim_id: CLM-A1BA1E91F185
+entity_id: product.vps.vps_mm01
+entity_type: product_plan
+entity_name: VPS-MM01
+attribute: cpu_cores
+value: 1
+unit: core
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_VPS_GIA_RE_MAY_CHU_AO_CAU_HINH_ON_INH_2026_04_13
+observed_at: '2026-04-13T22:31:41.535141+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: medium
+compiler_note: 'Trích từ bảng giá: ''VPS-MM01 | vCPU | 01 Core'''

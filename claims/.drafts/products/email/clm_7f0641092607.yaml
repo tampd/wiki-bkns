@@ -1,0 +1,26 @@
+claim_id: CLM-7F0641092607
+entity_id: ENT-PROD-EMAIL
+entity_type: product
+entity_name: Email Server
+attribute: comparison_point
+value: Một dịch vụ Email Server sẽ dùng riêng một server (Máy chủ riêng biệt).
+unit: null
+qualifiers:
+  compared_to: Email Hosting
+source_ids:
+- SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_VA_TIN_CAY_2026_04_05
+observed_at: '2026-04-14T17:07:24.260531+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng so sánh Email Hosting và Email Server: | EMAIL SERVER
+  | Một dịch vụ Email Server sẽ dùng riêng một server (Máy chủ riêng biệt). |'
+dual_vote:
+  status: PARTIAL
+  score: 0.6451
+  confidence: MEDIUM
+  flag: needs_review
+value_changed_from: Máy chủ dùng chung với những Shared email hosting khác (Share
+  Email Hosting).
+value_changed_at: '2026-04-14T17:07:24.260608+07:00'

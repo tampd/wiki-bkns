@@ -1,0 +1,17 @@
+claim_id: CLM-25CD65DE188D
+entity_id: ENT-PROD-SOFTWARE-VBULLETIN-CONNECT-UPGRADE
+entity_type: product_plan
+entity_name: Upgrade (vBulletin 4 to 5)
+attribute: description
+value: Bản upgrade cho phép bạn nâng cấp phiên bản vbullentin 4 lên vbulletin 5 connect.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-BAN_QUYEN_VBULLETIN_HE_QUAN_TRI_FORUM_MANG_XA_HOI_2026_04_13
+observed_at: '2026-04-13T21:35:38.796865+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng giá: | Upgrade | Giá liên hệ | Bản upgrade cho phép
+  bạn nâng cấp phiên bản vbullentin 4 lên vbulletin 5 connect. |'

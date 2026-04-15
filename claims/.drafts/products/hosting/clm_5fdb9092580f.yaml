@@ -1,0 +1,16 @@
+claim_id: CLM-5FDB9092580F
+entity_id: product.hosting.seo.bkseo-01
+entity_type: product_plan
+entity_name: BKSEO-01
+attribute: mysql_account_limit
+value: 6
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_HOSTING_SEO_TOI_UU_WEBSITE_CHO_CONG_CU_TIM_KIEM_2026_04_13
+observed_at: '2026-04-13T22:22:22.973439+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng giá, dòng ''MySQL Accounts'', cột ''BKSEO-01'': ''6'''

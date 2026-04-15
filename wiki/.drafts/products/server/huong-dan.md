@@ -2,62 +2,67 @@
 page_id: wiki.products.server.huong-dan
 title: Máy Chủ BKNS — Hướng Dẫn
 category: products/server
-updated: '2026-04-07'
+updated: '2026-04-14'
 review_state: drafted
-claims_used: 6
-compile_cost_usd: 0.0071
-self_review: pass
-corrections: 0
+claims_used: 9
+compile_cost_usd: 0.0077
+self_review: fail
+corrections: 1
 ---
 
 # Máy Chủ BKNS — Hướng Dẫn
 
-Trang này cung cấp hướng dẫn chi tiết về quy trình đăng ký, kích hoạt và quản lý các dịch vụ máy chủ tại BKNS.
+Hướng dẫn đăng ký, kích hoạt, và quản lý các dịch vụ Máy Chủ tại BKNS.
 
-## Hướng dẫn Đăng ký / Mua dịch vụ
+## Hướng Dẫn Đăng Ký Dịch Vụ
 
-Quy trình đăng ký khác nhau tùy thuộc vào dịch vụ cụ thể bạn lựa chọn.
+Quy trình đăng ký các dịch vụ máy chủ tại BKNS được thực hiện theo các bước sau, tùy thuộc vào dịch vụ bạn lựa chọn.
 
-### 1. Máy Chủ Vật Lý (Dedicated Server)
+### 1. Dịch vụ Thuê Chỗ Đặt Máy Chủ (Colocation)
 
-Để đăng ký dịch vụ Cho thuê máy chủ vật lý, khách hàng thực hiện theo các bước sau:
-1. Truy cập trang sản phẩm và chọn gói dịch vụ phù hợp.
-2. Nhấn vào nút "Đăng ký" trên gói sản phẩm đó.
-3. Hệ thống sẽ chuyển hướng đến Zalo của BKNS để đội ngũ chuyên viên tư vấn và hỗ trợ trực tiếp.
+Quy trình đăng ký dịch vụ Colocation bao gồm 4 bước:
 
-### 2. Thuê Chỗ Đặt Máy Chủ (Colocation)
+1.  **Liên hệ:** Khách hàng liên hệ với BKNS qua các kênh hỗ trợ.
+2.  **Tư vấn:** Đội ngũ BKNS sẽ tư vấn gói dịch vụ phù hợp.
+3.  **Ký hợp đồng:** Hai bên tiến hành ký kết hợp đồng dịch vụ.
+4.  **Bàn giao:** BKNS bàn giao không gian và các dịch vụ đi kèm để khách hàng triển khai máy chủ.
 
-Quy trình đăng ký dịch vụ Thuê Chỗ Đặt Máy Chủ bao gồm 4 bước:
-1. **Liên hệ:** Khách hàng liên hệ với BKNS qua các kênh hỗ trợ (hotline, email, v.v.).
-2. **Tư vấn:** BKNS tư vấn giải pháp và gói dịch vụ phù hợp với nhu cầu của khách hàng.
-3. **Ký hợp đồng:** Hai bên tiến hành ký kết hợp đồng dịch vụ.
-4. **Bàn giao:** BKNS tiến hành bàn giao không gian và các điều kiện cần thiết tại trung tâm dữ liệu.
+### 2. Dịch vụ Cho Thuê Máy Chủ Vật Lý (Dedicated Server)
+
+Để đăng ký dịch vụ, khách hàng nhấn vào nút **"Đăng ký"** trên mỗi gói sản phẩm. Hệ thống sẽ chuyển hướng đến Zalo của BKNS để được nhân viên tư vấn và hỗ trợ trực tiếp.
 
 ### 3. Dịch vụ Backup Dữ liệu
 
-Quy trình đăng ký dịch vụ được thực hiện thông qua tư vấn trực tiếp:
-1. Khách hàng có nhu cầu cần liên hệ với BKNS qua hotline, email hoặc các kênh liên lạc khác.
-2. BKNS sẽ tư vấn trực tiếp để xây dựng giải pháp backup phù hợp.
+Khách hàng có nhu cầu đăng ký dịch vụ cần liên hệ trực tiếp với BKNS qua hotline, email hoặc các kênh liên lạc khác để được tư vấn và hỗ trợ triển khai.
 
-## Hướng dẫn Kích hoạt / Triển khai
+## Hướng Dẫn Kích Hoạt và Triển Khai
 
-Thông tin về quy trình kích hoạt và triển khai chi tiết cho từng dịch vụ.
+### Dịch vụ Thuê Chỗ Đặt Máy Chủ (Colocation)
 
-- **Thuê Chỗ Đặt Máy Chủ (Colocation):** Dịch vụ được triển khai ở bước "Bàn giao" sau khi khách hàng hoàn tất ký hợp đồng.
-- **Các dịch vụ khác:** Đang cập nhật.
+Sau khi hoàn tất hợp đồng, BKNS sẽ tiến hành bàn giao không gian tại Data Center và các dịch vụ đi kèm để khách hàng có thể bắt đầu triển khai máy chủ của mình.
 
-## Hướng dẫn Quản lý / Sử dụng
+### Các dịch vụ khác
 
 Đang cập nhật.
 
-## Troubleshooting / Xử lý sự cố cơ bản
+## Hướng Dẫn Quản Lý và Sử Dụng
+
+### Phục hồi dữ liệu (Dịch vụ Backup)
+
+Khi cần phục hồi dữ liệu từ bản sao lưu, bạn chỉ cần liên hệ với đội ngũ hỗ trợ kỹ thuật của BKNS để được hỗ trợ nhanh chóng và hiệu quả.
+
+### Quản lý các dịch vụ khác
 
 Đang cập nhật.
 
-## Sản phẩm liên quan
+## Hỗ Trợ và Xử Lý Sự Cố
 
-- [Cloud VPS BKNS](../vps/index.md)
-- [Phần Mềm & Bản Quyền BKNS](../software/index.md)
+Đang cập nhật.
+
+## Xem Thêm
+
+-   [Cloud VPS BKNS](../vps/index.md)
+-   [Phần Mềm & Bản Quyền BKNS](../software/index.md)
 
 ---
-Compiled by BKNS Wiki Bot • 2026-04-07
+Compiled by BKNS Wiki Bot

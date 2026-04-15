@@ -1,0 +1,24 @@
+claim_id: CLM-9377777CF5C1
+entity_id: ENT-PROD-VPS
+entity_type: product
+entity_name: VPS N8N – AI
+attribute: product_description
+value: Dịch vụ VPS (Máy chủ ảo) được cài đặt sẵn công cụ tự động hóa N8N, giúp kết
+  nối các ứng dụng và tự động hóa các quy trình công việc mà không cần viết code.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-VPS_N8N_AI_DICH_VU_TU_ONG_HOA_QUY_TRINH_TAI_BKNS_2026_04_05
+observed_at: '2026-04-14T16:20:24.919266+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: • Dịch vụ này là gì: Dịch vụ VPS (Máy chủ
+  ảo) được cài đặt sẵn công cụ tự động hóa N8N, giúp kết nối các ứng dụng và tự động
+  hóa các quy trình công việc mà không cần viết code.'
+dual_vote:
+  status: PARTIAL
+  score: 0.6693
+  confidence: MEDIUM
+  flag: needs_review

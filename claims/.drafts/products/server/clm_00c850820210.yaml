@@ -1,0 +1,22 @@
+claim_id: CLM-00C850820210
+entity_id: product.server_management.bkns
+entity_type: product
+entity_name: Dịch vụ Quản trị Máy chủ Trọn gói
+attribute: name
+value: Dịch vụ Quản trị Máy chủ Trọn gói
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-DICH_VU_QUAN_TRI_MAY_CHU_TRON_GOI_TAI_BKNS_2026_04_13
+- SRC-DICH_VU_QUAN_TRI_MAY_CHU_TRON_GOI_TAI_BKNS_2026_04_05
+observed_at: '2026-04-14T17:14:28.604802+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ tiêu đề trang web: ═══ Dịch vụ Quản trị Máy chủ Trọn gói'
+dual_vote:
+  status: DISAGREE
+  score: 0.5497
+  confidence: LOW
+  flag: human_review_required

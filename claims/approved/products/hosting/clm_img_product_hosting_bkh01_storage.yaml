@@ -1,0 +1,18 @@
+claim_id: CLM-IMG-product.hosting.bkh01-storage
+entity_id: product.hosting.bkh01
+entity_type: product_plan
+entity_name: Hosting Giá Rẻ BKH01
+attribute: storage
+value: 1 GB SSD
+confidence: ground_truth
+review_state: approved
+risk_class: verified
+source_ids:
+  - IMG-BKH01-BKH02-BKH03-BKH04
+observed_at: '2026-04-07T16:33:30.251022+07:00'
+valid_from: '2026-04-07'
+approved_at: '2026-04-07T16:33:30.251022+07:00'
+approved_by: image-extraction
+compiler_note: From bkns.vn screenshot (BKH01-BKH02-BKH03-BKH04)
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.140Z'

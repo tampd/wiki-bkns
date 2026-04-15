@@ -1,0 +1,22 @@
+claim_id: CLM-02CE2E549F8D
+entity_id: ssl.geotrust.true_business_id
+entity_type: product_plan
+entity_name: GeoTrust True BusinessID
+attribute: server_license
+value: Không giới hạn
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-GEOTRUST_TRUE_BUSINESSID_CHUNG_CHI_SSL_XAC_THUC_DOANH_NGHI_2026_04_13
+observed_at: '2026-04-14T16:31:44.044395+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tính năng / Thành phần: ''• Giấy phép máy chủ: Không
+  giới hạn.'''
+dual_vote:
+  status: DISAGREE
+  score: 0.2607
+  confidence: LOW
+  flag: human_review_required

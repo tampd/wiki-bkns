@@ -1,0 +1,16 @@
+claim_id: CLM-26B2EC2D8031
+entity_id: product.vps.vps_mm02
+entity_type: product_plan
+entity_name: VPS-MM02
+attribute: cpu_cores
+value: 1
+unit: core
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_VPS_GIA_RE_MAY_CHU_AO_CAU_HINH_ON_INH_2026_04_13
+observed_at: '2026-04-13T22:31:41.548474+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: medium
+compiler_note: 'Trích từ bảng giá: ''VPS-MM02 | vCPU | 01 Core'''

@@ -7,13 +7,14 @@ value: 1 tên miền chính
 unit: null
 qualifiers: {}
 source_ids:
-- SRC-INSTANTSSL_PRO_OV_CHUNG_CHI_SSL_XAC_THUC_TO_CHUC_CUA_COM_2026_04_06
+  - SRC-INSTANTSSL_PRO_OV_CHUNG_CHI_SSL_XAC_THUC_TO_CHUC_CUA_COM_2026_04_06
 observed_at: '2026-04-07T00:42:11.455174+07:00'
 valid_from: '2026-04-07'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ Tính năng / Thành phần: Bảo vệ tên miền: Bảo vệ cho 1 tên
-  miền chính.'
-approved_at: '2026-04-07T13:00:13.889882+07:00'
+compiler_note: 'Trích từ Tính năng / Thành phần: Bảo vệ tên miền: Bảo vệ cho 1 tên miền chính.'
+approved_at: '2026-04-08T13:00:13.389346+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.576Z'

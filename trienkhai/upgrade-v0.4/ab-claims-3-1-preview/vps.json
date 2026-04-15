@@ -1,0 +1,151 @@
+{
+  "claims": [
+    {
+      "entity_name": "Cloud VPS AMD",
+      "attribute": "Loại CPU",
+      "value": "AMD EPYC™ Gen 2",
+      "unit": null,
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Cloud VPS AMD",
+      "attribute": "Công nghệ ổ cứng",
+      "value": "NVMe Raid 10",
+      "unit": null,
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Cloud VPS AMD",
+      "attribute": "Giá khởi điểm",
+      "value": "165000",
+      "unit": "đ/tháng",
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Cloud VPS AMD",
+      "attribute": "Tốc độ xung nhịp CPU",
+      "value": "2.6 - 3.9",
+      "unit": "GHz",
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Cloud VPS AMD",
+      "attribute": "Băng thông",
+      "value": "Không giới hạn",
+      "unit": null,
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Cloud VPS AMD",
+      "attribute": "Thời gian khởi tạo",
+      "value": "1",
+      "unit": "phút",
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Cloud VPS AMD",
+      "attribute": "Tính năng bảo mật",
+      "value": "AMD Infinity Guard",
+      "unit": null,
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Cloud VPS AMD",
+      "attribute": "Chu kỳ backup",
+      "value": "Định kỳ hàng tuần",
+      "unit": null,
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Cloud VPS AMD",
+      "attribute": "Tốc độ Network port",
+      "value": "10",
+      "unit": "Gbps",
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Gói AMD 5",
+      "attribute": "Giá",
+      "value": "710000",
+      "unit": "đ/tháng",
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Gói AMD 5",
+      "attribute": "Số lượng Core CPU",
+      "value": "4",
+      "unit": "Core",
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Gói AMD 5",
+      "attribute": "Dung lượng RAM",
+      "value": "6",
+      "unit": "GB",
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Gói AMD 5",
+      "attribute": "Dung lượng ổ cứng NVMe",
+      "value": "60",
+      "unit": "GB",
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Gói AMD 5",
+      "attribute": "Tốc độ Network port",
+      "value": "10",
+      "unit": "Gbps",
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Gói AMD 5",
+      "attribute": "Tốc độ Download",
+      "value": "500",
+      "unit": "Mbps",
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Gói AMD 5",
+      "attribute": "Tốc độ Upload",
+      "value": "200",
+      "unit": "Mbps",
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Gói AMD 5",
+      "attribute": "Tần suất Backup",
+      "value": "1",
+      "unit": "lần/tuần",
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Cloud VPS AMD (Nâng cấp)",
+      "attribute": "Giá nâng cấp thêm 10GB SSD (chưa VAT)",
+      "value": "50000",
+      "unit": "đ/tháng",
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Cloud VPS AMD (Nâng cấp)",
+      "attribute": "Giá nâng cấp thêm RAM (chưa VAT)",
+      "value": "100000",
+      "unit": "đ/tháng",
+      "confidence": 0.7
+    },
+    {
+      "entity_name": "Cloud VPS AMD (Nâng cấp)",
+      "attribute": "Giá nâng cấp thêm SSD (chưa VAT)",
+      "value": "150000",
+      "unit": "đ/tháng",
+      "confidence": 0.7
+    },
+    {
+      "entity_name": "Cloud VPS AMD (Nâng cấp)",
+      "attribute": "Giá nâng cấp thêm tốc độ (chưa VAT)",
+      "value": "80000",
+      "unit": "đ/tháng",
+      "confidence": 0.7
+    }
+  ]
+}

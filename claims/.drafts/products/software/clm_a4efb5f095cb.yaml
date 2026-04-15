@@ -1,0 +1,23 @@
+claim_id: CLM-A4EFB5F095CB
+entity_id: product.software.plesk_obsidian
+entity_type: product
+entity_name: Plesk Obsidian License
+attribute: registration_process
+value: Khách hàng có thể đặt mua license trực tiếp trên trang dịch vụ bằng cách nhấn
+  vào nút "ĐẶT MUA" tương ứng với gói đã chọn. Hệ thống sẽ chuyển hướng đến giỏ hàng
+  trên trang my.bkns.net để hoàn tất thanh toán.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-PHAN_MEM_QUAN_TRI_HOSTING_PLESK_OBSIDIAN_2026_04_05
+observed_at: '2026-04-14T12:23:09.297646+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: Trích từ mục Quy trình đăng ký / Triển khai / Kích hoạt.
+dual_vote:
+  status: PARTIAL
+  score: 0.6082
+  confidence: MEDIUM
+  flag: needs_review

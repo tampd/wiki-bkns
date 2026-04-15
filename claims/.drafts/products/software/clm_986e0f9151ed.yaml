@@ -1,0 +1,22 @@
+claim_id: CLM-986E0F9151ED
+entity_id: product.software.dti_assessment
+entity_type: product
+entity_name: Phần Mềm Đánh Giá Chuyển Đổi Số DTI
+attribute: source_url
+value: https://www.bkns.vn/phan-mem-danh-gia-chuyen-doi-so-dti.html
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-PHAN_MEM_ANH_GIA_CHUYEN_OI_SO_DTI_2026_04_05
+- SRC-PHAN_MEM_ANH_GIA_CHUYEN_OI_SO_DTI_2026_04_13
+observed_at: '2026-04-14T17:20:54.494285+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Thông tin nguồn: • URL: https://www.bkns.vn/phan-mem-danh-gia-chuyen-doi-so-dti.html'
+dual_vote:
+  status: DISAGREE
+  score: 0.0
+  confidence: LOW
+  flag: human_review_required

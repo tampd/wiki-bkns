@@ -1,0 +1,20 @@
+claim_id: CLM-EXCEL-product_email_server_es_4-price_1y
+entity_id: product.email.server.es_4
+entity_type: product_plan
+entity_name: Cloud Email Server ES 4
+attribute: price_1y
+value: 49980000
+confidence: ground_truth
+review_state: approved
+risk_class: verified
+source_ids:
+- EXCEL-BANGGIA-BKNS-2026
+observed_at: '2026-04-07T15:46:04.873903+07:00'
+valid_from: '2026-04-07'
+approved_at: '2026-04-07T15:46:04.873903+07:00'
+approved_by: excel-direct-injection
+unit: VND
+qualifiers:
+  period: 1 năm
+  vat_included: false
+compiler_note: Excel Email sheet, Email Server ES, ES 4, 1 năm

@@ -1,0 +1,23 @@
+claim_id: CLM-031FE5A5622F
+entity_id: ENT-PROD-SSL-011
+entity_type: product
+entity_name: GeoTrust QuickSSL Premium Wildcard
+attribute: list_price
+value: 16354000
+unit: VND
+qualifiers:
+  billing_cycle: year
+source_ids:
+- SRC-CHUNG_CHI_SSL_GEOTRUST_QUICKSSL_PREMIUM_WILDCARD_2026_04_05
+observed_at: '2026-04-14T16:23:21.960204+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng giá: | Giá nhà cung cấp | <del>16.354.000đ</del> | năm
+  |'
+dual_vote:
+  status: DISAGREE
+  score: 0.5331
+  confidence: LOW
+  flag: human_review_required

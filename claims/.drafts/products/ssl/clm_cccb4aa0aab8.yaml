@@ -1,0 +1,20 @@
+claim_id: CLM-CCCB4AA0AAB8
+entity_id: ENT-PROD-SSL-002
+entity_type: product
+entity_name: GeoTrust QuickSSL Premium Wildcard
+attribute: short_description
+value: GeoTrust QuickSSL Premium Wildcard là một chứng chỉ SSL/TLS xác thực tên miền
+  (DV) cho phép bảo mật một tên miền chính và không giới hạn số lượng tên miền phụ
+  (subdomain).
+unit: null
+qualifiers: null
+source_ids:
+- SRC-CHUNG_CHI_SSL_GEOTRUST_QUICKSSL_PREMIUM_WILDCARD_2026_04_13
+observed_at: '2026-04-13T21:58:22.288200+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ mục Tóm tắt nhanh: ''• Dịch vụ này là gì: GeoTrust QuickSSL
+  Premium Wildcard là một chứng chỉ SSL/TLS xác thực tên miền (DV) cho phép bảo mật
+  một tên miền chính và không giới hạn số lượng tên miền phụ (subdomain).'''

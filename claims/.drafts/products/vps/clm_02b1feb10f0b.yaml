@@ -1,0 +1,22 @@
+claim_id: CLM-02B1FEB10F0B
+entity_id: ENT-PROD-VPS
+entity_type: product
+entity_name: Cloud VPS SSD
+attribute: bandwidth
+value: Unlimited
+unit: ''
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_THUE_CLOUD_VPS_SSD_GIA_RE_TAI_BKNS_2026_04_05
+observed_at: '2026-04-14T16:10:11.093165+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục ''Tính năng / Thành phần'': ''Băng thông: Lưu lượng truyền
+  tải dữ liệu không giới hạn (Unlimited)'''
+dual_vote:
+  status: PARTIAL
+  score: 0.6518
+  confidence: MEDIUM
+  flag: needs_review

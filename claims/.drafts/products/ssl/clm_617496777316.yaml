@@ -1,0 +1,22 @@
+claim_id: CLM-617496777316
+entity_id: ssl.geotrust.true_business_id
+entity_type: product_plan
+entity_name: GeoTrust True BusinessID
+attribute: money_back_guarantee
+value: 30
+unit: ngày
+qualifiers: {}
+source_ids:
+- SRC-GEOTRUST_TRUE_BUSINESSID_CHUNG_CHI_SSL_XAC_THUC_DOANH_NGHI_2026_04_13
+observed_at: '2026-04-14T16:31:44.054917+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tính năng / Thành phần: ''• Chính sách hoàn tiền: 30
+  ngày.'''
+dual_vote:
+  status: DISAGREE
+  score: 0.2607
+  confidence: LOW
+  flag: human_review_required

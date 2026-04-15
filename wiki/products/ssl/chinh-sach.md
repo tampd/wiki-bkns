@@ -2,69 +2,63 @@
 page_id: wiki.products.ssl.chinh-sach
 title: Chứng Chỉ SSL BKNS — Chính Sách
 category: products/ssl
-updated: '2026-04-07'
-review_state: approved
-claims_used: 47
-compile_cost_usd: 0.0116
+updated: '2026-04-14'
+review_state: drafted
+claims_used: 149
+compile_cost_usd: 0.0268
 self_review: pass
 corrections: 0
-approved_at: '2026-04-07T13:16:30.167194+07:00'
 ---
 
-# Chứng Chỉ SSL BKNS — Chính Sách
+# Chính sách Dịch vụ Chứng chỉ SSL tại BKNS
 
-Tổng hợp các chính sách chung về cam kết dịch vụ (SLA), hoàn tiền, hỗ trợ kỹ thuật và các điều khoản liên quan đến dịch vụ Chứng chỉ SSL tại BKNS.
+Trang này tổng hợp các thông tin về chính sách hỗ trợ, cam kết dịch vụ, và các điều khoản liên quan đến sản phẩm Chứng chỉ SSL do BKNS cung cấp. Các chính sách này được xây dựng nhằm đảm bảo quyền lợi và sự hài lòng của khách hàng.
 
-## Chính sách Hoàn tiền
+### Chính sách Hoàn tiền
 
-BKNS cam kết hoàn tiền trong vòng 30 ngày cho một số sản phẩm chứng chỉ SSL. Khách hàng có thể yêu cầu hoàn tiền nếu không hài lòng với dịch vụ trong khoảng thời gian này.
+BKNS áp dụng chính sách hoàn tiền linh hoạt để khách hàng có thể an tâm trải nghiệm dịch vụ.
 
-Các sản phẩm áp dụng chính sách hoàn tiền 30 ngày bao gồm:
-- RapidSSL Wildcard Certificate
-- EssentialSSL (DV)
-- GeoTrust QuickSSL Premium SAN
+*   **Thời gian hoàn tiền:** Hầu hết các sản phẩm chứng chỉ SSL đều được áp dụng chính sách **hoàn tiền trong vòng 30 ngày** kể từ ngày đăng ký.
+*   **Sản phẩm áp dụng (ví dụ):**
+    *   RapidSSL Wildcard Certificate
+    *   GeoTrust QuickSSL Premium SAN
+    *   GeoTrust True BusinessID
+    *   Comodo SSL Certificate (DV)
+    *   EssentialSSL (DV)
 
-## Hỗ trợ Kỹ thuật và Cài đặt
+### Hỗ trợ Kỹ thuật & Cài đặt
 
-**Hỗ trợ Cài đặt:**
-- **Miễn phí cài đặt:** Dịch vụ được miễn phí cài đặt cho sản phẩm `RapidSSL Certificate`.
-- **Hỗ trợ cài đặt miễn phí từ BKNS:** Áp dụng cho sản phẩm `InstantSSL (OV)`.
-- **Có hỗ trợ cài đặt:** Áp dụng cho sản phẩm `GeoTrust True BusinessID`.
+BKNS cam kết đồng hành cùng khách hàng trong suốt quá trình sử dụng dịch vụ.
 
-**Thời gian hỗ trợ:**
-- **Hỗ trợ kỹ thuật 24/7:** Áp dụng cho sản phẩm `RapidSSL Wildcard Certificate`.
+*   **Hỗ trợ Cài đặt:** BKNS **hỗ trợ cài đặt miễn phí** cho khách hàng khi đăng ký dịch vụ chứng chỉ SSL.
+*   **Thời gian Hỗ trợ:** Đội ngũ kỹ thuật sẵn sàng hỗ trợ **24/7** đối với một số sản phẩm như RapidSSL Wildcard và Comodo SSL Wildcard.
+*   **Kênh hỗ trợ (Hotline, Email, Ticket):** Đang cập nhật.
+*   **Cam kết thời gian phản hồi:** Đang cập nhật.
 
-**Kênh hỗ trợ (Hotline, Email, Ticket):**
-Đang cập nhật.
+### Chính sách Giá & Đảm bảo
 
-**Thời gian phản hồi:**
-Đang cập nhật.
+*   **Cam kết giá tốt nhất:** BKNS cam kết mang lại mức giá tốt nhất cho một số sản phẩm, tiêu biểu là **RapidSSL Wildcard Certificate**.
+*   **"BKNS ĐẢM BẢO":** Một số dịch vụ như **InstantSSL Pro (OV)** và **GeoTrust QuickSSL Premium Wildcard** đi kèm với tem "BKNS ĐẢM BẢO", khẳng định chất lượng và uy tín của dịch vụ được cung cấp.
 
-## Cam kết về Giá và Chất lượng
+### Chính sách Bảo hiểm
 
-- **Cam kết giá tốt nhất (Best price guarantee):** Áp dụng cho sản phẩm `RapidSSL Wildcard Certificate`.
-- **BKNS ĐẢM BẢO:** Áp dụng cho sản phẩm `InstantSSL Pro (OV)`.
+Một số loại chứng chỉ SSL cao cấp đi kèm với gói bảo hiểm từ Tổ chức chứng thực số (CA) để bảo vệ người dùng cuối trong trường hợp có sai sót từ phía nhà cung cấp.
 
-## Cam kết Chất lượng Dịch vụ (SLA)
+*   **Comodo EV SSL:** Đi kèm mức bảo hiểm **1.750.000 USD**.
 
-Đang cập nhật.
+### Các Chính sách Khác
 
-## Dùng thử Dịch vụ (Trial)
+Các thông tin dưới đây đang được chúng tôi cập nhật:
 
-Đang cập nhật.
+*   **Cam kết thời gian hoạt động (SLA Uptime):** Đang cập nhật.
+*   **Chính sách dùng thử (Trial Policy):** Đang cập nhật.
+*   **Điều khoản sử dụng chi tiết (Terms of Service):** Đang cập nhật.
+*   **Chính sách sao lưu (Backup Policy):** Đang cập nhật.
 
-## Chính sách Backup
+### Xem thêm
 
-Đang cập nhật.
+*   [Web Hosting BKNS](../hosting/index.md)
+*   [Cloud VPS BKNS](../vps/index.md)
+*   [Tên Miền BKNS](../ten-mien/index.md)
 
-## Điều khoản Sử dụng
-
-Đang cập nhật.
-
-## Sản phẩm liên quan
-
-- [Web Hosting BKNS](../hosting/index.md)
-- [Cloud VPS BKNS](../vps/index.md)
-- [Tên Miền BKNS](../ten-mien/index.md)
-
-Compiled by BKNS Wiki Bot • 2026-04-07
+Compiled by BKNS Wiki Bot • 2026-04-14

@@ -1,0 +1,25 @@
+claim_id: CLM-ENT-PROD-SSL-FEATURE
+entity_id: ENT-PROD-SSL-INSTANTSSL-PRO-OV
+entity_type: product
+entity_name: InstantSSL (OV)
+attribute: feature
+value: Hiển thị thông tin doanh nghiệp đã được xác thực khi di chuột qua Dấu bảo mật
+  Comodo động
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-INSTANTSSL_PRO_OV_CHUNG_CHI_SSL_XAC_THUC_TO_CHUC_CUA_COM_2026_04_04
+- SRC-CHUNG_CHI_SSL_GEOTRUST_TRUE_BUSINESSID_EV_FLEX_2026_04_06
+- SRC-CHUNG_CHI_SSL_INSTANTSSL_OV_2026_04_06
+observed_at: '2026-04-06T23:41:27.098365+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ Mô tả dịch vụ: Điều này được thực hiện thông qua Dấu bảo
+  mật Comodo động, khi khách truy cập di chuột qua sẽ hiển thị thông tin doanh nghiệp
+  đã được xác thực.'
+value_changed_from: Hiển thị tên công ty trên chứng chỉ
+value_changed_at: '2026-04-06T23:41:27.098395+07:00'
+approved_at: '2026-04-08T13:00:12.369753+07:00'
+approved_by: admin-batch

@@ -1,0 +1,17 @@
+claim_id: CLM-B41E8D309D55
+entity_id: ENT-PROD-VPS
+entity_type: product
+entity_name: VPS Siêu Rẻ
+attribute: auto_activation
+value: true
+unit: ''
+qualifiers: {}
+source_ids:
+- SRC-DICH_VU_VPS_SIEU_TIET_KIEM_VPS_SIEU_RE_TAI_BKNS_2026_04_13
+observed_at: '2026-04-13T22:32:55.331859+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tính năng / Thành phần: ''Kích hoạt tự động: Dịch vụ
+  được khởi tạo và kích hoạt một cách tự động sau khi đăng ký.'''

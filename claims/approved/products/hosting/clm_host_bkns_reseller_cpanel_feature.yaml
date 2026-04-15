@@ -7,12 +7,14 @@ value: Cài WordPress 1 click qua Softaculous
 unit: null
 qualifiers: null
 source_ids:
-- SRC-RESELLER_HOSTING_WEB_2026_04_05
+  - SRC-RESELLER_HOSTING_WEB_2026_04_05
 observed_at: '2026-04-05T22:11:26.608769+07:00'
 valid_from: '2026-04-05'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
 compiler_note: 'Trích từ đặc điểm: - Cài WordPress 1 click qua Softaculous'
-approved_at: '2026-04-07T13:00:11.955293+07:00'
+approved_at: '2026-04-08T13:00:11.064451+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.016Z'

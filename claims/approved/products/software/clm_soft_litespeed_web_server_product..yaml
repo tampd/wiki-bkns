@@ -7,15 +7,16 @@ value: thương mại
 unit: null
 qualifiers: null
 source_ids:
-- SRC-LITESPEED_WEB_SERVER_TINH_NANG_PHIEN_BAN_VA_SO_SANH_2026_04_06
+  - SRC-LITESPEED_WEB_SERVER_TINH_NANG_PHIEN_BAN_VA_SO_SANH_2026_04_06
 observed_at: '2026-04-07T00:44:12.008589+07:00'
 valid_from: '2026-04-07'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ Điều kiện/giới hạn nổi bật: Phiên bản LiteSpeed Enterprise
-  là phần mềm thương mại có tính phí...'
+compiler_note: 'Trích từ Điều kiện/giới hạn nổi bật: Phiên bản LiteSpeed Enterprise là phần mềm thương mại có tính phí...'
 value_changed_from: Hiệu quả hơn so với Mod_Rewrite của Apache do được viết lại
 value_changed_at: '2026-04-07T00:44:12.008611+07:00'
-approved_at: '2026-04-07T13:00:16.146787+07:00'
+approved_at: '2026-04-08T13:00:15.969339+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.427Z'

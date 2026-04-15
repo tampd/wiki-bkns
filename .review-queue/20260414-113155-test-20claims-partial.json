@@ -1,0 +1,12 @@
+{
+  "ts": "2026-04-14T11:31:55.182220+07:00",
+  "skill": "test-20claims",
+  "status": "PARTIAL",
+  "flag": "needs_review",
+  "score": 0.6265,
+  "model_a": "gemini-2.5-pro",
+  "model_b": "gpt-5.4",
+  "text_a": "```json\n{\n  \"attribute\": \"target_customer\",\n  \"value\": \"Phù hợp với các website cá nhân, blog, diễn đàn nhỏ hoặc các website không có giao dịch trực tuyến.\",\n  \"confidence\": 1.0,\n  \"agrees\": true,\n  \"reason\": \"The official BKNS product page for PositiveSSL (DV) confirms it is suitable for personal websites, blogs, and small forums, aligning with the claim of targeting sites that need basic, fast, and simple security.\"\n}\n```",
+  "text_b": "{\"attribute\":\"target_customer\",\"value\":\"Các trang web cần bảo mật cơ bản một cách nhanh chóng và đơn giản, như blog, website cá nhân.\",\"confidence\":0.93,\"agrees\":true,\"reason\":\"PositiveSSL (DV) là chứng chỉ DV cơ bản, thường được BKNS mô tả phù hợp cho website cần kích hoạt SSL nhanh, đơn giản và chi phí thấp như blog hoặc website cá nhân.\"}",
+  "prompt_preview": "Verify the following claim about BKNS products and return JSON:\nEntity: PositiveSSL (DV)\nAttribute: target_customer\nClaimed value: Các trang web cần bảo mật cơ bản một cách nhanh chóng và đơn giản, như blog, website cá nhân.\n\nReturn JSON: {\"attribute\": \"...\", \"value\": \"...\", \"confidence\": 0.0-1.0, \"agrees\": true/false, \"reason\": \"brief explanation\"}"
+}

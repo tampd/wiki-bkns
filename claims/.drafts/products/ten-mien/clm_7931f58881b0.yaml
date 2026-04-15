@@ -1,0 +1,17 @@
+claim_id: CLM-7931F58881B0
+entity_id: ENT-PROD-DOMAIN.QT.COM
+entity_type: product_plan
+entity_name: .com
+attribute: installation_fee
+value: 0
+unit: VND
+qualifiers:
+  note: Miễn phí
+source_ids:
+- SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_13
+observed_at: '2026-04-13T21:36:58.137987+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: Trích từ bảng giá tên miền Quốc tế, dòng '.com', cột 'Phí cài đặt'.

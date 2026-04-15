@@ -1,0 +1,22 @@
+claim_id: CLM-A40D68A82F2C
+entity_id: product.software.plesk_obsidian
+entity_type: product
+entity_name: Plesk Obsidian License
+attribute: policy
+value: Các tính năng có ghi chú là "Available as Add-on" (biểu tượng ➕ trong bảng
+  so sánh) là các tùy chọn cần mua thêm, không bao gồm trong giá gói cơ bản.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-PHAN_MEM_QUAN_TRI_HOSTING_PLESK_OBSIDIAN_2026_04_05
+observed_at: '2026-04-14T12:23:09.301086+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: medium
+compiler_note: Trích từ mục Chính sách / Điều khoản / Lưu ý.
+dual_vote:
+  status: PARTIAL
+  score: 0.6082
+  confidence: MEDIUM
+  flag: needs_review

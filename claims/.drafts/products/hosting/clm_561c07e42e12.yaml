@@ -1,0 +1,23 @@
+claim_id: CLM-561C07E42E12
+entity_id: bkns.hosting.platium.bkcp01
+entity_type: product_plan
+entity_name: BKCP01
+attribute: storage_capacity
+value: 2
+unit: GB
+qualifiers:
+  storage_type: NVMe U.2
+source_ids:
+- SRC-BANG_GIA_HOSTING_2026_04_05
+observed_at: '2026-04-14T12:01:01.937671+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng Platium web hosting, cột BKCP01, dòng NVMe U.2 Storage:
+  2 GB'
+dual_vote:
+  status: DISAGREE
+  score: 0.4208
+  confidence: LOW
+  flag: human_review_required

@@ -1,0 +1,17 @@
+claim_id: CLM-D7C653F12FC6
+entity_id: ENT-PROD-VPS:vps_seo
+entity_type: product_service
+entity_name: VPS SEO
+attribute: root_access
+value: true
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-DICH_VU_CLOUD_VPS_SEO_MAY_CHU_AO_TOI_UU_CHO_SEO_2026_04_13
+observed_at: '2026-04-13T22:18:36.347468+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Mô tả dịch vụ: ''Khách hàng có toàn quyền quản trị và
+  sử dụng tài nguyên được cấp phát.'''

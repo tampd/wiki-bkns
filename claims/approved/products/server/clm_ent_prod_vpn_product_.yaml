@@ -7,16 +7,17 @@ value: Cloud VPN
 unit: null
 qualifiers: {}
 source_ids:
-- SRC-DICH_VU_VPN_CLOUD_VPN_CUA_BKNS_2026_04_04
-- SRC-DICH_VU_VPN_CLOUD_VPN_CUA_BKNS_2026_04_06
+  - SRC-DICH_VU_VPN_CLOUD_VPN_CUA_BKNS_2026_04_04
+  - SRC-DICH_VU_VPN_CLOUD_VPN_CUA_BKNS_2026_04_06
 observed_at: '2026-04-07T00:15:17.540832+07:00'
 valid_from: '2026-04-04'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ mục ''Tóm tắt nhanh'': Dịch vụ này là gì: Một dịch vụ Mạng
-  riêng ảo (VPN), được BKNS gọi là Cloud VPN.'
+compiler_note: 'Trích từ mục ''Tóm tắt nhanh'': Dịch vụ này là gì: Một dịch vụ Mạng riêng ảo (VPN), được BKNS gọi là Cloud VPN.'
 value_changed_from: VPN
 value_changed_at: '2026-04-07T00:15:17.540850+07:00'
-approved_at: '2026-04-07T13:00:10.053325+07:00'
+approved_at: '2026-04-08T13:00:09.190136+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.326Z'

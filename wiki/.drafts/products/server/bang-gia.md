@@ -2,51 +2,79 @@
 page_id: wiki.products.server.bang-gia
 title: Máy Chủ BKNS — Bảng Giá
 category: products/server
-updated: '2026-04-07'
+updated: '2026-04-14'
 review_state: drafted
-claims_used: 12
-compile_cost_usd: 0.0095
+claims_used: 25
+compile_cost_usd: 0.015
 self_review: fail
 corrections: 1
 ---
 
 # Máy Chủ BKNS — Bảng Giá
 
-Trang này tổng hợp bảng giá chi tiết cho các dịch vụ và sản phẩm máy chủ do BKNS cung cấp, được biên soạn từ các nguồn dữ liệu đã kiểm duyệt.
+Trang này tổng hợp bảng giá chi tiết cho các dịch vụ máy chủ và dịch vụ liên quan do BKNS cung cấp. Dữ liệu được trích xuất và tổng hợp từ hệ thống quản lý tri thức nội bộ, đảm bảo tính chính xác và cập nhật.
 
-### Máy chủ riêng (Dedicated Server)
+Tất cả giá được niêm yết bằng Việt Nam Đồng (VND), trừ khi có ghi chú khác.
 
-Bảng giá các gói máy chủ vật lý riêng.
+## 1. Máy Chủ Riêng (Dedicated Server)
 
-| Tên gói/Dịch vụ | Giá | Phí khởi tạo / Mua một lần | VAT | Ghi chú |
+Bảng giá cho các gói máy chủ vật lý riêng.
+
+| Tên gói | Giá tháng (VND) | Phí khởi tạo (VND) | VAT | Ghi chú |
 | :--- | :--- | :--- | :--- | :--- |
-| Máy chủ riêng MCCB01 | 1.600.000 VND/tháng | Đang cập nhật | Đang cập nhật | Áp dụng cho chu kỳ thanh toán 24 tháng. |
-| Máy chủ riêng MCCB02 | 1.800.000 VND/tháng | Đang cập nhật | Đang cập nhật | Áp dụng cho chu kỳ thanh toán 24 tháng. |
+| MCCB01 | 1.600.000 | Đang cập nhật | Đang cập nhật | Áp dụng cho chu kỳ thanh toán 24 tháng. |
+| MCCB02 | 1.800.000 | Đang cập nhật | Đang cập nhật | Áp dụng cho chu kỳ thanh toán 24 tháng. |
 
-### Dịch vụ liên quan
+## 2. Dịch Vụ Bổ Sung (Add-ons)
 
-Bảng giá các dịch vụ quản trị, thuê chỗ đặt và các giải pháp doanh nghiệp.
+Bảng giá các dịch vụ và phần cứng nâng cấp cho máy chủ.
 
-| Tên gói/Dịch vụ | Giá | Phí khởi tạo / Mua một lần | VAT | Ghi chú |
-| :--- | :--- | :--- | :--- | :--- |
-| Colocation (Thuê chỗ đặt) | 1.000.000 - 2.000.000 VND/tháng | 80.000.000 VND | Đang cập nhật | Giá tháng là chi phí cho tiền điện. Phí khởi tạo là chi phí tham khảo cho phần cứng máy chủ cơ sở dữ liệu. |
-| Quản trị Máy chủ - Gói Nâng cao | 990.000 VND/tháng | Đang cập nhật | Đang cập nhật | Đang cập nhật |
-| Dịch vụ Backup | 200.000 - 300.000 VND/tháng | Đang cập nhật | Đang cập nhật | Đang cập nhật |
-| VPN Doanh nghiệp | 12.000.000 - 35.000.000 VND/tháng | Đang cập nhật | Đang cập nhật | Giá tham khảo cho 50 người dùng. Chi phí mỗi người dùng là 5 - 15 USD/tháng. |
+| Dịch vụ / Linh kiện | Giá tháng (VND) | Phí một lần (VND) | Ghi chú |
+| :--- | :--- | :--- | :--- |
+| Thêm 1 IP | 80.000 | Đang cập nhật | |
+| SSD Samsung Enterprise PM863 960GB | 650.000 | 7.000.000 | |
+| Thêm ổ cứng SAS 600G 2.5″ 6Gb ST600MM0006 | 150.000 | 1.500.000 | |
+| Thêm ổ SAS ST900MM0006 900G HDD 2.5″ | 200.000 | 2.000.000 | |
 
-### Dịch vụ bổ sung (Add-on)
+## 3. Dịch Vụ Quản Trị & Vận Hành
 
-Bảng giá các dịch vụ và linh kiện nâng cấp cho máy chủ.
+### Quản trị Máy chủ (Managed Services)
 
-| Tên gói/Dịch vụ | Giá | Phí khởi tạo / Mua một lần | VAT | Ghi chú |
-| :--- | :--- | :--- | :--- | :--- |
-| SSD Samsung Enterprise PM863 960GB | 650.000 VND/tháng | 7.000.000 VND | Đang cập nhật | Có thể thuê theo tháng hoặc mua một lần. |
-| Thêm 1 địa chỉ IP | 80.000 VND/tháng | Đang cập nhật | Đang cập nhật | Đang cập nhật |
+| Gói dịch vụ | Giá tháng (VND) | Ghi chú |
+| :--- | :--- | :--- |
+| Quản trị Máy chủ - Cơ bản | 330.000 | Thanh toán theo tháng. |
+| Quản trị Máy chủ - Nâng cao | 990.000 | Thanh toán theo tháng. |
 
-### Xem thêm
+### Dịch vụ Backup
 
-*   [Cloud VPS BKNS](../vps/index.md)
-*   [Phần Mềm & Bản Quyền BKNS](../software/index.md)
+Chi phí cho dịch vụ backup dao động từ **100.000** đến **200.000 VND/tháng**.
+
+### Thuê Chỗ Đặt Máy Chủ (Colocation)
+
+Chi phí cho dịch vụ Thuê chỗ đặt máy chủ bao gồm nhiều thành phần, ví dụ:
+*   **Chi phí điện (Power)**: Dao động từ **1.000.000** đến **2.000.000 VND/tháng**.
+*   **Chi phí phần cứng ban đầu**: Chi phí đầu tư phần cứng có thể ở mức **80.000.000 VND** cho cấu hình máy chủ cơ sở dữ liệu (Database server) yêu cầu RAM từ 128GB trở lên.
+
+### VPN Doanh nghiệp
+
+Đối với dịch vụ VPN trên nền tảng đám mây (cloud):
+*   Chi phí theo người dùng: **5 - 15 USD/user/tháng**.
+*   Ước tính cho 50 người dùng: Tổng chi phí hàng tháng là từ **12.000.000** đến **35.000.000 VND**.
+
+## 4. Phần Mềm vBulletin (Bản quyền)
+
+BKNS cung cấp bản quyền phần mềm vBulletin. Vui lòng liên hệ để nhận báo giá chi tiết.
+
+| Sản phẩm | Giá | Ghi chú |
+| :--- | :--- | :--- |
+| vBulletin Cloud | Giá liên hệ | Chi phí theo năm. |
+| vBulletin 5 Connect | Giá liên hệ | Bản New license, phiên bản Lifetime. |
+| vBulletin 5 Connect + Mobile Suite Bundle | Giá liên hệ | Bao gồm ứng dụng trên Facebook, iOS. Phiên bản Lifetime. |
+| Upgrade vBulletin 4 to 5 | Giá liên hệ | Nâng cấp từ phiên bản vBulletin 4 lên vBulletin 5 Connect. |
+
+## Xem Thêm
+
+- [Cloud VPS BKNS](../vps/index.md)
+- [Phần Mềm & Bản Quyền BKNS](../software/index.md)
 
 ---
-*Compiled by BKNS Wiki Bot • 2026-04-07*

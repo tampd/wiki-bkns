@@ -1,0 +1,22 @@
+claim_id: CLM-67E2D541CFE4
+entity_id: product.software.openlitespeed
+entity_type: product_version
+entity_name: OpenLiteSpeed (OLS)
+attribute: target_customer
+value: các trang web không yêu cầu các tính năng của phiên bản Enterprise
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-LITESPEED_WEB_SERVER_TINH_NANG_PHIEN_BAN_VA_SO_SANH_2026_04_13
+observed_at: '2026-04-14T12:21:39.533450+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Thông số kỹ thuật / Giới hạn: ...và phù hợp cho các trang
+  web không yêu cầu các tính năng của phiên bản Enterprise.'
+dual_vote:
+  status: DISAGREE
+  score: 0.0
+  confidence: LOW
+  flag: human_review_required

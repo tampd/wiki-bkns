@@ -7,13 +7,14 @@ value: Dữ liệu được sao lưu hàng tuần.
 unit: null
 qualifiers: {}
 source_ids:
-- SRC-VPS_N8N_AI_DICH_VU_TU_ONG_HOA_QUY_TRINH_TAI_BKNS_2026_04_06
+  - SRC-VPS_N8N_AI_DICH_VU_TU_ONG_HOA_QUY_TRINH_TAI_BKNS_2026_04_06
 observed_at: '2026-04-07T01:08:24.849995+07:00'
 valid_from: '2026-04-07'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ mục ''Tính năng / Thành phần'': • Sao lưu dữ liệu: Dữ liệu
-  được sao lưu hàng tuần.'
-approved_at: '2026-04-07T13:00:14.104930+07:00'
+compiler_note: 'Trích từ mục ''Tính năng / Thành phần'': • Sao lưu dữ liệu: Dữ liệu được sao lưu hàng tuần.'
+approved_at: '2026-04-08T13:00:13.617044+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.654Z'

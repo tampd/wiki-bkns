@@ -1,0 +1,18 @@
+claim_id: CLM-IMG-product.hosting.rl03-users
+entity_id: product.hosting.rl03
+entity_type: product_plan
+entity_name: Reseller Hosting cPanel RL03
+attribute: users
+value: 50
+confidence: ground_truth
+review_state: approved
+risk_class: verified
+source_ids:
+  - IMG-RL01-RL02-RL03-RL04
+observed_at: '2026-04-07T16:36:12.093583+07:00'
+valid_from: '2026-04-07'
+approved_at: '2026-04-07T16:36:12.093583+07:00'
+approved_by: image-extraction
+compiler_note: From bkns.vn screenshot (RL01-RL02-RL03-RL04)
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.217Z'

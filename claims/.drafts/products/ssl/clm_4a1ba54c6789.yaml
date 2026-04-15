@@ -1,0 +1,25 @@
+claim_id: CLM-4A1BA54C6789
+entity_id: ENT-PROD-SSL-011
+entity_type: ENT-PROD-SSL
+entity_name: GeoTrust True BusinessID with EV Multi-Domain
+attribute: validation_type
+value: Tên miền + Doanh nghiệp (EV)
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-CHUNG_CHI_SSL_GEOTRUST_QUICKSSL_PREMIUM_WILDCARD_2026_04_05
+- SRC-GEOTRUST_TRUE_BUSINESSID_WITH_EV_MULTI_DOMAIN_2026_04_05
+observed_at: '2026-04-14T16:53:51.174620+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ bảng ''Thông số kỹ thuật / Giới hạn'': ''| Xác thực | Tên
+  miền + Doanh nghiệp (EV) |'''
+dual_vote:
+  status: DISAGREE
+  score: 0.5331
+  confidence: LOW
+  flag: human_review_required
+value_changed_from: Xác thực mở rộng (EV)
+value_changed_at: '2026-04-14T16:53:51.174669+07:00'

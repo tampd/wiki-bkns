@@ -1,0 +1,22 @@
+claim_id: CLM-EAA001BA1FBE
+entity_id: ENT-PROD-EMAIL-RELAY
+entity_type: product
+entity_name: Email Relay
+attribute: is_a
+value: SMTP Relay
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_VA_TIN_CAY_2026_04_05
+observed_at: '2026-04-14T17:07:24.099076+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục ''Mô tả dịch vụ'': Dịch vụ Email Relay của BKNS hoạt
+  động như một máy chủ chuyển tiếp (SMTP Relay).'
+dual_vote:
+  status: PARTIAL
+  score: 0.6451
+  confidence: MEDIUM
+  flag: needs_review

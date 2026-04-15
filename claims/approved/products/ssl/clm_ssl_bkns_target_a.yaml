@@ -7,14 +7,14 @@ value: Các doanh nghiệp muốn tăng cường sự tin tưởng của khách 
 unit: null
 qualifiers: null
 source_ids:
-- SRC-CHUNG_CHI_SSL_INSTANTSSL_OV_2026_04_04
+  - SRC-CHUNG_CHI_SSL_INSTANTSSL_OV_2026_04_04
 observed_at: '2026-04-04T20:37:35.292514+07:00'
 valid_from: '2026-04-04'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: none
-compiler_note: 'Trích từ Tóm tắt nhanh: • Phù hợp với: ...các doanh nghiệp muốn tăng
-  cường sự tin tưởng của khách truy cập thông qua việc hiển thị thông tin đã được
-  xác thực.'
-approved_at: '2026-04-07T13:00:13.370735+07:00'
+compiler_note: 'Trích từ Tóm tắt nhanh: • Phù hợp với: ...các doanh nghiệp muốn tăng cường sự tin tưởng của khách truy cập thông qua việc hiển thị thông tin đã được xác thực.'
+approved_at: '2026-04-08T13:00:12.870634+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.514Z'

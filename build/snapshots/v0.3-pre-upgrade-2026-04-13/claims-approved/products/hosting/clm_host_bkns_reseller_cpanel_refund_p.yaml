@@ -1,0 +1,18 @@
+claim_id: CLM-HOST-BKNS_RESELLER_CPANEL-REFUND_P
+entity_id: product.hosting.bkns_reseller_cpanel
+entity_type: product
+entity_name: Reseller Hosting cPanel
+attribute: refund_policy
+value: Hoàn tiền 100% nếu không hài lòng
+unit: null
+qualifiers: null
+source_ids:
+- SRC-RESELLER_HOSTING_WEB_2026_04_05
+observed_at: '2026-04-05T22:11:26.605950+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: approved
+risk_class: high
+compiler_note: 'Trích từ đặc điểm: - Hoàn tiền 100% nếu không hài lòng'
+approved_at: '2026-04-08T13:00:11.085709+07:00'
+approved_by: admin-batch

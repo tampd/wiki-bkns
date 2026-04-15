@@ -1,0 +1,21 @@
+claim_id: CLM-256E728BAC27
+entity_id: product.ssl.comodo_instantssl_pro
+entity_type: product_plan
+entity_name: InstantSSL Pro (OV)
+attribute: purchase_url
+value: https://id.bkns.vn/store/comodo-ssl/comodo-instantssl-pro?language=vietnamese
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-INSTANTSSL_PRO_OV_CHUNG_CHI_SSL_XAC_THUC_TO_CHUC_CUA_COM_2026_04_13
+observed_at: '2026-04-14T16:33:35.290802+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Liên kết liên quan: • Mua ngay: `https://id.bkns.vn/store/comodo-ssl/comodo-instantssl-pro?language=vietnamese`'
+dual_vote:
+  status: DISAGREE
+  score: 0.35
+  confidence: LOW
+  flag: human_review_required

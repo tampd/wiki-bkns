@@ -7,13 +7,14 @@ value: Doanh nghiệp cần gửi email marketing số lượng lớn
 unit: null
 qualifiers: null
 source_ids:
-- SRC-EMAIL_RELAY_WEB_2026_04_05
+  - SRC-EMAIL_RELAY_WEB_2026_04_05
 observed_at: '2026-04-05T22:01:16.558955+07:00'
 valid_from: '2026-04-05'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ Giới thiệu: Phù hợp cho doanh nghiệp cần gửi email marketing
-  số lượng lớn.'
-approved_at: '2026-04-07T13:00:10.833581+07:00'
+compiler_note: 'Trích từ Giới thiệu: Phù hợp cho doanh nghiệp cần gửi email marketing số lượng lớn.'
+approved_at: '2026-04-08T13:00:09.851013+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:58.860Z'

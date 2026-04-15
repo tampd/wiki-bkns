@@ -1,0 +1,21 @@
+claim_id: CLM-971B78287DC3
+entity_id: ENT-PROD-SSL-POSWILDDV
+entity_type: product_plan
+entity_name: PositiveSSL Wildcard (DV)
+attribute: issuance_time
+value: 5
+unit: minutes
+qualifiers: null
+source_ids:
+- SRC-POSITIVESSL_WILDCARD_DV_CHUNG_CHI_SSL_GIA_RE_2026_04_13
+observed_at: '2026-04-14T16:38:50.428651+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ thông số kỹ thuật: ''Thời gian phát hành | 5 phút'''
+dual_vote:
+  status: DISAGREE
+  score: 0.2497
+  confidence: LOW
+  flag: human_review_required

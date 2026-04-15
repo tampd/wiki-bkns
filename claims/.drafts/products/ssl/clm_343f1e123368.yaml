@@ -1,0 +1,18 @@
+claim_id: CLM-343F1E123368
+entity_id: ENT-PROD-SSL-GEOTRUST-TBEV-FLEX
+entity_type: ENT-PROD-SSL
+entity_name: GeoTrust True BusinessID EV (FLEX)
+attribute: sale_price
+value: 9837000
+unit: VND
+qualifiers:
+  billing_cycle: year
+  seller: BKNS
+source_ids:
+- SRC-CHUNG_CHI_SSL_GEOTRUST_TRUE_BUSINESSID_EV_FLEX_2026_04_13
+observed_at: '2026-04-13T21:59:27.300511+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ bảng giá: | Giá tại BKNS | 9.837.000đ | 1 năm |'

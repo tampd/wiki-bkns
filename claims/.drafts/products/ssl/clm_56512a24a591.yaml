@@ -1,0 +1,22 @@
+claim_id: CLM-56512A24A591
+entity_id: ENT-PROD-SSL-COMODO-WILDCARD-DV
+entity_type: product_plan
+entity_name: Comodo SSL Wildcard Certificate (DV)
+attribute: list_price
+value: 11698700
+unit: VND
+qualifiers:
+  billing_cycle: year
+source_ids:
+- SRC-COMODO_SSL_WILDCARD_CERTIFICATE_DV_CHUNG_CHI_SSL_2026_04_05
+observed_at: '2026-04-14T16:27:17.920038+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ bảng giá: | Giá nhà cung cấp | <del>11.698.700</del> |'
+dual_vote:
+  status: DISAGREE
+  score: 0.3687
+  confidence: LOW
+  flag: human_review_required

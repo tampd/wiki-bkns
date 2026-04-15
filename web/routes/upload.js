@@ -9,7 +9,17 @@ const RAW_WEB_DIR = path.resolve(__dirname, '../../raw/web');
 const LOG_FILE = path.resolve(__dirname, '../../logs/web-uploads.jsonl');
 
 // Allowed file extensions (whitelist)
-const ALLOWED_EXTS = new Set(['.pdf', '.docx', '.xlsx', '.md', '.txt', '.png', '.jpg', '.jpeg']);
+// v0.4: expanded with markitdown-supported formats + audio for Whisper transcription
+const ALLOWED_EXTS = new Set([
+  // Documents (original)
+  '.pdf', '.docx', '.xlsx', '.md', '.txt',
+  // Images (original)
+  '.png', '.jpg', '.jpeg',
+  // v0.4 additions — markitdown-supported
+  '.epub', '.html', '.pptx', '.zip',
+  // v0.4 additions — audio (Whisper transcription)
+  '.mp3', '.wav', '.m4a',
+]);
 const MAX_FILE_SIZE = 50 * 1024 * 1024; // 50MB
 const MAX_FILES = 10;
 
@@ -36,7 +46,8 @@ const storage = multer.diskStorage({
 function fileFilter(req, file, cb) {
   const ext = path.extname(file.originalname).toLowerCase();
   if (!ALLOWED_EXTS.has(ext)) {
-    return cb(new Error(`Định dạng ${ext} không được phép. Cho phép: ${[...ALLOWED_EXTS].join(', ')}`));
+    const allowed = [...ALLOWED_EXTS].sort().join(', ');
+    return cb(new Error(`Định dạng ${ext} không được phép. Cho phép: ${allowed}`));
   }
   cb(null, true);
 }
@@ -109,7 +120,7 @@ function uploadRoute(router, pipelineRunner) {
       });
     } catch (err) {
       console.error('[UPLOAD] Error:', err);
-      res.status(500).json({ error: err.message || 'Upload failed' });
+      res.status(500).json({ error: 'Upload failed' });
     }
   });
 

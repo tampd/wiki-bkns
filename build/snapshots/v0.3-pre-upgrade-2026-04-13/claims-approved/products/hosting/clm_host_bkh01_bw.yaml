@@ -1,0 +1,18 @@
+claim_id: CLM-HOST-BKH01-BW
+entity_id: product.hosting.bkh01
+entity_type: product_plan
+entity_name: BKH01
+attribute: bandwidth
+value: unlimited
+unit: ''
+qualifiers: {}
+source_ids:
+- SRC-HOSTING_GIA_RE_BANG_GIA_VA_THONG_SO_KY_THUAT_TAI_BKNS_2026_04_06
+observed_at: '2026-04-07T00:36:08.676661+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ bảng giá: ''Bandwidth | Unlimited'''
+approved_at: '2026-04-08T13:00:10.874089+07:00'
+approved_by: admin-batch

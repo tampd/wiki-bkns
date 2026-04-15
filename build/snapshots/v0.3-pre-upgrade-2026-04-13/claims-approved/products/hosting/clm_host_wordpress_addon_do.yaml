@@ -1,0 +1,19 @@
+claim_id: CLM-HOST-WORDPRESS-ADDON_DO
+entity_id: product.hosting.wordpress.wpcp01
+entity_type: product_plan
+entity_name: WPCP01
+attribute: addon_domains
+value: 2
+unit: domains
+qualifiers: null
+source_ids:
+- SRC-HOSTING_WORDPRESS_TOC_O_CAO_BANG_GIA_GIAI_PHAP_TOI_UU_S_2026_04_04
+- SRC-HOSTING_WORDPRESS_TOC_O_CAO_BANG_GIA_GIAI_PHAP_TOI_UU_S_2026_04_06
+observed_at: '2026-04-07T00:40:11.150808+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ bảng giá: | Domains | 2 |'
+approved_at: '2026-04-08T13:00:11.880791+07:00'
+approved_by: admin-batch

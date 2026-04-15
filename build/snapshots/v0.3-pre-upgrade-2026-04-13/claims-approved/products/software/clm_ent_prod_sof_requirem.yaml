@@ -1,0 +1,20 @@
+claim_id: CLM-ENT-PROD-SOF-REQUIREM
+entity_id: ENT-PROD-SOFTWARE-SOFTACULOUS
+entity_type: product
+entity_name: Bản quyền Softaculous
+attribute: requirement
+value: Cần có máy chủ hoặc VPS đã cài đặt một trong các control panel được hỗ trợ.
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-BAN_QUYEN_SOFTACULOUS_TRINH_CAI_AT_UNG_DUNG_TU_ONG_2026_04_04
+- SRC-BAN_QUYEN_SOFTACULOUS_TRINH_CAI_AT_UNG_DUNG_TU_ONG_2026_04_06
+observed_at: '2026-04-06T23:02:27.164955+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ: • Điều kiện/giới hạn nổi bật (nếu có): Cần có máy chủ hoặc
+  VPS đã cài đặt một trong các control panel được hỗ trợ.'
+approved_at: '2026-04-08T13:00:15.565943+07:00'
+approved_by: admin-batch

@@ -1,0 +1,20 @@
+claim_id: CLM-ENT-PROD-EMA-TARGET_A
+entity_id: ENT-PROD-EMAIL
+entity_type: product
+entity_name: Cloud Email Server
+attribute: target_audience
+value: Các doanh nghiệp cần một hệ thống email chuyên nghiệp, bảo mật, ổn định với
+  khả năng quản trị riêng.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_CLOUD_EMAIL_SERVER_AN_TOAN_HIEU_SUAT_CAO_2026_04_06
+observed_at: '2026-04-06T23:58:41.572508+07:00'
+valid_from: '2026-04-06'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: • Phù hợp với: Các doanh nghiệp cần một hệ
+  thống email chuyên nghiệp, bảo mật, ổn định với khả năng quản trị riêng.'
+approved_at: '2026-04-08T13:00:10.662363+07:00'
+approved_by: admin-batch

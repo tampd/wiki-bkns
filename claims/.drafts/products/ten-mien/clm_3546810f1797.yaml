@@ -1,0 +1,19 @@
+claim_id: CLM-3546810F1797
+entity_id: bkns:prod:domain:registry_lock
+entity_type: product
+entity_name: Bảo vệ tên miền cấp cao nhất (Registry Lock)
+attribute: pricing_model
+value: paid
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-BAO_VE_TEN_MIEN_CAP_CAO_NHAT_GIAI_PHAP_AN_TOAN_TUYET_OI_2026_04_13
+observed_at: '2026-04-13T21:50:54.986106+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ bảng So sánh các gói: ''| Chi phí | ... | Có phí (Liên hệ
+  BKNS) |'''
+value_changed_from: contact_for_price
+value_changed_at: '2026-04-13T21:50:54.986128+07:00'

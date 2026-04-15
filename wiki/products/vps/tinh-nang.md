@@ -2,56 +2,75 @@
 page_id: wiki.products.vps.tinh-nang
 title: Cloud VPS BKNS — Tính Năng
 category: products/vps
-updated: '2026-04-07'
-review_state: approved
-claims_used: 45
-compile_cost_usd: 0.0145
-self_review: pass
-corrections: 0
-approved_at: '2026-04-07T16:24:08.873488+07:00'
+updated: '2026-04-14'
+review_state: drafted
+claims_used: 92
+compile_cost_usd: 0.0201
+self_review: fail
+corrections: 2
 ---
 
 # Cloud VPS BKNS — Tính Năng
 
-Cloud VPS tại BKNS được xây dựng trên nền tảng phần cứng mạnh mẽ với cấu hình ổn định, đi kèm nhiều tính năng nổi bật giúp khách hàng dễ dàng quản trị, đảm bảo hiệu suất và an toàn dữ liệu.
+Dịch vụ Cloud VPS tại BKNS được xây dựng trên nền tảng công nghệ hiện đại, cung cấp nhiều tính năng mạnh mẽ giúp khách hàng quản trị hệ thống hiệu quả, đảm bảo hiệu suất và an toàn dữ liệu.
 
-### Quản trị & Vận hành
+## Quản trị & Vận hành
 
-*   **Toàn quyền quản trị (Root Access):** Cung cấp quyền truy cập root, cho phép người dùng toàn quyền cài đặt và cấu hình máy chủ ảo theo nhu cầu sử dụng riêng.
-*   **Bảng điều khiển chuyên dụng:** Người dùng được cung cấp một bảng điều khiển VPS chuyên dụng để quản lý dịch vụ một cách trực quan và thuận tiện.
-*   **Kích hoạt tự động:** Dịch vụ được khởi tạo và kích hoạt hoàn toàn tự động ngay sau khi đăng ký, giúp tiết kiệm thời gian triển khai.
-*   **Hỗ trợ đa dạng hệ điều hành:** Tương thích với các hệ điều hành phổ biến nhất hiện nay như Windows, CentOS, Ubuntu và Debian.
+### Toàn quyền quản trị (Root Access)
+Khách hàng được cấp quyền truy cập cao nhất (root/admin), cho phép toàn quyền cài đặt, cấu hình và quản trị máy chủ ảo theo nhu nhu cầu.
 
-### Bảo mật & Dữ liệu
+### Bảng điều khiển VPS
+Dịch vụ đi kèm bảng điều khiển trực quan, giúp người dùng dễ dàng quản lý các tác vụ cơ bản của VPS như khởi động, tắt, hoặc cài đặt lại hệ điều hành.
 
-*   **Môi trường hoạt động riêng biệt:** Mỗi VPS hoạt động trong một môi trường tài nguyên độc lập, giúp tăng cường bảo mật và tránh bị ảnh hưởng bởi người dùng khác so với shared hosting.
-*   **Khả năng khôi phục dữ liệu:** Hệ thống được thiết kế với khả năng khôi phục dữ liệu, giúp bảo vệ thông tin ngay cả trong trường hợp bị xóa do sự cố (áp dụng trên một số dòng sản phẩm).
-*   **Bảo mật phần cứng nâng cao:** Các dòng VPS hiệu năng cao sử dụng CPU AMD được trang bị công nghệ bảo mật AMD Infinity Guard, giúp bảo vệ dữ liệu ở cấp độ phần cứng.
+### Kích hoạt tự động
+Dịch vụ được kích hoạt nhanh chóng và tự động ngay sau khi khách hàng hoàn tất đăng ký, giúp tiết kiệm thời gian triển khai.
 
-### Hiệu suất & Hạ tầng
+### Hỗ trợ đa dạng hệ điều hành
+Hệ thống tương thích với nhiều hệ điều hành phổ biến, bao gồm các phiên bản của Linux (CentOS, Ubuntu, Debian) và Windows.
 
-*   **Hạ tầng Data Center Tier III:** Dịch vụ được vận hành tại các trung tâm dữ liệu đạt chuẩn quốc tế Tier III tại Việt Nam, đảm bảo độ ổn định và tính sẵn sàng cao.
-*   **Công nghệ ảo hóa KVM:** Sử dụng nền tảng ảo hóa KVM (Kernel-based Virtual Machine) tiên tiến, đảm bảo hiệu suất và sự ổn định cho từng máy chủ ảo.
-*   **Nền tảng lưu trữ phân tán:** Hệ thống lưu trữ được xây dựng trên nền tảng Ceph Distributed Storage, tăng cường khả năng chịu lỗi và tốc độ truy xuất dữ liệu.
-*   **Phần cứng thế hệ mới:** Cloud VPS sử dụng các nền tảng phần cứng mạnh mẽ, bao gồm Chipset Intel Xeon và CPU AMD EPYC™ thế hệ mới, kết hợp với RAM DDR4 và ổ cứng SSD/NVMe tốc độ cao.
-*   **Hỗ trợ IPv6:** Tất cả các gói dịch vụ đều được hỗ trợ và cung cấp sẵn địa chỉ IPv6.
+### Dễ dàng nâng cấp
+Người dùng có thể linh hoạt nâng cấp tài nguyên của VPS (CPU, RAM, ổ cứng) khi nhu cầu sử dụng tăng lên mà không làm gián đoạn dịch vụ.
 
-### Hỗ trợ kỹ thuật
+## Bảo mật
 
-*   **Hỗ trợ 24/7/365:** Đội ngũ kỹ thuật chuyên nghiệp của BKNS luôn sẵn sàng hỗ trợ khách hàng liên tục 24/7/365.
-*   **Hỗ trợ đổi IP miễn phí:** BKNS hỗ trợ đổi địa chỉ IP miễn phí cho khách hàng (chính sách áp dụng cho các dải IP thuộc sở hữu của BKNS).
+### Môi trường hoạt động riêng biệt
+Mỗi VPS hoạt động trong một môi trường tài nguyên hoàn toàn riêng biệt, giúp tăng cường tính bảo mật và ổn định so với các giải pháp như shared hosting.
 
-### Giới hạn & Lưu ý
+## Hiệu suất & Hạ tầng
 
-*   **Sao lưu hàng tuần:** Các gói dịch vụ cơ bản không đi kèm tính năng sao lưu dữ liệu hàng tuần.
-*   **Control Panel DirectAdmin:** Dịch vụ không hỗ trợ sẵn control panel DirectAdmin.
-*   **Chứng chỉ SSL miễn phí:** Các gói dịch vụ không đi kèm chứng chỉ SSL miễn phí. Khách hàng có thể tham khảo các gói [Chứng Chỉ SSL BKNS](../ssl/index.md).
+### Hạ tầng Data Center Tier III
+Hệ thống Cloud VPS được vận hành tại các trung tâm dữ liệu đạt chuẩn quốc tế Tier III tại Việt Nam, đảm bảo sự ổn định và an toàn ở mức cao nhất.
 
-### Sản phẩm liên quan
+### Công nghệ ảo hóa KVM
+Các dịch vụ Cloud VPS chính sử dụng công nghệ ảo hóa KVM (Kernel-based Virtual Machine) để đảm bảo hiệu suất cao và sự ổn định. Một số dòng sản phẩm chuyên biệt như Storage VPS có thể sử dụng nền tảng ảo hóa khác (ví dụ: VMware) để tối ưu cho mục đích sử dụng.
 
-*   [Chứng Chỉ SSL BKNS](../ssl/index.md)
-*   [Phần Mềm & Bản Quyền BKNS](../software/index.md)
-*   [Máy Chủ BKNS](../server/index.md)
+### Lưu trữ 100% SSD/NVMe
+Toàn bộ hệ thống sử dụng 100% ổ cứng SSD/NVMe, mang lại tốc độ truy xuất dữ liệu và xử lý tác vụ nhanh hơn nhiều lần so với ổ cứng HDD truyền thống.
+
+### Nền tảng lưu trữ Ceph
+Các dòng Cloud VPS chính sử dụng nền tảng lưu trữ phân tán Ceph Distributed Storage, giúp tăng cường khả năng mở rộng và an toàn dữ liệu. Các sản phẩm chuyên dụng như Storage VPS có thể sử dụng nền tảng khác như VSAN để đáp ứng yêu cầu về dung lượng lớn.
+
+### Mạng kết nối Dual Uplink – Multihome
+Hệ thống mạng được thiết kế với kết nối Dual Uplink và Multihome, tăng cường tính sẵn sàng và tối ưu hóa tốc độ truy cập mạng.
+
+### Hỗ trợ IPv6
+Tất cả các gói dịch vụ Cloud VPS đều được cung cấp và hỗ trợ đầy đủ địa chỉ IPv6, sẵn sàng cho thế hệ Internet tương lai.
+
+### Băng thông không giới hạn
+Dịch vụ cung cấp băng thông không giới hạn, cho phép khách hàng không cần lo lắng về chi phí phát sinh do lưu lượng truyền tải dữ liệu.
+
+## Hỗ trợ kỹ thuật
+
+### Hỗ trợ 24/7/365
+Đội ngũ kỹ thuật chuyên nghiệp của BKNS luôn sẵn sàng hỗ trợ khách hàng liên tục 24 giờ mỗi ngày, 365 ngày mỗi năm.
+
+### Hỗ trợ đổi IP miễn phí
+Khách hàng được hỗ trợ đổi địa chỉ IP miễn phí, áp dụng cho các dải IP thuộc sở hữu của BKNS.
+
+## Sản phẩm liên quan
+- [Chứng Chỉ SSL BKNS](../ssl/index.md)
+- [Phần Mềm & Bản Quyền BKNS](../software/index.md)
+- [Máy Chủ BKNS](../server/index.md)
 
 ---
-*Compiled by BKNS Wiki Bot • 2026-04-07*
+Compiled by BKNS Wiki Bot • 2026-04-14

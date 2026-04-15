@@ -1,0 +1,21 @@
+claim_id: CLM-E24435A2F169
+entity_id: product.software.plesk_vps_web_admin
+entity_type: product_plan
+entity_name: Plesk VPS License - Web Admin Edition (10 Domains)
+attribute: domain_limit
+value: 10
+unit: domain
+qualifiers: null
+source_ids:
+- SRC-PHAN_MEM_QUAN_TRI_HOSTING_PLESK_OBSIDIAN_2026_04_05
+observed_at: '2026-04-14T12:23:09.310128+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng so sánh: ''Giới hạn Domain | Tối đa 10'''
+dual_vote:
+  status: PARTIAL
+  score: 0.6082
+  confidence: MEDIUM
+  flag: needs_review

@@ -7,13 +7,14 @@ value: 20
 unit: GB
 qualifiers: null
 source_ids:
-- SRC-DICH_VU_THUE_CLOUD_VPS_SSD_GIA_RE_TAI_BKNS_2026_04_04
+  - SRC-DICH_VU_THUE_CLOUD_VPS_SSD_GIA_RE_TAI_BKNS_2026_04_04
 observed_at: '2026-04-04T20:53:17.325908+07:00'
 valid_from: '2026-04-04'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ Bảng giá dịch vụ Cloud VPS SSD: ''| CLOUD-VM01 | ... | 20
-  GB |'''
-approved_at: '2026-04-07T13:00:15.103856+07:00'
+compiler_note: 'Trích từ Bảng giá dịch vụ Cloud VPS SSD: ''| CLOUD-VM01 | ... | 20 GB |'''
+approved_at: '2026-04-08T13:00:14.890735+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.771Z'

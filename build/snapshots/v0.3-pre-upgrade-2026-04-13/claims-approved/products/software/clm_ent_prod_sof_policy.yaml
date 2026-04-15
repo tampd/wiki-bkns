@@ -1,0 +1,21 @@
+claim_id: CLM-ENT-PROD-SOF-POLICY
+entity_id: ENT-PROD-SOFTWARE-DIRECTADMIN
+entity_type: product
+entity_name: Bản quyền phần mềm DirectAdmin
+attribute: policy
+value: Kể từ ngày 01/07/2020, DirectAdmin đã ngừng bán bản quyền lifetime và ngừng
+  hỗ trợ đổi địa chỉ IP cho loại bản quyền này.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-BANG_GIA_BAN_QUYEN_PHAN_MEM_QUAN_TRI_SERVER_DIRECTADMIN_2026_04_04
+observed_at: '2026-04-04T20:21:35.385675+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ mục Chính sách / Điều khoản / Lưu ý: ''Bản quyền Lifetime:
+  Kể từ ngày 01/07/2020, DirectAdmin đã ngừng bán bản quyền lifetime và ngừng hỗ trợ
+  đổi địa chỉ IP cho loại bản quyền này.'''
+approved_at: '2026-04-08T13:00:15.535133+07:00'
+approved_by: admin-batch

@@ -1,0 +1,22 @@
+claim_id: CLM-SOFT-IMUNIFY360-PRODUCT_
+entity_id: product.software.imunify360
+entity_type: product
+entity_name: Imunify360
+attribute: product_name
+value: Giải pháp bảo mật dành cho server
+unit: null
+qualifiers: null
+source_ids:
+- SRC-BANG_GIA_IMUNIFY360_GIAI_PHAP_BAO_MAT_SERVER_BANG_AI_2026_04_06
+observed_at: '2026-04-06T23:18:21.969270+07:00'
+valid_from: '2026-04-06'
+confidence: high
+review_state: approved
+risk_class: none
+compiler_note: 'Trích từ mục Tóm tắt nhanh: • Dịch vụ này là gì: Imunify360 là một
+  giải pháp bảo mật dành cho server, được xây dựng dựa trên công nghệ Trí tuệ nhân
+  tạo (AI).'
+value_changed_from: https://www.bkns.vn/phan-mem/imunify360.html
+value_changed_at: '2026-04-06T23:18:21.969288+07:00'
+approved_at: '2026-04-08T13:00:15.948056+07:00'
+approved_by: admin-batch

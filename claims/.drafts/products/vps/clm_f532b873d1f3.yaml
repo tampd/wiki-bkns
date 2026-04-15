@@ -1,0 +1,23 @@
+claim_id: CLM-F532B873D1F3
+entity_id: ENT-PROD-VPS.vps_gia_re
+entity_type: product
+entity_name: Dịch vụ VPS Giá Rẻ
+attribute: has_free_ssl
+value: false
+unit: ''
+qualifiers: {}
+source_ids:
+- SRC-DICH_VU_VPS_GIA_RE_MAY_CHU_AO_CAU_HINH_ON_INH_2026_04_05
+observed_at: '2026-04-14T16:11:54.126969+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: medium
+compiler_note: 'Trích từ mục Tóm tắt nhanh: Điều kiện/giới hạn nổi bật (nếu có): Các
+  gói dịch vụ không đi kèm sao lưu dữ liệu hàng tuần, không có sẵn DirectAdmin và
+  SSL miễn phí.'
+dual_vote:
+  status: DISAGREE
+  score: 0.5846
+  confidence: LOW
+  flag: human_review_required

@@ -1,0 +1,18 @@
+claim_id: CLM-11BF0FDDE356
+entity_id: ENT-PROD-BACKUP-001
+entity_type: service
+entity_name: Dịch vụ Backup Dữ liệu
+attribute: security_compliance
+value: tiêu chuẩn bảo mật quốc tế
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_BACKUP_DU_LIEU_SAO_LUU_VA_PHUC_HOI_DU_LIEU_UY_TIN_2026_04_13
+observed_at: '2026-04-13T22:14:37.665862+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tính năng / Thành phần: ''• Bảo mật cao: Dữ liệu được mã
+  hóa và lưu trữ trên hệ thống đám mây an toàn, tuân thủ các tiêu chuẩn bảo mật quốc
+  tế.'''

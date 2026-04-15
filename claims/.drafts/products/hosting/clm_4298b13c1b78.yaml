@@ -1,0 +1,22 @@
+claim_id: CLM-4298B13C1B78
+entity_id: bkns.hosting.platinum.p1
+entity_type: product_plan
+entity_name: Platinum 1
+attribute: bandwidth
+value: Không giới hạn
+unit: ''
+qualifiers: {}
+source_ids:
+- SRC-BKNS_CAMNANG_HOSTING_DOT2_2026_04_05
+observed_at: '2026-04-14T12:04:01.323270+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng thông số Platinum Web Hosting: ''Platinum 1 | Không
+  giới hạn'''
+dual_vote:
+  status: DISAGREE
+  score: 0.3651
+  confidence: LOW
+  flag: human_review_required

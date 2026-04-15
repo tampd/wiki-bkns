@@ -1,0 +1,16 @@
+claim_id: CLM-37D7FF5E0E32
+entity_id: product.vps.vps_mm05
+entity_type: product_plan
+entity_name: VPS-MM05
+attribute: cpu_cores
+value: 4
+unit: core
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_VPS_GIA_RE_MAY_CHU_AO_CAU_HINH_ON_INH_2026_04_13
+observed_at: '2026-04-13T22:31:41.583327+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: medium
+compiler_note: 'Trích từ bảng giá: ''VPS-MM05 | vCPU | 04 Core'''

@@ -7,14 +7,15 @@ value: 0
 unit: VND
 qualifiers: {}
 source_ids:
-- SRC-HOSTING_MIEN_PHI_WEB_2026_04_05
-- SRC-HOSTING_MIEN_PHI_GIAI_PHAP_KHOI_TAO_WEBSITE_0_2026_04_04
+  - SRC-HOSTING_MIEN_PHI_WEB_2026_04_05
+  - SRC-HOSTING_MIEN_PHI_GIAI_PHAP_KHOI_TAO_WEBSITE_0_2026_04_04
 observed_at: '2026-04-05T22:03:59.613411+07:00'
 valid_from: '2026-04-05'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: high
-compiler_note: Trích từ tiêu đề 'Khởi Tạo Website Chỉ Với 0đ', giới thiệu 'chi phí
-  0đ', và đặc điểm 'Miễn phí hoàn toàn'.
-approved_at: '2026-04-07T13:00:11.908374+07:00'
+compiler_note: Trích từ tiêu đề 'Khởi Tạo Website Chỉ Với 0đ', giới thiệu 'chi phí 0đ', và đặc điểm 'Miễn phí hoàn toàn'.
+approved_at: '2026-04-08T13:00:11.004496+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.009Z'

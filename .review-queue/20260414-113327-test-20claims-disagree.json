@@ -1,0 +1,12 @@
+{
+  "ts": "2026-04-14T11:33:27.829694+07:00",
+  "skill": "test-20claims",
+  "status": "DISAGREE",
+  "flag": "human_review_required",
+  "score": 0.3747,
+  "model_a": "gemini-2.5-pro",
+  "model_b": "gpt-5.4",
+  "text_a": "```json\n{\n  \"attribute\": \"transfer_price\",\n  \"value\": \"350000\",\n  \"confidence\": 1.0,\n  \"agrees\": false,\n  \"reason\": \"The claimed transfer price is 505,000 VND, but the official BKNS international domain pricing page lists the transfer price for a .net domain as 350,000 VND.\"\n}\n```",
+  "text_b": "{\"attribute\":\"transfer_price\",\".value\":\"505000\",\"confidence\":0.12,\"agrees\":false,\"reason\":\"No source record or BKNS product data was provided to verify the .net transfer price claim. The claim cannot be confirmed from the given information alone.\"}",
+  "prompt_preview": "Verify the following claim about BKNS products and return JSON:\nEntity: .net\nAttribute: transfer_price\nClaimed value: 505000\n\nReturn JSON: {\"attribute\": \"...\", \"value\": \"...\", \"confidence\": 0.0-1.0, \"agrees\": true/false, \"reason\": \"brief explanation\"}"
+}

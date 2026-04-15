@@ -1,0 +1,19 @@
+claim_id: CLM-ENT-PROD-EMA-EMAIL_AC
+entity_id: ENT-PROD-EMAIL
+entity_type: product
+entity_name: Cloud Email Server
+attribute: email_account_limit
+value: Unlimited
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_CLOUD_EMAIL_SERVER_AN_TOAN_HIEU_SUAT_CAO_2026_04_06
+observed_at: '2026-04-06T23:58:41.607374+07:00'
+valid_from: '2026-04-06'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: • Điểm chính: ...không giới hạn ... tài khoản
+  email...'
+approved_at: '2026-04-08T13:00:10.551760+07:00'
+approved_by: admin-batch

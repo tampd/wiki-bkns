@@ -1,0 +1,19 @@
+claim_id: CLM-43F2C3888B98
+entity_id: product.vps.bkmisa
+entity_type: product
+entity_name: BK MISA
+attribute: description
+value: Là dịch vụ máy chủ ảo (Cloud VPS) được cấu hình chuyên biệt để lưu trữ và vận
+  hành phần mềm kế toán MISA SME trên nền tảng điện toán đám mây.
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-CLOUD_VPS_BK_MISA_GIAI_PHAP_LUU_TRU_KE_TOAN_SO_2026_04_13
+observed_at: '2026-04-13T22:05:38.430662+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: • Dịch vụ này là gì: Là dịch vụ máy chủ ảo
+  (Cloud VPS) được cấu hình chuyên biệt để lưu trữ và vận hành phần mềm kế toán MISA
+  SME trên nền tảng điện toán đám mây.'

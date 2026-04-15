@@ -1,0 +1,22 @@
+claim_id: CLM-A200EC048F90
+entity_id: prod.bkns.cloud_meeting
+entity_type: product
+entity_name: Cloud Meeting
+attribute: feature
+value: Hình ảnh rõ nét
+unit: null
+qualifiers: null
+source_ids:
+  - SRC-CLOUD_MEETING_E_MEETING_GIAI_PHAP_HOP_TRUC_TUYEN_TAI_BKNS_2026_04_13
+observed_at: '2026-04-13T22:02:54.644286+07:00'
+valid_from: '2026-04-13'
+confidence: ground_truth
+review_state: approved
+risk_class: null
+compiler_note: 'Trích từ tóm tắt nhanh: • Dịch vụ này là gì: Một giải pháp họp trực tuyến (E-Meeting) cung cấp các tính năng cho cuộc họp với âm thanh và hình ảnh rõ nét.'
+value_changed_from: Âm thanh rõ nét
+value_changed_at: '2026-04-13T22:02:54.644308+07:00'
+approved_at: '2026-04-15T13:51:04.186133+07:00'
+approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.265Z'

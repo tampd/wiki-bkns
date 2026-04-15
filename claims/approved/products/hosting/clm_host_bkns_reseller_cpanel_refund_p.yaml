@@ -7,12 +7,14 @@ value: Hoàn tiền 100% nếu không hài lòng
 unit: null
 qualifiers: null
 source_ids:
-- SRC-RESELLER_HOSTING_WEB_2026_04_05
+  - SRC-RESELLER_HOSTING_WEB_2026_04_05
 observed_at: '2026-04-05T22:11:26.605950+07:00'
 valid_from: '2026-04-05'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: high
 compiler_note: 'Trích từ đặc điểm: - Hoàn tiền 100% nếu không hài lòng'
-approved_at: '2026-04-07T13:00:11.970369+07:00'
+approved_at: '2026-04-08T13:00:11.085709+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.019Z'

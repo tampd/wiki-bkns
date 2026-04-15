@@ -1,0 +1,17 @@
+claim_id: CLM-80A5E6EDE44E
+entity_id: ENT-PROD-SSL-002
+entity_type: product
+entity_name: GeoTrust QuickSSL Premium Wildcard
+attribute: wildcard_support
+value: true
+unit: null
+qualifiers: null
+source_ids:
+- SRC-CHUNG_CHI_SSL_GEOTRUST_QUICKSSL_PREMIUM_WILDCARD_2026_04_13
+observed_at: '2026-04-13T21:58:22.339401+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ bảng Thông số kỹ thuật / Giới hạn: ''| Hỗ trợ Wildcard |
+  Có |'''

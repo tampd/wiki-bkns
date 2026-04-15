@@ -1,0 +1,20 @@
+claim_id: CLM-ENT-PROD-VPS-ACTIVATI
+entity_id: ENT-PROD-VPS
+entity_type: product_family
+entity_name: VPS N8N – AI
+attribute: activation_process
+value: Dịch vụ VPS N8N được kích hoạt tự động sau khi khách hàng hoàn tất đăng ký
+  và thanh toán.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-VPS_N8N_AI_DICH_VU_TU_ONG_HOA_QUY_TRINH_TAI_BKNS_2026_04_04
+observed_at: '2026-04-04T21:19:10.926184+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ mục Quy trình đăng ký / Triển khai / Kích hoạt: ''Dịch vụ
+  VPS N8N được kích hoạt tự động sau khi khách hàng hoàn tất đăng ký và thanh toán.'''
+approved_at: '2026-04-08T13:00:13.832974+07:00'
+approved_by: admin-batch

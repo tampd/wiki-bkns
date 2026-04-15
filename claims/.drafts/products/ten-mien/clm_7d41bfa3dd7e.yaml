@@ -1,0 +1,23 @@
+claim_id: CLM-7D41BFA3DD7E
+entity_id: ENT-PROD-DOMAIN.com
+entity_type: product_variant
+entity_name: Tên miền .com
+attribute: renewal_price
+value: 429000
+unit: VND
+qualifiers:
+  billing_cycle: year
+source_ids:
+- SRC-DICH_VU_ANG_KY_TEN_MIEN_VIET_NAM_VA_QUOC_TE_TAI_BKNS_2026_04_05
+observed_at: '2026-04-14T16:47:42.424949+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ Bảng giá Tên miền Quốc tế: | .com | Miễn phí | 380.000 |
+  429.000 | 429.000 |'
+dual_vote:
+  status: PARTIAL
+  score: 0.6047
+  confidence: MEDIUM
+  flag: needs_review

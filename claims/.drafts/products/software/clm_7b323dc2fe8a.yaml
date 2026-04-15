@@ -1,0 +1,25 @@
+claim_id: CLM-7B323DC2FE8A
+entity_id: product.software.litespeed_web_server
+entity_type: product
+entity_name: LiteSpeed Web Server (LSWS)
+attribute: compatibility
+value: tương thích với .htaccess, mod_rewrite, và mod_security
+unit: null
+qualifiers:
+  with: Apache
+source_ids:
+- SRC-LITESPEED_WEB_SERVER_TINH_NANG_PHIEN_BAN_VA_SO_SANH_2026_04_13
+observed_at: '2026-04-14T12:21:39.449851+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Mô tả dịch vụ: ...tương thích với các tính năng phổ biến
+  của Apache như `.htaccess`, `mod\_rewrite`, và `mod\_security`.'
+dual_vote:
+  status: DISAGREE
+  score: 0.0
+  confidence: LOW
+  flag: human_review_required
+value_changed_from: thay thế trực tiếp cho Apache
+value_changed_at: '2026-04-14T12:21:39.449879+07:00'

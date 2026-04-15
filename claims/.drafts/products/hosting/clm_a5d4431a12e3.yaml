@@ -1,0 +1,26 @@
+claim_id: CLM-A5D4431A12E3
+entity_id: ENT-PROD-HOSTING
+entity_type: product_category
+entity_name: Hosting (Web Hosting)
+attribute: service_description
+value: Lưu trữ website trên server tốc độ cao
+unit: null
+qualifiers: null
+source_ids:
+- SRC-HOSTING_GIA_RE_BANG_GIA_VA_THONG_SO_KY_THUAT_TAI_BKNS_2026_04_05
+- SRC-TRANNING_KINH_DOANH_HOSTING_EMAIL_2026_04_13
+observed_at: '2026-04-14T12:35:14.348695+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng Giới thiệu dịch vụ BKNS cung cấp, hàng Hosting (Web
+  Hosting), cột Mô tả ngắn: ''Lưu trữ website trên server tốc độ cao'''
+dual_vote:
+  status: DISAGREE
+  score: 0.519
+  confidence: LOW
+  flag: human_review_required
+value_changed_from: Dịch vụ lưu trữ web (hosting) giá rẻ, sử dụng ổ cứng SSD Enterprise,
+  dành cho các website có ngân sách hạn chế nhưng vẫn yêu cầu chất lượng và tốc độ.
+value_changed_at: '2026-04-14T12:35:14.348748+07:00'

@@ -1,0 +1,21 @@
+claim_id: CLM-C7B1A737BA84
+entity_id: product.software.dti_assessment.permanent
+entity_type: product_plan
+entity_name: Gói Vĩnh viễn
+attribute: term
+value: Vĩnh viễn
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-PHAN_MEM_ANH_GIA_CHUYEN_OI_SO_DTI_2026_04_13
+observed_at: '2026-04-14T17:20:54.540128+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng giá: | Thời gian | 1 năm | 1 năm | Vĩnh viễn |'
+dual_vote:
+  status: DISAGREE
+  score: 0.0
+  confidence: LOW
+  flag: human_review_required

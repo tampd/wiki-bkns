@@ -1,0 +1,19 @@
+claim_id: CLM-ENT-PROD-VPS-ACCESS.A
+entity_id: ENT-PROD-VPS
+entity_type: product_category
+entity_name: VPS
+attribute: access.admin
+value: Có quyền Root/Administor có thể cài đặt tuỳ biến theo nhu cầu
+unit: ''
+qualifiers: null
+source_ids:
+- SRC-TRAINING_DICH_VU_VPS_2026_04_06
+observed_at: '2026-04-07T01:05:15.844304+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ bảng so sánh ở mục 3: ''Có quyền Root/Administor có thể cài
+  đặt tuỳ biến theo nhu cầu'''
+approved_at: '2026-04-08T13:00:13.824928+07:00'
+approved_by: admin-batch

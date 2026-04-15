@@ -2,7 +2,7 @@
 page_id: wiki.products.email.so-sanh
 title: Email Doanh Nghiệp BKNS — So Sánh
 category: products/email
-updated: '2026-04-07'
+updated: '2026-04-14'
 review_state: drafted
 claims_used: 0
 compile_cost_usd: 0

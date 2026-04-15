@@ -1,0 +1,23 @@
+claim_id: CLM-C88B69A8CAE1
+entity_id: ENT-PROD-DOMAIN.org
+entity_type: product_variant
+entity_name: Tên miền .org
+attribute: registration_price
+value: 365000
+unit: VND
+qualifiers:
+  billing_cycle: year
+source_ids:
+- SRC-DICH_VU_ANG_KY_TEN_MIEN_VIET_NAM_VA_QUOC_TE_TAI_BKNS_2026_04_05
+observed_at: '2026-04-14T16:47:42.441791+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ Bảng giá Tên miền Quốc tế: | .org | Miễn phí | 365.000 |
+  535.000 | 535.000 |'
+dual_vote:
+  status: PARTIAL
+  score: 0.6047
+  confidence: MEDIUM
+  flag: needs_review

@@ -1,0 +1,23 @@
+claim_id: CLM-6B477A47A0F3
+entity_id: ENT-PROD-VPS-STORAGE
+entity_type: product
+entity_name: Storage VPS
+attribute: deployment_time
+value: 5-10
+unit: minutes
+qualifiers: null
+source_ids:
+- SRC-STORAGE_VPS_MAY_CHU_AO_LUU_TRU_DUNG_LUONG_CAO_2026_04_05
+observed_at: '2026-04-14T16:14:49.869607+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Quy trình đăng ký / Triển khai / Kích hoạt: Sau khi khách
+  hàng hoàn tất thanh toán, hệ thống sẽ tự động khởi tạo dịch vụ trong khoảng 5-10
+  phút.'
+dual_vote:
+  status: DISAGREE
+  score: 0.5676
+  confidence: LOW
+  flag: human_review_required

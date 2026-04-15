@@ -1,0 +1,24 @@
+claim_id: CLM-D31AC3F7C395
+entity_id: product.software.softaculous
+entity_type: product
+entity_name: Bản quyền Softaculous
+attribute: supported_app
+value: Magento
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-BAN_QUYEN_SOFTACULOUS_TRINH_CAI_AT_UNG_DUNG_TU_ONG_2026_04_05
+observed_at: '2026-04-14T17:18:51.495874+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tính năng / Thành phần: ''Kho ứng dụng lớn: Hỗ trợ các
+  ứng dụng phổ biến như WordPress, Joomla, PrestaShop, Magento, và nhiều hơn nữa.'''
+dual_vote:
+  status: PARTIAL
+  score: 0.6786
+  confidence: MEDIUM
+  flag: needs_review
+value_changed_from: PrestaShop
+value_changed_at: '2026-04-14T17:18:51.495923+07:00'

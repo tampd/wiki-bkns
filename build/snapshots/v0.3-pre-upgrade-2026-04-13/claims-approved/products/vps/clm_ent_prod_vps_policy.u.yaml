@@ -1,0 +1,19 @@
+claim_id: CLM-ENT-PROD-VPS-POLICY.U
+entity_id: ENT-PROD-VPS
+entity_type: product
+entity_name: VPS Giá Rẻ
+attribute: policy.upgrade
+value: true
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_VPS_GIA_RE_MAY_CHU_AO_CAU_HINH_ON_INH_2026_04_06
+observed_at: '2026-04-07T00:16:39.109537+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ mục ''Tính năng / Thành phần'': • Dễ dàng nâng cấp: Người
+  dùng có thể nâng cấp tài nguyên khi nhu cầu sử dụng tăng lên.'
+approved_at: '2026-04-08T13:00:14.024894+07:00'
+approved_by: admin-batch

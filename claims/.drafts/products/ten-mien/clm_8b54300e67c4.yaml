@@ -1,0 +1,24 @@
+claim_id: CLM-8B54300E67C4
+entity_id: ENT-PROD-DOMAIN
+entity_type: product
+entity_name: Tên miền
+attribute: pricing_model
+value: contact_for_price
+unit: null
+qualifiers:
+  service_name: Registry Lock
+source_ids:
+- SRC-BAO_VE_TEN_MIEN_CAP_CAO_NHAT_GIAI_PHAP_AN_TOAN_TUYET_OI_2026_04_05
+observed_at: '2026-04-14T16:45:20.958353+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ Gói dịch vụ và bảng giá: ⚠️ CHƯA TRÍCH XUẤT ĐỦ: Trang web
+  không cung cấp bảng giá cụ thể cho dịch vụ Registry Lock. Khách hàng cần liên hệ
+  trực tiếp với BKNS để được tư vấn và nhận báo giá chi tiết.'
+dual_vote:
+  status: DISAGREE
+  score: 0.2797
+  confidence: LOW
+  flag: human_review_required

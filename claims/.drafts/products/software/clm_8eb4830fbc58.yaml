@@ -1,0 +1,21 @@
+claim_id: CLM-8EB4830FBC58
+entity_id: product.software.plesk_vps_web_host
+entity_type: product_plan
+entity_name: Plesk VPS License - Web Host Edition (Unlimited Domains)
+attribute: domain_limit
+value: unlimited
+unit: domain
+qualifiers: null
+source_ids:
+- SRC-PHAN_MEM_QUAN_TRI_HOSTING_PLESK_OBSIDIAN_2026_04_05
+observed_at: '2026-04-14T12:23:09.333281+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng so sánh: ''Giới hạn Domain | Không giới hạn'''
+dual_vote:
+  status: PARTIAL
+  score: 0.6082
+  confidence: MEDIUM
+  flag: needs_review

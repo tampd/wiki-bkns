@@ -1,0 +1,21 @@
+claim_id: CLM-61F31A74EE93
+entity_id: product.vps.cloud-vm01
+entity_type: product_plan
+entity_name: CLOUD-VM01
+attribute: minimum_billing_cycle
+value: 3
+unit: month
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_THUE_CLOUD_VPS_SSD_GIA_RE_TAI_BKNS_2026_04_05
+observed_at: '2026-04-14T16:10:11.130658+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng giá: ''CLOUD-VM01 | 3 tháng'''
+dual_vote:
+  status: PARTIAL
+  score: 0.6518
+  confidence: MEDIUM
+  flag: needs_review

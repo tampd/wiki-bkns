@@ -1,0 +1,24 @@
+claim_id: CLM-73482CA440A8
+entity_id: ENT-PROD-VPS.vps_gia_re
+entity_type: product
+entity_name: Dịch vụ VPS Giá Rẻ
+attribute: target_customer
+value: Sinh viên, lập trình viên, doanh nghiệp vừa và nhỏ, cá nhân có nhu cầu lưu
+  trữ dữ liệu hoặc vận hành website, ứng dụng quy mô nhỏ.
+unit: ''
+qualifiers: {}
+source_ids:
+- SRC-DICH_VU_VPS_GIA_RE_MAY_CHU_AO_CAU_HINH_ON_INH_2026_04_05
+observed_at: '2026-04-14T16:11:54.091782+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tóm tắt nhanh: Phù hợp với: Sinh viên, lập trình viên,
+  doanh nghiệp vừa và nhỏ, cá nhân có nhu cầu lưu trữ dữ liệu hoặc vận hành website,
+  ứng dụng quy mô nhỏ.'
+dual_vote:
+  status: DISAGREE
+  score: 0.5846
+  confidence: LOW
+  flag: human_review_required

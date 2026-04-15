@@ -1,0 +1,17 @@
+claim_id: CLM-43905666594D
+entity_id: ENT-PROD-SSL-002
+entity_type: product
+entity_name: GeoTrust QuickSSL Premium Wildcard
+attribute: validation_type
+value: Domain Validation - DV
+unit: null
+qualifiers: null
+source_ids:
+- SRC-CHUNG_CHI_SSL_GEOTRUST_QUICKSSL_PREMIUM_WILDCARD_2026_04_13
+observed_at: '2026-04-13T21:58:22.302864+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ mục Tính năng / Thành phần: ''• Loại xác thực: Xác thực tên
+  miền (Domain Validation - DV).'''

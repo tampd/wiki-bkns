@@ -1,0 +1,22 @@
+claim_id: CLM-BAB4778BEDF3
+entity_id: product.hosting.windows
+entity_type: product
+entity_name: Hosting Windows
+attribute: backup_solution
+value: Jetbackup
+unit: ''
+qualifiers: {}
+source_ids:
+- SRC-DICH_VU_HOSTING_WINDOWS_TAI_BKNS_2026_04_05
+observed_at: '2026-04-14T12:10:47.052651+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tính năng / Thành phần: ''Sao lưu: Tích hợp Jetbackup để
+  sao lưu dữ liệu.'''
+dual_vote:
+  status: PARTIAL
+  score: 0.6404
+  confidence: MEDIUM
+  flag: needs_review

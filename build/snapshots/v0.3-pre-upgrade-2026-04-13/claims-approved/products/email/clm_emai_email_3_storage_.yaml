@@ -1,0 +1,18 @@
+claim_id: CLM-EMAI-EMAIL_3-STORAGE_
+entity_id: product.email_hosting.email_3
+entity_type: product_plan
+entity_name: EMAIL 3
+attribute: storage_per_account
+value: 5
+unit: GB
+qualifiers: {}
+source_ids:
+- SRC-BANG_GIA_DICH_VU_BKNS_TEXT_2026_04_06
+observed_at: '2026-04-06T23:13:40.976326+07:00'
+valid_from: '2026-04-06'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ Gói EMAIL 3: - Dung lượng: 5GB/email'
+approved_at: '2026-04-08T13:00:10.151216+07:00'
+approved_by: admin-batch

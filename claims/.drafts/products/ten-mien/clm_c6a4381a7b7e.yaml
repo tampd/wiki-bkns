@@ -1,0 +1,28 @@
+claim_id: CLM-C6A4381A7B7E
+entity_id: ENT-PROD-DOMAIN
+entity_type: product
+entity_name: Dịch vụ Tên miền
+attribute: description
+value: Dịch vụ đăng ký, duy trì và chuyển đổi tên miền (domain name) cho các website,
+  bao gồm cả tên miền Việt Nam (.vn) và tên miền quốc tế (.com, .net, .org, ...).
+unit: null
+qualifiers: null
+source_ids:
+- SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_13
+- SRC-DICH_VU_ANG_KY_TEN_MIEN_VIET_NAM_VA_QUOC_TE_TAI_BKNS_2026_04_05
+observed_at: '2026-04-14T16:47:42.340026+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: Dịch vụ này là gì: Dịch vụ đăng ký, duy trì
+  và chuyển đổi tên miền (domain name) cho các website, bao gồm cả tên miền Việt Nam
+  (.vn) và tên miền quốc tế (.com, .net, .org, ...).'
+value_changed_from: Cung cấp bảng giá chi tiết cho việc đăng ký mới, duy trì (gia
+  hạn) và chuyển (transfer) các loại tên miền quốc tế và tên miền Việt Nam tại BKNS.
+value_changed_at: '2026-04-14T16:47:42.340059+07:00'
+dual_vote:
+  status: PARTIAL
+  score: 0.6047
+  confidence: MEDIUM
+  flag: needs_review

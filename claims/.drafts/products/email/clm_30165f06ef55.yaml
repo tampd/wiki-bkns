@@ -1,0 +1,27 @@
+claim_id: CLM-30165F06EF55
+entity_id: ENT-PROD-EMAIL
+entity_type: product_category
+entity_name: Email doanh nghiệp
+attribute: target_audience
+value: Doanh nghiệp vừa và nhỏ
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_05
+- SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_13
+- SRC-TRANNING_KINH_DOANH_HOSTING_EMAIL_2026_04_13
+observed_at: '2026-04-14T12:35:14.387856+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng Giới thiệu dịch vụ BKNS cung cấp, hàng Email doanh nghiệp,
+  cột Đối tượng khách hàng chính: ''Doanh nghiệp vừa và nhỏ'''
+dual_vote:
+  status: DISAGREE
+  score: 0.4556
+  confidence: LOW
+  flag: human_review_required
+value_changed_from: Các doanh nghiệp và tổ chức muốn sử dụng hệ thống email chuyên
+  nghiệp, ổn định và an toàn theo tên miền riêng.
+value_changed_at: '2026-04-14T12:35:14.387878+07:00'

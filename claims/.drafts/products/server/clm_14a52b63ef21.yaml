@@ -1,0 +1,23 @@
+claim_id: CLM-14A52B63EF21
+entity_id: bkns.software.vbulletin.cloud
+entity_type: product_plan
+entity_name: vBulletin Cloud
+attribute: price
+value: Giá liên hệ
+unit: null
+qualifiers:
+  billing_cycle: year
+source_ids:
+- SRC-BAN_QUYEN_VBULLETIN_HE_QUAN_TRI_FORUM_MANG_XA_HOI_2026_04_05
+observed_at: '2026-04-14T17:09:15.821223+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: '| vBulletin Cloud | Giá liên hệ | Chi phí theo năm vBulletin 5 Connect
+  |'
+dual_vote:
+  status: DISAGREE
+  score: 0.0
+  confidence: LOW
+  flag: human_review_required

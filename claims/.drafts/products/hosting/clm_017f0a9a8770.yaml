@@ -1,0 +1,21 @@
+claim_id: CLM-017F0A9A8770
+entity_id: product.hosting.pla2
+entity_type: product_plan
+entity_name: PLA 2
+attribute: inodes
+value: 400000
+unit: null
+qualifiers: null
+source_ids:
+- SRC-PLATINUM_WEB_HOSTING_HOSTING_NVME_TOC_O_CAO_BACKUP_3_LAN_2026_04_13
+observed_at: '2026-04-14T12:29:46.486828+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng so sánh: | Inodes | ... | 400.000 |'
+dual_vote:
+  status: DISAGREE
+  score: 0.5968
+  confidence: LOW
+  flag: human_review_required

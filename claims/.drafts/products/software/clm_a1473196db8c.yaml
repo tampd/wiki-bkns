@@ -1,0 +1,27 @@
+claim_id: CLM-A1473196DB8C
+entity_id: product.software.litespeed_web_server
+entity_type: product
+entity_name: LiteSpeed Web Server (LSWS)
+attribute: included_feature
+value: LiteSpeed Cache (LSCache)
+unit: null
+qualifiers:
+  description: cung cấp giải pháp bộ nhớ đệm mạnh mẽ để tăng tốc độ website, đặc biệt
+    là các trang WordPress
+source_ids:
+- SRC-LITESPEED_WEB_SERVER_TINH_NANG_PHIEN_BAN_VA_SO_SANH_2026_04_13
+observed_at: '2026-04-14T12:21:39.474969+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tính năng / Thành phần: Tích hợp LiteSpeed Cache (LSCache):
+  Cung cấp giải pháp bộ nhớ đệm mạnh mẽ để tăng tốc độ website, đặc biệt là các trang
+  WordPress.'
+dual_vote:
+  status: DISAGREE
+  score: 0.0
+  confidence: LOW
+  flag: human_review_required
+value_changed_from: plugin LSCache
+value_changed_at: '2026-04-14T12:21:39.475002+07:00'

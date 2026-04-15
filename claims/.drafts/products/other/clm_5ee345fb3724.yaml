@@ -1,0 +1,16 @@
+claim_id: CLM-5EE345FB3724
+entity_id: prod.bkns.cloud_meeting
+entity_type: product
+entity_name: Cloud Meeting
+attribute: name
+value: Cloud Meeting
+unit: null
+qualifiers: null
+source_ids:
+- SRC-CLOUD_MEETING_E_MEETING_GIAI_PHAP_HOP_TRUC_TUYEN_TAI_BKNS_2026_04_13
+observed_at: '2026-04-13T22:02:54.561283+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: null
+compiler_note: 'Trích từ tiêu đề: ═══ Cloud Meeting (E-meeting)'

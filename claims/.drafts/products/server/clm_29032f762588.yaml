@@ -1,0 +1,24 @@
+claim_id: CLM-29032F762588
+entity_id: product.colocation.bkns
+entity_type: product
+entity_name: Thuê Chỗ Đặt Máy Chủ (Colocation)
+attribute: faq
+value: '{"question": "Sự khác nhau giữa thuê máy chủ và thuê chỗ đặt máy chủ?", "answer":
+  "Thuê máy chủ là bạn thuê cả phần cứng máy chủ do nhà cung cấp đầu tư. Thuê chỗ
+  đặt máy chủ (Colocation) là bạn đã có sẵn máy chủ và chỉ thuê vị trí đặt tại Data
+  Center."}'
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_THUE_CHO_AT_MAY_CHU_COLOCATION_TAI_BKNS_2026_04_05
+observed_at: '2026-04-14T17:15:53.956384+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: Trích từ Câu hỏi thường gặp (FAQ)
+dual_vote:
+  status: DISAGREE
+  score: 0.58
+  confidence: LOW
+  flag: human_review_required

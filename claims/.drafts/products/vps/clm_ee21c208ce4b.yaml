@@ -1,0 +1,21 @@
+claim_id: CLM-EE21C208CE4B
+entity_id: product.vps.bk-misa
+entity_type: product
+entity_name: BK MISA
+attribute: hardware_cpu
+value: Chipset Intel Xeon
+unit: null
+qualifiers: null
+source_ids:
+- SRC-CLOUD_VPS_BK_MISA_GIAI_PHAP_LUU_TRU_KE_TOAN_SO_2026_04_05
+observed_at: '2026-04-14T16:08:16.028729+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Hạ tầng mạnh mẽ: Dịch vụ sử dụng Chipset Intel Xeon...'
+dual_vote:
+  status: PARTIAL
+  score: 0.7201
+  confidence: MEDIUM
+  flag: needs_review

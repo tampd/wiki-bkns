@@ -1,0 +1,16 @@
+claim_id: CLM-3D97311FF9C1
+entity_id: vps.sieu_re.vpstk1
+entity_type: product_plan
+entity_name: VPSTK1
+attribute: ram
+value: 1
+unit: GB
+qualifiers: {}
+source_ids:
+- SRC-DICH_VU_VPS_SIEU_TIET_KIEM_VPS_SIEU_RE_TAI_BKNS_2026_04_13
+observed_at: '2026-04-13T22:32:55.345947+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: medium
+compiler_note: 'Trích từ bảng giá, dòng RAM, cột VPSTK1: 01 GB'

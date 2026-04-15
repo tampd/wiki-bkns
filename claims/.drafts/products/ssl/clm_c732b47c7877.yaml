@@ -1,0 +1,16 @@
+claim_id: CLM-C732B47C7877
+entity_id: ENT-PROD-SSL-002
+entity_type: product
+entity_name: GeoTrust QuickSSL Premium Wildcard
+attribute: purchase_url
+value: https://my.bkns.net/?cmd=cart&action=add&id=357&language=vietnamese
+unit: null
+qualifiers: null
+source_ids:
+- SRC-CHUNG_CHI_SSL_GEOTRUST_QUICKSSL_PREMIUM_WILDCARD_2026_04_13
+observed_at: '2026-04-13T21:58:22.350014+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ mục Liên kết liên quan: ''• Mua ngay: `https://my.bkns.net/?cmd=cart&action=add&id=357&language=vietnamese`'''

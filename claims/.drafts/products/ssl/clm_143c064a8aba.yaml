@@ -1,0 +1,21 @@
+claim_id: CLM-143C064A8ABA
+entity_id: ENT-PROD-SSL.rapidssl
+entity_type: product
+entity_name: RapidSSL Certificate
+attribute: issuance_time
+value: 5
+unit: minutes
+qualifiers: {}
+source_ids:
+- SRC-RAPIDSSL_CERTIFICATE_CHUNG_CHI_SSL_XAC_THUC_TEN_MIEN_DV_2026_04_05
+observed_at: '2026-04-14T16:57:24.770149+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: '• Thời gian cấp phát: Chứng chỉ được cấp phát trong khoảng 5 phút.'
+dual_vote:
+  status: DISAGREE
+  score: 0.3892
+  confidence: LOW
+  flag: human_review_required

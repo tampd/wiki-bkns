@@ -1,0 +1,25 @@
+claim_id: CLM-5F6E9E3BD9F8
+entity_id: ENT-PROD-SOFTWARE-LITESPEED
+entity_type: product
+entity_name: LiteSpeed Web Server
+attribute: architecture_benefit
+value: xử lý hàng ngàn kết nối đồng thời với việc sử dụng ít tài nguyên (CPU/RAM)
+  hơn so với Apache
+unit: null
+qualifiers:
+  compared_to: Apache
+source_ids:
+- SRC-LITESPEED_WEB_SERVER_TINH_NANG_PHIEN_BAN_VA_SO_SANH_2026_04_05
+observed_at: '2026-04-14T12:20:31.112013+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Mô tả dịch vụ: Nó được xây dựng dựa trên kiến trúc hướng
+  sự kiện (event-driven), giúp xử lý hàng ngàn kết nối đồng thời với việc sử dụng
+  ít tài nguyên (CPU/RAM) hơn so với Apache.'
+dual_vote:
+  status: DISAGREE
+  score: 0.0
+  confidence: LOW
+  flag: human_review_required

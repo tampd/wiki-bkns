@@ -1,0 +1,22 @@
+claim_id: CLM-988383CD60DB
+entity_id: product.software.directadmin.lite
+entity_type: product_plan
+entity_name: DirectAdmin Lite
+attribute: price
+value: 450000
+unit: VND
+qualifiers:
+  billing_cycle: month
+source_ids:
+- SRC-BANG_GIA_BAN_QUYEN_PHAN_MEM_QUAN_TRI_SERVER_DIRECTADMIN_2026_04_05
+observed_at: '2026-04-14T17:10:42.460073+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ bảng giá: | Lite | 450.000/ Tháng |'
+dual_vote:
+  status: PARTIAL
+  score: 0.6814
+  confidence: MEDIUM
+  flag: needs_review

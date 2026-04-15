@@ -1,0 +1,23 @@
+claim_id: CLM-1169368212F9
+entity_id: product.email.hosting.email_1
+entity_type: product_plan
+entity_name: EMAIL 1
+attribute: monthly_price
+value: 42750
+unit: VND
+qualifiers: null
+source_ids:
+- SRC-BANG_GIA_EMAIL_2026_04_05
+observed_at: '2026-04-14T17:00:20.258971+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ: ''EMAIL 1
+
+  42.750đ/ tháng'''
+dual_vote:
+  status: DISAGREE
+  score: 0.2718
+  confidence: LOW
+  flag: human_review_required

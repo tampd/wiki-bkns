@@ -1,0 +1,2 @@
+{"ts": "2026-04-13T22:01:40.573949+07:00", "action": "extracted", "claim_id": "CLM-2309E612CF3E", "source": "SRC-CHUNG_CHI_SSL_INSTANTSSL_OV_2026_04_13", "raw_file": "raw/manual/chung-chi-ssl-instantssl-ov-2026-04-13.md", "model": "gemini-2.5-pro", "cost_usd": 0.026286}
+{"ts": "2026-04-13T22:01:40.579520+07:00", "action": "extracted", "claim_id": "CLM-2309E612CF3E", "source": "SRC-CHUNG_CHI_SSL_INSTANTSSL_OV_2026_04_13", "raw_file": "raw/manual/chung-chi-ssl-instantssl-ov-2026-04-13.md", "model": "gemini-2.5-pro", "cost_usd": 0.026286}

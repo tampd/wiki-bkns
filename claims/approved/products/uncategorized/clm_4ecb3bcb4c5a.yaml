@@ -1,0 +1,20 @@
+claim_id: CLM-4ECB3BCB4C5A
+entity_id: company.bkns
+entity_type: company
+entity_name: BKNS
+attribute: pricing_policy
+value: Prices are subject to change without prior notice
+unit: null
+qualifiers: {}
+source_ids:
+  - SRC-BANG_GIA_DICH_VU_BKNS_TEXT_2026_04_13
+observed_at: '2026-04-13T21:40:29.157073+07:00'
+valid_from: '2026-04-13'
+confidence: ground_truth
+review_state: approved
+risk_class: medium
+compiler_note: 'Trích từ ghi chú: ''Giá có thể thay đổi mà không có thông báo trước'''
+approved_at: '2026-04-15T13:53:20.451659+07:00'
+approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.645Z'

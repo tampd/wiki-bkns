@@ -1,0 +1,28 @@
+claim_id: CLM-C73F649C01CB
+entity_id: ENT-PROD-EMAIL
+entity_type: product
+entity_name: Email Hosting
+attribute: description
+value: Email Hosting là dịch vụ cung cấp email theo tên miền riêng của doanh nghiệp,
+  được xây dựng trên một nền tảng máy chủ độc lập.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_05
+- SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_13
+observed_at: '2026-04-14T12:07:57.607670+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ phần ''Mô tả dịch vụ'': ''Email Hosting là dịch vụ cung cấp
+  email theo tên miền riêng của doanh nghiệp, được xây dựng trên một nền tảng máy
+  chủ độc lập.'''
+dual_vote:
+  status: DISAGREE
+  score: 0.4556
+  confidence: LOW
+  flag: human_review_required
+value_changed_from: Dịch vụ email theo tên miền riêng dành cho doanh nghiệp, hoạt
+  động trên nền tảng độc lập Zimbra, có độ bảo mật cao và khả năng chống spam.
+value_changed_at: '2026-04-14T12:07:57.607702+07:00'

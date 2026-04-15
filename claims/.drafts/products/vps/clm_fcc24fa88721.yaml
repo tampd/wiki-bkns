@@ -1,0 +1,22 @@
+claim_id: CLM-FCC24FA88721
+entity_id: ENT-PROD-VPS
+entity_type: product
+entity_name: Thuê Server tại BKNS
+attribute: promotion
+value: Hỗ trợ đổi IP miễn phí
+unit: null
+qualifiers:
+  condition: Khách hàng Thuê Server tại BKNS
+  scope: áp dụng cho IP thuộc BKNS
+source_ids:
+- SRC-BANG_GIA_BAN_QUYEN_PHAN_MEM_QUAN_TRI_SERVER_DIRECTADMIN_2026_04_13
+observed_at: '2026-04-13T21:39:20.612516+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: medium
+compiler_note: 'Trích từ mục Chính sách / Điều khoản / Lưu ý: ''Ưu đãi cho khách hàng
+  tại BKNS: Khách hàng Thuê Server tại BKNS sẽ được miễn phí License DirectAdmin và
+  được hỗ trợ đổi IP miễn phí (áp dụng cho IP thuộc BKNS).'''
+value_changed_from: Miễn phí License DirectAdmin
+value_changed_at: '2026-04-13T21:39:20.612538+07:00'

@@ -1,0 +1,22 @@
+claim_id: CLM-A0398F0EABD9
+entity_id: product.vps.amd.amd2
+entity_type: product_plan
+entity_name: AMD 2
+attribute: storage_size
+value: 40
+unit: GB
+qualifiers:
+  storage_type: NVMe
+source_ids:
+- SRC-BKNS_CAMNAG_HOSTING_DOT3_2026_04_05
+observed_at: '2026-04-14T12:02:37.764518+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: Trích từ bảng thông số Cloud VPS AMD, dòng AMD 2
+dual_vote:
+  status: DISAGREE
+  score: 0.4055
+  confidence: LOW
+  flag: human_review_required

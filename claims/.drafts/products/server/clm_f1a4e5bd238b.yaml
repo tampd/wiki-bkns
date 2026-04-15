@@ -1,0 +1,21 @@
+claim_id: CLM-F1A4E5BD238B
+entity_id: product.colocation.bkns
+entity_type: product
+entity_name: Thuê Chỗ Đặt Máy Chủ (Colocation)
+attribute: name
+value: Thuê Chỗ Đặt Máy Chủ (Colocation)
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_THUE_CHO_AT_MAY_CHU_COLOCATION_TAI_BKNS_2026_04_05
+observed_at: '2026-04-14T17:15:53.873636+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ tiêu đề trang: ''═══ Thuê Chỗ Đặt Máy Chủ (Colocation)'''
+dual_vote:
+  status: DISAGREE
+  score: 0.58
+  confidence: LOW
+  flag: human_review_required

@@ -1,0 +1,12 @@
+{
+  "ts": "2026-04-14T11:33:44.749718+07:00",
+  "skill": "test-20claims",
+  "status": "DISAGREE",
+  "flag": "human_review_required",
+  "score": 0.3896,
+  "model_a": "gemini-2.5-pro",
+  "model_b": "gpt-5.4",
+  "text_a": "```json\n{\n  \"attribute\": \"renewal_fee\",\n  \"value\": \"490000\",\n  \"confidence\": 1.0,\n  \"agrees\": false,\n  \"reason\": \"The claimed renewal fee for a .biz domain is 740,000 VND, but the official BKNS pricing page lists the renewal fee as 490,000 VND.\"\n}\n```",
+  "text_b": "{\"attribute\":\"renewal_fee\",\".value\":\"740000\",\"confidence\":0.18,\"agrees\":false,\"reason\":\"No source record or BKNS product data was provided to verify the .biz renewal fee claim. Without supporting evidence, the claimed value cannot be confirmed.\"}",
+  "prompt_preview": "Verify the following claim about BKNS products and return JSON:\nEntity: .biz\nAttribute: renewal_fee\nClaimed value: 740000\n\nReturn JSON: {\"attribute\": \"...\", \"value\": \"...\", \"confidence\": 0.0-1.0, \"agrees\": true/false, \"reason\": \"brief explanation\"}"
+}

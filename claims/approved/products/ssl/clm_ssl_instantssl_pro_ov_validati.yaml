@@ -7,15 +7,16 @@ value: Tên miền + Doanh nghiệp (OV)
 unit: null
 qualifiers: {}
 source_ids:
-- SRC-INSTANTSSL_PRO_OV_CHUNG_CHI_SSL_XAC_THUC_TO_CHUC_CUA_COM_2026_04_06
+  - SRC-INSTANTSSL_PRO_OV_CHUNG_CHI_SSL_XAC_THUC_TO_CHUC_CUA_COM_2026_04_06
 observed_at: '2026-04-07T00:42:11.470778+07:00'
 valid_from: '2026-04-07'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ Thông số kỹ thuật / Giới hạn: Xác thực | Tên miền + Doanh
-  nghiệp (OV)'
+compiler_note: 'Trích từ Thông số kỹ thuật / Giới hạn: Xác thực | Tên miền + Doanh nghiệp (OV)'
 value_changed_from: Organization Validation (OV)
 value_changed_at: '2026-04-07T00:42:11.470794+07:00'
-approved_at: '2026-04-07T13:00:13.955336+07:00'
+approved_at: '2026-04-08T13:00:13.466683+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.583Z'

@@ -7,16 +7,17 @@ value: MySQL
 unit: null
 qualifiers: {}
 source_ids:
-- SRC-WINDOWS_HOSTING_WEB_2026_04_05
-- SRC-DICH_VU_HOSTING_WINDOWS_TAI_BKNS_2026_04_06
+  - SRC-WINDOWS_HOSTING_WEB_2026_04_05
+  - SRC-DICH_VU_HOSTING_WINDOWS_TAI_BKNS_2026_04_06
 observed_at: '2026-04-07T00:08:17.737637+07:00'
 valid_from: '2026-04-05'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ mục Tính năng / Thành phần: • Cơ sở dữ liệu: Hỗ trợ MySQL
-  Accounts (số lượng tùy gói).'
+compiler_note: 'Trích từ mục Tính năng / Thành phần: • Cơ sở dữ liệu: Hỗ trợ MySQL Accounts (số lượng tùy gói).'
 value_changed_from: MSSQL
 value_changed_at: '2026-04-07T00:08:17.737654+07:00'
-approved_at: '2026-04-07T13:00:12.577157+07:00'
+approved_at: '2026-04-08T13:00:11.841719+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.092Z'

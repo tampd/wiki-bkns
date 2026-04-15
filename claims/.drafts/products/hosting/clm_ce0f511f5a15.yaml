@@ -1,0 +1,21 @@
+claim_id: CLM-CE0F511F5A15
+entity_id: product.hosting.bkh03
+entity_type: product_plan
+entity_name: BKH03
+attribute: domain_limit
+value: 5
+unit: domain
+qualifiers: null
+source_ids:
+- SRC-HOSTING_GIA_RE_BANG_GIA_VA_THONG_SO_KY_THUAT_TAI_BKNS_2026_04_13
+observed_at: '2026-04-14T12:13:27.314586+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng giá, dòng ''Domain'', cột ''BKH03'': 05'
+dual_vote:
+  status: DISAGREE
+  score: 0.5341
+  confidence: LOW
+  flag: human_review_required

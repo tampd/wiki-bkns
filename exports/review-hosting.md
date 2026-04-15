@@ -6,7 +6,7 @@ Nhiệm vụ: tìm MỌI sai sót, mâu thuẫn, và thông tin bịa đặt (ha
 
 ## Nguồn dữ liệu
 - **Ground Truth Claims (176)**: Dữ liệu chính xác 100% từ Excel bảng giá nội bộ BKNS
-- **LLM-Extracted Claims (255)**: Dữ liệu trích xuất bởi AI từ tài liệu — CÓ THỂ SAI
+- **LLM-Extracted Claims (520)**: Dữ liệu trích xuất bởi AI từ tài liệu — CÓ THỂ SAI
 - **Wiki Pages (9)**: Trang wiki đã compile — CẦN KIỂM TRA
 
 ## Checklist Kiểm Tra

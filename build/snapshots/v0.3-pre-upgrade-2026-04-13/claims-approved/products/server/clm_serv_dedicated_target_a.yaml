@@ -1,0 +1,21 @@
+claim_id: CLM-SERV-DEDICATED-TARGET_A
+entity_id: product.server.dedicated.bkns
+entity_type: product
+entity_name: Cho thuê máy chủ vật lý (Dedicated Server) BKNS
+attribute: target_audience
+value: Khách hàng có nhu cầu thuê máy chủ vật lý với các cấu hình và mục đích sử dụng
+  đa dạng như làm web server, máy chủ game, lưu trữ, MMO...
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-DANH_SACH_GOI_SAN_PHAM_MAY_CHU_BKNS_2026_04_04
+observed_at: '2026-04-04T20:42:43.385388+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: ''Phù hợp với: Khách hàng có nhu cầu thuê
+  máy chủ vật lý với các cấu hình và mục đích sử dụng đa dạng như làm web server,
+  máy chủ game, lưu trữ, MMO...'''
+approved_at: '2026-04-08T13:00:09.298040+07:00'
+approved_by: admin-batch

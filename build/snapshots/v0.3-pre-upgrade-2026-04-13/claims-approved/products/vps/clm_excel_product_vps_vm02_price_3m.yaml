@@ -1,0 +1,20 @@
+claim_id: CLM-EXCEL-product_vps_vm02-price_3m
+entity_id: product.vps.vm02
+entity_type: product_plan
+entity_name: Cloud VPS VM VM02
+attribute: price_3m
+value: 540000
+confidence: ground_truth
+review_state: approved
+risk_class: verified
+source_ids:
+- EXCEL-BANGGIA-BKNS-2026
+observed_at: '2026-04-07T15:46:04.873903+07:00'
+valid_from: '2026-04-07'
+approved_at: '2026-04-07T15:46:04.873903+07:00'
+approved_by: excel-direct-injection
+unit: VND
+qualifiers:
+  period: 3 tháng
+  vat_included: false
+compiler_note: Excel VPS sheet, 2. VPS VM, plan VM02, Giá 3 tháng

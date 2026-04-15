@@ -1,0 +1,22 @@
+claim_id: CLM-C3D56BF9B9EF
+entity_id: ENT-PROD-EMAIL
+entity_type: product
+entity_name: Email Hosting
+attribute: policy_info
+value: Không có thông tin
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_05
+observed_at: '2026-04-14T12:06:40.768163+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Chính sách / Điều khoản / Lưu ý: Không có thông tin về
+  chính sách, điều khoản hay lưu ý đặc biệt nào được đề cập trên trang.'
+dual_vote:
+  status: DISAGREE
+  score: 0.4556
+  confidence: LOW
+  flag: human_review_required

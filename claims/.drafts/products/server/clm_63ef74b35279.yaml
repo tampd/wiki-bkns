@@ -1,0 +1,22 @@
+claim_id: CLM-63EF74B35279
+entity_id: bkns.software.vbulletin.connect
+entity_type: product_plan
+entity_name: vBulletin 5 Connect
+attribute: price
+value: Giá liên hệ
+unit: null
+qualifiers: null
+source_ids:
+- SRC-BAN_QUYEN_VBULLETIN_HE_QUAN_TRI_FORUM_MANG_XA_HOI_2026_04_05
+observed_at: '2026-04-14T17:09:15.786343+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: '| vBulletin 5 Connect | Giá liên hệ | Bản New license cho phép bạn
+  nâng cấp các phiên bản mới nhất của vbulletin 5 connect. Phiên bản Lifetime. |'
+dual_vote:
+  status: DISAGREE
+  score: 0.0
+  confidence: LOW
+  flag: human_review_required

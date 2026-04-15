@@ -7,14 +7,15 @@ value: 3
 unit: domains
 qualifiers: {}
 source_ids:
-- SRC-POSITIVESSL_MULTI_DOMAIN_DV_CHUNG_CHI_SSL_CHO_NHIEU_TEN_M_2026_04_04
-- SRC-POSITIVESSL_MULTI_DOMAIN_DV_CHUNG_CHI_SSL_CHO_NHIEU_TEN_M_2026_04_06
+  - SRC-POSITIVESSL_MULTI_DOMAIN_DV_CHUNG_CHI_SSL_CHO_NHIEU_TEN_M_2026_04_04
+  - SRC-POSITIVESSL_MULTI_DOMAIN_DV_CHUNG_CHI_SSL_CHO_NHIEU_TEN_M_2026_04_06
 observed_at: '2026-04-07T00:54:07.030227+07:00'
 valid_from: '2026-04-04'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ bảng Thông số kỹ thuật: | Bảo vệ cho | 3 tên miền (mặc định)
-  |'
-approved_at: '2026-04-07T13:00:12.982361+07:00'
+compiler_note: 'Trích từ bảng Thông số kỹ thuật: | Bảo vệ cho | 3 tên miền (mặc định) |'
+approved_at: '2026-04-08T13:00:12.383074+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.469Z'

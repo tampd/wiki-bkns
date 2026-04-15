@@ -1,0 +1,27 @@
+claim_id: CLM-9E9F44A933E6
+entity_id: ENT-PROD-VPS
+entity_type: product
+entity_name: VPS Siêu Rẻ
+attribute: storage_type
+value: SSD
+unit: null
+qualifiers: null
+source_ids:
+- SRC-BKNS_CAMNAG_HOSTING_DOT3_2026_04_13
+- SRC-DICH_VU_VPS_SIEU_TIET_KIEM_VPS_SIEU_RE_TAI_BKNS_2026_04_13
+- SRC-DICH_VU_THUE_CLOUD_VPS_SSD_GIA_RE_TAI_BKNS_2026_04_05
+- SRC-DICH_VU_VPS_SIEU_TIET_KIEM_VPS_SIEU_RE_TAI_BKNS_2026_04_05
+observed_at: '2026-04-14T16:13:24.756869+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ mục Tính năng / Thành phần: ''• Ổ cứng SSD: Tất cả các gói
+  đều sử dụng ổ cứng SSD để tăng tốc độ truy xuất dữ liệu.'''
+value_changed_from: 100% ổ cứng SSD/NVMe
+value_changed_at: '2026-04-13T22:32:55.320462+07:00'
+dual_vote:
+  status: PARTIAL
+  score: 0.6518
+  confidence: MEDIUM
+  flag: needs_review

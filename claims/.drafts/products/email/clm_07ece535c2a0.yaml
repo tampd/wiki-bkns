@@ -1,0 +1,21 @@
+claim_id: CLM-07ECE535C2A0
+entity_id: ENT-PROD-EMAIL
+entity_type: product_family
+entity_name: Bảng giá Email
+attribute: vat_policy
+value: Chưa bao gồm VAT
+unit: null
+qualifiers: null
+source_ids:
+- SRC-BANG_GIA_EMAIL_2026_04_05
+observed_at: '2026-04-14T17:00:20.220714+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ tiêu đề: ''BẢNG GIÁ EMAIL ( Chưa bao gồm VAT)'''
+dual_vote:
+  status: DISAGREE
+  score: 0.2718
+  confidence: LOW
+  flag: human_review_required

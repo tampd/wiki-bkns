@@ -1,0 +1,22 @@
+claim_id: CLM-3701915FC546
+entity_id: product.ssl.geotrust_true_businessid_ev_flex
+entity_type: ENT-PROD-SSL
+entity_name: GeoTrust True BusinessID EV (FLEX)
+attribute: feature
+value: Hiển thị tên công ty trên chứng chỉ
+unit: null
+qualifiers: null
+source_ids:
+- SRC-CHUNG_CHI_SSL_GEOTRUST_TRUE_BUSINESSID_EV_FLEX_2026_04_05
+observed_at: '2026-04-14T16:23:53.901454+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: Điểm chính: Cung cấp xác thực EV (hiển thị
+  tên công ty trên chứng chỉ)...'
+dual_vote:
+  status: DISAGREE
+  score: 0.4318
+  confidence: LOW
+  flag: human_review_required

@@ -11,13 +11,14 @@ qualifiers:
   discount_percentage: 40
   vat_inclusive: false
 source_ids:
-- SRC-HOSTING_WORDPRESS_WEB_2026_04_05
+  - SRC-HOSTING_WORDPRESS_WEB_2026_04_05
 observed_at: '2026-04-05T22:04:52.775251+07:00'
 valid_from: '2026-04-05'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: high
-compiler_note: 'Trích từ bảng giá gói WPCP08: ''| Giá 4 năm (giảm 40%) | 14.400.000đ
-  |'' và ghi chú ''(Giá chính xác từ bảng giá nội bộ, chưa VAT)'''
-approved_at: '2026-04-07T13:00:12.746593+07:00'
+compiler_note: 'Trích từ bảng giá gói WPCP08: ''| Giá 4 năm (giảm 40%) | 14.400.000đ |'' và ghi chú ''(Giá chính xác từ bảng giá nội bộ, chưa VAT)'''
+approved_at: '2026-04-08T13:00:12.051338+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.111Z'

@@ -1,0 +1,19 @@
+claim_id: CLM-674D846C7B90
+entity_id: product.ssl.comodo_essentialssl_dv
+entity_type: product_plan
+entity_name: EssentialSSL (DV)
+attribute: target_audience
+value: Các trang web cá nhân, blog, trang web thương mại điện tử nhẹ, và các miền
+  thử nghiệm nội bộ cần cấp phát SSL nhanh chóng.
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-ESSENTIALSSL_DV_CHUNG_CHI_SSL_XAC_THUC_TEN_MIEN_TU_COMOD_2026_04_13
+observed_at: '2026-04-13T22:36:06.127313+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ Tóm tắt nhanh: Phù hợp với: Các trang web cá nhân, blog,
+  trang web thương mại điện tử nhẹ, và các miền thử nghiệm nội bộ cần cấp phát SSL
+  nhanh chóng.'

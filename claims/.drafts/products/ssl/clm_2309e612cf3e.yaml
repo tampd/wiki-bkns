@@ -1,0 +1,19 @@
+claim_id: CLM-2309E612CF3E
+entity_id: product.ssl.comodo_instantssl_ov
+entity_type: product
+entity_name: Chứng chỉ SSL InstantSSL (OV)
+attribute: benefit
+value: verifies_business_identity
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-CHUNG_CHI_SSL_INSTANTSSL_OV_2026_04_13
+observed_at: '2026-04-13T22:01:40.577237+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: ''...xác minh danh tính doanh nghiệp sở hữu
+  website.'''
+value_changed_from: encrypts_data
+value_changed_at: '2026-04-13T22:01:40.577266+07:00'

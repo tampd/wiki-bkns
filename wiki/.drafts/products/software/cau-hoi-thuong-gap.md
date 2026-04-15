@@ -2,7 +2,7 @@
 page_id: wiki.products.software.cau-hoi-thuong-gap
 title: Phần Mềm & Bản Quyền BKNS — Câu Hỏi Thường Gặp
 category: products/software
-updated: '2026-04-07'
+updated: '2026-04-14'
 review_state: drafted
 claims_used: 0
 compile_cost_usd: 0

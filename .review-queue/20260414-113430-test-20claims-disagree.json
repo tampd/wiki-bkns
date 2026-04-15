@@ -1,0 +1,12 @@
+{
+  "ts": "2026-04-14T11:34:30.448627+07:00",
+  "skill": "test-20claims",
+  "status": "DISAGREE",
+  "flag": "human_review_required",
+  "score": 0.4781,
+  "model_a": "gemini-2.5-pro",
+  "model_b": "gpt-5.4",
+  "text_a": "```json\n{\n  \"attribute\": \"monthly_price\",\n  \"value\": \"45000\",\n  \"confidence\": 1.0,\n  \"agrees\": false,\n  \"reason\": \"The claimed value of 450000 corresponds to the yearly price, not the monthly price. The correct monthly price for MINI EMAIL 02 is 45000 VND.\"\n}\n```",
+  "text_b": "{\"attribute\":\"monthly_price\",\"value\":\"450000\",\"confidence\":0.08,\"agrees\":false,\"reason\":\"No source record or product data for BKNS MINI EMAIL 02 was provided to verify the claimed monthly price.\"}",
+  "prompt_preview": "Verify the following claim about BKNS products and return JSON:\nEntity: MINI EMAIL 02\nAttribute: monthly_price\nClaimed value: 450000\n\nReturn JSON: {\"attribute\": \"...\", \"value\": \"...\", \"confidence\": 0.0-1.0, \"agrees\": true/false, \"reason\": \"brief explanation\"}"
+}

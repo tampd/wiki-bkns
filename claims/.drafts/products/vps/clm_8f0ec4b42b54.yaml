@@ -1,0 +1,20 @@
+claim_id: CLM-8F0EC4B42B54
+entity_id: product.vps.adm.epyc2
+entity_type: product_plan
+entity_name: EPYC 2
+attribute: price
+value: 210000
+unit: VND
+qualifiers:
+  billing_cycle: 1_month
+  price_type: original
+  vat_included: false
+source_ids:
+- SRC-BANG_GIA_VPS_2026_04_13
+observed_at: '2026-04-13T21:49:32.361396+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ bảng giá VPS ADM, cột EPYC 2, dòng Giá trước giảm (1 tháng):
+  210,000. Ghi chú chung: ''Chưa bao gồm VAT'''

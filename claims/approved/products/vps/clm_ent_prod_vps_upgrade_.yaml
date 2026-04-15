@@ -7,16 +7,17 @@ value: Có thể nâng cấp gói dịch vụ khi có nhu cầu sử dụng cao 
 unit: null
 qualifiers: {}
 source_ids:
-- SRC-CLOUD_VPS_VM_WEB_2026_04_05
-- SRC-STORAGE_VPS_MAY_CHU_AO_LUU_TRU_DUNG_LUONG_CAO_2026_04_06
+  - SRC-CLOUD_VPS_VM_WEB_2026_04_05
+  - SRC-STORAGE_VPS_MAY_CHU_AO_LUU_TRU_DUNG_LUONG_CAO_2026_04_06
 observed_at: '2026-04-07T01:03:06.890262+07:00'
 valid_from: '2026-04-05'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ mục ''Chính sách / Điều khoản / Lưu ý'': • Có thể nâng cấp
-  gói dịch vụ khi có nhu cầu sử dụng cao hơn.'
+compiler_note: 'Trích từ mục ''Chính sách / Điều khoản / Lưu ý'': • Có thể nâng cấp gói dịch vụ khi có nhu cầu sử dụng cao hơn.'
 value_changed_from: 80000
 value_changed_at: '2026-04-07T01:03:06.890280+07:00'
-approved_at: '2026-04-07T13:00:14.560773+07:00'
+approved_at: '2026-04-08T13:00:14.190054+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.705Z'

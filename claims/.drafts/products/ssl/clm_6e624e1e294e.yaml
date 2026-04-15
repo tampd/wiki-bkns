@@ -1,0 +1,21 @@
+claim_id: CLM-6E624E1E294E
+entity_id: ENT-PROD-SSL-COMODO-ESSENTIAL-WILDCARD-DV
+entity_type: product_plan
+entity_name: EssentialSSL Wildcard (DV)
+attribute: issuance_time
+value: 5
+unit: minutes
+qualifiers: {}
+source_ids:
+- SRC-CHUNG_CHI_SSL_ESSENTIALSSL_WILDCARD_DV_CUA_COMODO_2026_04_05
+observed_at: '2026-04-14T16:22:15.521397+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: ''Điểm chính: Cấp phát nhanh trong 5 phút...'''
+dual_vote:
+  status: DISAGREE
+  score: 0.2232
+  confidence: LOW
+  flag: human_review_required

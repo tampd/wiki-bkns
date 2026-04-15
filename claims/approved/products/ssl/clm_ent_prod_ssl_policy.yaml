@@ -8,13 +8,14 @@ unit: null
 qualifiers:
   policy_type: installation
 source_ids:
-- SRC-RAPIDSSL_CERTIFICATE_CHUNG_CHI_SSL_XAC_THUC_TEN_MIEN_DV_2026_04_06
+  - SRC-RAPIDSSL_CERTIFICATE_CHUNG_CHI_SSL_XAC_THUC_TEN_MIEN_DV_2026_04_06
 observed_at: '2026-04-07T00:57:06.322026+07:00'
 valid_from: '2026-04-07'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ mục Chính sách / Điều khoản / Lưu ý: • Phí cài đặt: Dịch
-  vụ được miễn phí cài đặt.'
-approved_at: '2026-04-07T13:00:13.073988+07:00'
+compiler_note: 'Trích từ mục Chính sách / Điều khoản / Lưu ý: • Phí cài đặt: Dịch vụ được miễn phí cài đặt.'
+approved_at: '2026-04-08T13:00:12.537606+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.477Z'

@@ -1,0 +1,24 @@
+claim_id: CLM-CA1D3153909E
+entity_id: ENT-PROD-VPS.vps_gia_re
+entity_type: product
+entity_name: Dịch vụ VPS Giá Rẻ
+attribute: supported_os
+value: Windows
+unit: ''
+qualifiers: {}
+source_ids:
+- SRC-DICH_VU_VPS_GIA_RE_MAY_CHU_AO_CAU_HINH_ON_INH_2026_04_05
+observed_at: '2026-04-14T16:11:54.136903+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Thông số kỹ thuật / Giới hạn: Hệ điều hành: Hỗ trợ cài
+  đặt nhiều hệ điều hành Linux (như CentOS, Ubuntu, Debian) và Windows.'
+dual_vote:
+  status: DISAGREE
+  score: 0.5846
+  confidence: LOW
+  flag: human_review_required
+value_changed_from: Linux (CentOS, Ubuntu, Debian)
+value_changed_at: '2026-04-14T16:11:54.136947+07:00'

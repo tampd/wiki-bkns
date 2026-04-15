@@ -1,0 +1,23 @@
+claim_id: CLM-A0249948A854
+entity_id: product.software.litespeed_web_server
+entity_type: product
+entity_name: LiteSpeed Web Server (LSWS)
+attribute: rewrite_support
+value: hiệu quả hơn so với Mod_Rewrite của Apache
+unit: null
+qualifiers:
+  reason: Do LiteSpeed được viết lại
+source_ids:
+- SRC-LITESPEED_WEB_SERVER_TINH_NANG_PHIEN_BAN_VA_SO_SANH_2026_04_13
+observed_at: '2026-04-14T12:21:39.488284+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ So sánh các gói: | Hỗ trợ Rewrite | Do LiteSpeed được viết
+  lại nên hiệu quả hơn so với Mod\_Rewrite của Apache |'
+dual_vote:
+  status: DISAGREE
+  score: 0.0
+  confidence: LOW
+  flag: human_review_required

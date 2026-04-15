@@ -1,0 +1,19 @@
+claim_id: CLM-1A4EB3D2F065
+entity_id: product.ssl.comodo_instantssl_ov
+entity_type: product
+entity_name: Chứng chỉ SSL InstantSSL (OV)
+attribute: target_customer
+value: businesses_seeking_to_increase_visitor_trust
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-CHUNG_CHI_SSL_INSTANTSSL_OV_2026_04_13
+observed_at: '2026-04-13T22:01:40.568285+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: ''Phù hợp với: ...các doanh nghiệp muốn tăng
+  cường sự tin tưởng của khách truy cập...'''
+value_changed_from: light_ecommerce_websites
+value_changed_at: '2026-04-13T22:01:40.568303+07:00'

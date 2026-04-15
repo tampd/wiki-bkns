@@ -1,0 +1,22 @@
+claim_id: CLM-A7260B6B8F35
+entity_id: ENT-PROD-SSL-ESSENTIALSSL
+entity_type: product_plan
+entity_name: EssentialSSL (DV)
+attribute: server_licenses
+value: unlimited
+unit: null
+qualifiers: null
+source_ids:
+- SRC-ESSENTIALSSL_DV_CHUNG_CHI_SSL_XAC_THUC_TEN_MIEN_TU_COMOD_2026_04_05
+observed_at: '2026-04-14T16:48:31.129511+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: ''Điểm chính: ...cài đặt trên không giới hạn
+  máy chủ.'''
+dual_vote:
+  status: DISAGREE
+  score: 0.141
+  confidence: LOW
+  flag: human_review_required

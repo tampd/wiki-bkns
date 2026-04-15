@@ -1,0 +1,24 @@
+claim_id: CLM-8769D123E27B
+entity_id: ENT-PROD-DOMAIN.info
+entity_type: product_variant
+entity_name: Tên miền .info
+attribute: registration_price
+value: 170000
+unit: VND
+qualifiers:
+  billing_cycle: year
+  promo_end_date: '2025-01-06'
+source_ids:
+- SRC-DICH_VU_ANG_KY_TEN_MIEN_VIET_NAM_VA_QUOC_TE_TAI_BKNS_2026_04_05
+observed_at: '2026-04-14T16:47:42.453893+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ Bảng giá Tên miền Quốc tế: | .info (KM đến 06/01/2025) |
+  Miễn phí | 170.000 | 980.000 | 980.000 |'
+dual_vote:
+  status: PARTIAL
+  score: 0.6047
+  confidence: MEDIUM
+  flag: needs_review

@@ -1,0 +1,21 @@
+claim_id: CLM-581A1F3768B5
+entity_id: product.ssl.positivessl_ev
+entity_type: product_plan
+entity_name: PositiveSSL EV
+attribute: category
+value: SSL Bảo mật
+unit: null
+qualifiers: null
+source_ids:
+- SRC-POSITIVESSL_EV_CHUNG_CHI_SSL_XAC_THUC_MO_RONG_EV_2026_04_13
+observed_at: '2026-04-14T16:37:04.501814+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: null
+compiler_note: 'Trích từ mục Thông tin nguồn: • Danh mục: SSL Bảo mật'
+dual_vote:
+  status: DISAGREE
+  score: 0.1482
+  confidence: LOW
+  flag: human_review_required

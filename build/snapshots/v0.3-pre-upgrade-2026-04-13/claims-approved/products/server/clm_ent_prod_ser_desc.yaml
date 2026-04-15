@@ -1,0 +1,20 @@
+claim_id: CLM-ENT-PROD-SER-DESC
+entity_id: ENT-PROD-SERVER-MGT-001
+entity_type: service
+entity_name: Dịch vụ Quản trị Máy chủ Trọn gói
+attribute: description
+value: Dịch vụ quản trị server chuyên nghiệp, giúp doanh nghiệp không cần đội ngũ
+  IT riêng.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-QUAN_TRI_MAY_CHU_WEB_2026_04_05
+observed_at: '2026-04-05T22:10:29.043451+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ mục Giới thiệu: ''Dịch vụ quản trị server chuyên nghiệp,
+  giúp doanh nghiệp không cần đội ngũ IT riêng.'''
+approved_at: '2026-04-08T13:00:09.137418+07:00'
+approved_by: admin-batch

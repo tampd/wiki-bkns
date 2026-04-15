@@ -1,0 +1,22 @@
+claim_id: CLM-71489F10F5D9
+entity_id: product.ssl.comodo_instantssl_ov
+entity_type: product_plan
+entity_name: InstantSSL (OV)
+attribute: brand
+value: Comodo
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-CHUNG_CHI_SSL_INSTANTSSL_OV_2026_04_05
+observed_at: '2026-04-14T16:25:29.386360+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ: • Dịch vụ này là gì: InstantSSL (OV) là một chứng chỉ SSL
+  từ Comodo...'
+dual_vote:
+  status: DISAGREE
+  score: 0.2098
+  confidence: LOW
+  flag: human_review_required

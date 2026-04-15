@@ -1,0 +1,22 @@
+claim_id: CLM-C2244B6B7CC6
+entity_id: ENT-PROD-HOSTING
+entity_type: product_family
+entity_name: Hosting Giá Rẻ
+attribute: vat_policy
+value: Giá chưa bao gồm VAT
+unit: null
+qualifiers: null
+source_ids:
+- SRC-HOSTING_GIA_RE_BANG_GIA_VA_THONG_SO_KY_THUAT_TAI_BKNS_2026_04_05
+observed_at: '2026-04-14T12:12:07.472903+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục ''Chính sách / Điều khoản / Lưu ý'': Giá trên chưa bao
+  gồm VAT.'
+dual_vote:
+  status: DISAGREE
+  score: 0.519
+  confidence: LOW
+  flag: human_review_required

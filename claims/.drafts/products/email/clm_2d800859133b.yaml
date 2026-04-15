@@ -1,0 +1,17 @@
+claim_id: CLM-2D800859133B
+entity_id: product.email_relay.bk_relay01
+entity_type: product_plan
+entity_name: BK-RELAY01
+attribute: domain_limit
+value: unlimited
+unit: null
+qualifiers: null
+source_ids:
+- SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_TIN_CAY_2026_04_13
+observed_at: '2026-04-13T22:34:09.068132+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng giá, dòng ''Số lượng tên miền'', cột ''BK-RELAY01'':
+  ''Không giới hạn'''

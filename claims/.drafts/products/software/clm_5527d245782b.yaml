@@ -1,0 +1,19 @@
+claim_id: CLM-5527D245782B
+entity_id: ENT-PROD-SOFTWARE-IMUNIFY360
+entity_type: product
+entity_name: Imunify360
+attribute: product.feature
+value: Prevents unauthorized access from hackers
+unit: null
+qualifiers: null
+source_ids:
+- SRC-BANG_GIA_IMUNIFY360_GIAI_PHAP_BAO_MAT_SERVER_BANG_AI_2026_04_13
+observed_at: '2026-04-13T21:45:25.725798+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ tóm tắt nhanh: • Điểm chính: ...và ngăn chặn sự tiếp cận
+  trái phép từ hacker.'
+value_changed_from: Protects against malware
+value_changed_at: '2026-04-13T21:45:25.725838+07:00'

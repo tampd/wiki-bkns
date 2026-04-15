@@ -1,0 +1,21 @@
+claim_id: CLM-D5BD07FF8AFB
+entity_id: ENT-PROD-SSL-011
+entity_type: product
+entity_name: GeoTrust QuickSSL Premium Wildcard
+attribute: installation_fee
+value: 0
+unit: VND
+qualifiers: {}
+source_ids:
+- SRC-CHUNG_CHI_SSL_GEOTRUST_QUICKSSL_PREMIUM_WILDCARD_2026_04_05
+observed_at: '2026-04-14T16:23:22.003818+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng Thông số kỹ thuật: | Phí cài đặt | Miễn phí |'
+dual_vote:
+  status: DISAGREE
+  score: 0.5331
+  confidence: LOW
+  flag: human_review_required

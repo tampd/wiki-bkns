@@ -1,0 +1,24 @@
+claim_id: CLM-8BDC5A67699D
+entity_id: product.vps.cloud_vps_amd
+entity_type: product
+entity_name: Cloud VPS AMD
+attribute: data.source.issue
+value: Thiếu toàn bộ phần nội dung chính
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-CLOUD_VPS_AMD_GIAI_PHAP_VPS_HIEU_SUAT_CAO_VOI_CPU_AMD_EPYCTM_2026_04_05
+observed_at: '2026-04-14T16:06:46.900743+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Ghi chú trích xuất: Thiếu toàn bộ phần nội dung chính
+  mô tả dịch vụ, bảng giá, thông số kỹ thuật và câu hỏi thường gặp.'
+dual_vote:
+  status: DISAGREE
+  score: 0.4092
+  confidence: LOW
+  flag: human_review_required
+value_changed_from: Nội dung HTML được cung cấp bị cắt cụt
+value_changed_at: '2026-04-14T16:06:46.900790+07:00'

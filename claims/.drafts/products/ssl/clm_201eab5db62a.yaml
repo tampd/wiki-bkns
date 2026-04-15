@@ -1,0 +1,23 @@
+claim_id: CLM-201EAB5DB62A
+entity_id: product.ssl.rapidssl_wildcard
+entity_type: product_plan
+entity_name: RapidSSL Wildcard Certificate
+attribute: setup_fee
+value: 0
+unit: VND
+qualifiers: {}
+source_ids:
+- SRC-RAPIDSSL_WILDCARD_CERTIFICATE_THONG_TIN_VA_BANG_GIA_TAI_BK_2026_04_05
+- SRC-RAPIDSSL_WILDCARD_CERTIFICATE_THONG_TIN_VA_BANG_GIA_TAI_BK_2026_04_13
+observed_at: '2026-04-14T16:40:52.062143+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng Thông số kỹ thuật / Giới hạn: | Phí cài đặt | Miễn phí
+  |'
+dual_vote:
+  status: DISAGREE
+  score: 0.5213
+  confidence: LOW
+  flag: human_review_required

@@ -1,0 +1,19 @@
+claim_id: CLM-HOST-WORDPRESS-INSTALLA
+entity_id: product.hosting.wordpress
+entity_type: product
+entity_name: Hosting WordPress
+attribute: installation_method
+value: OneClick Install WordPress
+unit: null
+qualifiers: null
+source_ids:
+- SRC-HOSTING_WORDPRESS_TOC_O_CAO_BANG_GIA_GIAI_PHAP_TOI_UU_S_2026_04_04
+observed_at: '2026-04-04T21:04:54.563863+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ Mô tả dịch vụ: ...công cụ cài đặt WordPress chỉ với một cú
+  nhấp chuột...'
+approved_at: '2026-04-08T13:00:11.959628+07:00'
+approved_by: admin-batch

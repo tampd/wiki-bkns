@@ -7,12 +7,14 @@ value: 25
 unit: GB
 qualifiers: null
 source_ids:
-- SRC-DICH_VU_VPS_GIA_RE_MAY_CHU_AO_CAU_HINH_ON_INH_2026_04_04
+  - SRC-DICH_VU_VPS_GIA_RE_MAY_CHU_AO_CAU_HINH_ON_INH_2026_04_04
 observed_at: '2026-04-04T20:54:42.996167+07:00'
 valid_from: '2026-04-04'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
 compiler_note: 'Trích từ bảng giá: | Dung Lượng | 25 GB |'
-approved_at: '2026-04-07T13:00:14.648220+07:00'
+approved_at: '2026-04-08T13:00:14.325895+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.717Z'

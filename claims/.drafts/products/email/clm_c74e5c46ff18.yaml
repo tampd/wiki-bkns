@@ -1,0 +1,26 @@
+claim_id: CLM-C74E5C46FF18
+entity_id: product.email_relay.bkns
+entity_type: product
+entity_name: Email Relay
+attribute: service_description
+value: Email Relay là một giải pháp trung gian giúp định tuyến toàn bộ email gửi ra
+  từ hệ thống Email Server của khách hàng qua hệ thống của BKNS để xử lý, nhằm tăng
+  uy tín IP và đảm bảo tỷ lệ email vào inbox cao.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_TIN_CAY_2026_04_05
+observed_at: '2026-04-14T17:05:51.387271+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tóm tắt nhanh: • Dịch vụ này là gì: Email Relay là một
+  giải pháp trung gian giúp định tuyến toàn bộ email gửi ra từ hệ thống Email Server
+  của khách hàng qua hệ thống của BKNS để xử lý, nhằm tăng uy tín IP và đảm bảo tỷ
+  lệ email vào inbox cao.'
+dual_vote:
+  status: DISAGREE
+  score: 0.5608
+  confidence: LOW
+  flag: human_review_required

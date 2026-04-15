@@ -7,13 +7,14 @@ value: Chưa bao gồm thuế VAT
 unit: ''
 qualifiers: {}
 source_ids:
-- SRC-DICH_VU_ANG_KY_TEN_MIEN_VIET_NAM_VA_QUOC_TE_TAI_BKNS_2026_04_06
+  - SRC-DICH_VU_ANG_KY_TEN_MIEN_VIET_NAM_VA_QUOC_TE_TAI_BKNS_2026_04_06
 observed_at: '2026-04-06T23:54:35.280036+07:00'
 valid_from: '2026-04-06'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ mục Chính sách / Điều khoản / Lưu ý: Tất cả các mức phí trên
-  chưa bao gồm thuế VAT.'
-approved_at: '2026-04-07T13:00:10.577596+07:00'
+compiler_note: 'Trích từ mục Chính sách / Điều khoản / Lưu ý: Tất cả các mức phí trên chưa bao gồm thuế VAT.'
+approved_at: '2026-04-08T13:00:09.715227+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.632Z'

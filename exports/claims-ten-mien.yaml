@@ -1,0 +1,2048 @@
+- approved_at: '2026-04-07T13:00:10.221032+07:00'
+  approved_by: admin-batch
+  attribute: registration_price
+  claim_id: CLM-DOMA-BIZ-REGISTRA
+  compiler_note: 'Trích từ bảng giá tên miền Quốc tế, dòng ''.biz'', cột ''Phí đăng
+    ký mới'': 590.000'
+  confidence: high
+  entity_id: product.domain.biz
+  entity_name: .biz
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:03:20.205736+07:00'
+  qualifiers:
+    billing_cycle: year
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_04
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 590000
+- approved_at: '2026-04-07T13:00:10.224943+07:00'
+  approved_by: admin-batch
+  attribute: renewal_price
+  claim_id: CLM-DOMA-BIZ-RENEWAL_
+  compiler_note: 'Trích từ bảng giá tên miền Quốc tế, dòng ''.biz'', cột ''Phí duy
+    trì hàng năm'': 740.000'
+  confidence: high
+  entity_id: product.domain.biz
+  entity_name: .biz
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:03:20.207999+07:00'
+  qualifiers:
+    billing_cycle: year
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_04
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 740000
+- approved_at: '2026-04-07T13:00:10.228863+07:00'
+  approved_by: admin-batch
+  attribute: setup_fee
+  claim_id: CLM-DOMA-BIZ-SETUP_FE
+  compiler_note: 'Trích từ bảng giá tên miền Quốc tế, dòng ''.biz'', cột ''Phí cài
+    đặt'': Miễn phí'
+  confidence: high
+  entity_id: product.domain.biz
+  entity_name: .biz
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:03:20.203461+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_04
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 0
+- approved_at: '2026-04-07T13:00:10.232550+07:00'
+  approved_by: admin-batch
+  attribute: transfer_price
+  claim_id: CLM-DOMA-BIZ-TRANSFER
+  compiler_note: 'Trích từ bảng giá tên miền Quốc tế, dòng ''.biz'', cột ''Transfer
+    về BKNS'': 740.000'
+  confidence: high
+  entity_id: product.domain.biz
+  entity_name: .biz
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:03:20.209851+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_04
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 740000
+- approved_at: '2026-04-07T13:00:10.236257+07:00'
+  approved_by: admin-batch
+  attribute: registration_price
+  claim_id: CLM-DOMA-COM-REGISTRA
+  compiler_note: 'Trích từ Bảng giá Tên miền Quốc tế: | .com | Miễn phí | 380.000
+    | 429.000 | 429.000 |'
+  confidence: high
+  entity_id: product.domain.com
+  entity_name: .com
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:54:35.297716+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_04
+  - SRC-DICH_VU_ANG_KY_TEN_MIEN_VIET_NAM_VA_QUOC_TE_TAI_BKNS_2026_04_06
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 380000
+- approved_at: '2026-04-07T13:00:10.239967+07:00'
+  approved_by: admin-batch
+  attribute: renewal_price
+  claim_id: CLM-DOMA-COM-RENEWAL_
+  compiler_note: 'Trích từ Bảng giá Tên miền Quốc tế: | .com | Miễn phí | 380.000
+    | 429.000 | 429.000 |'
+  confidence: high
+  entity_id: product.domain.com
+  entity_name: .com
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:54:35.305952+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_04
+  - SRC-DICH_VU_ANG_KY_TEN_MIEN_VIET_NAM_VA_QUOC_TE_TAI_BKNS_2026_04_06
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 429000
+- approved_at: '2026-04-07T13:00:10.244203+07:00'
+  approved_by: admin-batch
+  attribute: setup_fee
+  claim_id: CLM-DOMA-COM-SETUP_FE
+  compiler_note: 'Trích từ bảng giá tên miền Quốc tế, dòng ''.com'', cột ''Phí cài
+    đặt'': Miễn phí'
+  confidence: high
+  entity_id: product.domain.com
+  entity_name: .com
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:03:20.155926+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_04
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 0
+- approved_at: '2026-04-07T13:00:10.247781+07:00'
+  approved_by: admin-batch
+  attribute: transfer_price
+  claim_id: CLM-DOMA-COM-TRANSFER
+  compiler_note: 'Trích từ Bảng giá Tên miền Quốc tế: | .com | Miễn phí | 380.000
+    | 429.000 | 429.000 |'
+  confidence: high
+  entity_id: product.domain.com
+  entity_name: .com
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:54:35.314404+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_04
+  - SRC-DICH_VU_ANG_KY_TEN_MIEN_VIET_NAM_VA_QUOC_TE_TAI_BKNS_2026_04_06
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 429000
+- approved_at: '2026-04-07T13:00:10.251363+07:00'
+  approved_by: admin-batch
+  attribute: registration_price
+  claim_id: CLM-DOMA-ID-REGISTRA
+  compiler_note: 'Trích từ bảng giá tên miền Quốc tế, dòng ''.id'', cột ''Phí đăng
+    ký mới'': 575.000'
+  confidence: high
+  entity_id: product.domain.id
+  entity_name: .id
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:03:20.195381+07:00'
+  qualifiers:
+    billing_cycle: year
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_04
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 575000
+- approved_at: '2026-04-07T13:00:10.255109+07:00'
+  approved_by: admin-batch
+  attribute: renewal_price
+  claim_id: CLM-DOMA-ID-RENEWAL_
+  compiler_note: 'Trích từ bảng giá tên miền Quốc tế, dòng ''.id'', cột ''Phí duy
+    trì hàng năm'': 575.000'
+  confidence: high
+  entity_id: product.domain.id
+  entity_name: .id
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:03:20.198156+07:00'
+  qualifiers:
+    billing_cycle: year
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_04
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 575000
+- approved_at: '2026-04-07T13:00:10.258661+07:00'
+  approved_by: admin-batch
+  attribute: setup_fee
+  claim_id: CLM-DOMA-ID-SETUP_FE
+  compiler_note: 'Trích từ bảng giá tên miền Quốc tế, dòng ''.id'', cột ''Phí cài
+    đặt'': Miễn phí'
+  confidence: high
+  entity_id: product.domain.id
+  entity_name: .id
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:03:20.192774+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_04
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 0
+- approved_at: '2026-04-07T13:00:10.262469+07:00'
+  approved_by: admin-batch
+  attribute: transfer_price
+  claim_id: CLM-DOMA-ID-TRANSFER
+  compiler_note: 'Trích từ bảng giá tên miền Quốc tế, dòng ''.id'', cột ''Transfer
+    về BKNS'': 575.000'
+  confidence: high
+  entity_id: product.domain.id
+  entity_name: .id
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:03:20.200924+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_04
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 575000
+- approved_at: '2026-04-07T13:00:10.266481+07:00'
+  approved_by: admin-batch
+  attribute: registration_price
+  claim_id: CLM-DOMA-INFO-REGISTRA
+  compiler_note: 'Trích từ bảng giá tên miền Quốc tế, dòng ''.info *'', cột ''Phí
+    đăng ký mới'': 170.000 và Ghi chú khuyến mại: * .info: Áp dụng 06/01/2025, giá
+    khuyến mại 170.000đ (giá gốc 890.000đ).'
+  confidence: high
+  entity_id: product.domain.info
+  entity_name: .info
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:03:20.184958+07:00'
+  qualifiers:
+    billing_cycle: year
+    original_price: 890000
+    promotion_type: new_registration
+    start_date: '2025-01-06'
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_04
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 170000
+- approved_at: '2026-04-07T13:00:10.270274+07:00'
+  approved_by: admin-batch
+  attribute: renewal_price
+  claim_id: CLM-DOMA-INFO-RENEWAL_
+  compiler_note: 'Trích từ bảng giá tên miền Quốc tế, dòng ''.info *'', cột ''Phí
+    duy trì hàng năm'': 980.000'
+  confidence: high
+  entity_id: product.domain.info
+  entity_name: .info
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:03:20.187867+07:00'
+  qualifiers:
+    billing_cycle: year
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_04
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 980000
+- approved_at: '2026-04-07T13:00:10.273833+07:00'
+  approved_by: admin-batch
+  attribute: setup_fee
+  claim_id: CLM-DOMA-INFO-SETUP_FE
+  compiler_note: 'Trích từ bảng giá tên miền Quốc tế, dòng ''.info *'', cột ''Phí
+    cài đặt'': Miễn phí'
+  confidence: high
+  entity_id: product.domain.info
+  entity_name: .info
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:03:20.182669+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_04
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 0
+- approved_at: '2026-04-07T13:00:10.277198+07:00'
+  approved_by: admin-batch
+  attribute: transfer_price
+  claim_id: CLM-DOMA-INFO-TRANSFER
+  compiler_note: 'Trích từ bảng giá tên miền Quốc tế, dòng ''.info *'', cột ''Transfer
+    về BKNS'': 980.000'
+  confidence: high
+  entity_id: product.domain.info
+  entity_name: .info
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:03:20.190250+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_04
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 980000
+- approved_at: '2026-04-07T13:00:10.280951+07:00'
+  approved_by: admin-batch
+  attribute: registration_price
+  claim_id: CLM-DOMA-NET-REGISTRA
+  compiler_note: 'Trích từ Bảng giá Tên miền Quốc tế: | .net | Miễn phí | 435.000
+    | 505.000 | 505.000 |'
+  confidence: high
+  entity_id: product.domain.net
+  entity_name: .net
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:54:35.327117+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_04
+  - SRC-DICH_VU_ANG_KY_TEN_MIEN_VIET_NAM_VA_QUOC_TE_TAI_BKNS_2026_04_06
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 435000
+- approved_at: '2026-04-07T13:00:10.284692+07:00'
+  approved_by: admin-batch
+  attribute: renewal_price
+  claim_id: CLM-DOMA-NET-RENEWAL_
+  compiler_note: 'Trích từ Bảng giá Tên miền Quốc tế: | .net | Miễn phí | 435.000
+    | 505.000 | 505.000 |'
+  confidence: high
+  entity_id: product.domain.net
+  entity_name: .net
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:54:35.340829+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_04
+  - SRC-DICH_VU_ANG_KY_TEN_MIEN_VIET_NAM_VA_QUOC_TE_TAI_BKNS_2026_04_06
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 505000
+- approved_at: '2026-04-07T13:00:10.288181+07:00'
+  approved_by: admin-batch
+  attribute: setup_fee
+  claim_id: CLM-DOMA-NET-SETUP_FE
+  compiler_note: 'Trích từ bảng giá tên miền Quốc tế, dòng ''.net'', cột ''Phí cài
+    đặt'': Miễn phí'
+  confidence: high
+  entity_id: product.domain.net
+  entity_name: .net
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:03:20.164221+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_04
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 0
+- approved_at: '2026-04-07T13:00:10.291650+07:00'
+  approved_by: admin-batch
+  attribute: transfer_price
+  claim_id: CLM-DOMA-NET-TRANSFER
+  compiler_note: 'Trích từ Bảng giá Tên miền Quốc tế: | .net | Miễn phí | 435.000
+    | 505.000 | 505.000 |'
+  confidence: high
+  entity_id: product.domain.net
+  entity_name: .net
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:54:35.354300+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_04
+  - SRC-DICH_VU_ANG_KY_TEN_MIEN_VIET_NAM_VA_QUOC_TE_TAI_BKNS_2026_04_06
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 505000
+- approved_at: '2026-04-07T13:00:10.295767+07:00'
+  approved_by: admin-batch
+  attribute: registration_price
+  claim_id: CLM-DOMA-ORG-REGISTRA
+  compiler_note: 'Trích từ bảng giá tên miền Quốc tế, dòng ''.org'', cột ''Phí đăng
+    ký mới'': 365.000'
+  confidence: high
+  entity_id: product.domain.org
+  entity_name: .org
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:03:20.174836+07:00'
+  qualifiers:
+    billing_cycle: year
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_04
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 365000
+- approved_at: '2026-04-07T13:00:10.299261+07:00'
+  approved_by: admin-batch
+  attribute: renewal_price
+  claim_id: CLM-DOMA-ORG-RENEWAL_
+  compiler_note: 'Trích từ bảng giá tên miền Quốc tế, dòng ''.org'', cột ''Phí duy
+    trì hàng năm'': 535.000'
+  confidence: high
+  entity_id: product.domain.org
+  entity_name: .org
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:03:20.177787+07:00'
+  qualifiers:
+    billing_cycle: year
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_04
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 535000
+- approved_at: '2026-04-07T13:00:10.302652+07:00'
+  approved_by: admin-batch
+  attribute: setup_fee
+  claim_id: CLM-DOMA-ORG-SETUP_FE
+  compiler_note: 'Trích từ bảng giá tên miền Quốc tế, dòng ''.org'', cột ''Phí cài
+    đặt'': Miễn phí'
+  confidence: high
+  entity_id: product.domain.org
+  entity_name: .org
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:03:20.172813+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_04
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 0
+- approved_at: '2026-04-07T13:00:10.305952+07:00'
+  approved_by: admin-batch
+  attribute: transfer_price
+  claim_id: CLM-DOMA-ORG-TRANSFER
+  compiler_note: 'Trích từ bảng giá tên miền Quốc tế, dòng ''.org'', cột ''Transfer
+    về BKNS'': 535.000'
+  confidence: high
+  entity_id: product.domain.org
+  entity_name: .org
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:03:20.180322+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_04
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 535000
+- approved_at: '2026-04-07T13:00:10.310261+07:00'
+  approved_by: admin-batch
+  attribute: data_contradiction
+  claim_id: CLM-DOMA-PRO-DATA_CON
+  compiler_note: 'Trích từ: ⚠️ MÂU THUẪN TRONG TRANG: Thông tin khuyến mãi cho tên
+    miền .pro ghi "giá khuyến mại 1.115.000 giá gốc 135.000", trong khi bảng giá niêm
+    yết phí đăng ký mới là 135.000đ và phí duy trì là 1.115.000đ, có thể đã bị ghi
+    ngược.'
+  confidence: high
+  entity_id: product.domain.pro
+  entity_name: Tên miền .pro
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:43:46.762684+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: medium
+  source_ids:
+  - SRC-DICH_VU_ANG_KY_TEN_MIEN_VIET_NAM_VA_QUOC_TE_TAI_BKNS_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: Thông tin khuyến mãi cho tên miền .pro ghi 'giá khuyến mại 1.115.000 giá
+    gốc 135.000', trong khi bảng giá niêm yết phí đăng ký mới là 135.000đ và phí duy
+    trì là 1.115.000đ, có thể đã bị ghi ngược.
+- approved_at: '2026-04-07T13:00:10.314855+07:00'
+  approved_by: admin-batch
+  attribute: registration_fee
+  claim_id: CLM-ENT--ASIA-REGISTRA
+  compiler_note: 'Trích từ Bảng giá Tên miền Quốc tế: | .asia | Miễn phí | 440.000
+    | 545.000 | 545.000 |'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN.asia
+  entity_name: .asia
+  entity_type: product_variant
+  observed_at: '2026-04-06T23:08:52.686666+07:00'
+  qualifiers:
+    billing_cycle: year
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_04
+  - SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_06
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_06
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 440000
+- approved_at: '2026-04-07T13:00:10.319895+07:00'
+  approved_by: admin-batch
+  attribute: renewal_fee
+  claim_id: CLM-ENT--ASIA-RENEWAL_
+  compiler_note: 'Trích từ Bảng giá Tên miền Quốc tế: | .asia | Miễn phí | 440.000
+    | 545.000 | 545.000 |'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN.asia
+  entity_name: .asia
+  entity_type: product_variant
+  observed_at: '2026-04-06T23:08:52.695726+07:00'
+  qualifiers:
+    billing_cycle: year
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_04
+  - SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_06
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_06
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 545000
+- approved_at: '2026-04-07T13:00:10.326163+07:00'
+  approved_by: admin-batch
+  attribute: setup_fee
+  claim_id: CLM-ENT--ASIA-SETUP_FE
+  compiler_note: 'Trích từ Bảng giá Tên miền Quốc tế: | .asia | Miễn phí | 440.000
+    | 545.000 | 545.000 |'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN.ASIA
+  entity_name: .asia
+  entity_type: product_variant
+  observed_at: '2026-04-06T23:08:52.682272+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_06
+  unit: VND
+  valid_from: '2026-04-06'
+  value: 0
+- approved_at: '2026-04-07T13:00:10.331027+07:00'
+  approved_by: admin-batch
+  attribute: transfer_in_fee
+  claim_id: CLM-ENT--ASIA-TRANSFER
+  compiler_note: 'Trích từ Bảng giá tên miền Quốc tế: .asia | Miễn phí | 440.000 |
+    545.000 | 545.000'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN.asia
+  entity_name: .asia
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:06:04.052456+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_04
+  - SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_06
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 545000
+- approved_at: '2026-04-07T13:00:10.335729+07:00'
+  approved_by: admin-batch
+  attribute: registration_fee
+  claim_id: CLM-ENT--BIZ-REGISTRA
+  compiler_note: 'Trích từ Bảng giá Tên miền Quốc tế: | .biz | Miễn phí | 590.000
+    | 740.000 | 740.000 |'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN.biz
+  entity_name: .biz
+  entity_type: product_variant
+  observed_at: '2026-04-06T23:08:52.651662+07:00'
+  qualifiers:
+    billing_cycle: year
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_04
+  - SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_06
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_06
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 590000
+- approved_at: '2026-04-07T13:00:10.340652+07:00'
+  approved_by: admin-batch
+  attribute: renewal_fee
+  claim_id: CLM-ENT--BIZ-RENEWAL_
+  compiler_note: 'Trích từ Bảng giá Tên miền Quốc tế: | .biz | Miễn phí | 590.000
+    | 740.000 | 740.000 |'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN.biz
+  entity_name: .biz
+  entity_type: product_variant
+  observed_at: '2026-04-06T23:08:52.662942+07:00'
+  qualifiers:
+    billing_cycle: year
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_04
+  - SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_06
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_06
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 740000
+- approved_at: '2026-04-07T13:00:10.344803+07:00'
+  approved_by: admin-batch
+  attribute: setup_fee
+  claim_id: CLM-ENT--BIZ-SETUP_FE
+  compiler_note: 'Trích từ Bảng giá Tên miền Quốc tế: | .biz | Miễn phí | 590.000
+    | 740.000 | 740.000 |'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN.BIZ
+  entity_name: .biz
+  entity_type: product_variant
+  observed_at: '2026-04-06T23:08:52.646728+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_06
+  unit: VND
+  valid_from: '2026-04-06'
+  value: 0
+- approved_at: '2026-04-07T13:00:10.349235+07:00'
+  approved_by: admin-batch
+  attribute: transfer_in_fee
+  claim_id: CLM-ENT--BIZ-TRANSFER
+  compiler_note: 'Trích từ Bảng giá Tên miền Quốc tế: | .biz | Miễn phí | 590.000
+    | 740.000 | 740.000 |'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN.biz
+  entity_name: .biz
+  entity_type: product_variant
+  observed_at: '2026-04-06T23:08:52.673866+07:00'
+  qualifiers:
+    billing_cycle: year
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_04
+  - SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_06
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_06
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 740000
+- approved_at: '2026-04-07T13:00:10.352871+07:00'
+  approved_by: admin-batch
+  attribute: installation_fee
+  claim_id: CLM-ENT--COM-INSTALLA
+  compiler_note: 'Trích từ bảng giá Tên miền Quốc tế: | .com | Miễn phí |'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN.com
+  entity_name: .com
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:20:40.706530+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_04
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 0
+- approved_at: '2026-04-07T13:00:10.356843+07:00'
+  approved_by: admin-batch
+  attribute: registration_fee
+  claim_id: CLM-ENT--COM-REGISTRA
+  compiler_note: 'Trích từ Bảng giá Tên miền Quốc tế: | .com | Miễn phí | 380.000
+    | 429.000 | 429.000 |'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN.com
+  entity_name: .com
+  entity_type: product_variant
+  observed_at: '2026-04-06T23:08:52.485644+07:00'
+  qualifiers:
+    billing_cycle: year
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_04
+  - SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_06
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_06
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 380000
+- approved_at: '2026-04-07T13:00:10.360884+07:00'
+  approved_by: admin-batch
+  attribute: renewal_fee
+  claim_id: CLM-ENT--COM-RENEWAL_
+  compiler_note: 'Trích từ Bảng giá Tên miền Quốc tế: | .com | Miễn phí | 380.000
+    | 429.000 | 429.000 |'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN.com
+  entity_name: .com
+  entity_type: product_variant
+  observed_at: '2026-04-06T23:08:52.494812+07:00'
+  qualifiers:
+    billing_cycle: year
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_04
+  - SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_06
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_06
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 429000
+- approved_at: '2026-04-07T13:00:10.364377+07:00'
+  approved_by: admin-batch
+  attribute: setup_fee
+  claim_id: CLM-ENT--COM-SETUP_FE
+  compiler_note: 'Trích từ Bảng giá Tên miền Quốc tế: | .com | Miễn phí | 380.000
+    | 429.000 | 429.000 |'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN.COM
+  entity_name: .com
+  entity_type: product_variant
+  observed_at: '2026-04-06T23:08:52.480720+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_06
+  unit: VND
+  valid_from: '2026-04-06'
+  value: 0
+- approved_at: '2026-04-07T13:00:10.367990+07:00'
+  approved_by: admin-batch
+  attribute: transfer_in_fee
+  claim_id: CLM-ENT--COM-TRANSFER
+  compiler_note: 'Trích từ Bảng giá Tên miền Quốc tế: | .com | Miễn phí | 380.000
+    | 429.000 | 429.000 |'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN.com
+  entity_name: .com
+  entity_type: product_variant
+  observed_at: '2026-04-06T23:08:52.504252+07:00'
+  qualifiers:
+    billing_cycle: year
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_04
+  - SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_06
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_06
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 429000
+- approved_at: '2026-04-07T13:00:10.372132+07:00'
+  approved_by: admin-batch
+  attribute: registration_fee
+  claim_id: CLM-ENT--ID-REGISTRA
+  compiler_note: 'Trích từ Bảng giá Tên miền Quốc tế: | .id | Miễn phí | 575.000 |
+    575.000 | 575.000 |'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN.id
+  entity_name: .id
+  entity_type: product_variant
+  observed_at: '2026-04-06T23:08:52.619703+07:00'
+  qualifiers:
+    billing_cycle: year
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_04
+  - SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_06
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_06
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 575000
+- approved_at: '2026-04-07T13:00:10.376703+07:00'
+  approved_by: admin-batch
+  attribute: renewal_fee
+  claim_id: CLM-ENT--ID-RENEWAL_
+  compiler_note: 'Trích từ Bảng giá Tên miền Quốc tế: | .id | Miễn phí | 575.000 |
+    575.000 | 575.000 |'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN.id
+  entity_name: .id
+  entity_type: product_variant
+  observed_at: '2026-04-06T23:08:52.630901+07:00'
+  qualifiers:
+    billing_cycle: year
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_04
+  - SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_06
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_06
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 575000
+- approved_at: '2026-04-07T13:00:10.380307+07:00'
+  approved_by: admin-batch
+  attribute: setup_fee
+  claim_id: CLM-ENT--ID-SETUP_FE
+  compiler_note: 'Trích từ Bảng giá Tên miền Quốc tế: | .id | Miễn phí | 575.000 |
+    575.000 | 575.000 |'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN.ID
+  entity_name: .id
+  entity_type: product_variant
+  observed_at: '2026-04-06T23:08:52.615040+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_06
+  unit: VND
+  valid_from: '2026-04-06'
+  value: 0
+- approved_at: '2026-04-07T13:00:10.384164+07:00'
+  approved_by: admin-batch
+  attribute: transfer_in_fee
+  claim_id: CLM-ENT--ID-TRANSFER
+  compiler_note: 'Trích từ Bảng giá Tên miền Quốc tế: | .id | Miễn phí | 575.000 |
+    575.000 | 575.000 |'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN.id
+  entity_name: .id
+  entity_type: product_variant
+  observed_at: '2026-04-06T23:08:52.640094+07:00'
+  qualifiers:
+    billing_cycle: year
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_04
+  - SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_06
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_06
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 575000
+- approved_at: '2026-04-07T13:00:10.387867+07:00'
+  approved_by: admin-batch
+  attribute: list_price
+  claim_id: CLM-ENT--INFO-LIST_PRI
+  compiler_note: 'Trích từ Chương trình khuyến mại: .info: Giá KM `170.000` (giá gốc
+    `890.000`)'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN.INFO
+  entity_name: .info
+  entity_type: product_variant
+  observed_at: '2026-04-06T23:08:52.611908+07:00'
+  qualifiers:
+    price_type: registration
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_06
+  unit: VND
+  valid_from: '2026-04-06'
+  value: 890000
+- approved_at: '2026-04-07T13:00:10.392349+07:00'
+  approved_by: admin-batch
+  attribute: registration_fee
+  claim_id: CLM-ENT--INFO-REGISTRA
+  compiler_note: 'Trích từ Bảng giá Tên miền Quốc tế: | .info (KM) | Miễn phí | 170.000
+    | 980.000 | 980.000 |'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN.info
+  entity_name: .info
+  entity_type: product_variant
+  observed_at: '2026-04-06T23:08:52.582140+07:00'
+  qualifiers:
+    billing_cycle: year
+    promotion: true
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_04
+  - SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_06
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_06
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 170000
+- approved_at: '2026-04-07T13:00:10.397130+07:00'
+  approved_by: admin-batch
+  attribute: renewal_fee
+  claim_id: CLM-ENT--INFO-RENEWAL_
+  compiler_note: 'Trích từ Bảng giá Tên miền Quốc tế: | .info (KM) | Miễn phí | 170.000
+    | 980.000 | 980.000 |'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN.info
+  entity_name: .info
+  entity_type: product_variant
+  observed_at: '2026-04-06T23:08:52.593330+07:00'
+  qualifiers:
+    billing_cycle: year
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_04
+  - SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_06
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_06
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 980000
+- approved_at: '2026-04-07T13:00:10.401733+07:00'
+  approved_by: admin-batch
+  attribute: setup_fee
+  claim_id: CLM-ENT--INFO-SETUP_FE
+  compiler_note: 'Trích từ Bảng giá Tên miền Quốc tế: | .info (KM) | Miễn phí | 170.000
+    | 980.000 | 980.000 |'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN.INFO
+  entity_name: .info
+  entity_type: product_variant
+  observed_at: '2026-04-06T23:08:52.575830+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_06
+  unit: VND
+  valid_from: '2026-04-06'
+  value: 0
+- approved_at: '2026-04-07T13:00:10.405846+07:00'
+  approved_by: admin-batch
+  attribute: transfer_in_fee
+  claim_id: CLM-ENT--INFO-TRANSFER
+  compiler_note: 'Trích từ Bảng giá Tên miền Quốc tế: | .info (KM) | Miễn phí | 170.000
+    | 980.000 | 980.000 |'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN.info
+  entity_name: .info
+  entity_type: product_variant
+  observed_at: '2026-04-06T23:08:52.603738+07:00'
+  qualifiers:
+    billing_cycle: year
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_04
+  - SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_06
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_06
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 980000
+- approved_at: '2026-04-07T13:00:10.410062+07:00'
+  approved_by: admin-batch
+  attribute: installation_fee
+  claim_id: CLM-ENT--INTERNATIONAL-INSTALLA
+  compiler_note: 'Trích từ phần ''Chính sách / Điều khoản / Lưu ý'': • Phí cài đặt:
+    Miễn phí cho tất cả tên miền quốc tế được liệt kê.'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN.international
+  entity_name: Tên miền Quốc tế
+  entity_type: product_group
+  observed_at: '2026-04-04T20:20:40.702314+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_04
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 0
+- approved_at: '2026-04-07T13:00:10.415182+07:00'
+  approved_by: admin-batch
+  attribute: registration_fee
+  claim_id: CLM-ENT--ME-REGISTRA
+  compiler_note: 'Trích từ bảng giá Tên miền Quốc tế: | .me | Miễn phí | 745.000 |'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN.me
+  entity_name: .me
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:20:40.763335+07:00'
+  qualifiers:
+    billing_cycle: year
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_04
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 745000
+- approved_at: '2026-04-07T13:00:10.419841+07:00'
+  approved_by: admin-batch
+  attribute: renewal_fee
+  claim_id: CLM-ENT--ME-RENEWAL_
+  compiler_note: 'Trích từ bảng giá Tên miền Quốc tế: | .me | ... | 745.000 |'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN.me
+  entity_name: .me
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:20:40.765389+07:00'
+  qualifiers:
+    billing_cycle: year
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_04
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 745000
+- approved_at: '2026-04-07T13:00:10.424597+07:00'
+  approved_by: admin-batch
+  attribute: registration_fee
+  claim_id: CLM-ENT--NET-REGISTRA
+  compiler_note: 'Trích từ Bảng giá Tên miền Quốc tế: | .net | Miễn phí | 435.000
+    | 505.000 | 505.000 |'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN.net
+  entity_name: .net
+  entity_type: product_variant
+  observed_at: '2026-04-06T23:08:52.514977+07:00'
+  qualifiers:
+    billing_cycle: year
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_04
+  - SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_06
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_06
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 435000
+- approved_at: '2026-04-07T13:00:10.429738+07:00'
+  approved_by: admin-batch
+  attribute: renewal_fee
+  claim_id: CLM-ENT--NET-RENEWAL_
+  compiler_note: 'Trích từ Bảng giá Tên miền Quốc tế: | .net | Miễn phí | 435.000
+    | 505.000 | 505.000 |'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN.net
+  entity_name: .net
+  entity_type: product_variant
+  observed_at: '2026-04-06T23:08:52.523644+07:00'
+  qualifiers:
+    billing_cycle: year
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_04
+  - SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_06
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_06
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 505000
+- approved_at: '2026-04-07T13:00:10.434344+07:00'
+  approved_by: admin-batch
+  attribute: setup_fee
+  claim_id: CLM-ENT--NET-SETUP_FE
+  compiler_note: 'Trích từ Bảng giá Tên miền Quốc tế: | .net | Miễn phí | 435.000
+    | 505.000 | 505.000 |'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN.NET
+  entity_name: .net
+  entity_type: product_variant
+  observed_at: '2026-04-06T23:08:52.510796+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_06
+  unit: VND
+  valid_from: '2026-04-06'
+  value: 0
+- approved_at: '2026-04-07T13:00:10.438470+07:00'
+  approved_by: admin-batch
+  attribute: transfer_in_fee
+  claim_id: CLM-ENT--NET-TRANSFER
+  compiler_note: 'Trích từ Bảng giá Tên miền Quốc tế: | .net | Miễn phí | 435.000
+    | 505.000 | 505.000 |'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN.net
+  entity_name: .net
+  entity_type: product_variant
+  observed_at: '2026-04-06T23:08:52.532065+07:00'
+  qualifiers:
+    billing_cycle: year
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_04
+  - SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_06
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_06
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 505000
+- approved_at: '2026-04-07T13:00:10.442459+07:00'
+  approved_by: admin-batch
+  attribute: registration_fee
+  claim_id: CLM-ENT--ORG-REGISTRA
+  compiler_note: 'Trích từ Bảng giá Tên miền Quốc tế: | .org | Miễn phí | 365.000
+    | 535.000 | 535.000 |'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN.org
+  entity_name: .org
+  entity_type: product_variant
+  observed_at: '2026-04-06T23:08:52.546281+07:00'
+  qualifiers:
+    billing_cycle: year
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_04
+  - SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_06
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_06
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 365000
+- approved_at: '2026-04-07T13:00:10.447439+07:00'
+  approved_by: admin-batch
+  attribute: renewal_fee
+  claim_id: CLM-ENT--ORG-RENEWAL_
+  compiler_note: 'Trích từ Bảng giá Tên miền Quốc tế: | .org | Miễn phí | 365.000
+    | 535.000 | 535.000 |'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN.org
+  entity_name: .org
+  entity_type: product_variant
+  observed_at: '2026-04-06T23:08:52.556798+07:00'
+  qualifiers:
+    billing_cycle: year
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_04
+  - SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_06
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_06
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 535000
+- approved_at: '2026-04-07T13:00:10.451815+07:00'
+  approved_by: admin-batch
+  attribute: setup_fee
+  claim_id: CLM-ENT--ORG-SETUP_FE
+  compiler_note: 'Trích từ Bảng giá Tên miền Quốc tế: | .org | Miễn phí | 365.000
+    | 535.000 | 535.000 |'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN.ORG
+  entity_name: .org
+  entity_type: product_variant
+  observed_at: '2026-04-06T23:08:52.539758+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_06
+  unit: VND
+  valid_from: '2026-04-06'
+  value: 0
+- approved_at: '2026-04-07T13:00:10.455519+07:00'
+  approved_by: admin-batch
+  attribute: transfer_in_fee
+  claim_id: CLM-ENT--ORG-TRANSFER
+  compiler_note: 'Trích từ Bảng giá Tên miền Quốc tế: | .org | Miễn phí | 365.000
+    | 535.000 | 535.000 |'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN.org
+  entity_name: .org
+  entity_type: product_variant
+  observed_at: '2026-04-06T23:08:52.567036+07:00'
+  qualifiers:
+    billing_cycle: year
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_04
+  - SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_06
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_06
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 535000
+- approved_at: '2026-04-07T13:00:10.459359+07:00'
+  approved_by: admin-batch
+  attribute: registration_fee
+  claim_id: CLM-ENT--US-REGISTRA
+  compiler_note: 'Trích từ Bảng giá tên miền Quốc tế: .us | Miễn phí | 340.000 | 380.000
+    | 380.000'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN.us
+  entity_name: .us
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:06:04.062473+07:00'
+  qualifiers:
+    billing_cycle: year
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_04
+  - SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_06
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 340000
+- approved_at: '2026-04-07T13:00:10.463218+07:00'
+  approved_by: admin-batch
+  attribute: renewal_fee
+  claim_id: CLM-ENT--US-RENEWAL_
+  compiler_note: 'Trích từ Bảng giá tên miền Quốc tế: .us | Miễn phí | 340.000 | 380.000
+    | 380.000'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN.us
+  entity_name: .us
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:06:04.071956+07:00'
+  qualifiers:
+    billing_cycle: year
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_04
+  - SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_06
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 380000
+- approved_at: '2026-04-07T13:00:10.467307+07:00'
+  approved_by: admin-batch
+  attribute: transfer_in_fee
+  claim_id: CLM-ENT--US-TRANSFER
+  compiler_note: 'Trích từ Bảng giá tên miền Quốc tế: .us | Miễn phí | 340.000 | 380.000
+    | 380.000'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN.us
+  entity_name: .us
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:06:04.082162+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_04
+  - SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_06
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 380000
+- approved_at: '2026-04-07T13:00:10.471396+07:00'
+  approved_by: admin-batch
+  attribute: transfer_in_fee
+  claim_id: CLM-ENT--VIETNAM-TRANSFER
+  compiler_note: 'Trích từ phần ''Chính sách / Điều khoản / Lưu ý'': • Transfer tên
+    miền Việt Nam: Miễn phí transfer về BKNS.'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN.vietnam
+  entity_name: Tên miền Việt Nam
+  entity_type: product_group
+  observed_at: '2026-04-04T20:20:40.704641+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_04
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 0
+- approved_at: '2026-04-07T13:00:10.475191+07:00'
+  approved_by: admin-batch
+  attribute: registration_fee
+  claim_id: CLM-ENT--WS-REGISTRA
+  compiler_note: 'Trích từ Bảng giá tên miền Quốc tế: .ws | Miễn phí | 505.000 | 1.075.000
+    | 1.075.000'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN.ws
+  entity_name: .ws
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:06:04.092331+07:00'
+  qualifiers:
+    billing_cycle: year
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_04
+  - SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_06
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 505000
+- approved_at: '2026-04-07T13:00:10.480106+07:00'
+  approved_by: admin-batch
+  attribute: renewal_fee
+  claim_id: CLM-ENT--WS-RENEWAL_
+  compiler_note: 'Trích từ Bảng giá tên miền Quốc tế: .ws | Miễn phí | 505.000 | 1.075.000
+    | 1.075.000'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN.ws
+  entity_name: .ws
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:06:04.102485+07:00'
+  qualifiers:
+    billing_cycle: year
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_04
+  - SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_06
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 1075000
+- approved_at: '2026-04-07T13:00:10.484512+07:00'
+  approved_by: admin-batch
+  attribute: transfer_in_fee
+  claim_id: CLM-ENT--WS-TRANSFER
+  compiler_note: 'Trích từ Bảng giá tên miền Quốc tế: .ws | Miễn phí | 505.000 | 1.075.000
+    | 1.075.000'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN.ws
+  entity_name: .ws
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:06:04.111974+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_04
+  - SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_06
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 1075000
+- approved_at: '2026-04-07T13:00:10.489063+07:00'
+  approved_by: admin-batch
+  attribute: activation_time
+  claim_id: CLM-ENT-PROD-DOM-ACTIVATI
+  compiler_note: 'Trích từ tiêu đề và mục Tại sao chọn BKNS?: ''Kích Hoạt Tự Động
+    Trong 30s'', ''Kích hoạt tự động trong 30 giây'''
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN
+  entity_name: Tên miền
+  entity_type: product_category
+  observed_at: '2026-04-05T21:53:55.725815+07:00'
+  qualifiers:
+    type: automatic
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DANG_KY_TEN_MIEN_2026_04_05
+  unit: seconds
+  valid_from: '2026-04-05'
+  value: 30
+- approved_at: '2026-04-07T13:00:10.493601+07:00'
+  approved_by: admin-batch
+  attribute: category
+  claim_id: CLM-ENT-PROD-DOM-CATEGORY
+  compiler_note: 'Trích từ: ━━━ Thông tin nguồn • Danh mục: ten-mien'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN
+  entity_name: Dịch vụ Tên miền BKNS
+  entity_type: product
+  observed_at: '2026-04-04T20:43:46.760205+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_ANG_KY_TEN_MIEN_VIET_NAM_VA_QUOC_TE_TAI_BKNS_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: ten-mien
+- approved_at: '2026-04-07T13:00:10.498149+07:00'
+  approved_by: admin-batch
+  attribute: description
+  claim_id: CLM-ENT-PROD-DOM-DESC
+  compiler_note: 'Trích từ Tóm tắt nhanh: Dịch vụ này là gì: Cung cấp bảng giá chi
+    tiết cho việc đăng ký mới, duy trì (gia hạn), và transfer các loại tên miền quốc
+    tế và Việt Nam.'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN
+  entity_name: Tên miền
+  entity_type: product
+  observed_at: '2026-04-06T23:08:52.422785+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_ANG_KY_TEN_MIEN_VIET_NAM_VA_QUOC_TE_TAI_BKNS_2026_04_04
+  - SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_06
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_06
+  unit: null
+  valid_from: '2026-04-04'
+  value: Cung cấp bảng giá chi tiết cho việc đăng ký mới, duy trì (gia hạn), và transfer
+    các loại tên miền quốc tế và Việt Nam.
+  value_changed_at: '2026-04-06T23:08:52.422824+07:00'
+  value_changed_from: Cung cấp bảng giá chi tiết cho việc đăng ký mới, duy trì (gia
+    hạn) và chuyển (transfer) các loại tên miền quốc tế và tên miền Việt Nam tại BKNS.
+- approved_at: '2026-04-07T13:00:10.502295+07:00'
+  approved_by: admin-batch
+  attribute: ekyc_process
+  claim_id: CLM-ENT-PROD-DOM-EKYC_PRO
+  compiler_note: 'Trích từ mục Tại sao chọn BKNS?: ''eKYC 100% online, quyền sở hữu
+    hợp pháp tuyệt đối'''
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN
+  entity_name: Tên miền
+  entity_type: product_category
+  observed_at: '2026-04-05T21:53:55.746837+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DANG_KY_TEN_MIEN_2026_04_05
+  unit: null
+  valid_from: '2026-04-05'
+  value: 100% online
+- approved_at: '2026-04-07T13:00:10.506660+07:00'
+  approved_by: admin-batch
+  attribute: feature
+  claim_id: CLM-ENT-PROD-DOM-FEATURE
+  compiler_note: 'Trích từ Tính năng / Thành phần: Ngăn chặn thay đổi thông tin liên
+    hệ của tên miền trái phép: Bảo vệ thông tin của chủ thể đăng ký tên miền.'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN
+  entity_name: Bảo vệ tên miền cấp cao nhất (Registry Lock)
+  entity_type: product
+  observed_at: '2026-04-06T23:24:53.169190+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_04
+  - SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_06
+  - SRC-BAO_VE_TEN_MIEN_CAP_CAO_NHAT_GIAI_PHAP_AN_TOAN_TUYET_OI_2026_04_06
+  unit: null
+  valid_from: '2026-04-04'
+  value: Ngăn chặn thay đổi thông tin liên hệ của tên miền trái phép
+  value_changed_at: '2026-04-06T23:24:53.169241+07:00'
+  value_changed_from: Ngăn chặn việc xóa tên miền trái phép
+- approved_at: '2026-04-07T13:00:10.511225+07:00'
+  approved_by: admin-batch
+  attribute: feature_description
+  claim_id: CLM-ENT-PROD-DOM-FEATURE_
+  compiler_note: 'Trích từ bảng Tính năng / Thành phần: | DNS có hỗ trợ IPv6 | ...
+    | Cho phép thay đổi địa chỉ IPv6 của tên miền thông qua Control Panel. |'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN
+  entity_name: Dịch vụ Tên miền BKNS
+  entity_type: product
+  observed_at: '2026-04-06T23:54:35.223070+07:00'
+  qualifiers:
+    feature_name: DNS có hỗ trợ IPv6
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_ANG_KY_TEN_MIEN_VIET_NAM_VA_QUOC_TE_TAI_BKNS_2026_04_06
+  unit: ''
+  valid_from: '2026-04-06'
+  value: Cho phép thay đổi địa chỉ IPv6 của tên miền thông qua Control Panel.
+  value_changed_at: '2026-04-06T23:54:35.223111+07:00'
+  value_changed_from: Toàn bộ thông tin Whois của chủ sở hữu tên miền sẽ được giấu
+    kín.
+- approved_at: '2026-04-07T13:00:10.515889+07:00'
+  approved_by: admin-batch
+  attribute: included_feature
+  claim_id: CLM-ENT-PROD-DOM-INCLUDED
+  compiler_note: 'Trích từ bảng Tính năng / Thành phần: | DNS có hỗ trợ IPv6 | Miễn
+    phí | Miễn phí |'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN
+  entity_name: Dịch vụ Tên miền BKNS
+  entity_type: product
+  observed_at: '2026-04-06T23:54:35.167253+07:00'
+  qualifiers:
+    cost: free
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DANG_KY_TEN_MIEN_2026_04_05
+  - SRC-DICH_VU_ANG_KY_TEN_MIEN_VIET_NAM_VA_QUOC_TE_TAI_BKNS_2026_04_04
+  - SRC-DICH_VU_ANG_KY_TEN_MIEN_VIET_NAM_VA_QUOC_TE_TAI_BKNS_2026_04_06
+  unit: null
+  valid_from: '2026-04-05'
+  value: DNS có hỗ trợ IPv6
+  value_changed_at: '2026-04-06T23:54:35.167270+07:00'
+  value_changed_from: Bảo mật thông tin tên miền
+- approved_at: '2026-04-07T13:00:10.520555+07:00'
+  approved_by: admin-batch
+  attribute: is_a
+  claim_id: CLM-ENT-PROD-DOM-IS_A
+  compiler_note: 'Trích từ Tóm tắt nhanh: Dịch vụ này là gì: Một dịch vụ bảo mật cao
+    cấp cho tên miền, giúp ngăn chặn các thay đổi trái phép đối với thông tin tên
+    miền ở cấp độ cơ quan đăng ký (registry), cụ thể là VNNIC.'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN-REGISTRY-LOCK
+  entity_name: Bảo vệ tên miền cấp cao nhất (Registry Lock)
+  entity_type: product
+  observed_at: '2026-04-06T23:24:53.044730+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BAO_VE_TEN_MIEN_CAP_CAO_NHAT_GIAI_PHAP_AN_TOAN_TUYET_OI_2026_04_06
+  unit: ''
+  valid_from: '2026-04-06'
+  value: dịch vụ bảo mật cao cấp cho tên miền
+- approved_at: '2026-04-07T13:00:10.525423+07:00'
+  approved_by: admin-batch
+  attribute: is_about
+  claim_id: CLM-ENT-PROD-DOM-IS_ABOUT
+  compiler_note: 'Trích từ Tóm tắt nhanh: • Dịch vụ này là gì: Cung cấp bảng giá chi
+    tiết cho việc đăng ký mới, duy trì (gia hạn) và chuyển (transfer) các loại tên
+    miền quốc tế và tên miền Việt Nam tại BKNS.'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN
+  entity_name: Dịch Vụ Tên Miền
+  entity_type: product_category
+  observed_at: '2026-04-04T20:03:20.125215+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_04
+  unit: ''
+  valid_from: '2026-04-04'
+  value: Cung cấp bảng giá chi tiết cho việc đăng ký mới, duy trì (gia hạn) và chuyển
+    (transfer) các loại tên miền quốc tế và tên miền Việt Nam tại BKNS.
+- approved_at: '2026-04-07T13:00:10.531759+07:00'
+  approved_by: admin-batch
+  attribute: legal_protection
+  claim_id: CLM-ENT-PROD-DOM-LEGAL_PR
+  compiler_note: 'Trích từ mục Tại sao chọn BKNS?: ''Tên miền .VN được pháp luật Việt
+    Nam bảo hộ tuyệt đối'''
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN
+  entity_name: Tên miền
+  entity_type: product_category
+  observed_at: '2026-04-05T21:53:55.759553+07:00'
+  qualifiers:
+    domain_extension: .VN
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DANG_KY_TEN_MIEN_2026_04_05
+  unit: null
+  valid_from: '2026-04-05'
+  value: pháp luật Việt Nam bảo hộ tuyệt đối
+- approved_at: '2026-04-07T13:00:10.538813+07:00'
+  approved_by: admin-batch
+  attribute: limitation
+  claim_id: CLM-ENT-PROD-DOM-LIMITATI
+  compiler_note: 'Trích từ Chính sách / Điều khoản / Lưu ý: Quy trình mở khóa được
+    thiết kế để đảm bảo chỉ chủ thể hợp pháp mới có thể thực hiện thay đổi, nhưng
+    đòi hỏi thời gian và sự phối hợp giữa các bên.'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN-REGISTRY-LOCK
+  entity_name: Bảo vệ tên miền cấp cao nhất (Registry Lock)
+  entity_type: product
+  observed_at: '2026-04-06T23:24:53.268395+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BAO_VE_TEN_MIEN_CAP_CAO_NHAT_GIAI_PHAP_AN_TOAN_TUYET_OI_2026_04_06
+  unit: ''
+  valid_from: '2026-04-06'
+  value: Quy trình mở khóa đòi hỏi thời gian và sự phối hợp giữa các bên
+  value_changed_at: '2026-04-06T23:24:53.268413+07:00'
+  value_changed_from: làm tăng độ phức tạp khi cần thay đổi thông tin tên miền
+- approved_at: '2026-04-07T13:00:10.546717+07:00'
+  approved_by: admin-batch
+  attribute: ownership_guarantee
+  claim_id: CLM-ENT-PROD-DOM-OWNERSHI
+  compiler_note: 'Trích từ mục Tại sao chọn BKNS?: ''eKYC 100% online, quyền sở hữu
+    hợp pháp tuyệt đối'''
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN
+  entity_name: Tên miền
+  entity_type: product_category
+  observed_at: '2026-04-05T21:53:55.750053+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DANG_KY_TEN_MIEN_2026_04_05
+  unit: null
+  valid_from: '2026-04-05'
+  value: quyền sở hữu hợp pháp tuyệt đối
+- approved_at: '2026-04-07T13:00:10.554707+07:00'
+  approved_by: admin-batch
+  attribute: policy
+  claim_id: CLM-ENT-PROD-DOM-POLICY
+  compiler_note: 'Trích từ Chính sách / Điều khoản / Lưu ý: Các mức giá trên là phí/năm,
+    đơn vị tính là VNĐ và chưa bao gồm VAT.'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN
+  entity_name: Tên miền
+  entity_type: product
+  observed_at: '2026-04-06T23:08:52.456935+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_ANG_KY_TEN_MIEN_VIET_NAM_VA_QUOC_TE_TAI_BKNS_2026_04_04
+  - SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_06
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_06
+  unit: null
+  valid_from: '2026-04-04'
+  value: Giá được tính theo năm.
+  value_changed_at: '2026-04-06T23:08:52.456955+07:00'
+  value_changed_from: Giá chưa bao gồm VAT.
+- approved_at: '2026-04-07T13:00:10.563150+07:00'
+  approved_by: admin-batch
+  attribute: price_info
+  claim_id: CLM-ENT-PROD-DOM-PRICE_IN
+  compiler_note: 'Trích từ bảng so sánh: | Chi phí | Miễn phí | Miễn phí | Có phí
+    (Liên hệ BKNS) |'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN-REGISTRY-LOCK
+  entity_name: Xác thực 2 bước (2FA)
+  entity_type: product
+  observed_at: '2026-04-06T23:24:53.232857+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BAO_VE_TEN_MIEN_CAP_CAO_NHAT_GIAI_PHAP_AN_TOAN_TUYET_OI_2026_04_06
+  unit: ''
+  valid_from: '2026-04-06'
+  value: Miễn phí
+  value_changed_at: '2026-04-06T23:24:53.217371+07:00'
+  value_changed_from: Có phí (Liên hệ BKNS)
+- approved_at: '2026-04-07T13:00:10.570492+07:00'
+  approved_by: admin-batch
+  attribute: price_list_effective_date
+  claim_id: CLM-ENT-PROD-DOM-PRICE_LI
+  compiler_note: 'Trích từ tiêu đề: # Bảng Giá Tên Miền Việt Nam (Hiệu lực từ 01/09/2025)'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN
+  entity_name: Tên miền Việt Nam
+  entity_type: product_family
+  observed_at: '2026-04-05T21:43:54.957715+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BANG_GIA_TEN_MIEN_VN_WEB_2026_04_05
+  unit: null
+  valid_from: '2026-04-05'
+  value: '2025-09-01'
+- approved_at: '2026-04-07T13:00:10.577596+07:00'
+  approved_by: admin-batch
+  attribute: pricing_note
+  claim_id: CLM-ENT-PROD-DOM-PRICING_
+  compiler_note: 'Trích từ mục Chính sách / Điều khoản / Lưu ý: Tất cả các mức phí
+    trên chưa bao gồm thuế VAT.'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN
+  entity_name: Dịch vụ Tên miền BKNS
+  entity_type: product
+  observed_at: '2026-04-06T23:54:35.280036+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_ANG_KY_TEN_MIEN_VIET_NAM_VA_QUOC_TE_TAI_BKNS_2026_04_06
+  unit: ''
+  valid_from: '2026-04-06'
+  value: Chưa bao gồm thuế VAT
+- approved_at: '2026-04-07T13:00:10.586020+07:00'
+  approved_by: admin-batch
+  attribute: process_dependency
+  claim_id: CLM-ENT-PROD-DOM-PROCESS_
+  compiler_note: 'Trích từ Quy trình đăng ký / Triển khai / Kích hoạt (nếu có): 5.
+    VNNIC thực hiện Mở/Khóa dịch vụ theo yêu cầu đã được xác thực.'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN-REGISTRY-LOCK
+  entity_name: Bảo vệ tên miền cấp cao nhất (Registry Lock)
+  entity_type: product
+  observed_at: '2026-04-06T23:24:53.258190+07:00'
+  qualifiers:
+    step: 5
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BAO_VE_TEN_MIEN_CAP_CAO_NHAT_GIAI_PHAP_AN_TOAN_TUYET_OI_2026_04_06
+  unit: ''
+  valid_from: '2026-04-06'
+  value: VNNIC thực hiện Mở/Khóa dịch vụ theo yêu cầu đã được xác thực.
+  value_changed_at: '2026-04-06T23:24:53.258207+07:00'
+  value_changed_from: Chủ thể xác nhận yêu cầu với VNNIC.
+- approved_at: '2026-04-07T13:00:10.594003+07:00'
+  approved_by: admin-batch
+  attribute: product_name
+  claim_id: CLM-ENT-PROD-DOM-PRODUCT_
+  compiler_note: 'Trích từ mục lục và tiêu đề: ''2.3. Bảo vệ Tên miền Cấp cao nhất'''
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN
+  entity_name: Dịch vụ Tên miền
+  entity_type: product_category
+  observed_at: '2026-04-04T20:32:16.871781+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BKNS_CAMNANG_EMAIL_TENMIEN_DOT1_2026_04_04
+  unit: ''
+  valid_from: '2026-04-04'
+  value: Bảo vệ Tên miền Cấp cao nhất
+- approved_at: '2026-04-07T13:00:10.601344+07:00'
+  approved_by: admin-batch
+  attribute: promotion_end_date
+  claim_id: CLM-ENT-PROD-DOM-PROMOTIO
+  compiler_note: 'Trích từ Chương trình khuyến mại (Tên miền Quốc tế): Chương trình
+    khuyến mại cho phí đăng ký mới, áp dụng đến ngày 06/01/2025'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN
+  entity_name: Tên miền Quốc tế
+  entity_type: product
+  observed_at: '2026-04-06T23:08:52.477678+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: medium
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_06
+  unit: null
+  valid_from: '2026-04-06'
+  value: '2025-01-06'
+- approved_at: '2026-04-07T13:00:10.608861+07:00'
+  approved_by: admin-batch
+  attribute: protection_level
+  claim_id: CLM-ENT-PROD-DOM-PROTECTI
+  compiler_note: 'Trích từ bảng so sánh: | Mức độ bảo vệ | Mức cơ bản | Mức tăng cường
+    | Mức cao nhất |'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN-REGISTRY-LOCK
+  entity_name: Xác thực 2 bước (2FA)
+  entity_type: product
+  observed_at: '2026-04-06T23:24:53.222804+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BAO_VE_TEN_MIEN_CAP_CAO_NHAT_GIAI_PHAP_AN_TOAN_TUYET_OI_2026_04_06
+  unit: ''
+  valid_from: '2026-04-06'
+  value: Mức tăng cường
+  value_changed_at: '2026-04-06T23:24:53.222823+07:00'
+  value_changed_from: Mức cơ bản
+- approved_at: '2026-04-07T13:00:10.617003+07:00'
+  approved_by: admin-batch
+  attribute: registration_price
+  claim_id: CLM-ENT-PROD-DOM-REGISTRA
+  compiler_note: 'Trích từ dòng: .name.vn | .io.vn | Đăng ký mới (VNĐ) 30.000'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN
+  entity_name: Tên miền Việt Nam
+  entity_type: product
+  observed_at: '2026-04-06T23:21:19.964297+07:00'
+  qualifiers:
+    domain_extension: .name.vn
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_TEN_MIEN_VN_2026_04_04
+  - SRC-BANG_GIA_TEN_MIEN_QUOC_TE_2026_04_06
+  - SRC-BANG_GIA_TEN_MIEN_VN_2026_04_06
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 30000
+  value_changed_at: '2026-04-06T23:21:19.964317+07:00'
+  value_changed_from: 60000
+- approved_at: '2026-04-07T13:00:10.625113+07:00'
+  approved_by: admin-batch
+  attribute: renewal_price
+  claim_id: CLM-ENT-PROD-DOM-RENEWAL_
+  compiler_note: 'Trích từ dòng: .name.vn | .io.vn | Phí gia hạn (VNĐ) 30.000'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN
+  entity_name: Tên miền Việt Nam
+  entity_type: product
+  observed_at: '2026-04-06T23:21:19.973069+07:00'
+  qualifiers:
+    domain_extension: .name.vn
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_TEN_MIEN_VN_2026_04_04
+  - SRC-BANG_GIA_TEN_MIEN_VN_2026_04_06
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 30000
+  value_changed_at: '2026-04-06T23:21:19.973088+07:00'
+  value_changed_from: 60000
+- approved_at: '2026-04-07T13:00:10.633374+07:00'
+  approved_by: admin-batch
+  attribute: security_mechanism
+  claim_id: CLM-ENT-PROD-DOM-SECURITY
+  compiler_note: 'Trích từ Tóm tắt nhanh: • Điểm chính: Cung cấp cơ chế bảo mật đa
+    lớp, yêu cầu xác thực từ Chủ thể, Nhà đăng ký \(BKNS\) và VNNIC để thực hiện bất
+    kỳ thay đổi nào đối với tên miền\.'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN
+  entity_name: Tên miền
+  entity_type: product
+  observed_at: '2026-04-04T20:30:13.454179+07:00'
+  qualifiers:
+    service_name: Registry Lock
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BAO_VE_TEN_MIEN_CAP_CAO_NHAT_GIAI_PHAP_AN_TOAN_TUYET_OI_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: Cung cấp cơ chế bảo mật đa lớp, yêu cầu xác thực từ Chủ thể, Nhà đăng ký
+    (BKNS) và VNNIC để thực hiện bất kỳ thay đổi nào đối với tên miền.
+- approved_at: '2026-04-07T13:00:10.641250+07:00'
+  approved_by: admin-batch
+  attribute: seo_advantage
+  claim_id: CLM-ENT-PROD-DOM-SEO_ADVA
+  compiler_note: 'Trích từ mục Tại sao chọn BKNS?: ''Lợi thế SEO Local vượt trội (Google
+    ưu tiên .VN cho IP Việt Nam)'''
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN
+  entity_name: Tên miền
+  entity_type: product_category
+  observed_at: '2026-04-05T21:53:55.763432+07:00'
+  qualifiers:
+    domain_extension: .VN
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DANG_KY_TEN_MIEN_2026_04_05
+  unit: null
+  valid_from: '2026-04-05'
+  value: Lợi thế SEO Local vượt trội
+- approved_at: '2026-04-07T13:00:10.648515+07:00'
+  approved_by: admin-batch
+  attribute: seo_benefit_detail
+  claim_id: CLM-ENT-PROD-DOM-SEO_BENE
+  compiler_note: 'Trích từ mục Tại sao chọn BKNS?: ''Lợi thế SEO Local vượt trội (Google
+    ưu tiên .VN cho IP Việt Nam)'''
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN
+  entity_name: Tên miền
+  entity_type: product_category
+  observed_at: '2026-04-05T21:53:55.766960+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DANG_KY_TEN_MIEN_2026_04_05
+  unit: null
+  valid_from: '2026-04-05'
+  value: Google ưu tiên .VN cho IP Việt Nam
+- approved_at: '2026-04-07T13:00:10.657128+07:00'
+  approved_by: admin-batch
+  attribute: service_limitation
+  claim_id: CLM-ENT-PROD-DOM-SERVICE_
+  compiler_note: 'Trích từ mục Tóm tắt nhanh: Dịch vụ này là gì: Dịch vụ đăng ký,
+    duy trì và chuyển đổi tên miền (domain name) cho các website, bao gồm cả tên miền
+    Việt Nam (.vn) và tên miền quốc tế (.com, .net, .org, ...).'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN
+  entity_name: Dịch vụ Tên miền BKNS
+  entity_type: product
+  observed_at: '2026-04-06T23:54:34.798765+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BAO_VE_TEN_MIEN_CAP_CAO_NHAT_GIAI_PHAP_AN_TOAN_TUYET_OI_2026_04_04
+  - SRC-DICH_VU_ANG_KY_TEN_MIEN_VIET_NAM_VA_QUOC_TE_TAI_BKNS_2026_04_06
+  unit: null
+  valid_from: '2026-04-04'
+  value: Dịch vụ đăng ký, duy trì và chuyển đổi tên miền (domain name) cho các website,
+    bao gồm cả tên miền Việt Nam (.vn) và tên miền quốc tế (.com, .net, .org, ...).
+  value_changed_at: '2026-04-06T23:54:34.798790+07:00'
+  value_changed_from: Mọi thay đổi trên tên miền (chuyển nhượng, sửa DNS, xóa, thay
+    đổi thông tin) sẽ bị khóa và cần thực hiện quy trình xác thực đa bên để mở khóa
+    tạm thời.
+- approved_at: '2026-04-07T13:00:10.665290+07:00'
+  approved_by: admin-batch
+  attribute: setup_fee
+  claim_id: CLM-ENT-PROD-DOM-SETUP_FE
+  compiler_note: 'Trích từ mục Chính sách / Điều khoản / Lưu ý: Phí cài đặt cho tất
+    cả các loại tên miền đều được miễn phí.'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN
+  entity_name: Dịch vụ Tên miền BKNS
+  entity_type: product
+  observed_at: '2026-04-06T23:54:35.284518+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_06
+  - SRC-DICH_VU_ANG_KY_TEN_MIEN_VIET_NAM_VA_QUOC_TE_TAI_BKNS_2026_04_06
+  unit: VND
+  valid_from: '2026-04-06'
+  value: 0
+- approved_at: '2026-04-07T13:00:10.672074+07:00'
+  approved_by: admin-batch
+  attribute: source_url
+  claim_id: CLM-ENT-PROD-DOM-SOURCE_U
+  compiler_note: 'Trích từ: ━━━ Thông tin nguồn • URL: https://www.bkns.vn/ten-mien/dang-ky-ten-mien.html'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN
+  entity_name: Dịch vụ Tên miền BKNS
+  entity_type: product
+  observed_at: '2026-04-04T20:43:46.757716+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_ANG_KY_TEN_MIEN_VIET_NAM_VA_QUOC_TE_TAI_BKNS_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: https://www.bkns.vn/ten-mien/dang-ky-ten-mien.html
+- approved_at: '2026-04-07T13:00:10.680392+07:00'
+  approved_by: admin-batch
+  attribute: target_audience
+  claim_id: CLM-ENT-PROD-DOM-TARGET_A
+  compiler_note: 'Trích từ Tóm tắt nhanh: Phù hợp với: Các tổ chức tài chính, ngân
+    hàng, cơ quan chính phủ, công ty thương mại điện tử lớn, tập đoàn, và bất kỳ ai
+    sở hữu tên miền quan trọng.'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN
+  entity_name: Bảo vệ tên miền cấp cao nhất (Registry Lock)
+  entity_type: product
+  observed_at: '2026-04-06T23:24:53.113951+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_ANG_KY_TEN_MIEN_VIET_NAM_VA_QUOC_TE_TAI_BKNS_2026_04_04
+  - SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_06
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_06
+  - SRC-BAO_VE_TEN_MIEN_CAP_CAO_NHAT_GIAI_PHAP_AN_TOAN_TUYET_OI_2026_04_06
+  unit: null
+  valid_from: '2026-04-04'
+  value: bất kỳ ai sở hữu tên miền quan trọng
+  value_changed_at: '2026-04-06T23:24:53.113968+07:00'
+  value_changed_from: tập đoàn
+- approved_at: '2026-04-07T13:00:10.689471+07:00'
+  approved_by: admin-batch
+  attribute: target_customer
+  claim_id: CLM-ENT-PROD-DOM-TARGET_C
+  compiler_note: 'Trích từ mục Tóm tắt nhanh: Phù hợp với: Cá nhân, tổ chức và doanh
+    nghiệp muốn sở hữu địa chỉ website riêng để xây dựng thương hiệu, kinh doanh trực
+    tuyến hoặc tạo email theo tên miền riêng.'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN
+  entity_name: Dịch vụ Tên miền BKNS
+  entity_type: product
+  observed_at: '2026-04-06T23:54:34.810602+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BAO_VE_TEN_MIEN_CAP_CAO_NHAT_GIAI_PHAP_AN_TOAN_TUYET_OI_2026_04_04
+  - SRC-DICH_VU_ANG_KY_TEN_MIEN_VIET_NAM_VA_QUOC_TE_TAI_BKNS_2026_04_06
+  unit: null
+  valid_from: '2026-04-04'
+  value: Cá nhân, tổ chức và doanh nghiệp muốn sở hữu địa chỉ website riêng
+  value_changed_at: '2026-04-06T23:54:34.810621+07:00'
+  value_changed_from: bất kỳ ai sở hữu tên miền quan trọng
+- approved_at: '2026-04-07T13:00:10.698683+07:00'
+  approved_by: admin-batch
+  attribute: transfer_in_policy
+  claim_id: CLM-ENT-PROD-DOM-TRANSFER
+  compiler_note: 'Trích từ mục Chính sách / Điều khoản / Lưu ý: Phí chuyển tên miền
+    Việt Nam về BKNS là miễn phí.'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN
+  entity_name: Dịch vụ Tên miền BKNS
+  entity_type: product
+  observed_at: '2026-04-06T23:54:35.288888+07:00'
+  qualifiers:
+    domain_type: Tên miền Việt Nam
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-DANG_KY_TEN_MIEN_2026_04_05
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_06
+  - SRC-DICH_VU_ANG_KY_TEN_MIEN_VIET_NAM_VA_QUOC_TE_TAI_BKNS_2026_04_06
+  unit: VND
+  valid_from: '2026-04-05'
+  value: 0
+  value_changed_at: '2026-04-06T23:08:52.468684+07:00'
+  value_changed_from: miễn phí
+- approved_at: '2026-04-07T13:00:10.707593+07:00'
+  approved_by: admin-batch
+  attribute: unlock_process
+  claim_id: CLM-ENT-PROD-DOM-UNLOCK_P
+  compiler_note: 'Trích từ bảng so sánh: | Quy trình mở khóa | Chủ thể tự mở khóa
+    tại nhà đăng ký | Chủ thể tự mở khóa tại nhà đăng ký | Quy trình xác thực đa bên
+    phức tạp giữa chủ thể, nhà đăng ký và registry |'
+  confidence: high
+  entity_id: ENT-PROD-DOMAIN-REGISTRY-LOCK
+  entity_name: Xác thực 2 bước (2FA)
+  entity_type: product
+  observed_at: '2026-04-06T23:24:53.227995+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BAO_VE_TEN_MIEN_CAP_CAO_NHAT_GIAI_PHAP_AN_TOAN_TUYET_OI_2026_04_06
+  unit: ''
+  valid_from: '2026-04-06'
+  value: Chủ thể tự mở khóa tại nhà đăng ký
+  value_changed_at: '2026-04-06T23:24:53.212818+07:00'
+  value_changed_from: Quy trình xác thực đa bên phức tạp giữa chủ thể, nhà đăng ký
+    và registry
+- approved_at: '2026-04-07T13:00:10.715783+07:00'
+  approved_by: admin-batch
+  attribute: description
+  claim_id: CLM-PROD-DOMAIN-DESC
+  compiler_note: Trích từ bảng 'Giới thiệu dịch vụ BKNS cung cấp', dòng 'Tên miền
+    (Domain)', cột 'Mô tả ngắn'
+  confidence: high
+  entity_id: product.domain
+  entity_name: Tên miền
+  entity_type: product_line
+  observed_at: '2026-04-07T01:07:21.393402+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-TRANNING_KINH_DOANH_HOSTING_EMAIL_2026_04_06
+  unit: null
+  valid_from: '2026-04-07'
+  value: Đăng ký, quản lý tên miền quốc tế & Việt Nam (.vn)
+- approved_at: '2026-04-07T13:00:10.723259+07:00'
+  approved_by: admin-batch
+  attribute: target_customer
+  claim_id: CLM-PROD-DOMAIN-TARGET_C
+  compiler_note: Trích từ bảng 'Giới thiệu dịch vụ BKNS cung cấp', dòng 'Tên miền
+    (Domain)', cột 'Đối tượng khách hàng chính'
+  confidence: high
+  entity_id: product.domain
+  entity_name: Tên miền
+  entity_type: product_line
+  observed_at: '2026-04-07T01:07:21.396346+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-TRANNING_KINH_DOANH_HOSTING_EMAIL_2026_04_06
+  unit: null
+  valid_from: '2026-04-07'
+  value: Cá nhân, doanh nghiệp muốn kinh doanh, giới thiệu online

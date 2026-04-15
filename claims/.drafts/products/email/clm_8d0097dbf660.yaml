@@ -1,0 +1,18 @@
+claim_id: CLM-8D0097DBF660
+entity_id: ENT-PROD-EMAIL-RELAY
+entity_type: product
+entity_name: Email Relay
+attribute: email_flow
+value: Email gửi ra được routing qua hệ thống của BKNS để xử lý.
+unit: null
+qualifiers:
+  comparison_with: Email Server
+source_ids:
+- SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_VA_TIN_CAY_2026_04_13
+observed_at: '2026-04-13T22:35:10.281067+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng so sánh Email Relay và Email Server: | Luồng gửi email
+  | EMAIL RELAY | Email gửi ra được routing qua hệ thống của BKNS để xử lý. |'

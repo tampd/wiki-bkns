@@ -1,0 +1,27 @@
+claim_id: CLM-ENT-PROD-HOS-DESC
+entity_id: ENT-PROD-HOSTING
+entity_type: product_offering
+entity_name: Hosting Giá Rẻ
+attribute: description
+value: Dịch vụ lưu trữ web (hosting) giá rẻ, sử dụng ổ cứng SSD Enterprise, dành cho
+  các website có ngân sách hạn chế nhưng vẫn yêu cầu chất lượng và tốc độ.
+unit: ''
+qualifiers:
+  product_line: Hosting Windows
+source_ids:
+- SRC-DICH_VU_HOSTING_WINDOWS_TAI_BKNS_2026_04_04
+- SRC-HOSTING_GIA_RE_BANG_GIA_VA_THONG_SO_KY_THUAT_TAI_BKNS_2026_04_06
+observed_at: '2026-04-07T00:36:08.609759+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: ''• Dịch vụ này là gì: Dịch vụ lưu trữ web
+  (hosting) giá rẻ, sử dụng ổ cứng SSD Enterprise, dành cho các website có ngân sách
+  hạn chế nhưng vẫn yêu cầu chất lượng và tốc độ.'''
+value_changed_from: Dịch vụ lưu trữ web (hosting) chạy trên nền tảng hệ điều hành
+  Windows, được tối ưu cho các website sử dụng ngôn ngữ lập trình ASP, ASP.NET và
+  cơ sở dữ liệu MSSQL.
+value_changed_at: '2026-04-07T00:36:08.609783+07:00'
+approved_at: '2026-04-08T13:00:10.731111+07:00'
+approved_by: admin-batch

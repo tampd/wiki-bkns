@@ -1,0 +1,25 @@
+claim_id: CLM-DECC0072F420
+entity_id: ssl.comodo.positive_multi_domain_dv
+entity_type: product_plan
+entity_name: PositiveSSL Multi-Domain (DV)
+attribute: max_domains_supported
+value: 250
+unit: domains
+qualifiers:
+  source: product_description
+source_ids:
+- SRC-POSITIVESSL_MULTI_DOMAIN_DV_CHUNG_CHI_SSL_CHO_NHIEU_TEN_M_2026_04_05
+observed_at: '2026-04-14T16:55:18.688628+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Mô tả dịch vụ: ''Chứng chỉ này có thể bảo mật tối đa
+  250 miền...'''
+dual_vote:
+  status: DISAGREE
+  score: 0.2523
+  confidence: LOW
+  flag: human_review_required
+value_changed_from: 1000
+value_changed_at: '2026-04-14T16:55:18.688655+07:00'

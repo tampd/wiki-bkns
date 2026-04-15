@@ -1,0 +1,19 @@
+claim_id: CLM-4176BD1EB280
+entity_id: product.software.softaculous_license
+entity_type: product
+entity_name: Bản quyền Softaculous
+attribute: target_audience
+value: Quản trị viên máy chủ, người dùng hosting, VPS muốn đơn giản hóa việc cài đặt
+  và quản lý các mã nguồn mở phổ biến.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-BAN_QUYEN_SOFTACULOUS_TRINH_CAI_AT_UNG_DUNG_TU_ONG_2026_04_13
+observed_at: '2026-04-13T21:34:20.593917+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ Tóm tắt nhanh: ''Phù hợp với: Quản trị viên máy chủ, người
+  dùng hosting, VPS muốn đơn giản hóa việc cài đặt và quản lý các mã nguồn mở phổ
+  biến (WordPress, Joomla, Magento...).'''

@@ -1,0 +1,23 @@
+claim_id: CLM-895C84BD4E13
+entity_id: ENT-PROD-DOMAIN.WS
+entity_type: product_plan
+entity_name: .ws
+attribute: registration_price
+value: 505000
+unit: VND
+qualifiers:
+  billing_cycle: year
+source_ids:
+- SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_05
+observed_at: '2026-04-14T16:43:52.814160+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ Bảng giá Tên miền Quốc tế, dòng .ws: Phí đăng ký mới (VNĐ)
+  505.000'
+dual_vote:
+  status: DISAGREE
+  score: 0.5466
+  confidence: LOW
+  flag: human_review_required

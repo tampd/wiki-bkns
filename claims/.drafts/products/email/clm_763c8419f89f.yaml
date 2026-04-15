@@ -1,0 +1,19 @@
+claim_id: CLM-763C8419F89F
+entity_id: product.email.hosting.email1
+entity_type: product_plan
+entity_name: EMAIL 1
+attribute: price
+value: 1296000
+unit: VND
+qualifiers:
+  billing_cycle: 4_years
+source_ids:
+- SRC-BANG_GIA_DICH_VU_BKNS_TEXT_2026_04_13
+observed_at: '2026-04-13T21:40:29.188039+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ: ''Gói EMAIL 1: * Giá 4 năm: 1.296.000 VNĐ'''
+value_changed_from: 1134000
+value_changed_at: '2026-04-13T21:40:29.188055+07:00'

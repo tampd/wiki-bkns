@@ -1,0 +1,23 @@
+claim_id: CLM-48AEEDCE0A3D
+entity_id: ENT-PROD-VPS
+entity_type: product_category
+entity_name: Dịch vụ Server/VPS
+attribute: service_focus
+value: đa dạng hóa nhu cầu, từ sinh viên tập sự đến doanh nghiệp lớn cần xử lý Big
+  Data
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-BKNS_CAMNAG_HOSTING_DOT3_2026_04_05
+observed_at: '2026-04-14T12:02:37.708367+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ: "Dịch vụ Server/VPS của BKNS tập trung vào tính đa dạng
+  hóa nhu cầu, từ sinh viên tập sự đến doanh nghiệp lớn cần xử lý Big Data."'
+dual_vote:
+  status: DISAGREE
+  score: 0.4055
+  confidence: LOW
+  flag: human_review_required

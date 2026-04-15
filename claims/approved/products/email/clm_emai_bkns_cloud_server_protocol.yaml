@@ -7,14 +7,14 @@ value: POP3/IMAP/SMTP
 unit: null
 qualifiers: null
 source_ids:
-- SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_06
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_06
 observed_at: '2026-04-07T00:01:11.811438+07:00'
 valid_from: '2026-04-07'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ mục ''Tính năng / Thành phần'': Tương thích: Hỗ trợ đầy đủ
-  các giao thức POP3/IMAP/SMTP, cho phép sử dụng trên Webmail và các ứng dụng email
-  client như Outlook.'
-approved_at: '2026-04-07T13:00:10.972377+07:00'
+compiler_note: 'Trích từ mục ''Tính năng / Thành phần'': Tương thích: Hỗ trợ đầy đủ các giao thức POP3/IMAP/SMTP, cho phép sử dụng trên Webmail và các ứng dụng email client như Outlook.'
+approved_at: '2026-04-08T13:00:09.966123+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:58.885Z'

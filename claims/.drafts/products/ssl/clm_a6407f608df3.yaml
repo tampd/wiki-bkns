@@ -1,0 +1,21 @@
+claim_id: CLM-A6407F608DF3
+entity_id: product.ssl.geotrust_true_businessid_wildcard
+entity_type: product
+entity_name: GeoTrust True BusinessID Wildcard
+attribute: description
+value: Đây là chứng chỉ SSL xác thực doanh nghiệp (Organization Validation - OV) có
+  tính năng Wildcard, dùng để bảo mật cho một tên miền chính và toàn bộ các tên miền
+  con (subdomain) cấp 1 của nó.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-CHUNG_CHI_SSL_GEOTRUST_TRUE_BUSINESSID_WILDCARD_2026_04_13
+observed_at: '2026-04-13T22:00:25.553396+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tóm tắt nhanh: ''• Dịch vụ này là gì: Đây là chứng chỉ
+  SSL xác thực doanh nghiệp (Organization Validation - OV) có tính năng Wildcard,
+  dùng để bảo mật cho một tên miền chính và toàn bộ các tên miền con (subdomain) cấp
+  1 của nó.'''

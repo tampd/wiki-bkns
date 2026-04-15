@@ -1,0 +1,22 @@
+claim_id: CLM-F0A5E304C620
+entity_id: product.software.litespeed_web_adc
+entity_type: product_version
+entity_name: LiteSpeed Web ADC
+attribute: security_feature
+value: phòng chống tấn công DDoS
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-LITESPEED_WEB_SERVER_TINH_NANG_PHIEN_BAN_VA_SO_SANH_2026_04_13
+observed_at: '2026-04-14T12:21:39.547678+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Thông số kỹ thuật / Giới hạn: ...có khả năng phòng chống
+  tấn công DDoS.'
+dual_vote:
+  status: DISAGREE
+  score: 0.0
+  confidence: LOW
+  flag: human_review_required

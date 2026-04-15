@@ -1,0 +1,24 @@
+claim_id: CLM-5D8EF9EC8B93
+entity_id: product.email.cloud_email_server
+entity_type: product
+entity_name: Cloud Email Server
+attribute: description
+value: Giải pháp email server trên nền tảng đám mây, cung cấp hệ thống email riêng
+  theo tên miền cho doanh nghiệp.
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-DICH_VU_CLOUD_EMAIL_SERVER_AN_TOAN_HIEU_SUAT_CAO_2026_04_05
+observed_at: '2026-04-14T17:03:01.534461+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tóm tắt nhanh: ''Dịch vụ này là gì: Giải pháp email server
+  trên nền tảng đám mây, cung cấp hệ thống email riêng theo tên miền cho doanh nghiệp.'''
+parent_entity_id: ENT-PROD-EMAIL
+dual_vote:
+  status: DISAGREE
+  score: 0.4298
+  confidence: LOW
+  flag: human_review_required

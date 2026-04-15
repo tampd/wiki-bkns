@@ -3,19 +3,18 @@ entity_id: product.server_management.bkns
 entity_type: product
 entity_name: Dịch vụ Quản trị Máy chủ Trọn gói
 attribute: description
-value: Là giải pháp giúp doanh nghiệp và cá nhân vận hành máy chủ một cách hiệu quả
-  mà không cần có đội ngũ IT riêng. Đội ngũ kỹ thuật của BKNS sẽ chịu trách nhiệm
-  theo dõi, giám sát, cài đặt, tối ưu và bảo mật máy chủ để đảm bảo hệ thống hoạt
-  động liên tục và ổn định.
+value: Là giải pháp giúp doanh nghiệp và cá nhân vận hành máy chủ một cách hiệu quả mà không cần có đội ngũ IT riêng. Đội ngũ kỹ thuật của BKNS sẽ chịu trách nhiệm theo dõi, giám sát, cài đặt, tối ưu và bảo mật máy chủ để đảm bảo hệ thống hoạt động liên tục và ổn định.
 unit: null
 qualifiers: null
 source_ids:
-- SRC-DICH_VU_QUAN_TRI_MAY_CHU_TRON_GOI_TAI_BKNS_2026_04_04
+  - SRC-DICH_VU_QUAN_TRI_MAY_CHU_TRON_GOI_TAI_BKNS_2026_04_04
 observed_at: '2026-04-04T20:51:23.106452+07:00'
 valid_from: '2026-04-04'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
 compiler_note: Trích từ mục Mô tả dịch vụ.
-approved_at: '2026-04-07T13:00:10.097021+07:00'
+approved_at: '2026-04-08T13:00:09.232573+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.331Z'

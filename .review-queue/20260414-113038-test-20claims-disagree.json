@@ -1,0 +1,12 @@
+{
+  "ts": "2026-04-14T11:30:38.366380+07:00",
+  "skill": "test-20claims",
+  "status": "DISAGREE",
+  "flag": "human_review_required",
+  "score": 0.2602,
+  "model_a": "gemini-2.5-pro",
+  "model_b": "gpt-5.4",
+  "text_a": "```json\n{\n  \"attribute\": \"price\",\n  \"value\": \"5,700 VND/month\",\n  \"confidence\": 1.0,\n  \"agrees\": true,\n  \"reason\": \"The claimed value matches the listed monthly price for the BKH01 Cloud Hosting plan when paid annually.\"\n}\n```",
+  "text_b": "{\"attribute\":\"price\",\"value\":\"5700\",\"confidence\":0.18,\"agrees\":false,\"reason\":\"The claim record provides only the asserted value (5700) and no source evidence or product pricing data for BKNS product BKH01 to verify it.\"}",
+  "prompt_preview": "Verify the following claim about BKNS products and return JSON:\nEntity: BKH01\nAttribute: price\nClaimed value: 5700\n\nReturn JSON: {\"attribute\": \"...\", \"value\": \"...\", \"confidence\": 0.0-1.0, \"agrees\": true/false, \"reason\": \"brief explanation\"}"
+}

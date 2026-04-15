@@ -1,0 +1,22 @@
+claim_id: CLM-D2601996DFB0
+entity_id: ENT-PROD-SSL-ESSENTIALSSL
+entity_type: product_plan
+entity_name: EssentialSSL (DV)
+attribute: money_back_guarantee
+value: 30
+unit: days
+qualifiers: null
+source_ids:
+- SRC-ESSENTIALSSL_DV_CHUNG_CHI_SSL_XAC_THUC_TEN_MIEN_TU_COMOD_2026_04_05
+observed_at: '2026-04-14T16:48:31.149247+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tính năng / Thành phần: ''Đảm bảo từ BKNS: ...cam kết hoàn
+  tiền trong 30 ngày.'''
+dual_vote:
+  status: DISAGREE
+  score: 0.141
+  confidence: LOW
+  flag: human_review_required

@@ -1,0 +1,22 @@
+claim_id: CLM-CC818DA952F0
+entity_id: product.hosting.bkh03
+entity_type: product_plan
+entity_name: BKH03
+attribute: monthly_price
+value: 23700
+unit: VND
+qualifiers:
+  billing_cycle: month
+source_ids:
+- SRC-HOSTING_GIA_RE_BANG_GIA_VA_THONG_SO_KY_THUAT_TAI_BKNS_2026_04_13
+observed_at: '2026-04-14T12:13:27.297511+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ bảng giá, dòng ''Giá'', cột ''BKH03'': 23.700đ/Tháng'
+dual_vote:
+  status: DISAGREE
+  score: 0.5341
+  confidence: LOW
+  flag: human_review_required

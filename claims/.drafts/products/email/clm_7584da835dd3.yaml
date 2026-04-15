@@ -1,0 +1,17 @@
+claim_id: CLM-7584DA835DD3
+entity_id: product.email.cloud_email_server
+entity_type: product
+entity_name: Cloud Email Server
+attribute: admin_account_type
+value: Riêng
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_13
+observed_at: '2026-04-13T22:17:31.474589+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục ''Tính năng / Thành phần'': ''• Tài khoản quản trị riêng:
+  Cung cấp tài khoản quản trị (Admin) riêng cho khách hàng.'''

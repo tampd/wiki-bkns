@@ -1,0 +1,25 @@
+claim_id: CLM-B442B60ACD5E
+entity_id: product.server_management.bkns
+entity_type: product
+entity_name: Dịch vụ Quản trị Máy chủ Trọn gói
+attribute: has_feature
+value: Giám sát 24/7
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-DICH_VU_QUAN_TRI_MAY_CHU_TRON_GOI_TAI_BKNS_2026_04_05
+observed_at: '2026-04-14T17:14:28.620262+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tính năng / Thành phần: Giám sát 24/7: Theo dõi tình
+  trạng hoạt động của máy chủ (CPU, RAM, ổ cứng) và các dịch vụ quan trọng (Webserver,
+  Database, Mail).'
+dual_vote:
+  status: DISAGREE
+  score: 0.5497
+  confidence: LOW
+  flag: human_review_required
+value_changed_from: Hỗ trợ kỹ thuật 24/7
+value_changed_at: '2026-04-14T17:14:28.620285+07:00'

@@ -7,13 +7,15 @@ value: Tĩnh
 unit: null
 qualifiers: {}
 source_ids:
-- SRC-POSITIVESSL_MULTI_DOMAIN_DV_CHUNG_CHI_SSL_CHO_NHIEU_TEN_M_2026_04_04
-- SRC-POSITIVESSL_MULTI_DOMAIN_DV_CHUNG_CHI_SSL_CHO_NHIEU_TEN_M_2026_04_06
+  - SRC-POSITIVESSL_MULTI_DOMAIN_DV_CHUNG_CHI_SSL_CHO_NHIEU_TEN_M_2026_04_04
+  - SRC-POSITIVESSL_MULTI_DOMAIN_DV_CHUNG_CHI_SSL_CHO_NHIEU_TEN_M_2026_04_06
 observed_at: '2026-04-07T00:54:07.077034+07:00'
 valid_from: '2026-04-04'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
 compiler_note: 'Trích từ bảng Thông số kỹ thuật: | Biểu tượng | Tĩnh |'
-approved_at: '2026-04-07T13:00:13.236463+07:00'
+approved_at: '2026-04-08T13:00:12.735938+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.494Z'

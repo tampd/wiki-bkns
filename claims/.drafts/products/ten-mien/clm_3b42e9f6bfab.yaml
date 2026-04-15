@@ -1,0 +1,16 @@
+claim_id: CLM-3B42E9F6BFAB
+entity_id: ENT-PROD-DOMAIN
+entity_type: product
+entity_name: Dịch vụ Tên miền
+attribute: source_url
+value: https://www.bkns.vn/ten-mien/dang-ky-ten-mien.html
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-DICH_VU_ANG_KY_TEN_MIEN_VIET_NAM_VA_QUOC_TE_TAI_BKNS_2026_04_13
+observed_at: '2026-04-13T22:13:15.020073+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ phần ''Thông tin nguồn'': • URL: https://www.bkns.vn/ten-mien/dang-ky-ten-mien.html'

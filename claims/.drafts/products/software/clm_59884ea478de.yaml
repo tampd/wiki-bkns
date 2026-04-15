@@ -1,0 +1,21 @@
+claim_id: CLM-59884EA478DE
+entity_id: product.software.cloudlinux
+entity_type: product_software
+entity_name: CloudLinux OS
+attribute: compatibility
+value: DirectAdmin
+unit: null
+qualifiers:
+  type: control_panel
+source_ids:
+- SRC-BAN_QUYEN_CLOUDLINUX_OS_TANG_ON_INH_VA_BAO_MAT_CHO_SHARED_2026_04_13
+observed_at: '2026-04-13T21:31:33.428498+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Thông số kỹ thuật / Giới hạn: ''• Tương thích Control Panel:
+  CloudLinux tương thích với các control panel phổ biến bao gồm cPanel, Plesk, và
+  DirectAdmin.'''
+value_changed_from: Plesk
+value_changed_at: '2026-04-13T21:31:33.428520+07:00'

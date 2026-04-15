@@ -1,0 +1,19 @@
+claim_id: CLM-8FF069B566EE
+entity_id: product.ssl.geotrust_true_businessid_wildcard
+entity_type: product
+entity_name: GeoTrust True BusinessID Wildcard
+attribute: price
+value: 9714000
+unit: VND
+qualifiers:
+  billing_cycle: year
+  seller: BKNS
+source_ids:
+- SRC-CHUNG_CHI_SSL_GEOTRUST_TRUE_BUSINESSID_WILDCARD_2026_04_13
+observed_at: '2026-04-13T22:00:25.588922+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ mục Gói dịch vụ và bảng giá: ''| Giá tại BKNS | 9.714.000đ
+  | /năm |'''

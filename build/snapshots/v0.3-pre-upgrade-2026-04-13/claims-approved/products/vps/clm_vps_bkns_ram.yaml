@@ -1,0 +1,21 @@
+claim_id: CLM-VPS-BKNS-RAM
+entity_id: product.vps.bkns.cloud_vps_amd.amd_4
+entity_type: product_plan
+entity_name: AMD 1
+attribute: ram
+value: 1
+unit: GB
+qualifiers: {}
+source_ids:
+- SRC-BKNS_CAMNAG_HOSTING_DOT3_2026_04_04
+- SRC-BKNS_CAMNAG_HOSTING_DOT3_2026_04_06
+observed_at: '2026-04-06T23:27:51.032607+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ bảng thông số, dòng AMD 1, cột RAM: 1 GB'
+value_changed_from: 4
+value_changed_at: '2026-04-06T23:27:51.032636+07:00'
+approved_at: '2026-04-08T13:00:14.841955+07:00'
+approved_by: admin-batch

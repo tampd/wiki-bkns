@@ -1,0 +1,22 @@
+claim_id: CLM-A759499EB049
+entity_id: ENT-PROD-VPS-CLOUD
+entity_type: product
+entity_name: Cloud VPS
+attribute: storage_type
+value: SSD Enterprise
+unit: ''
+qualifiers: null
+source_ids:
+- SRC-TRAINING_DICH_VU_VPS_2026_04_05
+observed_at: '2026-04-14T16:17:36.124494+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: Trích từ mục '4.1.1 Cấu hình & công nghệ vượt trội', dòng 'Hạ tầng
+  phần cứng'.
+dual_vote:
+  status: DISAGREE
+  score: 0.5333
+  confidence: LOW
+  flag: human_review_required

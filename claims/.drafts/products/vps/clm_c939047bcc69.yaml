@@ -1,0 +1,21 @@
+claim_id: CLM-C939047BCC69
+entity_id: ENT-PROD-VPS.vps_gia_re.vps_mm04
+entity_type: product_plan
+entity_name: VPS-MM04
+attribute: storage
+value: 40
+unit: GB
+qualifiers: {}
+source_ids:
+- SRC-DICH_VU_VPS_GIA_RE_MAY_CHU_AO_CAU_HINH_ON_INH_2026_04_05
+observed_at: '2026-04-14T16:11:54.174990+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: medium
+compiler_note: 'Trích từ bảng giá, dòng Dung Lượng, cột VPS-MM04: 40 GB'
+dual_vote:
+  status: DISAGREE
+  score: 0.5846
+  confidence: LOW
+  flag: human_review_required

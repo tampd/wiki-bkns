@@ -1,0 +1,21 @@
+claim_id: CLM-22F300EBF03B
+entity_id: ENT-PROD-SSL-POSITIVESSL-DV
+entity_type: product_plan
+entity_name: PositiveSSL (DV)
+attribute: issuance_time
+value: 5
+unit: phút
+qualifiers: null
+source_ids:
+- SRC-POSITIVESSL_DV_CHUNG_CHI_SSL_GIA_RE_2026_04_13
+observed_at: '2026-04-14T16:35:13.679899+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: '• Cấp phát nhanh: Chứng chỉ có thể được cấp phát trong vòng 5 phút.'
+dual_vote:
+  status: DISAGREE
+  score: 0.5432
+  confidence: LOW
+  flag: human_review_required

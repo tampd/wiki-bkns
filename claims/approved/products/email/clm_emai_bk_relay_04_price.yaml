@@ -10,13 +10,14 @@ qualifiers:
   duration_years: 3
   vat_status: not_included
 source_ids:
-- SRC-EMAIL_RELAY_WEB_2026_04_05
+  - SRC-EMAIL_RELAY_WEB_2026_04_05
 observed_at: '2026-04-05T22:01:16.553992+07:00'
 valid_from: '2026-04-05'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: high
-compiler_note: 'Trích từ bảng giá gói BK-RELAY 04: | 3 năm (giảm 30%) | 35.280.000đ
-  |. Ghi chú chung: chưa VAT'
-approved_at: '2026-04-07T13:00:10.826600+07:00'
+compiler_note: 'Trích từ bảng giá gói BK-RELAY 04: | 3 năm (giảm 30%) | 35.280.000đ |. Ghi chú chung: chưa VAT'
+approved_at: '2026-04-08T13:00:09.847538+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:58.859Z'

@@ -7,12 +7,14 @@ value: https://ssl.bkns.vn/ssl-bao-mat/geotrust-true-businessid
 unit: null
 qualifiers: {}
 source_ids:
-- SRC-GEOTRUST_TRUE_BUSINESSID_CHUNG_CHI_SSL_XAC_THUC_DOANH_NGHI_2026_04_04
+  - SRC-GEOTRUST_TRUE_BUSINESSID_CHUNG_CHI_SSL_XAC_THUC_DOANH_NGHI_2026_04_04
 observed_at: '2026-04-04T21:01:19.999943+07:00'
 valid_from: '2026-04-04'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
 compiler_note: 'Trích từ mục Thông tin nguồn: • URL: https://ssl.bkns.vn/ssl-bao-mat/geotrust-true-businessid'
-approved_at: '2026-04-07T13:00:13.240115+07:00'
+approved_at: '2026-04-08T13:00:12.739858+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.494Z'

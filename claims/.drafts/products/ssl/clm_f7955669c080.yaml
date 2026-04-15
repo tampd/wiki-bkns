@@ -1,0 +1,22 @@
+claim_id: CLM-F7955669C080
+entity_id: ENT-PROD-SSL-COMODO-EV
+entity_type: product
+entity_name: Comodo EV SSL
+attribute: source_url
+value: https://ssl.bkns.vn/ssl-bao-mat/comodo-ev-ssl
+unit: null
+qualifiers: null
+source_ids:
+- SRC-COMODO_EV_SSL_CHUNG_CHI_SSL_XAC_THUC_MO_RONG_2026_04_13
+- SRC-COMODO_EV_SSL_CHUNG_CHI_SSL_XAC_THUC_MO_RONG_2026_04_05
+observed_at: '2026-04-14T16:26:39.410217+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ: • URL: https://ssl.bkns.vn/ssl-bao-mat/comodo-ev-ssl'
+dual_vote:
+  status: DISAGREE
+  score: 0.3281
+  confidence: LOW
+  flag: human_review_required

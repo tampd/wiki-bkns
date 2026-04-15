@@ -1,0 +1,20 @@
+claim_id: CLM-ENT-PROD-DOM-IS_A
+entity_id: ENT-PROD-DOMAIN-REGISTRY-LOCK
+entity_type: product
+entity_name: Bảo vệ tên miền cấp cao nhất (Registry Lock)
+attribute: is_a
+value: dịch vụ bảo mật cao cấp cho tên miền
+unit: ''
+qualifiers: null
+source_ids:
+- SRC-BAO_VE_TEN_MIEN_CAP_CAO_NHAT_GIAI_PHAP_AN_TOAN_TUYET_OI_2026_04_06
+observed_at: '2026-04-06T23:24:53.044730+07:00'
+valid_from: '2026-04-06'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: Dịch vụ này là gì: Một dịch vụ bảo mật cao
+  cấp cho tên miền, giúp ngăn chặn các thay đổi trái phép đối với thông tin tên miền
+  ở cấp độ cơ quan đăng ký (registry), cụ thể là VNNIC.'
+approved_at: '2026-04-08T13:00:09.680338+07:00'
+approved_by: admin-batch

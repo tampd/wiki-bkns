@@ -5,11 +5,11 @@ Polling loop để nhận commands từ Telegram.
 
 Commands:
     /hoi [câu hỏi]     — Hỏi wiki
-    /them [URL]         — Crawl URL mới
-    /extract            — Extract claims từ raw files
-    /compile [category] — Compile wiki cho category
-    /build              — Tạo build snapshot mới
-    /lint               — Chạy lint wiki
+    /them [URL]         — Crawl URL mới (admin)
+    /extract            — Extract claims từ raw files (admin)
+    /compile [category] — Compile wiki cho category (admin)
+    /build              — Tạo build snapshot mới (admin)
+    /lint               — Chạy lint wiki (admin)
     /status             — Xem trạng thái hệ thống
 
 Usage:
@@ -19,6 +19,10 @@ Usage:
 import sys
 import json
 import time
+import re
+import importlib.util
+import subprocess
+import os
 import requests
 from pathlib import Path
 
@@ -30,6 +34,43 @@ from lib.logger import log_entry
 
 API_URL = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}"
 OFFSET_FILE = WORKSPACE / "bot" / ".last_offset"
+
+# Allowlist for /compile category
+VALID_CATEGORIES = {"hosting", "vps", "email", "ssl", "ten-mien", "server", "software"}
+
+
+# ── Helpers ────────────────────────────────────────────────
+
+
+def _load_skill(script_path: Path, module_name: str):
+    """Load a skill module from file path without polluting sys.path."""
+    spec = importlib.util.spec_from_file_location(module_name, script_path)
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+
+def _safe_error(e: Exception) -> str:
+    """Return user-safe error message, masking internal file paths."""
+    msg = str(e)
+    msg = re.sub(r"(/[\w./-]+\.py)", "[internal]", msg)
+    return msg[:200]
+
+
+def _validate_url(url: str) -> tuple:
+    """Validate URL. Returns (is_valid: bool, error_msg: str)."""
+    url = url.strip()[:2000]
+    if not url.startswith(("http://", "https://")):
+        return False, "❌ URL không hợp lệ. Phải bắt đầu bằng `http://` hoặc `https://`"
+    return True, ""
+
+
+def _validate_category(cat: str) -> bool:
+    """Check category is in the known allowlist."""
+    return cat in VALID_CATEGORIES or cat == "--all"
+
+
+# ── Telegram API ───────────────────────────────────────────
 
 
 def get_updates(offset: int = None) -> list:
@@ -47,18 +88,25 @@ def get_updates(offset: int = None) -> list:
 
 
 def send_message(chat_id: int, text: str, parse_mode: str = "Markdown"):
-    """Send reply to Telegram."""
-    # Split long messages
+    """Send reply to Telegram with retry on network errors."""
     chunks = [text[i:i+4000] for i in range(0, len(text), 4000)]
     for chunk in chunks:
-        try:
-            requests.post(f"{API_URL}/sendMessage", json={
-                "chat_id": chat_id,
-                "text": chunk,
-                "parse_mode": parse_mode,
-            }, timeout=10)
-        except Exception as e:
-            log_entry("wiki-bot", "error", f"sendMessage failed: {e}")
+        for attempt in range(3):
+            try:
+                r = requests.post(
+                    f"{API_URL}/sendMessage",
+                    json={"chat_id": chat_id, "text": chunk, "parse_mode": parse_mode},
+                    timeout=10,
+                )
+                if r.status_code == 200:
+                    break
+                # Non-network error (e.g. 400 bad request) — don't retry
+                log_entry("wiki-bot", "error", f"sendMessage HTTP {r.status_code}: {r.text[:200]}")
+                break
+            except requests.RequestException as e:
+                log_entry("wiki-bot", "error", f"sendMessage attempt {attempt+1} failed: {e}")
+                if attempt < 2:
+                    time.sleep(1 * (attempt + 1))
 
 
 def send_typing(chat_id: int):
@@ -72,18 +120,26 @@ def send_typing(chat_id: int):
         pass
 
 
+# ── Command Handlers ───────────────────────────────────────
+
+
 def handle_hoi(chat_id: int, question: str):
     """Handle /hoi query."""
     if not question:
         send_message(chat_id, "❓ Cú pháp: `/hoi [câu hỏi]`\nVí dụ: `/hoi Giá hosting rẻ nhất BKNS?`")
         return
 
+    # Sanitize: strip whitespace, limit length
+    question = question.strip()[:500]
+
     send_typing(chat_id)
 
     try:
-        sys.path.insert(0, str(WORKSPACE / "skills" / "query-wiki" / "scripts"))
-        from query import query
-        result = query(question)
+        skill = _load_skill(
+            WORKSPACE / "skills" / "query-wiki" / "scripts" / "query.py",
+            "query_wiki",
+        )
+        result = skill.query(question)
 
         answer = result["answer"]
         cost = result["cost_usd"]
@@ -92,8 +148,8 @@ def handle_hoi(chat_id: int, question: str):
         reply = f"{answer}\n\n_💰 Cost: ${cost:.5f} | Cache: {cache}%_"
         send_message(chat_id, reply)
     except Exception as e:
-        send_message(chat_id, f"❌ Lỗi query: {str(e)}")
         log_entry("wiki-bot", "error", f"Query error: {e}", severity="high")
+        send_message(chat_id, f"❌ Lỗi khi truy vấn wiki: {_safe_error(e)}")
 
 
 def handle_status(chat_id: int):
@@ -126,9 +182,11 @@ def handle_build(chat_id: int):
 
     send_typing(chat_id)
     try:
-        sys.path.insert(0, str(WORKSPACE / "skills" / "build-snapshot" / "scripts"))
-        from snapshot import create_snapshot
-        result = create_snapshot()
+        skill = _load_skill(
+            WORKSPACE / "skills" / "build-snapshot" / "scripts" / "snapshot.py",
+            "build_snapshot",
+        )
+        result = skill.create_snapshot()
         send_message(chat_id,
                       f"🔨 *Build thành công!*\n\n"
                       f"ID: `{result['build_id']}`\n"
@@ -136,11 +194,12 @@ def handle_build(chat_id: int):
                       f"Files: {result['wiki_files']}\n"
                       f"Tokens: ~{result['token_estimate']:,}")
     except Exception as e:
-        send_message(chat_id, f"❌ Build failed: {str(e)}")
+        log_entry("wiki-bot", "error", f"Build error: {e}", severity="high")
+        send_message(chat_id, f"❌ Build thất bại: {_safe_error(e)}")
 
 
 def handle_extract(chat_id: int):
-    """[W6] Handle /extract command — extract claims from all pending raw files."""
+    """Handle /extract command — extract claims from all pending raw files."""
     if str(chat_id) != str(ADMIN_TELEGRAM_ID):
         send_message(chat_id, "⛔ Chỉ admin mới được sử dụng lệnh này.")
         return
@@ -148,9 +207,11 @@ def handle_extract(chat_id: int):
     send_typing(chat_id)
     send_message(chat_id, "⏳ Đang extract claims từ raw files...")
     try:
-        sys.path.insert(0, str(WORKSPACE / "skills" / "extract-claims" / "scripts"))
-        from extract import extract_all_pending
-        results = extract_all_pending()
+        skill = _load_skill(
+            WORKSPACE / "skills" / "extract-claims" / "scripts" / "extract.py",
+            "extract_claims",
+        )
+        results = skill.extract_all_pending()
         total_claims = sum(r.get("claims_count", 0) for r in results)
         total_cost = sum(r.get("cost_usd", 0) for r in results)
         total_conflicts = sum(r.get("conflicts", 0) for r in results)
@@ -165,12 +226,12 @@ def handle_extract(chat_id: int):
             f"Cost: ${total_cost:.4f}",
         )
     except Exception as e:
-        send_message(chat_id, f"❌ Extract failed: {str(e)}")
         log_entry("wiki-bot", "error", f"Extract error: {e}", severity="high")
+        send_message(chat_id, f"❌ Extract thất bại: {_safe_error(e)}")
 
 
 def handle_compile(chat_id: int, category: str):
-    """[W6] Handle /compile [category] command."""
+    """Handle /compile [category] command."""
     if str(chat_id) != str(ADMIN_TELEGRAM_ID):
         send_message(chat_id, "⛔ Chỉ admin mới được sử dụng lệnh này.")
         return
@@ -184,18 +245,30 @@ def handle_compile(chat_id: int, category: str):
         )
         return
 
+    # Sanitize category input
+    category = category.strip().lower()[:50]
+    if not _validate_category(category):
+        send_message(
+            chat_id,
+            f"❌ Category không hợp lệ: `{category}`\n"
+            f"Categories hợp lệ: {', '.join(sorted(VALID_CATEGORIES))}, --all",
+        )
+        return
+
     send_typing(chat_id)
     send_message(chat_id, f"⏳ Đang compile wiki cho *{category}*...")
     try:
-        sys.path.insert(0, str(WORKSPACE / "skills" / "compile-wiki" / "scripts"))
-        from compile import compile_category, SUBPAGE_DEFS
+        skill = _load_skill(
+            WORKSPACE / "skills" / "compile-wiki" / "scripts" / "compile.py",
+            "compile_wiki",
+        )
 
         if category == "--all":
             total_cost = 0.0
             total_pages = 0
             errors = []
-            for cat in SUBPAGE_DEFS.keys():
-                result = compile_category(cat)
+            for cat in skill.SUBPAGE_DEFS.keys():
+                result = skill.compile_category(cat)
                 if result["status"] == "success":
                     total_pages += result.get("pages_compiled", 0)
                     total_cost += result.get("cost_usd", 0)
@@ -209,7 +282,7 @@ def handle_compile(chat_id: int, category: str):
             if errors:
                 reply += f"\n⚠️ Errors: {', '.join(errors)}"
         else:
-            result = compile_category(category)
+            result = skill.compile_category(category)
             if result["status"] == "success":
                 reply = (
                     f"✅ *Compile {category} hoàn tất!*\n\n"
@@ -223,8 +296,8 @@ def handle_compile(chat_id: int, category: str):
 
         send_message(chat_id, reply)
     except Exception as e:
-        send_message(chat_id, f"❌ Compile failed: {str(e)}")
         log_entry("wiki-bot", "error", f"Compile error: {e}", severity="high")
+        send_message(chat_id, f"❌ Compile thất bại: {_safe_error(e)}")
 
 
 def handle_lint(chat_id: int):
@@ -235,16 +308,60 @@ def handle_lint(chat_id: int):
 
     send_typing(chat_id)
     try:
-        sys.path.insert(0, str(WORKSPACE / "skills" / "lint-wiki" / "scripts"))
-        from lint import lint_all
-        report = lint_all(semantic=False)
+        skill = _load_skill(
+            WORKSPACE / "skills" / "lint-wiki" / "scripts" / "lint.py",
+            "lint_wiki",
+        )
+        report = skill.lint_all(semantic=False)
         syntax_issues = report.get("syntax_issues", 0)
         send_message(chat_id,
                       f"🔍 *Lint Report*\n\n"
                       f"Syntax issues: {syntax_issues}\n"
                       f"Cost: $0.0000 (syntax only)")
     except Exception as e:
-        send_message(chat_id, f"❌ Lint failed: {str(e)}")
+        log_entry("wiki-bot", "error", f"Lint error: {e}", severity="high")
+        send_message(chat_id, f"❌ Lint thất bại: {_safe_error(e)}")
+
+
+def handle_them(chat_id: int, url: str):
+    """Handle /them [URL] — crawl URL mới vào raw/ (admin only)."""
+    if str(chat_id) != str(ADMIN_TELEGRAM_ID):
+        send_message(chat_id, "⛔ Chỉ admin mới được sử dụng lệnh này.")
+        return
+
+    if not url:
+        send_message(chat_id, "❓ Cú pháp: `/them [URL]`\nVí dụ: `/them https://bkns.vn/hosting`")
+        return
+
+    is_valid, error_msg = _validate_url(url)
+    if not is_valid:
+        send_message(chat_id, error_msg)
+        return
+
+    # Normalize URL after validation
+    url = url.strip()[:2000]
+
+    send_typing(chat_id)
+    send_message(chat_id, f"⏳ Đang crawl: `{url}`")
+    try:
+        result = subprocess.run(
+            [sys.executable, str(WORKSPACE / "skills" / "crawl-source" / "scripts" / "crawl.py"), url],
+            capture_output=True,
+            text=True,
+            timeout=60,
+            env={**os.environ, "PYTHONPATH": str(WORKSPACE)},
+        )
+        if result.returncode == 0:
+            send_message(chat_id, f"✅ Crawl thành công!\n\nChạy `/extract` để xử lý file mới.")
+        else:
+            stderr_preview = result.stderr[:500] if result.stderr else "Không có output"
+            send_message(chat_id, f"⚠️ Crawl gặp vấn đề:\n`{stderr_preview}`")
+            log_entry("wiki-bot", "error", f"Crawl failed for {url}: {result.stderr[:500]}")
+    except subprocess.TimeoutExpired:
+        send_message(chat_id, "⏰ Crawl timeout (60s). URL có thể quá lớn — vui lòng thử lại sau.")
+    except Exception as e:
+        log_entry("wiki-bot", "error", f"Crawl error for {url}: {e}", severity="high")
+        send_message(chat_id, f"❌ Lỗi crawl: {_safe_error(e)}")
 
 
 def handle_help(chat_id: int):
@@ -256,6 +373,7 @@ def handle_help(chat_id: int):
         "`/status` — Xem trạng thái wiki\n"
         "`/help` — Xem hướng dẫn\n\n"
         "*Lệnh admin:*\n"
+        "`/them [URL]` — Crawl URL mới vào raw/\n"
         "`/extract` — Extract claims từ raw files mới\n"
         "`/compile [category]` — Compile wiki (hoặc `--all`)\n"
         "`/build` — Tạo build snapshot mới\n"
@@ -263,10 +381,14 @@ def handle_help(chat_id: int):
         "*Ví dụ:*\n"
         "• `/hoi Giá hosting rẻ nhất?`\n"
         "• `/hoi Tên miền .com giá bao nhiêu?`\n"
+        "• `/them https://bkns.vn/hosting`\n"
         "• `/compile hosting`\n\n"
         "_Gõ câu hỏi trực tiếp (không /hoi) cũng được!_"
     )
     send_message(chat_id, help_text)
+
+
+# ── Message Router ─────────────────────────────────────────
 
 
 def process_message(message: dict):
@@ -285,6 +407,9 @@ def process_message(message: dict):
     if text.startswith("/hoi"):
         question = text[4:].strip()
         handle_hoi(chat_id, question)
+    elif text.startswith("/them"):
+        url = text[5:].strip()
+        handle_them(chat_id, url)
     elif text.startswith("/status"):
         handle_status(chat_id)
     elif text.startswith("/build"):
@@ -292,9 +417,9 @@ def process_message(message: dict):
     elif text.startswith("/lint"):
         handle_lint(chat_id)
     elif text.startswith("/extract"):
-        handle_extract(chat_id)  # [W6]
+        handle_extract(chat_id)
     elif text.startswith("/compile"):
-        category = text[8:].strip()  # [W6]
+        category = text[8:].strip()
         handle_compile(chat_id, category)
     elif text.startswith("/help") or text.startswith("/start"):
         handle_help(chat_id)
@@ -303,6 +428,9 @@ def process_message(message: dict):
         handle_hoi(chat_id, text)
     else:
         send_message(chat_id, f"❓ Lệnh không nhận diện: `{text}`\nGõ /help để xem hướng dẫn.")
+
+
+# ── Offset Management ──────────────────────────────────────
 
 
 def load_offset() -> int:
@@ -317,6 +445,9 @@ def save_offset(offset: int):
     """Save last processed update offset."""
     OFFSET_FILE.parent.mkdir(parents=True, exist_ok=True)
     OFFSET_FILE.write_text(str(offset))
+
+
+# ── Run Modes ──────────────────────────────────────────────
 
 
 def run_once():

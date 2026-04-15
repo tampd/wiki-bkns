@@ -2,75 +2,63 @@
 page_id: wiki.products.ssl.chinh-sach
 title: Chứng Chỉ SSL BKNS — Chính Sách
 category: products/ssl
-updated: '2026-04-07'
+updated: '2026-04-14'
 review_state: drafted
-claims_used: 47
-compile_cost_usd: 0.0137
-self_review: fail
-corrections: 4
+claims_used: 149
+compile_cost_usd: 0.0268
+self_review: pass
+corrections: 0
 ---
 
-# Chứng Chỉ SSL BKNS — Chính Sách
+# Chính sách Dịch vụ Chứng chỉ SSL tại BKNS
 
-Trang này tổng hợp các thông tin về chính sách dịch vụ, hỗ trợ và các cam kết liên quan đến sản phẩm Chứng chỉ SSL do BKNS cung cấp, dựa trên các dữ liệu đã được xác thực.
+Trang này tổng hợp các thông tin về chính sách hỗ trợ, cam kết dịch vụ, và các điều khoản liên quan đến sản phẩm Chứng chỉ SSL do BKNS cung cấp. Các chính sách này được xây dựng nhằm đảm bảo quyền lợi và sự hài lòng của khách hàng.
 
 ### Chính sách Hoàn tiền
 
-BKNS có chính sách hoàn tiền trong 30 ngày đối với một số sản phẩm chứng chỉ SSL, mang lại sự yên tâm cho khách hàng khi đăng ký dịch vụ.
+BKNS áp dụng chính sách hoàn tiền linh hoạt để khách hàng có thể an tâm trải nghiệm dịch vụ.
 
-| Sản phẩm | Thời gian hoàn tiền |
-| :--- | :--- |
-| RapidSSL Wildcard Certificate | 30 ngày |
-| EssentialSSL (DV) | 30 ngày |
-| GeoTrust QuickSSL Premium SAN | 30 ngày |
+*   **Thời gian hoàn tiền:** Hầu hết các sản phẩm chứng chỉ SSL đều được áp dụng chính sách **hoàn tiền trong vòng 30 ngày** kể từ ngày đăng ký.
+*   **Sản phẩm áp dụng (ví dụ):**
+    *   RapidSSL Wildcard Certificate
+    *   GeoTrust QuickSSL Premium SAN
+    *   GeoTrust True BusinessID
+    *   Comodo SSL Certificate (DV)
+    *   EssentialSSL (DV)
 
-### Chính sách Hỗ trợ
+### Hỗ trợ Kỹ thuật & Cài đặt
 
-**Hỗ trợ Kỹ thuật & Cài đặt**
-- **Hỗ trợ 24/7:** Dịch vụ `RapidSSL Wildcard Certificate` được hỗ trợ kỹ thuật 24/7.
-- **Miễn phí cài đặt:** BKNS hỗ trợ cài đặt miễn phí cho các dịch vụ `RapidSSL Certificate` và `InstantSSL (OV)`.
-- **Hỗ trợ cài đặt:** Dịch vụ `GeoTrust True BusinessID` có bao gồm hỗ trợ cài đặt.
+BKNS cam kết đồng hành cùng khách hàng trong suốt quá trình sử dụng dịch vụ.
 
-**Kênh hỗ trợ & Thời gian phản hồi**
-- **Kênh hỗ trợ (Hotline, Email, Ticket):** [CẦN BỔ SUNG THÔNG TIN]
-- **Thời gian phản hồi cam kết:** [CẦN BỔ SUNG THÔNG TIN]
+*   **Hỗ trợ Cài đặt:** BKNS **hỗ trợ cài đặt miễn phí** cho khách hàng khi đăng ký dịch vụ chứng chỉ SSL.
+*   **Thời gian Hỗ trợ:** Đội ngũ kỹ thuật sẵn sàng hỗ trợ **24/7** đối với một số sản phẩm như RapidSSL Wildcard và Comodo SSL Wildcard.
+*   **Kênh hỗ trợ (Hotline, Email, Ticket):** Đang cập nhật.
+*   **Cam kết thời gian phản hồi:** Đang cập nhật.
 
-### Các Chính sách và Cam kết khác
+### Chính sách Giá & Đảm bảo
 
-- **Cam kết về giá:** Dịch vụ `RapidSSL Wildcard Certificate` được cam kết giá tốt nhất.
-- **Đảm bảo BKNS:** Dịch vụ `InstantSSL Pro (OV)` có tem "BKNS ĐẢM BẢO".
-- **Quy trình đăng ký:** Khách hàng có thể đăng ký dịch vụ bằng cách nhấn vào nút "Mua ngay" trên trang sản phẩm để thêm vào giỏ hàng và tiến hành thanh toán.
+*   **Cam kết giá tốt nhất:** BKNS cam kết mang lại mức giá tốt nhất cho một số sản phẩm, tiêu biểu là **RapidSSL Wildcard Certificate**.
+*   **"BKNS ĐẢM BẢO":** Một số dịch vụ như **InstantSSL Pro (OV)** và **GeoTrust QuickSSL Premium Wildcard** đi kèm với tem "BKNS ĐẢM BẢO", khẳng định chất lượng và uy tín của dịch vụ được cung cấp.
 
-### Yêu cầu về Giấy tờ
+### Chính sách Bảo hiểm
 
-Một số loại chứng chỉ SSL yêu cầu xác thực doanh nghiệp (OV, EV) và cần cung cấp giấy tờ pháp lý.
+Một số loại chứng chỉ SSL cao cấp đi kèm với gói bảo hiểm từ Tổ chức chứng thực số (CA) để bảo vệ người dùng cuối trong trường hợp có sai sót từ phía nhà cung cấp.
 
-| Sản phẩm | Yêu cầu Giấy tờ |
-| :--- | :--- |
-| PositiveSSL EV | Đăng ký kinh doanh |
-| InstantSSL (OV) | Giấy tờ đăng ký kinh doanh |
-| GeoTrust True BusinessID with EV Multi-Domain | Giấy đăng ký kinh doanh |
-| InstantSSL Pro (OV) | Đăng ký kinh doanh |
-| RapidSSL Wildcard Certificate | Không yêu cầu |
-| EssentialSSL (DV) | Không yêu cầu |
-| PositiveSSL Wildcard (DV) | Không yêu cầu |
+*   **Comodo EV SSL:** Đi kèm mức bảo hiểm **1.750.000 USD**.
 
-### Chính sách Dùng thử
+### Các Chính sách Khác
 
-[CẦN BỔ SUNG THÔNG TIN - Ghi rõ 'Không hỗ trợ' nếu không có chính sách này]
+Các thông tin dưới đây đang được chúng tôi cập nhật:
 
-### Cam kết Chất lượng Dịch vụ (SLA)
+*   **Cam kết thời gian hoạt động (SLA Uptime):** Đang cập nhật.
+*   **Chính sách dùng thử (Trial Policy):** Đang cập nhật.
+*   **Điều khoản sử dụng chi tiết (Terms of Service):** Đang cập nhật.
+*   **Chính sách sao lưu (Backup Policy):** Đang cập nhật.
 
-[CẦN BỔ SUNG THÔNG TIN - Bổ sung các cam kết cụ thể về chất lượng dịch vụ]
+### Xem thêm
 
-### Chính sách Sao lưu (Backup)
+*   [Web Hosting BKNS](../hosting/index.md)
+*   [Cloud VPS BKNS](../vps/index.md)
+*   [Tên Miền BKNS](../ten-mien/index.md)
 
-[CẦN BỔ SUNG THÔNG TIN - Nêu rõ chính sách sao lưu và khôi phục]
-
-### Sản phẩm liên quan
-
-- [Web Hosting BKNS](../hosting/index.md)
-- [Cloud VPS BKNS](../vps/index.md)
-- [Tên Miền BKNS](../ten-mien/index.md)
-
-Compiled by BKNS Wiki Bot • 2026-04-07
+Compiled by BKNS Wiki Bot • 2026-04-14

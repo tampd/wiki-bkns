@@ -1,0 +1,20 @@
+claim_id: CLM-2C19686B2B06
+entity_id: ENT-PROD-DOMAIN
+entity_type: product_category
+entity_name: Tên miền Việt Nam
+attribute: renewal_price
+value: 60000
+unit: VND
+qualifiers:
+  tld: .pro.vn
+source_ids:
+- SRC-BANG_GIA_TEN_MIEN_VN_2026_04_13
+observed_at: '2026-04-13T21:47:58.599021+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ dòng: | .info.vn | .pro.vn | .id.vn | 60.000  | 60.000 Miễn
+  phí  |'
+value_changed_from: 150000
+value_changed_at: '2026-04-13T21:47:58.570401+07:00'

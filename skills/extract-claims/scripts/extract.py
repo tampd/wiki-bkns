@@ -23,7 +23,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 from lib.config import (
     RAW_CRAWL_DIR, RAW_MANUAL_DIR, CLAIMS_DRAFTS_DIR, CLAIMS_APPROVED_DIR,
     ENTITIES_REGISTRY, CLAIM_REQUIRED_FIELDS, CLAIM_HIGH_RISK_ATTRIBUTES,
-    MODEL_PRO,
+    get_pro_model,
 )
 from lib.gemini import generate
 from lib.logger import log_entry
@@ -214,6 +214,94 @@ def find_pending_files() -> list[Path]:
     return sorted(pending)
 
 
+def write_claim_yaml(claim_data: dict, source_id: str, cat_short: str,
+                     crawled_at: str) -> Path:
+    """Write a single claim dict to YAML in claims/drafts/ and sync approved/.
+
+    Extracted from the inline save logic in extract_claims_from_file() so that
+    extract_dual.py can reuse it without code duplication.
+
+    Returns the path where the claim was written.
+    """
+    attribute = claim_data.get("attribute", "")
+    claim_id = generate_claim_id(claim_data["entity_id"], attribute)
+    claim_category = determine_claim_category(claim_data["entity_id"], cat_short)
+
+    claim_dir = CLAIMS_DRAFTS_DIR / "products" / claim_category
+    ensure_dir(claim_dir)
+
+    claim_filename = claim_id.lower().replace("-", "_") + ".yaml"
+    claim_path = claim_dir / claim_filename
+
+    existing = read_yaml(claim_path) if claim_path.exists() else None
+    if isinstance(existing, dict) and existing.get("claim_id") == claim_id:
+        old_sources = existing.get("source_ids", [])
+        merged_sources = list(dict.fromkeys(old_sources + [source_id]))
+        claim = {
+            **existing,
+            "value": claim_data["value"],
+            "unit": claim_data.get("unit", existing.get("unit", "")),
+            "qualifiers": claim_data.get("qualifiers", existing.get("qualifiers", {})),
+            "source_ids": merged_sources,
+            "observed_at": now_iso(),
+            "confidence": claim_data.get("confidence", existing.get("confidence", "medium")),
+            "risk_class": claim_data.get("risk_class", existing.get("risk_class", "low")),
+            "compiler_note": claim_data.get("compiler_note", existing.get("compiler_note", "")),
+            "entity_name": claim_data.get("entity_name", existing.get("entity_name", "")),
+            "entity_type": claim_data.get("entity_type", existing.get("entity_type", "unknown")),
+        }
+        if str(existing.get("value")) != str(claim_data["value"]):
+            claim["review_state"] = "drafted"
+            claim["value_changed_from"] = existing.get("value")
+            claim["value_changed_at"] = now_iso()
+        # Carry through extra fields (e.g. dual_vote metadata)
+        for k, v in claim_data.items():
+            if k not in claim:
+                claim[k] = v
+    else:
+        claim = {
+            "claim_id": claim_id,
+            "entity_id": claim_data["entity_id"],
+            "entity_type": claim_data.get("entity_type", "unknown"),
+            "entity_name": claim_data.get("entity_name", ""),
+            "attribute": attribute,
+            "value": claim_data["value"],
+            "unit": claim_data.get("unit", ""),
+            "qualifiers": claim_data.get("qualifiers", {}),
+            "source_ids": [source_id],
+            "observed_at": now_iso(),
+            "valid_from": today_str(),
+            "confidence": claim_data.get("confidence", "medium"),
+            "review_state": "drafted",
+            "risk_class": claim_data.get("risk_class", "low"),
+            "compiler_note": claim_data.get("compiler_note", ""),
+        }
+        # Carry through extra fields (e.g. dual_vote metadata)
+        for k, v in claim_data.items():
+            if k not in claim:
+                claim[k] = v
+
+    write_yaml(claim, claim_path)
+
+    # Sync approved claim if it exists — NEVER overwrite approved value
+    approved_dir = CLAIMS_APPROVED_DIR / "products" / claim_category
+    approved_path = approved_dir / claim_filename
+    if approved_path.exists():
+        approved_claim = read_yaml(approved_path)
+        if isinstance(approved_claim, dict):
+            old_sources = approved_claim.get("source_ids", [])
+            merged_sources = list(dict.fromkeys(old_sources + [source_id]))
+            approved_claim["source_ids"] = merged_sources
+            approved_claim["observed_at"] = now_iso()
+            if str(approved_claim.get("value")) != str(claim_data["value"]):
+                approved_claim["review_state"] = "needs_review"
+                approved_claim["pending_value"] = claim_data["value"]
+                approved_claim["pending_observed_at"] = now_iso()
+            write_yaml(approved_claim, approved_path)
+
+    return claim_path
+
+
 def extract_claims_from_file(raw_file: Path, force: bool = False) -> dict:
     """Extract claims from a single raw file.
 
@@ -267,14 +355,14 @@ def extract_claims_from_file(raw_file: Path, force: bool = False) -> dict:
         crawled_at=crawled_at,
     )
 
-    # Call Gemini Pro
+    # Call Gemini Pro (model selected by USE_PRO_NEW feature flag)
     try:
         result = generate(
             prompt=prompt,
-            model=MODEL_PRO,
+            model=get_pro_model(),
             skill="extract-claims",
             temperature=0.1,
-            max_output_tokens=8192,
+            max_output_tokens=32768,  # 8192 quá nhỏ: Gemini 2.5-pro thinking tokens eat into budget
         )
     except Exception as e:
         error_msg = f"Gemini API error: {str(e)}"
@@ -410,7 +498,7 @@ def extract_claims_from_file(raw_file: Path, force: bool = False) -> dict:
             "claim_id": claim_id,
             "source": source_id,
             "raw_file": str(raw_file.relative_to(raw_file.parent.parent.parent)),
-            "model": MODEL_PRO,
+            "model": get_pro_model(),
             "cost_usd": result.get("cost_usd", 0),
         }
         trace_path = claim_dir / (claim_id.lower().replace("-", "_") + ".jsonl")

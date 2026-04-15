@@ -1,0 +1,21 @@
+claim_id: CLM-DF319BA95484
+entity_id: product.ssl.comodo_dv
+entity_type: product
+entity_name: Comodo SSL Certificate (DV)
+attribute: warranty_amount
+value: 250000
+unit: USD
+qualifiers: {}
+source_ids:
+- SRC-COMODO_SSL_CERTIFICATE_DV_CHUNG_CHI_XAC_THUC_TEN_MIEN_2026_04_05
+observed_at: '2026-04-14T16:46:18.450733+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ Thông số kỹ thuật / Giới hạn: | Mức bảo hiểm | 250.000$ |'
+dual_vote:
+  status: DISAGREE
+  score: 0.3622
+  confidence: LOW
+  flag: human_review_required

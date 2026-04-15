@@ -1,0 +1,22 @@
+claim_id: CLM-FAC8958C903D
+entity_id: product.vps.bk-misa
+entity_type: product
+entity_name: BK MISA
+attribute: free_trial_duration
+value: 7
+unit: days
+qualifiers: null
+source_ids:
+- SRC-CLOUD_VPS_BK_MISA_GIAI_PHAP_LUU_TRU_KE_TOAN_SO_2026_04_05
+observed_at: '2026-04-14T16:08:16.045717+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: medium
+compiler_note: 'Trích từ Dùng thử miễn phí: Cung cấp 7 ngày dùng thử dịch vụ miễn
+  phí.'
+dual_vote:
+  status: PARTIAL
+  score: 0.7201
+  confidence: MEDIUM
+  flag: needs_review

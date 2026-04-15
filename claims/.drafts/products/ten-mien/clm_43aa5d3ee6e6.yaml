@@ -1,0 +1,17 @@
+claim_id: CLM-43AA5D3EE6E6
+entity_id: product.domain.international.ws
+entity_type: product_plan
+entity_name: .ws
+attribute: setup_fee
+value: 0
+unit: VND
+qualifiers: {}
+source_ids:
+- SRC-BANG_GIA_TEN_MIEN_QUOC_TE_2026_04_13
+observed_at: '2026-04-13T21:46:27.545915+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ bảng giá: | .ws     | Miễn phí | 505.000   | 1.075.000 |
+  1.075.000 |'

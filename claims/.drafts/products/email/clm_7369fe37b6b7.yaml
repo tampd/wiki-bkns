@@ -1,0 +1,22 @@
+claim_id: CLM-7369FE37B6B7
+entity_id: product.email.cloud_email_server
+entity_type: product
+entity_name: Cloud Email Server
+attribute: virus_protection
+value: true
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-DICH_VU_CLOUD_EMAIL_SERVER_AN_TOAN_HIEU_SUAT_CAO_2026_04_05
+observed_at: '2026-04-14T17:03:01.565922+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng giá, dòng ''Chống Virut'': ''Có'' cho tất cả các gói.'
+parent_entity_id: ENT-PROD-EMAIL
+dual_vote:
+  status: DISAGREE
+  score: 0.4298
+  confidence: LOW
+  flag: human_review_required

@@ -1,0 +1,16 @@
+claim_id: CLM-0F9741F6E4C1
+entity_id: ENT-PROD-SSL-COMODO-DV
+entity_type: product_plan
+entity_name: Comodo SSL Certificate (DV)
+attribute: product_name
+value: Comodo SSL Certificate (DV)
+unit: null
+qualifiers: null
+source_ids:
+- SRC-COMODO_SSL_CERTIFICATE_DV_CHUNG_CHI_XAC_THUC_TEN_MIEN_2026_04_13
+observed_at: '2026-04-13T22:09:21.989051+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Nội dung trang web: ═══ Comodo SSL Certificate (DV)'

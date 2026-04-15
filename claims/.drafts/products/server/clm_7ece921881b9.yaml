@@ -1,0 +1,19 @@
+claim_id: CLM-7ECE921881B9
+entity_id: ENT-PROD-BACKUP-001
+entity_type: service
+entity_name: Dịch vụ Backup Dữ liệu
+attribute: target_audience
+value: Cá nhân và doanh nghiệp có dữ liệu quan trọng cần được bảo vệ, đảm bảo khả
+  năng phục hồi và tính liên tục trong hoạt động.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_BACKUP_DU_LIEU_SAO_LUU_VA_PHUC_HOI_DU_LIEU_UY_TIN_2026_04_13
+observed_at: '2026-04-13T22:14:37.619425+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: ''Phù hợp với: Cá nhân và doanh nghiệp có
+  dữ liệu quan trọng cần được bảo vệ, đảm bảo khả năng phục hồi và tính liên tục trong
+  hoạt động.'''

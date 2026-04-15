@@ -1,0 +1,21 @@
+claim_id: CLM-EXCEL-product_vps_vm04-price_6m
+entity_id: product.vps.vm04
+entity_type: product_plan
+entity_name: Cloud VPS VM VM04
+attribute: price_6m
+value: 11220000
+confidence: ground_truth
+review_state: approved
+risk_class: verified
+source_ids:
+- EXCEL-BANGGIA-BKNS-2026
+observed_at: '2026-04-07T15:46:04.873903+07:00'
+valid_from: '2026-04-07'
+approved_at: '2026-04-07T15:46:04.873903+07:00'
+approved_by: excel-direct-injection
+unit: VND
+qualifiers:
+  period: 6 tháng
+  vat_included: false
+  discount_pct: 45
+compiler_note: Excel VPS sheet, 2. VPS VM, plan VM04, Giá 60 tháng (-45%)

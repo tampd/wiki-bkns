@@ -1,0 +1,17 @@
+claim_id: CLM-ED787EBB3AAA
+entity_id: company.bkns
+entity_type: company
+entity_name: BKNS
+attribute: service_policy
+value: Service packages can be upgraded or downgraded flexibly
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-BANG_GIA_DICH_VU_BKNS_TEXT_2026_04_13
+observed_at: '2026-04-13T21:40:29.159587+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ ghi chú: ''Các gói dịch vụ có thể nâng cấp hoặc hạ cấp linh
+  hoạt'''

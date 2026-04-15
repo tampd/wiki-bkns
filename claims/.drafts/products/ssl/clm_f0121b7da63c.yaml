@@ -1,0 +1,22 @@
+claim_id: CLM-F0121B7DA63C
+entity_id: product.ssl.instantssl_pro_ov
+entity_type: product
+entity_name: InstantSSL Pro (OV)
+attribute: insurance_amount
+value: 100000
+unit: USD
+qualifiers: {}
+source_ids:
+- SRC-INSTANTSSL_PRO_OV_CHUNG_CHI_SSL_XAC_THUC_TO_CHUC_CUA_COM_2026_04_05
+observed_at: '2026-04-14T16:32:49.713268+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng Thông số kỹ thuật / Giới hạn: | Mức bảo hiểm | 100.000$
+  |'
+dual_vote:
+  status: DISAGREE
+  score: 0.498
+  confidence: LOW
+  flag: human_review_required

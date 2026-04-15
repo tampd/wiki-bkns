@@ -1,0 +1,23 @@
+claim_id: CLM-701DDBC094F0
+entity_id: ENT-COMPANY-001
+entity_type: company
+entity_name: BKNS
+attribute: partnership
+value: Authorized Reseller
+unit: null
+qualifiers:
+  partner: Comodo
+source_ids:
+- SRC-CHUNG_CHI_SSL_ESSENTIALSSL_WILDCARD_DV_CUA_COMODO_2026_04_05
+observed_at: '2026-04-14T16:22:15.547361+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tính năng / Thành phần: ''Nhà cung cấp: Comodo (BKNS là nhà
+  phân phối được ủy quyền - Authorized Reseller).'''
+dual_vote:
+  status: DISAGREE
+  score: 0.2232
+  confidence: LOW
+  flag: human_review_required

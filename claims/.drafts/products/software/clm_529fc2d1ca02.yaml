@@ -1,0 +1,23 @@
+claim_id: CLM-529FC2D1CA02
+entity_id: product.software.softaculous.dedicated_bkns
+entity_type: product_plan
+entity_name: Softaculous Dedicated (máy chủ tại BKNS)
+attribute: price_string
+value: Giá liên hệ
+unit: null
+qualifiers:
+  billing_cycle: month
+source_ids:
+- SRC-BAN_QUYEN_SOFTACULOUS_TRINH_CAI_AT_UNG_DUNG_TU_ONG_2026_04_05
+observed_at: '2026-04-14T17:18:51.554128+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: Trích từ bảng giá, dòng 'Giá 1 tháng', cột 'Softaculous Dedicated (máy
+  chủ tại BKNS)'
+dual_vote:
+  status: PARTIAL
+  score: 0.6786
+  confidence: MEDIUM
+  flag: needs_review

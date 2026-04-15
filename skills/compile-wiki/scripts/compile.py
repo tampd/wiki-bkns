@@ -26,9 +26,16 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 
 from lib.config import (
     CLAIMS_APPROVED_DIR, CLAIMS_DRAFTS_DIR, WIKI_DRAFTS_DIR, WIKI_DIR,
-    SELF_REVIEW_RULES, MODEL_PRO,
+    SELF_REVIEW_RULES, get_pro_model,
 )
-from lib.gemini import generate
+from lib.gemini import generate, generate_with_cache
+import os as _os
+
+# Compile cache: reorder prompt so full claims list + rules are STABLE prefix,
+# and only per-subpage task instructions vary. Gemini implicit caching applies
+# the same prefix across subpages within one category → 90% discount on calls 2..N.
+# Toggle with env var COMPILE_CACHE=false to rollback.
+COMPILE_CACHE_ENABLED = _os.getenv("COMPILE_CACHE", "true").lower() == "true"
 from lib.logger import log_entry, log_approval  # [W7] top-level import
 from lib.telegram import notify_skill, notify_error
 from lib.utils import (
@@ -424,6 +431,44 @@ CROSS_LINKS = {
 
 
 # ═══════════════════════════════════════════════════════════
+#  HELPERS
+# ═══════════════════════════════════════════════════════════
+
+def _strip_compile_fences(text: str) -> str:
+    """Strip ```markdown/```md code fence wrapper and leading preamble.
+
+    Some models (2.5-pro, 3.1-preview) occasionally wrap output in a code fence
+    despite the "không code fence" instruction. This strips the fence defensively.
+    Also strips preamble text like "Chắc chắn rồi, với vai trò..." before content.
+    """
+    text = text.strip()
+
+    # Strip code fence: ```markdown or ```md at start
+    if text.startswith("```"):
+        lines = text.split("\n")
+        end = len(lines) - 1
+        # Find matching closing fence
+        while end > 0 and lines[end].strip() != "```":
+            end -= 1
+        if end > 0:
+            text = "\n".join(lines[1:end]).strip()
+        else:
+            text = "\n".join(lines[1:]).strip()
+
+    # Strip preamble (conversational intro before actual markdown content)
+    # Preamble: lines before first real markdown (heading, list, table, or ---)
+    lines = text.split("\n")
+    for i, line in enumerate(lines):
+        stripped = line.strip()
+        if stripped.startswith(("#", "-", "*", "|", ">")):
+            if i > 0:
+                text = "\n".join(lines[i:]).strip()
+            break
+
+    return text
+
+
+# ═══════════════════════════════════════════════════════════
 #  COMPILE PROMPT (per sub-page)
 # ═══════════════════════════════════════════════════════════
 
@@ -453,6 +498,41 @@ SẢN PHẨM LIÊN QUAN (cross-link):
 {cross_links}
 
 OUTPUT: Markdown thuần (không frontmatter, không code fence)."""
+
+
+# Cached variant: STABLE prefix (all claims + rules + cross-links) comes first,
+# so Gemini implicit caching kicks in across sub-pages within one category.
+# The per-subpage task (title/filter/hint) is placed at the END as the question.
+SUBPAGE_COMPILE_PREFIX = """Bạn là biên tập viên chuyên nghiệp cho Wiki tri thức BKNS.
+
+INPUT — TOÀN BỘ claims đã duyệt của category "{category}":
+{all_claims_content}
+
+QUY TẮC BẮT BUỘC KHI SOẠN BẤT KỲ TRANG NÀO:
+1. ✅ CHỈ sử dụng dữ liệu từ claims phía trên — KHÔNG thêm thông tin ngoài
+2. ✅ Bảng giá → dùng Markdown table, giữ NGUYÊN số liệu chính xác
+3. ✅ Viết tiếng Việt tự nhiên, chuyên nghiệp
+4. ❌ KHÔNG bịa thêm features, giá, chính sách không có trong claims
+5. ❌ KHÔNG dùng "có lẽ", "có thể", "khoảng" cho số liệu cụ thể
+6. ✅ Nếu thiếu dữ liệu → ghi rõ "Đang cập nhật" chứ không bịa
+7. ✅ Cuối trang: "Compiled by BKNS Wiki Bot • {date}"
+8. ✅ Nếu claims thuộc phạm vi trang quá ít → ghi cô đọng, không kéo dài
+
+SẢN PHẨM LIÊN QUAN (cross-link chung cho mọi trang):
+{cross_links}"""
+
+SUBPAGE_COMPILE_QUESTION = """NHIỆM VỤ HIỆN TẠI: Soạn trang wiki "{title}".
+
+MÔ TẢ TRANG: {page_desc}
+
+PHẠM VI CLAIMS DÀNH RIÊNG CHO TRANG NÀY (subset của danh sách phía trên):
+{scoped_claim_ids}
+
+HƯỚNG DẪN ĐẶC BIỆT:
+{prompt_hint}
+
+CHỈ viết nội dung liên quan tới phạm vi trên. Các claims không thuộc phạm vi bỏ qua.
+OUTPUT: Markdown thuần (không frontmatter, không code fence). Ngày: {date}."""
 
 
 # ═══════════════════════════════════════════════════════════
@@ -631,6 +711,18 @@ def compile_category(category: str, force: bool = False) -> dict:
     results = []
     cross_links_text = _generate_cross_links(category)
 
+    # Precompute stable prefix ONCE per category when caching is enabled.
+    # Same prefix bytes across subpages → Gemini implicit cache kicks in.
+    cached_prefix = None
+    if COMPILE_CACHE_ENABLED:
+        all_claims_text = _format_claims_text(claims)
+        cached_prefix = SUBPAGE_COMPILE_PREFIX.format(
+            category=category,
+            all_claims_content=all_claims_text,
+            cross_links=cross_links_text,
+            date=today_str(),
+        )
+
     # 3. Compile each sub-page
     for sp in subpages:
         filename = sp["filename"]
@@ -664,25 +756,46 @@ def compile_category(category: str, force: bool = False) -> dict:
             log_entry("compile-wiki", "compiling",
                       f"  {category}/{filename}: {len(page_claims)} claims")
 
-            # Build prompt
-            prompt = SUBPAGE_COMPILE_PROMPT.format(
-                category=category,
-                claims_content=claims_text,
-                title=title,
-                page_desc=sp["desc"],
-                prompt_hint=sp["prompt_hint"],
-                date=today_str(),
-                cross_links=cross_links_text,
-            )
-
             try:
-                result = generate(
-                    prompt=prompt,
-                    model=MODEL_PRO,
-                    skill="compile-wiki",
-                    temperature=0.2,
-                    max_output_tokens=65536,
-                )
+                if COMPILE_CACHE_ENABLED and cached_prefix is not None:
+                    # Cached path: prefix shared across subpages (implicit cache)
+                    scoped_ids = ", ".join(
+                        c.get("claim_id", "?") for c in page_claims[:80]
+                    )
+                    if len(page_claims) > 80:
+                        scoped_ids += f", ... (+{len(page_claims) - 80} more)"
+                    question = SUBPAGE_COMPILE_QUESTION.format(
+                        title=title,
+                        page_desc=sp["desc"],
+                        scoped_claim_ids=scoped_ids or "(không có claim nào — trả về skeleton)",
+                        prompt_hint=sp["prompt_hint"],
+                        date=today_str(),
+                    )
+                    result = generate_with_cache(
+                        prefix_content=cached_prefix,
+                        question=question,
+                        model=get_pro_model(),
+                        skill="compile-wiki",
+                        temperature=0.2,
+                        max_output_tokens=65536,
+                    )
+                else:
+                    prompt = SUBPAGE_COMPILE_PROMPT.format(
+                        category=category,
+                        claims_content=claims_text,
+                        title=title,
+                        page_desc=sp["desc"],
+                        prompt_hint=sp["prompt_hint"],
+                        date=today_str(),
+                        cross_links=cross_links_text,
+                    )
+                    result = generate(
+                        prompt=prompt,
+                        model=get_pro_model(),
+                        skill="compile-wiki",
+                        temperature=0.2,
+                        max_output_tokens=65536,
+                    )
             except Exception as e:
                 error_msg = f"Compile error {category}/{filename}: {str(e)}"
                 log_entry("compile-wiki", "error", error_msg, severity="critical")
@@ -693,7 +806,7 @@ def compile_category(category: str, force: bool = False) -> dict:
                 })
                 continue
 
-            page_content = result["text"]
+            page_content = _strip_compile_fences(result["text"])
             page_cost = result.get("cost_usd", 0)
             total_cost += page_cost
 
@@ -791,7 +904,7 @@ def self_review(draft: str, claims_text: str, category: str) -> dict:
     try:
         result = generate(
             prompt=prompt,
-            model=MODEL_PRO,
+            model=get_pro_model(),
             skill="compile-wiki",
             system_instruction="Bạn là QA auditor. Trả lời bằng JSON DUY NHẤT.",
             temperature=0.1,

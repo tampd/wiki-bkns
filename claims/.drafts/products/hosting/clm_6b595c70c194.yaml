@@ -1,0 +1,21 @@
+claim_id: CLM-6B595C70C194
+entity_id: product.hosting.windows.bksw01
+entity_type: product_plan
+entity_name: BKSW01
+attribute: registration_url
+value: https://my.bkns.net/?cmd=cart&action=add&id=229
+unit: ''
+qualifiers: {}
+source_ids:
+- SRC-DICH_VU_HOSTING_WINDOWS_TAI_BKNS_2026_04_05
+observed_at: '2026-04-14T12:10:47.093171+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Quy trình đăng ký: ''Đăng ký BKSW01: `https://my.bkns.net/?cmd=cart&action=add&id=229`'''
+dual_vote:
+  status: PARTIAL
+  score: 0.6404
+  confidence: MEDIUM
+  flag: needs_review

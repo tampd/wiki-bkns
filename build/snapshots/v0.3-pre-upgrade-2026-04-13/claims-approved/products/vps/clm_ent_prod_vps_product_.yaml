@@ -1,0 +1,21 @@
+claim_id: CLM-ENT-PROD-VPS-PRODUCT_
+entity_id: ENT-PROD-VPS-SIEU-RE
+entity_type: product
+entity_name: Storage VPS
+attribute: product_alias
+value: server
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-VPS_SIEU_RE_WEB_2026_04_05
+- SRC-STORAGE_VPS_MAY_CHU_AO_LUU_TRU_DUNG_LUONG_CAO_2026_04_06
+observed_at: '2026-04-07T01:03:06.770967+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ mục ''Thông tin nguồn'': • Danh mục: server'
+value_changed_from: VPS MMO
+value_changed_at: '2026-04-07T01:03:06.770985+07:00'
+approved_at: '2026-04-08T13:00:14.063242+07:00'
+approved_by: admin-batch

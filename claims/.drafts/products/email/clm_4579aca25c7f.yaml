@@ -1,0 +1,16 @@
+claim_id: CLM-4579ACA25C7F
+entity_id: ENT-PROD-EMAIL.hosting.email1
+entity_type: product_plan
+entity_name: EMAIL 1
+attribute: num_email_forwarders
+value: 5
+unit: emails
+qualifiers: {}
+source_ids:
+- SRC-BANG_GIA_EMAIL_2026_04_13
+observed_at: '2026-04-13T21:41:46.261595+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ dòng: Email trong Forwarders: 05'

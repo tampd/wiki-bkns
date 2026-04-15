@@ -1,0 +1,25 @@
+claim_id: CLM-DF60D315226B
+entity_id: product.software.cloudlinux_os
+entity_type: product
+entity_name: Bản Quyền CloudLinux OS
+attribute: deployment_option
+value: Có thể được cài đặt trên các máy chủ hiện tại.
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-BAN_QUYEN_CLOUDLINUX_OS_TANG_ON_INH_VA_BAO_MAT_CHO_SHARED_2026_04_13
+- SRC-BAN_QUYEN_CLOUDLINUX_OS_TANG_ON_INH_VA_BAO_MAT_CHO_SHARED_2026_04_05
+observed_at: '2026-04-14T11:59:30.191204+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Quy trình đăng ký / Triển khai / Kích hoạt: ''CloudLinux
+  có thể được cài đặt trên các máy chủ hiện tại.'''
+value_changed_from: Có thể được cài đặt trên các máy chủ hiện tại
+value_changed_at: '2026-04-14T11:59:30.191259+07:00'
+dual_vote:
+  status: DISAGREE
+  score: 0.0371
+  confidence: LOW
+  flag: human_review_required

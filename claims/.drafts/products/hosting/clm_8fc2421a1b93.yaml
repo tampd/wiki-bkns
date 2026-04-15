@@ -1,0 +1,22 @@
+claim_id: CLM-8FC2421A1B93
+entity_id: product.hosting.reseller_cpanel.rl02
+entity_type: product_plan
+entity_name: RL02
+attribute: price
+value: 8322000
+unit: VND
+qualifiers:
+  billing_cycle: year
+source_ids:
+- SRC-RESELLER_HOSTING_CPANEL_QUAN_LY_NHIEU_HOSTING_CHI_VOI_MOT_T_2026_04_05
+observed_at: '2026-04-14T12:31:17.453262+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ bảng giá: | Giá | 8.322.000đ/Năm |'
+dual_vote:
+  status: PARTIAL
+  score: 0.6873
+  confidence: MEDIUM
+  flag: needs_review

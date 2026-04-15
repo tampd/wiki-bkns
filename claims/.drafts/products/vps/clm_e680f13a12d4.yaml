@@ -1,0 +1,17 @@
+claim_id: CLM-E680F13A12D4
+entity_id: ENT-PROD-VPS:vps_seo
+entity_type: product_service
+entity_name: VPS SEO
+attribute: target_customer
+value: Các cá nhân, doanh nghiệp vận hành website muốn cải thiện thứ hạng SEO.
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-DICH_VU_CLOUD_VPS_SEO_MAY_CHU_AO_TOI_UU_CHO_SEO_2026_04_13
+observed_at: '2026-04-13T22:18:36.345118+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tóm tắt nhanh: ''• Phù hợp với: Các cá nhân, doanh nghiệp
+  vận hành website muốn cải thiện thứ hạng SEO.'''

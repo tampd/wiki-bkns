@@ -1,0 +1,12 @@
+{
+  "ts": "2026-04-14T11:31:35.395999+07:00",
+  "skill": "test-20claims",
+  "status": "PARTIAL",
+  "flag": "needs_review",
+  "score": 0.6777,
+  "model_a": "gemini-2.5-pro",
+  "model_b": "gpt-5.4",
+  "text_a": "```json\n{\n  \"attribute\": \"promotion\",\n  \"value\": \"Miễn phí License DirectAdmin khi thuê Server\",\n  \"confidence\": 1.0,\n  \"agrees\": true,\n  \"reason\": \"Trang web chính thức của BKNS xác nhận chương trình khuyến mãi này trong mục dịch vụ Thuê Máy chủ (Dedicated Server).\"\n}\n```",
+  "text_b": "{\"attribute\":\"promotion\",\"value\":\"Khách hàng thuê Server tại BKNS được miễn phí License DirectAdmin.\",\"confidence\":0.86,\"agrees\":true,\"reason\":\"Claim matches BKNS promotional wording indicating customers renting servers receive a free DirectAdmin license.\"}",
+  "prompt_preview": "Verify the following claim about BKNS products and return JSON:\nEntity: Cloud VPS/Server tại BKNS\nAttribute: promotion\nClaimed value: Khách hàng Thuê Server tại BKNS sẽ được miễn phí License DirectAdmin.\n\nReturn JSON: {\"attribute\": \"...\", \"value\": \"...\", \"confidence\": 0.0-1.0, \"agrees\": true/false, \"reason\": \"brief explanation\"}"
+}

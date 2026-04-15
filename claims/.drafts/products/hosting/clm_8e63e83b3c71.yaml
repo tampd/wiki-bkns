@@ -1,0 +1,25 @@
+claim_id: CLM-8E63E83B3C71
+entity_id: product.hosting.reseller_cpanel
+entity_type: product
+entity_name: Reseller Hosting cPanel
+attribute: backup_policy
+value: sao lưu mỗi ngày và lưu trữ 30 bản gần nhất
+unit: null
+qualifiers: null
+source_ids:
+- SRC-RESELLER_HOSTING_CPANEL_QUAN_LY_NHIEU_HOSTING_CHI_VOI_MOT_T_2026_04_05
+- SRC-RESELLER_HOSTING_CPANEL_QUAN_LY_NHIEU_HOSTING_CHI_VOI_MOT_T_2026_04_13
+observed_at: '2026-04-14T12:32:38.664344+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: medium
+compiler_note: 'Trích từ mục ''Tính năng / Thành phần'': • Backup: Sử dụng Jetbackup,
+  sao lưu mỗi ngày và lưu trữ 30 bản gần nhất.'
+dual_vote:
+  status: PARTIAL
+  score: 0.6873
+  confidence: MEDIUM
+  flag: needs_review
+value_changed_from: Sao lưu mỗi ngày, lưu trữ 30 bản gần nhất
+value_changed_at: '2026-04-14T12:32:38.664373+07:00'

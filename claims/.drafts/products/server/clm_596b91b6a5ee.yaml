@@ -1,0 +1,23 @@
+claim_id: CLM-596B91B6A5EE
+entity_id: product.dedicated_server
+entity_type: product
+entity_name: Cho thuê máy chủ vật lý (Dedicated Server)
+attribute: service_description
+value: Trang này là hệ thống tập hợp toàn bộ các sản phẩm máy chủ trong hệ sinh thái
+  cho thuê của BKNS. Các gói dịch vụ được thiết kế với cấu hình đa dạng, mức giá linh
+  hoạt, nhằm phù hợp với nhiều mục đích sử dụng khác nhau của khách hàng.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DANH_SACH_GOI_SAN_PHAM_MAY_CHU_BKNS_2026_04_05
+observed_at: '2026-04-14T17:13:15.584318+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: Trích từ phần 'Mô tả dịch vụ'.
+dual_vote:
+  status: DISAGREE
+  score: 0.5083
+  confidence: LOW
+  flag: human_review_required

@@ -1,0 +1,21 @@
+claim_id: CLM-FEFDC3F9427A
+entity_id: product.vps.storage_4
+entity_type: product_plan
+entity_name: STORAGE VPS 4
+attribute: storage_hdd
+value: 400
+unit: GB
+qualifiers: null
+source_ids:
+- SRC-STORAGE_VPS_MAY_CHU_AO_LUU_TRU_DUNG_LUONG_CAO_2026_04_05
+observed_at: '2026-04-14T16:14:49.927422+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng giá: | STORAGE VPS 4 | ... | 400 GB |'
+dual_vote:
+  status: DISAGREE
+  score: 0.5676
+  confidence: LOW
+  flag: human_review_required

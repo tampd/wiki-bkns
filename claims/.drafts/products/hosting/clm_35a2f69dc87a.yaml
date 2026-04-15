@@ -1,0 +1,23 @@
+claim_id: CLM-35A2F69DC87A
+entity_id: product.hosting.gia_re
+entity_type: product
+entity_name: Hosting Giá Rẻ
+attribute: has_feature
+value: true
+unit: null
+qualifiers:
+  feature_name: Redis
+source_ids:
+- SRC-HOSTING_GIA_RE_BANG_GIA_VA_THONG_SO_KY_THUAT_TAI_BKNS_2026_04_13
+observed_at: '2026-04-14T12:13:27.201614+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tính năng / Thành phần: • Tiện ích đi kèm: Hỗ trợ Jetbackup,
+  OneClick, Redis.'
+dual_vote:
+  status: DISAGREE
+  score: 0.5341
+  confidence: LOW
+  flag: human_review_required

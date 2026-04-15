@@ -1,0 +1,17 @@
+claim_id: CLM-B0688A57084A
+entity_id: product.hosting.seo
+entity_type: product_line
+entity_name: Hosting SEO
+attribute: trial_period
+value: 7
+unit: day
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_HOSTING_SEO_TOI_UU_WEBSITE_CHO_CONG_CU_TIM_KIEM_2026_04_13
+observed_at: '2026-04-13T22:22:22.949283+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục ''Chính sách / Điều khoản / Lưu ý'': ''Tất cả các gói
+  Hosting SEO đều được áp dụng chính sách cho phép dùng thử dịch vụ trong vòng 7 ngày.'''

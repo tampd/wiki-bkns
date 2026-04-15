@@ -1,0 +1,24 @@
+claim_id: CLM-80869A9DED3C
+entity_id: product.software.softaculous
+entity_type: product
+entity_name: Bản quyền Softaculous
+attribute: compatibility
+value: H-Sphere
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-BAN_QUYEN_SOFTACULOUS_TRINH_CAI_AT_UNG_DUNG_TU_ONG_2026_04_05
+observed_at: '2026-04-14T17:18:51.551223+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tính năng / Thành phần: ''Tương thích đa dạng: Hoạt động
+  trên nhiều control panel như cPanel, Plesk, DirectAdmin, InterWorx, H-Sphere.'''
+dual_vote:
+  status: PARTIAL
+  score: 0.6786
+  confidence: MEDIUM
+  flag: needs_review
+value_changed_from: InterWorx
+value_changed_at: '2026-04-14T17:18:51.551253+07:00'

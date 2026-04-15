@@ -1,0 +1,22 @@
+claim_id: CLM-93BA5D77BDA5
+entity_id: ENT-PROD-SSL.rapidssl
+entity_type: product
+entity_name: RapidSSL Certificate
+attribute: server_license
+value: unlimited
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-RAPIDSSL_CERTIFICATE_CHUNG_CHI_SSL_XAC_THUC_TEN_MIEN_DV_2026_04_05
+observed_at: '2026-04-14T16:57:24.772332+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: '• Giấy phép máy chủ: Không giới hạn số lượng server có thể cài đặt
+  chứng chỉ.'
+dual_vote:
+  status: DISAGREE
+  score: 0.3892
+  confidence: LOW
+  flag: human_review_required

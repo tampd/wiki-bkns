@@ -2,6 +2,7 @@
 
 const path = require('path');
 const fs = require('fs');
+const yaml = require('js-yaml');
 
 const WIKI_DIR = path.resolve(__dirname, '../../wiki/products');
 const BACKUP_DIR = path.resolve(__dirname, '../../wiki/.drafts/backups');
@@ -64,13 +65,18 @@ function parseFrontmatter(content) {
   const match = content.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/);
   if (!match) return { frontmatter: {}, body: content };
 
-  const fm = {};
-  for (const line of match[1].split('\n')) {
-    const sep = line.indexOf(':');
-    if (sep === -1) continue;
-    const key = line.slice(0, sep).trim();
-    const val = line.slice(sep + 1).trim().replace(/^['"]|['"]$/g, '');
-    fm[key] = val;
+  let fm = {};
+  try {
+    fm = yaml.load(match[1]) || {};
+  } catch (e) {
+    // Fallback: simple key: value parsing if YAML fails
+    for (const line of match[1].split('\n')) {
+      const sep = line.indexOf(':');
+      if (sep === -1) continue;
+      const key = line.slice(0, sep).trim();
+      const val = line.slice(sep + 1).trim().replace(/^['"]|['"]$/g, '');
+      fm[key] = val;
+    }
   }
   return { frontmatter: fm, body: match[2] };
 }
@@ -184,9 +190,22 @@ function computeCategoryHealth(category) {
     ? Math.floor((Date.now() - latestMtime.getTime()) / 86400000)
     : null;
 
-  // Lint status (global report — not per-category)
+  // Lint status — filter by category and by type:"error" only
   const lintReport = loadLatestJson(LINT_DIR);
-  const lintErrors = lintReport ? (lintReport.syntax_issues || 0) + (lintReport.semantic_issues || 0) : null;
+  const catPrefix = category + '/';
+  const lintErrors = lintReport
+    ? (lintReport.syntax || []).filter(i =>
+        i.type === 'error' && (!i.file || i.file.startsWith(catPrefix))
+      ).length
+      + (lintReport.semantic || []).filter(i =>
+        i.type === 'error' && (!i.file || i.file.startsWith(catPrefix))
+      ).length
+    : null;
+  // Global warnings (orphan_file etc. — shown as info only, don't affect health status)
+  const lintWarnings = lintReport
+    ? (lintReport.syntax || []).filter(i => i.type !== 'error').length
+      + (lintReport.semantic || []).filter(i => i.type !== 'error').length
+    : null;
   const lintDate = lintReport ? (lintReport.ts || null) : null;
 
   // Verify report
@@ -220,6 +239,7 @@ function computeCategoryHealth(category) {
     verify_date: verifyDate,
     verify_issues: verifyIssues,
     lint_errors: lintErrors,
+    lint_warnings: lintWarnings,
     lint_date: lintDate,
     health_status: healthStatus,
   };
@@ -230,9 +250,10 @@ function computeCategoryHealth(category) {
 // ============================================================
 let searchIndex = [];
 let indexBuiltAt = null;
+let indexBuildInFlight = null;
 
-function buildSearchIndex() {
-  searchIndex = [];
+function buildSearchIndexSync() {
+  const next = [];
   const categories = getCategories();
 
   for (const cat of categories) {
@@ -246,7 +267,7 @@ function buildSearchIndex() {
         const { frontmatter, body } = parseFrontmatter(content);
         const pageName = file.replace(/\.md$/, '');
 
-        searchIndex.push({
+        next.push({
           category: cat,
           categoryLabel: CATEGORY_LABELS[cat] || cat,
           page: pageName,
@@ -259,12 +280,36 @@ function buildSearchIndex() {
     }
   }
 
+  // Atomic swap — stale readers never see a half-built index
+  searchIndex = next;
   indexBuiltAt = new Date().toISOString();
   console.log(`[SEARCH] Index built: ${searchIndex.length} pages indexed at ${indexBuiltAt}`);
 }
 
+function buildSearchIndex() {
+  // Coalesce concurrent rebuilds: if one is already running, return that promise
+  if (indexBuildInFlight) return indexBuildInFlight;
+  indexBuildInFlight = new Promise((resolve) => {
+    setImmediate(() => {
+      try { buildSearchIndexSync(); } catch (e) { console.error('[SEARCH] build error:', e); }
+      indexBuildInFlight = null;
+      resolve();
+    });
+  });
+  return indexBuildInFlight;
+}
+
 function searchWiki(query, limit = 20) {
-  if (!searchIndex.length) buildSearchIndex();
+  // Auto-rebuild index if stale (> 5 minutes) or empty.
+  // Stale reads return previous index instantly while rebuild runs in background.
+  const STALE_MS = 5 * 60 * 1000;
+  const indexAge = indexBuiltAt ? Date.now() - new Date(indexBuiltAt).getTime() : Infinity;
+  if (!searchIndex.length) {
+    // First build must be synchronous — no prior data to serve
+    buildSearchIndexSync();
+  } else if (indexAge > STALE_MS) {
+    buildSearchIndex();
+  }
 
   const terms = query.toLowerCase().split(/\s+/).filter(Boolean);
   if (!terms.length) return [];
@@ -340,6 +385,171 @@ function wikiRoute(router) {
     } catch (err) {
       console.error('[WIKI HEALTH] Error:', err);
       res.status(500).json({ error: 'Failed to compute health' });
+    }
+  });
+
+  // ----------------------------------------------------------
+  // GET /api/wiki/integrity — Data Integrity Checker
+  // ----------------------------------------------------------
+  router.get('/api/wiki/integrity', (req, res) => {
+    try {
+      const categories = getCategories();
+      const issues = [];
+      const titleMap = new Map(); // title → [{category, page}]
+      const allPages = new Set(); // "category/page" format
+      const REQUIRED_PAGES = ['tong-quan', 'bang-gia'];
+      const SHORT_BODY_THRESHOLD = 100; // characters
+      const STALE_DAYS = 30;
+
+      for (const cat of categories) {
+        const catDir = path.join(WIKI_DIR, cat);
+        const files = listMdFiles(catDir);
+
+        // Check missing required pages
+        for (const reqPage of REQUIRED_PAGES) {
+          if (!files.includes(reqPage + '.md')) {
+            issues.push({
+              severity: 'warning',
+              type: 'missing_required_page',
+              category: cat,
+              page: reqPage,
+              message: `Thiếu trang bắt buộc: ${PAGE_LABELS[reqPage] || reqPage}`,
+            });
+          }
+        }
+
+        for (const file of files) {
+          const pageName = file.replace(/\.md$/, '');
+          const filePath = path.join(catDir, file);
+          const pageKey = `${cat}/${pageName}`;
+          allPages.add(pageKey);
+
+          let content, stat;
+          try {
+            content = fs.readFileSync(filePath, 'utf8');
+            stat = fs.statSync(filePath);
+          } catch { continue; }
+
+          const { frontmatter, body } = parseFrontmatter(content);
+
+          // Missing frontmatter
+          if (!content.startsWith('---\n')) {
+            issues.push({
+              severity: 'error',
+              type: 'missing_frontmatter',
+              category: cat,
+              page: pageName,
+              message: 'Không có frontmatter YAML',
+            });
+          }
+
+          // Missing title
+          if (!frontmatter.title) {
+            issues.push({
+              severity: 'error',
+              type: 'missing_title',
+              category: cat,
+              page: pageName,
+              message: 'Thiếu tiêu đề (title) trong frontmatter',
+            });
+          }
+
+          // Empty body
+          const trimmedBody = body.trim();
+          if (!trimmedBody) {
+            issues.push({
+              severity: 'error',
+              type: 'empty_body',
+              category: cat,
+              page: pageName,
+              message: 'Nội dung trang trống',
+            });
+          } else if (trimmedBody.length < SHORT_BODY_THRESHOLD) {
+            issues.push({
+              severity: 'warning',
+              type: 'short_content',
+              category: cat,
+              page: pageName,
+              message: `Nội dung quá ngắn (${trimmedBody.length} ký tự)`,
+            });
+          }
+
+          // Duplicate title detection
+          if (frontmatter.title) {
+            const titleKey = frontmatter.title.toLowerCase().trim();
+            if (!titleMap.has(titleKey)) titleMap.set(titleKey, []);
+            titleMap.get(titleKey).push({ category: cat, page: pageName });
+          }
+
+          // Stale content
+          const daysSince = Math.floor((Date.now() - stat.mtime.getTime()) / 86400000);
+          if (daysSince > STALE_DAYS) {
+            issues.push({
+              severity: 'info',
+              type: 'stale_content',
+              category: cat,
+              page: pageName,
+              message: `Chưa cập nhật ${daysSince} ngày`,
+              days: daysSince,
+            });
+          }
+
+          // Broken internal links: [[category/page]] or [text](category/page)
+          const linkPattern = /\[\[([^\]]+)\]\]|\[([^\]]*)\]\((?!https?:\/\/)([^)]+)\)/g;
+          let linkMatch;
+          while ((linkMatch = linkPattern.exec(body)) !== null) {
+            const target = (linkMatch[1] || linkMatch[3] || '').replace(/\.md$/, '').trim();
+            if (target && !target.startsWith('#') && !target.startsWith('http')) {
+              // Check if target page exists
+              const targetPath = target.includes('/')
+                ? path.join(WIKI_DIR, target + '.md')
+                : path.join(catDir, target + '.md');
+              if (!fs.existsSync(targetPath)) {
+                issues.push({
+                  severity: 'warning',
+                  type: 'broken_link',
+                  category: cat,
+                  page: pageName,
+                  message: `Link hỏng: ${target}`,
+                  target,
+                });
+              }
+            }
+          }
+        }
+      }
+
+      // Duplicate titles across pages
+      for (const [title, pages] of titleMap) {
+        if (pages.length > 1) {
+          issues.push({
+            severity: 'warning',
+            type: 'duplicate_title',
+            category: pages.map(p => p.category).join(', '),
+            page: pages.map(p => `${p.category}/${p.page}`).join(', '),
+            message: `Tiêu đề trùng lặp: "${title}" (${pages.length} trang)`,
+            duplicates: pages,
+          });
+        }
+      }
+
+      // Sort: errors first, then warnings, then info
+      const severityOrder = { error: 0, warning: 1, info: 2 };
+      issues.sort((a, b) => (severityOrder[a.severity] || 3) - (severityOrder[b.severity] || 3));
+
+      const summary = {
+        total: issues.length,
+        errors: issues.filter(i => i.severity === 'error').length,
+        warnings: issues.filter(i => i.severity === 'warning').length,
+        info: issues.filter(i => i.severity === 'info').length,
+        total_pages: allPages.size,
+        total_categories: categories.length,
+      };
+
+      res.json({ summary, issues, checked_at: new Date().toISOString() });
+    } catch (err) {
+      console.error('[WIKI INTEGRITY] Error:', err);
+      res.status(500).json({ error: 'Integrity check failed' });
     }
   });
 
@@ -759,12 +969,63 @@ _Nội dung trang wiki ở đây._
     }
   });
 
+  // NOTE: POST /api/upload/image is handled directly in server.js via multer.
+  // No route stub needed here — it was removed to prevent silent request hangs.
+
   // ----------------------------------------------------------
-  // POST /api/upload/image — Image upload for editor
+  // POST /api/wiki/:category/:page/restore
   // ----------------------------------------------------------
-  router.post('/api/upload/image', (req, res) => {
-    // This is handled via multer in server.js
-    // Placeholder for route registration
+  router.post('/api/wiki/:category/:page/restore', (req, res) => {
+    try {
+      const { category, page } = req.params;
+      const { filename } = req.body;
+      if (!isValidName(category)) return res.status(400).json({ error: 'Invalid category' });
+      if (!filename || typeof filename !== 'string') return res.status(400).json({ error: 'Filename required' });
+
+      // Security: only allow .md files from BACKUP_DIR
+      const safeName = path.basename(filename);
+      if (!safeName.endsWith('.md')) return res.status(400).json({ error: 'Invalid backup file' });
+
+      const backupPath = path.join(BACKUP_DIR, safeName);
+      if (!fs.existsSync(backupPath)) return res.status(404).json({ error: 'Backup không tồn tại' });
+
+      const pagePath = page.replace(/__/g, '/');
+      const filepath = path.join(WIKI_DIR, category, pagePath + '.md');
+
+      // Backup current version first
+      if (fs.existsSync(filepath)) {
+        fs.mkdirSync(BACKUP_DIR, { recursive: true });
+        const ts = new Date().toISOString().replace(/[:.]/g, '-').slice(0, 19);
+        const preName = `${category}--${pagePath.replace(/\//g, '--')}--${ts}-pre-restore.md`;
+        fs.copyFileSync(filepath, path.join(BACKUP_DIR, preName));
+      }
+
+      // Restore
+      const backupContent = fs.readFileSync(backupPath, 'utf8');
+      fs.mkdirSync(path.dirname(filepath), { recursive: true });
+      fs.writeFileSync(filepath, backupContent, 'utf8');
+
+      // Audit log
+      const logEntry = JSON.stringify({
+        action: 'wiki_restore',
+        category,
+        page: pagePath,
+        backup_file: safeName,
+        restored_at: new Date().toISOString(),
+        editor: 'admin',
+      });
+      fs.mkdirSync(path.dirname(LOG_FILE), { recursive: true });
+      fs.appendFileSync(LOG_FILE, logEntry + '\n');
+
+      // Rebuild search index
+      setTimeout(() => buildSearchIndex(), 500);
+
+      console.log(`[WIKI] Restored ${category}/${pagePath} from ${safeName}`);
+      res.json({ ok: true, message: `Đã khôi phục từ ${safeName}` });
+    } catch (err) {
+      console.error('[WIKI RESTORE] Error:', err);
+      res.status(500).json({ error: 'Restore thất bại' });
+    }
   });
 }
 

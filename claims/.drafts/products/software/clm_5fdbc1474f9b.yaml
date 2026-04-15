@@ -1,0 +1,22 @@
+claim_id: CLM-5FDBC1474F9B
+entity_id: product.software.cpanel_whm_license
+entity_type: product
+entity_name: Bản quyền cPanel/WHM
+attribute: related_product_url
+value: https://www.bkns.vn/phan-mem/directadmin.html
+unit: null
+qualifiers:
+  product_name: DirectAdmin
+source_ids:
+- SRC-BAN_QUYEN_CPANEL_WHM_2026_04_05
+observed_at: '2026-04-14T17:17:27.666596+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ mục ''Liên kết liên quan'': • [DirectAdmin](https://www.bkns.vn/phan-mem/directadmin.html)'
+dual_vote:
+  status: DISAGREE
+  score: 0.1008
+  confidence: LOW
+  flag: human_review_required

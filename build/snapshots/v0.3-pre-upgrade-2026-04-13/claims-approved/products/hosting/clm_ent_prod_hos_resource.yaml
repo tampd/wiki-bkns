@@ -1,0 +1,21 @@
+claim_id: CLM-ENT-PROD-HOS-RESOURCE
+entity_id: ENT-PROD-HOSTING
+entity_type: product_category
+entity_name: Hosting
+attribute: resource_allocation
+value: Được chia sẻ từ 1 máy chủ
+unit: null
+qualifiers: null
+source_ids:
+- SRC-TRAINING_DICH_VU_VPS_2026_04_04
+- SRC-TRAINING_DICH_VU_VPS_2026_04_06
+observed_at: '2026-04-07T01:05:15.835913+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ bảng so sánh ở mục 3: ''Được chia sẻ từ 1 máy chủ'''
+value_changed_from: shared
+value_changed_at: '2026-04-07T01:05:15.835932+07:00'
+approved_at: '2026-04-08T13:00:10.819052+07:00'
+approved_by: admin-batch

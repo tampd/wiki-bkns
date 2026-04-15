@@ -1,0 +1,19 @@
+claim_id: CLM-72CFAA7443E8
+entity_id: product.server.dedicated
+entity_type: product_service
+entity_name: Cho thuê máy chủ vật lý BKNS
+attribute: target_audience
+value: Khách hàng có nhu cầu thuê máy chủ vật lý với các cấu hình và mục đích sử dụng
+  đa dạng như làm web server, máy chủ game, lưu trữ, MMO...
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DANH_SACH_GOI_SAN_PHAM_MAY_CHU_BKNS_2026_04_13
+observed_at: '2026-04-13T22:11:57.427684+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: ''Phù hợp với: Khách hàng có nhu cầu thuê
+  máy chủ vật lý với các cấu hình và mục đích sử dụng đa dạng như làm web server,
+  máy chủ game, lưu trữ, MMO...'''

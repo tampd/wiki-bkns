@@ -1,0 +1,22 @@
+claim_id: CLM-124D4C01B15F
+entity_id: product.software.softaculous
+entity_type: product
+entity_name: Bản quyền Softaculous
+attribute: requirement
+value: Cần có máy chủ hoặc VPS đã cài đặt một trong các control panel được hỗ trợ.
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-BAN_QUYEN_SOFTACULOUS_TRINH_CAI_AT_UNG_DUNG_TU_ONG_2026_04_05
+observed_at: '2026-04-14T17:18:51.465960+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tóm tắt nhanh: ''Điều kiện/giới hạn nổi bật (nếu có):
+  Cần có máy chủ hoặc VPS đã cài đặt một trong các control panel được hỗ trợ.'''
+dual_vote:
+  status: PARTIAL
+  score: 0.6786
+  confidence: MEDIUM
+  flag: needs_review

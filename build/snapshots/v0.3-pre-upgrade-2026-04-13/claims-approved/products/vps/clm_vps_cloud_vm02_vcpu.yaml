@@ -1,0 +1,19 @@
+claim_id: CLM-VPS-CLOUD-VM02-VCPU
+entity_id: product.vps.cloud-vm02
+entity_type: product_plan
+entity_name: CLOUD-VM02
+attribute: vcpu
+value: 2
+unit: Core
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_THUE_CLOUD_VPS_SSD_GIA_RE_TAI_BKNS_2026_04_04
+observed_at: '2026-04-04T20:53:17.334131+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ Bảng giá dịch vụ Cloud VPS SSD: ''| CLOUD-VM02 | ... | 02
+  Core |'''
+approved_at: '2026-04-08T13:00:14.927459+07:00'
+approved_by: admin-batch

@@ -2,27 +2,31 @@
 page_id: wiki.products.ssl.so-sanh
 title: Chứng Chỉ SSL BKNS — So Sánh
 category: products/ssl
-updated: '2026-04-07'
-review_state: approved
-claims_used: 1
-compile_cost_usd: 0.0023
+updated: '2026-04-14'
+review_state: drafted
+claims_used: 3
+compile_cost_usd: 0.0037
 self_review: skipped
 corrections: 0
-approved_at: '2026-04-07T13:16:30.181913+07:00'
 ---
 
 # Chứng Chỉ SSL BKNS — So Sánh
 
-Trang này cung cấp thông tin so sánh chi tiết giữa các gói chứng chỉ SSL do BKNS cung cấp, giúp khách hàng dễ dàng lựa chọn sản phẩm phù hợp nhất với nhu cầu.
+Trang này cung cấp thông tin so sánh giữa các sản phẩm và gói dịch vụ Chứng Chỉ SSL do BKNS cung cấp, giúp khách hàng lựa chọn giải pháp phù hợp nhất. Do dữ liệu đang trong quá trình tổng hợp, bảng dưới đây hiện chỉ hiển thị các sản phẩm đã có thông tin.
 
-## Bảng So Sánh Tính Năng và Báo Giá
+## Bảng so sánh chi tiết
 
-Hiện tại, dữ liệu chi tiết để so sánh các gói SSL đang được thu thập và cập nhật. Vui lòng quay lại sau.
+| Sản phẩm | Giá tại BKNS (theo năm) | Giá tham khảo từ nhà cung cấp (theo năm) |
+| :--- | :--- | :--- |
+| GeoTrust True BusinessID with EV Multi-Domain | 9.134.000 VND | 15.071.680 VND |
+| Các sản phẩm khác | Đang cập nhật | Đang cập nhật |
 
-### Xem thêm
+*Lưu ý: Bảng giá và thông tin sẽ được cập nhật liên tục khi có thêm dữ liệu được duyệt.*
+
+## Sản phẩm liên quan
 
 - [Web Hosting BKNS](../hosting/index.md)
 - [Cloud VPS BKNS](../vps/index.md)
 - [Tên Miền BKNS](../ten-mien/index.md)
 
-Compiled by BKNS Wiki Bot • 2026-04-07
+Compiled by BKNS Wiki Bot • 2026-04-14

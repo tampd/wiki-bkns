@@ -1,0 +1,18 @@
+claim_id: CLM-9A5D660C00EA
+entity_id: ENT-PROD-EMAIL-RELAY
+entity_type: product
+entity_name: Email Relay
+attribute: server_location
+value: Server của khách hàng đặt tại công ty hoặc nơi khác.
+unit: null
+qualifiers:
+  comparison_with: Email Server
+source_ids:
+- SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_VA_TIN_CAY_2026_04_13
+observed_at: '2026-04-13T22:35:10.273435+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng so sánh Email Relay và Email Server: | Vị trí Server
+  | EMAIL RELAY | Server của khách hàng đặt tại công ty hoặc nơi khác. |'

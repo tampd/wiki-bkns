@@ -1,0 +1,22 @@
+claim_id: CLM-E77646A16B49
+entity_id: ENT-PROD-HOSTING.platinum_web_hosting
+entity_type: product
+entity_name: Platinum Web Hosting
+attribute: feature_security_software
+value: Imunify360
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-PLATINUM_WEB_HOSTING_HOSTING_NVME_TOC_O_CAO_BACKUP_3_LAN_2026_04_05
+observed_at: '2026-04-14T12:28:23.640927+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tính năng / Thành phần: Tích hợp phần mềm bảo mật Imunify360
+  giúp ngăn chặn mã độc và các cuộc tấn công.'
+dual_vote:
+  status: DISAGREE
+  score: 0.5159
+  confidence: LOW
+  flag: human_review_required

@@ -1,0 +1,28 @@
+claim_id: CLM-043D4CB49674
+entity_id: product.email.cloud_email_server
+entity_type: product
+entity_name: Cloud Email Server
+attribute: service_description
+value: Dịch vụ Cloud Email Server là giải pháp cung cấp một hệ thống máy chủ email
+  riêng hoạt động trên nền tảng điện toán đám mây, dành cho các tổ chức và doanh nghiệp.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_13
+- SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_05
+observed_at: '2026-04-14T17:04:23.392976+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tóm tắt nhanh: ''Dịch vụ này là gì: Dịch vụ Cloud Email
+  Server là giải pháp cung cấp một hệ thống máy chủ email riêng hoạt động trên nền
+  tảng điện toán đám mây, dành cho các tổ chức và doanh nghiệp.'''
+value_changed_from: Giải pháp cung cấp một hệ thống máy chủ email riêng hoạt động
+  trên nền tảng điện toán đám mây, dành cho các tổ chức và doanh nghiệp.
+value_changed_at: '2026-04-14T17:04:23.393019+07:00'
+dual_vote:
+  status: DISAGREE
+  score: 0.3931
+  confidence: LOW
+  flag: human_review_required

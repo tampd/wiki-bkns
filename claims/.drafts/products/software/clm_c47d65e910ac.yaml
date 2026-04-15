@@ -1,0 +1,16 @@
+claim_id: CLM-C47D65E910AC
+entity_id: product.software.cpanel_whm
+entity_type: product
+entity_name: Bản quyền cPanel/WHM
+attribute: product.name
+value: Bản quyền cPanel/WHM
+unit: null
+qualifiers: null
+source_ids:
+- SRC-BAN_QUYEN_CPANEL_WHM_2026_04_13
+observed_at: '2026-04-13T21:32:58.199485+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ tiêu đề trang: ═══ Bản quyền cPanel/WHM'

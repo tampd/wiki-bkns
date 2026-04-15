@@ -7,24 +7,10 @@ from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
 from lib.config import LOGS_DIR, LOGS_ERRORS_DIR
+from lib.utils import now_iso as _now_iso, today_str as _today_str, ensure_dir as _ensure_dir
 
 # Vietnam timezone
 VN_TZ = timezone(timedelta(hours=7))
-
-
-def _now_iso() -> str:
-    """Current time in ISO format with Vietnam timezone."""
-    return datetime.now(VN_TZ).isoformat()
-
-
-def _today_str() -> str:
-    """Today's date as YYYY-MM-DD string."""
-    return datetime.now(VN_TZ).strftime("%Y-%m-%d")
-
-
-def _ensure_dir(path: Path):
-    """Create directory if it doesn't exist."""
-    path.mkdir(parents=True, exist_ok=True)
 
 
 def log_entry(
@@ -33,7 +19,7 @@ def log_entry(
     detail: str = "",
     cost_usd: float = 0.0,
     severity: str = "info",
-    extra: dict = None,
+    extra: dict | None = None,
 ) -> dict:
     """Create and write a structured log entry.
 
@@ -79,7 +65,7 @@ def log_intake(
     source_url: str,
     raw_file: str,
     word_count: int = 0,
-    extra: dict = None,
+    extra: dict | None = None,
 ) -> dict:
     """Log an intake (crawl/ingest) event."""
     from lib.config import LOGS_INTAKE_DIR
@@ -142,11 +128,40 @@ def log_query(
     return entry
 
 
+def log_gemini_call(
+    skill: str,
+    model: str,
+    input_tokens: int,
+    cached_tokens: int,
+    output_tokens: int,
+    cost_usd: float,
+    elapsed_ms: int,
+    action: str = "llm_call",
+) -> None:
+    """Log Gemini API call to monthly JSONL file for cost tracking."""
+    entry = {
+        "ts": _now_iso(),
+        "skill": skill,
+        "action": action,
+        "model": model,
+        "input_tokens": input_tokens,
+        "cached_tokens": cached_tokens,
+        "output_tokens": output_tokens,
+        "cost_usd": cost_usd,
+        "elapsed_ms": elapsed_ms,
+    }
+    month_str = datetime.now(VN_TZ).strftime("%Y-%m")
+    log_file = LOGS_DIR / f"gemini-calls-{month_str}.jsonl"
+    _ensure_dir(log_file.parent)
+    with open(log_file, "a", encoding="utf-8") as f:
+        f.write(json.dumps(entry, ensure_ascii=False) + "\n")
+
+
 def log_approval(
     filename: str,
     approved_by: str,
     build_id: str = "",
-    extra: dict = None,
+    extra: dict | None = None,
 ) -> dict:
     """Log an approval event."""
     _ensure_dir(LOGS_DIR)

@@ -1,0 +1,17 @@
+claim_id: CLM-1D232FFFAC68
+entity_id: ENT-PROD-EMAIL.hosting.email1
+entity_type: product_plan
+entity_name: EMAIL 1
+attribute: storage
+value: 5
+unit: GB
+qualifiers:
+  scope: per_email
+source_ids:
+- SRC-BANG_GIA_EMAIL_2026_04_13
+observed_at: '2026-04-13T21:41:46.263894+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ dòng: Dung lượng: 5GB/ email'

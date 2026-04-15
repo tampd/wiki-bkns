@@ -1,0 +1,21 @@
+claim_id: CLM-93DDD148A058
+entity_id: ssl.comodo.positive_multi_domain_dv
+entity_type: product_plan
+entity_name: PositiveSSL Multi-Domain (DV)
+attribute: issuance_time
+value: 5
+unit: minutes
+qualifiers: {}
+source_ids:
+- SRC-POSITIVESSL_MULTI_DOMAIN_DV_CHUNG_CHI_SSL_CHO_NHIEU_TEN_M_2026_04_05
+observed_at: '2026-04-14T16:55:18.673782+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Thông số kỹ thuật: | Thời gian phát hành | 5 phút |'
+dual_vote:
+  status: DISAGREE
+  score: 0.2523
+  confidence: LOW
+  flag: human_review_required

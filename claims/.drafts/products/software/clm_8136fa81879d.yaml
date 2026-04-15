@@ -1,0 +1,17 @@
+claim_id: CLM-8136FA81879D
+entity_id: ENT-PROD-SOFTWARE-VBULLETIN-MOBILE-NEW
+entity_type: product_plan
+entity_name: vBulletin 5 Connect + Mobile Suite Bundle
+attribute: license_term
+value: Lifetime
+unit: null
+qualifiers: null
+source_ids:
+- SRC-BAN_QUYEN_VBULLETIN_HE_QUAN_TRI_FORUM_MANG_XA_HOI_2026_04_13
+observed_at: '2026-04-13T21:35:38.803497+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng giá: | vBulletin 5 Connect + Mobile Suite Bundle | ...
+  | ... Phiên bản Lifetime. |'

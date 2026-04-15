@@ -1,0 +1,22 @@
+claim_id: CLM-F85A3E9B9CA2
+entity_id: ENT-PROD-SSL-COMODO-WILDCARD-DV
+entity_type: product_plan
+entity_name: Comodo SSL Wildcard Certificate (DV)
+attribute: feature
+value: Bảo mật cho 1 tên miền chính và không giới hạn tên miền phụ
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-COMODO_SSL_WILDCARD_CERTIFICATE_DV_CHUNG_CHI_SSL_2026_04_05
+observed_at: '2026-04-14T16:27:17.959106+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục tính năng: Bảo vệ tên miền và tên miền phụ: Bảo mật cho
+  1 tên miền chính và không giới hạn tên miền phụ (subdomains).'
+dual_vote:
+  status: DISAGREE
+  score: 0.3687
+  confidence: LOW
+  flag: human_review_required

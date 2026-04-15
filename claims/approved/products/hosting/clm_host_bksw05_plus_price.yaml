@@ -10,13 +10,14 @@ qualifiers:
   discount: 26%
   note: chưa VAT
 source_ids:
-- SRC-WINDOWS_HOSTING_WEB_2026_04_05
+  - SRC-WINDOWS_HOSTING_WEB_2026_04_05
 observed_at: '2026-04-05T22:25:30.907174+07:00'
 valid_from: '2026-04-05'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: high
-compiler_note: 'Trích từ Bảng giá gói BKSW05+: ''| Giá 3 năm (giảm 26%) | 10.389.600đ
-  |'''
-approved_at: '2026-04-07T13:00:12.040024+07:00'
+compiler_note: 'Trích từ Bảng giá gói BKSW05+: ''| Giá 3 năm (giảm 26%) | 10.389.600đ |'''
+approved_at: '2026-04-08T13:00:11.182994+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.031Z'

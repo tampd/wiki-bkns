@@ -1,0 +1,25 @@
+claim_id: CLM-88D2F4D19352
+entity_id: ENT-PROD-DOMAIN
+entity_type: product
+entity_name: Dịch vụ Tên miền
+attribute: extraction_note
+value: Thông tin khuyến mãi cho tên miền .pro ghi "giá khuyến mại 1.115.000 giá gốc
+  135.000", trong khi bảng giá niêm yết phí đăng ký mới là 135.000đ và phí duy trì
+  là 1.115.000đ, có thể đã bị ghi ngược.
+unit: null
+qualifiers:
+  warning: data_contradiction
+source_ids:
+- SRC-DICH_VU_ANG_KY_TEN_MIEN_VIET_NAM_VA_QUOC_TE_TAI_BKNS_2026_04_13
+observed_at: '2026-04-13T22:13:15.037067+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: medium
+compiler_note: 'Trích từ phần ''Ghi chú trích xuất'': - ⚠️ MÂU THUẪN TRONG TRANG:
+  Thông tin khuyến mãi cho tên miền .pro ghi "giá khuyến mại 1.115.000 giá gốc 135.000",
+  trong khi bảng giá niêm yết phí đăng ký mới là 135.000đ và phí duy trì là 1.115.000đ,
+  có thể đã bị ghi ngược.'
+value_changed_from: Không tìm thấy mô tả chi tiết về quy trình đăng ký hoặc mục Câu
+  hỏi thường gặp (FAQ) trên trang.
+value_changed_at: '2026-04-13T22:13:15.037156+07:00'

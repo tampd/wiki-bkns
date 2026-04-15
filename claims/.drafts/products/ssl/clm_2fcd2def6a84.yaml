@@ -1,0 +1,26 @@
+claim_id: CLM-2FCD2DEF6A84
+entity_id: product.ssl.comodo_essentialssl_dv
+entity_type: product_plan
+entity_name: EssentialSSL (DV)
+attribute: description
+value: EssentialSSL là chứng chỉ mã hóa đơn giản cho website, là một trong những tùy
+  chọn hợp lý trên thị trường. Chứng chỉ này có thể được cấp trong vài phút với mã
+  hóa mạnh. Các miền được bảo vệ bởi chứng chỉ này sẽ hiển thị "https" trên URL, cùng
+  với biểu tượng ổ khóa và Dấu trang (Site Seal). Tính năng chính của chứng chỉ này
+  là tốc độ phát hành nhanh, phù hợp cho các miền thử nghiệm nội bộ và các trang web
+  thương mại điện tử nhẹ.
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-ESSENTIALSSL_DV_CHUNG_CHI_SSL_XAC_THUC_TEN_MIEN_TU_COMOD_2026_04_13
+observed_at: '2026-04-13T22:36:06.185612+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ Mô tả dịch vụ: EssentialSSL là chứng chỉ mã hóa đơn giản
+  cho website, là một trong những tùy chọn hợp lý trên thị trường. Chứng chỉ này có
+  thể được cấp trong vài phút với mã hóa mạnh. Các miền được bảo vệ bởi chứng chỉ
+  này sẽ hiển thị "https" trên URL, cùng với biểu tượng ổ khóa và Dấu trang (Site
+  Seal). Tính năng chính của chứng chỉ này là tốc độ phát hành nhanh, phù hợp cho
+  các miền thử nghiệm nội bộ và các trang web thương mại điện tử nhẹ.'

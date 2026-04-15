@@ -1,0 +1,22 @@
+claim_id: CLM-BFCCE1ECD354
+entity_id: ENT-PROD-SSL-008
+entity_type: product_plan
+entity_name: GeoTrust True BusinessID Multi-Domain Wildcard
+attribute: warranty_amount
+value: 1250000
+unit: USD
+qualifiers: {}
+source_ids:
+- SRC-GEOTRUST_TRUE_BUSINESSID_MULTI_DOMAIN_WILDCARD_2026_04_13
+observed_at: '2026-04-14T16:52:51.772876+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: medium
+compiler_note: 'Trích từ mục ''Thông số kỹ thuật / Giới hạn'': | Mức bảo hiểm | 1.250.000$
+  |'
+dual_vote:
+  status: DISAGREE
+  score: 0.3472
+  confidence: LOW
+  flag: human_review_required

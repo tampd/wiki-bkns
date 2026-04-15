@@ -1,0 +1,23 @@
+claim_id: CLM-8ADE1FBA7F1F
+entity_id: ENT-PROD-SOFTWARE-OPENLITESPEED
+entity_type: product_version
+entity_name: OpenLiteSpeed
+attribute: license_model
+value: mã nguồn mở, miễn phí
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-LITESPEED_WEB_SERVER_TINH_NANG_PHIEN_BAN_VA_SO_SANH_2026_04_05
+observed_at: '2026-04-14T12:20:31.108402+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: Điều kiện/giới hạn nổi bật (nếu có): Phiên
+  bản LiteSpeed Enterprise là phần mềm thương mại có tính phí, trong khi Apache là
+  miễn phí. Phiên bản OpenLiteSpeed là mã nguồn mở, miễn phí.'
+dual_vote:
+  status: DISAGREE
+  score: 0.0
+  confidence: LOW
+  flag: human_review_required

@@ -1,0 +1,29 @@
+claim_id: CLM-4DDA5BC35D57
+entity_id: product.hosting.seo
+entity_type: product
+entity_name: Hosting SEO
+attribute: description
+value: Hosting SEO tại BKNS là dịch vụ lưu trữ web được thiết kế để tối ưu hóa website,
+  giúp thân thiện hơn với các công cụ tìm kiếm. Dịch vụ này tập trung vào việc cung
+  cấp các gói hosting với nhiều IP độc lập, đảm bảo tốc độ truy cập nhanh, độ ổn định
+  và bảo mật cao, đi kèm hỗ trợ kỹ thuật chuyên sâu.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_HOSTING_SEO_TOI_UU_WEBSITE_CHO_CONG_CU_TIM_KIEM_2026_04_13
+- SRC-DICH_VU_HOSTING_SEO_TOI_UU_WEBSITE_CHO_CONG_CU_TIM_KIEM_2026_04_05
+observed_at: '2026-04-14T12:09:18.698892+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: Trích từ mục Mô tả dịch vụ.
+dual_vote:
+  status: DISAGREE
+  score: 0.5032
+  confidence: LOW
+  flag: human_review_required
+value_changed_from: Dịch vụ hosting được tối ưu hóa cho SEO (Search Engine Optimization),
+  giúp website thân thiện hơn với các công cụ tìm kiếm bằng cách cung cấp nhiều IP
+  độc lập.
+value_changed_at: '2026-04-14T12:09:18.698939+07:00'

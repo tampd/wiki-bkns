@@ -1,0 +1,27 @@
+claim_id: CLM-3F33B2676AFA
+entity_id: ENT-PROD-DOMAIN
+entity_type: product
+entity_name: Tên miền
+attribute: target_customer
+value: Bất kỳ ai sở hữu tên miền quan trọng cần được bảo vệ ở mức cao nhất
+unit: null
+qualifiers:
+  service_name: Registry Lock
+source_ids:
+- SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_13
+- SRC-TRANNING_KINH_DOANH_HOSTING_EMAIL_2026_04_05
+- SRC-BAO_VE_TEN_MIEN_CAP_CAO_NHAT_GIAI_PHAP_AN_TOAN_TUYET_OI_2026_04_05
+observed_at: '2026-04-14T16:45:20.897232+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Mô tả dịch vụ: Đối tượng sử dụng dịch vụ bao gồm: Bất kỳ
+  ai sở hữu tên miền quan trọng cần được bảo vệ ở mức cao nhất'
+value_changed_from: Các tập đoàn và doanh nghiệp lớn
+value_changed_at: '2026-04-14T16:45:20.897261+07:00'
+dual_vote:
+  status: DISAGREE
+  score: 0.1683
+  confidence: LOW
+  flag: human_review_required

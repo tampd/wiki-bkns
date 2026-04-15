@@ -3,23 +3,21 @@ entity_id: product.email.relay
 entity_type: product
 entity_name: Email Relay
 attribute: description
-value: Dịch vụ định tuyến email gửi đi qua hệ thống máy chủ chuyên dụng của BKNS có
-  IP uy tín cao.
+value: Dịch vụ định tuyến email gửi đi qua hệ thống máy chủ chuyên dụng của BKNS có IP uy tín cao.
 unit: null
 qualifiers: null
 source_ids:
-- SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_TIN_CAY_2026_04_04
-- SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_VA_TIN_CAY_2026_04_06
+  - SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_TIN_CAY_2026_04_04
+  - SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_VA_TIN_CAY_2026_04_06
 observed_at: '2026-04-07T00:23:42.656883+07:00'
 valid_from: '2026-04-04'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ Tóm tắt nhanh: Dịch vụ này định tuyến email gửi đi qua hệ
-  thống máy chủ chuyên dụng của BKNS có IP uy tín cao.'
-value_changed_from: Email Relay là một giải pháp trung gian, giúp doanh nghiệp đã
-  có sẵn hệ thống email server có thể gửi email ra ngoài một cách an toàn và tin cậy
-  hơn.
+compiler_note: 'Trích từ Tóm tắt nhanh: Dịch vụ này định tuyến email gửi đi qua hệ thống máy chủ chuyên dụng của BKNS có IP uy tín cao.'
+value_changed_from: Email Relay là một giải pháp trung gian, giúp doanh nghiệp đã có sẵn hệ thống email server có thể gửi email ra ngoài một cách an toàn và tin cậy hơn.
 value_changed_at: '2026-04-07T00:23:42.656900+07:00'
-approved_at: '2026-04-07T13:00:11.365836+07:00'
+approved_at: '2026-04-08T13:00:10.360952+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:58.942Z'

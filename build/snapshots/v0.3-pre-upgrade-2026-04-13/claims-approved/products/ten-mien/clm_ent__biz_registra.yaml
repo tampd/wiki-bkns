@@ -1,0 +1,22 @@
+claim_id: CLM-ENT--BIZ-REGISTRA
+entity_id: ENT-PROD-DOMAIN.biz
+entity_type: product_variant
+entity_name: .biz
+attribute: registration_fee
+value: 590000
+unit: VND
+qualifiers:
+  billing_cycle: year
+source_ids:
+- SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_04
+- SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_06
+- SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_06
+observed_at: '2026-04-06T23:08:52.651662+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: high
+compiler_note: 'Trích từ Bảng giá Tên miền Quốc tế: | .biz | Miễn phí | 590.000 |
+  740.000 | 740.000 |'
+approved_at: '2026-04-08T13:00:09.472009+07:00'
+approved_by: admin-batch

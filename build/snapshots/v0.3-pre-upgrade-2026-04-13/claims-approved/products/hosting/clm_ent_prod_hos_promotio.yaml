@@ -1,0 +1,19 @@
+claim_id: CLM-ENT-PROD-HOS-PROMOTIO
+entity_id: ENT-PROD-HOSTING
+entity_type: product
+entity_name: Hosting WordPress
+attribute: promotion
+value: Giảm 20% khi chuyển dịch vụ về BKNS
+unit: null
+qualifiers:
+  product_line: Hosting WordPress
+source_ids:
+- SRC-HOSTING_WORDPRESS_WEB_2026_04_05
+observed_at: '2026-04-05T22:04:52.747597+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ mục Đặc điểm: ''- Off 20% khi chuyển dịch vụ về BKNS'''
+approved_at: '2026-04-08T13:00:10.814077+07:00'
+approved_by: admin-batch

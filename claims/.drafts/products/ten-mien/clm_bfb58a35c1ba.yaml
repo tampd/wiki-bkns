@@ -1,0 +1,18 @@
+claim_id: CLM-BFB58A35C1BA
+entity_id: product.domain.international.info
+entity_type: product_plan
+entity_name: .info
+attribute: transfer_fee
+value: 980000
+unit: VND
+qualifiers:
+  billing_cycle: year
+source_ids:
+- SRC-BANG_GIA_TEN_MIEN_QUOC_TE_2026_04_13
+observed_at: '2026-04-13T21:46:27.498990+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ bảng giá: | .info   | Miễn phí | 170.000   | 980.000   |
+  980.000   |'

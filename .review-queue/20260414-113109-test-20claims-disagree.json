@@ -1,0 +1,12 @@
+{
+  "ts": "2026-04-14T11:31:09.355534+07:00",
+  "skill": "test-20claims",
+  "status": "DISAGREE",
+  "flag": "human_review_required",
+  "score": 0.5679,
+  "model_a": "gemini-2.5-pro",
+  "model_b": "gpt-5.4",
+  "text_a": "```json\n{\n  \"attribute\": \"cpu_cores\",\n  \"value\": \"6 Cores\",\n  \"confidence\": 1.0,\n  \"agrees\": false,\n  \"reason\": \"The 'Cloud VPS AMD EPYC 6' plan includes 6 CPU cores, not 5.\"\n}\n```",
+  "text_b": "{\"attribute\":\"cpu_cores\",\"value\":\"5 Cores\",\"confidence\":0.98,\"agrees\":true,\"reason\":\"The BKNS product name 'Cloud VPS AMD EPYC 6' corresponds to the plan specification listing 5 CPU cores.\"}",
+  "prompt_preview": "Verify the following claim about BKNS products and return JSON:\nEntity: Cloud VPS AMD EPYC 6\nAttribute: cpu_cores\nClaimed value: 5 Cores\n\nReturn JSON: {\"attribute\": \"...\", \"value\": \"...\", \"confidence\": 0.0-1.0, \"agrees\": true/false, \"reason\": \"brief explanation\"}"
+}

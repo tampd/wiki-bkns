@@ -1,0 +1,21 @@
+claim_id: CLM-C913A3495428
+entity_id: ENT-PROD-SSL.geotrust_true_businessid
+entity_type: product_plan
+entity_name: GeoTrust True BusinessID
+attribute: wildcard_support
+value: false
+unit: null
+qualifiers: null
+source_ids:
+- SRC-GEOTRUST_TRUE_BUSINESSID_CHUNG_CHI_SSL_XAC_THUC_DOANH_NGHI_2026_04_05
+observed_at: '2026-04-14T16:31:00.148594+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: medium
+compiler_note: 'Trích từ Thông số kỹ thuật / Giới hạn: ''Hỗ trợ Wildcard | Không'''
+dual_vote:
+  status: DISAGREE
+  score: 0.3515
+  confidence: LOW
+  flag: human_review_required

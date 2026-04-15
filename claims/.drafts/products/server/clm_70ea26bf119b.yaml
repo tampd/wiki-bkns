@@ -1,0 +1,22 @@
+claim_id: CLM-70EA26BF119B
+entity_id: ENT-PROD-HOSTING-DEDICATED
+entity_type: product_plan
+entity_name: Server vật lý (Dedicated)
+attribute: service_description
+value: Thuê máy chủ riêng toàn quyền quản lý
+unit: null
+qualifiers: null
+source_ids:
+- SRC-TRANNING_KINH_DOANH_HOSTING_EMAIL_2026_04_13
+observed_at: '2026-04-14T12:35:14.424184+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng Giới thiệu dịch vụ BKNS cung cấp, hàng Server vật lý
+  (Dedicated), cột Mô tả ngắn: ''Thuê máy chủ riêng toàn quyền quản lý'''
+dual_vote:
+  status: DISAGREE
+  score: 0.5
+  confidence: LOW
+  flag: human_review_required

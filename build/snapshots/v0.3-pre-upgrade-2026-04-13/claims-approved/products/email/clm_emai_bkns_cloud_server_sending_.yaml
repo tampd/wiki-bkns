@@ -1,0 +1,19 @@
+claim_id: CLM-EMAI-BKNS_CLOUD_SERVER-SENDING_
+entity_id: product.email.bkns_cloud_server
+entity_type: product
+entity_name: Cloud Email Server
+attribute: sending_limit
+value: 200
+unit: email/giờ
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_06
+observed_at: '2026-04-07T00:01:11.804590+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: medium
+compiler_note: 'Trích từ mục ''Điều kiện/giới hạn nổi bật'': Giới hạn số lượng email
+  gửi đi là 200 email/giờ cho tất cả các gói.'
+approved_at: '2026-04-08T13:00:09.970615+07:00'
+approved_by: admin-batch

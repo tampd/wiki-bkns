@@ -1,0 +1,16 @@
+claim_id: CLM-4FF9C18F4FF1
+entity_id: ENT-PROD-SSL-ESSENTIALSSL-WILDCARD-DV
+entity_type: product_plan
+entity_name: EssentialSSL Wildcard (DV)
+attribute: wildcard_support
+value: true
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-CHUNG_CHI_SSL_ESSENTIALSSL_WILDCARD_DV_CUA_COMODO_2026_04_13
+observed_at: '2026-04-13T21:57:30.121400+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng thông số kỹ thuật: | Hỗ trợ Wildcard | Có |'

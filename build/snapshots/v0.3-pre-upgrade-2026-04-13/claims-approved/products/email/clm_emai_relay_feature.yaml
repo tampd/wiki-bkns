@@ -1,0 +1,22 @@
+claim_id: CLM-EMAI-RELAY-FEATURE
+entity_id: product.email.relay
+entity_type: product
+entity_name: Email Relay
+attribute: feature
+value: Không giới hạn số lượng tên miền sử dụng
+unit: null
+qualifiers: null
+source_ids:
+- SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_TIN_CAY_2026_04_04
+- SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_VA_TIN_CAY_2026_04_06
+observed_at: '2026-04-07T00:23:42.705390+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: • Điểm chính: ... không giới hạn số lượng
+  tên miền sử dụng.'
+value_changed_from: Có hệ thống báo cáo thống kê chi tiết
+value_changed_at: '2026-04-07T00:23:42.705408+07:00'
+approved_at: '2026-04-08T13:00:10.375092+07:00'
+approved_by: admin-batch

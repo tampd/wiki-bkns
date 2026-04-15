@@ -9,13 +9,14 @@ qualifiers:
   source_url: https://www.bkns.vn/hosting/platinum-web-hosting.html
   retrieved_at: '2026-04-05T14:25:00+07:00'
 source_ids:
-- SRC-PLATINUM_WEB_HOSTING_WEB_2026_04_05
+  - SRC-PLATINUM_WEB_HOSTING_WEB_2026_04_05
 observed_at: '2026-04-05T22:08:42.119340+07:00'
 valid_from: '2026-04-05'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ tiêu đề: # Platinum Web Hosting - Hosting NVMe Tốc Độ Cao,
-  Backup 3 Lần/Ngày'
-approved_at: '2026-04-07T13:00:12.226520+07:00'
+compiler_note: 'Trích từ tiêu đề: # Platinum Web Hosting - Hosting NVMe Tốc Độ Cao, Backup 3 Lần/Ngày'
+approved_at: '2026-04-08T13:00:11.390143+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.050Z'

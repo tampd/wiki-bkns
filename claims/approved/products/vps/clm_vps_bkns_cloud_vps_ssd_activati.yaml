@@ -7,12 +7,14 @@ value: Automatic
 unit: null
 qualifiers: null
 source_ids:
-- SRC-DICH_VU_THUE_CLOUD_VPS_SSD_GIA_RE_TAI_BKNS_2026_04_06
+  - SRC-DICH_VU_THUE_CLOUD_VPS_SSD_GIA_RE_TAI_BKNS_2026_04_06
 observed_at: '2026-04-07T00:13:45.674938+07:00'
 valid_from: '2026-04-07'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
 compiler_note: 'Trích từ mục Tính năng / Thành phần: ''Kích hoạt: Kích hoạt tự động'''
-approved_at: '2026-04-07T13:00:14.934902+07:00'
+approved_at: '2026-04-08T13:00:14.656967+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.752Z'

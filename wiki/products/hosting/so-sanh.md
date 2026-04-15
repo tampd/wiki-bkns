@@ -2,13 +2,12 @@
 page_id: wiki.products.hosting.so-sanh
 title: Web Hosting BKNS — So Sánh
 category: products/hosting
-updated: '2026-04-07'
-review_state: approved
+updated: '2026-04-14'
+review_state: drafted
 claims_used: 0
 compile_cost_usd: 0
 self_review: skeleton
 corrections: 0
-approved_at: '2026-04-07T16:01:36.075292+07:00'
 ---
 
 # Web Hosting BKNS — So Sánh

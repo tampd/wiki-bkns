@@ -1,0 +1,23 @@
+claim_id: CLM-A99B941C563D
+entity_id: ssl.comodo.positive_multi_domain_dv
+entity_type: product_plan
+entity_name: PositiveSSL Multi-Domain (DV)
+attribute: included_domains
+value: 3
+unit: domains
+qualifiers:
+  scope: default
+source_ids:
+- SRC-POSITIVESSL_MULTI_DOMAIN_DV_CHUNG_CHI_SSL_CHO_NHIEU_TEN_M_2026_04_05
+observed_at: '2026-04-14T16:55:18.676279+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Thông số kỹ thuật: | Bảo vệ cho | 3 tên miền (mặc định)
+  |'
+dual_vote:
+  status: DISAGREE
+  score: 0.2523
+  confidence: LOW
+  flag: human_review_required

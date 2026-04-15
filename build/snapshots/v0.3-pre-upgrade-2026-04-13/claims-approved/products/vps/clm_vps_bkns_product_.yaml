@@ -1,0 +1,18 @@
+claim_id: CLM-VPS-BKNS-PRODUCT_
+entity_id: product.vps.bkns.amd
+entity_type: product_line
+entity_name: CLOUD VPS AMD (HIỆU NĂNG CAO)
+attribute: product_url
+value: https://www.bkns.vn/server/cloud-vps-amd.html
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-BKNS_CAMNAG_HOSTING_DOT3_2026_04_06
+observed_at: '2026-04-06T23:27:50.996545+07:00'
+valid_from: '2026-04-06'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ: 🔗 __Link tham khảo:__ [https://www.bkns.vn/server/cloud-vps-amd.html]'
+approved_at: '2026-04-08T13:00:14.837540+07:00'
+approved_by: admin-batch

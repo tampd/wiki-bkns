@@ -1,0 +1,5800 @@
+- approved_at: '2026-04-07T13:00:10.738143+07:00'
+  approved_by: admin-batch
+  attribute: data_contradiction
+  claim_id: CLM-BKNS_CLOUD_E-DATA_CON
+  compiler_note: 'Trích từ Ghi chú trích xuất: ⚠️ MÂU THUẪN TRONG TRANG: Meta description
+    ghi giá "CHỈ TỪ 239K/THÁNG", nhưng trong bảng giá, gói thấp nhất là MINI EMAIL
+    01 có giá "314.000đ/Tháng".'
+  confidence: high
+  entity_id: bkns_cloud_email_server
+  entity_name: Dịch vụ Cloud Email Server
+  entity_type: product
+  observed_at: '2026-04-04T20:47:01.891022+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: Giá quảng cáo trên meta description ('CHỈ TỪ 239K/THÁNG') mâu thuẫn với giá
+    gói thấp nhất trong bảng giá ('314.000đ/Tháng').
+- approved_at: '2026-04-07T13:00:10.747035+07:00'
+  approved_by: admin-batch
+  attribute: description
+  claim_id: CLM-BKNS_CLOUD_E-DESC
+  compiler_note: 'Trích từ mục Tóm tắt nhanh: Dịch vụ này là gì: Dịch vụ Cloud Email
+    Server là giải pháp cung cấp một hệ thống máy chủ email riêng hoạt động trên nền
+    tảng điện toán đám mây, dành cho các tổ chức và doanh nghiệp.'
+  confidence: high
+  entity_id: bkns_cloud_email_server
+  entity_name: Dịch vụ Cloud Email Server
+  entity_type: product
+  observed_at: '2026-04-04T20:47:01.883615+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: Dịch vụ Cloud Email Server là giải pháp cung cấp một hệ thống máy chủ email
+    riêng hoạt động trên nền tảng điện toán đám mây, dành cho các tổ chức và doanh
+    nghiệp.
+- approved_at: '2026-04-07T13:00:10.755221+07:00'
+  approved_by: admin-batch
+  attribute: parent_entity
+  claim_id: CLM-BKNS_CLOUD_E-PARENT_E
+  compiler_note: 'Trích từ tiêu đề và danh mục trang: ═══ Dịch vụ Cloud Email Server,
+    Danh mục: email'
+  confidence: high
+  entity_id: bkns_cloud_email_server
+  entity_name: Dịch vụ Cloud Email Server
+  entity_type: product
+  observed_at: '2026-04-04T20:47:01.878995+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: ENT-PROD-EMAIL
+- approved_at: '2026-04-07T13:00:10.761767+07:00'
+  approved_by: admin-batch
+  attribute: platform
+  claim_id: CLM-BKNS_CLOUD_E-PLATFORM
+  compiler_note: 'Trích từ bảng giá, dòng ''Nền tảng'', cột ''MINI EMAIL 02'': Kerio'
+  confidence: high
+  entity_id: bkns_cloud_email_server:mini_email_02
+  entity_name: MINI EMAIL 02
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:47:01.907529+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: Kerio
+- approved_at: '2026-04-07T13:00:10.768426+07:00'
+  approved_by: admin-batch
+  attribute: monthly_price
+  claim_id: CLM-BKNS_CLOUD_E-PRICE
+  compiler_note: 'Trích từ bảng giá, dòng ''Giá/Tháng'', cột ''MINI EMAIL 02'': 450.000đ'
+  confidence: high
+  entity_id: bkns_cloud_email_server:mini_email_02
+  entity_name: MINI EMAIL 02
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:47:01.902767+07:00'
+  qualifiers:
+    billing_cycle: month
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_04
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 450000
+- approved_at: '2026-04-07T13:00:10.774999+07:00'
+  approved_by: admin-batch
+  attribute: source_url
+  claim_id: CLM-BKNS_CLOUD_E-SOURCE_U
+  compiler_note: 'Trích từ mục Thông tin nguồn: URL: https://www.bkns.vn/email/cloud-email-server.html'
+  confidence: high
+  entity_id: bkns_cloud_email_server
+  entity_name: Dịch vụ Cloud Email Server
+  entity_type: product
+  observed_at: '2026-04-04T20:47:01.893211+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: https://www.bkns.vn/email/cloud-email-server.html
+- approved_at: '2026-04-07T13:00:10.781832+07:00'
+  approved_by: admin-batch
+  attribute: storage
+  claim_id: CLM-BKNS_CLOUD_E-STORAGE
+  compiler_note: 'Trích từ bảng giá, dòng ''Dung lượng gói'', cột ''MINI EMAIL 02'':
+    150GB'
+  confidence: high
+  entity_id: bkns_cloud_email_server:mini_email_02
+  entity_name: MINI EMAIL 02
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:47:01.905159+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_04
+  unit: GB
+  valid_from: '2026-04-04'
+  value: 150
+- approved_at: '2026-04-07T13:00:10.789632+07:00'
+  approved_by: admin-batch
+  attribute: target_audience
+  claim_id: CLM-BKNS_CLOUD_E-TARGET_A
+  compiler_note: 'Trích từ mục Tóm tắt nhanh: Phù hợp với: Doanh nghiệp cần một hệ
+    thống email riêng theo tên miền, yêu cầu tính bảo mật cao, hoạt động ổn định,
+    có toàn quyền quản trị và không giới hạn số lượng tài khoản người dùng.'
+  confidence: high
+  entity_id: bkns_cloud_email_server
+  entity_name: Dịch vụ Cloud Email Server
+  entity_type: product
+  observed_at: '2026-04-04T20:47:01.886716+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: Doanh nghiệp cần một hệ thống email riêng theo tên miền, yêu cầu tính bảo
+    mật cao, hoạt động ổn định, có toàn quyền quản trị và không giới hạn số lượng
+    tài khoản người dùng.
+- approved_at: '2026-04-07T13:00:10.797992+07:00'
+  approved_by: admin-batch
+  attribute: uptime_guarantee
+  claim_id: CLM-BKNS_CLOUD_E-UPTIME_G
+  compiler_note: 'Trích từ mục Tính năng / Thành phần: Đảm bảo tỷ lệ email vào inbox
+    lên đến 99% và uptime 99%.'
+  confidence: high
+  entity_id: bkns_cloud_email_server
+  entity_name: Dịch vụ Cloud Email Server
+  entity_type: product
+  observed_at: '2026-04-04T20:47:01.888979+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_04
+  unit: '%'
+  valid_from: '2026-04-04'
+  value: 99
+- approved_at: '2026-04-07T13:00:10.805073+07:00'
+  approved_by: admin-batch
+  attribute: daily_email_limit
+  claim_id: CLM-EMAI-BK-RELAY-04-DAILY_EM
+  compiler_note: 'Trích từ bảng giá gói BK-RELAY 04: | Số lượng mail/ngày | 30.000
+    |'
+  confidence: high
+  entity_id: product.email.bk-relay-04
+  entity_name: BK-RELAY 04
+  entity_type: product_plan
+  observed_at: '2026-04-05T22:01:16.537311+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-EMAIL_RELAY_WEB_2026_04_05
+  unit: email
+  valid_from: '2026-04-05'
+  value: 30000
+- approved_at: '2026-04-07T13:00:10.812151+07:00'
+  approved_by: admin-batch
+  attribute: discount_percentage
+  claim_id: CLM-EMAI-BK-RELAY-04-DISCOUNT
+  compiler_note: 'Trích từ bảng giá gói BK-RELAY 04: | 3 năm (giảm 30%) |'
+  confidence: high
+  entity_id: product.email.bk-relay-04
+  entity_name: BK-RELAY 04
+  entity_type: product_plan
+  observed_at: '2026-04-05T22:01:16.556434+07:00'
+  qualifiers:
+    billing_cycle: year
+    duration_years: 3
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-EMAIL_RELAY_WEB_2026_04_05
+  unit: '%'
+  valid_from: '2026-04-05'
+  value: 30
+- approved_at: '2026-04-07T13:00:10.819266+07:00'
+  approved_by: admin-batch
+  attribute: feature
+  claim_id: CLM-EMAI-BK-RELAY-04-FEATURE
+  compiler_note: 'Trích từ Đặc điểm: - White list IP để đảm bảo email không bị chặn'
+  confidence: high
+  entity_id: product.email.bk-relay-04
+  entity_name: BK-RELAY 04
+  entity_type: product_plan
+  observed_at: '2026-04-05T22:01:16.561677+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-EMAIL_RELAY_WEB_2026_04_05
+  unit: null
+  valid_from: '2026-04-05'
+  value: White list IP
+- approved_at: '2026-04-07T13:00:10.826600+07:00'
+  approved_by: admin-batch
+  attribute: price
+  claim_id: CLM-EMAI-BK-RELAY-04-PRICE
+  compiler_note: 'Trích từ bảng giá gói BK-RELAY 04: | 3 năm (giảm 30%) | 35.280.000đ
+    |. Ghi chú chung: chưa VAT'
+  confidence: high
+  entity_id: product.email.bk-relay-04
+  entity_name: BK-RELAY 04
+  entity_type: product_plan
+  observed_at: '2026-04-05T22:01:16.553992+07:00'
+  qualifiers:
+    billing_cycle: year
+    duration_years: 3
+    vat_status: not_included
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-EMAIL_RELAY_WEB_2026_04_05
+  unit: VND
+  valid_from: '2026-04-05'
+  value: 35280000
+- approved_at: '2026-04-07T13:00:10.833581+07:00'
+  approved_by: admin-batch
+  attribute: target_audience
+  claim_id: CLM-EMAI-BK-RELAY-04-TARGET_A
+  compiler_note: 'Trích từ Giới thiệu: Phù hợp cho doanh nghiệp cần gửi email marketing
+    số lượng lớn.'
+  confidence: high
+  entity_id: product.email.bk-relay-04
+  entity_name: BK-RELAY 04
+  entity_type: product_plan
+  observed_at: '2026-04-05T22:01:16.558955+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-EMAIL_RELAY_WEB_2026_04_05
+  unit: null
+  valid_from: '2026-04-05'
+  value: Doanh nghiệp cần gửi email marketing số lượng lớn
+- approved_at: '2026-04-07T13:00:10.840165+07:00'
+  approved_by: admin-batch
+  attribute: admin_account_type
+  claim_id: CLM-EMAI-BKNS-ADMIN_AC
+  compiler_note: 'Trích từ bảng giá, cột MINI EMAIL 01, hàng Tài khoản quản trị: Riêng'
+  confidence: high
+  entity_id: product.email.bkns.miniem01
+  entity_name: MINI EMAIL 01
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:45:58.169139+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_AN_TOAN_HIEU_SUAT_CAO_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: Riêng
+- approved_at: '2026-04-07T13:00:10.846981+07:00'
+  approved_by: admin-batch
+  attribute: admin_permission
+  claim_id: CLM-EMAI-BKNS-ADMIN_PE
+  compiler_note: 'Trích từ bảng giá, cột MINI EMAIL 01, hàng Quyền quản trị: Admin'
+  confidence: high
+  entity_id: product.email.bkns.miniem01
+  entity_name: MINI EMAIL 01
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:45:58.171479+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_AN_TOAN_HIEU_SUAT_CAO_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: Admin
+- approved_at: '2026-04-07T13:00:10.851930+07:00'
+  approved_by: admin-batch
+  attribute: auto_responder
+  claim_id: CLM-EMAI-BKNS-AUTO_RES
+  compiler_note: 'Trích từ bảng giá, cột MINI EMAIL 01, hàng Tự động trả lời: Có'
+  confidence: high
+  entity_id: product.email.bkns.miniem01
+  entity_name: MINI EMAIL 01
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:45:58.178236+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_AN_TOAN_HIEU_SUAT_CAO_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: true
+- approved_at: '2026-04-07T13:00:10.856529+07:00'
+  approved_by: admin-batch
+  attribute: platform
+  claim_id: CLM-EMAI-BKNS_CLOUD_ES_01-PLATFORM
+  compiler_note: 'Trích từ bảng giá: | Nền tảng | Zimbra |'
+  confidence: high
+  entity_id: product.email.bkns_cloud_es_01
+  entity_name: ES 01
+  entity_type: product_plan
+  observed_at: '2026-04-07T00:01:11.864812+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_06
+  unit: null
+  valid_from: '2026-04-07'
+  value: Zimbra
+- approved_at: '2026-04-07T13:00:10.860732+07:00'
+  approved_by: admin-batch
+  attribute: monthly_price
+  claim_id: CLM-EMAI-BKNS_CLOUD_ES_01-PRICE
+  compiler_note: 'Trích từ bảng giá: | Giá/Tháng | 734.000đ |'
+  confidence: high
+  entity_id: product.email.bkns_cloud_es_01
+  entity_name: ES 01
+  entity_type: product_plan
+  observed_at: '2026-04-07T00:01:11.858508+07:00'
+  qualifiers:
+    billing_cycle: month
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_06
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 734000
+- approved_at: '2026-04-07T13:00:10.866628+07:00'
+  approved_by: admin-batch
+  attribute: storage_capacity
+  claim_id: CLM-EMAI-BKNS_CLOUD_ES_01-STORAGE_
+  compiler_note: 'Trích từ bảng giá: | Dung lượng gói | 300GB |'
+  confidence: high
+  entity_id: product.email.bkns_cloud_es_01
+  entity_name: ES 01
+  entity_type: product_plan
+  observed_at: '2026-04-07T00:01:11.861671+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: medium
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_06
+  unit: GB
+  valid_from: '2026-04-07'
+  value: 300
+- approved_at: '2026-04-07T13:00:10.873393+07:00'
+  approved_by: admin-batch
+  attribute: platform
+  claim_id: CLM-EMAI-BKNS_CLOUD_ES_02-PLATFORM
+  compiler_note: 'Trích từ bảng giá: | Nền tảng | Zimbra |'
+  confidence: high
+  entity_id: product.email.bkns_cloud_es_02
+  entity_name: ES 02
+  entity_type: product_plan
+  observed_at: '2026-04-07T00:01:11.871478+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_06
+  unit: null
+  valid_from: '2026-04-07'
+  value: Zimbra
+- approved_at: '2026-04-07T13:00:10.877142+07:00'
+  approved_by: admin-batch
+  attribute: monthly_price
+  claim_id: CLM-EMAI-BKNS_CLOUD_ES_02-PRICE
+  compiler_note: 'Trích từ bảng giá: | Giá/Tháng | 1.275.000đ |'
+  confidence: high
+  entity_id: product.email.bkns_cloud_es_02
+  entity_name: ES 02
+  entity_type: product_plan
+  observed_at: '2026-04-07T00:01:11.867430+07:00'
+  qualifiers:
+    billing_cycle: month
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_06
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 1275000
+- approved_at: '2026-04-07T13:00:10.880706+07:00'
+  approved_by: admin-batch
+  attribute: storage_capacity
+  claim_id: CLM-EMAI-BKNS_CLOUD_ES_02-STORAGE_
+  compiler_note: 'Trích từ bảng giá: | Dung lượng gói | 500GB |'
+  confidence: high
+  entity_id: product.email.bkns_cloud_es_02
+  entity_name: ES 02
+  entity_type: product_plan
+  observed_at: '2026-04-07T00:01:11.869414+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: medium
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_06
+  unit: GB
+  valid_from: '2026-04-07'
+  value: 500
+- approved_at: '2026-04-07T13:00:10.884168+07:00'
+  approved_by: admin-batch
+  attribute: platform
+  claim_id: CLM-EMAI-BKNS_CLOUD_ES_03-PLATFORM
+  compiler_note: 'Trích từ bảng giá: | Nền tảng | Zimbra |'
+  confidence: high
+  entity_id: product.email.bkns_cloud_es_03
+  entity_name: ES 03
+  entity_type: product_plan
+  observed_at: '2026-04-07T00:01:11.877334+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_06
+  unit: null
+  valid_from: '2026-04-07'
+  value: Zimbra
+- approved_at: '2026-04-07T13:00:10.888889+07:00'
+  approved_by: admin-batch
+  attribute: monthly_price
+  claim_id: CLM-EMAI-BKNS_CLOUD_ES_03-PRICE
+  compiler_note: 'Trích từ bảng giá: | Giá/Tháng | 2.720.000đ |'
+  confidence: high
+  entity_id: product.email.bkns_cloud_es_03
+  entity_name: ES 03
+  entity_type: product_plan
+  observed_at: '2026-04-07T00:01:11.873365+07:00'
+  qualifiers:
+    billing_cycle: month
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_06
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 2720000
+- approved_at: '2026-04-07T13:00:10.892721+07:00'
+  approved_by: admin-batch
+  attribute: storage_capacity
+  claim_id: CLM-EMAI-BKNS_CLOUD_ES_03-STORAGE_
+  compiler_note: 'Trích từ bảng giá: | Dung lượng gói | 1000GB |'
+  confidence: high
+  entity_id: product.email.bkns_cloud_es_03
+  entity_name: ES 03
+  entity_type: product_plan
+  observed_at: '2026-04-07T00:01:11.875306+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: medium
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_06
+  unit: GB
+  valid_from: '2026-04-07'
+  value: 1000
+- approved_at: '2026-04-07T13:00:10.896453+07:00'
+  approved_by: admin-batch
+  attribute: monthly_price
+  claim_id: CLM-EMAI-BKNS_CLOUD_ES_04-PRICE
+  compiler_note: 'Trích từ bảng giá: | Giá/Tháng | 4.165.000đ |'
+  confidence: high
+  entity_id: product.email.bkns_cloud_es_04
+  entity_name: ES 04
+  entity_type: product_plan
+  observed_at: '2026-04-07T00:01:11.879251+07:00'
+  qualifiers:
+    billing_cycle: month
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_06
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 4165000
+- approved_at: '2026-04-07T13:00:10.900038+07:00'
+  approved_by: admin-batch
+  attribute: storage_capacity
+  claim_id: CLM-EMAI-BKNS_CLOUD_ES_04-STORAGE_
+  compiler_note: 'Trích từ bảng giá: | Dung lượng gói | 2000GB |'
+  confidence: high
+  entity_id: product.email.bkns_cloud_es_04
+  entity_name: ES 04
+  entity_type: product_plan
+  observed_at: '2026-04-07T00:01:11.881179+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: medium
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_06
+  unit: GB
+  valid_from: '2026-04-07'
+  value: 2000
+- approved_at: '2026-04-07T13:00:10.904126+07:00'
+  approved_by: admin-batch
+  attribute: platform
+  claim_id: CLM-EMAI-BKNS_CLOUD_MINI_01-PLATFORM
+  compiler_note: 'Trích từ bảng giá: | Nền tảng | Kerio |'
+  confidence: high
+  entity_id: product.email.bkns_cloud_mini_01
+  entity_name: MINI EMAIL 01
+  entity_type: product_plan
+  observed_at: '2026-04-07T00:01:11.825299+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_06
+  unit: null
+  valid_from: '2026-04-07'
+  value: Kerio
+- approved_at: '2026-04-07T13:00:10.907725+07:00'
+  approved_by: admin-batch
+  attribute: monthly_price
+  claim_id: CLM-EMAI-BKNS_CLOUD_MINI_01-PRICE
+  compiler_note: 'Trích từ bảng giá: | Giá/Tháng | 314.000đ |'
+  confidence: high
+  entity_id: product.email.bkns_cloud_mini_01
+  entity_name: MINI EMAIL 01
+  entity_type: product_plan
+  observed_at: '2026-04-07T00:01:11.818483+07:00'
+  qualifiers:
+    billing_cycle: month
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_06
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 314000
+- approved_at: '2026-04-07T13:00:10.912158+07:00'
+  approved_by: admin-batch
+  attribute: storage_capacity
+  claim_id: CLM-EMAI-BKNS_CLOUD_MINI_01-STORAGE_
+  compiler_note: 'Trích từ bảng giá: | Dung lượng gói | 100GB |'
+  confidence: high
+  entity_id: product.email.bkns_cloud_mini_01
+  entity_name: MINI EMAIL 01
+  entity_type: product_plan
+  observed_at: '2026-04-07T00:01:11.821983+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: medium
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_06
+  unit: GB
+  valid_from: '2026-04-07'
+  value: 100
+- approved_at: '2026-04-07T13:00:10.916094+07:00'
+  approved_by: admin-batch
+  attribute: platform
+  claim_id: CLM-EMAI-BKNS_CLOUD_MINI_02-PLATFORM
+  compiler_note: 'Trích từ bảng giá: | Nền tảng | Kerio |'
+  confidence: high
+  entity_id: product.email.bkns_cloud_mini_02
+  entity_name: MINI EMAIL 02
+  entity_type: product_plan
+  observed_at: '2026-04-07T00:01:11.835164+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_06
+  unit: null
+  valid_from: '2026-04-07'
+  value: Kerio
+- approved_at: '2026-04-07T13:00:10.920797+07:00'
+  approved_by: admin-batch
+  attribute: monthly_price
+  claim_id: CLM-EMAI-BKNS_CLOUD_MINI_02-PRICE
+  compiler_note: 'Trích từ bảng giá: | Giá/Tháng | 450.000đ |'
+  confidence: high
+  entity_id: product.email.bkns_cloud_mini_02
+  entity_name: MINI EMAIL 02
+  entity_type: product_plan
+  observed_at: '2026-04-07T00:01:11.828538+07:00'
+  qualifiers:
+    billing_cycle: month
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_06
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 450000
+- approved_at: '2026-04-07T13:00:10.924897+07:00'
+  approved_by: admin-batch
+  attribute: storage_capacity
+  claim_id: CLM-EMAI-BKNS_CLOUD_MINI_02-STORAGE_
+  compiler_note: 'Trích từ bảng giá: | Dung lượng gói | 150GB |'
+  confidence: high
+  entity_id: product.email.bkns_cloud_mini_02
+  entity_name: MINI EMAIL 02
+  entity_type: product_plan
+  observed_at: '2026-04-07T00:01:11.831918+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: medium
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_06
+  unit: GB
+  valid_from: '2026-04-07'
+  value: 150
+- approved_at: '2026-04-07T13:00:10.929261+07:00'
+  approved_by: admin-batch
+  attribute: platform
+  claim_id: CLM-EMAI-BKNS_CLOUD_MINI_03-PLATFORM
+  compiler_note: 'Trích từ bảng giá: | Nền tảng | Kerio |'
+  confidence: high
+  entity_id: product.email.bkns_cloud_mini_03
+  entity_name: MINI EMAIL 03
+  entity_type: product_plan
+  observed_at: '2026-04-07T00:01:11.845377+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_06
+  unit: null
+  valid_from: '2026-04-07'
+  value: Kerio
+- approved_at: '2026-04-07T13:00:10.933137+07:00'
+  approved_by: admin-batch
+  attribute: monthly_price
+  claim_id: CLM-EMAI-BKNS_CLOUD_MINI_03-PRICE
+  compiler_note: 'Trích từ bảng giá: | Giá/Tháng | 556.000đ |'
+  confidence: high
+  entity_id: product.email.bkns_cloud_mini_03
+  entity_name: MINI EMAIL 03
+  entity_type: product_plan
+  observed_at: '2026-04-07T00:01:11.838356+07:00'
+  qualifiers:
+    billing_cycle: month
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_06
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 556000
+- approved_at: '2026-04-07T13:00:10.937983+07:00'
+  approved_by: admin-batch
+  attribute: storage_capacity
+  claim_id: CLM-EMAI-BKNS_CLOUD_MINI_03-STORAGE_
+  compiler_note: 'Trích từ bảng giá: | Dung lượng gói | 200GB |'
+  confidence: high
+  entity_id: product.email.bkns_cloud_mini_03
+  entity_name: MINI EMAIL 03
+  entity_type: product_plan
+  observed_at: '2026-04-07T00:01:11.841665+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: medium
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_06
+  unit: GB
+  valid_from: '2026-04-07'
+  value: 200
+- approved_at: '2026-04-07T13:00:10.941877+07:00'
+  approved_by: admin-batch
+  attribute: platform
+  claim_id: CLM-EMAI-BKNS_CLOUD_MINI_04-PLATFORM
+  compiler_note: 'Trích từ bảng giá: | Nền tảng | Kerio |'
+  confidence: high
+  entity_id: product.email.bkns_cloud_mini_04
+  entity_name: MINI EMAIL 04
+  entity_type: product_plan
+  observed_at: '2026-04-07T00:01:11.855141+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_06
+  unit: null
+  valid_from: '2026-04-07'
+  value: Kerio
+- approved_at: '2026-04-07T13:00:10.945535+07:00'
+  approved_by: admin-batch
+  attribute: monthly_price
+  claim_id: CLM-EMAI-BKNS_CLOUD_MINI_04-PRICE
+  compiler_note: 'Trích từ bảng giá: | Giá/Tháng | 671.000đ |'
+  confidence: high
+  entity_id: product.email.bkns_cloud_mini_04
+  entity_name: MINI EMAIL 04
+  entity_type: product_plan
+  observed_at: '2026-04-07T00:01:11.848469+07:00'
+  qualifiers:
+    billing_cycle: month
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_06
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 671000
+- approved_at: '2026-04-07T13:00:10.948905+07:00'
+  approved_by: admin-batch
+  attribute: storage_capacity
+  claim_id: CLM-EMAI-BKNS_CLOUD_MINI_04-STORAGE_
+  compiler_note: 'Trích từ bảng giá: | Dung lượng gói | 250GB |'
+  confidence: high
+  entity_id: product.email.bkns_cloud_mini_04
+  entity_name: MINI EMAIL 04
+  entity_type: product_plan
+  observed_at: '2026-04-07T00:01:11.851971+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: medium
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_06
+  unit: GB
+  valid_from: '2026-04-07'
+  value: 250
+- approved_at: '2026-04-07T13:00:10.952160+07:00'
+  approved_by: admin-batch
+  attribute: backup_frequency
+  claim_id: CLM-EMAI-BKNS_CLOUD_SERVER-BACKUP_F
+  compiler_note: 'Trích từ mục ''Điều kiện/giới hạn nổi bật'': Dữ liệu được sao lưu
+    (backup) định kỳ hàng tuần.'
+  confidence: high
+  entity_id: product.email.bkns_cloud_server
+  entity_name: Cloud Email Server
+  entity_type: product
+  observed_at: '2026-04-07T00:01:11.808088+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: medium
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_06
+  unit: null
+  valid_from: '2026-04-07'
+  value: Hàng tuần
+- approved_at: '2026-04-07T13:00:10.955784+07:00'
+  approved_by: admin-batch
+  attribute: feature
+  claim_id: CLM-EMAI-BKNS_CLOUD_SERVER-FEATURE
+  compiler_note: 'Trích từ mục ''Tính năng / Thành phần'': Bảo mật: Tích hợp miễn
+    phí các công cụ bảo mật, bao gồm chống Spam và chống Virus.'
+  confidence: high
+  entity_id: product.email.bkns_cloud_server
+  entity_name: Cloud Email Server
+  entity_type: product
+  observed_at: '2026-04-07T00:01:11.796924+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_06
+  unit: null
+  valid_from: '2026-04-07'
+  value: Tích hợp chống Spam/Virus miễn phí
+  value_changed_at: '2026-04-07T00:01:11.796950+07:00'
+  value_changed_from: Cung cấp tài khoản quản trị riêng
+- approved_at: '2026-04-07T13:00:10.959361+07:00'
+  approved_by: admin-batch
+  attribute: inbox_delivery_rate
+  claim_id: CLM-EMAI-BKNS_CLOUD_SERVER-INBOX_DE
+  compiler_note: 'Trích từ mục ''Tính năng / Thành phần'': Độ tin cậy: Đảm bảo tỷ
+    lệ email vào inbox lên đến 99% và uptime 99%.'
+  confidence: high
+  entity_id: product.email.bkns_cloud_server
+  entity_name: Cloud Email Server
+  entity_type: product
+  observed_at: '2026-04-07T00:01:11.778443+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_06
+  unit: '%'
+  valid_from: '2026-04-07'
+  value: 99
+- approved_at: '2026-04-07T13:00:10.964151+07:00'
+  approved_by: admin-batch
+  attribute: is_for
+  claim_id: CLM-EMAI-BKNS_CLOUD_SERVER-IS_FOR
+  compiler_note: 'Trích từ mục ''Tóm tắt nhanh'': Dịch vụ này là gì: Dịch vụ Cloud
+    Email Server là giải pháp cung cấp một hệ thống máy chủ email riêng hoạt động
+    trên nền tảng điện toán đám mây, dành cho các tổ chức và doanh nghiệp.'
+  confidence: high
+  entity_id: product.email.bkns_cloud_server
+  entity_name: Cloud Email Server
+  entity_type: product
+  observed_at: '2026-04-07T00:01:11.744246+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_06
+  unit: null
+  valid_from: '2026-04-07'
+  value: Dịch vụ Cloud Email Server là giải pháp cung cấp một hệ thống máy chủ email
+    riêng hoạt động trên nền tảng điện toán đám mây, dành cho các tổ chức và doanh
+    nghiệp.
+- approved_at: '2026-04-07T13:00:10.968310+07:00'
+  approved_by: admin-batch
+  attribute: platform_options
+  claim_id: CLM-EMAI-BKNS_CLOUD_SERVER-PLATFORM
+  compiler_note: 'Trích từ mục ''Tóm tắt nhanh'': ...và cung cấp hai lựa chọn nền
+    tảng là Kerio và Zimbra.'
+  confidence: high
+  entity_id: product.email.bkns_cloud_server
+  entity_name: Cloud Email Server
+  entity_type: product
+  observed_at: '2026-04-07T00:01:11.801118+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_06
+  unit: null
+  valid_from: '2026-04-07'
+  value: Kerio, Zimbra
+- approved_at: '2026-04-07T13:00:10.972377+07:00'
+  approved_by: admin-batch
+  attribute: protocol_support
+  claim_id: CLM-EMAI-BKNS_CLOUD_SERVER-PROTOCOL
+  compiler_note: 'Trích từ mục ''Tính năng / Thành phần'': Tương thích: Hỗ trợ đầy
+    đủ các giao thức POP3/IMAP/SMTP, cho phép sử dụng trên Webmail và các ứng dụng
+    email client như Outlook.'
+  confidence: high
+  entity_id: product.email.bkns_cloud_server
+  entity_name: Cloud Email Server
+  entity_type: product
+  observed_at: '2026-04-07T00:01:11.811438+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_06
+  unit: null
+  valid_from: '2026-04-07'
+  value: POP3/IMAP/SMTP
+- approved_at: '2026-04-07T13:00:10.976097+07:00'
+  approved_by: admin-batch
+  attribute: sending_limit
+  claim_id: CLM-EMAI-BKNS_CLOUD_SERVER-SENDING_
+  compiler_note: 'Trích từ mục ''Điều kiện/giới hạn nổi bật'': Giới hạn số lượng email
+    gửi đi là 200 email/giờ cho tất cả các gói.'
+  confidence: high
+  entity_id: product.email.bkns_cloud_server
+  entity_name: Cloud Email Server
+  entity_type: product
+  observed_at: '2026-04-07T00:01:11.804590+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: medium
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_06
+  unit: email/giờ
+  valid_from: '2026-04-07'
+  value: 200
+- approved_at: '2026-04-07T13:00:10.979865+07:00'
+  approved_by: admin-batch
+  attribute: starting_price
+  claim_id: CLM-EMAI-BKNS_CLOUD_SERVER-STARTING
+  compiler_note: 'Trích từ mục ''Ghi chú trích xuất'': ⚠️ MÂU THUẪN TRONG TRANG: Meta
+    description ghi giá ''CHỈ TỪ 239K/THÁNG'', nhưng trong bảng giá, gói thấp nhất
+    là MINI EMAIL 01 có giá ''314.000đ/Tháng''.'
+  confidence: low
+  entity_id: product.email.bkns_cloud_server
+  entity_name: Cloud Email Server
+  entity_type: product
+  observed_at: '2026-04-07T00:01:11.814963+07:00'
+  qualifiers:
+    billing_cycle: month
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_06
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 239000
+- approved_at: '2026-04-07T13:00:10.984392+07:00'
+  approved_by: admin-batch
+  attribute: target_audience
+  claim_id: CLM-EMAI-BKNS_CLOUD_SERVER-TARGET_A
+  compiler_note: 'Trích từ mục ''Tóm tắt nhanh'': Phù hợp với: Doanh nghiệp cần một
+    hệ thống email riêng theo tên miền, yêu cầu tính bảo mật cao, hoạt động ổn định,
+    có toàn quyền quản trị và không giới hạn số lượng tài khoản người dùng.'
+  confidence: high
+  entity_id: product.email.bkns_cloud_server
+  entity_name: Cloud Email Server
+  entity_type: product
+  observed_at: '2026-04-07T00:01:11.749685+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_06
+  unit: null
+  valid_from: '2026-04-07'
+  value: Doanh nghiệp cần một hệ thống email riêng theo tên miền, yêu cầu tính bảo
+    mật cao, hoạt động ổn định, có toàn quyền quản trị và không giới hạn số lượng
+    tài khoản người dùng.
+- approved_at: '2026-04-07T13:00:10.988521+07:00'
+  approved_by: admin-batch
+  attribute: uptime_guarantee
+  claim_id: CLM-EMAI-BKNS_CLOUD_SERVER-UPTIME_G
+  compiler_note: 'Trích từ mục ''Tính năng / Thành phần'': Độ tin cậy: Đảm bảo tỷ
+    lệ email vào inbox lên đến 99% và uptime 99%.'
+  confidence: high
+  entity_id: product.email.bkns_cloud_server
+  entity_name: Cloud Email Server
+  entity_type: product
+  observed_at: '2026-04-07T00:01:11.781987+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_06
+  unit: '%'
+  valid_from: '2026-04-07'
+  value: 99
+- approved_at: '2026-04-07T13:00:10.992728+07:00'
+  approved_by: admin-batch
+  attribute: domain_limit
+  claim_id: CLM-EMAI-BKNS-DOMAIN_L
+  compiler_note: 'Trích từ bảng thông số kỹ thuật Email Hosting, dòng ''Gói 4'', cột
+    ''Số lượng tên miền'': ''01'''
+  confidence: high
+  entity_id: product.email.bkns.miniem01
+  entity_name: Email Hosting Gói 4
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:29:48.056283+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: medium
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_AN_TOAN_HIEU_SUAT_CAO_2026_04_04
+  - SRC-BKNS_CAMNANG_EMAIL_TENMIEN_DOT1_2026_04_06
+  unit: null
+  valid_from: '2026-04-04'
+  value: 1
+  value_changed_at: '2026-04-06T23:29:47.913832+07:00'
+  value_changed_from: Unlimited
+- approved_at: '2026-04-07T13:00:10.997297+07:00'
+  approved_by: admin-batch
+  attribute: email_account_limit
+  claim_id: CLM-EMAI-BKNS-EMAIL_AC
+  compiler_note: 'Trích từ bảng thông số kỹ thuật Email Hosting, dòng ''Gói 4'', cột
+    ''Số lượng Email'': ''100 email'''
+  confidence: high
+  entity_id: product.email.bkns.miniem01
+  entity_name: Email Hosting Gói 4
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:29:48.031081+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: medium
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_AN_TOAN_HIEU_SUAT_CAO_2026_04_04
+  - SRC-BKNS_CAMNANG_EMAIL_TENMIEN_DOT1_2026_04_06
+  unit: email
+  valid_from: '2026-04-04'
+  value: 100
+  value_changed_at: '2026-04-06T23:29:48.031110+07:00'
+  value_changed_from: 50
+- approved_at: '2026-04-07T13:00:11.001462+07:00'
+  approved_by: admin-batch
+  attribute: email_filter
+  claim_id: CLM-EMAI-BKNS-EMAIL_FI
+  compiler_note: 'Trích từ bảng giá, cột MINI EMAIL 01, hàng Bộ lọc: Có'
+  confidence: high
+  entity_id: product.email.bkns.miniem01
+  entity_name: MINI EMAIL 01
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:45:58.185379+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_AN_TOAN_HIEU_SUAT_CAO_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: true
+- approved_at: '2026-04-07T13:00:11.005299+07:00'
+  approved_by: admin-batch
+  attribute: email_forwarder_limit
+  claim_id: CLM-EMAI-BKNS-EMAIL_FO
+  compiler_note: 'Trích từ bảng thông số kỹ thuật Email Hosting, dòng ''Gói 4'', cột
+    ''Email Forwarders'': ''100'''
+  confidence: high
+  entity_id: product.email.bkns.miniem01
+  entity_name: Email Hosting Gói 4
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:29:48.041614+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: medium
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_AN_TOAN_HIEU_SUAT_CAO_2026_04_04
+  - SRC-BKNS_CAMNANG_EMAIL_TENMIEN_DOT1_2026_04_06
+  unit: null
+  valid_from: '2026-04-04'
+  value: 100
+  value_changed_at: '2026-04-06T23:29:48.041637+07:00'
+  value_changed_from: 40
+- approved_at: '2026-04-07T13:00:11.009074+07:00'
+  approved_by: admin-batch
+  attribute: mailing_list_limit
+  claim_id: CLM-EMAI-BKNS-MAILING_
+  compiler_note: 'Trích từ bảng giá, cột MINI EMAIL 01, hàng Danh sách email: Unlimited'
+  confidence: high
+  entity_id: product.email.bkns.miniem01
+  entity_name: MINI EMAIL 01
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:45:58.161998+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_AN_TOAN_HIEU_SUAT_CAO_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: Unlimited
+- approved_at: '2026-04-07T13:00:11.013477+07:00'
+  approved_by: admin-batch
+  attribute: outgoing_email_limit
+  claim_id: CLM-EMAI-BKNS-OUTGOING
+  compiler_note: 'Trích từ bảng thông số kỹ thuật Email Hosting, dòng ''Gói 4'', cột
+    ''Giới hạn gửi ra'': ''200 email/giờ'''
+  confidence: high
+  entity_id: product.email_hosting.bkns.goi_1
+  entity_name: Email Hosting Gói 4
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:29:48.065092+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: medium
+  source_ids:
+  - SRC-BKNS_CAMNANG_EMAIL_TENMIEN_DOT1_2026_04_06
+  unit: email/giờ
+  valid_from: '2026-04-06'
+  value: 200
+- approved_at: '2026-04-07T13:00:11.017651+07:00'
+  approved_by: admin-batch
+  attribute: outlook_compatibility
+  claim_id: CLM-EMAI-BKNS-OUTLOOK_
+  compiler_note: 'Trích từ bảng giá, cột MINI EMAIL 01, hàng Outlook: Có'
+  confidence: high
+  entity_id: product.email.bkns.miniem01
+  entity_name: MINI EMAIL 01
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:45:58.183354+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_AN_TOAN_HIEU_SUAT_CAO_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: true
+- approved_at: '2026-04-07T13:00:11.021527+07:00'
+  approved_by: admin-batch
+  attribute: platform
+  claim_id: CLM-EMAI-BKNS-PLATFORM
+  compiler_note: 'Trích từ bảng giá, cột MINI EMAIL 02, hàng Nền tảng: Kerio'
+  confidence: high
+  entity_id: product.email.bkns.miniem02
+  entity_name: MINI EMAIL 02
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:45:58.192545+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_AN_TOAN_HIEU_SUAT_CAO_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: Kerio
+- approved_at: '2026-04-07T13:00:11.025431+07:00'
+  approved_by: admin-batch
+  attribute: monthly_price
+  claim_id: CLM-EMAI-BKNS-PRICE
+  compiler_note: 'Trích từ bảng giá, cột MINI EMAIL 03, hàng Giá/Tháng: 556.000đ'
+  confidence: high
+  entity_id: product.email.bkns.miniem03
+  entity_name: MINI EMAIL 03
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:45:58.194524+07:00'
+  qualifiers:
+    billing_cycle: month
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_AN_TOAN_HIEU_SUAT_CAO_2026_04_04
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 556000
+- approved_at: '2026-04-07T13:00:11.029468+07:00'
+  approved_by: admin-batch
+  attribute: spam_protection
+  claim_id: CLM-EMAI-BKNS-SPAM_PRO
+  compiler_note: 'Trích từ bảng giá, cột MINI EMAIL 01, hàng Chống Spam: Có'
+  confidence: high
+  entity_id: product.email.bkns.miniem01
+  entity_name: MINI EMAIL 01
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:45:58.173855+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_AN_TOAN_HIEU_SUAT_CAO_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: true
+- approved_at: '2026-04-07T13:00:11.033212+07:00'
+  approved_by: admin-batch
+  attribute: storage
+  claim_id: CLM-EMAI-BKNS-STORAGE
+  compiler_note: 'Trích từ bảng giá, cột MINI EMAIL 02, hàng Dung lượng gói: 150GB'
+  confidence: high
+  entity_id: product.email.bkns.miniem02
+  entity_name: MINI EMAIL 02
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:45:58.190314+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_AN_TOAN_HIEU_SUAT_CAO_2026_04_04
+  unit: GB
+  valid_from: '2026-04-04'
+  value: 150
+- approved_at: '2026-04-07T13:00:11.036730+07:00'
+  approved_by: admin-batch
+  attribute: storage_per_email
+  claim_id: CLM-EMAI-BKNS-STORAGE_
+  compiler_note: 'Trích từ bảng thông số kỹ thuật Email Hosting, dòng ''Gói 4'', cột
+    ''Dung lượng/Email'': ''5GB'''
+  confidence: high
+  entity_id: product.email_hosting.bkns.goi_1
+  entity_name: Email Hosting Gói 4
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:29:48.051721+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: medium
+  source_ids:
+  - SRC-BKNS_CAMNANG_EMAIL_TENMIEN_DOT1_2026_04_06
+  unit: GB
+  valid_from: '2026-04-06'
+  value: 5
+- approved_at: '2026-04-07T13:00:11.040397+07:00'
+  approved_by: admin-batch
+  attribute: virus_protection
+  claim_id: CLM-EMAI-BKNS-VIRUS_PR
+  compiler_note: 'Trích từ bảng giá, cột MINI EMAIL 01, hàng Chống Virut: Có'
+  confidence: high
+  entity_id: product.email.bkns.miniem01
+  entity_name: MINI EMAIL 01
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:45:58.176045+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_AN_TOAN_HIEU_SUAT_CAO_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: true
+- approved_at: '2026-04-07T13:00:11.044252+07:00'
+  approved_by: admin-batch
+  attribute: webmail_access
+  claim_id: CLM-EMAI-BKNS-WEBMAIL_
+  compiler_note: 'Trích từ bảng giá, cột MINI EMAIL 01, hàng Sử dụng Webmail: Có'
+  confidence: high
+  entity_id: product.email.bkns.miniem01
+  entity_name: MINI EMAIL 01
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:45:58.180786+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_AN_TOAN_HIEU_SUAT_CAO_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: true
+- approved_at: '2026-04-07T13:00:11.047638+07:00'
+  approved_by: admin-batch
+  attribute: product_category
+  claim_id: CLM-EMAI-CLOUD_EMAIL_SERVER-PRODUCT_
+  compiler_note: 'Trích từ tiêu đề: ''# Cloud Email Server - Giải Pháp Email Doanh
+    Nghiệp'''
+  confidence: high
+  entity_id: product.email.cloud_email_server
+  entity_name: Cloud Email Server
+  entity_type: product
+  observed_at: '2026-04-05T21:45:01.027356+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-CLOUD_EMAIL_SERVER_WEB_2026_04_05
+  unit: null
+  valid_from: '2026-04-05'
+  value: Giải Pháp Email Doanh Nghiệp
+- approved_at: '2026-04-07T13:00:11.051463+07:00'
+  approved_by: admin-batch
+  attribute: hourly_send_limit
+  claim_id: CLM-EMAI-EMAIL1-HOURLY_S
+  compiler_note: 'Trích từ bảng giá, cột EMAIL 1, hàng Số lượng email gửi ra/ giờ:
+    ''200'''
+  confidence: high
+  entity_id: product.email.email1
+  entity_name: EMAIL 1
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:02:16.402172+07:00'
+  qualifiers:
+    belongs_to: ENT-PROD-EMAIL
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_04
+  unit: email
+  valid_from: '2026-04-04'
+  value: 200
+- approved_at: '2026-04-07T13:00:11.055143+07:00'
+  approved_by: admin-batch
+  attribute: num_accounts
+  claim_id: CLM-EMAI-EMAIL1-NUM_ACCO
+  compiler_note: 'Trích từ bảng giá, cột EMAIL 1, hàng Số lượng tài khoản email: ''5'''
+  confidence: high
+  entity_id: product.email.email1
+  entity_name: EMAIL 1
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:02:16.394178+07:00'
+  qualifiers:
+    belongs_to: ENT-PROD-EMAIL
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_04
+  unit: ''
+  valid_from: '2026-04-04'
+  value: 5
+- approved_at: '2026-04-07T13:00:11.058920+07:00'
+  approved_by: admin-batch
+  attribute: num_domains
+  claim_id: CLM-EMAI-EMAIL1-NUM_DOMA
+  compiler_note: 'Trích từ bảng giá, cột EMAIL 1, hàng Số lượng tên miền: ''1'''
+  confidence: high
+  entity_id: product.email.email1
+  entity_name: EMAIL 1
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:02:16.399985+07:00'
+  qualifiers:
+    belongs_to: ENT-PROD-EMAIL
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_04
+  unit: ''
+  valid_from: '2026-04-04'
+  value: 1
+- approved_at: '2026-04-07T13:00:11.062609+07:00'
+  approved_by: admin-batch
+  attribute: num_email_forwards
+  claim_id: CLM-EMAI-EMAIL1-NUM_EMAI
+  compiler_note: 'Trích từ bảng giá, cột EMAIL 1, hàng Số lượng email forward: ''5'''
+  confidence: high
+  entity_id: product.email.email1
+  entity_name: EMAIL 1
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:02:16.396104+07:00'
+  qualifiers:
+    belongs_to: ENT-PROD-EMAIL
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_04
+  unit: ''
+  valid_from: '2026-04-04'
+  value: 5
+- approved_at: '2026-04-07T13:00:11.066416+07:00'
+  approved_by: admin-batch
+  attribute: monthly_price
+  claim_id: CLM-EMAI-EMAIL1-PRICE
+  compiler_note: 'Trích từ bảng giá, cột EMAIL 1, hàng Giá: ''42.000đ/tháng'''
+  confidence: high
+  entity_id: product.email.email1
+  entity_name: EMAIL 1
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:02:16.392177+07:00'
+  qualifiers:
+    belongs_to: ENT-PROD-EMAIL
+    billing_cycle: month
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_04
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 42000
+- approved_at: '2026-04-07T13:00:11.070689+07:00'
+  approved_by: admin-batch
+  attribute: registration_url
+  claim_id: CLM-EMAI-EMAIL1-REGISTRA
+  compiler_note: 'Trích từ bảng giá, cột EMAIL 1, hàng Đăng ký: ''[Đăng ký](https://my.bkns.net/?cmd=cart&action=add&id=302)'''
+  confidence: high
+  entity_id: product.email.email1
+  entity_name: EMAIL 1
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:02:16.404421+07:00'
+  qualifiers:
+    belongs_to: ENT-PROD-EMAIL
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_04
+  unit: ''
+  valid_from: '2026-04-04'
+  value: https://my.bkns.net/?cmd=cart&action=add&id=302
+- approved_at: '2026-04-07T13:00:11.074607+07:00'
+  approved_by: admin-batch
+  attribute: storage_per_account
+  claim_id: CLM-EMAI-EMAIL1-STORAGE_
+  compiler_note: 'Trích từ bảng giá, cột EMAIL 1, hàng Dung lượng mỗi email: ''5 GB'''
+  confidence: high
+  entity_id: product.email.email1
+  entity_name: EMAIL 1
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:02:16.398036+07:00'
+  qualifiers:
+    belongs_to: ENT-PROD-EMAIL
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_04
+  unit: GB
+  valid_from: '2026-04-04'
+  value: 5
+- approved_at: '2026-04-07T13:00:11.078457+07:00'
+  approved_by: admin-batch
+  attribute: num_accounts
+  claim_id: CLM-EMAI-EMAIL2-NUM_ACCO
+  compiler_note: 'Trích từ bảng giá, cột EMAIL 2, hàng Số lượng tài khoản email: ''20'''
+  confidence: high
+  entity_id: product.email.email2
+  entity_name: EMAIL 2
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:02:16.408659+07:00'
+  qualifiers:
+    belongs_to: ENT-PROD-EMAIL
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_04
+  unit: ''
+  valid_from: '2026-04-04'
+  value: 20
+- approved_at: '2026-04-07T13:00:11.082495+07:00'
+  approved_by: admin-batch
+  attribute: num_email_forwards
+  claim_id: CLM-EMAI-EMAIL2-NUM_EMAI
+  compiler_note: 'Trích từ bảng giá, cột EMAIL 2, hàng Số lượng email forward: ''10'''
+  confidence: high
+  entity_id: product.email.email2
+  entity_name: EMAIL 2
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:02:16.410536+07:00'
+  qualifiers:
+    belongs_to: ENT-PROD-EMAIL
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_04
+  unit: ''
+  valid_from: '2026-04-04'
+  value: 10
+- approved_at: '2026-04-07T13:00:11.086361+07:00'
+  approved_by: admin-batch
+  attribute: monthly_price
+  claim_id: CLM-EMAI-EMAIL2-PRICE
+  compiler_note: 'Trích từ bảng giá, cột EMAIL 2, hàng Giá: ''85.000đ/tháng'''
+  confidence: high
+  entity_id: product.email.email2
+  entity_name: EMAIL 2
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:02:16.406863+07:00'
+  qualifiers:
+    belongs_to: ENT-PROD-EMAIL
+    billing_cycle: month
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_04
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 85000
+- approved_at: '2026-04-07T13:00:11.090230+07:00'
+  approved_by: admin-batch
+  attribute: email_accounts
+  claim_id: CLM-EMAI-EMAIL_1-EMAIL_AC
+  compiler_note: 'Trích từ bảng giá: ''Số lượng tài khoản email | 5'''
+  confidence: high
+  entity_id: bkns.email_hosting.email_1
+  entity_name: EMAIL 1
+  entity_type: product_plan
+  observed_at: '2026-04-07T00:05:00.877464+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_06
+  unit: tài khoản
+  valid_from: '2026-04-07'
+  value: 5
+- approved_at: '2026-04-07T13:00:11.094234+07:00'
+  approved_by: admin-batch
+  attribute: email_forwards
+  claim_id: CLM-EMAI-EMAIL_1-EMAIL_FO
+  compiler_note: 'Trích từ bảng giá: ''Số lượng email forward | 5'''
+  confidence: high
+  entity_id: bkns.email_hosting.email_1
+  entity_name: EMAIL 1
+  entity_type: product_plan
+  observed_at: '2026-04-07T00:05:00.879525+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_06
+  unit: tài khoản
+  valid_from: '2026-04-07'
+  value: 5
+- approved_at: '2026-04-07T13:00:11.098466+07:00'
+  approved_by: admin-batch
+  attribute: monthly_price
+  claim_id: CLM-EMAI-EMAIL_1-PRICE
+  compiler_note: 'Trích từ bảng giá: ''Giá | 42.000đ/tháng'''
+  confidence: high
+  entity_id: bkns.email_hosting.email_1
+  entity_name: EMAIL 1
+  entity_type: product_plan
+  observed_at: '2026-04-07T00:05:00.875483+07:00'
+  qualifiers:
+    billing_cycle: month
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_06
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 42000
+- approved_at: '2026-04-07T13:00:11.103527+07:00'
+  approved_by: admin-batch
+  attribute: registration_url
+  claim_id: CLM-EMAI-EMAIL_1-REGISTRA
+  compiler_note: Trích từ bảng giá, dòng Đăng ký của gói EMAIL 1.
+  confidence: high
+  entity_id: bkns.email_hosting.email_1
+  entity_name: EMAIL 1
+  entity_type: product_plan
+  observed_at: '2026-04-07T00:05:00.881665+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_06
+  unit: null
+  valid_from: '2026-04-07'
+  value: https://my.bkns.net/?cmd=cart&action=add&id=302
+- approved_at: '2026-04-07T13:00:11.107739+07:00'
+  approved_by: admin-batch
+  attribute: storage_per_email
+  claim_id: CLM-EMAI-EMAIL_1-STORAGE_
+  compiler_note: 'Trích từ Gói EMAIL 1: - Dung lượng: 5GB/email'
+  confidence: high
+  entity_id: product.email_hosting.email_1
+  entity_name: EMAIL 1
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:13:40.825537+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BANG_GIA_DICH_VU_BKNS_TEXT_2026_04_04
+  - SRC-BANG_GIA_DICH_VU_BKNS_TEXT_2026_04_06
+  unit: GB
+  valid_from: '2026-04-04'
+  value: 5
+- approved_at: '2026-04-07T13:00:11.112343+07:00'
+  approved_by: admin-batch
+  attribute: email_accounts
+  claim_id: CLM-EMAI-EMAIL_2-EMAIL_AC
+  compiler_note: 'Trích từ bảng giá: ''Số lượng tài khoản email | 20'''
+  confidence: high
+  entity_id: bkns.email_hosting.email_2
+  entity_name: EMAIL 2
+  entity_type: product_plan
+  observed_at: '2026-04-07T00:05:00.886054+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_06
+  unit: tài khoản
+  valid_from: '2026-04-07'
+  value: 20
+- approved_at: '2026-04-07T13:00:11.116029+07:00'
+  approved_by: admin-batch
+  attribute: email_forwards
+  claim_id: CLM-EMAI-EMAIL_2-EMAIL_FO
+  compiler_note: 'Trích từ bảng giá: ''Số lượng email forward | 10'''
+  confidence: high
+  entity_id: bkns.email_hosting.email_2
+  entity_name: EMAIL 2
+  entity_type: product_plan
+  observed_at: '2026-04-07T00:05:00.888079+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_06
+  unit: tài khoản
+  valid_from: '2026-04-07'
+  value: 10
+- approved_at: '2026-04-07T13:00:11.120245+07:00'
+  approved_by: admin-batch
+  attribute: monthly_price
+  claim_id: CLM-EMAI-EMAIL_2-PRICE
+  compiler_note: 'Trích từ bảng giá: ''Giá | 85.000đ/tháng'''
+  confidence: high
+  entity_id: bkns.email_hosting.email_2
+  entity_name: EMAIL 2
+  entity_type: product_plan
+  observed_at: '2026-04-07T00:05:00.883837+07:00'
+  qualifiers:
+    billing_cycle: month
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_06
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 85000
+- approved_at: '2026-04-07T13:00:11.123699+07:00'
+  approved_by: admin-batch
+  attribute: registration_url
+  claim_id: CLM-EMAI-EMAIL_2-REGISTRA
+  compiler_note: Trích từ bảng giá, dòng Đăng ký của gói EMAIL 2.
+  confidence: high
+  entity_id: bkns.email_hosting.email_2
+  entity_name: EMAIL 2
+  entity_type: product_plan
+  observed_at: '2026-04-07T00:05:00.890347+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_06
+  unit: null
+  valid_from: '2026-04-07'
+  value: https://my.bkns.net/?cmd=cart&action=add&id=264
+- approved_at: '2026-04-07T13:00:11.127359+07:00'
+  approved_by: admin-batch
+  attribute: storage_per_email
+  claim_id: CLM-EMAI-EMAIL_2-STORAGE_
+  compiler_note: 'Trích từ Gói EMAIL 2: - Dung lượng: 5GB/email'
+  confidence: high
+  entity_id: product.email_hosting.email_2
+  entity_name: EMAIL 2
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:13:40.898036+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BANG_GIA_DICH_VU_BKNS_TEXT_2026_04_04
+  - SRC-BANG_GIA_DICH_VU_BKNS_TEXT_2026_04_06
+  unit: GB
+  valid_from: '2026-04-04'
+  value: 5
+- approved_at: '2026-04-07T13:00:11.131165+07:00'
+  approved_by: admin-batch
+  attribute: email_accounts
+  claim_id: CLM-EMAI-EMAIL_3-EMAIL_AC
+  compiler_note: 'Trích từ bảng giá: ''Số lượng tài khoản email | 50'''
+  confidence: high
+  entity_id: bkns.email_hosting.email_3
+  entity_name: EMAIL 3
+  entity_type: product_plan
+  observed_at: '2026-04-07T00:05:00.894993+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_06
+  unit: tài khoản
+  valid_from: '2026-04-07'
+  value: 50
+- approved_at: '2026-04-07T13:00:11.134479+07:00'
+  approved_by: admin-batch
+  attribute: email_forwards
+  claim_id: CLM-EMAI-EMAIL_3-EMAIL_FO
+  compiler_note: 'Trích từ bảng giá: ''Số lượng email forward | 40'''
+  confidence: high
+  entity_id: bkns.email_hosting.email_3
+  entity_name: EMAIL 3
+  entity_type: product_plan
+  observed_at: '2026-04-07T00:05:00.897375+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_06
+  unit: tài khoản
+  valid_from: '2026-04-07'
+  value: 40
+- approved_at: '2026-04-07T13:00:11.138366+07:00'
+  approved_by: admin-batch
+  attribute: monthly_price
+  claim_id: CLM-EMAI-EMAIL_3-PRICE
+  compiler_note: 'Trích từ bảng giá: ''Giá | 166.000đ/tháng'''
+  confidence: high
+  entity_id: bkns.email_hosting.email_3
+  entity_name: EMAIL 3
+  entity_type: product_plan
+  observed_at: '2026-04-07T00:05:00.892586+07:00'
+  qualifiers:
+    billing_cycle: month
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_06
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 166000
+- approved_at: '2026-04-07T13:00:11.141820+07:00'
+  approved_by: admin-batch
+  attribute: registration_url
+  claim_id: CLM-EMAI-EMAIL_3-REGISTRA
+  compiler_note: Trích từ bảng giá, dòng Đăng ký của gói EMAIL 3.
+  confidence: high
+  entity_id: bkns.email_hosting.email_3
+  entity_name: EMAIL 3
+  entity_type: product_plan
+  observed_at: '2026-04-07T00:05:00.899640+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_06
+  unit: null
+  valid_from: '2026-04-07'
+  value: https://my.bkns.net/?cmd=cart&action=add&id=265
+- approved_at: '2026-04-07T13:00:11.145276+07:00'
+  approved_by: admin-batch
+  attribute: storage_per_account
+  claim_id: CLM-EMAI-EMAIL_3-STORAGE_
+  compiler_note: 'Trích từ Gói EMAIL 3: - Dung lượng: 5GB/email'
+  confidence: high
+  entity_id: product.email_hosting.email_3
+  entity_name: EMAIL 3
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:13:40.976326+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BANG_GIA_DICH_VU_BKNS_TEXT_2026_04_06
+  unit: GB
+  valid_from: '2026-04-06'
+  value: 5
+- approved_at: '2026-04-07T13:00:11.148693+07:00'
+  approved_by: admin-batch
+  attribute: email_accounts
+  claim_id: CLM-EMAI-EMAIL_4-EMAIL_AC
+  compiler_note: 'Trích từ bảng giá: ''Số lượng tài khoản email | 100'''
+  confidence: high
+  entity_id: bkns.email_hosting.email_4
+  entity_name: EMAIL 4
+  entity_type: product_plan
+  observed_at: '2026-04-07T00:05:00.904324+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_06
+  unit: tài khoản
+  valid_from: '2026-04-07'
+  value: 100
+- approved_at: '2026-04-07T13:00:11.152138+07:00'
+  approved_by: admin-batch
+  attribute: email_forwards
+  claim_id: CLM-EMAI-EMAIL_4-EMAIL_FO
+  compiler_note: 'Trích từ bảng giá: ''Số lượng email forward | 100'''
+  confidence: high
+  entity_id: bkns.email_hosting.email_4
+  entity_name: EMAIL 4
+  entity_type: product_plan
+  observed_at: '2026-04-07T00:05:00.906348+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_06
+  unit: tài khoản
+  valid_from: '2026-04-07'
+  value: 100
+- approved_at: '2026-04-07T13:00:11.155486+07:00'
+  approved_by: admin-batch
+  attribute: monthly_price
+  claim_id: CLM-EMAI-EMAIL_4-PRICE
+  compiler_note: 'Trích từ bảng giá: ''Giá | 285.000đ/tháng'''
+  confidence: high
+  entity_id: bkns.email_hosting.email_4
+  entity_name: EMAIL 4
+  entity_type: product_plan
+  observed_at: '2026-04-07T00:05:00.901852+07:00'
+  qualifiers:
+    billing_cycle: month
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_06
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 285000
+- approved_at: '2026-04-07T13:00:11.159525+07:00'
+  approved_by: admin-batch
+  attribute: registration_url
+  claim_id: CLM-EMAI-EMAIL_4-REGISTRA
+  compiler_note: Trích từ bảng giá, dòng Đăng ký của gói EMAIL 4.
+  confidence: high
+  entity_id: bkns.email_hosting.email_4
+  entity_name: EMAIL 4
+  entity_type: product_plan
+  observed_at: '2026-04-07T00:05:00.908463+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_06
+  unit: null
+  valid_from: '2026-04-07'
+  value: https://my.bkns.net/?cmd=cart&action=add&id=266
+- approved_at: '2026-04-07T13:00:11.164634+07:00'
+  approved_by: admin-batch
+  attribute: comparison_point
+  claim_id: CLM-EMAI-EMAIL_RELAY-COMPARIS
+  compiler_note: 'Trích từ bảng So sánh Email Relay và Email Server: | EMAIL RELAY
+    | Toàn bộ email gửi ra ngoài sẽ được routing qua hệ thống của BKNS để xử lý. |'
+  confidence: high
+  entity_id: product.email.email_relay
+  entity_name: Email Relay
+  entity_type: product
+  observed_at: '2026-04-07T00:21:09.884928+07:00'
+  qualifiers:
+    compared_to: Email Server
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_TIN_CAY_2026_04_06
+  unit: ''
+  valid_from: '2026-04-07'
+  value: Toàn bộ email gửi ra ngoài sẽ được routing qua hệ thống của BKNS để xử lý.
+  value_changed_at: '2026-04-07T00:21:09.884946+07:00'
+  value_changed_from: Khách hàng tự kiểm soát uy tín IP server và gặp vấn đề khi gửi
+    mail.
+- approved_at: '2026-04-07T13:00:11.170538+07:00'
+  approved_by: admin-batch
+  attribute: description
+  claim_id: CLM-EMAI-EMAIL_RELAY-DESC
+  compiler_note: 'Trích từ mục Tóm tắt nhanh: • Dịch vụ này là gì: Email Relay là
+    một giải pháp trung gian giúp định tuyến toàn bộ email gửi ra từ hệ thống Email
+    Server của khách hàng qua hệ thống của BKNS để xử lý, nhằm tăng uy tín IP và đảm
+    bảo tỷ lệ email vào inbox cao.'
+  confidence: high
+  entity_id: product.email.email_relay
+  entity_name: Email Relay
+  entity_type: product
+  observed_at: '2026-04-07T00:21:09.772235+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_TIN_CAY_2026_04_06
+  unit: ''
+  valid_from: '2026-04-07'
+  value: Email Relay là một giải pháp trung gian giúp định tuyến toàn bộ email gửi
+    ra từ hệ thống Email Server của khách hàng qua hệ thống của BKNS để xử lý, nhằm
+    tăng uy tín IP và đảm bảo tỷ lệ email vào inbox cao.
+- approved_at: '2026-04-07T13:00:11.175012+07:00'
+  approved_by: admin-batch
+  attribute: domain_limit
+  claim_id: CLM-EMAI-EMAIL_RELAY-DOMAIN_L
+  compiler_note: 'Trích từ mục Tính năng / Thành phần: • Không giới hạn tên miền:
+    Khách hàng có thể sử dụng dịch vụ cho nhiều tên miền khác nhau.'
+  confidence: high
+  entity_id: product.email.email_relay
+  entity_name: Email Relay
+  entity_type: product
+  observed_at: '2026-04-07T00:21:09.788760+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_TIN_CAY_2026_04_06
+  unit: null
+  valid_from: '2026-04-07'
+  value: unlimited
+- approved_at: '2026-04-07T13:00:11.179024+07:00'
+  approved_by: admin-batch
+  attribute: email_limit_hourly
+  claim_id: CLM-EMAI-EMAIL_RELAY-EMAIL_LI
+  compiler_note: 'Trích từ bảng giá: | Số lượng email/ngày | 3000 |'
+  confidence: high
+  entity_id: product.email.email_relay
+  entity_name: BK-RELAY04
+  entity_type: product_plan
+  observed_at: '2026-04-07T00:21:09.848459+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_TIN_CAY_2026_04_06
+  unit: email
+  valid_from: '2026-04-07'
+  value: 3000
+  value_changed_at: '2026-04-07T00:21:09.848476+07:00'
+  value_changed_from: 1500
+- approved_at: '2026-04-07T13:00:11.182505+07:00'
+  approved_by: admin-batch
+  attribute: feature
+  claim_id: CLM-EMAI-EMAIL_RELAY-FEATURE
+  compiler_note: 'Trích từ mục Tính năng / Thành phần: • IP uy tín: Sử dụng hệ thống
+    IP đã được whitelist để gửi email.'
+  confidence: high
+  entity_id: product.email.email_relay
+  entity_name: Email Relay
+  entity_type: product
+  observed_at: '2026-04-07T00:21:09.785165+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_TIN_CAY_2026_04_06
+  unit: ''
+  valid_from: '2026-04-07'
+  value: Sử dụng hệ thống IP đã được whitelist để gửi email.
+- approved_at: '2026-04-07T13:00:11.186390+07:00'
+  approved_by: admin-batch
+  attribute: has_admin_interface
+  claim_id: CLM-EMAI-EMAIL_RELAY-HAS_ADMI
+  compiler_note: 'Trích từ mục Tính năng / Thành phần: • Giao diện quản trị: Cung
+    cấp giao diện để khách hàng có thể quản trị dịch vụ Email Relay của mình.'
+  confidence: high
+  entity_id: product.email.email_relay
+  entity_name: Email Relay
+  entity_type: product
+  observed_at: '2026-04-07T00:21:09.792409+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_TIN_CAY_2026_04_06
+  unit: null
+  valid_from: '2026-04-07'
+  value: true
+- approved_at: '2026-04-07T13:00:11.190023+07:00'
+  approved_by: admin-batch
+  attribute: has_technical_support
+  claim_id: CLM-EMAI-EMAIL_RELAY-HAS_TECH
+  compiler_note: 'Trích từ mục Tính năng / Thành phần: • Hỗ trợ khách hàng: Cung cấp
+    hỗ trợ kỹ thuật liên quan đến dịch vụ.'
+  confidence: high
+  entity_id: product.email.email_relay
+  entity_name: Email Relay
+  entity_type: product
+  observed_at: '2026-04-07T00:21:09.794835+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_TIN_CAY_2026_04_06
+  unit: null
+  valid_from: '2026-04-07'
+  value: true
+- approved_at: '2026-04-07T13:00:11.193709+07:00'
+  approved_by: admin-batch
+  attribute: inbox_delivery_rate
+  claim_id: CLM-EMAI-EMAIL_RELAY-INBOX_DE
+  compiler_note: 'Trích từ mục Tính năng / Thành phần: • Đảm bảo tỷ lệ vào inbox:
+    Dịch vụ cam kết tỷ lệ email vào inbox lên đến 99%.'
+  confidence: high
+  entity_id: product.email.email_relay
+  entity_name: Email Relay
+  entity_type: product
+  observed_at: '2026-04-07T00:21:09.781702+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_TIN_CAY_2026_04_06
+  unit: null
+  valid_from: '2026-04-07'
+  value: 0.99
+- approved_at: '2026-04-07T13:00:11.197892+07:00'
+  approved_by: admin-batch
+  attribute: policy
+  claim_id: CLM-EMAI-EMAIL_RELAY-POLICY
+  compiler_note: 'Trích từ mục Chính sách / Điều khoản / Lưu ý: • Dịch vụ này là giải
+    pháp định tuyến email gửi đi, không phải là dịch vụ lưu trữ email đến.'
+  confidence: high
+  entity_id: product.email.email_relay
+  entity_name: Email Relay
+  entity_type: product
+  observed_at: '2026-04-07T00:21:09.799126+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_TIN_CAY_2026_04_06
+  unit: ''
+  valid_from: '2026-04-07'
+  value: Dịch vụ này là giải pháp định tuyến email gửi đi, không phải là dịch vụ lưu
+    trữ email đến.
+- approved_at: '2026-04-07T13:00:11.202646+07:00'
+  approved_by: admin-batch
+  attribute: monthly_price
+  claim_id: CLM-EMAI-EMAIL_RELAY-PRICE
+  compiler_note: 'Trích từ bảng giá: | Giá/Tháng | 980.000đ |'
+  confidence: high
+  entity_id: product.email.email_relay.bk_relay01
+  entity_name: BK-RELAY04
+  entity_type: product_plan
+  observed_at: '2026-04-07T00:21:09.844195+07:00'
+  qualifiers:
+    billing_cycle: month
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_TIN_CAY_2026_04_06
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 980000
+  value_changed_at: '2026-04-07T00:21:09.844214+07:00'
+  value_changed_from: 500000
+- approved_at: '2026-04-07T13:00:11.206685+07:00'
+  approved_by: admin-batch
+  attribute: registration_url
+  claim_id: CLM-EMAI-EMAIL_RELAY-REGISTRA
+  compiler_note: 'Trích từ bảng giá: | Đăng ký | [Đăng ký](https://my.bkns.net/?cmd=cart&action=add&id=408)
+    |'
+  confidence: high
+  entity_id: product.email.email_relay.bk_relay01
+  entity_name: BK-RELAY04
+  entity_type: product_plan
+  observed_at: '2026-04-07T00:21:09.852678+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_TIN_CAY_2026_04_06
+  unit: ''
+  valid_from: '2026-04-07'
+  value: https://my.bkns.net/?cmd=cart&action=add&id=408
+  value_changed_at: '2026-04-07T00:21:09.852695+07:00'
+  value_changed_from: https://my.bkns.net/?cmd=cart&action=add&id=407
+- approved_at: '2026-04-07T13:00:11.210658+07:00'
+  approved_by: admin-batch
+  attribute: requirement
+  claim_id: CLM-EMAI-EMAIL_RELAY-REQUIREM
+  compiler_note: 'Trích từ mục Chính sách / Điều khoản / Lưu ý: • Khách hàng cần có
+    sẵn một hệ thống Email Server để có thể sử dụng dịch vụ Email Relay.'
+  confidence: high
+  entity_id: product.email.email_relay
+  entity_name: Email Relay
+  entity_type: product
+  observed_at: '2026-04-07T00:21:09.801439+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_TIN_CAY_2026_04_06
+  unit: ''
+  valid_from: '2026-04-07'
+  value: Khách hàng cần có sẵn một hệ thống Email Server để có thể sử dụng dịch vụ
+    Email Relay.
+- approved_at: '2026-04-07T13:00:11.215164+07:00'
+  approved_by: admin-batch
+  attribute: target_customer
+  claim_id: CLM-EMAI-EMAIL_RELAY-TARGET_C
+  compiler_note: 'Trích từ mục Tóm tắt nhanh: • Phù hợp với: Các khách hàng đã có
+    Email Server riêng và tự quản lý nhưng gặp vấn đề khi gửi email ra ngoài (ví dụ:
+    IP bị blacklist, email vào spam).'
+  confidence: high
+  entity_id: product.email.email_relay
+  entity_name: Email Relay
+  entity_type: product
+  observed_at: '2026-04-07T00:21:09.777422+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_TIN_CAY_2026_04_06
+  unit: ''
+  valid_from: '2026-04-07'
+  value: 'Các khách hàng đã có Email Server riêng và tự quản lý nhưng gặp vấn đề khi
+    gửi email ra ngoài (ví dụ: IP bị blacklist, email vào spam).'
+- approved_at: '2026-04-07T13:00:11.221869+07:00'
+  approved_by: admin-batch
+  attribute: comparison_point
+  claim_id: CLM-EMAI-EMAIL_SERVER-COMPARIS
+  compiler_note: 'Trích từ bảng So sánh Email Hosting và Email Server: | EMAIL SERVER
+    | Số lượng email tạo ra có thể nhiều hơn so với Email Hosting. |'
+  confidence: high
+  entity_id: product.email.email_server
+  entity_name: Email Server
+  entity_type: product
+  observed_at: '2026-04-07T00:21:09.934107+07:00'
+  qualifiers:
+    compared_to: Email Hosting
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_TIN_CAY_2026_04_06
+  unit: ''
+  valid_from: '2026-04-07'
+  value: Số lượng email tạo ra có thể nhiều hơn so với Email Hosting.
+  value_changed_at: '2026-04-07T00:21:09.934132+07:00'
+  value_changed_from: Sử dụng một IP riêng biệt, không dùng chung.
+- approved_at: '2026-04-07T13:00:11.226350+07:00'
+  approved_by: admin-batch
+  attribute: platform
+  claim_id: CLM-EMAI-ES_01-PLATFORM
+  compiler_note: 'Trích từ bảng giá: | ES 01 | ... | Nền tảng | Zimbra |'
+  confidence: high
+  entity_id: product.email.es_01
+  entity_name: ES 01
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:58:41.696288+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_AN_TOAN_HIEU_SUAT_CAO_2026_04_06
+  unit: null
+  valid_from: '2026-04-06'
+  value: Zimbra
+- approved_at: '2026-04-07T13:00:11.230916+07:00'
+  approved_by: admin-batch
+  attribute: monthly_price
+  claim_id: CLM-EMAI-ES_01-PRICE
+  compiler_note: 'Trích từ bảng giá: | ES 01 | ... | Giá/Tháng | 734.000đ |'
+  confidence: high
+  entity_id: product.email.es_01
+  entity_name: ES 01
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:58:41.689786+07:00'
+  qualifiers:
+    billing_cycle: month
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_AN_TOAN_HIEU_SUAT_CAO_2026_04_06
+  unit: VND
+  valid_from: '2026-04-06'
+  value: 734000
+- approved_at: '2026-04-07T13:00:11.234497+07:00'
+  approved_by: admin-batch
+  attribute: storage
+  claim_id: CLM-EMAI-ES_01-STORAGE
+  compiler_note: 'Trích từ bảng giá: | ES 01 | ... | Dung lượng gói | 300GB |'
+  confidence: high
+  entity_id: product.email.es_01
+  entity_name: ES 01
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:58:41.693108+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_AN_TOAN_HIEU_SUAT_CAO_2026_04_06
+  unit: GB
+  valid_from: '2026-04-06'
+  value: 300
+- approved_at: '2026-04-07T13:00:11.238403+07:00'
+  approved_by: admin-batch
+  attribute: platform
+  claim_id: CLM-EMAI-ES_02-PLATFORM
+  compiler_note: 'Trích từ bảng giá: | ES 02 | ... | Nền tảng | Zimbra |'
+  confidence: high
+  entity_id: product.email.es_02
+  entity_name: ES 02
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:58:41.705923+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_AN_TOAN_HIEU_SUAT_CAO_2026_04_06
+  unit: null
+  valid_from: '2026-04-06'
+  value: Zimbra
+- approved_at: '2026-04-07T13:00:11.242066+07:00'
+  approved_by: admin-batch
+  attribute: monthly_price
+  claim_id: CLM-EMAI-ES_02-PRICE
+  compiler_note: 'Trích từ bảng giá: | ES 02 | ... | Giá/Tháng | 1.275.000đ |'
+  confidence: high
+  entity_id: product.email.es_02
+  entity_name: ES 02
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:58:41.699552+07:00'
+  qualifiers:
+    billing_cycle: month
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_AN_TOAN_HIEU_SUAT_CAO_2026_04_06
+  unit: VND
+  valid_from: '2026-04-06'
+  value: 1275000
+- approved_at: '2026-04-07T13:00:11.245491+07:00'
+  approved_by: admin-batch
+  attribute: storage
+  claim_id: CLM-EMAI-ES_02-STORAGE
+  compiler_note: 'Trích từ bảng giá: | ES 02 | ... | Dung lượng gói | 500GB |'
+  confidence: high
+  entity_id: product.email.es_02
+  entity_name: ES 02
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:58:41.702800+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_AN_TOAN_HIEU_SUAT_CAO_2026_04_06
+  unit: GB
+  valid_from: '2026-04-06'
+  value: 500
+- approved_at: '2026-04-07T13:00:11.248951+07:00'
+  approved_by: admin-batch
+  attribute: platform
+  claim_id: CLM-EMAI-ES_03-PLATFORM
+  compiler_note: 'Trích từ bảng giá: | ES 03 | ... | Nền tảng | Zimbra |'
+  confidence: high
+  entity_id: product.email.es_03
+  entity_name: ES 03
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:58:41.715499+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_AN_TOAN_HIEU_SUAT_CAO_2026_04_06
+  unit: null
+  valid_from: '2026-04-06'
+  value: Zimbra
+- approved_at: '2026-04-07T13:00:11.252447+07:00'
+  approved_by: admin-batch
+  attribute: monthly_price
+  claim_id: CLM-EMAI-ES_03-PRICE
+  compiler_note: 'Trích từ bảng giá: | ES 03 | ... | Giá/Tháng | 2.720.000đ |'
+  confidence: high
+  entity_id: product.email.es_03
+  entity_name: ES 03
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:58:41.709116+07:00'
+  qualifiers:
+    billing_cycle: month
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_AN_TOAN_HIEU_SUAT_CAO_2026_04_06
+  unit: VND
+  valid_from: '2026-04-06'
+  value: 2720000
+- approved_at: '2026-04-07T13:00:11.256097+07:00'
+  approved_by: admin-batch
+  attribute: storage
+  claim_id: CLM-EMAI-ES_03-STORAGE
+  compiler_note: 'Trích từ bảng giá: | ES 03 | ... | Dung lượng gói | 1000GB |'
+  confidence: high
+  entity_id: product.email.es_03
+  entity_name: ES 03
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:58:41.712385+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_AN_TOAN_HIEU_SUAT_CAO_2026_04_06
+  unit: GB
+  valid_from: '2026-04-06'
+  value: 1000
+- approved_at: '2026-04-07T13:00:11.259711+07:00'
+  approved_by: admin-batch
+  attribute: platform
+  claim_id: CLM-EMAI-ES_04-PLATFORM
+  compiler_note: 'Trích từ bảng giá: | ES 04 | ... | Nền tảng | Zimbra |'
+  confidence: high
+  entity_id: product.email.es_04
+  entity_name: ES 04
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:58:41.725316+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_AN_TOAN_HIEU_SUAT_CAO_2026_04_06
+  unit: null
+  valid_from: '2026-04-06'
+  value: Zimbra
+- approved_at: '2026-04-07T13:00:11.263361+07:00'
+  approved_by: admin-batch
+  attribute: monthly_price
+  claim_id: CLM-EMAI-ES_04-PRICE
+  compiler_note: 'Trích từ bảng giá: | ES 04 | ... | Giá/Tháng | 4.165.000đ |'
+  confidence: high
+  entity_id: product.email.es_04
+  entity_name: ES 04
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:58:41.718812+07:00'
+  qualifiers:
+    billing_cycle: month
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_AN_TOAN_HIEU_SUAT_CAO_2026_04_06
+  unit: VND
+  valid_from: '2026-04-06'
+  value: 4165000
+- approved_at: '2026-04-07T13:00:11.271327+07:00'
+  approved_by: admin-batch
+  attribute: storage
+  claim_id: CLM-EMAI-ES_04-STORAGE
+  compiler_note: 'Trích từ bảng giá: | ES 04 | ... | Dung lượng gói | 2000GB |'
+  confidence: high
+  entity_id: product.email.es_04
+  entity_name: ES 04
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:58:41.722133+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_AN_TOAN_HIEU_SUAT_CAO_2026_04_06
+  unit: GB
+  valid_from: '2026-04-06'
+  value: 2000
+- approved_at: '2026-04-07T13:00:11.274716+07:00'
+  approved_by: admin-batch
+  attribute: email_account_limit
+  claim_id: CLM-EMAI-HOSTING-EMAIL_AC
+  compiler_note: 'Trích từ: Số lượng Email: 20'
+  confidence: high
+  entity_id: product.email.hosting.email_2
+  entity_name: EMAIL 2
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:15:48.768275+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BANG_GIA_EMAIL_2026_04_06
+  unit: emails
+  valid_from: '2026-04-06'
+  value: 20
+- approved_at: '2026-04-07T13:00:11.278347+07:00'
+  approved_by: admin-batch
+  attribute: email_forwarder_limit
+  claim_id: CLM-EMAI-HOSTING-EMAIL_FO
+  compiler_note: 'Trích từ: Email trong Forwarders: 10'
+  confidence: high
+  entity_id: product.email.hosting.email_2
+  entity_name: EMAIL 2
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:15:48.770896+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BANG_GIA_EMAIL_2026_04_06
+  unit: emails
+  valid_from: '2026-04-06'
+  value: 10
+- approved_at: '2026-04-07T13:00:11.281840+07:00'
+  approved_by: admin-batch
+  attribute: link
+  claim_id: CLM-EMAI-HOSTING-LINK
+  compiler_note: 'Trích từ mục 1.1 Email Hosting: ''Link tham khảo: https://www.bkns.vn/email/email-hosting.html'''
+  confidence: high
+  entity_id: product.email.hosting
+  entity_name: Email Hosting
+  entity_type: product
+  observed_at: '2026-04-04T20:32:16.874109+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BKNS_CAMNANG_EMAIL_TENMIEN_DOT1_2026_04_04
+  unit: ''
+  valid_from: '2026-04-04'
+  value: https://www.bkns.vn/email/email-hosting.html
+- approved_at: '2026-04-07T13:00:11.285550+07:00'
+  approved_by: admin-batch
+  attribute: num_domains
+  claim_id: CLM-EMAI-HOSTING-NUM_DOMA
+  compiler_note: 'Trích từ bảng giá Email Hosting: ''Gói 1 | 01'''
+  confidence: high
+  entity_id: product.email.hosting.goi1
+  entity_name: Email Hosting Gói 1
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:32:16.888677+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BKNS_CAMNANG_EMAIL_TENMIEN_DOT1_2026_04_04
+  unit: domain
+  valid_from: '2026-04-04'
+  value: 1
+- approved_at: '2026-04-07T13:00:11.288831+07:00'
+  approved_by: admin-batch
+  attribute: num_email_forwarders
+  claim_id: CLM-EMAI-HOSTING-NUM_EMAI
+  compiler_note: 'Trích từ bảng giá Email Hosting: ''Gói 1 | 5'''
+  confidence: high
+  entity_id: product.email.hosting.goi1
+  entity_name: Email Hosting Gói 1
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:32:16.883856+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BKNS_CAMNANG_EMAIL_TENMIEN_DOT1_2026_04_04
+  unit: forwarders
+  valid_from: '2026-04-04'
+  value: 5
+- approved_at: '2026-04-07T13:00:11.292342+07:00'
+  approved_by: admin-batch
+  attribute: platform
+  claim_id: CLM-EMAI-HOSTING-PLATFORM
+  compiler_note: 'Trích từ mục 1.1 Email Hosting: ''Dịch vụ Email Hosting tại BKNS
+    hoạt động trên nền tảng Zimbra'''
+  confidence: high
+  entity_id: product.email.hosting
+  entity_name: Email Hosting
+  entity_type: product
+  observed_at: '2026-04-04T20:32:16.877033+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BKNS_CAMNANG_EMAIL_TENMIEN_DOT1_2026_04_04
+  unit: ''
+  valid_from: '2026-04-04'
+  value: Zimbra
+- approved_at: '2026-04-07T13:00:11.296120+07:00'
+  approved_by: admin-batch
+  attribute: monthly_price
+  claim_id: CLM-EMAI-HOSTING-PRICE
+  compiler_note: 'Trích từ: EMAIL 3
+
+    166.250đ/ tháng'
+  confidence: high
+  entity_id: product.email.hosting.email_2
+  entity_name: EMAIL 3
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:15:48.783115+07:00'
+  qualifiers:
+    billing_cycle: month
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BANG_GIA_EMAIL_2026_04_06
+  unit: VND
+  valid_from: '2026-04-06'
+  value: 166250
+  value_changed_at: '2026-04-06T23:15:48.783133+07:00'
+  value_changed_from: 85500
+- approved_at: '2026-04-07T13:00:11.299723+07:00'
+  approved_by: admin-batch
+  attribute: send_limit
+  claim_id: CLM-EMAI-HOSTING-SEND_LIM
+  compiler_note: 'Trích từ bảng giá Email Hosting: ''Gói 1 | 200 email/giờ'''
+  confidence: high
+  entity_id: product.email.hosting.goi1
+  entity_name: Email Hosting Gói 1
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:32:16.890750+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BKNS_CAMNANG_EMAIL_TENMIEN_DOT1_2026_04_04
+  unit: email/giờ
+  valid_from: '2026-04-04'
+  value: 200
+- approved_at: '2026-04-07T13:00:11.303410+07:00'
+  approved_by: admin-batch
+  attribute: storage_per_email
+  claim_id: CLM-EMAI-HOSTING-STORAGE_
+  compiler_note: 'Trích từ: Dung lượng: 5GB/ email'
+  confidence: high
+  entity_id: product.email.hosting.goi1
+  entity_name: EMAIL 2
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:15:48.775268+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BKNS_CAMNANG_EMAIL_TENMIEN_DOT1_2026_04_04
+  - SRC-BANG_GIA_EMAIL_2026_04_06
+  unit: GB
+  valid_from: '2026-04-04'
+  value: 5
+- approved_at: '2026-04-07T13:00:11.307289+07:00'
+  approved_by: admin-batch
+  attribute: platform
+  claim_id: CLM-EMAI-MINI_EMAIL_01-PLATFORM
+  compiler_note: 'Trích từ bảng giá: | MINI EMAIL 01 | ... | Nền tảng | Kerio |'
+  confidence: high
+  entity_id: product.email.mini_email_01
+  entity_name: MINI EMAIL 01
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:58:41.656518+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_AN_TOAN_HIEU_SUAT_CAO_2026_04_06
+  unit: null
+  valid_from: '2026-04-06'
+  value: Kerio
+- approved_at: '2026-04-07T13:00:11.310993+07:00'
+  approved_by: admin-batch
+  attribute: monthly_price
+  claim_id: CLM-EMAI-MINI_EMAIL_01-PRICE
+  compiler_note: 'Trích từ bảng giá: | MINI EMAIL 01 | ... | Giá/Tháng | 314.000đ
+    |'
+  confidence: high
+  entity_id: product.email.mini_email_01
+  entity_name: MINI EMAIL 01
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:58:41.650077+07:00'
+  qualifiers:
+    billing_cycle: month
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_AN_TOAN_HIEU_SUAT_CAO_2026_04_06
+  unit: VND
+  valid_from: '2026-04-06'
+  value: 314000
+- approved_at: '2026-04-07T13:00:11.314514+07:00'
+  approved_by: admin-batch
+  attribute: storage
+  claim_id: CLM-EMAI-MINI_EMAIL_01-STORAGE
+  compiler_note: 'Trích từ bảng giá: | MINI EMAIL 01 | ... | Dung lượng gói | 100GB
+    |'
+  confidence: high
+  entity_id: product.email.mini_email_01
+  entity_name: MINI EMAIL 01
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:58:41.653352+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_AN_TOAN_HIEU_SUAT_CAO_2026_04_06
+  unit: GB
+  valid_from: '2026-04-06'
+  value: 100
+- approved_at: '2026-04-07T13:00:11.318407+07:00'
+  approved_by: admin-batch
+  attribute: platform
+  claim_id: CLM-EMAI-MINI_EMAIL_02-PLATFORM
+  compiler_note: 'Trích từ bảng giá: | MINI EMAIL 02 | ... | Nền tảng | Kerio |'
+  confidence: high
+  entity_id: product.email.mini_email_02
+  entity_name: MINI EMAIL 02
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:58:41.666715+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_AN_TOAN_HIEU_SUAT_CAO_2026_04_06
+  unit: null
+  valid_from: '2026-04-06'
+  value: Kerio
+- approved_at: '2026-04-07T13:00:11.322463+07:00'
+  approved_by: admin-batch
+  attribute: monthly_price
+  claim_id: CLM-EMAI-MINI_EMAIL_02-PRICE
+  compiler_note: 'Trích từ bảng giá: | MINI EMAIL 02 | ... | Giá/Tháng | 450.000đ
+    |'
+  confidence: high
+  entity_id: product.email.mini_email_02
+  entity_name: MINI EMAIL 02
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:58:41.659729+07:00'
+  qualifiers:
+    billing_cycle: month
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_AN_TOAN_HIEU_SUAT_CAO_2026_04_06
+  unit: VND
+  valid_from: '2026-04-06'
+  value: 450000
+- approved_at: '2026-04-07T13:00:11.326389+07:00'
+  approved_by: admin-batch
+  attribute: storage
+  claim_id: CLM-EMAI-MINI_EMAIL_02-STORAGE
+  compiler_note: 'Trích từ bảng giá: | MINI EMAIL 02 | ... | Dung lượng gói | 150GB
+    |'
+  confidence: high
+  entity_id: product.email.mini_email_02
+  entity_name: MINI EMAIL 02
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:58:41.663248+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_AN_TOAN_HIEU_SUAT_CAO_2026_04_06
+  unit: GB
+  valid_from: '2026-04-06'
+  value: 150
+- approved_at: '2026-04-07T13:00:11.330922+07:00'
+  approved_by: admin-batch
+  attribute: platform
+  claim_id: CLM-EMAI-MINI_EMAIL_03-PLATFORM
+  compiler_note: 'Trích từ bảng giá: | MINI EMAIL 03 | ... | Nền tảng | Kerio |'
+  confidence: high
+  entity_id: product.email.mini_email_03
+  entity_name: MINI EMAIL 03
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:58:41.676839+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_AN_TOAN_HIEU_SUAT_CAO_2026_04_06
+  unit: null
+  valid_from: '2026-04-06'
+  value: Kerio
+- approved_at: '2026-04-07T13:00:11.335486+07:00'
+  approved_by: admin-batch
+  attribute: monthly_price
+  claim_id: CLM-EMAI-MINI_EMAIL_03-PRICE
+  compiler_note: 'Trích từ bảng giá: | MINI EMAIL 03 | ... | Giá/Tháng | 556.000đ
+    |'
+  confidence: high
+  entity_id: product.email.mini_email_03
+  entity_name: MINI EMAIL 03
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:58:41.669838+07:00'
+  qualifiers:
+    billing_cycle: month
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_AN_TOAN_HIEU_SUAT_CAO_2026_04_06
+  unit: VND
+  valid_from: '2026-04-06'
+  value: 556000
+- approved_at: '2026-04-07T13:00:11.339828+07:00'
+  approved_by: admin-batch
+  attribute: storage
+  claim_id: CLM-EMAI-MINI_EMAIL_03-STORAGE
+  compiler_note: 'Trích từ bảng giá: | MINI EMAIL 03 | ... | Dung lượng gói | 200GB
+    |'
+  confidence: high
+  entity_id: product.email.mini_email_03
+  entity_name: MINI EMAIL 03
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:58:41.673608+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_AN_TOAN_HIEU_SUAT_CAO_2026_04_06
+  unit: GB
+  valid_from: '2026-04-06'
+  value: 200
+- approved_at: '2026-04-07T13:00:11.343591+07:00'
+  approved_by: admin-batch
+  attribute: platform
+  claim_id: CLM-EMAI-MINI_EMAIL_04-PLATFORM
+  compiler_note: 'Trích từ bảng giá: | MINI EMAIL 04 | ... | Nền tảng | Kerio |'
+  confidence: high
+  entity_id: product.email.mini_email_04
+  entity_name: MINI EMAIL 04
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:58:41.686495+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_AN_TOAN_HIEU_SUAT_CAO_2026_04_06
+  unit: null
+  valid_from: '2026-04-06'
+  value: Kerio
+- approved_at: '2026-04-07T13:00:11.348089+07:00'
+  approved_by: admin-batch
+  attribute: monthly_price
+  claim_id: CLM-EMAI-MINI_EMAIL_04-PRICE
+  compiler_note: 'Trích từ bảng giá: | MINI EMAIL 04 | ... | Giá/Tháng | 671.000đ
+    |'
+  confidence: high
+  entity_id: product.email.mini_email_04
+  entity_name: MINI EMAIL 04
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:58:41.680022+07:00'
+  qualifiers:
+    billing_cycle: month
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_AN_TOAN_HIEU_SUAT_CAO_2026_04_06
+  unit: VND
+  valid_from: '2026-04-06'
+  value: 671000
+- approved_at: '2026-04-07T13:00:11.352002+07:00'
+  approved_by: admin-batch
+  attribute: storage
+  claim_id: CLM-EMAI-MINI_EMAIL_04-STORAGE
+  compiler_note: 'Trích từ bảng giá: | MINI EMAIL 04 | ... | Dung lượng gói | 250GB
+    |'
+  confidence: high
+  entity_id: product.email.mini_email_04
+  entity_name: MINI EMAIL 04
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:58:41.683237+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_AN_TOAN_HIEU_SUAT_CAO_2026_04_06
+  unit: GB
+  valid_from: '2026-04-06'
+  value: 250
+- approved_at: '2026-04-07T13:00:11.356469+07:00'
+  approved_by: admin-batch
+  attribute: comparison
+  claim_id: CLM-EMAI-RELAY-COMPARIS
+  compiler_note: 'Trích từ bảng So sánh Email Relay và Email Server: | EMAIL RELAY
+    | Khách hàng gặp vấn đề khi gửi email ra ngoài, phải tự kiểm soát độ uy tín của
+    IP. |'
+  confidence: high
+  entity_id: product.email.relay
+  entity_name: Email Relay
+  entity_type: product
+  observed_at: '2026-04-07T00:23:42.971648+07:00'
+  qualifiers:
+    compared_to: Email Server
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_TIN_CAY_2026_04_04
+  - SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_VA_TIN_CAY_2026_04_06
+  unit: null
+  valid_from: '2026-04-04'
+  value: Khách hàng gặp vấn đề khi gửi email ra ngoài, phải tự kiểm soát độ uy tín
+    của IP.
+  value_changed_at: '2026-04-07T00:23:42.971664+07:00'
+  value_changed_from: Server của khách hàng đặt tại công ty hoặc nơi khác.
+- approved_at: '2026-04-07T13:00:11.360917+07:00'
+  approved_by: admin-batch
+  attribute: daily_send_limit
+  claim_id: CLM-EMAI-RELAY-DAILY_SE
+  compiler_note: 'Trích từ bảng giá: | Số lượng email/ngày | 3000 |'
+  confidence: high
+  entity_id: product.email.relay.bk-relay04
+  entity_name: BK-RELAY04
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:56:34.415484+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: medium
+  source_ids:
+  - SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_TIN_CAY_2026_04_04
+  unit: email
+  valid_from: '2026-04-04'
+  value: 3000
+- approved_at: '2026-04-07T13:00:11.365836+07:00'
+  approved_by: admin-batch
+  attribute: description
+  claim_id: CLM-EMAI-RELAY-DESC
+  compiler_note: 'Trích từ Tóm tắt nhanh: Dịch vụ này định tuyến email gửi đi qua
+    hệ thống máy chủ chuyên dụng của BKNS có IP uy tín cao.'
+  confidence: high
+  entity_id: product.email.relay
+  entity_name: Email Relay
+  entity_type: product
+  observed_at: '2026-04-07T00:23:42.656883+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_TIN_CAY_2026_04_04
+  - SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_VA_TIN_CAY_2026_04_06
+  unit: null
+  valid_from: '2026-04-04'
+  value: Dịch vụ định tuyến email gửi đi qua hệ thống máy chủ chuyên dụng của BKNS
+    có IP uy tín cao.
+  value_changed_at: '2026-04-07T00:23:42.656900+07:00'
+  value_changed_from: Email Relay là một giải pháp trung gian, giúp doanh nghiệp đã
+    có sẵn hệ thống email server có thể gửi email ra ngoài một cách an toàn và tin
+    cậy hơn.
+- approved_at: '2026-04-07T13:00:11.370955+07:00'
+  approved_by: admin-batch
+  attribute: domain_limit
+  claim_id: CLM-EMAI-RELAY-DOMAIN_L
+  compiler_note: 'Trích từ bảng giá: | Số lượng tên miền | Không giới hạn |'
+  confidence: high
+  entity_id: product.email.relay
+  entity_name: BK-RELAY04
+  entity_type: product_plan
+  observed_at: '2026-04-07T00:23:42.895320+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_TIN_CAY_2026_04_04
+  - SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_VA_TIN_CAY_2026_04_06
+  unit: null
+  valid_from: '2026-04-04'
+  value: Không giới hạn
+  value_changed_at: '2026-04-07T00:23:42.750925+07:00'
+  value_changed_from: unlimited
+- approved_at: '2026-04-07T13:00:11.376362+07:00'
+  approved_by: admin-batch
+  attribute: email_limit_daily
+  claim_id: CLM-EMAI-RELAY-EMAIL_LI
+  compiler_note: 'Trích từ bảng giá: | Số lượng email gửi ra/giờ | 200 |'
+  confidence: high
+  entity_id: product.email.relay.bk_relay01
+  entity_name: BK-RELAY04
+  entity_type: product_plan
+  observed_at: '2026-04-07T00:23:42.891155+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: medium
+  source_ids:
+  - SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_VA_TIN_CAY_2026_04_06
+  unit: email
+  valid_from: '2026-04-07'
+  value: 200
+  value_changed_at: '2026-04-07T00:23:42.891173+07:00'
+  value_changed_from: 3000
+- approved_at: '2026-04-07T13:00:11.382347+07:00'
+  approved_by: admin-batch
+  attribute: feature
+  claim_id: CLM-EMAI-RELAY-FEATURE
+  compiler_note: 'Trích từ Tóm tắt nhanh: • Điểm chính: ... không giới hạn số lượng
+    tên miền sử dụng.'
+  confidence: high
+  entity_id: product.email.relay
+  entity_name: Email Relay
+  entity_type: product
+  observed_at: '2026-04-07T00:23:42.705390+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_TIN_CAY_2026_04_04
+  - SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_VA_TIN_CAY_2026_04_06
+  unit: null
+  valid_from: '2026-04-04'
+  value: Không giới hạn số lượng tên miền sử dụng
+  value_changed_at: '2026-04-07T00:23:42.705408+07:00'
+  value_changed_from: Có hệ thống báo cáo thống kê chi tiết
+- approved_at: '2026-04-07T13:00:11.386428+07:00'
+  approved_by: admin-batch
+  attribute: has_admin_interface
+  claim_id: CLM-EMAI-RELAY-HAS_ADMI
+  compiler_note: 'Trích từ bảng giá: | Quản trị email relay | Có |'
+  confidence: high
+  entity_id: product.email.relay
+  entity_name: BK-RELAY04
+  entity_type: product_plan
+  observed_at: '2026-04-07T00:23:42.903311+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_TIN_CAY_2026_04_04
+  - SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_VA_TIN_CAY_2026_04_06
+  unit: null
+  valid_from: '2026-04-04'
+  value: true
+- approved_at: '2026-04-07T13:00:11.390278+07:00'
+  approved_by: admin-batch
+  attribute: hourly_send_limit
+  claim_id: CLM-EMAI-RELAY-HOURLY_S
+  compiler_note: 'Trích từ bảng giá: | Số lượng email gửi ra/giờ | 200 |'
+  confidence: high
+  entity_id: product.email.relay.bk-relay04
+  entity_name: BK-RELAY04
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:56:34.484741+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: medium
+  source_ids:
+  - SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_TIN_CAY_2026_04_04
+  unit: email
+  valid_from: '2026-04-04'
+  value: 200
+- approved_at: '2026-04-07T13:00:11.395202+07:00'
+  approved_by: admin-batch
+  attribute: inbox_delivery_rate
+  claim_id: CLM-EMAI-RELAY-INBOX_DE
+  compiler_note: 'Trích từ bảng giá: | Tỉ lệ vào inbox | 99% |'
+  confidence: high
+  entity_id: product.email.relay
+  entity_name: BK-RELAY04
+  entity_type: product_plan
+  observed_at: '2026-04-07T00:23:42.883446+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_TIN_CAY_2026_04_04
+  - SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_VA_TIN_CAY_2026_04_06
+  unit: '%'
+  valid_from: '2026-04-04'
+  value: 99
+- approved_at: '2026-04-07T13:00:11.399753+07:00'
+  approved_by: admin-batch
+  attribute: limitation
+  claim_id: CLM-EMAI-RELAY-LIMITATI
+  compiler_note: 'Trích từ Tóm tắt nhanh: • Điều kiện/giới hạn nổi bật (nếu có): ...
+    và số lượng email gửi ra/giờ (200 email/giờ cho tất cả các gói).'
+  confidence: high
+  entity_id: product.email.relay
+  entity_name: Email Relay
+  entity_type: product
+  observed_at: '2026-04-07T00:23:42.712072+07:00'
+  qualifiers:
+    scope: all_plans
+  review_state: approved
+  risk_class: medium
+  source_ids:
+  - SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_VA_TIN_CAY_2026_04_06
+  unit: email/giờ
+  valid_from: '2026-04-07'
+  value: 200
+- approved_at: '2026-04-07T13:00:11.403647+07:00'
+  approved_by: admin-batch
+  attribute: policy
+  claim_id: CLM-EMAI-RELAY-POLICY
+  compiler_note: 'Trích từ mục Chính sách / Điều khoản / Lưu ý: • Dịch vụ này là giải
+    pháp định tuyến email gửi đi, không phải là dịch vụ lưu trữ email đến.'
+  confidence: high
+  entity_id: product.email.relay
+  entity_name: Email Relay
+  entity_type: product
+  observed_at: '2026-04-04T20:56:34.274492+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_TIN_CAY_2026_04_04
+  unit: ''
+  valid_from: '2026-04-04'
+  value: Dịch vụ này là giải pháp định tuyến email gửi đi, không phải là dịch vụ lưu
+    trữ email đến.
+- approved_at: '2026-04-07T13:00:11.407654+07:00'
+  approved_by: admin-batch
+  attribute: monthly_price
+  claim_id: CLM-EMAI-RELAY-PRICE
+  compiler_note: 'Trích từ bảng giá: | Giá | 980.000đ/Tháng |'
+  confidence: high
+  entity_id: product.email.relay.bk-relay04
+  entity_name: BK-RELAY04
+  entity_type: product_plan
+  observed_at: '2026-04-07T00:23:42.871500+07:00'
+  qualifiers:
+    billing_cycle: month
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_TIN_CAY_2026_04_04
+  - SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_VA_TIN_CAY_2026_04_06
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 980000
+  value_changed_at: '2026-04-07T00:23:42.871518+07:00'
+  value_changed_from: 500000
+- approved_at: '2026-04-07T13:00:11.412085+07:00'
+  approved_by: admin-batch
+  attribute: registration_url
+  claim_id: CLM-EMAI-RELAY-REGISTRA
+  compiler_note: 'Trích từ bảng giá: | Đăng ký | [Đăng ký](https://my.bkns.net/?cmd=cart&action=add&id=408)
+    |'
+  confidence: high
+  entity_id: product.email.relay.bk-relay04
+  entity_name: BK-RELAY04
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:56:34.488244+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_TIN_CAY_2026_04_04
+  unit: ''
+  valid_from: '2026-04-04'
+  value: https://my.bkns.net/?cmd=cart&action=add&id=408
+- approved_at: '2026-04-07T13:00:11.416403+07:00'
+  approved_by: admin-batch
+  attribute: requirement
+  claim_id: CLM-EMAI-RELAY-REQUIREM
+  compiler_note: 'Trích từ mục Chính sách / Điều khoản / Lưu ý: • Khách hàng cần có
+    sẵn một hệ thống Email Server để có thể sử dụng dịch vụ Email Relay.'
+  confidence: high
+  entity_id: product.email.relay
+  entity_name: Email Relay
+  entity_type: product
+  observed_at: '2026-04-04T20:56:34.276876+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_TIN_CAY_2026_04_04
+  unit: ''
+  valid_from: '2026-04-04'
+  value: Khách hàng cần có sẵn một hệ thống Email Server để có thể sử dụng dịch vụ
+    Email Relay.
+- approved_at: '2026-04-07T13:00:11.420328+07:00'
+  approved_by: admin-batch
+  attribute: support
+  claim_id: CLM-EMAI-RELAY-SUPPORT
+  compiler_note: 'Trích từ mục Tính năng / Thành phần: • Hỗ trợ khách hàng: Cung cấp
+    hỗ trợ kỹ thuật liên quan đến dịch vụ.'
+  confidence: high
+  entity_id: product.email.relay
+  entity_name: Email Relay
+  entity_type: product
+  observed_at: '2026-04-04T20:56:34.272225+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_TIN_CAY_2026_04_04
+  unit: ''
+  valid_from: '2026-04-04'
+  value: Cung cấp hỗ trợ kỹ thuật liên quan đến dịch vụ.
+- approved_at: '2026-04-07T13:00:11.424064+07:00'
+  approved_by: admin-batch
+  attribute: support_availability
+  claim_id: CLM-EMAI-RELAY-SUPPORT_
+  compiler_note: 'Trích từ Tính năng / Thành phần: • Hỗ trợ kỹ thuật: Đội ngũ hỗ trợ
+    kỹ thuật hoạt động 24/7/365.'
+  confidence: high
+  entity_id: product.email.relay
+  entity_name: Email Relay
+  entity_type: product
+  observed_at: '2026-04-07T00:23:42.714762+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_VA_TIN_CAY_2026_04_06
+  unit: null
+  valid_from: '2026-04-07'
+  value: 24/7/365
+- approved_at: '2026-04-07T13:00:11.428906+07:00'
+  approved_by: admin-batch
+  attribute: target_customer
+  claim_id: CLM-EMAI-RELAY-TARGET_C
+  compiler_note: 'Trích từ Tóm tắt nhanh: • Phù hợp với: Doanh nghiệp đã có Email
+    Server riêng và đang gặp vấn đề khi gửi email ra ngoài (ví dụ: email bị vào spam,
+    IP bị blacklist) hoặc có nhu cầu gửi Email marketing với số lượng lớn.'
+  confidence: high
+  entity_id: product.email.relay
+  entity_name: Email Relay
+  entity_type: product
+  observed_at: '2026-04-07T00:23:42.666741+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_TIN_CAY_2026_04_04
+  - SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_VA_TIN_CAY_2026_04_06
+  unit: null
+  valid_from: '2026-04-04'
+  value: 'Doanh nghiệp đã có Email Server riêng và đang gặp vấn đề khi gửi email ra
+    ngoài (ví dụ: email bị vào spam, IP bị blacklist) hoặc có nhu cầu gửi Email marketing
+    với số lượng lớn.'
+  value_changed_at: '2026-04-07T00:23:42.666759+07:00'
+  value_changed_from: 'Các khách hàng đã có Email Server riêng và tự quản lý nhưng
+    gặp vấn đề khi gửi email ra ngoài (ví dụ: IP bị blacklist, email vào spam).'
+- approved_at: '2026-04-07T13:00:11.434114+07:00'
+  approved_by: admin-batch
+  attribute: comparison
+  claim_id: CLM-EMAI-SERVER-COMPARIS
+  compiler_note: 'Trích từ bảng So sánh Email Relay và Email Server: | EMAIL SERVER
+    | BKNS quản lý IP gửi của Email Server cho khách hàng. |'
+  confidence: high
+  entity_id: product.email.server
+  entity_name: Email Server
+  entity_type: product
+  observed_at: '2026-04-07T00:23:42.980687+07:00'
+  qualifiers:
+    compared_to: Email Relay
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_TIN_CAY_2026_04_04
+  - SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_VA_TIN_CAY_2026_04_06
+  unit: null
+  valid_from: '2026-04-04'
+  value: BKNS quản lý IP gửi của Email Server cho khách hàng.
+  value_changed_at: '2026-04-07T00:23:42.980704+07:00'
+  value_changed_from: Mail Server đặt tại trung tâm dữ liệu (DC) của BKNS.
+- approved_at: '2026-04-07T13:00:11.438667+07:00'
+  approved_by: admin-batch
+  attribute: daily_email_limit
+  claim_id: CLM-ENT--BK-RELAY01-DAILY_EM
+  compiler_note: 'Trích từ bảng giá: | Số lượng email/ngày | 350 |'
+  confidence: high
+  entity_id: ENT-PROD-EMAIL-RELAY.BK-RELAY01
+  entity_name: BK-RELAY01
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:57:41.653404+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_VA_TIN_CAY_2026_04_04
+  unit: email
+  valid_from: '2026-04-04'
+  value: 350
+- approved_at: '2026-04-07T13:00:11.442810+07:00'
+  approved_by: admin-batch
+  attribute: monthly_price
+  claim_id: CLM-ENT--BK-RELAY01-PRICE
+  compiler_note: 'Trích từ bảng giá: | Giá/Tháng | 180.000đ |'
+  confidence: high
+  entity_id: ENT-PROD-EMAIL-RELAY.BK-RELAY01
+  entity_name: BK-RELAY01
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:57:41.648906+07:00'
+  qualifiers:
+    billing_cycle: month
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_VA_TIN_CAY_2026_04_04
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 180000
+- approved_at: '2026-04-07T13:00:11.446393+07:00'
+  approved_by: admin-batch
+  attribute: daily_email_limit
+  claim_id: CLM-ENT--BK-RELAY02-DAILY_EM
+  compiler_note: 'Trích từ bảng giá: | Số lượng email/ngày | 700 |'
+  confidence: high
+  entity_id: ENT-PROD-EMAIL-RELAY.BK-RELAY02
+  entity_name: BK-RELAY02
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:57:41.661605+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_VA_TIN_CAY_2026_04_04
+  unit: email
+  valid_from: '2026-04-04'
+  value: 700
+- approved_at: '2026-04-07T13:00:11.450092+07:00'
+  approved_by: admin-batch
+  attribute: monthly_price
+  claim_id: CLM-ENT--BK-RELAY02-PRICE
+  compiler_note: 'Trích từ bảng giá: | Giá/Tháng | 290.000đ |'
+  confidence: high
+  entity_id: ENT-PROD-EMAIL-RELAY.BK-RELAY02
+  entity_name: BK-RELAY02
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:57:41.657155+07:00'
+  qualifiers:
+    billing_cycle: month
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_VA_TIN_CAY_2026_04_04
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 290000
+- approved_at: '2026-04-07T13:00:11.453868+07:00'
+  approved_by: admin-batch
+  attribute: daily_email_limit
+  claim_id: CLM-ENT--BK-RELAY03-DAILY_EM
+  compiler_note: 'Trích từ bảng giá: | Số lượng email/ngày | 1.500 |'
+  confidence: high
+  entity_id: ENT-PROD-EMAIL-RELAY.BK-RELAY03
+  entity_name: BK-RELAY03
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:57:41.669296+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_VA_TIN_CAY_2026_04_04
+  unit: email
+  valid_from: '2026-04-04'
+  value: 1500
+- approved_at: '2026-04-07T13:00:11.458160+07:00'
+  approved_by: admin-batch
+  attribute: monthly_price
+  claim_id: CLM-ENT--BK-RELAY03-PRICE
+  compiler_note: 'Trích từ bảng giá: | Giá/Tháng | 500.000đ |'
+  confidence: high
+  entity_id: ENT-PROD-EMAIL-RELAY.BK-RELAY03
+  entity_name: BK-RELAY03
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:57:41.665083+07:00'
+  qualifiers:
+    billing_cycle: month
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_VA_TIN_CAY_2026_04_04
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 500000
+- approved_at: '2026-04-07T13:00:11.462253+07:00'
+  approved_by: admin-batch
+  attribute: daily_email_limit
+  claim_id: CLM-ENT--BK-RELAY04-DAILY_EM
+  compiler_note: 'Trích từ bảng giá: | Số lượng email/ngày | 3.000 |'
+  confidence: high
+  entity_id: ENT-PROD-EMAIL-RELAY.BK-RELAY04
+  entity_name: BK-RELAY04
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:57:41.677813+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_VA_TIN_CAY_2026_04_04
+  unit: email
+  valid_from: '2026-04-04'
+  value: 3000
+- approved_at: '2026-04-07T13:00:11.465843+07:00'
+  approved_by: admin-batch
+  attribute: monthly_price
+  claim_id: CLM-ENT--BK-RELAY04-PRICE
+  compiler_note: 'Trích từ bảng giá: | Giá/Tháng | 980.000đ |'
+  confidence: high
+  entity_id: ENT-PROD-EMAIL-RELAY.BK-RELAY04
+  entity_name: BK-RELAY04
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:57:41.673276+07:00'
+  qualifiers:
+    billing_cycle: month
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_VA_TIN_CAY_2026_04_04
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 980000
+- approved_at: '2026-04-07T13:00:11.469447+07:00'
+  approved_by: admin-batch
+  attribute: access_method
+  claim_id: CLM-ENT-PROD-EMA-ACCESS_M
+  compiler_note: 'Trích từ mục Tính năng / Thành phần: ''Truy cập: Có thể sử dụng
+    qua Webmail và tương thích với Outlook'''
+  confidence: high
+  entity_id: ENT-PROD-EMAIL
+  entity_name: Dịch vụ Email Hosting
+  entity_type: product
+  observed_at: '2026-04-07T00:05:00.860426+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_06
+  unit: null
+  valid_from: '2026-04-07'
+  value: Outlook
+  value_changed_at: '2026-04-07T00:05:00.860445+07:00'
+  value_changed_from: Webmail
+- approved_at: '2026-04-07T13:00:11.473328+07:00'
+  approved_by: admin-batch
+  attribute: admin_account
+  claim_id: CLM-ENT-PROD-EMA-ADMIN_AC
+  compiler_note: 'Trích từ Tóm tắt nhanh: • Điểm chính: ...cung cấp tài khoản quản
+    trị riêng...'
+  confidence: high
+  entity_id: ENT-PROD-EMAIL
+  entity_name: Cloud Email Server
+  entity_type: product
+  observed_at: '2026-04-06T23:58:41.611084+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_AN_TOAN_HIEU_SUAT_CAO_2026_04_06
+  unit: null
+  valid_from: '2026-04-06'
+  value: Riêng
+- approved_at: '2026-04-07T13:00:11.477061+07:00'
+  approved_by: admin-batch
+  attribute: admin_interface
+  claim_id: CLM-ENT-PROD-EMA-ADMIN_IN
+  compiler_note: 'Trích từ Tính năng / Thành phần: ''Quản trị: Cung cấp tài khoản
+    quản trị thông qua hệ thống của BKNS để quản lý các tài khoản email.'''
+  confidence: high
+  entity_id: ENT-PROD-EMAIL
+  entity_name: Email Hosting
+  entity_type: product
+  observed_at: '2026-04-04T20:02:16.380169+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_04
+  unit: ''
+  valid_from: '2026-04-04'
+  value: Hệ thống của BKNS
+- approved_at: '2026-04-07T13:00:11.480827+07:00'
+  approved_by: admin-batch
+  attribute: auto_reply
+  claim_id: CLM-ENT-PROD-EMA-AUTO_REP
+  compiler_note: 'Trích từ Tính năng / Thành phần: ''Tiện ích: Bao gồm tính năng tự
+    động trả lời (Auto-Reply).'''
+  confidence: high
+  entity_id: ENT-PROD-EMAIL
+  entity_name: Email Hosting
+  entity_type: product
+  observed_at: '2026-04-04T20:02:16.386483+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_04
+  unit: ''
+  valid_from: '2026-04-04'
+  value: true
+- approved_at: '2026-04-07T13:00:11.484634+07:00'
+  approved_by: admin-batch
+  attribute: backup_frequency
+  claim_id: CLM-ENT-PROD-EMA-BACKUP_F
+  compiler_note: 'Trích từ Tóm tắt nhanh: • Điều kiện/giới hạn nổi bật (nếu có): ...Dữ
+    liệu được backup hàng tuần.'
+  confidence: high
+  entity_id: ENT-PROD-EMAIL
+  entity_name: Cloud Email Server
+  entity_type: product
+  observed_at: '2026-04-06T23:58:41.635550+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_AN_TOAN_HIEU_SUAT_CAO_2026_04_04
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_AN_TOAN_HIEU_SUAT_CAO_2026_04_06
+  unit: null
+  valid_from: '2026-04-04'
+  value: Hàng tuần
+  value_changed_at: '2026-04-06T23:58:41.635608+07:00'
+  value_changed_from: weekly
+- approved_at: '2026-04-07T13:00:11.489301+07:00'
+  approved_by: admin-batch
+  attribute: comparison
+  claim_id: CLM-ENT-PROD-EMA-COMPARIS
+  compiler_note: 'Trích từ bảng So sánh Email Hosting và Email Server: | EMAIL HOSTING
+    | Số lượng email bị giới hạn theo tài nguyên của gói dịch vụ. |'
+  confidence: high
+  entity_id: ENT-PROD-EMAIL-SERVER
+  entity_name: Email Hosting
+  entity_type: product
+  observed_at: '2026-04-07T00:21:09.925036+07:00'
+  qualifiers:
+    compared_to: Email Server
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_VA_TIN_CAY_2026_04_04
+  - SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_TIN_CAY_2026_04_06
+  unit: ''
+  valid_from: '2026-04-04'
+  value: Số lượng email bị giới hạn theo tài nguyên của gói dịch vụ.
+  value_changed_at: '2026-04-07T00:21:09.925053+07:00'
+  value_changed_from: Sử dụng chung IP (Share IP) với các dịch vụ Email Hosting khác.
+- approved_at: '2026-04-07T13:00:11.494043+07:00'
+  approved_by: admin-batch
+  attribute: description
+  claim_id: CLM-ENT-PROD-EMA-DESC
+  compiler_note: 'Trích từ mục Tóm tắt nhanh: ''Dịch vụ này là gì: Dịch vụ email theo
+    tên miền riêng cho doanh nghiệp, chạy trên nền tảng Zimbra độc lập, cung cấp các
+    tính năng bảo mật và chống spam.'''
+  confidence: high
+  entity_id: ENT-PROD-EMAIL
+  entity_name: Dịch vụ Email Hosting
+  entity_type: product
+  observed_at: '2026-04-07T00:05:00.777718+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_06
+  unit: null
+  valid_from: '2026-04-07'
+  value: Dịch vụ email theo tên miền riêng cho doanh nghiệp, chạy trên nền tảng Zimbra
+    độc lập, cung cấp các tính năng bảo mật và chống spam.
+- approved_at: '2026-04-07T13:00:11.497950+07:00'
+  approved_by: admin-batch
+  attribute: domain_count
+  claim_id: CLM-ENT-PROD-EMA-DOMAIN_C
+  compiler_note: 'Trích từ mục Thông số kỹ thuật / Giới hạn: ''Số lượng tên miền:
+    1'''
+  confidence: high
+  entity_id: ENT-PROD-EMAIL
+  entity_name: Dịch vụ Email Hosting
+  entity_type: product
+  observed_at: '2026-04-07T00:05:00.871236+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_06
+  unit: null
+  valid_from: '2026-04-07'
+  value: 1
+- approved_at: '2026-04-07T13:00:11.502039+07:00'
+  approved_by: admin-batch
+  attribute: domain_limit_per_package
+  claim_id: CLM-ENT-PROD-EMA-DOMAIN_L
+  compiler_note: 'Trích từ Tóm tắt nhanh: • Điểm chính: ...không giới hạn tên miền...'
+  confidence: high
+  entity_id: ENT-PROD-EMAIL
+  entity_name: Cloud Email Server
+  entity_type: product
+  observed_at: '2026-04-06T23:58:41.596529+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-EMAIL_HOSTING_WEB_2026_04_05
+  - SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_VA_TIN_CAY_2026_04_04
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_AN_TOAN_HIEU_SUAT_CAO_2026_04_06
+  unit: null
+  valid_from: '2026-04-05'
+  value: Unlimited
+  value_changed_at: '2026-04-06T23:58:41.596593+07:00'
+  value_changed_from: 1
+- approved_at: '2026-04-07T13:00:11.505946+07:00'
+  approved_by: admin-batch
+  attribute: email_account_limit
+  claim_id: CLM-ENT-PROD-EMA-EMAIL_AC
+  compiler_note: 'Trích từ Tóm tắt nhanh: • Điểm chính: ...không giới hạn ... tài
+    khoản email...'
+  confidence: high
+  entity_id: ENT-PROD-EMAIL
+  entity_name: Cloud Email Server
+  entity_type: product
+  observed_at: '2026-04-06T23:58:41.607374+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_AN_TOAN_HIEU_SUAT_CAO_2026_04_06
+  unit: null
+  valid_from: '2026-04-06'
+  value: Unlimited
+- approved_at: '2026-04-07T13:00:11.510187+07:00'
+  approved_by: admin-batch
+  attribute: feature
+  claim_id: CLM-ENT-PROD-EMA-FEATURE
+  compiler_note: 'Trích từ mục Tính năng / Thành phần: ''Tiện ích: Hỗ trợ tự động
+    trả lời (Auto-responder)'''
+  confidence: high
+  entity_id: ENT-PROD-EMAIL
+  entity_name: Dịch vụ Email Hosting
+  entity_type: product
+  observed_at: '2026-04-07T00:05:00.848531+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-TRANNING_KINH_DOANH_HOSTING_EMAIL_2026_04_04
+  - SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_06
+  unit: null
+  valid_from: '2026-04-04'
+  value: Tự động trả lời (Auto-responder)
+  value_changed_at: '2026-04-07T00:05:00.848579+07:00'
+  value_changed_from: Chống Virus
+- approved_at: '2026-04-07T13:00:11.514280+07:00'
+  approved_by: admin-batch
+  attribute: has_management_interface
+  claim_id: CLM-ENT-PROD-EMA-HAS_MANA
+  compiler_note: 'Trích từ bảng giá: | Quản trị email relay | Có | Có | Có | Có |'
+  confidence: high
+  entity_id: ENT-PROD-EMAIL-RELAY
+  entity_name: Email Relay
+  entity_type: product
+  observed_at: '2026-04-04T20:57:41.684813+07:00'
+  qualifiers:
+    scope: all_plans
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_VA_TIN_CAY_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: true
+- approved_at: '2026-04-07T13:00:11.518220+07:00'
+  approved_by: admin-batch
+  attribute: hourly_email_limit
+  claim_id: CLM-ENT-PROD-EMA-HOURLY_E
+  compiler_note: 'Trích từ Tóm tắt nhanh: ''Điều kiện/giới hạn nổi bật (nếu có): ...và
+    giới hạn chung 200 email/giờ cho tất cả các gói.'''
+  confidence: high
+  entity_id: ENT-PROD-EMAIL-RELAY
+  entity_name: Email Relay
+  entity_type: product
+  observed_at: '2026-04-04T20:57:41.621229+07:00'
+  qualifiers:
+    scope: all_plans
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_VA_TIN_CAY_2026_04_04
+  unit: email
+  valid_from: '2026-04-04'
+  value: 200
+- approved_at: '2026-04-07T13:00:11.522064+07:00'
+  approved_by: admin-batch
+  attribute: hourly_send_limit
+  claim_id: CLM-ENT-PROD-EMA-HOURLY_S
+  compiler_note: 'Trích từ Tóm tắt nhanh: ''Điều kiện/giới hạn nổi bật (nếu có): Tất
+    cả các gói đều có giới hạn gửi 200 email/giờ...'''
+  confidence: high
+  entity_id: ENT-PROD-EMAIL
+  entity_name: Email Hosting
+  entity_type: product
+  observed_at: '2026-04-04T20:02:16.388310+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_04
+  unit: email
+  valid_from: '2026-04-04'
+  value: 200
+- approved_at: '2026-04-07T13:00:11.526157+07:00'
+  approved_by: admin-batch
+  attribute: inbox_delivery_rate
+  claim_id: CLM-ENT-PROD-EMA-INBOX_DE
+  compiler_note: 'Trích từ mục Tính năng / Thành phần: ''Tỉ lệ email vào inbox: 99%'''
+  confidence: high
+  entity_id: ENT-PROD-EMAIL
+  entity_name: Dịch vụ Email Hosting
+  entity_type: product
+  observed_at: '2026-04-07T00:05:00.800153+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_04
+  - SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_06
+  unit: '%'
+  valid_from: '2026-04-04'
+  value: 99
+- approved_at: '2026-04-07T13:00:11.530494+07:00'
+  approved_by: admin-batch
+  attribute: inbox_rate
+  claim_id: CLM-ENT-PROD-EMA-INBOX_RA
+  compiler_note: 'Trích từ mục Giới thiệu: ''tỉ lệ inbox 99%'''
+  confidence: high
+  entity_id: ENT-PROD-EMAIL
+  entity_name: Email Hosting
+  entity_type: product
+  observed_at: '2026-04-05T21:59:38.384611+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-EMAIL_HOSTING_WEB_2026_04_05
+  unit: '%'
+  valid_from: '2026-04-05'
+  value: 99
+- approved_at: '2026-04-07T13:00:11.534813+07:00'
+  approved_by: admin-batch
+  attribute: included_feature
+  claim_id: CLM-ENT-PROD-EMA-INCLUDED
+  compiler_note: 'Trích từ: ''Tính năng đi kèm miễn phí: - Managed DNS (Quản trị DNS)'''
+  confidence: high
+  entity_id: ENT-PROD-EMAIL
+  entity_name: Email Hosting
+  entity_type: product
+  observed_at: '2026-04-06T23:29:48.067986+07:00'
+  qualifiers:
+    cost: free
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BKNS_CAMNANG_EMAIL_TENMIEN_DOT1_2026_04_06
+  unit: null
+  valid_from: '2026-04-06'
+  value: Managed DNS
+- approved_at: '2026-04-07T13:00:11.538980+07:00'
+  approved_by: admin-batch
+  attribute: is_vat_included
+  claim_id: CLM-ENT-PROD-EMA-IS_VAT_I
+  compiler_note: 'Trích từ tiêu đề: BẢNG GIÁ EMAIL ( Chưa bao gồm VAT)'
+  confidence: high
+  entity_id: ENT-PROD-EMAIL
+  entity_name: BẢNG GIÁ EMAIL
+  entity_type: product_category
+  observed_at: '2026-04-06T23:15:48.763239+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BANG_GIA_EMAIL_2026_04_06
+  unit: null
+  valid_from: '2026-04-06'
+  value: false
+- approved_at: '2026-04-07T13:00:11.542840+07:00'
+  approved_by: admin-batch
+  attribute: management_account
+  claim_id: CLM-ENT-PROD-EMA-MANAGEME
+  compiler_note: 'Trích từ mục Tính năng / Thành phần: ''Quản trị: Cung cấp tài khoản
+    quản trị BKNS'''
+  confidence: high
+  entity_id: ENT-PROD-EMAIL
+  entity_name: Dịch vụ Email Hosting
+  entity_type: product
+  observed_at: '2026-04-07T00:05:00.806769+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_06
+  unit: null
+  valid_from: '2026-04-07'
+  value: Tài khoản quản trị BKNS
+- approved_at: '2026-04-07T13:00:11.547234+07:00'
+  approved_by: admin-batch
+  attribute: outbound_email_limit_per_hour
+  claim_id: CLM-ENT-PROD-EMA-OUTBOUND
+  compiler_note: 'Trích từ Tóm tắt nhanh: • Điều kiện/giới hạn nổi bật (nếu có): Giới
+    hạn 200 email gửi ra mỗi giờ cho tất cả các gói.'
+  confidence: high
+  entity_id: ENT-PROD-EMAIL
+  entity_name: Cloud Email Server
+  entity_type: product
+  observed_at: '2026-04-06T23:58:41.628859+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_AN_TOAN_HIEU_SUAT_CAO_2026_04_06
+  unit: email
+  valid_from: '2026-04-06'
+  value: 200
+- approved_at: '2026-04-07T13:00:11.551053+07:00'
+  approved_by: admin-batch
+  attribute: outlook_support
+  claim_id: CLM-ENT-PROD-EMA-OUTLOOK_
+  compiler_note: 'Trích từ Tính năng / Thành phần: ''Truy cập đa nền tảng: Hỗ trợ
+    truy cập qua Webmail và các ứng dụng email client phổ biến như Outlook.'''
+  confidence: high
+  entity_id: ENT-PROD-EMAIL
+  entity_name: Email Hosting
+  entity_type: product
+  observed_at: '2026-04-04T20:02:16.384609+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_04
+  unit: ''
+  valid_from: '2026-04-04'
+  value: true
+- approved_at: '2026-04-07T13:00:11.555125+07:00'
+  approved_by: admin-batch
+  attribute: platform
+  claim_id: CLM-ENT-PROD-EMA-PLATFORM
+  compiler_note: 'Trích từ mục Tính năng / Thành phần: ''Nền tảng: Zimbra'''
+  confidence: high
+  entity_id: ENT-PROD-EMAIL
+  entity_name: Dịch vụ Email Hosting
+  entity_type: product
+  observed_at: '2026-04-07T00:05:00.791374+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_04
+  - SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_06
+  unit: null
+  valid_from: '2026-04-04'
+  value: Zimbra
+- approved_at: '2026-04-07T13:00:11.559328+07:00'
+  approved_by: admin-batch
+  attribute: policy
+  claim_id: CLM-ENT-PROD-EMA-POLICY
+  compiler_note: Trích từ mục Chính sách / Điều khoản / Lưu ý.
+  confidence: high
+  entity_id: ENT-PROD-EMAIL-RELAY
+  entity_name: Email Relay
+  entity_type: product
+  observed_at: '2026-04-04T20:57:41.644464+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_VA_TIN_CAY_2026_04_04
+  unit: ''
+  valid_from: '2026-04-04'
+  value: Toàn bộ email gửi ra từ hệ thống của khách hàng sẽ được định tuyến (routing)
+    qua hệ thống của BKNS để xử lý và gửi đi, nhằm đảm bảo uy tín và tỷ lệ vào inbox
+    cao.
+- approved_at: '2026-04-07T13:00:11.564502+07:00'
+  approved_by: admin-batch
+  attribute: pricing_policy
+  claim_id: CLM-ENT-PROD-EMA-PRICING_
+  compiler_note: 'Trích từ đầu trang: BẢNG GIÁ EMAIL ( Chưa bao gồm VAT)'
+  confidence: high
+  entity_id: ENT-PROD-EMAIL
+  entity_name: Email
+  entity_type: product_category
+  observed_at: '2026-04-04T20:23:47.318028+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BANG_GIA_EMAIL_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: Chưa bao gồm VAT
+- approved_at: '2026-04-07T13:00:11.568703+07:00'
+  approved_by: admin-batch
+  attribute: product_name
+  claim_id: CLM-ENT-PROD-EMA-PRODUCT_
+  compiler_note: 'Trích từ mục lục và tiêu đề: ''1.3. Cloud Email Server'''
+  confidence: high
+  entity_id: ENT-PROD-EMAIL
+  entity_name: Dịch vụ Email
+  entity_type: product_category
+  observed_at: '2026-04-04T20:32:16.864370+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BKNS_CAMNANG_EMAIL_TENMIEN_DOT1_2026_04_04
+  unit: ''
+  valid_from: '2026-04-04'
+  value: Cloud Email Server
+- approved_at: '2026-04-07T13:00:11.573027+07:00'
+  approved_by: admin-batch
+  attribute: security_features
+  claim_id: CLM-ENT-PROD-EMA-SECURITY
+  compiler_note: 'Trích từ Tóm tắt nhanh: • Điểm chính: ...bảo mật chống spam/virus...'
+  confidence: high
+  entity_id: ENT-PROD-EMAIL
+  entity_name: Cloud Email Server
+  entity_type: product
+  observed_at: '2026-04-06T23:58:41.589508+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_AN_TOAN_HIEU_SUAT_CAO_2026_04_06
+  unit: null
+  valid_from: '2026-04-06'
+  value: Chống spam/virus
+- approved_at: '2026-04-07T13:00:11.577009+07:00'
+  approved_by: admin-batch
+  attribute: sending_limit_per_hour
+  claim_id: CLM-ENT-PROD-EMA-SENDING_
+  compiler_note: 'Trích từ mục Thông số kỹ thuật / Giới hạn: ''Số lượng email gửi
+    ra/giờ: 200'''
+  confidence: high
+  entity_id: ENT-PROD-EMAIL
+  entity_name: Dịch vụ Email Hosting
+  entity_type: product
+  observed_at: '2026-04-07T00:05:00.873449+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_06
+  unit: email
+  valid_from: '2026-04-07'
+  value: 200
+- approved_at: '2026-04-07T13:00:11.580878+07:00'
+  approved_by: admin-batch
+  attribute: service_description
+  claim_id: CLM-ENT-PROD-EMA-SERVICE_
+  compiler_note: Trích từ bảng Giới thiệu dịch vụ BKNS cung cấp, hàng 'Email doanh
+    nghiệp', cột 'Mô tả ngắn'
+  confidence: high
+  entity_id: ENT-PROD-EMAIL
+  entity_name: Email doanh nghiệp
+  entity_type: product_category
+  observed_at: '2026-04-04T21:17:54.073714+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-TRANNING_KINH_DOANH_HOSTING_EMAIL_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: Giải pháp email theo tên miền công ty
+- approved_at: '2026-04-07T13:00:11.584920+07:00'
+  approved_by: admin-batch
+  attribute: spam_protection
+  claim_id: CLM-ENT-PROD-EMA-SPAM_PRO
+  compiler_note: 'Trích từ Tính năng / Thành phần: ''Bảo mật: Tích hợp sẵn tính năng
+    chống Spam và chống Virus.'''
+  confidence: high
+  entity_id: ENT-PROD-EMAIL
+  entity_name: Email Hosting
+  entity_type: product
+  observed_at: '2026-04-04T20:02:16.375533+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_04
+  unit: ''
+  valid_from: '2026-04-04'
+  value: true
+- approved_at: '2026-04-07T13:00:11.589286+07:00'
+  approved_by: admin-batch
+  attribute: starting_price_meta
+  claim_id: CLM-ENT-PROD-EMA-STARTING
+  compiler_note: 'Trích từ Ghi chú trích xuất: ⚠️ MÂU THUẪN TRONG TRANG: Meta description
+    của trang ghi giá "CHỈ TỪ 239K/THÁNG"...'
+  confidence: high
+  entity_id: ENT-PROD-EMAIL
+  entity_name: Cloud Email Server
+  entity_type: product
+  observed_at: '2026-04-06T23:58:41.646487+07:00'
+  qualifiers:
+    billing_cycle: month
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_AN_TOAN_HIEU_SUAT_CAO_2026_04_06
+  unit: VND
+  valid_from: '2026-04-06'
+  value: 239000
+- approved_at: '2026-04-07T13:00:11.593492+07:00'
+  approved_by: admin-batch
+  attribute: storage_per_account
+  claim_id: CLM-ENT-PROD-EMA-STORAGE_
+  compiler_note: 'Trích từ mục Thông số kỹ thuật / Giới hạn: ''Dung lượng mỗi email:
+    5 GB'''
+  confidence: high
+  entity_id: ENT-PROD-EMAIL
+  entity_name: Dịch vụ Email Hosting
+  entity_type: product
+  observed_at: '2026-04-07T00:05:00.865029+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_04
+  - SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_06
+  unit: GB
+  valid_from: '2026-04-04'
+  value: 5
+- approved_at: '2026-04-07T13:00:11.597836+07:00'
+  approved_by: admin-batch
+  attribute: target_audience
+  claim_id: CLM-ENT-PROD-EMA-TARGET_A
+  compiler_note: 'Trích từ Tóm tắt nhanh: • Phù hợp với: Các doanh nghiệp cần một
+    hệ thống email chuyên nghiệp, bảo mật, ổn định với khả năng quản trị riêng.'
+  confidence: high
+  entity_id: ENT-PROD-EMAIL
+  entity_name: Cloud Email Server
+  entity_type: product
+  observed_at: '2026-04-06T23:58:41.572508+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_CLOUD_EMAIL_SERVER_AN_TOAN_HIEU_SUAT_CAO_2026_04_06
+  unit: null
+  valid_from: '2026-04-06'
+  value: Các doanh nghiệp cần một hệ thống email chuyên nghiệp, bảo mật, ổn định với
+    khả năng quản trị riêng.
+- approved_at: '2026-04-07T13:00:11.602793+07:00'
+  approved_by: admin-batch
+  attribute: target_customer
+  claim_id: CLM-ENT-PROD-EMA-TARGET_C
+  compiler_note: 'Trích từ mục Tóm tắt nhanh: ''Phù hợp với: Doanh nghiệp cần một
+    hệ thống email chuyên nghiệp, ổn định và bảo mật, với khả năng tùy chỉnh số lượng
+    tài khoản theo nhu cầu.'''
+  confidence: high
+  entity_id: ENT-PROD-EMAIL
+  entity_name: Dịch vụ Email Hosting
+  entity_type: product
+  observed_at: '2026-04-07T00:05:00.782278+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-TRANNING_KINH_DOANH_HOSTING_EMAIL_2026_04_04
+  - SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_06
+  unit: null
+  valid_from: '2026-04-04'
+  value: Doanh nghiệp cần một hệ thống email chuyên nghiệp, ổn định và bảo mật, với
+    khả năng tùy chỉnh số lượng tài khoản theo nhu nhu cầu.
+  value_changed_at: '2026-04-07T00:05:00.782296+07:00'
+  value_changed_from: Doanh nghiệp vừa và nhỏ
+- approved_at: '2026-04-07T13:00:11.607756+07:00'
+  approved_by: admin-batch
+  attribute: virus_protection
+  claim_id: CLM-ENT-PROD-EMA-VIRUS_PR
+  compiler_note: 'Trích từ Tính năng / Thành phần: ''Bảo mật: Tích hợp sẵn tính năng
+    chống Spam và chống Virus.'''
+  confidence: high
+  entity_id: ENT-PROD-EMAIL
+  entity_name: Email Hosting
+  entity_type: product
+  observed_at: '2026-04-04T20:02:16.377712+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_04
+  unit: ''
+  valid_from: '2026-04-04'
+  value: true
+- approved_at: '2026-04-07T13:00:11.612202+07:00'
+  approved_by: admin-batch
+  attribute: webmail_access
+  claim_id: CLM-ENT-PROD-EMA-WEBMAIL_
+  compiler_note: 'Trích từ Tính năng / Thành phần: ''Truy cập đa nền tảng: Hỗ trợ
+    truy cập qua Webmail và các ứng dụng email client phổ biến như Outlook.'''
+  confidence: high
+  entity_id: ENT-PROD-EMAIL
+  entity_name: Email Hosting
+  entity_type: product
+  observed_at: '2026-04-04T20:02:16.382582+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_04
+  unit: ''
+  valid_from: '2026-04-04'
+  value: true
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: email_accounts
+  claim_id: CLM-EXCEL-product_email_hosting_email_1-email_accounts
+  compiler_note: Excel Email sheet, Email Hosting, EMAIL 1
+  confidence: ground_truth
+  entity_id: product.email.hosting.email_1
+  entity_name: Email Hosting EMAIL 1
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  valid_from: '2026-04-07'
+  value: 5
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: forwarders
+  claim_id: CLM-EXCEL-product_email_hosting_email_1-forwarders
+  compiler_note: Excel Email sheet, Email Hosting, EMAIL 1
+  confidence: ground_truth
+  entity_id: product.email.hosting.email_1
+  entity_name: Email Hosting EMAIL 1
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  valid_from: '2026-04-07'
+  value: 5
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: monthly_price
+  claim_id: CLM-EXCEL-product_email_hosting_email_1-monthly_price
+  compiler_note: Excel Email sheet, Email Hosting, EMAIL 1, 1 tháng
+  confidence: ground_truth
+  entity_id: product.email.hosting.email_1
+  entity_name: Email Hosting EMAIL 1
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 1 tháng
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 45000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: price_1y
+  claim_id: CLM-EXCEL-product_email_hosting_email_1-price_1y
+  compiler_note: Excel Email sheet, Email Hosting, EMAIL 1, 1 năm
+  confidence: ground_truth
+  entity_id: product.email.hosting.email_1
+  entity_name: Email Hosting EMAIL 1
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 1 năm
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 513000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: price_2y
+  claim_id: CLM-EXCEL-product_email_hosting_email_1-price_2y
+  compiler_note: Excel Email sheet, Email Hosting, EMAIL 1, 2 năm
+  confidence: ground_truth
+  entity_id: product.email.hosting.email_1
+  entity_name: Email Hosting EMAIL 1
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 2 năm
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 864000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: price_3y
+  claim_id: CLM-EXCEL-product_email_hosting_email_1-price_3y
+  compiler_note: Excel Email sheet, Email Hosting, EMAIL 1, 3 năm
+  confidence: ground_truth
+  entity_id: product.email.hosting.email_1
+  entity_name: Email Hosting EMAIL 1
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 3 năm
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 1134000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: price_4y
+  claim_id: CLM-EXCEL-product_email_hosting_email_1-price_4y
+  compiler_note: Excel Email sheet, Email Hosting, EMAIL 1, 4 năm
+  confidence: ground_truth
+  entity_id: product.email.hosting.email_1
+  entity_name: Email Hosting EMAIL 1
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 4 năm
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 1296000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: storage_per_email
+  claim_id: CLM-EXCEL-product_email_hosting_email_1-storage_per_email
+  compiler_note: Excel Email sheet, Email Hosting, EMAIL 1
+  confidence: ground_truth
+  entity_id: product.email.hosting.email_1
+  entity_name: Email Hosting EMAIL 1
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  valid_from: '2026-04-07'
+  value: 5GB/ email
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: email_accounts
+  claim_id: CLM-EXCEL-product_email_hosting_email_2-email_accounts
+  compiler_note: Excel Email sheet, Email Hosting, EMAIL 2
+  confidence: ground_truth
+  entity_id: product.email.hosting.email_2
+  entity_name: Email Hosting EMAIL 2
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  valid_from: '2026-04-07'
+  value: 20
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: forwarders
+  claim_id: CLM-EXCEL-product_email_hosting_email_2-forwarders
+  compiler_note: Excel Email sheet, Email Hosting, EMAIL 2
+  confidence: ground_truth
+  entity_id: product.email.hosting.email_2
+  entity_name: Email Hosting EMAIL 2
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  valid_from: '2026-04-07'
+  value: 10
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: monthly_price
+  claim_id: CLM-EXCEL-product_email_hosting_email_2-monthly_price
+  compiler_note: Excel Email sheet, Email Hosting, EMAIL 2, 1 tháng
+  confidence: ground_truth
+  entity_id: product.email.hosting.email_2
+  entity_name: Email Hosting EMAIL 2
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 1 tháng
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 90000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: price_1y
+  claim_id: CLM-EXCEL-product_email_hosting_email_2-price_1y
+  compiler_note: Excel Email sheet, Email Hosting, EMAIL 2, 1 năm
+  confidence: ground_truth
+  entity_id: product.email.hosting.email_2
+  entity_name: Email Hosting EMAIL 2
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 1 năm
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 1026000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: price_2y
+  claim_id: CLM-EXCEL-product_email_hosting_email_2-price_2y
+  compiler_note: Excel Email sheet, Email Hosting, EMAIL 2, 2 năm
+  confidence: ground_truth
+  entity_id: product.email.hosting.email_2
+  entity_name: Email Hosting EMAIL 2
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 2 năm
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 1728000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: price_3y
+  claim_id: CLM-EXCEL-product_email_hosting_email_2-price_3y
+  compiler_note: Excel Email sheet, Email Hosting, EMAIL 2, 3 năm
+  confidence: ground_truth
+  entity_id: product.email.hosting.email_2
+  entity_name: Email Hosting EMAIL 2
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 3 năm
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 2268000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: price_4y
+  claim_id: CLM-EXCEL-product_email_hosting_email_2-price_4y
+  compiler_note: Excel Email sheet, Email Hosting, EMAIL 2, 4 năm
+  confidence: ground_truth
+  entity_id: product.email.hosting.email_2
+  entity_name: Email Hosting EMAIL 2
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 4 năm
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 2592000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: storage_per_email
+  claim_id: CLM-EXCEL-product_email_hosting_email_2-storage_per_email
+  compiler_note: Excel Email sheet, Email Hosting, EMAIL 2
+  confidence: ground_truth
+  entity_id: product.email.hosting.email_2
+  entity_name: Email Hosting EMAIL 2
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  valid_from: '2026-04-07'
+  value: 5GB/ email
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: email_accounts
+  claim_id: CLM-EXCEL-product_email_hosting_email_3-email_accounts
+  compiler_note: Excel Email sheet, Email Hosting, EMAIL 3
+  confidence: ground_truth
+  entity_id: product.email.hosting.email_3
+  entity_name: Email Hosting EMAIL 3
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  valid_from: '2026-04-07'
+  value: 50
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: forwarders
+  claim_id: CLM-EXCEL-product_email_hosting_email_3-forwarders
+  compiler_note: Excel Email sheet, Email Hosting, EMAIL 3
+  confidence: ground_truth
+  entity_id: product.email.hosting.email_3
+  entity_name: Email Hosting EMAIL 3
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  valid_from: '2026-04-07'
+  value: 40
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: monthly_price
+  claim_id: CLM-EXCEL-product_email_hosting_email_3-monthly_price
+  compiler_note: Excel Email sheet, Email Hosting, EMAIL 3, 1 tháng
+  confidence: ground_truth
+  entity_id: product.email.hosting.email_3
+  entity_name: Email Hosting EMAIL 3
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 1 tháng
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 175000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: price_1y
+  claim_id: CLM-EXCEL-product_email_hosting_email_3-price_1y
+  compiler_note: Excel Email sheet, Email Hosting, EMAIL 3, 1 năm
+  confidence: ground_truth
+  entity_id: product.email.hosting.email_3
+  entity_name: Email Hosting EMAIL 3
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 1 năm
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 1995000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: price_2y
+  claim_id: CLM-EXCEL-product_email_hosting_email_3-price_2y
+  compiler_note: Excel Email sheet, Email Hosting, EMAIL 3, 2 năm
+  confidence: ground_truth
+  entity_id: product.email.hosting.email_3
+  entity_name: Email Hosting EMAIL 3
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 2 năm
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 3360000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: price_3y
+  claim_id: CLM-EXCEL-product_email_hosting_email_3-price_3y
+  compiler_note: Excel Email sheet, Email Hosting, EMAIL 3, 3 năm
+  confidence: ground_truth
+  entity_id: product.email.hosting.email_3
+  entity_name: Email Hosting EMAIL 3
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 3 năm
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 4410000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: price_4y
+  claim_id: CLM-EXCEL-product_email_hosting_email_3-price_4y
+  compiler_note: Excel Email sheet, Email Hosting, EMAIL 3, 4 năm
+  confidence: ground_truth
+  entity_id: product.email.hosting.email_3
+  entity_name: Email Hosting EMAIL 3
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 4 năm
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 5040000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: storage_per_email
+  claim_id: CLM-EXCEL-product_email_hosting_email_3-storage_per_email
+  compiler_note: Excel Email sheet, Email Hosting, EMAIL 3
+  confidence: ground_truth
+  entity_id: product.email.hosting.email_3
+  entity_name: Email Hosting EMAIL 3
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  valid_from: '2026-04-07'
+  value: 5GB/ email
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: email_accounts
+  claim_id: CLM-EXCEL-product_email_hosting_email_4-email_accounts
+  compiler_note: Excel Email sheet, Email Hosting, EMAIL 4
+  confidence: ground_truth
+  entity_id: product.email.hosting.email_4
+  entity_name: Email Hosting EMAIL 4
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  valid_from: '2026-04-07'
+  value: 100
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: forwarders
+  claim_id: CLM-EXCEL-product_email_hosting_email_4-forwarders
+  compiler_note: Excel Email sheet, Email Hosting, EMAIL 4
+  confidence: ground_truth
+  entity_id: product.email.hosting.email_4
+  entity_name: Email Hosting EMAIL 4
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  valid_from: '2026-04-07'
+  value: 100
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: monthly_price
+  claim_id: CLM-EXCEL-product_email_hosting_email_4-monthly_price
+  compiler_note: Excel Email sheet, Email Hosting, EMAIL 4, 1 tháng
+  confidence: ground_truth
+  entity_id: product.email.hosting.email_4
+  entity_name: Email Hosting EMAIL 4
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 1 tháng
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 300000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: price_1y
+  claim_id: CLM-EXCEL-product_email_hosting_email_4-price_1y
+  compiler_note: Excel Email sheet, Email Hosting, EMAIL 4, 1 năm
+  confidence: ground_truth
+  entity_id: product.email.hosting.email_4
+  entity_name: Email Hosting EMAIL 4
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 1 năm
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 3420000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: price_2y
+  claim_id: CLM-EXCEL-product_email_hosting_email_4-price_2y
+  compiler_note: Excel Email sheet, Email Hosting, EMAIL 4, 2 năm
+  confidence: ground_truth
+  entity_id: product.email.hosting.email_4
+  entity_name: Email Hosting EMAIL 4
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 2 năm
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 5760000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: price_3y
+  claim_id: CLM-EXCEL-product_email_hosting_email_4-price_3y
+  compiler_note: Excel Email sheet, Email Hosting, EMAIL 4, 3 năm
+  confidence: ground_truth
+  entity_id: product.email.hosting.email_4
+  entity_name: Email Hosting EMAIL 4
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 3 năm
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 7560000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: price_4y
+  claim_id: CLM-EXCEL-product_email_hosting_email_4-price_4y
+  compiler_note: Excel Email sheet, Email Hosting, EMAIL 4, 4 năm
+  confidence: ground_truth
+  entity_id: product.email.hosting.email_4
+  entity_name: Email Hosting EMAIL 4
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 4 năm
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 8640000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: storage_per_email
+  claim_id: CLM-EXCEL-product_email_hosting_email_4-storage_per_email
+  compiler_note: Excel Email sheet, Email Hosting, EMAIL 4
+  confidence: ground_truth
+  entity_id: product.email.hosting.email_4
+  entity_name: Email Hosting EMAIL 4
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  valid_from: '2026-04-07'
+  value: 5GB/ email
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: daily_email_limit
+  claim_id: CLM-EXCEL-product_email_relay_bk_relay_01-daily_email_limit
+  compiler_note: Excel Email sheet, Email Relay, BK-RELAY 01
+  confidence: ground_truth
+  entity_id: product.email.relay.bk_relay_01
+  entity_name: Email Relay BK-RELAY 01
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: emails/ngày
+  valid_from: '2026-04-07'
+  value: 350
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: monthly_price
+  claim_id: CLM-EXCEL-product_email_relay_bk_relay_01-monthly_price
+  compiler_note: Excel Email sheet, Email Relay, BK-RELAY 01, 1 tháng
+  confidence: ground_truth
+  entity_id: product.email.relay.bk_relay_01
+  entity_name: Email Relay BK-RELAY 01
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 1 tháng
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 180000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: price_1y
+  claim_id: CLM-EXCEL-product_email_relay_bk_relay_01-price_1y
+  compiler_note: Excel Email sheet, Email Relay, BK-RELAY 01, 1 năm
+  confidence: ground_truth
+  entity_id: product.email.relay.bk_relay_01
+  entity_name: Email Relay BK-RELAY 01
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 1 năm
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 2160000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: price_2y
+  claim_id: CLM-EXCEL-product_email_relay_bk_relay_01-price_2y
+  compiler_note: Excel Email sheet, Email Relay, BK-RELAY 01, 2 năm
+  confidence: ground_truth
+  entity_id: product.email.relay.bk_relay_01
+  entity_name: Email Relay BK-RELAY 01
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 2 năm
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 4320000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: price_3y
+  claim_id: CLM-EXCEL-product_email_relay_bk_relay_01-price_3y
+  compiler_note: Excel Email sheet, Email Relay, BK-RELAY 01, 3 năm
+  confidence: ground_truth
+  entity_id: product.email.relay.bk_relay_01
+  entity_name: Email Relay BK-RELAY 01
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 3 năm
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 6480000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: daily_email_limit
+  claim_id: CLM-EXCEL-product_email_relay_bk_relay_02-daily_email_limit
+  compiler_note: Excel Email sheet, Email Relay, BK-RELAY 02
+  confidence: ground_truth
+  entity_id: product.email.relay.bk_relay_02
+  entity_name: Email Relay BK-RELAY 02
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: emails/ngày
+  valid_from: '2026-04-07'
+  value: 700
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: monthly_price
+  claim_id: CLM-EXCEL-product_email_relay_bk_relay_02-monthly_price
+  compiler_note: Excel Email sheet, Email Relay, BK-RELAY 02, 1 tháng
+  confidence: ground_truth
+  entity_id: product.email.relay.bk_relay_02
+  entity_name: Email Relay BK-RELAY 02
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 1 tháng
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 290000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: price_1y
+  claim_id: CLM-EXCEL-product_email_relay_bk_relay_02-price_1y
+  compiler_note: Excel Email sheet, Email Relay, BK-RELAY 02, 1 năm
+  confidence: ground_truth
+  entity_id: product.email.relay.bk_relay_02
+  entity_name: Email Relay BK-RELAY 02
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 1 năm
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 3480000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: price_2y
+  claim_id: CLM-EXCEL-product_email_relay_bk_relay_02-price_2y
+  compiler_note: Excel Email sheet, Email Relay, BK-RELAY 02, 2 năm
+  confidence: ground_truth
+  entity_id: product.email.relay.bk_relay_02
+  entity_name: Email Relay BK-RELAY 02
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 2 năm
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 6960000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: price_3y
+  claim_id: CLM-EXCEL-product_email_relay_bk_relay_02-price_3y
+  compiler_note: Excel Email sheet, Email Relay, BK-RELAY 02, 3 năm
+  confidence: ground_truth
+  entity_id: product.email.relay.bk_relay_02
+  entity_name: Email Relay BK-RELAY 02
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 3 năm
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 10440000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: daily_email_limit
+  claim_id: CLM-EXCEL-product_email_relay_bk_relay_03-daily_email_limit
+  compiler_note: Excel Email sheet, Email Relay, BK-RELAY 03
+  confidence: ground_truth
+  entity_id: product.email.relay.bk_relay_03
+  entity_name: Email Relay BK-RELAY 03
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: emails/ngày
+  valid_from: '2026-04-07'
+  value: 1500
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: monthly_price
+  claim_id: CLM-EXCEL-product_email_relay_bk_relay_03-monthly_price
+  compiler_note: Excel Email sheet, Email Relay, BK-RELAY 03, 1 tháng
+  confidence: ground_truth
+  entity_id: product.email.relay.bk_relay_03
+  entity_name: Email Relay BK-RELAY 03
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 1 tháng
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 500000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: price_1y
+  claim_id: CLM-EXCEL-product_email_relay_bk_relay_03-price_1y
+  compiler_note: Excel Email sheet, Email Relay, BK-RELAY 03, 1 năm
+  confidence: ground_truth
+  entity_id: product.email.relay.bk_relay_03
+  entity_name: Email Relay BK-RELAY 03
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 1 năm
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 6000000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: price_2y
+  claim_id: CLM-EXCEL-product_email_relay_bk_relay_03-price_2y
+  compiler_note: Excel Email sheet, Email Relay, BK-RELAY 03, 2 năm
+  confidence: ground_truth
+  entity_id: product.email.relay.bk_relay_03
+  entity_name: Email Relay BK-RELAY 03
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 2 năm
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 12000000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: price_3y
+  claim_id: CLM-EXCEL-product_email_relay_bk_relay_03-price_3y
+  compiler_note: Excel Email sheet, Email Relay, BK-RELAY 03, 3 năm
+  confidence: ground_truth
+  entity_id: product.email.relay.bk_relay_03
+  entity_name: Email Relay BK-RELAY 03
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 3 năm
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 18000000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: daily_email_limit
+  claim_id: CLM-EXCEL-product_email_relay_bk_relay_04-daily_email_limit
+  compiler_note: Excel Email sheet, Email Relay, BK-RELAY 04
+  confidence: ground_truth
+  entity_id: product.email.relay.bk_relay_04
+  entity_name: Email Relay BK-RELAY 04
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: emails/ngày
+  valid_from: '2026-04-07'
+  value: 30000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: monthly_price
+  claim_id: CLM-EXCEL-product_email_relay_bk_relay_04-monthly_price
+  compiler_note: Excel Email sheet, Email Relay, BK-RELAY 04, 1 tháng
+  confidence: ground_truth
+  entity_id: product.email.relay.bk_relay_04
+  entity_name: Email Relay BK-RELAY 04
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 1 tháng
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 980000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: price_1y
+  claim_id: CLM-EXCEL-product_email_relay_bk_relay_04-price_1y
+  compiler_note: Excel Email sheet, Email Relay, BK-RELAY 04, 1 năm
+  confidence: ground_truth
+  entity_id: product.email.relay.bk_relay_04
+  entity_name: Email Relay BK-RELAY 04
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 1 năm
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 11760000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: price_2y
+  claim_id: CLM-EXCEL-product_email_relay_bk_relay_04-price_2y
+  compiler_note: Excel Email sheet, Email Relay, BK-RELAY 04, 2 năm
+  confidence: ground_truth
+  entity_id: product.email.relay.bk_relay_04
+  entity_name: Email Relay BK-RELAY 04
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 2 năm
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 23520000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: price_3y
+  claim_id: CLM-EXCEL-product_email_relay_bk_relay_04-price_3y
+  compiler_note: Excel Email sheet, Email Relay, BK-RELAY 04, 3 năm
+  confidence: ground_truth
+  entity_id: product.email.relay.bk_relay_04
+  entity_name: Email Relay BK-RELAY 04
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 3 năm
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 35280000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: monthly_price
+  claim_id: CLM-EXCEL-product_email_server_es_1-monthly_price
+  compiler_note: Excel Email sheet, Email Server ES, ES 1, 1 tháng
+  confidence: ground_truth
+  entity_id: product.email.server.es_1
+  entity_name: Cloud Email Server ES 1
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 1 tháng
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 870000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: price_1y
+  claim_id: CLM-EXCEL-product_email_server_es_1-price_1y
+  compiler_note: Excel Email sheet, Email Server ES, ES 1, 1 năm
+  confidence: ground_truth
+  entity_id: product.email.server.es_1
+  entity_name: Cloud Email Server ES 1
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 1 năm
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 8874000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: price_2y
+  claim_id: CLM-EXCEL-product_email_server_es_1-price_2y
+  compiler_note: Excel Email sheet, Email Server ES, ES 1, 2 năm
+  confidence: ground_truth
+  entity_id: product.email.server.es_1
+  entity_name: Cloud Email Server ES 1
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 2 năm
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 15660000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: price_3y
+  claim_id: CLM-EXCEL-product_email_server_es_1-price_3y
+  compiler_note: Excel Email sheet, Email Server ES, ES 1, 3 năm
+  confidence: ground_truth
+  entity_id: product.email.server.es_1
+  entity_name: Cloud Email Server ES 1
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 3 năm
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 20358000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: price_6m
+  claim_id: CLM-EXCEL-product_email_server_es_1-price_6m
+  compiler_note: Excel Email sheet, Email Server ES, ES 1, 6 tháng
+  confidence: ground_truth
+  entity_id: product.email.server.es_1
+  entity_name: Cloud Email Server ES 1
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 6 tháng
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 4959000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: storage
+  claim_id: CLM-EXCEL-product_email_server_es_1-storage
+  compiler_note: Excel Email sheet, Email Server ES, ES 1
+  confidence: ground_truth
+  entity_id: product.email.server.es_1
+  entity_name: Cloud Email Server ES 1
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  valid_from: '2026-04-07'
+  value: 300GB
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: monthly_price
+  claim_id: CLM-EXCEL-product_email_server_es_2-monthly_price
+  compiler_note: Excel Email sheet, Email Server ES, ES 2, 1 tháng
+  confidence: ground_truth
+  entity_id: product.email.server.es_2
+  entity_name: Cloud Email Server ES 2
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 1 tháng
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 1500000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: price_1y
+  claim_id: CLM-EXCEL-product_email_server_es_2-price_1y
+  compiler_note: Excel Email sheet, Email Server ES, ES 2, 1 năm
+  confidence: ground_truth
+  entity_id: product.email.server.es_2
+  entity_name: Cloud Email Server ES 2
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 1 năm
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 15300000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: price_2y
+  claim_id: CLM-EXCEL-product_email_server_es_2-price_2y
+  compiler_note: Excel Email sheet, Email Server ES, ES 2, 2 năm
+  confidence: ground_truth
+  entity_id: product.email.server.es_2
+  entity_name: Cloud Email Server ES 2
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 2 năm
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 27000000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: price_3y
+  claim_id: CLM-EXCEL-product_email_server_es_2-price_3y
+  compiler_note: Excel Email sheet, Email Server ES, ES 2, 3 năm
+  confidence: ground_truth
+  entity_id: product.email.server.es_2
+  entity_name: Cloud Email Server ES 2
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 3 năm
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 35100000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: price_6m
+  claim_id: CLM-EXCEL-product_email_server_es_2-price_6m
+  compiler_note: Excel Email sheet, Email Server ES, ES 2, 6 tháng
+  confidence: ground_truth
+  entity_id: product.email.server.es_2
+  entity_name: Cloud Email Server ES 2
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 6 tháng
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 8550000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: storage
+  claim_id: CLM-EXCEL-product_email_server_es_2-storage
+  compiler_note: Excel Email sheet, Email Server ES, ES 2
+  confidence: ground_truth
+  entity_id: product.email.server.es_2
+  entity_name: Cloud Email Server ES 2
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  valid_from: '2026-04-07'
+  value: 500GB
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: monthly_price
+  claim_id: CLM-EXCEL-product_email_server_es_3-monthly_price
+  compiler_note: Excel Email sheet, Email Server ES, ES 3, 1 tháng
+  confidence: ground_truth
+  entity_id: product.email.server.es_3
+  entity_name: Cloud Email Server ES 3
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 1 tháng
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 3200000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: price_1y
+  claim_id: CLM-EXCEL-product_email_server_es_3-price_1y
+  compiler_note: Excel Email sheet, Email Server ES, ES 3, 1 năm
+  confidence: ground_truth
+  entity_id: product.email.server.es_3
+  entity_name: Cloud Email Server ES 3
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 1 năm
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 32640000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: price_2y
+  claim_id: CLM-EXCEL-product_email_server_es_3-price_2y
+  compiler_note: Excel Email sheet, Email Server ES, ES 3, 2 năm
+  confidence: ground_truth
+  entity_id: product.email.server.es_3
+  entity_name: Cloud Email Server ES 3
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 2 năm
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 57600000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: price_3y
+  claim_id: CLM-EXCEL-product_email_server_es_3-price_3y
+  compiler_note: Excel Email sheet, Email Server ES, ES 3, 3 năm
+  confidence: ground_truth
+  entity_id: product.email.server.es_3
+  entity_name: Cloud Email Server ES 3
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 3 năm
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 74880000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: price_6m
+  claim_id: CLM-EXCEL-product_email_server_es_3-price_6m
+  compiler_note: Excel Email sheet, Email Server ES, ES 3, 6 tháng
+  confidence: ground_truth
+  entity_id: product.email.server.es_3
+  entity_name: Cloud Email Server ES 3
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 6 tháng
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 18240000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: storage
+  claim_id: CLM-EXCEL-product_email_server_es_3-storage
+  compiler_note: Excel Email sheet, Email Server ES, ES 3
+  confidence: ground_truth
+  entity_id: product.email.server.es_3
+  entity_name: Cloud Email Server ES 3
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  valid_from: '2026-04-07'
+  value: 1000GB
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: monthly_price
+  claim_id: CLM-EXCEL-product_email_server_es_4-monthly_price
+  compiler_note: Excel Email sheet, Email Server ES, ES 4, 1 tháng
+  confidence: ground_truth
+  entity_id: product.email.server.es_4
+  entity_name: Cloud Email Server ES 4
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 1 tháng
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 4900000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: price_1y
+  claim_id: CLM-EXCEL-product_email_server_es_4-price_1y
+  compiler_note: Excel Email sheet, Email Server ES, ES 4, 1 năm
+  confidence: ground_truth
+  entity_id: product.email.server.es_4
+  entity_name: Cloud Email Server ES 4
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 1 năm
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 49980000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: price_2y
+  claim_id: CLM-EXCEL-product_email_server_es_4-price_2y
+  compiler_note: Excel Email sheet, Email Server ES, ES 4, 2 năm
+  confidence: ground_truth
+  entity_id: product.email.server.es_4
+  entity_name: Cloud Email Server ES 4
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 2 năm
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 88200000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: price_3y
+  claim_id: CLM-EXCEL-product_email_server_es_4-price_3y
+  compiler_note: Excel Email sheet, Email Server ES, ES 4, 3 năm
+  confidence: ground_truth
+  entity_id: product.email.server.es_4
+  entity_name: Cloud Email Server ES 4
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 3 năm
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 114660000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: price_6m
+  claim_id: CLM-EXCEL-product_email_server_es_4-price_6m
+  compiler_note: Excel Email sheet, Email Server ES, ES 4, 6 tháng
+  confidence: ground_truth
+  entity_id: product.email.server.es_4
+  entity_name: Cloud Email Server ES 4
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 6 tháng
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 27930000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: storage
+  claim_id: CLM-EXCEL-product_email_server_es_4-storage
+  compiler_note: Excel Email sheet, Email Server ES, ES 4
+  confidence: ground_truth
+  entity_id: product.email.server.es_4
+  entity_name: Cloud Email Server ES 4
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  valid_from: '2026-04-07'
+  value: 2000GB
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: monthly_price
+  claim_id: CLM-EXCEL-product_email_server_mini_email_1-monthly_price
+  compiler_note: Excel Email sheet, Email Server, MINI EMAIL 1, 1 tháng
+  confidence: ground_truth
+  entity_id: product.email.server.mini_email_1
+  entity_name: Cloud Email Server MINI EMAIL 1
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 1 tháng
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 369000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: price_1y
+  claim_id: CLM-EXCEL-product_email_server_mini_email_1-price_1y
+  compiler_note: Excel Email sheet, Email Server, MINI EMAIL 1, 1 năm
+  confidence: ground_truth
+  entity_id: product.email.server.mini_email_1
+  entity_name: Cloud Email Server MINI EMAIL 1
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 1 năm
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 3763800
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: price_2y
+  claim_id: CLM-EXCEL-product_email_server_mini_email_1-price_2y
+  compiler_note: Excel Email sheet, Email Server, MINI EMAIL 1, 2 năm
+  confidence: ground_truth
+  entity_id: product.email.server.mini_email_1
+  entity_name: Cloud Email Server MINI EMAIL 1
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 2 năm
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 6642000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: price_3y
+  claim_id: CLM-EXCEL-product_email_server_mini_email_1-price_3y
+  compiler_note: Excel Email sheet, Email Server, MINI EMAIL 1, 3 năm
+  confidence: ground_truth
+  entity_id: product.email.server.mini_email_1
+  entity_name: Cloud Email Server MINI EMAIL 1
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 3 năm
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 8634600
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: price_6m
+  claim_id: CLM-EXCEL-product_email_server_mini_email_1-price_6m
+  compiler_note: Excel Email sheet, Email Server, MINI EMAIL 1, 6 tháng
+  confidence: ground_truth
+  entity_id: product.email.server.mini_email_1
+  entity_name: Cloud Email Server MINI EMAIL 1
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 6 tháng
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 2103300
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: storage
+  claim_id: CLM-EXCEL-product_email_server_mini_email_1-storage
+  compiler_note: Excel Email sheet, Email Server Mini, MINI EMAIL 1
+  confidence: ground_truth
+  entity_id: product.email.server.mini_email_1
+  entity_name: Cloud Email Server MINI EMAIL 1
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  valid_from: '2026-04-07'
+  value: 100GB
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: monthly_price
+  claim_id: CLM-EXCEL-product_email_server_mini_email_2-monthly_price
+  compiler_note: Excel Email sheet, Email Server, MINI EMAIL 2, 1 tháng
+  confidence: ground_truth
+  entity_id: product.email.server.mini_email_2
+  entity_name: Cloud Email Server MINI EMAIL 2
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 1 tháng
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 529000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: price_1y
+  claim_id: CLM-EXCEL-product_email_server_mini_email_2-price_1y
+  compiler_note: Excel Email sheet, Email Server, MINI EMAIL 2, 1 năm
+  confidence: ground_truth
+  entity_id: product.email.server.mini_email_2
+  entity_name: Cloud Email Server MINI EMAIL 2
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 1 năm
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 5395800
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: price_2y
+  claim_id: CLM-EXCEL-product_email_server_mini_email_2-price_2y
+  compiler_note: Excel Email sheet, Email Server, MINI EMAIL 2, 2 năm
+  confidence: ground_truth
+  entity_id: product.email.server.mini_email_2
+  entity_name: Cloud Email Server MINI EMAIL 2
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 2 năm
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 9522000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: price_3y
+  claim_id: CLM-EXCEL-product_email_server_mini_email_2-price_3y
+  compiler_note: Excel Email sheet, Email Server, MINI EMAIL 2, 3 năm
+  confidence: ground_truth
+  entity_id: product.email.server.mini_email_2
+  entity_name: Cloud Email Server MINI EMAIL 2
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 3 năm
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 12378600
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: price_6m
+  claim_id: CLM-EXCEL-product_email_server_mini_email_2-price_6m
+  compiler_note: Excel Email sheet, Email Server, MINI EMAIL 2, 6 tháng
+  confidence: ground_truth
+  entity_id: product.email.server.mini_email_2
+  entity_name: Cloud Email Server MINI EMAIL 2
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 6 tháng
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 3015300
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: storage
+  claim_id: CLM-EXCEL-product_email_server_mini_email_2-storage
+  compiler_note: Excel Email sheet, Email Server Mini, MINI EMAIL 2
+  confidence: ground_truth
+  entity_id: product.email.server.mini_email_2
+  entity_name: Cloud Email Server MINI EMAIL 2
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  valid_from: '2026-04-07'
+  value: 150GB
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: monthly_price
+  claim_id: CLM-EXCEL-product_email_server_mini_email_3-monthly_price
+  compiler_note: Excel Email sheet, Email Server, MINI EMAIL 3, 1 tháng
+  confidence: ground_truth
+  entity_id: product.email.server.mini_email_3
+  entity_name: Cloud Email Server MINI EMAIL 3
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 1 tháng
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 654000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: price_1y
+  claim_id: CLM-EXCEL-product_email_server_mini_email_3-price_1y
+  compiler_note: Excel Email sheet, Email Server, MINI EMAIL 3, 1 năm
+  confidence: ground_truth
+  entity_id: product.email.server.mini_email_3
+  entity_name: Cloud Email Server MINI EMAIL 3
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 1 năm
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 6670800
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: price_2y
+  claim_id: CLM-EXCEL-product_email_server_mini_email_3-price_2y
+  compiler_note: Excel Email sheet, Email Server, MINI EMAIL 3, 2 năm
+  confidence: ground_truth
+  entity_id: product.email.server.mini_email_3
+  entity_name: Cloud Email Server MINI EMAIL 3
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 2 năm
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 11772000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: price_3y
+  claim_id: CLM-EXCEL-product_email_server_mini_email_3-price_3y
+  compiler_note: Excel Email sheet, Email Server, MINI EMAIL 3, 3 năm
+  confidence: ground_truth
+  entity_id: product.email.server.mini_email_3
+  entity_name: Cloud Email Server MINI EMAIL 3
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 3 năm
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 15303600
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: price_6m
+  claim_id: CLM-EXCEL-product_email_server_mini_email_3-price_6m
+  compiler_note: Excel Email sheet, Email Server, MINI EMAIL 3, 6 tháng
+  confidence: ground_truth
+  entity_id: product.email.server.mini_email_3
+  entity_name: Cloud Email Server MINI EMAIL 3
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 6 tháng
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 3727800
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: storage
+  claim_id: CLM-EXCEL-product_email_server_mini_email_3-storage
+  compiler_note: Excel Email sheet, Email Server Mini, MINI EMAIL 3
+  confidence: ground_truth
+  entity_id: product.email.server.mini_email_3
+  entity_name: Cloud Email Server MINI EMAIL 3
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  valid_from: '2026-04-07'
+  value: 200GB
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: monthly_price
+  claim_id: CLM-EXCEL-product_email_server_mini_email_4-monthly_price
+  compiler_note: Excel Email sheet, Email Server, MINI EMAIL 4, 1 tháng
+  confidence: ground_truth
+  entity_id: product.email.server.mini_email_4
+  entity_name: Cloud Email Server MINI EMAIL 4
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 1 tháng
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 789000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: price_1y
+  claim_id: CLM-EXCEL-product_email_server_mini_email_4-price_1y
+  compiler_note: Excel Email sheet, Email Server, MINI EMAIL 4, 1 năm
+  confidence: ground_truth
+  entity_id: product.email.server.mini_email_4
+  entity_name: Cloud Email Server MINI EMAIL 4
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 1 năm
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 8047800
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: price_2y
+  claim_id: CLM-EXCEL-product_email_server_mini_email_4-price_2y
+  compiler_note: Excel Email sheet, Email Server, MINI EMAIL 4, 2 năm
+  confidence: ground_truth
+  entity_id: product.email.server.mini_email_4
+  entity_name: Cloud Email Server MINI EMAIL 4
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 2 năm
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 14202000
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: price_3y
+  claim_id: CLM-EXCEL-product_email_server_mini_email_4-price_3y
+  compiler_note: Excel Email sheet, Email Server, MINI EMAIL 4, 3 năm
+  confidence: ground_truth
+  entity_id: product.email.server.mini_email_4
+  entity_name: Cloud Email Server MINI EMAIL 4
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 3 năm
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 18462600
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: price_6m
+  claim_id: CLM-EXCEL-product_email_server_mini_email_4-price_6m
+  compiler_note: Excel Email sheet, Email Server, MINI EMAIL 4, 6 tháng
+  confidence: ground_truth
+  entity_id: product.email.server.mini_email_4
+  entity_name: Cloud Email Server MINI EMAIL 4
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  qualifiers:
+    period: 6 tháng
+    vat_included: false
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 4497300
+- approved_at: '2026-04-07T15:46:04.873903+07:00'
+  approved_by: excel-direct-injection
+  attribute: storage
+  claim_id: CLM-EXCEL-product_email_server_mini_email_4-storage
+  compiler_note: Excel Email sheet, Email Server Mini, MINI EMAIL 4
+  confidence: ground_truth
+  entity_id: product.email.server.mini_email_4
+  entity_name: Cloud Email Server MINI EMAIL 4
+  entity_type: product_plan
+  observed_at: '2026-04-07T15:46:04.873903+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - EXCEL-BANGGIA-BKNS-2026
+  valid_from: '2026-04-07'
+  value: 255GB

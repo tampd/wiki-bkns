@@ -1,0 +1,21 @@
+claim_id: CLM-ED5024B25F9C
+entity_id: product.email.hosting.email_2
+entity_type: product_plan
+entity_name: EMAIL 2
+attribute: email_accounts
+value: 20
+unit: null
+qualifiers: null
+source_ids:
+- SRC-BANG_GIA_EMAIL_2026_04_05
+observed_at: '2026-04-14T17:00:20.227386+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ: ''Số lượng Email: 20'''
+dual_vote:
+  status: DISAGREE
+  score: 0.2718
+  confidence: LOW
+  flag: human_review_required

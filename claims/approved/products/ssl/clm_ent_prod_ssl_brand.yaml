@@ -7,17 +7,18 @@ value: RapidSSL
 unit: null
 qualifiers: {}
 source_ids:
-- SRC-RAPIDSSL_WILDCARD_CERTIFICATE_THONG_TIN_VA_BANG_GIA_TAI_BK_2026_04_04
-- SRC-CHUNG_CHI_SSL_INSTANTSSL_OV_2026_04_06
-- SRC-RAPIDSSL_WILDCARD_CERTIFICATE_THONG_TIN_VA_BANG_GIA_TAI_BK_2026_04_06
+  - SRC-RAPIDSSL_WILDCARD_CERTIFICATE_THONG_TIN_VA_BANG_GIA_TAI_BK_2026_04_04
+  - SRC-CHUNG_CHI_SSL_INSTANTSSL_OV_2026_04_06
+  - SRC-RAPIDSSL_WILDCARD_CERTIFICATE_THONG_TIN_VA_BANG_GIA_TAI_BK_2026_04_06
 observed_at: '2026-04-07T00:58:40.393444+07:00'
 valid_from: '2026-04-04'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ Tóm tắt nhanh: Dịch vụ này là gì: Chứng chỉ SSL Wildcard
-  xác thực tên miền (DV) từ RapidSSL...'
+compiler_note: 'Trích từ Tóm tắt nhanh: Dịch vụ này là gì: Chứng chỉ SSL Wildcard xác thực tên miền (DV) từ RapidSSL...'
 value_changed_from: Comodo
 value_changed_at: '2026-04-07T00:58:40.393462+07:00'
-approved_at: '2026-04-07T13:00:12.910949+07:00'
+approved_at: '2026-04-08T13:00:12.289301+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.462Z'

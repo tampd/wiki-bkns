@@ -7,13 +7,14 @@ value: Dịch vụ Backup Dữ liệu - Sao lưu và Phục hồi Dữ liệu Uy
 unit: null
 qualifiers: null
 source_ids:
-- SRC-BACKUP_DU_LIEU_WEB_2026_04_05
+  - SRC-BACKUP_DU_LIEU_WEB_2026_04_05
 observed_at: '2026-04-05T21:42:29.914844+07:00'
 valid_from: '2026-04-05'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ tiêu đề trang: ''# Dịch vụ Backup Dữ liệu - Sao lưu và Phục
-  hồi Dữ liệu Uy tín'''
-approved_at: '2026-04-07T13:00:09.839682+07:00'
+compiler_note: 'Trích từ tiêu đề trang: ''# Dịch vụ Backup Dữ liệu - Sao lưu và Phục hồi Dữ liệu Uy tín'''
+approved_at: '2026-04-08T13:00:08.931632+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.291Z'

@@ -1,0 +1,18 @@
+claim_id: CLM-7B9765787BB5
+entity_id: ENT-PROD-SSL-COMODO-WILDCARD-DV
+entity_type: product
+entity_name: Comodo SSL Wildcard Certificate (DV)
+attribute: ssl.validation_type
+value: DV
+unit: null
+qualifiers:
+  description: Domain
+source_ids:
+- SRC-COMODO_SSL_WILDCARD_CERTIFICATE_DV_CHUNG_CHI_SSL_2026_04_13
+observed_at: '2026-04-13T22:10:45.454792+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Thông số kỹ thuật / Giới hạn: ''| Xác thực | Domain (DV)
+  |'''

@@ -1,0 +1,22 @@
+claim_id: CLM-BECAC001A167
+entity_id: ENT-PROD-SSL-COMODO-ESSENTIAL-WILDCARD-DV
+entity_type: product_plan
+entity_name: EssentialSSL Wildcard (DV)
+attribute: list_price
+value: 6474000
+unit: VND
+qualifiers:
+  billing_cycle: year
+source_ids:
+- SRC-CHUNG_CHI_SSL_ESSENTIALSSL_WILDCARD_DV_CUA_COMODO_2026_04_05
+observed_at: '2026-04-14T16:22:15.534331+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ Gói dịch vụ và bảng giá: ''Giá nhà cung cấp | <del>6.474.000đ/năm</del>'''
+dual_vote:
+  status: DISAGREE
+  score: 0.2232
+  confidence: LOW
+  flag: human_review_required

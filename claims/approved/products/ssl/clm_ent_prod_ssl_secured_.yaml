@@ -7,15 +7,16 @@ value: Unlimited
 unit: null
 qualifiers: {}
 source_ids:
-- SRC-COMODO_SSL_WILDCARD_CERTIFICATE_DV_CHUNG_CHI_SSL_2026_04_06
+  - SRC-COMODO_SSL_WILDCARD_CERTIFICATE_DV_CHUNG_CHI_SSL_2026_04_06
 observed_at: '2026-04-06T23:50:22.091192+07:00'
 valid_from: '2026-04-06'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: none
-compiler_note: 'Trích từ mục ''Tính năng / Thành phần'': ''• Bảo vệ tên miền và tên
-  miền phụ: Bảo mật cho 1 tên miền chính và không giới hạn tên miền phụ (subdomains).'''
+compiler_note: 'Trích từ mục ''Tính năng / Thành phần'': ''• Bảo vệ tên miền và tên miền phụ: Bảo mật cho 1 tên miền chính và không giới hạn tên miền phụ (subdomains).'''
 value_changed_from: 1
 value_changed_at: '2026-04-06T23:50:22.091211+07:00'
-approved_at: '2026-04-07T13:00:13.158510+07:00'
+approved_at: '2026-04-08T13:00:12.653308+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.486Z'

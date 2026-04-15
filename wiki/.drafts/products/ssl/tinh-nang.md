@@ -2,42 +2,49 @@
 page_id: wiki.products.ssl.tinh-nang
 title: Chứng Chỉ SSL BKNS — Tính Năng
 category: products/ssl
-updated: '2026-04-07'
+updated: '2026-04-14'
 review_state: drafted
-claims_used: 34
-compile_cost_usd: 0.0097
-self_review: fail
-corrections: 3
+claims_used: 105
+compile_cost_usd: 0.0201
+self_review: pass
+corrections: 0
 ---
 
 # Chứng Chỉ SSL BKNS — Tính Năng
 
-Trang này tổng hợp các tính năng nổi bật của dịch vụ Chứng chỉ số SSL được cung cấp bởi BKNS, giúp bảo mật website, tăng cường uy tín và cải thiện trải nghiệm người dùng.
-
-### Quản trị
-
-*   **Hỗ trợ Cài đặt**: BKNS hỗ trợ khách hàng cài đặt chứng chỉ SSL, với một số loại được hỗ trợ miễn phí hoàn toàn, giúp đơn giản hóa quá trình triển khai và đảm bảo chứng chỉ hoạt động chính xác.
+Trang này tổng hợp các tính năng nổi bật của dịch vụ Chứng chỉ SSL do BKNS cung cấp, giúp bảo mật website và nâng cao uy tín thương hiệu.
 
 ### Bảo mật
 
-*   **Mã hóa Tiêu chuẩn Ngành**: Tất cả các chứng chỉ SSL đều tuân thủ tiêu chuẩn mã hóa mạnh mẽ của ngành, giúp bảo vệ an toàn tuyệt đối cho mọi dữ liệu được truyền tải trên website của bạn.
-*   **Tăng cường Nhận diện và Tin cậy**: Các chứng chỉ xác thực doanh nghiệp (OV) và xác thực mở rộng (EV) giúp tăng cường lòng tin của khách hàng bằng cách hiển thị tên công ty đã được xác minh trên con dấu bảo mật hoặc trên thanh địa chỉ màu xanh lá.
-*   **Bảo vệ Tên miền và Tên miền phụ (Wildcard)**: BKNS cung cấp các chứng chỉ Wildcard, cho phép bảo vệ một tên miền chính cùng với toàn bộ các tên miền phụ (subdomain) không giới hạn chỉ trong một chứng chỉ duy nhất.
-*   **Bảo vệ WWW và Non-WWW**: Nhiều chứng chỉ SSL tại BKNS mặc định bảo vệ cho cả hai phiên bản tên miền có `www` và không có `www`, đảm bảo khách truy cập luôn được kết nối an toàn.
+#### Mã hóa tiêu chuẩn ngành
+Tất cả các chứng chỉ SSL tại BKNS đều sử dụng công nghệ mã hóa theo tiêu chuẩn ngành, đảm bảo an toàn cho mọi dữ liệu được truyền tải giữa máy chủ và trình duyệt của người dùng (CLM-9E7F5CCFCCEB).
 
-### Hiệu suất
+#### Đa dạng mức độ xác thực
+BKNS cung cấp nhiều loại chứng chỉ với các cấp độ xác thực khác nhau:
+- **Xác thực Tên miền (DV):** Cấp phát nhanh, chỉ xác thực quyền sở hữu tên miền, không xác thực thông tin tổ chức (CLM-SSL-ESSENTIALSSL_WILDCARD_DV-FEATURE).
+- **Xác thực Tổ chức (OV):** Xác minh danh tính doanh nghiệp sở hữu website và hiển thị tên công ty trong chi tiết chứng chỉ (CLM-2309E612CF3E, CLM-20FCB0E55E29).
+- **Xác thực Mở rộng (EV):** Cung cấp mức độ tin cậy cao nhất, hiển thị tên doanh nghiệp trên thanh địa chỉ màu xanh của trình duyệt, giúp tăng cường lòng tin của khách hàng (CLM-ENT-PROD-SSL-BENEFIT, CLM-SSL-GEOTRUST_TRUE_BUSINESSID_EV_MULTI_DOMAIN-FEATURE).
 
-Thông tin về các tính năng liên quan đến hiệu suất đang được cập nhật.
+#### Con dấu bảo mật (Site Seal)
+Một số loại chứng chỉ như Comodo EV SSL và InstantSSL (OV) đi kèm con dấu trang web động miễn phí. Khi người dùng di chuột qua con dấu này, thông tin doanh nghiệp đã được xác thực sẽ hiển thị, gia tăng độ tin cậy cho website (CLM-191E2A15A314, CLM-ENT-PROD-SSL-FEATURE).
 
 ### Hỗ trợ kỹ thuật
 
-*   **Hỗ trợ Kỹ thuật**: Đội ngũ chuyên gia của BKNS luôn sẵn sàng hỗ trợ kỹ thuật để giải quyết các vấn đề và thắc mắc của khách hàng. Một số loại chứng chỉ đi kèm chính sách hỗ trợ 24/7 từ nhà cung cấp.
+#### Hỗ trợ cài đặt miễn phí
+BKNS hỗ trợ cài đặt miễn phí cho khách hàng đăng ký dịch vụ chứng chỉ SSL, giúp quá trình thiết lập diễn ra nhanh chóng và chính xác (CLM-DF9EA8182C3E, CLM-1C6A4CAF5D5A, CLM-SSL-BKNS-INSTALLA).
 
-### Sản phẩm liên quan
+#### Hỗ trợ kỹ thuật 24/7
+Dịch vụ cung cấp hỗ trợ kỹ thuật 24/7 để giải đáp và xử lý các vấn đề phát sinh liên quan đến chứng chỉ SSL của bạn (CLM-ENT-PROD-SSL-SUPPORT_, CLM-DD0B01D870F4).
 
-*   [Web Hosting BKNS](../hosting/index.md)
-*   [Cloud VPS BKNS](../vps/index.md)
-*   [Tên Miền BKNS](../ten-mien/index.md)
+### Quản trị
+Đang cập nhật
 
----
-*Compiled by BKNS Wiki Bot • 2026-04-07*
+### Hiệu suất
+Đang cập nhật
+
+## Sản phẩm liên quan
+- [Web Hosting BKNS](../hosting/index.md)
+- [Cloud VPS BKNS](../vps/index.md)
+- [Tên Miền BKNS](../ten-mien/index.md)
+
+Compiled by BKNS Wiki Bot • 2026-04-14

@@ -1,0 +1,22 @@
+claim_id: CLM-69BA86FDD69D
+entity_id: ENT-PROD-DOMAIN
+entity_type: service
+entity_name: Dịch vụ Tên miền BKNS
+attribute: key_feature
+value: Miễn phí phí cài đặt cho tên miền quốc tế.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_05
+observed_at: '2026-04-14T16:43:52.689373+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: Điểm chính: Miễn phí phí cài đặt cho tên miền
+  quốc tế.'
+dual_vote:
+  status: DISAGREE
+  score: 0.5466
+  confidence: LOW
+  flag: human_review_required

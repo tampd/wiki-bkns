@@ -1,0 +1,25 @@
+claim_id: CLM-8F39BFA620F7
+entity_id: ENT-PROD-SSL-011
+entity_type: ENT-PROD-SSL
+entity_name: GeoTrust True BusinessID with EV Multi-Domain
+attribute: site_seal_type
+value: Động
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-CHUNG_CHI_SSL_GEOTRUST_QUICKSSL_PREMIUM_WILDCARD_2026_04_05
+- SRC-GEOTRUST_TRUE_BUSINESSID_WITH_EV_MULTI_DOMAIN_2026_04_05
+observed_at: '2026-04-14T16:53:51.119186+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ mục ''Tính năng / Thành phần'': ''• Con dấu tin cậy động
+  (Dynamic Site Seal): Cung cấp biểu tượng GeoTrust động để hiển thị trên website.'''
+dual_vote:
+  status: DISAGREE
+  score: 0.5331
+  confidence: LOW
+  flag: human_review_required
+value_changed_from: dynamic
+value_changed_at: '2026-04-14T16:53:51.119236+07:00'

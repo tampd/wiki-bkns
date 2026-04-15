@@ -1,0 +1,22 @@
+claim_id: CLM-1E14D6BF8303
+entity_id: ENT-PROD-SSL-011
+entity_type: product
+entity_name: GeoTrust QuickSSL Premium Wildcard
+attribute: coverage
+value: Tên miền chính, toàn bộ tên miền phụ
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-CHUNG_CHI_SSL_GEOTRUST_QUICKSSL_PREMIUM_WILDCARD_2026_04_05
+observed_at: '2026-04-14T16:23:21.980015+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng Thông số kỹ thuật: | Bảo vệ cho | Tên miền chính, toàn
+  bộ tên miền phụ |'
+dual_vote:
+  status: DISAGREE
+  score: 0.5331
+  confidence: LOW
+  flag: human_review_required

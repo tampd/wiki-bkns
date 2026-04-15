@@ -1,0 +1,21 @@
+claim_id: CLM-5B223BF8B448
+entity_id: product.hosting.wordpress
+entity_type: product
+entity_name: Hosting WordPress
+attribute: category
+value: hosting
+unit: null
+qualifiers: null
+source_ids:
+- SRC-HOSTING_WORDPRESS_TOC_O_CAO_BANG_GIA_GIAI_PHAP_TOI_UU_S_2026_04_05
+observed_at: '2026-04-14T12:16:10.932691+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ phần ''Thông tin nguồn'': ''Danh mục: hosting'''
+dual_vote:
+  status: DISAGREE
+  score: 0.2766
+  confidence: LOW
+  flag: human_review_required

@@ -1,0 +1,22 @@
+claim_id: CLM-7D56CF9074FD
+entity_id: ENT-COMPANY-001
+entity_type: company
+entity_name: BKNS
+attribute: service_offering
+value: Hỗ trợ cài đặt và cấu hình CloudLinux cho khách hàng.
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-BAN_QUYEN_CLOUDLINUX_OS_TANG_ON_INH_VA_BAO_MAT_CHO_SHARED_2026_04_05
+observed_at: '2026-04-14T11:59:30.215767+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Quy trình đăng ký / Triển khai / Kích hoạt: ''BKNS cung cấp
+  dịch vụ hỗ trợ cài đặt và cấu hình CloudLinux cho khách hàng.'''
+dual_vote:
+  status: DISAGREE
+  score: 0.0371
+  confidence: LOW
+  flag: human_review_required

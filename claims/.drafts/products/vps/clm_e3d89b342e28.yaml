@@ -1,0 +1,21 @@
+claim_id: CLM-E3D89B342E28
+entity_id: product.vps.bkns.vpstk1
+entity_type: product_plan
+entity_name: VPSTK1
+attribute: backup_frequency
+value: weekly
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_VPS_SIEU_TIET_KIEM_VPS_SIEU_RE_TAI_BKNS_2026_04_05
+observed_at: '2026-04-14T16:13:24.803484+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ bảng giá, cột VPSTK1: ''Sao Lưu Dữ Liệu Hàng Tuần | Có'''
+dual_vote:
+  status: DISAGREE
+  score: 0.599
+  confidence: LOW
+  flag: human_review_required

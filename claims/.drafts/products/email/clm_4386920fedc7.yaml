@@ -1,0 +1,21 @@
+claim_id: CLM-4386920FEDC7
+entity_id: ENT-PROD-EMAIL
+entity_type: product
+entity_name: Email Hosting
+attribute: url
+value: https://www.bkns.vn/email/email-hosting.html
+unit: ''
+qualifiers: {}
+source_ids:
+- SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_13
+observed_at: '2026-04-14T12:07:57.591489+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ phần ''Thông tin nguồn'': ''• URL: https://www.bkns.vn/email/email-hosting.html'''
+dual_vote:
+  status: DISAGREE
+  score: 0.3686
+  confidence: LOW
+  flag: human_review_required

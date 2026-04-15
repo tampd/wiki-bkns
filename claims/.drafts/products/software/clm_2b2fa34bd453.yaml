@@ -1,0 +1,24 @@
+claim_id: CLM-2B2FA34BD453
+entity_id: ENT-PROD-SOFTWARE-LITESPEED
+entity_type: product
+entity_name: LiteSpeed Web Server
+attribute: performance_comparison
+value: Hiệu suất cao hơn Apache
+unit: null
+qualifiers:
+  compared_to: Apache
+source_ids:
+- SRC-LITESPEED_WEB_SERVER_TINH_NANG_PHIEN_BAN_VA_SO_SANH_2026_04_05
+observed_at: '2026-04-14T12:20:31.082676+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: Điểm chính: Hiệu suất cao hơn Apache, kiến
+  trúc hướng sự kiện, tương thích với các tính năng của Apache, có sẵn plugin LSCache,
+  và tích hợp các tính năng bảo mật.'
+dual_vote:
+  status: DISAGREE
+  score: 0.0
+  confidence: LOW
+  flag: human_review_required

@@ -1,0 +1,18 @@
+claim_id: CLM-SSL-INSTANTSSL_PRO_OV-INSTALLA
+entity_id: product.ssl.instantssl_pro_ov
+entity_type: product_plan
+entity_name: InstantSSL Pro (OV)
+attribute: installation_fee
+value: 0
+unit: VND
+qualifiers: {}
+source_ids:
+- SRC-INSTANTSSL_PRO_OV_CHUNG_CHI_SSL_XAC_THUC_TO_CHUC_CUA_COM_2026_04_06
+observed_at: '2026-04-07T00:42:11.462397+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ Tính năng / Thành phần: Phí cài đặt: Miễn phí.'
+approved_at: '2026-04-08T13:00:13.406343+07:00'
+approved_by: admin-batch

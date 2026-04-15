@@ -1,0 +1,23 @@
+claim_id: CLM-BD430FE9EAF6
+entity_id: domain.international.biz
+entity_type: product_plan
+entity_name: .biz
+attribute: renewal_price
+value: 740000
+unit: VND
+qualifiers:
+  billing_cycle: year
+source_ids:
+- SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_05
+observed_at: '2026-04-14T16:42:32.526442+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ bảng giá tên miền Quốc tế, dòng .biz, cột Phí duy trì hàng
+  năm: ''740.000'''
+dual_vote:
+  status: PARTIAL
+  score: 0.6024
+  confidence: MEDIUM
+  flag: needs_review

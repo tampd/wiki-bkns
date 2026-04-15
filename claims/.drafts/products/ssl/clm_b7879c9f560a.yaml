@@ -1,0 +1,22 @@
+claim_id: CLM-B7879C9F560A
+entity_id: ENT-PROD-SSL-011
+entity_type: ENT-PROD-SSL
+entity_name: GeoTrust True BusinessID with EV Multi-Domain
+attribute: insurance_amount
+value: 1500000
+unit: USD
+qualifiers: {}
+source_ids:
+- SRC-GEOTRUST_TRUE_BUSINESSID_WITH_EV_MULTI_DOMAIN_2026_04_05
+observed_at: '2026-04-14T16:53:51.110905+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ mục ''Tính năng / Thành phần'': ''• Bảo hiểm cao: Mức bồi
+  thường lên đến 1.500.000$.'''
+dual_vote:
+  status: DISAGREE
+  score: 0.2759
+  confidence: LOW
+  flag: human_review_required

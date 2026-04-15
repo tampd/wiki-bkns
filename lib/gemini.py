@@ -4,14 +4,16 @@ Supports Flash + Pro model switching, token counting, cost tracking, retry logic
 """
 import os
 import time
-import json
+from pathlib import Path
 from typing import Optional
 
 from lib.config import (
     GOOGLE_CREDENTIALS, GOOGLE_PROJECT, GOOGLE_LOCATION,
-    MODEL_FLASH, MODEL_PRO, SKILL_MODELS,
+    MODEL_FLASH, MODEL_PRO, MODEL_PRO_NEW, MODEL_PRO_NEW_LOCATION,
+    SKILL_MODELS, get_pro_model,
 )
-from lib.logger import log_entry
+from lib.logger import log_entry, log_gemini_call
+from lib.config import MAX_QUERY_COST_USD
 
 # Set credentials before importing google libs
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = GOOGLE_CREDENTIALS
@@ -20,30 +22,42 @@ from google import genai
 from google.genai import types
 
 
-# ── Client Singleton ───────────────────────────────────────
-_client: Optional[genai.Client] = None
+# ── Client Pool (per location) ─────────────────────────────
+_clients: dict[str, genai.Client] = {}
 
 
-def get_client() -> genai.Client:
-    """Get or create Vertex AI Genai client."""
-    global _client
-    if _client is None:
-        _client = genai.Client(
+def get_client(location: str | None = None) -> genai.Client:
+    """Get or create Vertex AI Genai client for a specific location.
+
+    gemini-3.1-pro-preview requires location='global' (not region-specific).
+    All other models use GOOGLE_CLOUD_LOCATION (default: us-central1).
+    """
+    loc = location or GOOGLE_LOCATION
+    if loc not in _clients:
+        _clients[loc] = genai.Client(
             vertexai=True,
             project=GOOGLE_PROJECT,
-            location=GOOGLE_LOCATION,
+            location=loc,
         )
-    return _client
+    return _clients[loc]
+
+
+def get_client_for_model(model: str) -> genai.Client:
+    """Return the right client based on model — 3.1-pro-preview needs 'global'."""
+    if model == MODEL_PRO_NEW:
+        return get_client(MODEL_PRO_NEW_LOCATION)
+    return get_client()
 
 
 # ── Cost Calculator ────────────────────────────────────────
-# Pricing per 1M tokens (USD) — updated 2026-04
+# Pricing per 1M tokens (USD) — updated 2026-04 (PART 04)
 PRICING = {
+    # gemini-2.5-flash: GA, fast, cost-effective
     MODEL_FLASH: {"input": 0.30, "input_cached": 0.030, "output": 2.50},
-    # gemini-3.1-pro-preview: $2/$0.20 input, $12 output (≤200K context)
-    MODEL_PRO: {"input": 2.00, "input_cached": 0.20, "output": 12.00},
-    # Legacy fallback for gemini-2.5-pro if referenced directly
-    "gemini-2.5-pro": {"input": 1.25, "input_cached": 0.125, "output": 10.00},
+    # gemini-2.5-pro: stable GA — $1.25/$0.125 input, $10 output
+    MODEL_PRO: {"input": 1.25, "input_cached": 0.125, "output": 10.00},
+    # gemini-3.1-pro-preview: PART 04 upgrade — $2/$0.20 input, $12 output (≤200K context)
+    MODEL_PRO_NEW: {"input": 2.00, "input_cached": 0.20, "output": 12.00},
 }
 
 
@@ -68,9 +82,9 @@ def calculate_cost(
 # ── Generate Text ──────────────────────────────────────────
 def generate(
     prompt: str,
-    model: str = None,
+    model: str | None = None,
     skill: str = "unknown",
-    system_instruction: str = None,
+    system_instruction: str | None = None,
     temperature: float = 0.2,
     max_output_tokens: int = 8192,
     retry_count: int = 2,
@@ -97,7 +111,7 @@ def generate(
     if model is None:
         raise ValueError(f"Skill '{skill}' does not use LLM")
 
-    client = get_client()
+    client = get_client_for_model(model)
     last_error = None
 
     for attempt in range(retry_count + 1):
@@ -126,6 +140,26 @@ def generate(
             output_tokens = getattr(usage, "candidates_token_count", 0) or 0
 
             cost = calculate_cost(model, input_tokens, cached_tokens, output_tokens)
+
+            log_gemini_call(
+                skill=skill,
+                model=model,
+                input_tokens=input_tokens,
+                cached_tokens=cached_tokens,
+                output_tokens=output_tokens,
+                cost_usd=cost,
+                elapsed_ms=elapsed_ms,
+                action="llm_call",
+            )
+
+            if cost > MAX_QUERY_COST_USD:
+                log_entry(
+                    skill=skill,
+                    action="cost_alert",
+                    detail=f"High-cost query: ${cost:.5f} > threshold ${MAX_QUERY_COST_USD}",
+                    cost_usd=cost,
+                    severity="high",
+                )
 
             result = {
                 "text": response.text,
@@ -174,9 +208,9 @@ def generate(
 def generate_with_cache(
     prefix_content: str,
     question: str,
-    model: str = None,
+    model: str | None = None,
     skill: str = "query-wiki",
-    system_instruction: str = None,
+    system_instruction: str | None = None,
     temperature: float = 0.2,
     max_output_tokens: int = 4096,
     retry_count: int = 2,
@@ -250,6 +284,26 @@ def generate_with_cache(
             if input_tokens > 0:
                 cache_hit_rate = round(cached_tokens / input_tokens * 100, 1)
 
+            log_gemini_call(
+                skill=skill,
+                model=model,
+                input_tokens=input_tokens,
+                cached_tokens=cached_tokens,
+                output_tokens=output_tokens,
+                cost_usd=cost,
+                elapsed_ms=elapsed_ms,
+                action="llm_call_cached",
+            )
+
+            if cost > MAX_QUERY_COST_USD:
+                log_entry(
+                    skill=skill,
+                    action="cost_alert",
+                    detail=f"High-cost query: ${cost:.5f} > threshold ${MAX_QUERY_COST_USD}",
+                    cost_usd=cost,
+                    severity="high",
+                )
+
             log_entry(
                 skill=skill,
                 action="llm_call_cached",
@@ -297,7 +351,7 @@ def generate_with_cache(
 def generate_with_image(
     image_path: str,
     prompt: str,
-    model: str = None,
+    model: str | None = None,
     skill: str = "ingest-image",
     temperature: float = 0.1,
     max_output_tokens: int = 8192,
@@ -363,6 +417,26 @@ def generate_with_image(
             output_tokens = getattr(usage, "candidates_token_count", 0) or 0
 
             cost = calculate_cost(model, input_tokens, cached_tokens, output_tokens)
+
+            log_gemini_call(
+                skill=skill,
+                model=model,
+                input_tokens=input_tokens,
+                cached_tokens=cached_tokens,
+                output_tokens=output_tokens,
+                cost_usd=cost,
+                elapsed_ms=elapsed_ms,
+                action="llm_call_vision",
+            )
+
+            if cost > MAX_QUERY_COST_USD:
+                log_entry(
+                    skill=skill,
+                    action="cost_alert",
+                    detail=f"High-cost query: ${cost:.5f} > threshold ${MAX_QUERY_COST_USD}",
+                    cost_usd=cost,
+                    severity="high",
+                )
 
             log_entry(
                 skill=skill,

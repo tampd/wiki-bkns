@@ -34,7 +34,7 @@ function countFiles(dir) {
 /**
  * GET /api/status
  */
-function statusRoute(router, pipelineRunner) {
+function statusRoute(router) {
   router.get('/api/status', (req, res) => {
     try {
       // Count files
@@ -42,13 +42,27 @@ function statusRoute(router, pipelineRunner) {
       const manualFiles = countFiles(RAW_MANUAL_DIR);
       const claims = countFiles(CLAIMS_DIR);
 
-      // Count only compiled product wiki pages (directories with tong-quan.md)
-      let wikiPages = 0;
+      // Count wiki categories + total pages
+      let wikiCategories = 0;
+      let wikiTotalPages = 0;
       if (fs.existsSync(WIKI_PRODUCTS_DIR)) {
-        wikiPages = fs.readdirSync(WIKI_PRODUCTS_DIR, { withFileTypes: true })
-          .filter(e => e.isDirectory() && !e.name.startsWith('.'))
-          .filter(e => fs.existsSync(path.join(WIKI_PRODUCTS_DIR, e.name, 'tong-quan.md')))
-          .length;
+        const catDirs = fs.readdirSync(WIKI_PRODUCTS_DIR, { withFileTypes: true })
+          .filter(e => e.isDirectory() && !e.name.startsWith('.'));
+        wikiCategories = catDirs.filter(e =>
+          fs.existsSync(path.join(WIKI_PRODUCTS_DIR, e.name, 'tong-quan.md'))
+        ).length;
+        // Count all .md files recursively
+        const countMd = (dir) => {
+          let n = 0;
+          try {
+            for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+              if (entry.isDirectory()) n += countMd(path.join(dir, entry.name));
+              else if (entry.name.endsWith('.md')) n++;
+            }
+          } catch { /* skip */ }
+          return n;
+        };
+        wikiTotalPages = countMd(WIKI_PRODUCTS_DIR);
       }
 
       // Build version
@@ -64,19 +78,17 @@ function statusRoute(router, pipelineRunner) {
         } catch { /* empty dir */ }
       }
 
-      // Pipeline status
-      const pipelineState = pipelineRunner.getState();
-
       res.json({
-        pipeline: pipelineState.status,
-        last_run: pipelineState.lastRun,
-        last_result: pipelineState.lastResult,
+        pipeline: 'disabled',
+        last_run: null,
+        last_result: 'Pipeline đã chuyển sang AI Thủ thư',
         build_version: buildVersion,
         wiki_stats: {
           total_files: webFiles + manualFiles,
           web_files: webFiles,
           manual_files: manualFiles,
-          wiki_pages: wikiPages,
+          wiki_categories: wikiCategories,
+          wiki_pages: wikiTotalPages,
           total_claims: claims,
           build_version: buildVersion,
         },

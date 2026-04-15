@@ -1,0 +1,16 @@
+claim_id: CLM-0D24C115D279
+entity_id: product.vps.adm.epyc1
+entity_type: product_plan
+entity_name: EPYC 1
+attribute: cpu_cores
+value: 1
+unit: core
+qualifiers: {}
+source_ids:
+- SRC-BANG_GIA_VPS_2026_04_13
+observed_at: '2026-04-13T21:49:32.234889+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng giá VPS ADM, cột EPYC 1, dòng Số nhân CPU: 1 Core'

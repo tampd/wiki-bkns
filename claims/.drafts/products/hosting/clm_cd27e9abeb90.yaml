@@ -1,0 +1,23 @@
+claim_id: CLM-CD27E9ABEB90
+entity_id: bkns.hosting.platinum
+entity_type: product
+entity_name: Platinum Web Hosting
+attribute: positioning
+value: Dịch vụ hosting mạnh mẽ nhất của BKNS, sử dụng phần cứng Enterprise chuyên
+  dụng.
+unit: ''
+qualifiers: {}
+source_ids:
+- SRC-BKNS_CAMNANG_HOSTING_DOT2_2026_04_05
+observed_at: '2026-04-14T12:04:01.285789+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục 3.1: ''Định vị: Dịch vụ hosting mạnh mẽ nhất của BKNS,
+  sử dụng phần cứng Enterprise chuyên dụng.'''
+dual_vote:
+  status: DISAGREE
+  score: 0.3651
+  confidence: LOW
+  flag: human_review_required

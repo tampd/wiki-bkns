@@ -8,12 +8,14 @@ unit: null
 qualifiers:
   support_type: technical
 source_ids:
-- SRC-HOSTING_MIEN_PHI_WEB_2026_04_05
+  - SRC-HOSTING_MIEN_PHI_WEB_2026_04_05
 observed_at: '2026-04-05T22:03:59.619009+07:00'
 valid_from: '2026-04-05'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
 compiler_note: 'Trích từ đặc điểm: ''- Hỗ trợ kỹ thuật cơ bản'''
-approved_at: '2026-04-07T13:00:11.928617+07:00'
+approved_at: '2026-04-08T13:00:11.028960+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.012Z'

@@ -1,0 +1,18 @@
+claim_id: CLM-EMAI-EMAIL_3-EMAIL_AC
+entity_id: bkns.email_hosting.email_3
+entity_type: product_plan
+entity_name: EMAIL 3
+attribute: email_accounts
+value: 50
+unit: tài khoản
+qualifiers: {}
+source_ids:
+- SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_06
+observed_at: '2026-04-07T00:05:00.894993+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ bảng giá: ''Số lượng tài khoản email | 50'''
+approved_at: '2026-04-08T13:00:10.135162+07:00'
+approved_by: admin-batch

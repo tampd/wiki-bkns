@@ -1,0 +1,17 @@
+claim_id: CLM-634B4778D24E
+entity_id: ENT-PROD-DOMAIN
+entity_type: product
+entity_name: Dịch vụ Tên miền
+attribute: transfer_policy
+value: Chuyển tên miền Việt Nam về BKNS được miễn phí.
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-DICH_VU_ANG_KY_TEN_MIEN_VIET_NAM_VA_QUOC_TE_TAI_BKNS_2026_04_13
+observed_at: '2026-04-13T22:13:15.113255+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ phần ''Tóm tắt nhanh'': • Điều kiện/giới hạn nổi bật (nếu
+  có): Chuyển tên miền Việt Nam về BKNS được miễn phí.'

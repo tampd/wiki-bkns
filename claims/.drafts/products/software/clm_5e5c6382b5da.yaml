@@ -1,0 +1,25 @@
+claim_id: CLM-5E5C6382B5DA
+entity_id: product.software.softaculous
+entity_type: product
+entity_name: Bản quyền Softaculous
+attribute: target_audience
+value: người dùng VPS
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-BAN_QUYEN_SOFTACULOUS_TRINH_CAI_AT_UNG_DUNG_TU_ONG_2026_04_05
+observed_at: '2026-04-14T17:18:51.451290+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tóm tắt nhanh: ''Phù hợp với: Quản trị viên máy chủ,
+  người dùng hosting, VPS muốn đơn giản hóa việc cài đặt và quản lý các mã nguồn mở
+  phổ biến (WordPress, Joomla, Magento...)'''
+dual_vote:
+  status: PARTIAL
+  score: 0.6786
+  confidence: MEDIUM
+  flag: needs_review
+value_changed_from: người dùng hosting
+value_changed_at: '2026-04-14T17:18:51.451338+07:00'

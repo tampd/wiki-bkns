@@ -1,0 +1,22 @@
+claim_id: CLM-6A5EFE990B3E
+entity_id: ENT-PROD-SSL-COMODO-ESSENTIAL-WILDCARD-DV
+entity_type: product_plan
+entity_name: EssentialSSL Wildcard (DV)
+attribute: domain_coverage
+value: 1 tên miền chính + tất cả tên miền con cấp 1
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-CHUNG_CHI_SSL_ESSENTIALSSL_WILDCARD_DV_CUA_COMODO_2026_04_05
+observed_at: '2026-04-14T16:22:15.518497+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng Thông số kỹ thuật / Giới hạn: ''Bảo vệ cho | 1 tên miền
+  chính + tất cả tên miền con cấp 1'''
+dual_vote:
+  status: DISAGREE
+  score: 0.2232
+  confidence: LOW
+  flag: human_review_required

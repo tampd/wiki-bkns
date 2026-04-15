@@ -3,20 +3,19 @@ entity_id: ENT-PROD-DOMAIN
 entity_type: product
 entity_name: Tên miền
 attribute: security_mechanism
-value: Cung cấp cơ chế bảo mật đa lớp, yêu cầu xác thực từ Chủ thể, Nhà đăng ký (BKNS)
-  và VNNIC để thực hiện bất kỳ thay đổi nào đối với tên miền.
+value: Cung cấp cơ chế bảo mật đa lớp, yêu cầu xác thực từ Chủ thể, Nhà đăng ký (BKNS) và VNNIC để thực hiện bất kỳ thay đổi nào đối với tên miền.
 unit: null
 qualifiers:
   service_name: Registry Lock
 source_ids:
-- SRC-BAO_VE_TEN_MIEN_CAP_CAO_NHAT_GIAI_PHAP_AN_TOAN_TUYET_OI_2026_04_04
+  - SRC-BAO_VE_TEN_MIEN_CAP_CAO_NHAT_GIAI_PHAP_AN_TOAN_TUYET_OI_2026_04_04
 observed_at: '2026-04-04T20:30:13.454179+07:00'
 valid_from: '2026-04-04'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ Tóm tắt nhanh: • Điểm chính: Cung cấp cơ chế bảo mật đa lớp,
-  yêu cầu xác thực từ Chủ thể, Nhà đăng ký \(BKNS\) và VNNIC để thực hiện bất kỳ thay
-  đổi nào đối với tên miền\.'
-approved_at: '2026-04-07T13:00:10.633374+07:00'
+compiler_note: 'Trích từ Tóm tắt nhanh: • Điểm chính: Cung cấp cơ chế bảo mật đa lớp, yêu cầu xác thực từ Chủ thể, Nhà đăng ký \(BKNS\) và VNNIC để thực hiện bất kỳ thay đổi nào đối với tên miền\.'
+approved_at: '2026-04-08T13:00:09.743362+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.635Z'

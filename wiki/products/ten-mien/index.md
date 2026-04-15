@@ -2,43 +2,52 @@
 page_id: wiki.products.ten-mien.index
 title: Tên Miền BKNS — Trang Tổng Quan
 category: products/ten-mien
-updated: '2026-04-07'
-review_state: approved
-claims_used: 9
-compile_cost_usd: 0.006
-self_review: fail
-corrections: 1
-approved_at: '2026-04-07T13:24:43.573502+07:00'
+updated: '2026-04-14'
+review_state: drafted
+claims_used: 16
+compile_cost_usd: 0.0089
+self_review: pass
+corrections: 0
 ---
 
 # Tên Miền BKNS — Trang Tổng Quan
 
-Dịch vụ Tên miền (Domain) tại BKNS cho phép khách hàng đăng ký và quản lý tên miền quốc tế & Việt Nam (.vn). Dịch vụ cung cấp bảng giá chi tiết cho việc đăng ký mới, duy trì (gia hạn), và transfer các loại tên miền.
+Dịch vụ Tên miền (Domain) tại BKNS cung cấp giải pháp toàn diện cho việc đăng ký, duy trì, quản lý và chuyển đổi tên miền, bao gồm cả tên miền Việt Nam (.vn) và tên miền quốc tế (.com, .net, .org,...).
 
-Đối tượng khách hàng chính là các cá nhân, tổ chức và doanh nghiệp muốn sở hữu địa chỉ website riêng để xây dựng thương hiệu, kinh doanh trực tuyến hoặc tạo email theo tên miền riêng.
+Dịch vụ này phù hợp với các cá nhân, tổ chức và doanh nghiệp muốn sở hữu địa chỉ website riêng để kinh doanh, giới thiệu sản phẩm, xây dựng thương hiệu hoặc tạo email theo tên miền riêng.
 
-Một số tính năng nổi bật của dịch vụ bao gồm khả năng quản lý DNS linh hoạt, cho phép thay đổi địa chỉ IPv6 của tên miền thông qua Control Panel.
-
-## Mục Lục
+### Mục lục
 
 - [Tổng quan về Dịch vụ Tên miền](tong-quan.md)
 - [Bảng giá Tên miền](bang-gia.md)
 - [Thông số Kỹ thuật](thong-so.md)
-- [Tính năng Nổi bật](tinh-nang.md)
-- [Chính sách & Quy định](chinh-sach.md)
-- [Câu hỏi Thường gặp (FAQ)](cau-hoi-thuong-gap.md)
+- [Tính năng Chi tiết](tinh-nang.md)
+- [Chính sách Dịch vụ](chinh-sach.md)
+- [Câu hỏi thường gặp (FAQ)](cau-hoi-thuong-gap.md)
 - [So sánh các Gói dịch vụ](so-sanh.md)
 - [Hướng dẫn Sử dụng](huong-dan.md)
 
-## Sản phẩm & Dịch vụ con
+### Sản phẩm & Dịch vụ
 
-- **[Bảo vệ Tên miền Cấp cao nhất](san-pham/bao-ve-ten-mien-cap-cao-nhat.md)**: Dành cho bất kỳ ai sở hữu tên miền quan trọng, bao gồm các tổ chức tài chính, ngân hàng, cơ quan chính phủ, và công ty thương mại điện tử lớn.
+BKNS cung cấp dịch vụ đăng ký mới, duy trì (gia hạn) và transfer các loại tên miền, đi kèm các dịch vụ bảo mật nâng cao.
 
-## Sản phẩm liên quan
+- **Dịch vụ Tên miền:** Đăng ký, quản lý tên miền quốc tế & Việt Nam.
+- **[Bảo vệ Tên miền Cấp cao nhất (Registry Lock)](san-pham/bao-ve-ten-mien-cap-cao-nhat.md):** Dịch vụ bảo mật cao cấp giúp ngăn chặn các thay đổi trái phép đối với thông tin tên miền ở cấp độ cơ quan đăng ký (registry), cụ thể là VNNIC. Dịch vụ này dành cho bất kỳ ai sở hữu tên miền quan trọng cần được bảo vệ ở mức cao nhất.
+
+### Tính năng nổi bật
+
+- **DNS có hỗ trợ IPv6:** Cho phép người dùng thay đổi địa chỉ IPv6 của tên miền thông qua Control Panel.
+
+### Liên kết nhanh
+
+- [Trang đăng ký Tên miền BKNS](https://www.bkns.vn/ten-mien/dang-ky-ten-mien.html)
+
+### Sản phẩm liên quan
 
 - [Web Hosting BKNS](../hosting/index.md)
 - [Email Doanh Nghiệp BKNS](../email/index.md)
 - [Chứng Chỉ SSL BKNS](../ssl/index.md)
 
----
-Compiled by BKNS Wiki Bot • 2026-04-07
+***
+
+*Compiled by BKNS Wiki Bot • 2026-04-14*

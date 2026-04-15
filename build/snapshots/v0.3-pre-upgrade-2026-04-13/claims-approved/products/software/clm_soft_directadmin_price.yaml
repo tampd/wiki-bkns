@@ -1,0 +1,24 @@
+claim_id: CLM-SOFT-DIRECTADMIN-PRICE
+entity_id: product.software.directadmin.lite
+entity_type: product_plan
+entity_name: DirectAdmin Standard
+attribute: price
+value: 790000
+unit: VND
+qualifiers:
+  billing_cycle: month
+  license_type: external
+source_ids:
+- SRC-BANG_GIA_BAN_QUYEN_PHAN_MEM_QUAN_TRI_SERVER_DIRECTADMIN_2026_04_06
+observed_at: '2026-04-06T23:11:14.332184+07:00'
+valid_from: '2026-04-06'
+confidence: high
+review_state: approved
+risk_class: high
+compiler_note: 'Trích từ bảng giá: ''Standard | Giá | 790.000/ Tháng''. Ghi chú chung
+  của bảng giá: ''áp dụng cho khách hàng sử dụng Cloud VPS / Server có IP ngoài BKNS
+  (External license)''.'
+value_changed_from: 450000
+value_changed_at: '2026-04-06T23:11:14.332239+07:00'
+approved_at: '2026-04-08T13:00:15.804617+07:00'
+approved_by: admin-batch

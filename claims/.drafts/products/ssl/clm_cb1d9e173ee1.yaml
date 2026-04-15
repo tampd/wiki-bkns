@@ -1,0 +1,21 @@
+claim_id: CLM-CB1D9E173EE1
+entity_id: ENT-PROD-SSL-011
+entity_type: product
+entity_name: GeoTrust QuickSSL Premium Wildcard
+attribute: san_support
+value: false
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-CHUNG_CHI_SSL_GEOTRUST_QUICKSSL_PREMIUM_WILDCARD_2026_04_05
+observed_at: '2026-04-14T16:23:21.984098+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng Thông số kỹ thuật: | Hỗ trợ SAN | Không |'
+dual_vote:
+  status: DISAGREE
+  score: 0.5331
+  confidence: LOW
+  flag: human_review_required

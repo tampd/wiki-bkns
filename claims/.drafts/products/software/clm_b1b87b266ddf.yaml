@@ -1,0 +1,21 @@
+claim_id: CLM-B1B87B266DDF
+entity_id: product.software.plesk_obsidian
+entity_type: product
+entity_name: Plesk Obsidian
+attribute: product_url
+value: https://www.bkns.vn/phan-mem/plesk-obsidian.html
+unit: null
+qualifiers: null
+source_ids:
+- SRC-PHAN_MEM_QUAN_TRI_HOSTING_PLESK_OBSIDIAN_2026_04_13
+observed_at: '2026-04-14T12:27:16.784828+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ: • URL: https://www.bkns.vn/phan-mem/plesk-obsidian.html'
+dual_vote:
+  status: DISAGREE
+  score: 0.1463
+  confidence: LOW
+  flag: human_review_required

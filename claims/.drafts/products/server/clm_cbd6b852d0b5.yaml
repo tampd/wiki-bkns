@@ -1,0 +1,16 @@
+claim_id: CLM-CBD6B852D0B5
+entity_id: product.colocation.bkns.promo_server_3
+entity_type: product_plan
+entity_name: Máy Chủ Tặng Kèm - Cấu hình 3
+attribute: promotion_condition
+value: Thanh toán 12 tháng
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_THUE_CHO_AT_MAY_CHU_COLOCATION_TAI_BKNS_2026_04_13
+observed_at: '2026-04-13T22:28:17.271922+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: Trích từ bảng Cấu Hình Máy Chủ Tặng Kèm, cột Cấu hình 3.

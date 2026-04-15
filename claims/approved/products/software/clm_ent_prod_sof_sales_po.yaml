@@ -3,18 +3,18 @@ entity_id: ENT-PROD-SOFTWARE-001
 entity_type: product
 entity_name: Bản Quyền CloudLinux OS
 attribute: sales_policy
-value: Khách hàng cần liên hệ trực tiếp với BKNS để có giá chính xác và thông tin
-  về các chương trình khuyến mại.
+value: Khách hàng cần liên hệ trực tiếp với BKNS để có giá chính xác và thông tin về các chương trình khuyến mại.
 unit: null
 qualifiers: null
 source_ids:
-- SRC-BAN_QUYEN_CLOUDLINUX_OS_TANG_ON_INH_VA_BAO_MAT_CHO_SHARED_2026_04_06
+  - SRC-BAN_QUYEN_CLOUDLINUX_OS_TANG_ON_INH_VA_BAO_MAT_CHO_SHARED_2026_04_06
 observed_at: '2026-04-06T22:58:13.033008+07:00'
 valid_from: '2026-04-06'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ Gói dịch vụ và bảng giá: ''Để có giá chính xác và thông tin
-  về các chương trình khuyến mại, khách hàng cần liên hệ trực tiếp với BKNS.'''
-approved_at: '2026-04-07T13:00:15.747827+07:00'
+compiler_note: 'Trích từ Gói dịch vụ và bảng giá: ''Để có giá chính xác và thông tin về các chương trình khuyến mại, khách hàng cần liên hệ trực tiếp với BKNS.'''
+approved_at: '2026-04-08T13:00:15.575600+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.376Z'

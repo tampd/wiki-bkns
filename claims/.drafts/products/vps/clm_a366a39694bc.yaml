@@ -1,0 +1,19 @@
+claim_id: CLM-A366A39694BC
+entity_id: ENT-PROD-VPS:vps_seo
+entity_type: product_service
+entity_name: VPS SEO
+attribute: activation_process
+value: Sau khi khách hàng hoàn tất việc đăng ký và thanh toán, VPS sẽ được khởi tạo
+  và thông tin quản trị sẽ được gửi đến khách hàng.
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-DICH_VU_CLOUD_VPS_SEO_MAY_CHU_AO_TOI_UU_CHO_SEO_2026_04_13
+observed_at: '2026-04-13T22:18:36.366749+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Quy trình đăng ký / Triển khai / Kích hoạt: ''Sau khi
+  khách hàng hoàn tất việc đăng ký và thanh toán, VPS sẽ được khởi tạo và thông tin
+  quản trị sẽ được gửi đến khách hàng.'''

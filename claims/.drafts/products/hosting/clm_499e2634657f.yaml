@@ -1,0 +1,23 @@
+claim_id: CLM-499E2634657F
+entity_id: ENT-PROD-HOSTING
+entity_type: product
+entity_name: Platinum Web Hosting
+attribute: product.backup_technology
+value: Jetbackup
+unit: ''
+qualifiers: null
+source_ids:
+- SRC-PLATINUM_WEB_HOSTING_HOSTING_NVME_TOC_O_CAO_BACKUP_3_LAN_2026_04_13
+observed_at: '2026-04-14T12:29:46.421229+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tính năng / Thành phần: • Backup dữ liệu: Tự động sao
+  lưu dữ liệu 3 lần mỗi ngày với công nghệ Jetbackup, cho phép khôi phục dữ liệu nhanh
+  chóng khi cần thiết.'
+dual_vote:
+  status: DISAGREE
+  score: 0.5968
+  confidence: LOW
+  flag: human_review_required

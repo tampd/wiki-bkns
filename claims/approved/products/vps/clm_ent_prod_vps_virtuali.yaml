@@ -7,17 +7,18 @@ value: KVM (Kernel-based Virtual Machine)
 unit: null
 qualifiers: null
 source_ids:
-- SRC-STORAGE_VPS_MAY_CHU_AO_LUU_TRU_DUNG_LUONG_CAO_2026_04_04
-- SRC-STORAGE_VPS_MAY_CHU_AO_LUU_TRU_DUNG_LUONG_CAO_2026_04_06
-- SRC-TRAINING_DICH_VU_VPS_2026_04_06
+  - SRC-STORAGE_VPS_MAY_CHU_AO_LUU_TRU_DUNG_LUONG_CAO_2026_04_04
+  - SRC-STORAGE_VPS_MAY_CHU_AO_LUU_TRU_DUNG_LUONG_CAO_2026_04_06
+  - SRC-TRAINING_DICH_VU_VPS_2026_04_06
 observed_at: '2026-04-07T01:05:15.888310+07:00'
 valid_from: '2026-04-04'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ bảng ở mục 4.1.1: ''Ảo hóa (Virtualization): KVM (Kernel-based
-  Virtual Machine)'''
+compiler_note: 'Trích từ bảng ở mục 4.1.1: ''Ảo hóa (Virtualization): KVM (Kernel-based Virtual Machine)'''
 value_changed_from: KVM
 value_changed_at: '2026-04-07T01:05:15.888335+07:00'
-approved_at: '2026-04-07T13:00:14.578535+07:00'
+approved_at: '2026-04-08T13:00:14.217098+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.708Z'

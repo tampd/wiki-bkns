@@ -1,0 +1,19 @@
+claim_id: CLM-SIEU-VPSTK5-PRICE
+entity_id: vps.sieu_re.vpstk5
+entity_type: product_plan
+entity_name: VPSTK5
+attribute: monthly_price
+value: 189000
+unit: VND
+qualifiers:
+  billing_cycle: month
+source_ids:
+- SRC-DICH_VU_VPS_SIEU_TIET_KIEM_VPS_SIEU_RE_TAI_BKNS_2026_04_04
+observed_at: '2026-04-04T20:55:45.039487+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: high
+compiler_note: 'Trích từ bảng giá, dòng VPSTK5: | Giá/Tháng | 189.000đ |'
+approved_at: '2026-04-08T13:00:14.491492+07:00'
+approved_by: admin-batch

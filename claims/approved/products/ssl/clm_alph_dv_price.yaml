@@ -8,12 +8,14 @@ unit: VND
 qualifiers:
   billing_cycle: year
 source_ids:
-- SRC-SSL_TONG_HOP_WEB_2026_04_05
+  - SRC-SSL_TONG_HOP_WEB_2026_04_05
 observed_at: '2026-04-05T22:15:35.966469+07:00'
 valid_from: '2026-04-05'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: high
 compiler_note: 'Trích từ mục ''AlphaSSL'': AlphaSSL: 849.000đ/năm (DV - Domain Validation)'
-approved_at: '2026-04-07T13:00:12.758944+07:00'
+approved_at: '2026-04-08T13:00:12.068493+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.443Z'

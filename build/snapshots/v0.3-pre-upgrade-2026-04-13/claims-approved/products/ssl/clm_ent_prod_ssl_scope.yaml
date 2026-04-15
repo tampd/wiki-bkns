@@ -1,0 +1,19 @@
+claim_id: CLM-ENT-PROD-SSL-SCOPE
+entity_id: ENT-PROD-SSL-001
+entity_type: product_plan
+entity_name: EssentialSSL Wildcard (DV)
+attribute: scope
+value: 1 main domain + unlimited subdomains
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-CHUNG_CHI_SSL_ESSENTIALSSL_WILDCARD_DV_CUA_COMODO_2026_04_06
+observed_at: '2026-04-06T23:34:46.869140+07:00'
+valid_from: '2026-04-06'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ mục ''Tính năng / Thành phần'': • Phạm vi bảo vệ: Bảo mật
+  1 tên miền chính và không giới hạn các tên miền con.'
+approved_at: '2026-04-08T13:00:12.642805+07:00'
+approved_by: admin-batch

@@ -1,0 +1,22 @@
+claim_id: CLM-23474508F80E
+entity_id: ENT-PROD-SSL.GEOTRUST.QUICKSSL_PREMIUM_SAN
+entity_type: product
+entity_name: GeoTrust QuickSSL Premium SAN
+attribute: issuance_time
+value: 5
+unit: minutes
+qualifiers: {}
+source_ids:
+- SRC-GEOTRUST_QUICKSSL_PREMIUM_SAN_2026_04_13
+observed_at: '2026-04-14T16:29:29.417624+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ mục ''Tính năng / Thành phần'': ''• Thời gian cấp phát: Khoảng
+  5 phút.'''
+dual_vote:
+  status: DISAGREE
+  score: 0.3785
+  confidence: LOW
+  flag: human_review_required

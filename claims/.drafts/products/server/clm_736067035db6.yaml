@@ -1,0 +1,23 @@
+claim_id: CLM-736067035DB6
+entity_id: product.server_management.bkns
+entity_type: product
+entity_name: Dịch vụ Quản trị Máy chủ Trọn gói
+attribute: policy
+value: Giá chưa bao gồm 10% VAT
+unit: null
+qualifiers:
+  policy_type: vat
+source_ids:
+- SRC-DICH_VU_QUAN_TRI_MAY_CHU_TRON_GOI_TAI_BKNS_2026_04_05
+observed_at: '2026-04-14T17:14:28.622815+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: medium
+compiler_note: 'Trích từ mục Chính sách / Điều khoản / Lưu ý: Giá các gói dịch vụ
+  được niêm yết trên chưa bao gồm 10% thuế VAT.'
+dual_vote:
+  status: DISAGREE
+  score: 0.5497
+  confidence: LOW
+  flag: human_review_required

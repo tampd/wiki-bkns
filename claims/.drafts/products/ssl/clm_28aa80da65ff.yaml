@@ -1,0 +1,26 @@
+claim_id: CLM-28AA80DA65FF
+entity_id: product.ssl.positivessl_ev
+entity_type: product_plan
+entity_name: PositiveSSL EV
+attribute: description
+value: 'PositiveSSL EV là chứng chỉ SSL với mức xác thực cao nhất: Xác thực Mở rộng
+  (Extended Validation - EV), giúp hiển thị tên công ty trên thanh địa chỉ trình duyệt,
+  tăng cường độ tin cậy.'
+unit: null
+qualifiers: null
+source_ids:
+- SRC-POSITIVESSL_EV_CHUNG_CHI_SSL_XAC_THUC_MO_RONG_EV_2026_04_13
+observed_at: '2026-04-14T16:37:04.504732+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: null
+compiler_note: 'Trích từ mục Tóm tắt nhanh: • Dịch vụ này là gì: PositiveSSL EV là
+  chứng chỉ SSL với mức xác thực cao nhất: Xác thực Mở rộng (Extended Validation -
+  EV), giúp hiển thị tên công ty trên thanh địa chỉ trình duyệt, tăng cường độ tin
+  cậy.'
+dual_vote:
+  status: DISAGREE
+  score: 0.1482
+  confidence: LOW
+  flag: human_review_required

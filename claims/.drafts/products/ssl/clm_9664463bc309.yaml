@@ -1,0 +1,16 @@
+claim_id: CLM-9664463BC309
+entity_id: ENT-PROD-SSL-COMODO-DV
+entity_type: product_plan
+entity_name: Comodo SSL Certificate (DV)
+attribute: issuance_time
+value: 5
+unit: minutes
+qualifiers: null
+source_ids:
+- SRC-COMODO_SSL_CERTIFICATE_DV_CHUNG_CHI_XAC_THUC_TEN_MIEN_2026_04_13
+observed_at: '2026-04-13T22:09:22.008918+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: '| Thời gian phát hành | 5 phút |'

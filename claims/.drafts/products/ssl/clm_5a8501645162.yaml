@@ -1,0 +1,22 @@
+claim_id: CLM-5A8501645162
+entity_id: ENT-PROD-SSL-GT-EV-MD-01
+entity_type: product
+entity_name: GeoTrust True BusinessID with EV Multi-Domain
+attribute: server_installation_limit
+value: không giới hạn
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-GEOTRUST_TRUE_BUSINESSID_WITH_EV_MULTI_DOMAIN_2026_04_13
+observed_at: '2026-04-14T16:54:21.916932+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tính năng / Thành phần: Cài đặt linh hoạt: Có thể cài
+  đặt trên không giới hạn số lượng máy chủ.'
+dual_vote:
+  status: DISAGREE
+  score: 0.375
+  confidence: LOW
+  flag: human_review_required

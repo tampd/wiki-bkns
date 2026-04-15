@@ -1,0 +1,20 @@
+claim_id: CLM-ENT-PROD-BAC-FAQ:QUES
+entity_id: ENT-PROD-BACKUP-001
+entity_type: product
+entity_name: Dịch vụ Backup Dữ liệu
+attribute: faq:question
+value: BKNS có hỗ trợ các nền tảng nào?
+unit: null
+qualifiers:
+  answer: BKNS hỗ trợ backup dữ liệu cho nhiều nền tảng khác nhau, bao gồm máy chủ
+    vật lý, máy chủ ảo (VPS), website, cơ sở dữ liệu và nhiều hơn nữa.
+source_ids:
+- SRC-DICH_VU_BACKUP_DU_LIEU_SAO_LUU_VA_PHUC_HOI_DU_LIEU_UY_TIN_2026_04_04
+observed_at: '2026-04-04T20:44:55.543003+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: Trích từ mục Câu hỏi thường gặp (FAQ).
+approved_at: '2026-04-08T13:00:08.895859+07:00'
+approved_by: admin-batch

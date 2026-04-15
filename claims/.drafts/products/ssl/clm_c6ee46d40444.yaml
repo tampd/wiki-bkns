@@ -1,0 +1,23 @@
+claim_id: CLM-C6EE46D40444
+entity_id: ENT-PROD-SSL-011
+entity_type: product
+entity_name: GeoTrust QuickSSL Premium Wildcard
+attribute: subdomain_coverage
+value: unlimited
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-CHUNG_CHI_SSL_GEOTRUST_QUICKSSL_PREMIUM_WILDCARD_2026_04_05
+observed_at: '2026-04-14T16:23:22.035165+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tóm tắt nhanh: • Dịch vụ này là gì: GeoTrust QuickSSL
+  Premium Wildcard là một chứng chỉ SSL/TLS xác thực tên miền (DV) cho phép bảo mật
+  một tên miền chính và không giới hạn số lượng tên miền phụ (subdomain).'
+dual_vote:
+  status: DISAGREE
+  score: 0.5331
+  confidence: LOW
+  flag: human_review_required

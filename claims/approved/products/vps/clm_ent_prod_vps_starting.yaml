@@ -8,16 +8,18 @@ unit: VND
 qualifiers:
   billing_cycle: month
 source_ids:
-- SRC-CLOUD_VPS_VM_WEB_2026_04_05
-- SRC-DICH_VU_VPS_GIA_RE_MAY_CHU_AO_CAU_HINH_ON_INH_2026_04_04
-- SRC-DICH_VU_VPS_GIA_RE_MAY_CHU_AO_CAU_HINH_ON_INH_2026_04_06
+  - SRC-CLOUD_VPS_VM_WEB_2026_04_05
+  - SRC-DICH_VU_VPS_GIA_RE_MAY_CHU_AO_CAU_HINH_ON_INH_2026_04_04
+  - SRC-DICH_VU_VPS_GIA_RE_MAY_CHU_AO_CAU_HINH_ON_INH_2026_04_06
 observed_at: '2026-04-07T00:16:39.064225+07:00'
 valid_from: '2026-04-05'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: high
 compiler_note: 'Trích từ mục ''Tóm tắt nhanh'': • Điểm chính: ... giá từ 90.000đ/tháng'
 value_changed_from: 42000
 value_changed_at: '2026-04-07T00:16:39.064259+07:00'
-approved_at: '2026-04-07T13:00:14.497307+07:00'
+approved_at: '2026-04-08T13:00:14.116946+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.700Z'

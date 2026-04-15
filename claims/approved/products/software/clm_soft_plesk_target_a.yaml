@@ -3,18 +3,18 @@ entity_id: product.software.plesk.obsidian
 entity_type: product_offering
 entity_name: Plesk Obsidian License
 attribute: target_audience
-value: Quản trị viên máy chủ, nhà cung cấp dịch vụ hosting, và các nhà phát triển
-  web cần một giao diện để quản lý máy chủ.
+value: Quản trị viên máy chủ, nhà cung cấp dịch vụ hosting, và các nhà phát triển web cần một giao diện để quản lý máy chủ.
 unit: null
 qualifiers: null
 source_ids:
-- SRC-PHAN_MEM_QUAN_TRI_HOSTING_PLESK_OBSIDIAN_2026_04_06
+  - SRC-PHAN_MEM_QUAN_TRI_HOSTING_PLESK_OBSIDIAN_2026_04_06
 observed_at: '2026-04-07T00:47:54.052385+07:00'
 valid_from: '2026-04-07'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Phù hợp với: Quản trị viên máy chủ, nhà cung cấp dịch vụ hosting,
-  và các nhà phát triển web cần một giao diện để quản lý máy chủ.'
-approved_at: '2026-04-07T13:00:16.250348+07:00'
+compiler_note: 'Phù hợp với: Quản trị viên máy chủ, nhà cung cấp dịch vụ hosting, và các nhà phát triển web cần một giao diện để quản lý máy chủ.'
+approved_at: '2026-04-08T13:00:16.037647+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.434Z'

@@ -1,0 +1,18 @@
+claim_id: CLM-HOST-BKSW01-EMAIL_AC
+entity_id: product.hosting.bksw01
+entity_type: product_plan
+entity_name: BKSW01
+attribute: email_account_limit
+value: 5
+unit: account
+qualifiers: {}
+source_ids:
+- SRC-WINDOWS_HOSTING_WEB_2026_04_05
+observed_at: '2026-04-05T22:25:30.881475+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ Bảng giá gói BKSW01: ''| Email Accounts | 05 |'''
+approved_at: '2026-04-08T13:00:11.138967+07:00'
+approved_by: admin-batch

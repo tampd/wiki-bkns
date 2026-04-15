@@ -3,18 +3,18 @@ entity_id: ENT-PROD-SOFTWARE-001
 entity_type: product
 entity_name: Bản Quyền CloudLinux OS
 attribute: price_note
-value: Giá tùy thuộc vào loại giấy phép (cho VPS hoặc máy chủ riêng) và số lượng máy
-  chủ.
+value: Giá tùy thuộc vào loại giấy phép (cho VPS hoặc máy chủ riêng) và số lượng máy chủ.
 unit: null
 qualifiers: null
 source_ids:
-- SRC-BAN_QUYEN_CLOUDLINUX_OS_TANG_ON_INH_VA_BAO_MAT_CHO_SHARED_2026_04_06
+  - SRC-BAN_QUYEN_CLOUDLINUX_OS_TANG_ON_INH_VA_BAO_MAT_CHO_SHARED_2026_04_06
 observed_at: '2026-04-06T22:58:12.967429+07:00'
 valid_from: '2026-04-06'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ Gói dịch vụ và bảng giá: ''...tùy thuộc vào loại giấy phép
-  (cho VPS hoặc máy chủ riêng) và số lượng máy chủ.'''
-approved_at: '2026-04-07T13:00:15.691871+07:00'
+compiler_note: 'Trích từ Gói dịch vụ và bảng giá: ''...tùy thuộc vào loại giấy phép (cho VPS hoặc máy chủ riêng) và số lượng máy chủ.'''
+approved_at: '2026-04-08T13:00:15.543207+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.371Z'

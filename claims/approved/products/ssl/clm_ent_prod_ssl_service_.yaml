@@ -7,21 +7,18 @@ value: BKNS
 unit: null
 qualifiers: null
 source_ids:
-- SRC-ESSENTIALSSL_DV_CHUNG_CHI_SSL_XAC_THUC_TEN_MIEN_TU_COMOD_2026_04_04
-- SRC-COMODO_SSL_CERTIFICATE_DV_CHUNG_CHI_XAC_THUC_TEN_MIEN_2026_04_06
-- SRC-GEOTRUST_TRUE_BUSINESSID_WITH_EV_MULTI_DOMAIN_2026_04_06
+  - SRC-ESSENTIALSSL_DV_CHUNG_CHI_SSL_XAC_THUC_TEN_MIEN_TU_COMOD_2026_04_04
+  - SRC-COMODO_SSL_CERTIFICATE_DV_CHUNG_CHI_XAC_THUC_TEN_MIEN_2026_04_06
+  - SRC-GEOTRUST_TRUE_BUSINESSID_WITH_EV_MULTI_DOMAIN_2026_04_06
 observed_at: '2026-04-07T00:34:23.332462+07:00'
 valid_from: '2026-04-04'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ mục ''Chính sách / Điều khoản / Lưu ý'': BKNS cung cấp dịch
-  vụ cài đặt miễn phí.'
-value_changed_from: Comodo SSL Certificate (DV) là một giải pháp chứng chỉ bảo mật,
-  cung cấp xác thực ở cấp độ tên miền (Domain Validation). Sản phẩm này giúp mã hóa
-  kết nối giữa máy chủ web và trình duyệt của người dùng, đảm bảo an toàn cho dữ liệu
-  truyền đi. Đây là loại chứng chỉ được cấp phát nhanh chóng, phù hợp cho việc bảo
-  mật các trang web không yêu cầu xác thực tổ chức phức tạp.
+compiler_note: 'Trích từ mục ''Chính sách / Điều khoản / Lưu ý'': BKNS cung cấp dịch vụ cài đặt miễn phí.'
+value_changed_from: Comodo SSL Certificate (DV) là một giải pháp chứng chỉ bảo mật, cung cấp xác thực ở cấp độ tên miền (Domain Validation). Sản phẩm này giúp mã hóa kết nối giữa máy chủ web và trình duyệt của người dùng, đảm bảo an toàn cho dữ liệu truyền đi. Đây là loại chứng chỉ được cấp phát nhanh chóng, phù hợp cho việc bảo mật các trang web không yêu cầu xác thực tổ chức phức tạp.
 value_changed_at: '2026-04-07T00:34:23.332488+07:00'
-approved_at: '2026-04-07T13:00:13.175465+07:00'
+approved_at: '2026-04-08T13:00:12.675319+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.487Z'

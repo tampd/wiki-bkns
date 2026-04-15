@@ -1,0 +1,21 @@
+claim_id: CLM-D6C4FDAEED03
+entity_id: product.vps.bkns.vpstk3
+entity_type: product_plan
+entity_name: VPSTK3
+attribute: monthly_price
+value: 129000
+unit: VND
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_VPS_SIEU_TIET_KIEM_VPS_SIEU_RE_TAI_BKNS_2026_04_05
+observed_at: '2026-04-14T16:13:24.842271+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ bảng giá, cột VPSTK3: ''Giá/Tháng | 129.000đ'''
+dual_vote:
+  status: DISAGREE
+  score: 0.599
+  confidence: LOW
+  flag: human_review_required

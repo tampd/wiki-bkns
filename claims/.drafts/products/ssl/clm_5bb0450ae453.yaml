@@ -1,0 +1,17 @@
+claim_id: CLM-5BB0450AE453
+entity_id: ENT-PROD-SSL-ESSENTIALSSL-WILDCARD-DV
+entity_type: product_plan
+entity_name: EssentialSSL Wildcard (DV)
+attribute: product_tier
+value: entry-level
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-CHUNG_CHI_SSL_ESSENTIALSSL_WILDCARD_DV_CUA_COMODO_2026_04_13
+observed_at: '2026-04-13T21:57:30.166050+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Mô tả dịch vụ: EssentialSSL Wildcard là một giải pháp
+  wildcard cấp đầu vào...'

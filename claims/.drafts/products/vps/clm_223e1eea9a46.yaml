@@ -1,0 +1,21 @@
+claim_id: CLM-223E1EEA9A46
+entity_id: ENT-PROD-VPS.vps_gia_re.vps_mm03
+entity_type: product_plan
+entity_name: VPS-MM03
+attribute: ram
+value: 2
+unit: GB
+qualifiers: {}
+source_ids:
+- SRC-DICH_VU_VPS_GIA_RE_MAY_CHU_AO_CAU_HINH_ON_INH_2026_04_05
+observed_at: '2026-04-14T16:11:54.163636+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: medium
+compiler_note: 'Trích từ bảng giá, dòng RAM, cột VPS-MM03: 02 GB'
+dual_vote:
+  status: DISAGREE
+  score: 0.5846
+  confidence: LOW
+  flag: human_review_required

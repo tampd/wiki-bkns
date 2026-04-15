@@ -2,62 +2,78 @@
 page_id: wiki.products.ssl.huong-dan
 title: Chứng Chỉ SSL BKNS — Hướng Dẫn
 category: products/ssl
-updated: '2026-04-07'
-review_state: approved
-claims_used: 9
-compile_cost_usd: 0.0076
+updated: '2026-04-14'
+review_state: drafted
+claims_used: 27
+compile_cost_usd: 0.012
 self_review: fail
-corrections: 0
-approved_at: '2026-04-07T13:16:30.172416+07:00'
+corrections: 1
 ---
 
 # Chứng Chỉ SSL BKNS — Hướng Dẫn
 
-Trang này hướng dẫn các bước cơ bản để đăng ký, kích hoạt và quản lý chứng chỉ SSL tại BKNS, giúp bảo mật website của bạn một cách hiệu quả.
+Trang này cung cấp hướng dẫn chi tiết về cách đăng ký, kích hoạt và quản lý các dịch vụ chứng chỉ số SSL tại BKNS, dựa trên các thông tin đã được kiểm duyệt.
 
-## 1. Hướng dẫn Đăng ký
+## Hướng Dẫn Đăng Ký (Mua Dịch Vụ)
 
-Quy trình đăng ký chứng chỉ SSL tại BKNS rất đơn giản và nhanh chóng. Bạn có thể thực hiện theo các bước sau:
+### 1. Quy trình Đăng ký Chung
 
-1.  Truy cập trang sản phẩm Chứng chỉ SSL của BKNS.
-2.  Lựa chọn loại chứng chỉ phù hợp với nhu cầu của bạn và nhấn vào nút **"Mua ngay"**.
-3.  Sản phẩm sẽ được tự động thêm vào giỏ hàng.
-4.  Tiến hành thanh toán theo các bước được hướng dẫn trong giỏ hàng để hoàn tất đăng ký.
+Đối với hầu hết các chứng chỉ SSL, quy trình đăng ký rất đơn giản và có thể thực hiện trực tiếp trên website:
 
-## 2. Thông tin Cài đặt và Xác thực
+1.  Truy cập trang sản phẩm chứng chỉ SSL bạn muốn mua (ví dụ: RapidSSL Certificate, GeoTrust True BusinessID).
+2.  Nhấn vào nút **"Mua ngay"**.
+3.  Sản phẩm sẽ được thêm vào giỏ hàng, và bạn sẽ được chuyển đến trang giỏ hàng tại `my.bkns.net` để tiến hành thanh toán.
 
-Dưới đây là thông tin về phí cài đặt và các chính sách hỗ trợ cho một số loại chứng chỉ SSL phổ biến tại BKNS.
+### 2. Quy trình Đăng ký cho Chứng chỉ Xác thực Doanh nghiệp (OV/EV)
 
-| Tên Chứng Chỉ | Phí Cài Đặt | Hỗ Trợ Cài Đặt | Loại Xác Thực |
-| :--- | :--- | :--- | :--- |
-| RapidSSL Wildcard Certificate | Miễn phí | Đang cập nhật | Đang cập nhật |
-| GeoTrust True BusinessID | Đang cập nhật | Có | Đang cập nhật |
-| EssentialSSL (DV) | Miễn phí | Đang cập nhật | Đang cập nhật |
-| EssentialSSL Wildcard (DV) | Miễn phí | Đang cập nhật | Đang cập nhật |
-| GeoTrust QuickSSL Premium SAN | Miễn phí | Đang cập nhật | Đang cập nhật |
-| GeoTrust QuickSSL Premium | Miễn phí | Đang cập nhật | Domain (DV) |
-| PositiveSSL Wildcard (DV) | Miễn phí | Đang cập nhật | Đang cập nhật |
+Đối với các loại chứng chỉ yêu cầu xác thực thông tin doanh nghiệp, quy trình có thêm bước bổ sung:
 
-**Lưu ý:** "Miễn phí" tương đương với chi phí 0 VNĐ.
+*   **Comodo EV SSL & GeoTrust True BusinessID with EV Multi-Domain:** Khách hàng cần cung cấp Giấy đăng ký kinh doanh (hoặc giấy tờ tương đương) để Tổ chức chứng thực số (CA) tiến hành xác minh trước khi cấp phát chứng chỉ.
 
-## 3. Hướng dẫn Kích hoạt và Triển khai
+## Hướng Dẫn Kích Hoạt và Cài Đặt
 
-*Nội dung đang được cập nhật.*
+### 1. Kích hoạt
 
-## 4. Hướng dẫn Quản lý và Sử dụng
+*   **Xác thực tên miền (DV):** Đối với các chứng chỉ như GeoTrust QuickSSL Premium, quá trình xác thực sẽ được thực hiện ở cấp độ tên miền (Domain Validation - DV).
 
-*Nội dung đang được cập nhật.*
+### 2. Hỗ trợ Cài đặt
 
-## 5. Xử lý sự cố (Troubleshooting)
+BKNS cung cấp dịch vụ hỗ trợ cài đặt cho khách hàng:
+*   **GeoTrust True BusinessID:** Có hỗ trợ cài đặt.
+*   **GeoTrust True BusinessID with EV Multi-Domain:** Hỗ trợ cài đặt miễn phí.
 
-*Nội dung đang được cập nhật.*
+### 3. Phí Cài đặt
 
----
+Dựa trên thông tin được tổng hợp, phí cài đặt cho hầu hết các sản phẩm SSL tại BKNS là **Miễn phí**.
 
-**Sản phẩm liên quan:**
+| Sản phẩm | Phí cài đặt |
+| :--- | :--- |
+| RapidSSL Wildcard Certificate | Miễn phí |
+| GeoTrust True BusinessID Multi-Domain Wildcard | Miễn phí |
+| GeoTrust QuickSSL Premium | Miễn phí |
+| GeoTrust QuickSSL Premium SAN | Miễn phí |
+| EssentialSSL (DV) | Miễn phí |
+| EssentialSSL Wildcard (DV) | Miễn phí |
+| PositiveSSL Wildcard (DV) | Miễn phí |
+| Comodo SSL Certificate (DV) | Miễn phí |
+| Comodo SSL Wildcard Certificate (DV) | Miễn phí |
+| InstantSSL Pro (OV) | Miễn phí |
+
+*Lưu ý: "Miễn phí" được ghi nhận từ các giá trị "0 VND", "free", hoặc "Miễn phí" trong dữ liệu nguồn.*
+
+## Quản Lý và Sử Dụng
+
+*Đang cập nhật...*
+
+## Xử Lý Sự Cố Cơ Bản
+
+*Đang cập nhật...*
+
+## Xem Thêm
 
 *   [Web Hosting BKNS](../hosting/index.md)
 *   [Cloud VPS BKNS](../vps/index.md)
 *   [Tên Miền BKNS](../ten-mien/index.md)
 
-Compiled by BKNS Wiki Bot • 2026-04-07
+***
+Compiled by BKNS Wiki Bot • 2026-04-14

@@ -1,0 +1,23 @@
+claim_id: CLM-215C4CA5F87B
+entity_id: ENT-PROD-HOSTING.platinum_web_hosting.pla_1
+entity_type: product_plan
+entity_name: PLA 1
+attribute: storage
+value: 6
+unit: GB
+qualifiers:
+  type: NVMe U.2
+source_ids:
+- SRC-PLATINUM_WEB_HOSTING_HOSTING_NVME_TOC_O_CAO_BACKUP_3_LAN_2026_04_05
+observed_at: '2026-04-14T12:28:23.662068+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: medium
+compiler_note: 'Trích từ bảng giá: | PLA 1 | 6 GB NVMe U.2 | Không giới hạn | 5 |
+  99.000 đ | Đăng ký |'
+dual_vote:
+  status: DISAGREE
+  score: 0.5159
+  confidence: LOW
+  flag: human_review_required

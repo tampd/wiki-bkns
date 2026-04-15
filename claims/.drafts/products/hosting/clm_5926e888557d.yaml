@@ -1,0 +1,24 @@
+claim_id: CLM-5926E888557D
+entity_id: product.hosting.windows
+entity_type: product
+entity_name: Hosting Windows
+attribute: has_feature
+value: Redis
+unit: ''
+qualifiers: {}
+source_ids:
+- SRC-DICH_VU_HOSTING_WINDOWS_TAI_BKNS_2026_04_05
+observed_at: '2026-04-14T12:10:47.070768+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tính năng / Thành phần: ''Tiện ích: ...hỗ trợ Redis để tăng
+  tốc độ website.'''
+dual_vote:
+  status: PARTIAL
+  score: 0.6404
+  confidence: MEDIUM
+  flag: needs_review
+value_changed_from: OneClick installer
+value_changed_at: '2026-04-14T12:10:47.070807+07:00'

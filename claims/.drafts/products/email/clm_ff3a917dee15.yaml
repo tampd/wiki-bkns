@@ -1,0 +1,18 @@
+claim_id: CLM-FF3A917DEE15
+entity_id: ENT-PROD-EMAIL-SERVER
+entity_type: product
+entity_name: Email Server
+attribute: infrastructure_type
+value: Máy chủ riêng biệt cho mỗi dịch vụ.
+unit: null
+qualifiers:
+  comparison_with: Email Hosting
+source_ids:
+- SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_VA_TIN_CAY_2026_04_13
+observed_at: '2026-04-13T22:35:10.293156+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng so sánh Email Hosting và Email Server: | Hạ tầng | EMAIL
+  SERVER | Máy chủ riêng biệt cho mỗi dịch vụ. |'

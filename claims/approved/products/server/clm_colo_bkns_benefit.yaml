@@ -7,13 +7,14 @@ value: Tiết kiệm chi phí xây dựng và vận hành một trung tâm dữ 
 unit: ''
 qualifiers: {}
 source_ids:
-- SRC-DICH_VU_THUE_CHO_AT_MAY_CHU_COLOCATION_TAI_BKNS_2026_04_06
+  - SRC-DICH_VU_THUE_CHO_AT_MAY_CHU_COLOCATION_TAI_BKNS_2026_04_06
 observed_at: '2026-04-07T00:12:22.825250+07:00'
 valid_from: '2026-04-07'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ Mô tả dịch vụ: Dịch vụ này giúp doanh nghiệp tiết kiệm chi
-  phí xây dựng và vận hành một trung tâm dữ liệu riêng...'
-approved_at: '2026-04-07T13:00:09.696478+07:00'
+compiler_note: 'Trích từ Mô tả dịch vụ: Dịch vụ này giúp doanh nghiệp tiết kiệm chi phí xây dựng và vận hành một trung tâm dữ liệu riêng...'
+approved_at: '2026-04-08T13:00:08.769077+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.274Z'

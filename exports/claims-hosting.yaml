@@ -8351,3 +8351,4453 @@
   unit: GB
   valid_from: '2026-04-05'
   value: 30
+- approved_at: '2026-04-07T16:35:55.109503+07:00'
+  approved_by: image-extraction
+  attribute: bandwidth
+  claim_id: CLM-IMG-product.hosting.bk_nvme_1-bandwidth
+  compiler_note: From bkns.vn screenshot (NVME1-NVME2-NVME3-NVME4)
+  confidence: high
+  entity_id: product.hosting.bk_nvme_1
+  entity_name: BK NVME 1
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:55.109503+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-NVME1-NVME2-NVME3-NVME4
+  valid_from: '2026-04-07'
+  value: Unlimited
+- approved_at: '2026-04-07T16:35:55.109503+07:00'
+  approved_by: image-extraction
+  attribute: cpu_cores
+  claim_id: CLM-IMG-product.hosting.bk_nvme_1-cpu_cores
+  compiler_note: From bkns.vn screenshot (NVME1-NVME2-NVME3-NVME4)
+  confidence: high
+  entity_id: product.hosting.bk_nvme_1
+  entity_name: BK NVME 1
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:55.109503+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-NVME1-NVME2-NVME3-NVME4
+  valid_from: '2026-04-07'
+  value: 1 Core
+- approved_at: '2026-04-07T16:35:55.109503+07:00'
+  approved_by: image-extraction
+  attribute: domain_count
+  claim_id: CLM-IMG-product.hosting.bk_nvme_1-domain_count
+  compiler_note: From bkns.vn screenshot (NVME1-NVME2-NVME3-NVME4)
+  confidence: high
+  entity_id: product.hosting.bk_nvme_1
+  entity_name: BK NVME 1
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:55.109503+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-NVME1-NVME2-NVME3-NVME4
+  valid_from: '2026-04-07'
+  value: 1
+- approved_at: '2026-04-07T16:35:55.109503+07:00'
+  approved_by: image-extraction
+  attribute: features
+  claim_id: CLM-IMG-product.hosting.bk_nvme_1-features
+  compiler_note: Features from bkns.vn screenshot (NVME1-NVME2-NVME3-NVME4)
+  confidence: high
+  entity_id: product.hosting.bk_nvme_1
+  entity_name: BK NVME 1
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:55.109503+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-NVME1-NVME2-NVME3-NVME4
+  valid_from: '2026-04-07'
+  value: FTP/MySQL/Email Unlimited, Miễn phí SSL, Cpanel/WHM Control Panel, Tối ưu
+    Wordpress miễn phí
+- approved_at: '2026-04-07T16:35:55.109503+07:00'
+  approved_by: image-extraction
+  attribute: min_payment_period
+  claim_id: CLM-IMG-product.hosting.bk_nvme_1-min_period
+  compiler_note: Minimum payment period from bkns.vn (NVME1-NVME2-NVME3-NVME4)
+  confidence: high
+  entity_id: product.hosting.bk_nvme_1
+  entity_name: BK NVME 1
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:55.109503+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-NVME1-NVME2-NVME3-NVME4
+  valid_from: '2026-04-07'
+  value: 1 tháng
+- approved_at: '2026-04-07T16:35:55.109503+07:00'
+  approved_by: image-extraction
+  attribute: ram
+  claim_id: CLM-IMG-product.hosting.bk_nvme_1-ram
+  compiler_note: From bkns.vn screenshot (NVME1-NVME2-NVME3-NVME4)
+  confidence: high
+  entity_id: product.hosting.bk_nvme_1
+  entity_name: BK NVME 1
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:55.109503+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-NVME1-NVME2-NVME3-NVME4
+  valid_from: '2026-04-07'
+  value: 1 GB
+- approved_at: '2026-04-07T16:35:55.109503+07:00'
+  approved_by: image-extraction
+  attribute: storage
+  claim_id: CLM-IMG-product.hosting.bk_nvme_1-storage
+  compiler_note: From bkns.vn screenshot (NVME1-NVME2-NVME3-NVME4)
+  confidence: high
+  entity_id: product.hosting.bk_nvme_1
+  entity_name: BK NVME 1
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:55.109503+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-NVME1-NVME2-NVME3-NVME4
+  valid_from: '2026-04-07'
+  value: 2 GB NVMe SSD
+- approved_at: '2026-04-07T16:35:55.109503+07:00'
+  approved_by: image-extraction
+  attribute: website_price
+  claim_id: CLM-IMG-product.hosting.bk_nvme_1-website_price
+  compiler_note: Extracted from website screenshot (NVME1-NVME2-NVME3-NVME4), BK NVME
+    1
+  confidence: high
+  entity_id: product.hosting.bk_nvme_1
+  entity_name: BK NVME 1
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:55.109503+07:00'
+  qualifiers:
+    note: Giá hiển thị trên web, có thể đã bao gồm giảm giá
+    period: 1 tháng
+    source: bkns.vn website screenshot
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-NVME1-NVME2-NVME3-NVME4
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 35000
+- approved_at: '2026-04-07T16:35:55.109503+07:00'
+  approved_by: image-extraction
+  attribute: bandwidth
+  claim_id: CLM-IMG-product.hosting.bk_nvme_2-bandwidth
+  compiler_note: From bkns.vn screenshot (NVME1-NVME2-NVME3-NVME4)
+  confidence: high
+  entity_id: product.hosting.bk_nvme_2
+  entity_name: BK NVME 2
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:55.109503+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-NVME1-NVME2-NVME3-NVME4
+  valid_from: '2026-04-07'
+  value: Unlimited
+- approved_at: '2026-04-07T16:35:55.109503+07:00'
+  approved_by: image-extraction
+  attribute: cpu_cores
+  claim_id: CLM-IMG-product.hosting.bk_nvme_2-cpu_cores
+  compiler_note: From bkns.vn screenshot (NVME1-NVME2-NVME3-NVME4)
+  confidence: high
+  entity_id: product.hosting.bk_nvme_2
+  entity_name: BK NVME 2
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:55.109503+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-NVME1-NVME2-NVME3-NVME4
+  valid_from: '2026-04-07'
+  value: 1 Core
+- approved_at: '2026-04-07T16:35:55.109503+07:00'
+  approved_by: image-extraction
+  attribute: domain_count
+  claim_id: CLM-IMG-product.hosting.bk_nvme_2-domain_count
+  compiler_note: From bkns.vn screenshot (NVME1-NVME2-NVME3-NVME4)
+  confidence: high
+  entity_id: product.hosting.bk_nvme_2
+  entity_name: BK NVME 2
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:55.109503+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-NVME1-NVME2-NVME3-NVME4
+  valid_from: '2026-04-07'
+  value: 2
+- approved_at: '2026-04-07T16:35:55.109503+07:00'
+  approved_by: image-extraction
+  attribute: features
+  claim_id: CLM-IMG-product.hosting.bk_nvme_2-features
+  compiler_note: Features from bkns.vn screenshot (NVME1-NVME2-NVME3-NVME4)
+  confidence: high
+  entity_id: product.hosting.bk_nvme_2
+  entity_name: BK NVME 2
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:55.109503+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-NVME1-NVME2-NVME3-NVME4
+  valid_from: '2026-04-07'
+  value: FTP/MySQL/Email Unlimited, Miễn phí SSL, Cpanel/WHM Control Panel, Tối ưu
+    Wordpress miễn phí
+- approved_at: '2026-04-07T16:35:55.109503+07:00'
+  approved_by: image-extraction
+  attribute: min_payment_period
+  claim_id: CLM-IMG-product.hosting.bk_nvme_2-min_period
+  compiler_note: Minimum payment period from bkns.vn (NVME1-NVME2-NVME3-NVME4)
+  confidence: high
+  entity_id: product.hosting.bk_nvme_2
+  entity_name: BK NVME 2
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:55.109503+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-NVME1-NVME2-NVME3-NVME4
+  valid_from: '2026-04-07'
+  value: 1 tháng
+- approved_at: '2026-04-07T16:35:55.109503+07:00'
+  approved_by: image-extraction
+  attribute: ram
+  claim_id: CLM-IMG-product.hosting.bk_nvme_2-ram
+  compiler_note: From bkns.vn screenshot (NVME1-NVME2-NVME3-NVME4)
+  confidence: high
+  entity_id: product.hosting.bk_nvme_2
+  entity_name: BK NVME 2
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:55.109503+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-NVME1-NVME2-NVME3-NVME4
+  valid_from: '2026-04-07'
+  value: 2 GB
+- approved_at: '2026-04-07T16:35:55.109503+07:00'
+  approved_by: image-extraction
+  attribute: storage
+  claim_id: CLM-IMG-product.hosting.bk_nvme_2-storage
+  compiler_note: From bkns.vn screenshot (NVME1-NVME2-NVME3-NVME4)
+  confidence: high
+  entity_id: product.hosting.bk_nvme_2
+  entity_name: BK NVME 2
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:55.109503+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-NVME1-NVME2-NVME3-NVME4
+  valid_from: '2026-04-07'
+  value: 3 GB NVMe SSD
+- approved_at: '2026-04-07T16:35:55.109503+07:00'
+  approved_by: image-extraction
+  attribute: website_price
+  claim_id: CLM-IMG-product.hosting.bk_nvme_2-website_price
+  compiler_note: Extracted from website screenshot (NVME1-NVME2-NVME3-NVME4), BK NVME
+    2
+  confidence: high
+  entity_id: product.hosting.bk_nvme_2
+  entity_name: BK NVME 2
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:55.109503+07:00'
+  qualifiers:
+    note: Giá hiển thị trên web, có thể đã bao gồm giảm giá
+    period: 1 tháng
+    source: bkns.vn website screenshot
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-NVME1-NVME2-NVME3-NVME4
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 66500
+- approved_at: '2026-04-07T16:35:55.109503+07:00'
+  approved_by: image-extraction
+  attribute: bandwidth
+  claim_id: CLM-IMG-product.hosting.bk_nvme_3-bandwidth
+  compiler_note: From bkns.vn screenshot (NVME1-NVME2-NVME3-NVME4)
+  confidence: high
+  entity_id: product.hosting.bk_nvme_3
+  entity_name: BK NVME 3
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:55.109503+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-NVME1-NVME2-NVME3-NVME4
+  valid_from: '2026-04-07'
+  value: Unlimited
+- approved_at: '2026-04-07T16:35:55.109503+07:00'
+  approved_by: image-extraction
+  attribute: cpu_cores
+  claim_id: CLM-IMG-product.hosting.bk_nvme_3-cpu_cores
+  compiler_note: From bkns.vn screenshot (NVME1-NVME2-NVME3-NVME4)
+  confidence: high
+  entity_id: product.hosting.bk_nvme_3
+  entity_name: BK NVME 3
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:55.109503+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-NVME1-NVME2-NVME3-NVME4
+  valid_from: '2026-04-07'
+  value: 2 Core
+- approved_at: '2026-04-07T16:35:55.109503+07:00'
+  approved_by: image-extraction
+  attribute: domain_count
+  claim_id: CLM-IMG-product.hosting.bk_nvme_3-domain_count
+  compiler_note: From bkns.vn screenshot (NVME1-NVME2-NVME3-NVME4)
+  confidence: high
+  entity_id: product.hosting.bk_nvme_3
+  entity_name: BK NVME 3
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:55.109503+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-NVME1-NVME2-NVME3-NVME4
+  valid_from: '2026-04-07'
+  value: 5
+- approved_at: '2026-04-07T16:35:55.109503+07:00'
+  approved_by: image-extraction
+  attribute: features
+  claim_id: CLM-IMG-product.hosting.bk_nvme_3-features
+  compiler_note: Features from bkns.vn screenshot (NVME1-NVME2-NVME3-NVME4)
+  confidence: high
+  entity_id: product.hosting.bk_nvme_3
+  entity_name: BK NVME 3
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:55.109503+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-NVME1-NVME2-NVME3-NVME4
+  valid_from: '2026-04-07'
+  value: FTP/MySQL/Email Unlimited, Miễn phí SSL, Cpanel/WHM Control Panel, Tối ưu
+    Wordpress miễn phí
+- approved_at: '2026-04-07T16:35:55.109503+07:00'
+  approved_by: image-extraction
+  attribute: min_payment_period
+  claim_id: CLM-IMG-product.hosting.bk_nvme_3-min_period
+  compiler_note: Minimum payment period from bkns.vn (NVME1-NVME2-NVME3-NVME4)
+  confidence: high
+  entity_id: product.hosting.bk_nvme_3
+  entity_name: BK NVME 3
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:55.109503+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-NVME1-NVME2-NVME3-NVME4
+  valid_from: '2026-04-07'
+  value: 1 tháng
+- approved_at: '2026-04-07T16:35:55.109503+07:00'
+  approved_by: image-extraction
+  attribute: ram
+  claim_id: CLM-IMG-product.hosting.bk_nvme_3-ram
+  compiler_note: From bkns.vn screenshot (NVME1-NVME2-NVME3-NVME4)
+  confidence: high
+  entity_id: product.hosting.bk_nvme_3
+  entity_name: BK NVME 3
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:55.109503+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-NVME1-NVME2-NVME3-NVME4
+  valid_from: '2026-04-07'
+  value: 3 GB
+- approved_at: '2026-04-07T16:35:55.109503+07:00'
+  approved_by: image-extraction
+  attribute: storage
+  claim_id: CLM-IMG-product.hosting.bk_nvme_3-storage
+  compiler_note: From bkns.vn screenshot (NVME1-NVME2-NVME3-NVME4)
+  confidence: high
+  entity_id: product.hosting.bk_nvme_3
+  entity_name: BK NVME 3
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:55.109503+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-NVME1-NVME2-NVME3-NVME4
+  valid_from: '2026-04-07'
+  value: 6 GB NVMe SSD
+- approved_at: '2026-04-07T16:35:55.109503+07:00'
+  approved_by: image-extraction
+  attribute: website_price
+  claim_id: CLM-IMG-product.hosting.bk_nvme_3-website_price
+  compiler_note: Extracted from website screenshot (NVME1-NVME2-NVME3-NVME4), BK NVME
+    3
+  confidence: high
+  entity_id: product.hosting.bk_nvme_3
+  entity_name: BK NVME 3
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:55.109503+07:00'
+  qualifiers:
+    note: Giá hiển thị trên web, có thể đã bao gồm giảm giá
+    period: 1 tháng
+    source: bkns.vn website screenshot
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-NVME1-NVME2-NVME3-NVME4
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 94500
+- approved_at: '2026-04-07T16:35:55.109503+07:00'
+  approved_by: image-extraction
+  attribute: bandwidth
+  claim_id: CLM-IMG-product.hosting.bk_nvme_4-bandwidth
+  compiler_note: From bkns.vn screenshot (NVME1-NVME2-NVME3-NVME4)
+  confidence: high
+  entity_id: product.hosting.bk_nvme_4
+  entity_name: BK NVME 4
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:55.109503+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-NVME1-NVME2-NVME3-NVME4
+  valid_from: '2026-04-07'
+  value: Unlimited
+- approved_at: '2026-04-07T16:35:55.109503+07:00'
+  approved_by: image-extraction
+  attribute: cpu_cores
+  claim_id: CLM-IMG-product.hosting.bk_nvme_4-cpu_cores
+  compiler_note: From bkns.vn screenshot (NVME1-NVME2-NVME3-NVME4)
+  confidence: high
+  entity_id: product.hosting.bk_nvme_4
+  entity_name: BK NVME 4
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:55.109503+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-NVME1-NVME2-NVME3-NVME4
+  valid_from: '2026-04-07'
+  value: 2 Core
+- approved_at: '2026-04-07T16:35:55.109503+07:00'
+  approved_by: image-extraction
+  attribute: domain_count
+  claim_id: CLM-IMG-product.hosting.bk_nvme_4-domain_count
+  compiler_note: From bkns.vn screenshot (NVME1-NVME2-NVME3-NVME4)
+  confidence: high
+  entity_id: product.hosting.bk_nvme_4
+  entity_name: BK NVME 4
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:55.109503+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-NVME1-NVME2-NVME3-NVME4
+  valid_from: '2026-04-07'
+  value: 7
+- approved_at: '2026-04-07T16:35:55.109503+07:00'
+  approved_by: image-extraction
+  attribute: features
+  claim_id: CLM-IMG-product.hosting.bk_nvme_4-features
+  compiler_note: Features from bkns.vn screenshot (NVME1-NVME2-NVME3-NVME4)
+  confidence: high
+  entity_id: product.hosting.bk_nvme_4
+  entity_name: BK NVME 4
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:55.109503+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-NVME1-NVME2-NVME3-NVME4
+  valid_from: '2026-04-07'
+  value: FTP/MySQL/Email Unlimited, Miễn phí SSL, Cpanel/WHM Control Panel, Tối ưu
+    Wordpress miễn phí
+- approved_at: '2026-04-07T16:35:55.109503+07:00'
+  approved_by: image-extraction
+  attribute: min_payment_period
+  claim_id: CLM-IMG-product.hosting.bk_nvme_4-min_period
+  compiler_note: Minimum payment period from bkns.vn (NVME1-NVME2-NVME3-NVME4)
+  confidence: high
+  entity_id: product.hosting.bk_nvme_4
+  entity_name: BK NVME 4
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:55.109503+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-NVME1-NVME2-NVME3-NVME4
+  valid_from: '2026-04-07'
+  value: 1 tháng
+- approved_at: '2026-04-07T16:35:55.109503+07:00'
+  approved_by: image-extraction
+  attribute: ram
+  claim_id: CLM-IMG-product.hosting.bk_nvme_4-ram
+  compiler_note: From bkns.vn screenshot (NVME1-NVME2-NVME3-NVME4)
+  confidence: high
+  entity_id: product.hosting.bk_nvme_4
+  entity_name: BK NVME 4
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:55.109503+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-NVME1-NVME2-NVME3-NVME4
+  valid_from: '2026-04-07'
+  value: 4 GB
+- approved_at: '2026-04-07T16:35:55.109503+07:00'
+  approved_by: image-extraction
+  attribute: storage
+  claim_id: CLM-IMG-product.hosting.bk_nvme_4-storage
+  compiler_note: From bkns.vn screenshot (NVME1-NVME2-NVME3-NVME4)
+  confidence: high
+  entity_id: product.hosting.bk_nvme_4
+  entity_name: BK NVME 4
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:55.109503+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-NVME1-NVME2-NVME3-NVME4
+  valid_from: '2026-04-07'
+  value: 10 GB NVMe SSD
+- approved_at: '2026-04-07T16:35:55.109503+07:00'
+  approved_by: image-extraction
+  attribute: website_price
+  claim_id: CLM-IMG-product.hosting.bk_nvme_4-website_price
+  compiler_note: Extracted from website screenshot (NVME1-NVME2-NVME3-NVME4), BK NVME
+    4
+  confidence: high
+  entity_id: product.hosting.bk_nvme_4
+  entity_name: BK NVME 4
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:55.109503+07:00'
+  qualifiers:
+    note: Giá hiển thị trên web, có thể đã bao gồm giảm giá
+    period: 1 tháng
+    source: bkns.vn website screenshot
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-NVME1-NVME2-NVME3-NVME4
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 161000
+- approved_at: '2026-04-07T16:35:13.179694+07:00'
+  approved_by: image-extraction
+  attribute: bandwidth
+  claim_id: CLM-IMG-product.hosting.bkbw01-bandwidth
+  compiler_note: From bkns.vn screenshot (BKBW01-BKBW02-BKBW03-BKBW04)
+  confidence: high
+  entity_id: product.hosting.bkbw01
+  entity_name: Hosting Windows Thường BKBW01
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:13.179694+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKBW01-BKBW02-BKBW03-BKBW04
+  valid_from: '2026-04-07'
+  value: Unlimited
+- approved_at: '2026-04-07T16:35:13.179694+07:00'
+  approved_by: image-extraction
+  attribute: domain_count
+  claim_id: CLM-IMG-product.hosting.bkbw01-domain_count
+  compiler_note: From bkns.vn screenshot (BKBW01-BKBW02-BKBW03-BKBW04)
+  confidence: high
+  entity_id: product.hosting.bkbw01
+  entity_name: Hosting Windows Thường BKBW01
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:13.179694+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKBW01-BKBW02-BKBW03-BKBW04
+  valid_from: '2026-04-07'
+  value: 15
+- approved_at: '2026-04-07T16:35:13.179694+07:00'
+  approved_by: image-extraction
+  attribute: features
+  claim_id: CLM-IMG-product.hosting.bkbw01-features
+  compiler_note: Features from bkns.vn screenshot (BKBW01-BKBW02-BKBW03-BKBW04)
+  confidence: high
+  entity_id: product.hosting.bkbw01
+  entity_name: Hosting Windows Thường BKBW01
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:13.179694+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKBW01-BKBW02-BKBW03-BKBW04
+  valid_from: '2026-04-07'
+  value: 'Sub Domains: Unlimited, Parked: Unlimited, FTP Accounts: Unlimited, Email
+    Accounts: 120'
+- approved_at: '2026-04-07T16:35:13.179694+07:00'
+  approved_by: image-extraction
+  attribute: min_payment_period
+  claim_id: CLM-IMG-product.hosting.bkbw01-min_period
+  compiler_note: Minimum payment period from bkns.vn (BKBW01-BKBW02-BKBW03-BKBW04)
+  confidence: high
+  entity_id: product.hosting.bkbw01
+  entity_name: Hosting Windows Thường BKBW01
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:13.179694+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKBW01-BKBW02-BKBW03-BKBW04
+  valid_from: '2026-04-07'
+  value: 1 tháng
+- approved_at: '2026-04-07T16:35:13.179694+07:00'
+  approved_by: image-extraction
+  attribute: storage
+  claim_id: CLM-IMG-product.hosting.bkbw01-storage
+  compiler_note: From bkns.vn screenshot (BKBW01-BKBW02-BKBW03-BKBW04)
+  confidence: high
+  entity_id: product.hosting.bkbw01
+  entity_name: Hosting Windows Thường BKBW01
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:13.179694+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKBW01-BKBW02-BKBW03-BKBW04
+  valid_from: '2026-04-07'
+  value: 15GB
+- approved_at: '2026-04-07T16:35:13.179694+07:00'
+  approved_by: image-extraction
+  attribute: website_price
+  claim_id: CLM-IMG-product.hosting.bkbw01-website_price
+  compiler_note: Extracted from website screenshot (BKBW01-BKBW02-BKBW03-BKBW04),
+    Hosting Windows Thường BKBW01
+  confidence: high
+  entity_id: product.hosting.bkbw01
+  entity_name: Hosting Windows Thường BKBW01
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:13.179694+07:00'
+  qualifiers:
+    note: Giá hiển thị trên web, có thể đã bao gồm giảm giá
+    period: 1 tháng
+    source: bkns.vn website screenshot
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKBW01-BKBW02-BKBW03-BKBW04
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 313500
+- approved_at: '2026-04-07T16:35:13.179694+07:00'
+  approved_by: image-extraction
+  attribute: bandwidth
+  claim_id: CLM-IMG-product.hosting.bkbw02-bandwidth
+  compiler_note: From bkns.vn screenshot (BKBW01-BKBW02-BKBW03-BKBW04)
+  confidence: high
+  entity_id: product.hosting.bkbw02
+  entity_name: Hosting Windows Thường BKBW02
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:13.179694+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKBW01-BKBW02-BKBW03-BKBW04
+  valid_from: '2026-04-07'
+  value: Unlimited
+- approved_at: '2026-04-07T16:35:13.179694+07:00'
+  approved_by: image-extraction
+  attribute: domain_count
+  claim_id: CLM-IMG-product.hosting.bkbw02-domain_count
+  compiler_note: From bkns.vn screenshot (BKBW01-BKBW02-BKBW03-BKBW04)
+  confidence: high
+  entity_id: product.hosting.bkbw02
+  entity_name: Hosting Windows Thường BKBW02
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:13.179694+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKBW01-BKBW02-BKBW03-BKBW04
+  valid_from: '2026-04-07'
+  value: 20
+- approved_at: '2026-04-07T16:35:13.179694+07:00'
+  approved_by: image-extraction
+  attribute: features
+  claim_id: CLM-IMG-product.hosting.bkbw02-features
+  compiler_note: Features from bkns.vn screenshot (BKBW01-BKBW02-BKBW03-BKBW04)
+  confidence: high
+  entity_id: product.hosting.bkbw02
+  entity_name: Hosting Windows Thường BKBW02
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:13.179694+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKBW01-BKBW02-BKBW03-BKBW04
+  valid_from: '2026-04-07'
+  value: 'Sub Domains: Unlimited, Parked: Unlimited, FTP Accounts: Unlimited, Email
+    Accounts: 130'
+- approved_at: '2026-04-07T16:35:13.179694+07:00'
+  approved_by: image-extraction
+  attribute: min_payment_period
+  claim_id: CLM-IMG-product.hosting.bkbw02-min_period
+  compiler_note: Minimum payment period from bkns.vn (BKBW01-BKBW02-BKBW03-BKBW04)
+  confidence: high
+  entity_id: product.hosting.bkbw02
+  entity_name: Hosting Windows Thường BKBW02
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:13.179694+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKBW01-BKBW02-BKBW03-BKBW04
+  valid_from: '2026-04-07'
+  value: 1 tháng
+- approved_at: '2026-04-07T16:35:13.179694+07:00'
+  approved_by: image-extraction
+  attribute: storage
+  claim_id: CLM-IMG-product.hosting.bkbw02-storage
+  compiler_note: From bkns.vn screenshot (BKBW01-BKBW02-BKBW03-BKBW04)
+  confidence: high
+  entity_id: product.hosting.bkbw02
+  entity_name: Hosting Windows Thường BKBW02
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:13.179694+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKBW01-BKBW02-BKBW03-BKBW04
+  valid_from: '2026-04-07'
+  value: 20GB
+- approved_at: '2026-04-07T16:35:13.179694+07:00'
+  approved_by: image-extraction
+  attribute: website_price
+  claim_id: CLM-IMG-product.hosting.bkbw02-website_price
+  compiler_note: Extracted from website screenshot (BKBW01-BKBW02-BKBW03-BKBW04),
+    Hosting Windows Thường BKBW02
+  confidence: high
+  entity_id: product.hosting.bkbw02
+  entity_name: Hosting Windows Thường BKBW02
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:13.179694+07:00'
+  qualifiers:
+    note: Giá hiển thị trên web, có thể đã bao gồm giảm giá
+    period: 1 tháng
+    source: bkns.vn website screenshot
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKBW01-BKBW02-BKBW03-BKBW04
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 589000
+- approved_at: '2026-04-07T16:35:13.179694+07:00'
+  approved_by: image-extraction
+  attribute: bandwidth
+  claim_id: CLM-IMG-product.hosting.bkbw03-bandwidth
+  compiler_note: From bkns.vn screenshot (BKBW01-BKBW02-BKBW03-BKBW04)
+  confidence: high
+  entity_id: product.hosting.bkbw03
+  entity_name: Hosting Windows Thường BKBW03
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:13.179694+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKBW01-BKBW02-BKBW03-BKBW04
+  valid_from: '2026-04-07'
+  value: Unlimited
+- approved_at: '2026-04-07T16:35:13.179694+07:00'
+  approved_by: image-extraction
+  attribute: domain_count
+  claim_id: CLM-IMG-product.hosting.bkbw03-domain_count
+  compiler_note: From bkns.vn screenshot (BKBW01-BKBW02-BKBW03-BKBW04)
+  confidence: high
+  entity_id: product.hosting.bkbw03
+  entity_name: Hosting Windows Thường BKBW03
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:13.179694+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKBW01-BKBW02-BKBW03-BKBW04
+  valid_from: '2026-04-07'
+  value: 25
+- approved_at: '2026-04-07T16:35:13.179694+07:00'
+  approved_by: image-extraction
+  attribute: features
+  claim_id: CLM-IMG-product.hosting.bkbw03-features
+  compiler_note: Features from bkns.vn screenshot (BKBW01-BKBW02-BKBW03-BKBW04)
+  confidence: high
+  entity_id: product.hosting.bkbw03
+  entity_name: Hosting Windows Thường BKBW03
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:13.179694+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKBW01-BKBW02-BKBW03-BKBW04
+  valid_from: '2026-04-07'
+  value: 'Sub Domains: Unlimited, Parked: Unlimited, FTP Accounts: Unlimited, Email
+    Accounts: 150'
+- approved_at: '2026-04-07T16:35:13.179694+07:00'
+  approved_by: image-extraction
+  attribute: min_payment_period
+  claim_id: CLM-IMG-product.hosting.bkbw03-min_period
+  compiler_note: Minimum payment period from bkns.vn (BKBW01-BKBW02-BKBW03-BKBW04)
+  confidence: high
+  entity_id: product.hosting.bkbw03
+  entity_name: Hosting Windows Thường BKBW03
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:13.179694+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKBW01-BKBW02-BKBW03-BKBW04
+  valid_from: '2026-04-07'
+  value: 1 tháng
+- approved_at: '2026-04-07T16:35:13.179694+07:00'
+  approved_by: image-extraction
+  attribute: storage
+  claim_id: CLM-IMG-product.hosting.bkbw03-storage
+  compiler_note: From bkns.vn screenshot (BKBW01-BKBW02-BKBW03-BKBW04)
+  confidence: high
+  entity_id: product.hosting.bkbw03
+  entity_name: Hosting Windows Thường BKBW03
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:13.179694+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKBW01-BKBW02-BKBW03-BKBW04
+  valid_from: '2026-04-07'
+  value: 25GB
+- approved_at: '2026-04-07T16:35:13.179694+07:00'
+  approved_by: image-extraction
+  attribute: website_price
+  claim_id: CLM-IMG-product.hosting.bkbw03-website_price
+  compiler_note: Extracted from website screenshot (BKBW01-BKBW02-BKBW03-BKBW04),
+    Hosting Windows Thường BKBW03
+  confidence: high
+  entity_id: product.hosting.bkbw03
+  entity_name: Hosting Windows Thường BKBW03
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:13.179694+07:00'
+  qualifiers:
+    note: Giá hiển thị trên web, có thể đã bao gồm giảm giá
+    period: 1 tháng
+    source: bkns.vn website screenshot
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKBW01-BKBW02-BKBW03-BKBW04
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 826500
+- approved_at: '2026-04-07T16:35:13.179694+07:00'
+  approved_by: image-extraction
+  attribute: bandwidth
+  claim_id: CLM-IMG-product.hosting.bkbw04-bandwidth
+  compiler_note: From bkns.vn screenshot (BKBW01-BKBW02-BKBW03-BKBW04)
+  confidence: high
+  entity_id: product.hosting.bkbw04
+  entity_name: Hosting Windows Thường BKBW04
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:13.179694+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKBW01-BKBW02-BKBW03-BKBW04
+  valid_from: '2026-04-07'
+  value: Unlimited
+- approved_at: '2026-04-07T16:35:13.179694+07:00'
+  approved_by: image-extraction
+  attribute: domain_count
+  claim_id: CLM-IMG-product.hosting.bkbw04-domain_count
+  compiler_note: From bkns.vn screenshot (BKBW01-BKBW02-BKBW03-BKBW04)
+  confidence: high
+  entity_id: product.hosting.bkbw04
+  entity_name: Hosting Windows Thường BKBW04
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:13.179694+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKBW01-BKBW02-BKBW03-BKBW04
+  valid_from: '2026-04-07'
+  value: 60
+- approved_at: '2026-04-07T16:35:13.179694+07:00'
+  approved_by: image-extraction
+  attribute: features
+  claim_id: CLM-IMG-product.hosting.bkbw04-features
+  compiler_note: Features from bkns.vn screenshot (BKBW01-BKBW02-BKBW03-BKBW04)
+  confidence: high
+  entity_id: product.hosting.bkbw04
+  entity_name: Hosting Windows Thường BKBW04
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:13.179694+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKBW01-BKBW02-BKBW03-BKBW04
+  valid_from: '2026-04-07'
+  value: 'Sub Domains: Unlimited, Parked: Unlimited, FTP Accounts: Unlimited, Email
+    Accounts: 200'
+- approved_at: '2026-04-07T16:35:13.179694+07:00'
+  approved_by: image-extraction
+  attribute: min_payment_period
+  claim_id: CLM-IMG-product.hosting.bkbw04-min_period
+  compiler_note: Minimum payment period from bkns.vn (BKBW01-BKBW02-BKBW03-BKBW04)
+  confidence: high
+  entity_id: product.hosting.bkbw04
+  entity_name: Hosting Windows Thường BKBW04
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:13.179694+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKBW01-BKBW02-BKBW03-BKBW04
+  valid_from: '2026-04-07'
+  value: 1 tháng
+- approved_at: '2026-04-07T16:35:13.179694+07:00'
+  approved_by: image-extraction
+  attribute: storage
+  claim_id: CLM-IMG-product.hosting.bkbw04-storage
+  compiler_note: From bkns.vn screenshot (BKBW01-BKBW02-BKBW03-BKBW04)
+  confidence: high
+  entity_id: product.hosting.bkbw04
+  entity_name: Hosting Windows Thường BKBW04
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:13.179694+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKBW01-BKBW02-BKBW03-BKBW04
+  valid_from: '2026-04-07'
+  value: 30GB
+- approved_at: '2026-04-07T16:35:13.179694+07:00'
+  approved_by: image-extraction
+  attribute: website_price
+  claim_id: CLM-IMG-product.hosting.bkbw04-website_price
+  compiler_note: Extracted from website screenshot (BKBW01-BKBW02-BKBW03-BKBW04),
+    Hosting Windows Thường BKBW04
+  confidence: high
+  entity_id: product.hosting.bkbw04
+  entity_name: Hosting Windows Thường BKBW04
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:13.179694+07:00'
+  qualifiers:
+    note: Giá hiển thị trên web, có thể đã bao gồm giảm giá
+    period: 1 tháng
+    source: bkns.vn website screenshot
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKBW01-BKBW02-BKBW03-BKBW04
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 950000
+- approved_at: '2026-04-07T16:33:30.251022+07:00'
+  approved_by: image-extraction
+  attribute: bandwidth
+  claim_id: CLM-IMG-product.hosting.bkh01-bandwidth
+  compiler_note: From bkns.vn screenshot (BKH01-BKH02-BKH03-BKH04)
+  confidence: high
+  entity_id: product.hosting.bkh01
+  entity_name: Hosting Giá Rẻ BKH01
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:30.251022+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKH01-BKH02-BKH03-BKH04
+  valid_from: '2026-04-07'
+  value: Unlimited
+- approved_at: '2026-04-07T16:33:30.251022+07:00'
+  approved_by: image-extraction
+  attribute: cpu_cores
+  claim_id: CLM-IMG-product.hosting.bkh01-cpu_cores
+  compiler_note: From bkns.vn screenshot (BKH01-BKH02-BKH03-BKH04)
+  confidence: high
+  entity_id: product.hosting.bkh01
+  entity_name: Hosting Giá Rẻ BKH01
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:30.251022+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKH01-BKH02-BKH03-BKH04
+  valid_from: '2026-04-07'
+  value: 1 Core
+- approved_at: '2026-04-07T16:33:30.251022+07:00'
+  approved_by: image-extraction
+  attribute: domain_count
+  claim_id: CLM-IMG-product.hosting.bkh01-domain_count
+  compiler_note: From bkns.vn screenshot (BKH01-BKH02-BKH03-BKH04)
+  confidence: high
+  entity_id: product.hosting.bkh01
+  entity_name: Hosting Giá Rẻ BKH01
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:30.251022+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKH01-BKH02-BKH03-BKH04
+  valid_from: '2026-04-07'
+  value: 1
+- approved_at: '2026-04-07T16:33:30.251022+07:00'
+  approved_by: image-extraction
+  attribute: features
+  claim_id: CLM-IMG-product.hosting.bkh01-features
+  compiler_note: Features from bkns.vn screenshot (BKH01-BKH02-BKH03-BKH04)
+  confidence: high
+  entity_id: product.hosting.bkh01
+  entity_name: Hosting Giá Rẻ BKH01
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:30.251022+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKH01-BKH02-BKH03-BKH04
+  valid_from: '2026-04-07'
+  value: Backup hàng ngày, Miễn phí SSL, CloudLinux, LiteSpeed Web Server, Jetbackup,
+    OneClick, Redis
+- approved_at: '2026-04-07T16:33:30.251022+07:00'
+  approved_by: image-extraction
+  attribute: min_payment_period
+  claim_id: CLM-IMG-product.hosting.bkh01-min_period
+  compiler_note: Minimum payment period from bkns.vn (BKH01-BKH02-BKH03-BKH04)
+  confidence: high
+  entity_id: product.hosting.bkh01
+  entity_name: Hosting Giá Rẻ BKH01
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:30.251022+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKH01-BKH02-BKH03-BKH04
+  valid_from: '2026-04-07'
+  value: 1 tháng
+- approved_at: '2026-04-07T16:33:30.251022+07:00'
+  approved_by: image-extraction
+  attribute: ram
+  claim_id: CLM-IMG-product.hosting.bkh01-ram
+  compiler_note: From bkns.vn screenshot (BKH01-BKH02-BKH03-BKH04)
+  confidence: high
+  entity_id: product.hosting.bkh01
+  entity_name: Hosting Giá Rẻ BKH01
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:30.251022+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKH01-BKH02-BKH03-BKH04
+  valid_from: '2026-04-07'
+  value: 1 GB
+- approved_at: '2026-04-07T16:33:30.251022+07:00'
+  approved_by: image-extraction
+  attribute: storage
+  claim_id: CLM-IMG-product.hosting.bkh01-storage
+  compiler_note: From bkns.vn screenshot (BKH01-BKH02-BKH03-BKH04)
+  confidence: high
+  entity_id: product.hosting.bkh01
+  entity_name: Hosting Giá Rẻ BKH01
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:30.251022+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKH01-BKH02-BKH03-BKH04
+  valid_from: '2026-04-07'
+  value: 1 GB SSD
+- approved_at: '2026-04-07T16:33:30.251022+07:00'
+  approved_by: image-extraction
+  attribute: website_price
+  claim_id: CLM-IMG-product.hosting.bkh01-website_price
+  compiler_note: Extracted from website screenshot (BKH01-BKH02-BKH03-BKH04), Hosting
+    Giá Rẻ BKH01
+  confidence: high
+  entity_id: product.hosting.bkh01
+  entity_name: Hosting Giá Rẻ BKH01
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:30.251022+07:00'
+  qualifiers:
+    note: Giá hiển thị trên web, có thể đã bao gồm giảm giá
+    period: 1 tháng
+    source: bkns.vn website screenshot
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKH01-BKH02-BKH03-BKH04
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 19000
+- approved_at: '2026-04-07T16:33:30.251022+07:00'
+  approved_by: image-extraction
+  attribute: bandwidth
+  claim_id: CLM-IMG-product.hosting.bkh02-bandwidth
+  compiler_note: From bkns.vn screenshot (BKH01-BKH02-BKH03-BKH04)
+  confidence: high
+  entity_id: product.hosting.bkh02
+  entity_name: Hosting Giá Rẻ BKH02
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:30.251022+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKH01-BKH02-BKH03-BKH04
+  valid_from: '2026-04-07'
+  value: Unlimited
+- approved_at: '2026-04-07T16:33:30.251022+07:00'
+  approved_by: image-extraction
+  attribute: cpu_cores
+  claim_id: CLM-IMG-product.hosting.bkh02-cpu_cores
+  compiler_note: From bkns.vn screenshot (BKH01-BKH02-BKH03-BKH04)
+  confidence: high
+  entity_id: product.hosting.bkh02
+  entity_name: Hosting Giá Rẻ BKH02
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:30.251022+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKH01-BKH02-BKH03-BKH04
+  valid_from: '2026-04-07'
+  value: 3 Core
+- approved_at: '2026-04-07T16:33:30.251022+07:00'
+  approved_by: image-extraction
+  attribute: domain_count
+  claim_id: CLM-IMG-product.hosting.bkh02-domain_count
+  compiler_note: From bkns.vn screenshot (BKH01-BKH02-BKH03-BKH04)
+  confidence: high
+  entity_id: product.hosting.bkh02
+  entity_name: Hosting Giá Rẻ BKH02
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:30.251022+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKH01-BKH02-BKH03-BKH04
+  valid_from: '2026-04-07'
+  value: 3
+- approved_at: '2026-04-07T16:33:30.251022+07:00'
+  approved_by: image-extraction
+  attribute: features
+  claim_id: CLM-IMG-product.hosting.bkh02-features
+  compiler_note: Features from bkns.vn screenshot (BKH01-BKH02-BKH03-BKH04)
+  confidence: high
+  entity_id: product.hosting.bkh02
+  entity_name: Hosting Giá Rẻ BKH02
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:30.251022+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKH01-BKH02-BKH03-BKH04
+  valid_from: '2026-04-07'
+  value: Backup hàng ngày, Miễn phí SSL, CloudLinux, LiteSpeed Web Server, Jetbackup,
+    OneClick, Redis
+- approved_at: '2026-04-07T16:33:30.251022+07:00'
+  approved_by: image-extraction
+  attribute: min_payment_period
+  claim_id: CLM-IMG-product.hosting.bkh02-min_period
+  compiler_note: Minimum payment period from bkns.vn (BKH01-BKH02-BKH03-BKH04)
+  confidence: high
+  entity_id: product.hosting.bkh02
+  entity_name: Hosting Giá Rẻ BKH02
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:30.251022+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKH01-BKH02-BKH03-BKH04
+  valid_from: '2026-04-07'
+  value: 1 tháng
+- approved_at: '2026-04-07T16:33:30.251022+07:00'
+  approved_by: image-extraction
+  attribute: ram
+  claim_id: CLM-IMG-product.hosting.bkh02-ram
+  compiler_note: From bkns.vn screenshot (BKH01-BKH02-BKH03-BKH04)
+  confidence: high
+  entity_id: product.hosting.bkh02
+  entity_name: Hosting Giá Rẻ BKH02
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:30.251022+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKH01-BKH02-BKH03-BKH04
+  valid_from: '2026-04-07'
+  value: 2 GB
+- approved_at: '2026-04-07T16:33:30.251022+07:00'
+  approved_by: image-extraction
+  attribute: storage
+  claim_id: CLM-IMG-product.hosting.bkh02-storage
+  compiler_note: From bkns.vn screenshot (BKH01-BKH02-BKH03-BKH04)
+  confidence: high
+  entity_id: product.hosting.bkh02
+  entity_name: Hosting Giá Rẻ BKH02
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:30.251022+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKH01-BKH02-BKH03-BKH04
+  valid_from: '2026-04-07'
+  value: 3 GB SSD
+- approved_at: '2026-04-07T16:33:30.251022+07:00'
+  approved_by: image-extraction
+  attribute: website_price
+  claim_id: CLM-IMG-product.hosting.bkh02-website_price
+  compiler_note: Extracted from website screenshot (BKH01-BKH02-BKH03-BKH04), Hosting
+    Giá Rẻ BKH02
+  confidence: high
+  entity_id: product.hosting.bkh02
+  entity_name: Hosting Giá Rẻ BKH02
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:30.251022+07:00'
+  qualifiers:
+    note: Giá hiển thị trên web, có thể đã bao gồm giảm giá
+    period: 1 tháng
+    source: bkns.vn website screenshot
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKH01-BKH02-BKH03-BKH04
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 37000
+- approved_at: '2026-04-07T16:33:30.251022+07:00'
+  approved_by: image-extraction
+  attribute: bandwidth
+  claim_id: CLM-IMG-product.hosting.bkh03-bandwidth
+  compiler_note: From bkns.vn screenshot (BKH01-BKH02-BKH03-BKH04)
+  confidence: high
+  entity_id: product.hosting.bkh03
+  entity_name: Hosting Giá Rẻ BKH03
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:30.251022+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKH01-BKH02-BKH03-BKH04
+  valid_from: '2026-04-07'
+  value: Unlimited
+- approved_at: '2026-04-07T16:33:30.251022+07:00'
+  approved_by: image-extraction
+  attribute: cpu_cores
+  claim_id: CLM-IMG-product.hosting.bkh03-cpu_cores
+  compiler_note: From bkns.vn screenshot (BKH01-BKH02-BKH03-BKH04)
+  confidence: high
+  entity_id: product.hosting.bkh03
+  entity_name: Hosting Giá Rẻ BKH03
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:30.251022+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKH01-BKH02-BKH03-BKH04
+  valid_from: '2026-04-07'
+  value: 5 Core
+- approved_at: '2026-04-07T16:33:30.251022+07:00'
+  approved_by: image-extraction
+  attribute: domain_count
+  claim_id: CLM-IMG-product.hosting.bkh03-domain_count
+  compiler_note: From bkns.vn screenshot (BKH01-BKH02-BKH03-BKH04)
+  confidence: high
+  entity_id: product.hosting.bkh03
+  entity_name: Hosting Giá Rẻ BKH03
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:30.251022+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKH01-BKH02-BKH03-BKH04
+  valid_from: '2026-04-07'
+  value: 5
+- approved_at: '2026-04-07T16:33:30.251022+07:00'
+  approved_by: image-extraction
+  attribute: features
+  claim_id: CLM-IMG-product.hosting.bkh03-features
+  compiler_note: Features from bkns.vn screenshot (BKH01-BKH02-BKH03-BKH04)
+  confidence: high
+  entity_id: product.hosting.bkh03
+  entity_name: Hosting Giá Rẻ BKH03
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:30.251022+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKH01-BKH02-BKH03-BKH04
+  valid_from: '2026-04-07'
+  value: Backup hàng ngày, Miễn phí SSL, CloudLinux, LiteSpeed Web Server, Jetbackup,
+    OneClick, Redis
+- approved_at: '2026-04-07T16:33:30.251022+07:00'
+  approved_by: image-extraction
+  attribute: min_payment_period
+  claim_id: CLM-IMG-product.hosting.bkh03-min_period
+  compiler_note: Minimum payment period from bkns.vn (BKH01-BKH02-BKH03-BKH04)
+  confidence: high
+  entity_id: product.hosting.bkh03
+  entity_name: Hosting Giá Rẻ BKH03
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:30.251022+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKH01-BKH02-BKH03-BKH04
+  valid_from: '2026-04-07'
+  value: 1 tháng
+- approved_at: '2026-04-07T16:33:30.251022+07:00'
+  approved_by: image-extraction
+  attribute: ram
+  claim_id: CLM-IMG-product.hosting.bkh03-ram
+  compiler_note: From bkns.vn screenshot (BKH01-BKH02-BKH03-BKH04)
+  confidence: high
+  entity_id: product.hosting.bkh03
+  entity_name: Hosting Giá Rẻ BKH03
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:30.251022+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKH01-BKH02-BKH03-BKH04
+  valid_from: '2026-04-07'
+  value: 4 GB
+- approved_at: '2026-04-07T16:33:30.251022+07:00'
+  approved_by: image-extraction
+  attribute: storage
+  claim_id: CLM-IMG-product.hosting.bkh03-storage
+  compiler_note: From bkns.vn screenshot (BKH01-BKH02-BKH03-BKH04)
+  confidence: high
+  entity_id: product.hosting.bkh03
+  entity_name: Hosting Giá Rẻ BKH03
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:30.251022+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKH01-BKH02-BKH03-BKH04
+  valid_from: '2026-04-07'
+  value: 6 GB SSD
+- approved_at: '2026-04-07T16:33:30.251022+07:00'
+  approved_by: image-extraction
+  attribute: website_price
+  claim_id: CLM-IMG-product.hosting.bkh03-website_price
+  compiler_note: Extracted from website screenshot (BKH01-BKH02-BKH03-BKH04), Hosting
+    Giá Rẻ BKH03
+  confidence: high
+  entity_id: product.hosting.bkh03
+  entity_name: Hosting Giá Rẻ BKH03
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:30.251022+07:00'
+  qualifiers:
+    note: Giá hiển thị trên web, có thể đã bao gồm giảm giá
+    period: 1 tháng
+    source: bkns.vn website screenshot
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKH01-BKH02-BKH03-BKH04
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 79000
+- approved_at: '2026-04-07T16:33:30.251022+07:00'
+  approved_by: image-extraction
+  attribute: bandwidth
+  claim_id: CLM-IMG-product.hosting.bkh04-bandwidth
+  compiler_note: From bkns.vn screenshot (BKH01-BKH02-BKH03-BKH04)
+  confidence: high
+  entity_id: product.hosting.bkh04
+  entity_name: Hosting Giá Rẻ BKH04
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:30.251022+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKH01-BKH02-BKH03-BKH04
+  valid_from: '2026-04-07'
+  value: Unlimited
+- approved_at: '2026-04-07T16:33:30.251022+07:00'
+  approved_by: image-extraction
+  attribute: cpu_cores
+  claim_id: CLM-IMG-product.hosting.bkh04-cpu_cores
+  compiler_note: From bkns.vn screenshot (BKH01-BKH02-BKH03-BKH04)
+  confidence: high
+  entity_id: product.hosting.bkh04
+  entity_name: Hosting Giá Rẻ BKH04
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:30.251022+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKH01-BKH02-BKH03-BKH04
+  valid_from: '2026-04-07'
+  value: 6 Core
+- approved_at: '2026-04-07T16:33:30.251022+07:00'
+  approved_by: image-extraction
+  attribute: domain_count
+  claim_id: CLM-IMG-product.hosting.bkh04-domain_count
+  compiler_note: From bkns.vn screenshot (BKH01-BKH02-BKH03-BKH04)
+  confidence: high
+  entity_id: product.hosting.bkh04
+  entity_name: Hosting Giá Rẻ BKH04
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:30.251022+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKH01-BKH02-BKH03-BKH04
+  valid_from: '2026-04-07'
+  value: 6
+- approved_at: '2026-04-07T16:33:30.251022+07:00'
+  approved_by: image-extraction
+  attribute: features
+  claim_id: CLM-IMG-product.hosting.bkh04-features
+  compiler_note: Features from bkns.vn screenshot (BKH01-BKH02-BKH03-BKH04)
+  confidence: high
+  entity_id: product.hosting.bkh04
+  entity_name: Hosting Giá Rẻ BKH04
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:30.251022+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKH01-BKH02-BKH03-BKH04
+  valid_from: '2026-04-07'
+  value: Backup hàng ngày, Miễn phí SSL, CloudLinux, LiteSpeed Web Server, Jetbackup,
+    OneClick, Redis
+- approved_at: '2026-04-07T16:33:30.251022+07:00'
+  approved_by: image-extraction
+  attribute: min_payment_period
+  claim_id: CLM-IMG-product.hosting.bkh04-min_period
+  compiler_note: Minimum payment period from bkns.vn (BKH01-BKH02-BKH03-BKH04)
+  confidence: high
+  entity_id: product.hosting.bkh04
+  entity_name: Hosting Giá Rẻ BKH04
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:30.251022+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKH01-BKH02-BKH03-BKH04
+  valid_from: '2026-04-07'
+  value: 1 tháng
+- approved_at: '2026-04-07T16:33:30.251022+07:00'
+  approved_by: image-extraction
+  attribute: ram
+  claim_id: CLM-IMG-product.hosting.bkh04-ram
+  compiler_note: From bkns.vn screenshot (BKH01-BKH02-BKH03-BKH04)
+  confidence: high
+  entity_id: product.hosting.bkh04
+  entity_name: Hosting Giá Rẻ BKH04
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:30.251022+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKH01-BKH02-BKH03-BKH04
+  valid_from: '2026-04-07'
+  value: 6 GB
+- approved_at: '2026-04-07T16:33:30.251022+07:00'
+  approved_by: image-extraction
+  attribute: storage
+  claim_id: CLM-IMG-product.hosting.bkh04-storage
+  compiler_note: From bkns.vn screenshot (BKH01-BKH02-BKH03-BKH04)
+  confidence: high
+  entity_id: product.hosting.bkh04
+  entity_name: Hosting Giá Rẻ BKH04
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:30.251022+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKH01-BKH02-BKH03-BKH04
+  valid_from: '2026-04-07'
+  value: 8 GB SSD
+- approved_at: '2026-04-07T16:33:30.251022+07:00'
+  approved_by: image-extraction
+  attribute: website_price
+  claim_id: CLM-IMG-product.hosting.bkh04-website_price
+  compiler_note: Extracted from website screenshot (BKH01-BKH02-BKH03-BKH04), Hosting
+    Giá Rẻ BKH04
+  confidence: high
+  entity_id: product.hosting.bkh04
+  entity_name: Hosting Giá Rẻ BKH04
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:30.251022+07:00'
+  qualifiers:
+    note: Giá hiển thị trên web, có thể đã bao gồm giảm giá
+    period: 1 tháng
+    source: bkns.vn website screenshot
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKH01-BKH02-BKH03-BKH04
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 105000
+- approved_at: '2026-04-07T16:34:59.550356+07:00'
+  approved_by: image-extraction
+  attribute: bandwidth
+  claim_id: CLM-IMG-product.hosting.bkhf-bandwidth
+  compiler_note: From bkns.vn screenshot (BKHF)
+  confidence: high
+  entity_id: product.hosting.bkhf
+  entity_name: Gói Hosting Miễn Phí BKHF
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:34:59.550356+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKHF
+  valid_from: '2026-04-07'
+  value: Unlimited
+- approved_at: '2026-04-07T16:34:59.550356+07:00'
+  approved_by: image-extraction
+  attribute: cpu_cores
+  claim_id: CLM-IMG-product.hosting.bkhf-cpu_cores
+  compiler_note: From bkns.vn screenshot (BKHF)
+  confidence: high
+  entity_id: product.hosting.bkhf
+  entity_name: Gói Hosting Miễn Phí BKHF
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:34:59.550356+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKHF
+  valid_from: '2026-04-07'
+  value: 1 Core
+- approved_at: '2026-04-07T16:34:59.550356+07:00'
+  approved_by: image-extraction
+  attribute: domain_count
+  claim_id: CLM-IMG-product.hosting.bkhf-domain_count
+  compiler_note: From bkns.vn screenshot (BKHF)
+  confidence: high
+  entity_id: product.hosting.bkhf
+  entity_name: Gói Hosting Miễn Phí BKHF
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:34:59.550356+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKHF
+  valid_from: '2026-04-07'
+  value: 1
+- approved_at: '2026-04-07T16:34:59.550356+07:00'
+  approved_by: image-extraction
+  attribute: features
+  claim_id: CLM-IMG-product.hosting.bkhf-features
+  compiler_note: Features from bkns.vn screenshot (BKHF)
+  confidence: high
+  entity_id: product.hosting.bkhf
+  entity_name: Gói Hosting Miễn Phí BKHF
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:34:59.550356+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKHF
+  valid_from: '2026-04-07'
+  value: CloudLinux, LiteSpeed Web Server, Miễn phí SSL, Backup hàng ngày
+- approved_at: '2026-04-07T16:34:59.550356+07:00'
+  approved_by: image-extraction
+  attribute: min_payment_period
+  claim_id: CLM-IMG-product.hosting.bkhf-min_period
+  compiler_note: Minimum payment period from bkns.vn (BKHF)
+  confidence: high
+  entity_id: product.hosting.bkhf
+  entity_name: Gói Hosting Miễn Phí BKHF
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:34:59.550356+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKHF
+  valid_from: '2026-04-07'
+  value: 3 tháng
+- approved_at: '2026-04-07T16:34:59.550356+07:00'
+  approved_by: image-extraction
+  attribute: mysql_databases
+  claim_id: CLM-IMG-product.hosting.bkhf-mysql_databases
+  compiler_note: From bkns.vn screenshot (BKHF)
+  confidence: high
+  entity_id: product.hosting.bkhf
+  entity_name: Gói Hosting Miễn Phí BKHF
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:34:59.550356+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKHF
+  valid_from: '2026-04-07'
+  value: 1
+- approved_at: '2026-04-07T16:34:59.550356+07:00'
+  approved_by: image-extraction
+  attribute: php_version
+  claim_id: CLM-IMG-product.hosting.bkhf-php_version
+  compiler_note: From bkns.vn screenshot (BKHF)
+  confidence: high
+  entity_id: product.hosting.bkhf
+  entity_name: Gói Hosting Miễn Phí BKHF
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:34:59.550356+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKHF
+  valid_from: '2026-04-07'
+  value: 8.x
+- approved_at: '2026-04-07T16:34:59.550356+07:00'
+  approved_by: image-extraction
+  attribute: storage
+  claim_id: CLM-IMG-product.hosting.bkhf-storage
+  compiler_note: From bkns.vn screenshot (BKHF)
+  confidence: high
+  entity_id: product.hosting.bkhf
+  entity_name: Gói Hosting Miễn Phí BKHF
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:34:59.550356+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKHF
+  valid_from: '2026-04-07'
+  value: 2 GB
+- approved_at: '2026-04-07T16:34:44.871170+07:00'
+  approved_by: image-extraction
+  attribute: c_class_ranges
+  claim_id: CLM-IMG-product.hosting.bkseo_01-c_class_ranges
+  compiler_note: From bkns.vn screenshot (BKSEO01-BKSEO02-BKSEO03-BKSEO04)
+  confidence: high
+  entity_id: product.hosting.bkseo_01
+  entity_name: SEO Hosting BKSEO-01
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:34:44.871170+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSEO01-BKSEO02-BKSEO03-BKSEO04
+  valid_from: '2026-04-07'
+  value: 3
+- approved_at: '2026-04-07T16:34:44.871170+07:00'
+  approved_by: image-extraction
+  attribute: cpu_cores
+  claim_id: CLM-IMG-product.hosting.bkseo_01-cpu_cores
+  compiler_note: From bkns.vn screenshot (BKSEO01-BKSEO02-BKSEO03-BKSEO04)
+  confidence: high
+  entity_id: product.hosting.bkseo_01
+  entity_name: SEO Hosting BKSEO-01
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:34:44.871170+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSEO01-BKSEO02-BKSEO03-BKSEO04
+  valid_from: '2026-04-07'
+  value: 1 Core
+- approved_at: '2026-04-07T16:34:44.871170+07:00'
+  approved_by: image-extraction
+  attribute: domain_count
+  claim_id: CLM-IMG-product.hosting.bkseo_01-domain_count
+  compiler_note: From bkns.vn screenshot (BKSEO01-BKSEO02-BKSEO03-BKSEO04)
+  confidence: high
+  entity_id: product.hosting.bkseo_01
+  entity_name: SEO Hosting BKSEO-01
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:34:44.871170+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSEO01-BKSEO02-BKSEO03-BKSEO04
+  valid_from: '2026-04-07'
+  value: 6
+- approved_at: '2026-04-07T16:34:44.871170+07:00'
+  approved_by: image-extraction
+  attribute: ip_addresses
+  claim_id: CLM-IMG-product.hosting.bkseo_01-ip_addresses
+  compiler_note: From bkns.vn screenshot (BKSEO01-BKSEO02-BKSEO03-BKSEO04)
+  confidence: high
+  entity_id: product.hosting.bkseo_01
+  entity_name: SEO Hosting BKSEO-01
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:34:44.871170+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSEO01-BKSEO02-BKSEO03-BKSEO04
+  valid_from: '2026-04-07'
+  value: 6
+- approved_at: '2026-04-07T16:34:44.871170+07:00'
+  approved_by: image-extraction
+  attribute: min_payment_period
+  claim_id: CLM-IMG-product.hosting.bkseo_01-min_period
+  compiler_note: Minimum payment period from bkns.vn (BKSEO01-BKSEO02-BKSEO03-BKSEO04)
+  confidence: high
+  entity_id: product.hosting.bkseo_01
+  entity_name: SEO Hosting BKSEO-01
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:34:44.871170+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSEO01-BKSEO02-BKSEO03-BKSEO04
+  valid_from: '2026-04-07'
+  value: 1 tháng
+- approved_at: '2026-04-07T16:34:44.871170+07:00'
+  approved_by: image-extraction
+  attribute: mysql_databases
+  claim_id: CLM-IMG-product.hosting.bkseo_01-mysql_databases
+  compiler_note: From bkns.vn screenshot (BKSEO01-BKSEO02-BKSEO03-BKSEO04)
+  confidence: high
+  entity_id: product.hosting.bkseo_01
+  entity_name: SEO Hosting BKSEO-01
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:34:44.871170+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSEO01-BKSEO02-BKSEO03-BKSEO04
+  valid_from: '2026-04-07'
+  value: 6
+- approved_at: '2026-04-07T16:34:44.871170+07:00'
+  approved_by: image-extraction
+  attribute: ram
+  claim_id: CLM-IMG-product.hosting.bkseo_01-ram
+  compiler_note: From bkns.vn screenshot (BKSEO01-BKSEO02-BKSEO03-BKSEO04)
+  confidence: high
+  entity_id: product.hosting.bkseo_01
+  entity_name: SEO Hosting BKSEO-01
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:34:44.871170+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSEO01-BKSEO02-BKSEO03-BKSEO04
+  valid_from: '2026-04-07'
+  value: 1 GB
+- approved_at: '2026-04-07T16:34:44.871170+07:00'
+  approved_by: image-extraction
+  attribute: storage
+  claim_id: CLM-IMG-product.hosting.bkseo_01-storage
+  compiler_note: From bkns.vn screenshot (BKSEO01-BKSEO02-BKSEO03-BKSEO04)
+  confidence: high
+  entity_id: product.hosting.bkseo_01
+  entity_name: SEO Hosting BKSEO-01
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:34:44.871170+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSEO01-BKSEO02-BKSEO03-BKSEO04
+  valid_from: '2026-04-07'
+  value: 5GB
+- approved_at: '2026-04-07T16:34:44.871170+07:00'
+  approved_by: image-extraction
+  attribute: website_price
+  claim_id: CLM-IMG-product.hosting.bkseo_01-website_price
+  compiler_note: Extracted from website screenshot (BKSEO01-BKSEO02-BKSEO03-BKSEO04),
+    SEO Hosting BKSEO-01
+  confidence: high
+  entity_id: product.hosting.bkseo_01
+  entity_name: SEO Hosting BKSEO-01
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:34:44.871170+07:00'
+  qualifiers:
+    note: Giá hiển thị trên web, có thể đã bao gồm giảm giá
+    period: 1 tháng
+    source: bkns.vn website screenshot
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSEO01-BKSEO02-BKSEO03-BKSEO04
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 189000
+- approved_at: '2026-04-07T16:34:44.871170+07:00'
+  approved_by: image-extraction
+  attribute: c_class_ranges
+  claim_id: CLM-IMG-product.hosting.bkseo_02-c_class_ranges
+  compiler_note: From bkns.vn screenshot (BKSEO01-BKSEO02-BKSEO03-BKSEO04)
+  confidence: high
+  entity_id: product.hosting.bkseo_02
+  entity_name: SEO Hosting BKSEO-02
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:34:44.871170+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSEO01-BKSEO02-BKSEO03-BKSEO04
+  valid_from: '2026-04-07'
+  value: 4
+- approved_at: '2026-04-07T16:34:44.871170+07:00'
+  approved_by: image-extraction
+  attribute: cpu_cores
+  claim_id: CLM-IMG-product.hosting.bkseo_02-cpu_cores
+  compiler_note: From bkns.vn screenshot (BKSEO01-BKSEO02-BKSEO03-BKSEO04)
+  confidence: high
+  entity_id: product.hosting.bkseo_02
+  entity_name: SEO Hosting BKSEO-02
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:34:44.871170+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSEO01-BKSEO02-BKSEO03-BKSEO04
+  valid_from: '2026-04-07'
+  value: 2 Cores
+- approved_at: '2026-04-07T16:34:44.871170+07:00'
+  approved_by: image-extraction
+  attribute: domain_count
+  claim_id: CLM-IMG-product.hosting.bkseo_02-domain_count
+  compiler_note: From bkns.vn screenshot (BKSEO01-BKSEO02-BKSEO03-BKSEO04)
+  confidence: high
+  entity_id: product.hosting.bkseo_02
+  entity_name: SEO Hosting BKSEO-02
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:34:44.871170+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSEO01-BKSEO02-BKSEO03-BKSEO04
+  valid_from: '2026-04-07'
+  value: 10
+- approved_at: '2026-04-07T16:34:44.871170+07:00'
+  approved_by: image-extraction
+  attribute: ip_addresses
+  claim_id: CLM-IMG-product.hosting.bkseo_02-ip_addresses
+  compiler_note: From bkns.vn screenshot (BKSEO01-BKSEO02-BKSEO03-BKSEO04)
+  confidence: high
+  entity_id: product.hosting.bkseo_02
+  entity_name: SEO Hosting BKSEO-02
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:34:44.871170+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSEO01-BKSEO02-BKSEO03-BKSEO04
+  valid_from: '2026-04-07'
+  value: 10
+- approved_at: '2026-04-07T16:34:44.871170+07:00'
+  approved_by: image-extraction
+  attribute: min_payment_period
+  claim_id: CLM-IMG-product.hosting.bkseo_02-min_period
+  compiler_note: Minimum payment period from bkns.vn (BKSEO01-BKSEO02-BKSEO03-BKSEO04)
+  confidence: high
+  entity_id: product.hosting.bkseo_02
+  entity_name: SEO Hosting BKSEO-02
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:34:44.871170+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSEO01-BKSEO02-BKSEO03-BKSEO04
+  valid_from: '2026-04-07'
+  value: 1 tháng
+- approved_at: '2026-04-07T16:34:44.871170+07:00'
+  approved_by: image-extraction
+  attribute: mysql_databases
+  claim_id: CLM-IMG-product.hosting.bkseo_02-mysql_databases
+  compiler_note: From bkns.vn screenshot (BKSEO01-BKSEO02-BKSEO03-BKSEO04)
+  confidence: high
+  entity_id: product.hosting.bkseo_02
+  entity_name: SEO Hosting BKSEO-02
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:34:44.871170+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSEO01-BKSEO02-BKSEO03-BKSEO04
+  valid_from: '2026-04-07'
+  value: 10
+- approved_at: '2026-04-07T16:34:44.871170+07:00'
+  approved_by: image-extraction
+  attribute: ram
+  claim_id: CLM-IMG-product.hosting.bkseo_02-ram
+  compiler_note: From bkns.vn screenshot (BKSEO01-BKSEO02-BKSEO03-BKSEO04)
+  confidence: high
+  entity_id: product.hosting.bkseo_02
+  entity_name: SEO Hosting BKSEO-02
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:34:44.871170+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSEO01-BKSEO02-BKSEO03-BKSEO04
+  valid_from: '2026-04-07'
+  value: 1.5 GB
+- approved_at: '2026-04-07T16:34:44.871170+07:00'
+  approved_by: image-extraction
+  attribute: storage
+  claim_id: CLM-IMG-product.hosting.bkseo_02-storage
+  compiler_note: From bkns.vn screenshot (BKSEO01-BKSEO02-BKSEO03-BKSEO04)
+  confidence: high
+  entity_id: product.hosting.bkseo_02
+  entity_name: SEO Hosting BKSEO-02
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:34:44.871170+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSEO01-BKSEO02-BKSEO03-BKSEO04
+  valid_from: '2026-04-07'
+  value: 8GB
+- approved_at: '2026-04-07T16:34:44.871170+07:00'
+  approved_by: image-extraction
+  attribute: website_price
+  claim_id: CLM-IMG-product.hosting.bkseo_02-website_price
+  compiler_note: Extracted from website screenshot (BKSEO01-BKSEO02-BKSEO03-BKSEO04),
+    SEO Hosting BKSEO-02
+  confidence: high
+  entity_id: product.hosting.bkseo_02
+  entity_name: SEO Hosting BKSEO-02
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:34:44.871170+07:00'
+  qualifiers:
+    note: Giá hiển thị trên web, có thể đã bao gồm giảm giá
+    period: 1 tháng
+    source: bkns.vn website screenshot
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSEO01-BKSEO02-BKSEO03-BKSEO04
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 350000
+- approved_at: '2026-04-07T16:34:44.871170+07:00'
+  approved_by: image-extraction
+  attribute: c_class_ranges
+  claim_id: CLM-IMG-product.hosting.bkseo_03-c_class_ranges
+  compiler_note: From bkns.vn screenshot (BKSEO01-BKSEO02-BKSEO03-BKSEO04)
+  confidence: high
+  entity_id: product.hosting.bkseo_03
+  entity_name: SEO Hosting BKSEO-03
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:34:44.871170+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSEO01-BKSEO02-BKSEO03-BKSEO04
+  valid_from: '2026-04-07'
+  value: 6
+- approved_at: '2026-04-07T16:34:44.871170+07:00'
+  approved_by: image-extraction
+  attribute: cpu_cores
+  claim_id: CLM-IMG-product.hosting.bkseo_03-cpu_cores
+  compiler_note: From bkns.vn screenshot (BKSEO01-BKSEO02-BKSEO03-BKSEO04)
+  confidence: high
+  entity_id: product.hosting.bkseo_03
+  entity_name: SEO Hosting BKSEO-03
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:34:44.871170+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSEO01-BKSEO02-BKSEO03-BKSEO04
+  valid_from: '2026-04-07'
+  value: 2 Cores
+- approved_at: '2026-04-07T16:34:44.871170+07:00'
+  approved_by: image-extraction
+  attribute: domain_count
+  claim_id: CLM-IMG-product.hosting.bkseo_03-domain_count
+  compiler_note: From bkns.vn screenshot (BKSEO01-BKSEO02-BKSEO03-BKSEO04)
+  confidence: high
+  entity_id: product.hosting.bkseo_03
+  entity_name: SEO Hosting BKSEO-03
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:34:44.871170+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSEO01-BKSEO02-BKSEO03-BKSEO04
+  valid_from: '2026-04-07'
+  value: 12
+- approved_at: '2026-04-07T16:34:44.871170+07:00'
+  approved_by: image-extraction
+  attribute: ip_addresses
+  claim_id: CLM-IMG-product.hosting.bkseo_03-ip_addresses
+  compiler_note: From bkns.vn screenshot (BKSEO01-BKSEO02-BKSEO03-BKSEO04)
+  confidence: high
+  entity_id: product.hosting.bkseo_03
+  entity_name: SEO Hosting BKSEO-03
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:34:44.871170+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSEO01-BKSEO02-BKSEO03-BKSEO04
+  valid_from: '2026-04-07'
+  value: 12
+- approved_at: '2026-04-07T16:34:44.871170+07:00'
+  approved_by: image-extraction
+  attribute: min_payment_period
+  claim_id: CLM-IMG-product.hosting.bkseo_03-min_period
+  compiler_note: Minimum payment period from bkns.vn (BKSEO01-BKSEO02-BKSEO03-BKSEO04)
+  confidence: high
+  entity_id: product.hosting.bkseo_03
+  entity_name: SEO Hosting BKSEO-03
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:34:44.871170+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSEO01-BKSEO02-BKSEO03-BKSEO04
+  valid_from: '2026-04-07'
+  value: 1 tháng
+- approved_at: '2026-04-07T16:34:44.871170+07:00'
+  approved_by: image-extraction
+  attribute: mysql_databases
+  claim_id: CLM-IMG-product.hosting.bkseo_03-mysql_databases
+  compiler_note: From bkns.vn screenshot (BKSEO01-BKSEO02-BKSEO03-BKSEO04)
+  confidence: high
+  entity_id: product.hosting.bkseo_03
+  entity_name: SEO Hosting BKSEO-03
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:34:44.871170+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSEO01-BKSEO02-BKSEO03-BKSEO04
+  valid_from: '2026-04-07'
+  value: 12
+- approved_at: '2026-04-07T16:34:44.871170+07:00'
+  approved_by: image-extraction
+  attribute: ram
+  claim_id: CLM-IMG-product.hosting.bkseo_03-ram
+  compiler_note: From bkns.vn screenshot (BKSEO01-BKSEO02-BKSEO03-BKSEO04)
+  confidence: high
+  entity_id: product.hosting.bkseo_03
+  entity_name: SEO Hosting BKSEO-03
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:34:44.871170+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSEO01-BKSEO02-BKSEO03-BKSEO04
+  valid_from: '2026-04-07'
+  value: 2 GB
+- approved_at: '2026-04-07T16:34:44.871170+07:00'
+  approved_by: image-extraction
+  attribute: storage
+  claim_id: CLM-IMG-product.hosting.bkseo_03-storage
+  compiler_note: From bkns.vn screenshot (BKSEO01-BKSEO02-BKSEO03-BKSEO04)
+  confidence: high
+  entity_id: product.hosting.bkseo_03
+  entity_name: SEO Hosting BKSEO-03
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:34:44.871170+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSEO01-BKSEO02-BKSEO03-BKSEO04
+  valid_from: '2026-04-07'
+  value: 15GB
+- approved_at: '2026-04-07T16:34:44.871170+07:00'
+  approved_by: image-extraction
+  attribute: website_price
+  claim_id: CLM-IMG-product.hosting.bkseo_03-website_price
+  compiler_note: Extracted from website screenshot (BKSEO01-BKSEO02-BKSEO03-BKSEO04),
+    SEO Hosting BKSEO-03
+  confidence: high
+  entity_id: product.hosting.bkseo_03
+  entity_name: SEO Hosting BKSEO-03
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:34:44.871170+07:00'
+  qualifiers:
+    note: Giá hiển thị trên web, có thể đã bao gồm giảm giá
+    period: 1 tháng
+    source: bkns.vn website screenshot
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSEO01-BKSEO02-BKSEO03-BKSEO04
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 690000
+- approved_at: '2026-04-07T16:34:44.871170+07:00'
+  approved_by: image-extraction
+  attribute: c_class_ranges
+  claim_id: CLM-IMG-product.hosting.bkseo_04-c_class_ranges
+  compiler_note: From bkns.vn screenshot (BKSEO01-BKSEO02-BKSEO03-BKSEO04)
+  confidence: high
+  entity_id: product.hosting.bkseo_04
+  entity_name: SEO Hosting BKSEO-04
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:34:44.871170+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSEO01-BKSEO02-BKSEO03-BKSEO04
+  valid_from: '2026-04-07'
+  value: 8
+- approved_at: '2026-04-07T16:34:44.871170+07:00'
+  approved_by: image-extraction
+  attribute: cpu_cores
+  claim_id: CLM-IMG-product.hosting.bkseo_04-cpu_cores
+  compiler_note: From bkns.vn screenshot (BKSEO01-BKSEO02-BKSEO03-BKSEO04)
+  confidence: high
+  entity_id: product.hosting.bkseo_04
+  entity_name: SEO Hosting BKSEO-04
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:34:44.871170+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSEO01-BKSEO02-BKSEO03-BKSEO04
+  valid_from: '2026-04-07'
+  value: 2 Cores
+- approved_at: '2026-04-07T16:34:44.871170+07:00'
+  approved_by: image-extraction
+  attribute: domain_count
+  claim_id: CLM-IMG-product.hosting.bkseo_04-domain_count
+  compiler_note: From bkns.vn screenshot (BKSEO01-BKSEO02-BKSEO03-BKSEO04)
+  confidence: high
+  entity_id: product.hosting.bkseo_04
+  entity_name: SEO Hosting BKSEO-04
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:34:44.871170+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSEO01-BKSEO02-BKSEO03-BKSEO04
+  valid_from: '2026-04-07'
+  value: 15
+- approved_at: '2026-04-07T16:34:44.871170+07:00'
+  approved_by: image-extraction
+  attribute: ip_addresses
+  claim_id: CLM-IMG-product.hosting.bkseo_04-ip_addresses
+  compiler_note: From bkns.vn screenshot (BKSEO01-BKSEO02-BKSEO03-BKSEO04)
+  confidence: high
+  entity_id: product.hosting.bkseo_04
+  entity_name: SEO Hosting BKSEO-04
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:34:44.871170+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSEO01-BKSEO02-BKSEO03-BKSEO04
+  valid_from: '2026-04-07'
+  value: 15
+- approved_at: '2026-04-07T16:34:44.871170+07:00'
+  approved_by: image-extraction
+  attribute: min_payment_period
+  claim_id: CLM-IMG-product.hosting.bkseo_04-min_period
+  compiler_note: Minimum payment period from bkns.vn (BKSEO01-BKSEO02-BKSEO03-BKSEO04)
+  confidence: high
+  entity_id: product.hosting.bkseo_04
+  entity_name: SEO Hosting BKSEO-04
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:34:44.871170+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSEO01-BKSEO02-BKSEO03-BKSEO04
+  valid_from: '2026-04-07'
+  value: 1 tháng
+- approved_at: '2026-04-07T16:34:44.871170+07:00'
+  approved_by: image-extraction
+  attribute: mysql_databases
+  claim_id: CLM-IMG-product.hosting.bkseo_04-mysql_databases
+  compiler_note: From bkns.vn screenshot (BKSEO01-BKSEO02-BKSEO03-BKSEO04)
+  confidence: high
+  entity_id: product.hosting.bkseo_04
+  entity_name: SEO Hosting BKSEO-04
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:34:44.871170+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSEO01-BKSEO02-BKSEO03-BKSEO04
+  valid_from: '2026-04-07'
+  value: 15
+- approved_at: '2026-04-07T16:34:44.871170+07:00'
+  approved_by: image-extraction
+  attribute: ram
+  claim_id: CLM-IMG-product.hosting.bkseo_04-ram
+  compiler_note: From bkns.vn screenshot (BKSEO01-BKSEO02-BKSEO03-BKSEO04)
+  confidence: high
+  entity_id: product.hosting.bkseo_04
+  entity_name: SEO Hosting BKSEO-04
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:34:44.871170+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSEO01-BKSEO02-BKSEO03-BKSEO04
+  valid_from: '2026-04-07'
+  value: 2.5 GB
+- approved_at: '2026-04-07T16:34:44.871170+07:00'
+  approved_by: image-extraction
+  attribute: storage
+  claim_id: CLM-IMG-product.hosting.bkseo_04-storage
+  compiler_note: From bkns.vn screenshot (BKSEO01-BKSEO02-BKSEO03-BKSEO04)
+  confidence: high
+  entity_id: product.hosting.bkseo_04
+  entity_name: SEO Hosting BKSEO-04
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:34:44.871170+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSEO01-BKSEO02-BKSEO03-BKSEO04
+  valid_from: '2026-04-07'
+  value: 30GB
+- approved_at: '2026-04-07T16:34:44.871170+07:00'
+  approved_by: image-extraction
+  attribute: website_price
+  claim_id: CLM-IMG-product.hosting.bkseo_04-website_price
+  compiler_note: Extracted from website screenshot (BKSEO01-BKSEO02-BKSEO03-BKSEO04),
+    SEO Hosting BKSEO-04
+  confidence: high
+  entity_id: product.hosting.bkseo_04
+  entity_name: SEO Hosting BKSEO-04
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:34:44.871170+07:00'
+  qualifiers:
+    note: Giá hiển thị trên web, có thể đã bao gồm giảm giá
+    period: 1 tháng
+    source: bkns.vn website screenshot
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSEO01-BKSEO02-BKSEO03-BKSEO04
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 970000
+- approved_at: '2026-04-07T16:35:42.325653+07:00'
+  approved_by: image-extraction
+  attribute: bandwidth
+  claim_id: CLM-IMG-product.hosting.bksw01-bandwidth
+  compiler_note: From bkns.vn screenshot (BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+)
+  confidence: high
+  entity_id: product.hosting.bksw01
+  entity_name: BKSW01 Hosting Windows Thường
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:42.325653+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+
+  valid_from: '2026-04-07'
+  value: 20 GB
+- approved_at: '2026-04-07T16:35:42.325653+07:00'
+  approved_by: image-extraction
+  attribute: disk_space
+  claim_id: CLM-IMG-product.hosting.bksw01-disk_space
+  compiler_note: From bkns.vn screenshot (BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+)
+  confidence: high
+  entity_id: product.hosting.bksw01
+  entity_name: BKSW01 Hosting Windows Thường
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:42.325653+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+
+  valid_from: '2026-04-07'
+  value: 1 GB
+- approved_at: '2026-04-07T16:35:42.325653+07:00'
+  approved_by: image-extraction
+  attribute: domain_count
+  claim_id: CLM-IMG-product.hosting.bksw01-domain_count
+  compiler_note: From bkns.vn screenshot (BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+)
+  confidence: high
+  entity_id: product.hosting.bksw01
+  entity_name: BKSW01 Hosting Windows Thường
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:42.325653+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+
+  valid_from: '2026-04-07'
+  value: 1
+- approved_at: '2026-04-07T16:35:42.325653+07:00'
+  approved_by: image-extraction
+  attribute: email_accounts
+  claim_id: CLM-IMG-product.hosting.bksw01-email_accounts
+  compiler_note: From bkns.vn screenshot (BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+)
+  confidence: high
+  entity_id: product.hosting.bksw01
+  entity_name: BKSW01 Hosting Windows Thường
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:42.325653+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+
+  valid_from: '2026-04-07'
+  value: 5
+- approved_at: '2026-04-07T16:35:42.325653+07:00'
+  approved_by: image-extraction
+  attribute: ftp_accounts
+  claim_id: CLM-IMG-product.hosting.bksw01-ftp_accounts
+  compiler_note: From bkns.vn screenshot (BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+)
+  confidence: high
+  entity_id: product.hosting.bksw01
+  entity_name: BKSW01 Hosting Windows Thường
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:42.325653+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+
+  valid_from: '2026-04-07'
+  value: 2
+- approved_at: '2026-04-07T16:35:42.325653+07:00'
+  approved_by: image-extraction
+  attribute: min_payment_period
+  claim_id: CLM-IMG-product.hosting.bksw01-min_period
+  compiler_note: Minimum payment period from bkns.vn (BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+)
+  confidence: high
+  entity_id: product.hosting.bksw01
+  entity_name: BKSW01 Hosting Windows Thường
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:42.325653+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+
+  valid_from: '2026-04-07'
+  value: 12 tháng
+- approved_at: '2026-04-07T16:35:42.325653+07:00'
+  approved_by: image-extraction
+  attribute: mssql_accounts
+  claim_id: CLM-IMG-product.hosting.bksw01-mssql_accounts
+  compiler_note: From bkns.vn screenshot (BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+)
+  confidence: high
+  entity_id: product.hosting.bksw01
+  entity_name: BKSW01 Hosting Windows Thường
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:42.325653+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+
+  valid_from: '2026-04-07'
+  value: 2
+- approved_at: '2026-04-07T16:35:42.325653+07:00'
+  approved_by: image-extraction
+  attribute: parked_sub_domain
+  claim_id: CLM-IMG-product.hosting.bksw01-parked_sub_domain
+  compiler_note: From bkns.vn screenshot (BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+)
+  confidence: high
+  entity_id: product.hosting.bksw01
+  entity_name: BKSW01 Hosting Windows Thường
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:42.325653+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+
+  valid_from: '2026-04-07'
+  value: 2
+- approved_at: '2026-04-07T16:35:42.325653+07:00'
+  approved_by: image-extraction
+  attribute: website_price
+  claim_id: CLM-IMG-product.hosting.bksw01-website_price
+  compiler_note: Extracted from website screenshot (BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+),
+    BKSW01 Hosting Windows Thường
+  confidence: high
+  entity_id: product.hosting.bksw01
+  entity_name: BKSW01 Hosting Windows Thường
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:42.325653+07:00'
+  qualifiers:
+    note: Giá hiển thị trên web, có thể đã bao gồm giảm giá
+    period: 1 tháng
+    source: bkns.vn website screenshot
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 31350
+- approved_at: '2026-04-07T16:35:42.325653+07:00'
+  approved_by: image-extraction
+  attribute: bandwidth
+  claim_id: CLM-IMG-product.hosting.bksw02-bandwidth
+  compiler_note: From bkns.vn screenshot (BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+)
+  confidence: high
+  entity_id: product.hosting.bksw02
+  entity_name: BKSW02 Hosting Windows Thường
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:42.325653+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+
+  valid_from: '2026-04-07'
+  value: Unlimited
+- approved_at: '2026-04-07T16:35:42.325653+07:00'
+  approved_by: image-extraction
+  attribute: disk_space
+  claim_id: CLM-IMG-product.hosting.bksw02-disk_space
+  compiler_note: From bkns.vn screenshot (BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+)
+  confidence: high
+  entity_id: product.hosting.bksw02
+  entity_name: BKSW02 Hosting Windows Thường
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:42.325653+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+
+  valid_from: '2026-04-07'
+  value: 1.5 GB
+- approved_at: '2026-04-07T16:35:42.325653+07:00'
+  approved_by: image-extraction
+  attribute: domain_count
+  claim_id: CLM-IMG-product.hosting.bksw02-domain_count
+  compiler_note: From bkns.vn screenshot (BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+)
+  confidence: high
+  entity_id: product.hosting.bksw02
+  entity_name: BKSW02 Hosting Windows Thường
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:42.325653+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+
+  valid_from: '2026-04-07'
+  value: 2
+- approved_at: '2026-04-07T16:35:42.325653+07:00'
+  approved_by: image-extraction
+  attribute: email_accounts
+  claim_id: CLM-IMG-product.hosting.bksw02-email_accounts
+  compiler_note: From bkns.vn screenshot (BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+)
+  confidence: high
+  entity_id: product.hosting.bksw02
+  entity_name: BKSW02 Hosting Windows Thường
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:42.325653+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+
+  valid_from: '2026-04-07'
+  value: 10
+- approved_at: '2026-04-07T16:35:42.325653+07:00'
+  approved_by: image-extraction
+  attribute: ftp_accounts
+  claim_id: CLM-IMG-product.hosting.bksw02-ftp_accounts
+  compiler_note: From bkns.vn screenshot (BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+)
+  confidence: high
+  entity_id: product.hosting.bksw02
+  entity_name: BKSW02 Hosting Windows Thường
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:42.325653+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+
+  valid_from: '2026-04-07'
+  value: 3
+- approved_at: '2026-04-07T16:35:42.325653+07:00'
+  approved_by: image-extraction
+  attribute: min_payment_period
+  claim_id: CLM-IMG-product.hosting.bksw02-min_period
+  compiler_note: Minimum payment period from bkns.vn (BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+)
+  confidence: high
+  entity_id: product.hosting.bksw02
+  entity_name: BKSW02 Hosting Windows Thường
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:42.325653+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+
+  valid_from: '2026-04-07'
+  value: 06 tháng
+- approved_at: '2026-04-07T16:35:42.325653+07:00'
+  approved_by: image-extraction
+  attribute: mssql_accounts
+  claim_id: CLM-IMG-product.hosting.bksw02-mssql_accounts
+  compiler_note: From bkns.vn screenshot (BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+)
+  confidence: high
+  entity_id: product.hosting.bksw02
+  entity_name: BKSW02 Hosting Windows Thường
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:42.325653+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+
+  valid_from: '2026-04-07'
+  value: 4
+- approved_at: '2026-04-07T16:35:42.325653+07:00'
+  approved_by: image-extraction
+  attribute: parked_sub_domain
+  claim_id: CLM-IMG-product.hosting.bksw02-parked_sub_domain
+  compiler_note: From bkns.vn screenshot (BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+)
+  confidence: high
+  entity_id: product.hosting.bksw02
+  entity_name: BKSW02 Hosting Windows Thường
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:42.325653+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+
+  valid_from: '2026-04-07'
+  value: 5
+- approved_at: '2026-04-07T16:35:42.325653+07:00'
+  approved_by: image-extraction
+  attribute: website_price
+  claim_id: CLM-IMG-product.hosting.bksw02-website_price
+  compiler_note: Extracted from website screenshot (BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+),
+    BKSW02 Hosting Windows Thường
+  confidence: high
+  entity_id: product.hosting.bksw02
+  entity_name: BKSW02 Hosting Windows Thường
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:42.325653+07:00'
+  qualifiers:
+    note: Giá hiển thị trên web, có thể đã bao gồm giảm giá
+    period: 1 tháng
+    source: bkns.vn website screenshot
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 57000
+- approved_at: '2026-04-07T16:35:42.325653+07:00'
+  approved_by: image-extraction
+  attribute: bandwidth
+  claim_id: CLM-IMG-product.hosting.bksw03-bandwidth
+  compiler_note: From bkns.vn screenshot (BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+)
+  confidence: high
+  entity_id: product.hosting.bksw03
+  entity_name: BKSW03+ Hosting Windows Thường
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:42.325653+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+
+  valid_from: '2026-04-07'
+  value: Unlimited
+- approved_at: '2026-04-07T16:35:42.325653+07:00'
+  approved_by: image-extraction
+  attribute: disk_space
+  claim_id: CLM-IMG-product.hosting.bksw03-disk_space
+  compiler_note: From bkns.vn screenshot (BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+)
+  confidence: high
+  entity_id: product.hosting.bksw03
+  entity_name: BKSW03+ Hosting Windows Thường
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:42.325653+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+
+  valid_from: '2026-04-07'
+  value: 3.5 GB
+- approved_at: '2026-04-07T16:35:42.325653+07:00'
+  approved_by: image-extraction
+  attribute: domain_count
+  claim_id: CLM-IMG-product.hosting.bksw03-domain_count
+  compiler_note: From bkns.vn screenshot (BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+)
+  confidence: high
+  entity_id: product.hosting.bksw03
+  entity_name: BKSW03+ Hosting Windows Thường
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:42.325653+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+
+  valid_from: '2026-04-07'
+  value: 5
+- approved_at: '2026-04-07T16:35:42.325653+07:00'
+  approved_by: image-extraction
+  attribute: email_accounts
+  claim_id: CLM-IMG-product.hosting.bksw03-email_accounts
+  compiler_note: From bkns.vn screenshot (BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+)
+  confidence: high
+  entity_id: product.hosting.bksw03
+  entity_name: BKSW03+ Hosting Windows Thường
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:42.325653+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+
+  valid_from: '2026-04-07'
+  value: 30
+- approved_at: '2026-04-07T16:35:42.325653+07:00'
+  approved_by: image-extraction
+  attribute: ftp_accounts
+  claim_id: CLM-IMG-product.hosting.bksw03-ftp_accounts
+  compiler_note: From bkns.vn screenshot (BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+)
+  confidence: high
+  entity_id: product.hosting.bksw03
+  entity_name: BKSW03+ Hosting Windows Thường
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:42.325653+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+
+  valid_from: '2026-04-07'
+  value: Unlimited
+- approved_at: '2026-04-07T16:35:42.325653+07:00'
+  approved_by: image-extraction
+  attribute: min_payment_period
+  claim_id: CLM-IMG-product.hosting.bksw03-min_period
+  compiler_note: Minimum payment period from bkns.vn (BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+)
+  confidence: high
+  entity_id: product.hosting.bksw03
+  entity_name: BKSW03+ Hosting Windows Thường
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:42.325653+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+
+  valid_from: '2026-04-07'
+  value: 03 tháng
+- approved_at: '2026-04-07T16:35:42.325653+07:00'
+  approved_by: image-extraction
+  attribute: mssql_accounts
+  claim_id: CLM-IMG-product.hosting.bksw03-mssql_accounts
+  compiler_note: From bkns.vn screenshot (BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+)
+  confidence: high
+  entity_id: product.hosting.bksw03
+  entity_name: BKSW03+ Hosting Windows Thường
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:42.325653+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+
+  valid_from: '2026-04-07'
+  value: 7
+- approved_at: '2026-04-07T16:35:42.325653+07:00'
+  approved_by: image-extraction
+  attribute: parked_sub_domain
+  claim_id: CLM-IMG-product.hosting.bksw03-parked_sub_domain
+  compiler_note: From bkns.vn screenshot (BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+)
+  confidence: high
+  entity_id: product.hosting.bksw03
+  entity_name: BKSW03+ Hosting Windows Thường
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:42.325653+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+
+  valid_from: '2026-04-07'
+  value: Unlimited
+- approved_at: '2026-04-07T16:35:42.325653+07:00'
+  approved_by: image-extraction
+  attribute: website_price
+  claim_id: CLM-IMG-product.hosting.bksw03-website_price
+  compiler_note: Extracted from website screenshot (BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+),
+    BKSW03+ Hosting Windows Thường
+  confidence: high
+  entity_id: product.hosting.bksw03
+  entity_name: BKSW03+ Hosting Windows Thường
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:42.325653+07:00'
+  qualifiers:
+    note: Giá hiển thị trên web, có thể đã bao gồm giảm giá
+    period: 1 tháng
+    source: bkns.vn website screenshot
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 128250
+- approved_at: '2026-04-07T16:35:42.325653+07:00'
+  approved_by: image-extraction
+  attribute: bandwidth
+  claim_id: CLM-IMG-product.hosting.bksw04-bandwidth
+  compiler_note: From bkns.vn screenshot (BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+)
+  confidence: high
+  entity_id: product.hosting.bksw04
+  entity_name: BKSW04+ Hosting Windows Thường
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:42.325653+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+
+  valid_from: '2026-04-07'
+  value: Unlimited
+- approved_at: '2026-04-07T16:35:42.325653+07:00'
+  approved_by: image-extraction
+  attribute: disk_space
+  claim_id: CLM-IMG-product.hosting.bksw04-disk_space
+  compiler_note: From bkns.vn screenshot (BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+)
+  confidence: high
+  entity_id: product.hosting.bksw04
+  entity_name: BKSW04+ Hosting Windows Thường
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:42.325653+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+
+  valid_from: '2026-04-07'
+  value: 7 GB
+- approved_at: '2026-04-07T16:35:42.325653+07:00'
+  approved_by: image-extraction
+  attribute: domain_count
+  claim_id: CLM-IMG-product.hosting.bksw04-domain_count
+  compiler_note: From bkns.vn screenshot (BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+)
+  confidence: high
+  entity_id: product.hosting.bksw04
+  entity_name: BKSW04+ Hosting Windows Thường
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:42.325653+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+
+  valid_from: '2026-04-07'
+  value: 9
+- approved_at: '2026-04-07T16:35:42.325653+07:00'
+  approved_by: image-extraction
+  attribute: email_accounts
+  claim_id: CLM-IMG-product.hosting.bksw04-email_accounts
+  compiler_note: From bkns.vn screenshot (BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+)
+  confidence: high
+  entity_id: product.hosting.bksw04
+  entity_name: BKSW04+ Hosting Windows Thường
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:42.325653+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+
+  valid_from: '2026-04-07'
+  value: 80
+- approved_at: '2026-04-07T16:35:42.325653+07:00'
+  approved_by: image-extraction
+  attribute: ftp_accounts
+  claim_id: CLM-IMG-product.hosting.bksw04-ftp_accounts
+  compiler_note: From bkns.vn screenshot (BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+)
+  confidence: high
+  entity_id: product.hosting.bksw04
+  entity_name: BKSW04+ Hosting Windows Thường
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:42.325653+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+
+  valid_from: '2026-04-07'
+  value: Unlimited
+- approved_at: '2026-04-07T16:35:42.325653+07:00'
+  approved_by: image-extraction
+  attribute: min_payment_period
+  claim_id: CLM-IMG-product.hosting.bksw04-min_period
+  compiler_note: Minimum payment period from bkns.vn (BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+)
+  confidence: high
+  entity_id: product.hosting.bksw04
+  entity_name: BKSW04+ Hosting Windows Thường
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:42.325653+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+
+  valid_from: '2026-04-07'
+  value: 03 tháng
+- approved_at: '2026-04-07T16:35:42.325653+07:00'
+  approved_by: image-extraction
+  attribute: mssql_accounts
+  claim_id: CLM-IMG-product.hosting.bksw04-mssql_accounts
+  compiler_note: From bkns.vn screenshot (BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+)
+  confidence: high
+  entity_id: product.hosting.bksw04
+  entity_name: BKSW04+ Hosting Windows Thường
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:42.325653+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+
+  valid_from: '2026-04-07'
+  value: 15
+- approved_at: '2026-04-07T16:35:42.325653+07:00'
+  approved_by: image-extraction
+  attribute: parked_sub_domain
+  claim_id: CLM-IMG-product.hosting.bksw04-parked_sub_domain
+  compiler_note: From bkns.vn screenshot (BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+)
+  confidence: high
+  entity_id: product.hosting.bksw04
+  entity_name: BKSW04+ Hosting Windows Thường
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:42.325653+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+
+  valid_from: '2026-04-07'
+  value: Unlimited
+- approved_at: '2026-04-07T16:35:42.325653+07:00'
+  approved_by: image-extraction
+  attribute: website_price
+  claim_id: CLM-IMG-product.hosting.bksw04-website_price
+  compiler_note: Extracted from website screenshot (BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+),
+    BKSW04+ Hosting Windows Thường
+  confidence: high
+  entity_id: product.hosting.bksw04
+  entity_name: BKSW04+ Hosting Windows Thường
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:42.325653+07:00'
+  qualifiers:
+    note: Giá hiển thị trên web, có thể đã bao gồm giảm giá
+    period: 1 tháng
+    source: bkns.vn website screenshot
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 199500
+- approved_at: '2026-04-07T16:35:42.325653+07:00'
+  approved_by: image-extraction
+  attribute: bandwidth
+  claim_id: CLM-IMG-product.hosting.bksw05-bandwidth
+  compiler_note: From bkns.vn screenshot (BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+)
+  confidence: high
+  entity_id: product.hosting.bksw05
+  entity_name: BKSW05+ Hosting Windows Thường
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:42.325653+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+
+  valid_from: '2026-04-07'
+  value: Unlimited
+- approved_at: '2026-04-07T16:35:42.325653+07:00'
+  approved_by: image-extraction
+  attribute: disk_space
+  claim_id: CLM-IMG-product.hosting.bksw05-disk_space
+  compiler_note: From bkns.vn screenshot (BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+)
+  confidence: high
+  entity_id: product.hosting.bksw05
+  entity_name: BKSW05+ Hosting Windows Thường
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:42.325653+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+
+  valid_from: '2026-04-07'
+  value: 15 GB
+- approved_at: '2026-04-07T16:35:42.325653+07:00'
+  approved_by: image-extraction
+  attribute: domain_count
+  claim_id: CLM-IMG-product.hosting.bksw05-domain_count
+  compiler_note: From bkns.vn screenshot (BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+)
+  confidence: high
+  entity_id: product.hosting.bksw05
+  entity_name: BKSW05+ Hosting Windows Thường
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:42.325653+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+
+  valid_from: '2026-04-07'
+  value: 15
+- approved_at: '2026-04-07T16:35:42.325653+07:00'
+  approved_by: image-extraction
+  attribute: email_accounts
+  claim_id: CLM-IMG-product.hosting.bksw05-email_accounts
+  compiler_note: From bkns.vn screenshot (BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+)
+  confidence: high
+  entity_id: product.hosting.bksw05
+  entity_name: BKSW05+ Hosting Windows Thường
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:42.325653+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+
+  valid_from: '2026-04-07'
+  value: 150
+- approved_at: '2026-04-07T16:35:42.325653+07:00'
+  approved_by: image-extraction
+  attribute: ftp_accounts
+  claim_id: CLM-IMG-product.hosting.bksw05-ftp_accounts
+  compiler_note: From bkns.vn screenshot (BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+)
+  confidence: high
+  entity_id: product.hosting.bksw05
+  entity_name: BKSW05+ Hosting Windows Thường
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:42.325653+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+
+  valid_from: '2026-04-07'
+  value: Unlimited
+- approved_at: '2026-04-07T16:35:42.325653+07:00'
+  approved_by: image-extraction
+  attribute: min_payment_period
+  claim_id: CLM-IMG-product.hosting.bksw05-min_period
+  compiler_note: Minimum payment period from bkns.vn (BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+)
+  confidence: high
+  entity_id: product.hosting.bksw05
+  entity_name: BKSW05+ Hosting Windows Thường
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:42.325653+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+
+  valid_from: '2026-04-07'
+  value: 01 tháng
+- approved_at: '2026-04-07T16:35:42.325653+07:00'
+  approved_by: image-extraction
+  attribute: mssql_accounts
+  claim_id: CLM-IMG-product.hosting.bksw05-mssql_accounts
+  compiler_note: From bkns.vn screenshot (BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+)
+  confidence: high
+  entity_id: product.hosting.bksw05
+  entity_name: BKSW05+ Hosting Windows Thường
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:42.325653+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+
+  valid_from: '2026-04-07'
+  value: 20
+- approved_at: '2026-04-07T16:35:42.325653+07:00'
+  approved_by: image-extraction
+  attribute: parked_sub_domain
+  claim_id: CLM-IMG-product.hosting.bksw05-parked_sub_domain
+  compiler_note: From bkns.vn screenshot (BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+)
+  confidence: high
+  entity_id: product.hosting.bksw05
+  entity_name: BKSW05+ Hosting Windows Thường
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:42.325653+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+
+  valid_from: '2026-04-07'
+  value: Unlimited
+- approved_at: '2026-04-07T16:35:42.325653+07:00'
+  approved_by: image-extraction
+  attribute: website_price
+  claim_id: CLM-IMG-product.hosting.bksw05-website_price
+  compiler_note: Extracted from website screenshot (BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+),
+    BKSW05+ Hosting Windows Thường
+  confidence: high
+  entity_id: product.hosting.bksw05
+  entity_name: BKSW05+ Hosting Windows Thường
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:35:42.325653+07:00'
+  qualifiers:
+    note: Giá hiển thị trên web, có thể đã bao gồm giảm giá
+    period: 1 tháng
+    source: bkns.vn website screenshot
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 370500
+- approved_at: '2026-04-07T16:36:12.093583+07:00'
+  approved_by: image-extraction
+  attribute: min_payment_period
+  claim_id: CLM-IMG-product.hosting.rl01-min_period
+  compiler_note: Minimum payment period from bkns.vn (RL01-RL02-RL03-RL04)
+  confidence: high
+  entity_id: product.hosting.rl01
+  entity_name: Reseller Hosting cPanel RL01
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:36:12.093583+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-RL01-RL02-RL03-RL04
+  valid_from: '2026-04-07'
+  value: 3 tháng
+- approved_at: '2026-04-07T16:36:12.093583+07:00'
+  approved_by: image-extraction
+  attribute: storage
+  claim_id: CLM-IMG-product.hosting.rl01-storage
+  compiler_note: From bkns.vn screenshot (RL01-RL02-RL03-RL04)
+  confidence: high
+  entity_id: product.hosting.rl01
+  entity_name: Reseller Hosting cPanel RL01
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:36:12.093583+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-RL01-RL02-RL03-RL04
+  valid_from: '2026-04-07'
+  value: 5 GB
+- approved_at: '2026-04-07T16:36:12.093583+07:00'
+  approved_by: image-extraction
+  attribute: users
+  claim_id: CLM-IMG-product.hosting.rl01-users
+  compiler_note: From bkns.vn screenshot (RL01-RL02-RL03-RL04)
+  confidence: high
+  entity_id: product.hosting.rl01
+  entity_name: Reseller Hosting cPanel RL01
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:36:12.093583+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-RL01-RL02-RL03-RL04
+  valid_from: '2026-04-07'
+  value: 10
+- approved_at: '2026-04-07T16:36:12.093583+07:00'
+  approved_by: image-extraction
+  attribute: website_price
+  claim_id: CLM-IMG-product.hosting.rl01-website_price
+  compiler_note: Extracted from website screenshot (RL01-RL02-RL03-RL04), Reseller
+    Hosting cPanel RL01
+  confidence: high
+  entity_id: product.hosting.rl01
+  entity_name: Reseller Hosting cPanel RL01
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:36:12.093583+07:00'
+  qualifiers:
+    note: Giá hiển thị trên web, có thể đã bao gồm giảm giá
+    period: 1 tháng
+    source: bkns.vn website screenshot
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-RL01-RL02-RL03-RL04
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 390000
+- approved_at: '2026-04-07T16:36:12.093583+07:00'
+  approved_by: image-extraction
+  attribute: min_payment_period
+  claim_id: CLM-IMG-product.hosting.rl02-min_period
+  compiler_note: Minimum payment period from bkns.vn (RL01-RL02-RL03-RL04)
+  confidence: high
+  entity_id: product.hosting.rl02
+  entity_name: Reseller Hosting cPanel RL02
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:36:12.093583+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-RL01-RL02-RL03-RL04
+  valid_from: '2026-04-07'
+  value: 1 tháng
+- approved_at: '2026-04-07T16:36:12.093583+07:00'
+  approved_by: image-extraction
+  attribute: storage
+  claim_id: CLM-IMG-product.hosting.rl02-storage
+  compiler_note: From bkns.vn screenshot (RL01-RL02-RL03-RL04)
+  confidence: high
+  entity_id: product.hosting.rl02
+  entity_name: Reseller Hosting cPanel RL02
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:36:12.093583+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-RL01-RL02-RL03-RL04
+  valid_from: '2026-04-07'
+  value: 15 GB
+- approved_at: '2026-04-07T16:36:12.093583+07:00'
+  approved_by: image-extraction
+  attribute: users
+  claim_id: CLM-IMG-product.hosting.rl02-users
+  compiler_note: From bkns.vn screenshot (RL01-RL02-RL03-RL04)
+  confidence: high
+  entity_id: product.hosting.rl02
+  entity_name: Reseller Hosting cPanel RL02
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:36:12.093583+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-RL01-RL02-RL03-RL04
+  valid_from: '2026-04-07'
+  value: 30
+- approved_at: '2026-04-07T16:36:12.093583+07:00'
+  approved_by: image-extraction
+  attribute: website_price
+  claim_id: CLM-IMG-product.hosting.rl02-website_price
+  compiler_note: Extracted from website screenshot (RL01-RL02-RL03-RL04), Reseller
+    Hosting cPanel RL02
+  confidence: high
+  entity_id: product.hosting.rl02
+  entity_name: Reseller Hosting cPanel RL02
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:36:12.093583+07:00'
+  qualifiers:
+    note: Giá hiển thị trên web, có thể đã bao gồm giảm giá
+    period: 1 tháng
+    source: bkns.vn website screenshot
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-RL01-RL02-RL03-RL04
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 730000
+- approved_at: '2026-04-07T16:36:12.093583+07:00'
+  approved_by: image-extraction
+  attribute: min_payment_period
+  claim_id: CLM-IMG-product.hosting.rl03-min_period
+  compiler_note: Minimum payment period from bkns.vn (RL01-RL02-RL03-RL04)
+  confidence: high
+  entity_id: product.hosting.rl03
+  entity_name: Reseller Hosting cPanel RL03
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:36:12.093583+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-RL01-RL02-RL03-RL04
+  valid_from: '2026-04-07'
+  value: 1 tháng
+- approved_at: '2026-04-07T16:36:12.093583+07:00'
+  approved_by: image-extraction
+  attribute: storage
+  claim_id: CLM-IMG-product.hosting.rl03-storage
+  compiler_note: From bkns.vn screenshot (RL01-RL02-RL03-RL04)
+  confidence: high
+  entity_id: product.hosting.rl03
+  entity_name: Reseller Hosting cPanel RL03
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:36:12.093583+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-RL01-RL02-RL03-RL04
+  valid_from: '2026-04-07'
+  value: 20 GB
+- approved_at: '2026-04-07T16:36:12.093583+07:00'
+  approved_by: image-extraction
+  attribute: users
+  claim_id: CLM-IMG-product.hosting.rl03-users
+  compiler_note: From bkns.vn screenshot (RL01-RL02-RL03-RL04)
+  confidence: high
+  entity_id: product.hosting.rl03
+  entity_name: Reseller Hosting cPanel RL03
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:36:12.093583+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-RL01-RL02-RL03-RL04
+  valid_from: '2026-04-07'
+  value: 50
+- approved_at: '2026-04-07T16:36:12.093583+07:00'
+  approved_by: image-extraction
+  attribute: website_price
+  claim_id: CLM-IMG-product.hosting.rl03-website_price
+  compiler_note: Extracted from website screenshot (RL01-RL02-RL03-RL04), Reseller
+    Hosting cPanel RL03
+  confidence: high
+  entity_id: product.hosting.rl03
+  entity_name: Reseller Hosting cPanel RL03
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:36:12.093583+07:00'
+  qualifiers:
+    note: Giá hiển thị trên web, có thể đã bao gồm giảm giá
+    period: 1 tháng
+    source: bkns.vn website screenshot
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-RL01-RL02-RL03-RL04
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 1230000
+- approved_at: '2026-04-07T16:36:12.093583+07:00'
+  approved_by: image-extraction
+  attribute: min_payment_period
+  claim_id: CLM-IMG-product.hosting.rl04-min_period
+  compiler_note: Minimum payment period from bkns.vn (RL01-RL02-RL03-RL04)
+  confidence: high
+  entity_id: product.hosting.rl04
+  entity_name: Reseller Hosting cPanel RL04
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:36:12.093583+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-RL01-RL02-RL03-RL04
+  valid_from: '2026-04-07'
+  value: 1 tháng
+- approved_at: '2026-04-07T16:36:12.093583+07:00'
+  approved_by: image-extraction
+  attribute: storage
+  claim_id: CLM-IMG-product.hosting.rl04-storage
+  compiler_note: From bkns.vn screenshot (RL01-RL02-RL03-RL04)
+  confidence: high
+  entity_id: product.hosting.rl04
+  entity_name: Reseller Hosting cPanel RL04
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:36:12.093583+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-RL01-RL02-RL03-RL04
+  valid_from: '2026-04-07'
+  value: 50 GB
+- approved_at: '2026-04-07T16:36:12.093583+07:00'
+  approved_by: image-extraction
+  attribute: users
+  claim_id: CLM-IMG-product.hosting.rl04-users
+  compiler_note: From bkns.vn screenshot (RL01-RL02-RL03-RL04)
+  confidence: high
+  entity_id: product.hosting.rl04
+  entity_name: Reseller Hosting cPanel RL04
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:36:12.093583+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-RL01-RL02-RL03-RL04
+  valid_from: '2026-04-07'
+  value: 70
+- approved_at: '2026-04-07T16:36:12.093583+07:00'
+  approved_by: image-extraction
+  attribute: website_price
+  claim_id: CLM-IMG-product.hosting.rl04-website_price
+  compiler_note: Extracted from website screenshot (RL01-RL02-RL03-RL04), Reseller
+    Hosting cPanel RL04
+  confidence: high
+  entity_id: product.hosting.rl04
+  entity_name: Reseller Hosting cPanel RL04
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:36:12.093583+07:00'
+  qualifiers:
+    note: Giá hiển thị trên web, có thể đã bao gồm giảm giá
+    period: 1 tháng
+    source: bkns.vn website screenshot
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-RL01-RL02-RL03-RL04
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 1500000
+- approved_at: '2026-04-07T16:33:55.131578+07:00'
+  approved_by: image-extraction
+  attribute: bandwidth
+  claim_id: CLM-IMG-product.hosting.wpcp01-bandwidth
+  compiler_note: From bkns.vn screenshot (WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06)
+  confidence: high
+  entity_id: product.hosting.wpcp01
+  entity_name: WordPress Hosting WPCP01
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:55.131578+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06
+  valid_from: '2026-04-07'
+  value: 30 GB
+- approved_at: '2026-04-07T16:33:55.131578+07:00'
+  approved_by: image-extraction
+  attribute: domain_count
+  claim_id: CLM-IMG-product.hosting.wpcp01-domain_count
+  compiler_note: From bkns.vn screenshot (WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06)
+  confidence: high
+  entity_id: product.hosting.wpcp01
+  entity_name: WordPress Hosting WPCP01
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:55.131578+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06
+  valid_from: '2026-04-07'
+  value: 2
+- approved_at: '2026-04-07T16:33:55.131578+07:00'
+  approved_by: image-extraction
+  attribute: email_accounts
+  claim_id: CLM-IMG-product.hosting.wpcp01-email_accounts
+  compiler_note: From bkns.vn screenshot (WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06)
+  confidence: high
+  entity_id: product.hosting.wpcp01
+  entity_name: WordPress Hosting WPCP01
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:55.131578+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06
+  valid_from: '2026-04-07'
+  value: 10
+- approved_at: '2026-04-07T16:33:55.131578+07:00'
+  approved_by: image-extraction
+  attribute: ftp_accounts
+  claim_id: CLM-IMG-product.hosting.wpcp01-ftp_accounts
+  compiler_note: From bkns.vn screenshot (WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06)
+  confidence: high
+  entity_id: product.hosting.wpcp01
+  entity_name: WordPress Hosting WPCP01
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:55.131578+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06
+  valid_from: '2026-04-07'
+  value: 3
+- approved_at: '2026-04-07T16:33:55.131578+07:00'
+  approved_by: image-extraction
+  attribute: min_payment_period
+  claim_id: CLM-IMG-product.hosting.wpcp01-min_period
+  compiler_note: Minimum payment period from bkns.vn (WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06)
+  confidence: high
+  entity_id: product.hosting.wpcp01
+  entity_name: WordPress Hosting WPCP01
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:55.131578+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06
+  valid_from: '2026-04-07'
+  value: 6 tháng
+- approved_at: '2026-04-07T16:33:55.131578+07:00'
+  approved_by: image-extraction
+  attribute: parked_domains
+  claim_id: CLM-IMG-product.hosting.wpcp01-parked_domains
+  compiler_note: From bkns.vn screenshot (WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06)
+  confidence: high
+  entity_id: product.hosting.wpcp01
+  entity_name: WordPress Hosting WPCP01
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:55.131578+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06
+  valid_from: '2026-04-07'
+  value: 4
+- approved_at: '2026-04-07T16:33:55.131578+07:00'
+  approved_by: image-extraction
+  attribute: storage
+  claim_id: CLM-IMG-product.hosting.wpcp01-storage
+  compiler_note: From bkns.vn screenshot (WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06)
+  confidence: high
+  entity_id: product.hosting.wpcp01
+  entity_name: WordPress Hosting WPCP01
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:55.131578+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06
+  valid_from: '2026-04-07'
+  value: 1 GB SSD
+- approved_at: '2026-04-07T16:33:55.131578+07:00'
+  approved_by: image-extraction
+  attribute: sub_domains
+  claim_id: CLM-IMG-product.hosting.wpcp01-sub_domains
+  compiler_note: From bkns.vn screenshot (WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06)
+  confidence: high
+  entity_id: product.hosting.wpcp01
+  entity_name: WordPress Hosting WPCP01
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:55.131578+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06
+  valid_from: '2026-04-07'
+  value: 5
+- approved_at: '2026-04-07T16:33:55.131578+07:00'
+  approved_by: image-extraction
+  attribute: website_price
+  claim_id: CLM-IMG-product.hosting.wpcp01-website_price
+  compiler_note: Extracted from website screenshot (WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06),
+    WordPress Hosting WPCP01
+  confidence: high
+  entity_id: product.hosting.wpcp01
+  entity_name: WordPress Hosting WPCP01
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:55.131578+07:00'
+  qualifiers:
+    note: Giá hiển thị trên web, có thể đã bao gồm giảm giá
+    period: 1 tháng
+    source: bkns.vn website screenshot
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 47500
+- approved_at: '2026-04-07T16:33:55.131578+07:00'
+  approved_by: image-extraction
+  attribute: bandwidth
+  claim_id: CLM-IMG-product.hosting.wpcp02-bandwidth
+  compiler_note: From bkns.vn screenshot (WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06)
+  confidence: high
+  entity_id: product.hosting.wpcp02
+  entity_name: WordPress Hosting WPCP02
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:55.131578+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06
+  valid_from: '2026-04-07'
+  value: Unlimited
+- approved_at: '2026-04-07T16:33:55.131578+07:00'
+  approved_by: image-extraction
+  attribute: domain_count
+  claim_id: CLM-IMG-product.hosting.wpcp02-domain_count
+  compiler_note: From bkns.vn screenshot (WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06)
+  confidence: high
+  entity_id: product.hosting.wpcp02
+  entity_name: WordPress Hosting WPCP02
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:55.131578+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06
+  valid_from: '2026-04-07'
+  value: 3
+- approved_at: '2026-04-07T16:33:55.131578+07:00'
+  approved_by: image-extraction
+  attribute: email_accounts
+  claim_id: CLM-IMG-product.hosting.wpcp02-email_accounts
+  compiler_note: From bkns.vn screenshot (WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06)
+  confidence: high
+  entity_id: product.hosting.wpcp02
+  entity_name: WordPress Hosting WPCP02
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:55.131578+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06
+  valid_from: '2026-04-07'
+  value: Unlimited
+- approved_at: '2026-04-07T16:33:55.131578+07:00'
+  approved_by: image-extraction
+  attribute: ftp_accounts
+  claim_id: CLM-IMG-product.hosting.wpcp02-ftp_accounts
+  compiler_note: From bkns.vn screenshot (WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06)
+  confidence: high
+  entity_id: product.hosting.wpcp02
+  entity_name: WordPress Hosting WPCP02
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:55.131578+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06
+  valid_from: '2026-04-07'
+  value: Unlimited
+- approved_at: '2026-04-07T16:33:55.131578+07:00'
+  approved_by: image-extraction
+  attribute: min_payment_period
+  claim_id: CLM-IMG-product.hosting.wpcp02-min_period
+  compiler_note: Minimum payment period from bkns.vn (WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06)
+  confidence: high
+  entity_id: product.hosting.wpcp02
+  entity_name: WordPress Hosting WPCP02
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:55.131578+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06
+  valid_from: '2026-04-07'
+  value: 6 tháng
+- approved_at: '2026-04-07T16:33:55.131578+07:00'
+  approved_by: image-extraction
+  attribute: parked_domains
+  claim_id: CLM-IMG-product.hosting.wpcp02-parked_domains
+  compiler_note: From bkns.vn screenshot (WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06)
+  confidence: high
+  entity_id: product.hosting.wpcp02
+  entity_name: WordPress Hosting WPCP02
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:55.131578+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06
+  valid_from: '2026-04-07'
+  value: Unlimited
+- approved_at: '2026-04-07T16:33:55.131578+07:00'
+  approved_by: image-extraction
+  attribute: storage
+  claim_id: CLM-IMG-product.hosting.wpcp02-storage
+  compiler_note: From bkns.vn screenshot (WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06)
+  confidence: high
+  entity_id: product.hosting.wpcp02
+  entity_name: WordPress Hosting WPCP02
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:55.131578+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06
+  valid_from: '2026-04-07'
+  value: 1.5 GB SSD
+- approved_at: '2026-04-07T16:33:55.131578+07:00'
+  approved_by: image-extraction
+  attribute: sub_domains
+  claim_id: CLM-IMG-product.hosting.wpcp02-sub_domains
+  compiler_note: From bkns.vn screenshot (WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06)
+  confidence: high
+  entity_id: product.hosting.wpcp02
+  entity_name: WordPress Hosting WPCP02
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:55.131578+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06
+  valid_from: '2026-04-07'
+  value: Unlimited
+- approved_at: '2026-04-07T16:33:55.131578+07:00'
+  approved_by: image-extraction
+  attribute: website_price
+  claim_id: CLM-IMG-product.hosting.wpcp02-website_price
+  compiler_note: Extracted from website screenshot (WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06),
+    WordPress Hosting WPCP02
+  confidence: high
+  entity_id: product.hosting.wpcp02
+  entity_name: WordPress Hosting WPCP02
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:55.131578+07:00'
+  qualifiers:
+    note: Giá hiển thị trên web, có thể đã bao gồm giảm giá
+    period: 1 tháng
+    source: bkns.vn website screenshot
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 74100
+- approved_at: '2026-04-07T16:33:55.131578+07:00'
+  approved_by: image-extraction
+  attribute: bandwidth
+  claim_id: CLM-IMG-product.hosting.wpcp03-bandwidth
+  compiler_note: From bkns.vn screenshot (WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06)
+  confidence: high
+  entity_id: product.hosting.wpcp03
+  entity_name: WordPress Hosting WPCP03
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:55.131578+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06
+  valid_from: '2026-04-07'
+  value: Unlimited
+- approved_at: '2026-04-07T16:33:55.131578+07:00'
+  approved_by: image-extraction
+  attribute: domain_count
+  claim_id: CLM-IMG-product.hosting.wpcp03-domain_count
+  compiler_note: From bkns.vn screenshot (WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06)
+  confidence: high
+  entity_id: product.hosting.wpcp03
+  entity_name: WordPress Hosting WPCP03
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:55.131578+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06
+  valid_from: '2026-04-07'
+  value: 4
+- approved_at: '2026-04-07T16:33:55.131578+07:00'
+  approved_by: image-extraction
+  attribute: email_accounts
+  claim_id: CLM-IMG-product.hosting.wpcp03-email_accounts
+  compiler_note: From bkns.vn screenshot (WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06)
+  confidence: high
+  entity_id: product.hosting.wpcp03
+  entity_name: WordPress Hosting WPCP03
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:55.131578+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06
+  valid_from: '2026-04-07'
+  value: Unlimited
+- approved_at: '2026-04-07T16:33:55.131578+07:00'
+  approved_by: image-extraction
+  attribute: ftp_accounts
+  claim_id: CLM-IMG-product.hosting.wpcp03-ftp_accounts
+  compiler_note: From bkns.vn screenshot (WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06)
+  confidence: high
+  entity_id: product.hosting.wpcp03
+  entity_name: WordPress Hosting WPCP03
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:55.131578+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06
+  valid_from: '2026-04-07'
+  value: Unlimited
+- approved_at: '2026-04-07T16:33:55.131578+07:00'
+  approved_by: image-extraction
+  attribute: min_payment_period
+  claim_id: CLM-IMG-product.hosting.wpcp03-min_period
+  compiler_note: Minimum payment period from bkns.vn (WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06)
+  confidence: high
+  entity_id: product.hosting.wpcp03
+  entity_name: WordPress Hosting WPCP03
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:55.131578+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06
+  valid_from: '2026-04-07'
+  value: 3 tháng
+- approved_at: '2026-04-07T16:33:55.131578+07:00'
+  approved_by: image-extraction
+  attribute: parked_domains
+  claim_id: CLM-IMG-product.hosting.wpcp03-parked_domains
+  compiler_note: From bkns.vn screenshot (WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06)
+  confidence: high
+  entity_id: product.hosting.wpcp03
+  entity_name: WordPress Hosting WPCP03
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:55.131578+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06
+  valid_from: '2026-04-07'
+  value: Unlimited
+- approved_at: '2026-04-07T16:33:55.131578+07:00'
+  approved_by: image-extraction
+  attribute: storage
+  claim_id: CLM-IMG-product.hosting.wpcp03-storage
+  compiler_note: From bkns.vn screenshot (WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06)
+  confidence: high
+  entity_id: product.hosting.wpcp03
+  entity_name: WordPress Hosting WPCP03
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:55.131578+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06
+  valid_from: '2026-04-07'
+  value: 2 GB SSD
+- approved_at: '2026-04-07T16:33:55.131578+07:00'
+  approved_by: image-extraction
+  attribute: sub_domains
+  claim_id: CLM-IMG-product.hosting.wpcp03-sub_domains
+  compiler_note: From bkns.vn screenshot (WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06)
+  confidence: high
+  entity_id: product.hosting.wpcp03
+  entity_name: WordPress Hosting WPCP03
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:55.131578+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06
+  valid_from: '2026-04-07'
+  value: Unlimited
+- approved_at: '2026-04-07T16:33:55.131578+07:00'
+  approved_by: image-extraction
+  attribute: website_price
+  claim_id: CLM-IMG-product.hosting.wpcp03-website_price
+  compiler_note: Extracted from website screenshot (WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06),
+    WordPress Hosting WPCP03
+  confidence: high
+  entity_id: product.hosting.wpcp03
+  entity_name: WordPress Hosting WPCP03
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:55.131578+07:00'
+  qualifiers:
+    note: Giá hiển thị trên web, có thể đã bao gồm giảm giá
+    period: 1 tháng
+    source: bkns.vn website screenshot
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 104500
+- approved_at: '2026-04-07T16:33:55.131578+07:00'
+  approved_by: image-extraction
+  attribute: bandwidth
+  claim_id: CLM-IMG-product.hosting.wpcp04-bandwidth
+  compiler_note: From bkns.vn screenshot (WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06)
+  confidence: high
+  entity_id: product.hosting.wpcp04
+  entity_name: WordPress Hosting WPCP04
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:55.131578+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06
+  valid_from: '2026-04-07'
+  value: Unlimited
+- approved_at: '2026-04-07T16:33:55.131578+07:00'
+  approved_by: image-extraction
+  attribute: domain_count
+  claim_id: CLM-IMG-product.hosting.wpcp04-domain_count
+  compiler_note: From bkns.vn screenshot (WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06)
+  confidence: high
+  entity_id: product.hosting.wpcp04
+  entity_name: WordPress Hosting WPCP04
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:55.131578+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06
+  valid_from: '2026-04-07'
+  value: 5
+- approved_at: '2026-04-07T16:33:55.131578+07:00'
+  approved_by: image-extraction
+  attribute: email_accounts
+  claim_id: CLM-IMG-product.hosting.wpcp04-email_accounts
+  compiler_note: From bkns.vn screenshot (WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06)
+  confidence: high
+  entity_id: product.hosting.wpcp04
+  entity_name: WordPress Hosting WPCP04
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:55.131578+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06
+  valid_from: '2026-04-07'
+  value: Unlimited
+- approved_at: '2026-04-07T16:33:55.131578+07:00'
+  approved_by: image-extraction
+  attribute: ftp_accounts
+  claim_id: CLM-IMG-product.hosting.wpcp04-ftp_accounts
+  compiler_note: From bkns.vn screenshot (WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06)
+  confidence: high
+  entity_id: product.hosting.wpcp04
+  entity_name: WordPress Hosting WPCP04
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:55.131578+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06
+  valid_from: '2026-04-07'
+  value: Unlimited
+- approved_at: '2026-04-07T16:33:55.131578+07:00'
+  approved_by: image-extraction
+  attribute: min_payment_period
+  claim_id: CLM-IMG-product.hosting.wpcp04-min_period
+  compiler_note: Minimum payment period from bkns.vn (WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06)
+  confidence: high
+  entity_id: product.hosting.wpcp04
+  entity_name: WordPress Hosting WPCP04
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:55.131578+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06
+  valid_from: '2026-04-07'
+  value: 3 tháng
+- approved_at: '2026-04-07T16:33:55.131578+07:00'
+  approved_by: image-extraction
+  attribute: parked_domains
+  claim_id: CLM-IMG-product.hosting.wpcp04-parked_domains
+  compiler_note: From bkns.vn screenshot (WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06)
+  confidence: high
+  entity_id: product.hosting.wpcp04
+  entity_name: WordPress Hosting WPCP04
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:55.131578+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06
+  valid_from: '2026-04-07'
+  value: Unlimited
+- approved_at: '2026-04-07T16:33:55.131578+07:00'
+  approved_by: image-extraction
+  attribute: storage
+  claim_id: CLM-IMG-product.hosting.wpcp04-storage
+  compiler_note: From bkns.vn screenshot (WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06)
+  confidence: high
+  entity_id: product.hosting.wpcp04
+  entity_name: WordPress Hosting WPCP04
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:55.131578+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06
+  valid_from: '2026-04-07'
+  value: 3 GB SSD
+- approved_at: '2026-04-07T16:33:55.131578+07:00'
+  approved_by: image-extraction
+  attribute: sub_domains
+  claim_id: CLM-IMG-product.hosting.wpcp04-sub_domains
+  compiler_note: From bkns.vn screenshot (WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06)
+  confidence: high
+  entity_id: product.hosting.wpcp04
+  entity_name: WordPress Hosting WPCP04
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:55.131578+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06
+  valid_from: '2026-04-07'
+  value: Unlimited
+- approved_at: '2026-04-07T16:33:55.131578+07:00'
+  approved_by: image-extraction
+  attribute: website_price
+  claim_id: CLM-IMG-product.hosting.wpcp04-website_price
+  compiler_note: Extracted from website screenshot (WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06),
+    WordPress Hosting WPCP04
+  confidence: high
+  entity_id: product.hosting.wpcp04
+  entity_name: WordPress Hosting WPCP04
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:55.131578+07:00'
+  qualifiers:
+    note: Giá hiển thị trên web, có thể đã bao gồm giảm giá
+    period: 1 tháng
+    source: bkns.vn website screenshot
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 137750
+- approved_at: '2026-04-07T16:33:55.131578+07:00'
+  approved_by: image-extraction
+  attribute: bandwidth
+  claim_id: CLM-IMG-product.hosting.wpcp05-bandwidth
+  compiler_note: From bkns.vn screenshot (WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06)
+  confidence: high
+  entity_id: product.hosting.wpcp05
+  entity_name: WordPress Hosting WPCP05
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:55.131578+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06
+  valid_from: '2026-04-07'
+  value: Unlimited
+- approved_at: '2026-04-07T16:33:55.131578+07:00'
+  approved_by: image-extraction
+  attribute: domain_count
+  claim_id: CLM-IMG-product.hosting.wpcp05-domain_count
+  compiler_note: From bkns.vn screenshot (WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06)
+  confidence: high
+  entity_id: product.hosting.wpcp05
+  entity_name: WordPress Hosting WPCP05
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:55.131578+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06
+  valid_from: '2026-04-07'
+  value: 6
+- approved_at: '2026-04-07T16:33:55.131578+07:00'
+  approved_by: image-extraction
+  attribute: email_accounts
+  claim_id: CLM-IMG-product.hosting.wpcp05-email_accounts
+  compiler_note: From bkns.vn screenshot (WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06)
+  confidence: high
+  entity_id: product.hosting.wpcp05
+  entity_name: WordPress Hosting WPCP05
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:55.131578+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06
+  valid_from: '2026-04-07'
+  value: Unlimited
+- approved_at: '2026-04-07T16:33:55.131578+07:00'
+  approved_by: image-extraction
+  attribute: ftp_accounts
+  claim_id: CLM-IMG-product.hosting.wpcp05-ftp_accounts
+  compiler_note: From bkns.vn screenshot (WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06)
+  confidence: high
+  entity_id: product.hosting.wpcp05
+  entity_name: WordPress Hosting WPCP05
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:55.131578+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06
+  valid_from: '2026-04-07'
+  value: Unlimited
+- approved_at: '2026-04-07T16:33:55.131578+07:00'
+  approved_by: image-extraction
+  attribute: min_payment_period
+  claim_id: CLM-IMG-product.hosting.wpcp05-min_period
+  compiler_note: Minimum payment period from bkns.vn (WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06)
+  confidence: high
+  entity_id: product.hosting.wpcp05
+  entity_name: WordPress Hosting WPCP05
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:55.131578+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06
+  valid_from: '2026-04-07'
+  value: 1 tháng
+- approved_at: '2026-04-07T16:33:55.131578+07:00'
+  approved_by: image-extraction
+  attribute: parked_domains
+  claim_id: CLM-IMG-product.hosting.wpcp05-parked_domains
+  compiler_note: From bkns.vn screenshot (WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06)
+  confidence: high
+  entity_id: product.hosting.wpcp05
+  entity_name: WordPress Hosting WPCP05
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:55.131578+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06
+  valid_from: '2026-04-07'
+  value: Unlimited
+- approved_at: '2026-04-07T16:33:55.131578+07:00'
+  approved_by: image-extraction
+  attribute: storage
+  claim_id: CLM-IMG-product.hosting.wpcp05-storage
+  compiler_note: From bkns.vn screenshot (WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06)
+  confidence: high
+  entity_id: product.hosting.wpcp05
+  entity_name: WordPress Hosting WPCP05
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:55.131578+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06
+  valid_from: '2026-04-07'
+  value: 5 GB SSD
+- approved_at: '2026-04-07T16:33:55.131578+07:00'
+  approved_by: image-extraction
+  attribute: sub_domains
+  claim_id: CLM-IMG-product.hosting.wpcp05-sub_domains
+  compiler_note: From bkns.vn screenshot (WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06)
+  confidence: high
+  entity_id: product.hosting.wpcp05
+  entity_name: WordPress Hosting WPCP05
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:55.131578+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06
+  valid_from: '2026-04-07'
+  value: Unlimited
+- approved_at: '2026-04-07T16:33:55.131578+07:00'
+  approved_by: image-extraction
+  attribute: website_price
+  claim_id: CLM-IMG-product.hosting.wpcp05-website_price
+  compiler_note: Extracted from website screenshot (WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06),
+    WordPress Hosting WPCP05
+  confidence: high
+  entity_id: product.hosting.wpcp05
+  entity_name: WordPress Hosting WPCP05
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:55.131578+07:00'
+  qualifiers:
+    note: Giá hiển thị trên web, có thể đã bao gồm giảm giá
+    period: 1 tháng
+    source: bkns.vn website screenshot
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 190000
+- approved_at: '2026-04-07T16:33:55.131578+07:00'
+  approved_by: image-extraction
+  attribute: bandwidth
+  claim_id: CLM-IMG-product.hosting.wpcp06-bandwidth
+  compiler_note: From bkns.vn screenshot (WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06)
+  confidence: high
+  entity_id: product.hosting.wpcp06
+  entity_name: WordPress Hosting WPCP06
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:55.131578+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06
+  valid_from: '2026-04-07'
+  value: Unlimited
+- approved_at: '2026-04-07T16:33:55.131578+07:00'
+  approved_by: image-extraction
+  attribute: domain_count
+  claim_id: CLM-IMG-product.hosting.wpcp06-domain_count
+  compiler_note: From bkns.vn screenshot (WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06)
+  confidence: high
+  entity_id: product.hosting.wpcp06
+  entity_name: WordPress Hosting WPCP06
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:55.131578+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06
+  valid_from: '2026-04-07'
+  value: 8
+- approved_at: '2026-04-07T16:33:55.131578+07:00'
+  approved_by: image-extraction
+  attribute: email_accounts
+  claim_id: CLM-IMG-product.hosting.wpcp06-email_accounts
+  compiler_note: From bkns.vn screenshot (WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06)
+  confidence: high
+  entity_id: product.hosting.wpcp06
+  entity_name: WordPress Hosting WPCP06
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:55.131578+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06
+  valid_from: '2026-04-07'
+  value: Unlimited
+- approved_at: '2026-04-07T16:33:55.131578+07:00'
+  approved_by: image-extraction
+  attribute: ftp_accounts
+  claim_id: CLM-IMG-product.hosting.wpcp06-ftp_accounts
+  compiler_note: From bkns.vn screenshot (WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06)
+  confidence: high
+  entity_id: product.hosting.wpcp06
+  entity_name: WordPress Hosting WPCP06
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:55.131578+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06
+  valid_from: '2026-04-07'
+  value: Unlimited
+- approved_at: '2026-04-07T16:33:55.131578+07:00'
+  approved_by: image-extraction
+  attribute: min_payment_period
+  claim_id: CLM-IMG-product.hosting.wpcp06-min_period
+  compiler_note: Minimum payment period from bkns.vn (WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06)
+  confidence: high
+  entity_id: product.hosting.wpcp06
+  entity_name: WordPress Hosting WPCP06
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:55.131578+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06
+  valid_from: '2026-04-07'
+  value: 1 tháng
+- approved_at: '2026-04-07T16:33:55.131578+07:00'
+  approved_by: image-extraction
+  attribute: parked_domains
+  claim_id: CLM-IMG-product.hosting.wpcp06-parked_domains
+  compiler_note: From bkns.vn screenshot (WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06)
+  confidence: high
+  entity_id: product.hosting.wpcp06
+  entity_name: WordPress Hosting WPCP06
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:55.131578+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06
+  valid_from: '2026-04-07'
+  value: Unlimited
+- approved_at: '2026-04-07T16:33:55.131578+07:00'
+  approved_by: image-extraction
+  attribute: storage
+  claim_id: CLM-IMG-product.hosting.wpcp06-storage
+  compiler_note: From bkns.vn screenshot (WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06)
+  confidence: high
+  entity_id: product.hosting.wpcp06
+  entity_name: WordPress Hosting WPCP06
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:55.131578+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06
+  valid_from: '2026-04-07'
+  value: 8 GB SSD
+- approved_at: '2026-04-07T16:33:55.131578+07:00'
+  approved_by: image-extraction
+  attribute: sub_domains
+  claim_id: CLM-IMG-product.hosting.wpcp06-sub_domains
+  compiler_note: From bkns.vn screenshot (WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06)
+  confidence: high
+  entity_id: product.hosting.wpcp06
+  entity_name: WordPress Hosting WPCP06
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:55.131578+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06
+  valid_from: '2026-04-07'
+  value: Unlimited
+- approved_at: '2026-04-07T16:33:55.131578+07:00'
+  approved_by: image-extraction
+  attribute: website_price
+  claim_id: CLM-IMG-product.hosting.wpcp06-website_price
+  compiler_note: Extracted from website screenshot (WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06),
+    WordPress Hosting WPCP06
+  confidence: high
+  entity_id: product.hosting.wpcp06
+  entity_name: WordPress Hosting WPCP06
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:33:55.131578+07:00'
+  qualifiers:
+    note: Giá hiển thị trên web, có thể đã bao gồm giảm giá
+    period: 1 tháng
+    source: bkns.vn website screenshot
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 237500
+- approved_at: '2026-04-07T16:34:04.798652+07:00'
+  approved_by: image-extraction
+  attribute: bandwidth
+  claim_id: CLM-IMG-product.hosting.wpcp07-bandwidth
+  compiler_note: From bkns.vn screenshot (WPCP07-WPCP08)
+  confidence: high
+  entity_id: product.hosting.wpcp07
+  entity_name: WordPress Hosting WPCP07
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:34:04.798652+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP07-WPCP08
+  valid_from: '2026-04-07'
+  value: Unlimited
+- approved_at: '2026-04-07T16:34:04.798652+07:00'
+  approved_by: image-extraction
+  attribute: domain_count
+  claim_id: CLM-IMG-product.hosting.wpcp07-domain_count
+  compiler_note: From bkns.vn screenshot (WPCP07-WPCP08)
+  confidence: high
+  entity_id: product.hosting.wpcp07
+  entity_name: WordPress Hosting WPCP07
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:34:04.798652+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP07-WPCP08
+  valid_from: '2026-04-07'
+  value: 10
+- approved_at: '2026-04-07T16:34:04.798652+07:00'
+  approved_by: image-extraction
+  attribute: email_accounts
+  claim_id: CLM-IMG-product.hosting.wpcp07-email_accounts
+  compiler_note: From bkns.vn screenshot (WPCP07-WPCP08)
+  confidence: high
+  entity_id: product.hosting.wpcp07
+  entity_name: WordPress Hosting WPCP07
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:34:04.798652+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP07-WPCP08
+  valid_from: '2026-04-07'
+  value: Unlimited
+- approved_at: '2026-04-07T16:34:04.798652+07:00'
+  approved_by: image-extraction
+  attribute: ftp_accounts
+  claim_id: CLM-IMG-product.hosting.wpcp07-ftp_accounts
+  compiler_note: From bkns.vn screenshot (WPCP07-WPCP08)
+  confidence: high
+  entity_id: product.hosting.wpcp07
+  entity_name: WordPress Hosting WPCP07
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:34:04.798652+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP07-WPCP08
+  valid_from: '2026-04-07'
+  value: Unlimited
+- approved_at: '2026-04-07T16:34:04.798652+07:00'
+  approved_by: image-extraction
+  attribute: min_payment_period
+  claim_id: CLM-IMG-product.hosting.wpcp07-min_period
+  compiler_note: Minimum payment period from bkns.vn (WPCP07-WPCP08)
+  confidence: high
+  entity_id: product.hosting.wpcp07
+  entity_name: WordPress Hosting WPCP07
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:34:04.798652+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP07-WPCP08
+  valid_from: '2026-04-07'
+  value: 1 tháng
+- approved_at: '2026-04-07T16:34:04.798652+07:00'
+  approved_by: image-extraction
+  attribute: parked_domains
+  claim_id: CLM-IMG-product.hosting.wpcp07-parked_domains
+  compiler_note: From bkns.vn screenshot (WPCP07-WPCP08)
+  confidence: high
+  entity_id: product.hosting.wpcp07
+  entity_name: WordPress Hosting WPCP07
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:34:04.798652+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP07-WPCP08
+  valid_from: '2026-04-07'
+  value: Unlimited
+- approved_at: '2026-04-07T16:34:04.798652+07:00'
+  approved_by: image-extraction
+  attribute: storage
+  claim_id: CLM-IMG-product.hosting.wpcp07-storage
+  compiler_note: From bkns.vn screenshot (WPCP07-WPCP08)
+  confidence: high
+  entity_id: product.hosting.wpcp07
+  entity_name: WordPress Hosting WPCP07
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:34:04.798652+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP07-WPCP08
+  valid_from: '2026-04-07'
+  value: 15 GB SSD
+- approved_at: '2026-04-07T16:34:04.798652+07:00'
+  approved_by: image-extraction
+  attribute: sub_domains
+  claim_id: CLM-IMG-product.hosting.wpcp07-sub_domains
+  compiler_note: From bkns.vn screenshot (WPCP07-WPCP08)
+  confidence: high
+  entity_id: product.hosting.wpcp07
+  entity_name: WordPress Hosting WPCP07
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:34:04.798652+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP07-WPCP08
+  valid_from: '2026-04-07'
+  value: Unlimited
+- approved_at: '2026-04-07T16:34:04.798652+07:00'
+  approved_by: image-extraction
+  attribute: website_price
+  claim_id: CLM-IMG-product.hosting.wpcp07-website_price
+  compiler_note: Extracted from website screenshot (WPCP07-WPCP08), WordPress Hosting
+    WPCP07
+  confidence: high
+  entity_id: product.hosting.wpcp07
+  entity_name: WordPress Hosting WPCP07
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:34:04.798652+07:00'
+  qualifiers:
+    note: Giá hiển thị trên web, có thể đã bao gồm giảm giá
+    period: 1 tháng
+    source: bkns.vn website screenshot
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP07-WPCP08
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 370500
+- approved_at: '2026-04-07T16:34:04.798652+07:00'
+  approved_by: image-extraction
+  attribute: bandwidth
+  claim_id: CLM-IMG-product.hosting.wpcp08-bandwidth
+  compiler_note: From bkns.vn screenshot (WPCP07-WPCP08)
+  confidence: high
+  entity_id: product.hosting.wpcp08
+  entity_name: WordPress Hosting WPCP08
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:34:04.798652+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP07-WPCP08
+  valid_from: '2026-04-07'
+  value: Unlimited
+- approved_at: '2026-04-07T16:34:04.798652+07:00'
+  approved_by: image-extraction
+  attribute: domain_count
+  claim_id: CLM-IMG-product.hosting.wpcp08-domain_count
+  compiler_note: From bkns.vn screenshot (WPCP07-WPCP08)
+  confidence: high
+  entity_id: product.hosting.wpcp08
+  entity_name: WordPress Hosting WPCP08
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:34:04.798652+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP07-WPCP08
+  valid_from: '2026-04-07'
+  value: 15
+- approved_at: '2026-04-07T16:34:04.798652+07:00'
+  approved_by: image-extraction
+  attribute: email_accounts
+  claim_id: CLM-IMG-product.hosting.wpcp08-email_accounts
+  compiler_note: From bkns.vn screenshot (WPCP07-WPCP08)
+  confidence: high
+  entity_id: product.hosting.wpcp08
+  entity_name: WordPress Hosting WPCP08
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:34:04.798652+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP07-WPCP08
+  valid_from: '2026-04-07'
+  value: Unlimited
+- approved_at: '2026-04-07T16:34:04.798652+07:00'
+  approved_by: image-extraction
+  attribute: ftp_accounts
+  claim_id: CLM-IMG-product.hosting.wpcp08-ftp_accounts
+  compiler_note: From bkns.vn screenshot (WPCP07-WPCP08)
+  confidence: high
+  entity_id: product.hosting.wpcp08
+  entity_name: WordPress Hosting WPCP08
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:34:04.798652+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP07-WPCP08
+  valid_from: '2026-04-07'
+  value: Unlimited
+- approved_at: '2026-04-07T16:34:04.798652+07:00'
+  approved_by: image-extraction
+  attribute: min_payment_period
+  claim_id: CLM-IMG-product.hosting.wpcp08-min_period
+  compiler_note: Minimum payment period from bkns.vn (WPCP07-WPCP08)
+  confidence: high
+  entity_id: product.hosting.wpcp08
+  entity_name: WordPress Hosting WPCP08
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:34:04.798652+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP07-WPCP08
+  valid_from: '2026-04-07'
+  value: 1 tháng
+- approved_at: '2026-04-07T16:34:04.798652+07:00'
+  approved_by: image-extraction
+  attribute: parked_domains
+  claim_id: CLM-IMG-product.hosting.wpcp08-parked_domains
+  compiler_note: From bkns.vn screenshot (WPCP07-WPCP08)
+  confidence: high
+  entity_id: product.hosting.wpcp08
+  entity_name: WordPress Hosting WPCP08
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:34:04.798652+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP07-WPCP08
+  valid_from: '2026-04-07'
+  value: Unlimited
+- approved_at: '2026-04-07T16:34:04.798652+07:00'
+  approved_by: image-extraction
+  attribute: storage
+  claim_id: CLM-IMG-product.hosting.wpcp08-storage
+  compiler_note: From bkns.vn screenshot (WPCP07-WPCP08)
+  confidence: high
+  entity_id: product.hosting.wpcp08
+  entity_name: WordPress Hosting WPCP08
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:34:04.798652+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP07-WPCP08
+  valid_from: '2026-04-07'
+  value: 30 GB SSD
+- approved_at: '2026-04-07T16:34:04.798652+07:00'
+  approved_by: image-extraction
+  attribute: sub_domains
+  claim_id: CLM-IMG-product.hosting.wpcp08-sub_domains
+  compiler_note: From bkns.vn screenshot (WPCP07-WPCP08)
+  confidence: high
+  entity_id: product.hosting.wpcp08
+  entity_name: WordPress Hosting WPCP08
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:34:04.798652+07:00'
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP07-WPCP08
+  valid_from: '2026-04-07'
+  value: Unlimited
+- approved_at: '2026-04-07T16:34:04.798652+07:00'
+  approved_by: image-extraction
+  attribute: website_price
+  claim_id: CLM-IMG-product.hosting.wpcp08-website_price
+  compiler_note: Extracted from website screenshot (WPCP07-WPCP08), WordPress Hosting
+    WPCP08
+  confidence: high
+  entity_id: product.hosting.wpcp08
+  entity_name: WordPress Hosting WPCP08
+  entity_type: product_plan
+  observed_at: '2026-04-07T16:34:04.798652+07:00'
+  qualifiers:
+    note: Giá hiển thị trên web, có thể đã bao gồm giảm giá
+    period: 1 tháng
+    source: bkns.vn website screenshot
+  review_state: approved
+  risk_class: verified
+  source_ids:
+  - IMG-WPCP07-WPCP08
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 475000

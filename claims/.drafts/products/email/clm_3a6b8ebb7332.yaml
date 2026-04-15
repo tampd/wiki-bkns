@@ -1,0 +1,22 @@
+claim_id: CLM-3A6B8EBB7332
+entity_id: product.email_relay.bkns.bk-relay03
+entity_type: product_plan
+entity_name: BK-RELAY03
+attribute: price
+value: 500000
+unit: VND
+qualifiers:
+  billing_cycle: month
+source_ids:
+- SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_TIN_CAY_2026_04_05
+observed_at: '2026-04-14T17:05:51.487765+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ bảng giá: | Giá/Tháng | 500.000đ |'
+dual_vote:
+  status: DISAGREE
+  score: 0.5608
+  confidence: LOW
+  flag: human_review_required

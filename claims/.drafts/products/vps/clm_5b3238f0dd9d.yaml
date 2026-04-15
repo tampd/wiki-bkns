@@ -1,0 +1,16 @@
+claim_id: CLM-5B3238F0DD9D
+entity_id: ENT-PROD-VPS:vps_seo_01
+entity_type: product_plan
+entity_name: SEO 01
+attribute: free_ssl_included
+value: false
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-DICH_VU_CLOUD_VPS_SEO_MAY_CHU_AO_TOI_UU_CHO_SEO_2026_04_13
+observed_at: '2026-04-13T22:18:36.397058+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng giá, dòng ''SSL Miễn Phí'', cột ''SEO 01'': ''Không'''

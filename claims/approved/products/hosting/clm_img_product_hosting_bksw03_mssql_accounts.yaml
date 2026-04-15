@@ -1,0 +1,18 @@
+claim_id: CLM-IMG-product.hosting.bksw03-mssql_accounts
+entity_id: product.hosting.bksw03
+entity_type: product_plan
+entity_name: BKSW03+ Hosting Windows Thường
+attribute: mssql_accounts
+value: 7
+confidence: ground_truth
+review_state: approved
+risk_class: verified
+source_ids:
+  - IMG-BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+
+observed_at: '2026-04-07T16:35:42.325653+07:00'
+valid_from: '2026-04-07'
+approved_at: '2026-04-07T16:35:42.325653+07:00'
+approved_by: image-extraction
+compiler_note: From bkns.vn screenshot (BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+)
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.202Z'

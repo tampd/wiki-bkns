@@ -1,0 +1,24 @@
+claim_id: CLM-6241638FC0ED
+entity_id: product.software.cpanel_whm_license
+entity_type: product
+entity_name: Bản quyền cPanel/WHM
+attribute: feature
+value: Đa dạng, tích hợp nhiều công cụ mạnh mẽ
+unit: null
+qualifiers:
+  compared_to: DirectAdmin
+source_ids:
+- SRC-BAN_QUYEN_CPANEL_WHM_2026_04_05
+observed_at: '2026-04-14T17:17:27.654674+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: Trích từ bảng 'So sánh các gói', cột 'cPanel', dòng 'Tính năng'.
+dual_vote:
+  status: DISAGREE
+  score: 0.1008
+  confidence: LOW
+  flag: human_review_required
+value_changed_from: Giao diện đẹp, hiện đại, dễ dùng
+value_changed_at: '2026-04-14T17:17:27.654713+07:00'

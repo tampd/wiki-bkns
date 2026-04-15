@@ -1,0 +1,25 @@
+claim_id: CLM-E3F180A9A336
+entity_id: ENT-PROD-SSL-COMODO-EV
+entity_type: product
+entity_name: Comodo EV SSL
+attribute: feature
+value: Tăng cường lòng tin của khách hàng bằng cách hiển thị tên doanh nghiệp.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-COMODO_EV_SSL_CHUNG_CHI_SSL_XAC_THUC_MO_RONG_2026_04_13
+- SRC-COMODO_EV_SSL_CHUNG_CHI_SSL_XAC_THUC_MO_RONG_2026_04_05
+observed_at: '2026-04-14T16:26:39.438198+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ: • Điểm chính: Tăng cường lòng tin của khách hàng bằng cách
+  hiển thị tên doanh nghiệp.'
+value_changed_from: Một con dấu động trị giá $119 để hiển thị trên website.
+value_changed_at: '2026-04-14T16:26:39.438246+07:00'
+dual_vote:
+  status: DISAGREE
+  score: 0.3281
+  confidence: LOW
+  flag: human_review_required

@@ -1,0 +1,22 @@
+claim_id: CLM-1B731A77DFCD
+entity_id: bkns.hosting.platium.bkcp02
+entity_type: product_plan
+entity_name: BKCP02
+attribute: cpu_cores
+value: 1
+unit: Core
+qualifiers: {}
+source_ids:
+- SRC-BANG_GIA_HOSTING_2026_04_05
+observed_at: '2026-04-14T12:01:01.983254+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng Platium web hosting, cột BKCP02, dòng Số nhân CPU: 1
+  Core'
+dual_vote:
+  status: DISAGREE
+  score: 0.4208
+  confidence: LOW
+  flag: human_review_required

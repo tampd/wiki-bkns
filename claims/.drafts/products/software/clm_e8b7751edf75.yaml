@@ -1,0 +1,18 @@
+claim_id: CLM-E8B7751EDF75
+entity_id: product.software.cloudlinux
+entity_type: product_software
+entity_name: CloudLinux OS
+attribute: pricing_policy
+value: Để có giá chính xác và thông tin về các chương trình khuyến mại, khách hàng
+  cần liên hệ trực tiếp với BKNS.
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-BAN_QUYEN_CLOUDLINUX_OS_TANG_ON_INH_VA_BAO_MAT_CHO_SHARED_2026_04_13
+observed_at: '2026-04-13T21:31:33.350033+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Gói dịch vụ và bảng giá: ''Để có giá chính xác và thông tin
+  về các chương trình khuyến mại, khách hàng cần liên hệ trực tiếp với BKNS.'''

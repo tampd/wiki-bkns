@@ -1,0 +1,22 @@
+claim_id: CLM-ENT-PROD-SSL-SOURCE_U
+entity_id: ENT-PROD-SSL-013
+entity_type: product
+entity_name: PositiveSSL Multi-Domain (DV)
+attribute: source_url
+value: https://ssl.bkns.vn/ssl-bao-mat/positivessl-multi-domain
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-GEOTRUST_TRUE_BUSINESSID_MULTI_DOMAIN_WILDCARD_2026_04_04
+- SRC-COMODO_SSL_CERTIFICATE_DV_CHUNG_CHI_XAC_THUC_TEN_MIEN_2026_04_06
+- SRC-POSITIVESSL_MULTI_DOMAIN_DV_CHUNG_CHI_SSL_CHO_NHIEU_TEN_M_2026_04_06
+observed_at: '2026-04-07T00:54:06.946138+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ phần Thông tin nguồn: • URL: https://ssl.bkns.vn/ssl-bao-mat/positivessl-multi-domain'
+value_changed_from: https://ssl.bkns.vn/ssl-bao-mat/comodo-ssl
+value_changed_at: '2026-04-07T00:54:06.946158+07:00'
+approved_at: '2026-04-08T13:00:12.701113+07:00'
+approved_by: admin-batch

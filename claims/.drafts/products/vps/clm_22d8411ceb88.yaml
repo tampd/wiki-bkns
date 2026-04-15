@@ -1,0 +1,17 @@
+claim_id: CLM-22D8411CEB88
+entity_id: product.vps.cloud_vps_amd
+entity_type: product_line
+entity_name: CLOUD VPS AMD (HIỆU NĂNG CAO)
+attribute: cpu_type
+value: AMD EPYC
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-BKNS_CAMNAG_HOSTING_DOT3_2026_04_13
+observed_at: '2026-04-13T21:52:17.063353+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục 4.1 CLOUD VPS AMD: ''...sử dụng chip AMD EPYC (64 nhân/128
+  luồng).'''

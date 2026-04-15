@@ -1,0 +1,22 @@
+claim_id: CLM-38656C47F118
+entity_id: product.ssl.instantssl_pro_ov
+entity_type: product
+entity_name: InstantSSL Pro (OV)
+attribute: provider
+value: Comodo
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-INSTANTSSL_PRO_OV_CHUNG_CHI_SSL_XAC_THUC_TO_CHUC_CUA_COM_2026_04_05
+observed_at: '2026-04-14T16:32:49.697946+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: • Dịch vụ này là gì: Chứng chỉ bảo mật SSL
+  xác thực tổ chức \(Organization Validation \- OV\) do Comodo cung cấp\.'
+dual_vote:
+  status: DISAGREE
+  score: 0.498
+  confidence: LOW
+  flag: human_review_required

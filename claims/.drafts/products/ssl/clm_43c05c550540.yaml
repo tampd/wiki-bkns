@@ -1,0 +1,21 @@
+claim_id: CLM-43C05C550540
+entity_id: ENT-PROD-SSL-GT-TBID-MDW
+entity_type: product
+entity_name: GeoTrust True BusinessID Multi-Domain Wildcard
+attribute: source_url
+value: https://ssl.bkns.vn/ssl-bao-mat/geotrust-true-businessid-multi-domain-wildcard
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-GEOTRUST_TRUE_BUSINESSID_MULTI_DOMAIN_WILDCARD_2026_04_05
+observed_at: '2026-04-14T16:51:37.281241+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ mục ''Thông tin nguồn'': ''• URL: https://ssl.bkns.vn/ssl-bao-mat/geotrust-true-businessid-multi-domain-wildcard'''
+dual_vote:
+  status: DISAGREE
+  score: 0.4792
+  confidence: LOW
+  flag: human_review_required

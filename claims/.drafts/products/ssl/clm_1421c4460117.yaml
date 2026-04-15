@@ -1,0 +1,22 @@
+claim_id: CLM-1421C4460117
+entity_id: ENT-PROD-SSL-GT-EV-MD-01
+entity_type: product
+entity_name: GeoTrust True BusinessID with EV Multi-Domain
+attribute: wildcard_support
+value: false
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-GEOTRUST_TRUE_BUSINESSID_WITH_EV_MULTI_DOMAIN_2026_04_13
+observed_at: '2026-04-14T16:54:21.901891+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tóm tắt nhanh: Điều kiện/giới hạn nổi bật (nếu có): Không
+  hỗ trợ Wildcard.'
+dual_vote:
+  status: DISAGREE
+  score: 0.375
+  confidence: LOW
+  flag: human_review_required

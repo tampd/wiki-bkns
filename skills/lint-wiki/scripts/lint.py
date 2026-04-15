@@ -16,7 +16,7 @@ from datetime import datetime, timedelta
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 
 from lib.config import (
-    WIKI_DIR, LINT_RULES, LOGS_LINT_DIR, MODEL_PRO,
+    WIKI_DIR, LINT_RULES, LOGS_LINT_DIR, get_pro_model,
 )
 from lib.gemini import generate
 from lib.logger import log_entry
@@ -182,7 +182,7 @@ def lint_semantic(file_path: Path) -> dict:
     try:
         result = generate(
             prompt=prompt,
-            model=MODEL_PRO,
+            model=get_pro_model(),
             skill="lint-wiki",
             temperature=0.1,
             max_output_tokens=4096,

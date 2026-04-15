@@ -1,0 +1,16 @@
+claim_id: CLM-A4BE1190A790
+entity_id: product.vps.vps_mm03
+entity_type: product_plan
+entity_name: VPS-MM03
+attribute: ram
+value: 2
+unit: GB
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_VPS_GIA_RE_MAY_CHU_AO_CAU_HINH_ON_INH_2026_04_13
+observed_at: '2026-04-13T22:31:41.552999+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: medium
+compiler_note: 'Trích từ bảng giá: ''VPS-MM03 | RAM | 02 GB'''

@@ -1,0 +1,19 @@
+claim_id: CLM-ENT-PROD-SSL-MAX_SAN_
+entity_id: ENT-PROD-SSL-GEOTRUST-TRUE-BUSINESSID-MULTI-DOMAIN-WILDCARD
+entity_type: product
+entity_name: GeoTrust True BusinessID Multi-Domain Wildcard
+attribute: max_san_count
+value: 250
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-GEOTRUST_TRUE_BUSINESSID_MULTI_DOMAIN_WILDCARD_2026_04_06
+observed_at: '2026-04-07T00:32:46.881698+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: none
+compiler_note: 'Trích từ mục ''Thông số kỹ thuật / Giới hạn'': ''| Hỗ trợ SAN | Tối
+  đa 250 |'''
+approved_at: '2026-04-08T13:00:12.486939+07:00'
+approved_by: admin-batch

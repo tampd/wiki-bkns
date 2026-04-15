@@ -1,0 +1,24 @@
+claim_id: CLM-D1E459D47143
+entity_id: product.email_relay.bkns
+entity_type: product
+entity_name: Email Relay
+attribute: target_audience
+value: 'Các khách hàng đã có Email Server riêng và tự quản lý nhưng gặp vấn đề khi
+  gửi email ra ngoài (ví dụ: IP bị blacklist, email vào spam).'
+unit: null
+qualifiers: null
+source_ids:
+- SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_TIN_CAY_2026_04_05
+observed_at: '2026-04-14T17:05:51.391470+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tóm tắt nhanh: • Phù hợp với: Các khách hàng đã có Email
+  Server riêng và tự quản lý nhưng gặp vấn đề khi gửi email ra ngoài (ví dụ: IP bị
+  blacklist, email vào spam).'
+dual_vote:
+  status: DISAGREE
+  score: 0.5608
+  confidence: LOW
+  flag: human_review_required

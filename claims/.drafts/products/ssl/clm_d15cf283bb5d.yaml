@@ -1,0 +1,23 @@
+claim_id: CLM-D15CF283BB5D
+entity_id: product.ssl.geotrust_quickssl_premium
+entity_type: product_plan
+entity_name: GeoTrust QuickSSL Premium
+attribute: provider
+value: GeoTrust
+unit: ''
+qualifiers: {}
+source_ids:
+- SRC-GEOTRUST_QUICKSSL_PREMIUM_CHUNG_CHI_SSL_XAC_THUC_TEN_MIEN_2026_04_13
+observed_at: '2026-04-14T16:50:45.171057+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: • Dịch vụ này là gì: Chứng chỉ SSL xác thực
+  tên miền (Domain Validation - DV) do GeoTrust cung cấp.'
+parent_entity_id: ENT-PROD-SSL
+dual_vote:
+  status: DISAGREE
+  score: 0.1768
+  confidence: LOW
+  flag: human_review_required

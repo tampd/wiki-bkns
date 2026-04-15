@@ -8,13 +8,14 @@ unit: VND
 qualifiers:
   billing_cycle: year
 source_ids:
-- SRC-ESSENTIALSSL_DV_CHUNG_CHI_SSL_XAC_THUC_TEN_MIEN_TU_COMOD_2026_04_06
+  - SRC-ESSENTIALSSL_DV_CHUNG_CHI_SSL_XAC_THUC_TEN_MIEN_TU_COMOD_2026_04_06
 observed_at: '2026-04-07T00:25:55.212337+07:00'
 valid_from: '2026-04-07'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: high
-compiler_note: 'Trích từ bảng Gói dịch vụ và bảng giá: ''| Giá tại BKNS | 333.000đ/năm
-  |'''
-approved_at: '2026-04-07T13:00:13.412280+07:00'
+compiler_note: 'Trích từ bảng Gói dịch vụ và bảng giá: ''| Giá tại BKNS | 333.000đ/năm |'''
+approved_at: '2026-04-08T13:00:12.921483+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.523Z'

@@ -1,0 +1,21 @@
+claim_id: CLM-AE134A6DCC4A
+entity_id: ssl.geotrust.true_business_id
+entity_type: product_plan
+entity_name: GeoTrust True BusinessID
+attribute: site_seal
+value: Động
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-GEOTRUST_TRUE_BUSINESSID_CHUNG_CHI_SSL_XAC_THUC_DOANH_NGHI_2026_04_13
+observed_at: '2026-04-14T16:31:44.081451+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Thông số kỹ thuật / Giới hạn: ''| Biểu tượng | Động |'''
+dual_vote:
+  status: DISAGREE
+  score: 0.2607
+  confidence: LOW
+  flag: human_review_required

@@ -7,15 +7,16 @@ value: Sử dụng cho IP theo yêu cầu của khách hàng.
 unit: null
 qualifiers: {}
 source_ids:
-- SRC-BANG_GIA_BAN_QUYEN_PHAN_MEM_QUAN_TRI_SERVER_DIRECTADMIN_2026_04_06
+  - SRC-BANG_GIA_BAN_QUYEN_PHAN_MEM_QUAN_TRI_SERVER_DIRECTADMIN_2026_04_06
 observed_at: '2026-04-06T23:11:14.354385+07:00'
 valid_from: '2026-04-06'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ bảng giá: ''Standard | Loại License | Sử dụng cho IP theo
-  yêu cầu của khách hàng.'''
+compiler_note: 'Trích từ bảng giá: ''Standard | Loại License | Sử dụng cho IP theo yêu cầu của khách hàng.'''
 value_changed_from: Hỗ trợ cài đặt và tối ưu miễn phí.
 value_changed_at: '2026-04-06T23:11:14.354406+07:00'
-approved_at: '2026-04-07T13:00:15.981704+07:00'
+approved_at: '2026-04-08T13:00:15.792107+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.408Z'

@@ -1,0 +1,21 @@
+claim_id: CLM-A020E24CE747
+entity_id: product.vps.storage_4
+entity_type: product_plan
+entity_name: STORAGE VPS 4
+attribute: ipv4_addresses
+value: 1
+unit: IP
+qualifiers: null
+source_ids:
+- SRC-STORAGE_VPS_MAY_CHU_AO_LUU_TRU_DUNG_LUONG_CAO_2026_04_05
+observed_at: '2026-04-14T16:14:49.934014+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng giá: | STORAGE VPS 4 | ... | 1 |'
+dual_vote:
+  status: DISAGREE
+  score: 0.5676
+  confidence: LOW
+  flag: human_review_required

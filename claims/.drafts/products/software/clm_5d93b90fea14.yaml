@@ -1,0 +1,22 @@
+claim_id: CLM-5D93B90FEA14
+entity_id: ENT-PROD-SOFTWARE-DIRECTADMIN
+entity_type: product
+entity_name: DirectAdmin License
+attribute: compatibility
+value: Hoạt động tốt trên hệ điều hành CloudLinux.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-BANG_GIA_BAN_QUYEN_PHAN_MEM_QUAN_TRI_SERVER_DIRECTADMIN_2026_04_05
+observed_at: '2026-04-14T17:10:42.541372+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tính năng / Thành phần: Tương thích: Hoạt động tốt trên
+  hệ điều hành CloudLinux.'
+dual_vote:
+  status: PARTIAL
+  score: 0.6814
+  confidence: MEDIUM
+  flag: needs_review

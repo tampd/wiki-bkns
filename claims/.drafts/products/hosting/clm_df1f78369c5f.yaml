@@ -1,0 +1,17 @@
+claim_id: CLM-DF1F78369C5F
+entity_id: product.hosting.platium.bkcp01
+entity_type: product_plan
+entity_name: BKCP01
+attribute: nvme_storage
+value: 2
+unit: GB
+qualifiers: {}
+source_ids:
+- SRC-BANG_GIA_HOSTING_2026_04_13
+observed_at: '2026-04-13T21:43:02.372490+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: medium
+compiler_note: 'Trích từ bảng ''Platium web hosting'', cột ''BKCP01'', dòng ''NVMe
+  U.2'': ''2 GB''. (Nguồn: manual://Bang_Gia_Hosting.pdf, 2026-04-13T21:29:54.660388+07:00)'

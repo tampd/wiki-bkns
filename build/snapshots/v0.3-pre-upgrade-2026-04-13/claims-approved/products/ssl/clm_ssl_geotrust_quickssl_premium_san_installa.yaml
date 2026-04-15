@@ -1,0 +1,19 @@
+claim_id: CLM-SSL-GEOTRUST_QUICKSSL_PREMIUM_SAN-INSTALLA
+entity_id: product.ssl.geotrust_quickssl_premium_san
+entity_type: product_plan
+entity_name: GeoTrust QuickSSL Premium SAN
+attribute: installation_fee
+value: free
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-GEOTRUST_QUICKSSL_PREMIUM_SAN_2026_04_06
+observed_at: '2026-04-07T00:29:33.302101+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: none
+compiler_note: 'Trích từ mục Thông số kỹ thuật / Giới hạn: | Phí cài đặt | Miễn phí
+  |'
+approved_at: '2026-04-08T13:00:13.118084+07:00'
+approved_by: admin-batch

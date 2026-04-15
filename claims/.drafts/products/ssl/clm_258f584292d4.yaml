@@ -1,0 +1,23 @@
+claim_id: CLM-258F584292D4
+entity_id: product.ssl.geotrust_quickssl_premium
+entity_type: product_plan
+entity_name: GeoTrust QuickSSL Premium
+attribute: list_price
+value: 3874000
+unit: VND
+qualifiers:
+  term: 1 năm
+source_ids:
+- SRC-GEOTRUST_QUICKSSL_PREMIUM_CHUNG_CHI_SSL_XAC_THUC_TEN_MIEN_2026_04_13
+observed_at: '2026-04-14T16:50:45.140675+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ bảng giá: | 1 năm | <del>3.874.000đ</del> | 1.411.000đ |'
+parent_entity_id: ENT-PROD-SSL
+dual_vote:
+  status: DISAGREE
+  score: 0.1768
+  confidence: LOW
+  flag: human_review_required

@@ -1,0 +1,23 @@
+claim_id: CLM-76788EBB4315
+entity_id: bkns.hosting.platinum
+entity_type: product
+entity_name: Platinum Web Hosting
+attribute: use_case
+value: Khách cần web chạy cực nhanh, chịu tải cao, bán hàng online.
+unit: ''
+qualifiers: {}
+source_ids:
+- SRC-BKNS_CAMNANG_HOSTING_DOT2_2026_04_05
+observed_at: '2026-04-14T12:04:01.307436+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Ma trận chọn giải pháp: ''Nhu cầu / Vấn đề của khách (Pain
+  Point): Khách cần web chạy cực nhanh, chịu tải cao, bán hàng online. -> Giải pháp
+  đề xuất (Product): Platinum Web Hosting'''
+dual_vote:
+  status: DISAGREE
+  score: 0.3651
+  confidence: LOW
+  flag: human_review_required

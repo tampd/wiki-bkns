@@ -1,0 +1,23 @@
+claim_id: CLM-ENT-PROD-VPS-SUPPORTE
+entity_id: ENT-PROD-VPS
+entity_type: product
+entity_name: Storage VPS
+attribute: supported_os
+value: Windows
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-STORAGE_VPS_MAY_CHU_AO_LUU_TRU_DUNG_LUONG_CAO_2026_04_04
+- SRC-DICH_VU_VPS_GIA_RE_MAY_CHU_AO_CAU_HINH_ON_INH_2026_04_06
+- SRC-STORAGE_VPS_MAY_CHU_AO_LUU_TRU_DUNG_LUONG_CAO_2026_04_06
+observed_at: '2026-04-07T01:03:06.869810+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ mục ''Tính năng / Thành phần'': • Hỗ trợ đa dạng hệ điều
+  hành: Tương thích với các hệ điều hành phổ biến như CentOS, Ubuntu, Debian, Windows.'
+value_changed_from: Debian
+value_changed_at: '2026-04-07T01:03:06.869830+07:00'
+approved_at: '2026-04-08T13:00:14.154246+07:00'
+approved_by: admin-batch

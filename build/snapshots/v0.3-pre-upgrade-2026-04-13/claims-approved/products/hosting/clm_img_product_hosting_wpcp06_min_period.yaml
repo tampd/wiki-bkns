@@ -1,0 +1,16 @@
+claim_id: CLM-IMG-product.hosting.wpcp06-min_period
+entity_id: product.hosting.wpcp06
+entity_type: product_plan
+entity_name: WordPress Hosting WPCP06
+attribute: min_payment_period
+value: 1 tháng
+confidence: high
+review_state: approved
+risk_class: verified
+source_ids:
+- IMG-WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06
+observed_at: '2026-04-07T16:33:55.131578+07:00'
+valid_from: '2026-04-07'
+approved_at: '2026-04-07T16:33:55.131578+07:00'
+approved_by: image-extraction
+compiler_note: Minimum payment period from bkns.vn (WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06)

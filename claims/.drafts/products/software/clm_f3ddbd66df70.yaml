@@ -1,0 +1,20 @@
+claim_id: CLM-F3DDBD66DF70
+entity_id: product.software.cloudlinux
+entity_type: product_software
+entity_name: CloudLinux OS
+attribute: description
+value: CloudLinux là một hệ điều hành thương mại dựa trên nền tảng CentOS, được thiết
+  kế để cải thiện độ ổn định, mật độ và bảo mật của các máy chủ trong môi trường shared
+  hosting.
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-BAN_QUYEN_CLOUDLINUX_OS_TANG_ON_INH_VA_BAO_MAT_CHO_SHARED_2026_04_13
+observed_at: '2026-04-13T21:31:33.323786+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: ''Dịch vụ này là gì: CloudLinux là một hệ
+  điều hành thương mại dựa trên nền tảng CentOS, được thiết kế để cải thiện độ ổn
+  định, mật độ và bảo mật của các máy chủ trong môi trường shared hosting.'''

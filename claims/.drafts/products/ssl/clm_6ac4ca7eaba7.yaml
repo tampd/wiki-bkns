@@ -1,0 +1,24 @@
+claim_id: CLM-6AC4CA7EABA7
+entity_id: ENT-PROD-SSL-011
+entity_type: ENT-PROD-SSL
+entity_name: GeoTrust True BusinessID with EV Multi-Domain
+attribute: registration_process
+value: Khách hàng cần cung cấp giấy tờ đăng ký kinh doanh để tổ chức phát hành (CA)
+  tiến hành xác minh.
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-GEOTRUST_TRUE_BUSINESSID_WITH_EV_MULTI_DOMAIN_2026_04_05
+observed_at: '2026-04-14T16:53:51.194947+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ mục ''Quy trình đăng ký / Triển khai / Kích hoạt'': ''Để
+  đăng ký chứng chỉ, khách hàng cần cung cấp giấy tờ đăng ký kinh doanh để tổ chức
+  phát hành (CA) tiến hành xác minh.'''
+dual_vote:
+  status: DISAGREE
+  score: 0.2759
+  confidence: LOW
+  flag: human_review_required

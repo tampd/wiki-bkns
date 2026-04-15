@@ -1,0 +1,18 @@
+claim_id: CLM-SSL-ESSENTIALSSL_WILDCARD_DV-SITE_SEA
+entity_id: bkns.ssl.essentialssl_wildcard_dv
+entity_type: ENT-PROD-SSL
+entity_name: EssentialSSL Wildcard (DV)
+attribute: site_seal_type
+value: Tĩnh
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-CHUNG_CHI_SSL_ESSENTIALSSL_WILDCARD_DV_CUA_COMODO_2026_04_04
+observed_at: '2026-04-04T20:34:55.340954+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ: | Biểu tượng | Tĩnh |'
+approved_at: '2026-04-08T13:00:13.021736+07:00'
+approved_by: admin-batch

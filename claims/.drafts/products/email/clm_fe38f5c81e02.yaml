@@ -1,0 +1,18 @@
+claim_id: CLM-FE38F5C81E02
+entity_id: product.email.email_relay
+entity_type: product
+entity_name: Email Relay
+attribute: policy
+value: Dịch vụ này là giải pháp định tuyến email gửi đi, không phải là dịch vụ lưu
+  trữ email đến.
+unit: ''
+qualifiers: null
+source_ids:
+- SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_TIN_CAY_2026_04_13
+observed_at: '2026-04-13T22:34:09.052493+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Chính sách / Điều khoản / Lưu ý: ''Dịch vụ này là giải
+  pháp định tuyến email gửi đi, không phải là dịch vụ lưu trữ email đến.'''

@@ -1,0 +1,22 @@
+claim_id: CLM-C31F189758AB
+entity_id: ENT-PROD-SSL-008
+entity_type: product_plan
+entity_name: GeoTrust True BusinessID Multi-Domain Wildcard
+attribute: required_documents
+value: Giấy đăng ký kinh doanh
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-GEOTRUST_TRUE_BUSINESSID_MULTI_DOMAIN_WILDCARD_2026_04_13
+observed_at: '2026-04-14T16:52:51.776767+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục ''Thông số kỹ thuật / Giới hạn'': | Giấy tờ kèm theo
+  | Đăng ký kinh doanh |'
+dual_vote:
+  status: DISAGREE
+  score: 0.3472
+  confidence: LOW
+  flag: human_review_required

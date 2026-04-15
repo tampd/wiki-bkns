@@ -1,0 +1,19 @@
+claim_id: CLM-HOST-BKSW05_PLUS-DISK_SPA
+entity_id: product.hosting.bksw05_plus
+entity_type: product_plan
+entity_name: BKSW05+
+attribute: disk_space
+value: 15
+unit: GB
+qualifiers:
+  disk_type: SSD
+source_ids:
+- SRC-WINDOWS_HOSTING_WEB_2026_04_05
+observed_at: '2026-04-05T22:25:30.886324+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ Bảng giá gói BKSW05+: ''| SSD Disk Space | 15 GB |'''
+approved_at: '2026-04-08T13:00:11.172189+07:00'
+approved_by: admin-batch

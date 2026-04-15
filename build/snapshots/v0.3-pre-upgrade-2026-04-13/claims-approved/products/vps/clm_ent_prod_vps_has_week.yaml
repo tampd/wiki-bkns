@@ -1,0 +1,19 @@
+claim_id: CLM-ENT-PROD-VPS-HAS_WEEK
+entity_id: ENT-PROD-VPS
+entity_type: product
+entity_name: VPS Giá Rẻ
+attribute: has_weekly_backup
+value: false
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_VPS_GIA_RE_MAY_CHU_AO_CAU_HINH_ON_INH_2026_04_04
+observed_at: '2026-04-04T20:54:42.945781+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: medium
+compiler_note: 'Trích từ mục Tóm tắt nhanh: • Điều kiện/giới hạn nổi bật (nếu có):
+  Các gói dịch vụ không đi kèm sao lưu dữ liệu hàng tuần'
+approved_at: '2026-04-08T13:00:13.978624+07:00'
+approved_by: admin-batch

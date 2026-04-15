@@ -1,0 +1,19 @@
+claim_id: CLM-F9A39332237E
+entity_id: product.vps.vps_gia_re
+entity_type: product_offering
+entity_name: VPS Giá Rẻ
+attribute: description
+value: Dịch vụ cho thuê máy chủ ảo (VPS) với chi phí thấp, cung cấp tài nguyên độc
+  lập và quyền quản trị toàn phần cho người dùng.
+unit: ''
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_VPS_GIA_RE_MAY_CHU_AO_CAU_HINH_ON_INH_2026_04_13
+observed_at: '2026-04-13T22:31:41.413548+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: ''Dịch vụ này là gì: Dịch vụ cho thuê máy
+  chủ ảo (VPS) với chi phí thấp, cung cấp tài nguyên độc lập và quyền quản trị toàn
+  phần cho người dùng.'''

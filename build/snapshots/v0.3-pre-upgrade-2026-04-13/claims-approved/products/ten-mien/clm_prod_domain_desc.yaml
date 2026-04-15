@@ -1,0 +1,19 @@
+claim_id: CLM-PROD-DOMAIN-DESC
+entity_id: product.domain
+entity_type: product_line
+entity_name: Tên miền
+attribute: description
+value: Đăng ký, quản lý tên miền quốc tế & Việt Nam (.vn)
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-TRANNING_KINH_DOANH_HOSTING_EMAIL_2026_04_06
+observed_at: '2026-04-07T01:07:21.393402+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: Trích từ bảng 'Giới thiệu dịch vụ BKNS cung cấp', dòng 'Tên miền (Domain)',
+  cột 'Mô tả ngắn'
+approved_at: '2026-04-08T13:00:09.788172+07:00'
+approved_by: admin-batch

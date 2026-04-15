@@ -1,0 +1,153 @@
+```json
+{
+  "claims": [
+    {
+      "entity_name": "Dịch vụ đăng ký tên miền BKNS",
+      "attribute": "Thời gian kích hoạt",
+      "value": "30",
+      "unit": "giây",
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Dịch vụ đăng ký tên miền BKNS",
+      "attribute": "Đặc điểm giá",
+      "value": "Giá rẻ",
+      "unit": null,
+      "confidence": 0.7
+    },
+    {
+      "entity_name": "BKNS",
+      "attribute": "Tư cách pháp lý",
+      "value": "Nhà đăng ký tên miền chính thức được cấp phép bởi VNNIC",
+      "unit": null,
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "BKNS",
+      "attribute": "Tư cách pháp lý",
+      "value": "Nhà đăng ký tên miền chính thức được cấp phép bởi ICANN",
+      "unit": null,
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Dịch vụ đăng ký tên miền BKNS",
+      "attribute": "Số lượng khách hàng",
+      "value": "Hơn 500.000",
+      "unit": null,
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Quy trình đăng ký tên miền BKNS",
+      "attribute": "Phương thức xác minh",
+      "value": "eKYC 100% online",
+      "unit": null,
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Dịch vụ đăng ký tên miền BKNS",
+      "attribute": "Đảm bảo",
+      "value": "Quyền sở hữu hợp pháp tuyệt đối",
+      "unit": null,
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Dịch vụ đăng ký tên miền BKNS",
+      "attribute": "Tính năng miễn phí",
+      "value": "Privacy Protection",
+      "unit": null,
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Chuyển tên miền về BKNS",
+      "attribute": "Chi phí transfer",
+      "value": "Miễn phí",
+      "unit": null,
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Tên miền .VN",
+      "attribute": "Bảo hộ pháp lý",
+      "value": "Được pháp luật Việt Nam bảo hộ tuyệt đối",
+      "unit": null,
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Tên miền .VN",
+      "attribute": "Lợi thế SEO",
+      "value": "SEO Local vượt trội",
+      "unit": null,
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Tên miền .VN",
+      "attribute": "Ưu tiên của Google",
+      "value": "Ưu tiên cho IP Việt Nam",
+      "unit": null,
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Quy trình đăng ký tên miền BKNS",
+      "attribute": "Bước 1",
+      "value": "Kiểm tra tên miền còn trống",
+      "unit": null,
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Quy trình đăng ký tên miền BKNS",
+      "attribute": "Bước 2",
+      "value": "Đăng ký và thanh toán",
+      "unit": null,
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Quy trình đăng ký tên miền BKNS",
+      "attribute": "Bước 3",
+      "value": "Kích hoạt tự động trong 30s",
+      "unit": null,
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Quy trình đăng ký tên miền BKNS",
+      "attribute": "Bước 4",
+      "value": "eKYC xác minh quyền sở hữu",
+      "unit": null,
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Hỗ trợ kỹ thuật BKNS",
+      "attribute": "Hotline",
+      "value": "1900 63 68 09",
+      "unit": null,
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Hỗ trợ kỹ thuật BKNS",
+      "attribute": "Chi phí hotline",
+      "value": "Có phí",
+      "unit": null,
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Hỗ trợ kinh doanh BKNS",
+      "attribute": "Hotline",
+      "value": "1800 646 884",
+      "unit": null,
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Hỗ trợ kinh doanh BKNS",
+      "attribute": "Chi phí hotline",
+      "value": "Miễn phí",
+      "unit": null,
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "BKNS",
+      "attribute": "Website",
+      "value": "https://bkns.vn",
+      "unit": null,
+      "confidence": 1.0
+    }
+  ]
+}
+```

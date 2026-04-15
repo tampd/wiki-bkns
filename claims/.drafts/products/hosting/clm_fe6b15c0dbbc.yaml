@@ -1,0 +1,23 @@
+claim_id: CLM-FE6B15C0DBBC
+entity_id: product.hosting.free_hosting
+entity_type: product_plan
+entity_name: Hosting Miễn phí
+attribute: description
+value: Cho phép khởi tạo website mà không tốn chi phí ban đầu.
+unit: null
+qualifiers:
+  type: key_point
+source_ids:
+- SRC-HOSTING_MIEN_PHI_GIAI_PHAP_KHOI_TAO_WEBSITE_0_2026_04_05
+observed_at: '2026-04-14T12:14:07.262274+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ tóm tắt nhanh: Điểm chính: Cho phép khởi tạo website mà không
+  tốn chi phí ban đầu.'
+dual_vote:
+  status: DISAGREE
+  score: 0.4325
+  confidence: LOW
+  flag: human_review_required

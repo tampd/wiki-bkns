@@ -1,0 +1,249 @@
+{
+  "claims": [
+    {
+      "entity_name": "Email Hosting",
+      "attribute": "Nền tảng",
+      "value": "Zimbra",
+      "unit": null,
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Email Hosting",
+      "attribute": "Tỉ lệ inbox",
+      "value": "99",
+      "unit": "%",
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Email Hosting",
+      "attribute": "Tên miền riêng",
+      "value": "Có",
+      "unit": null,
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Gói EMAIL 1",
+      "attribute": "Giá website",
+      "value": "42.750",
+      "unit": "VNĐ/tháng",
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Gói EMAIL 1",
+      "attribute": "Số lượng email",
+      "value": "5",
+      "unit": "email",
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Gói EMAIL 1",
+      "attribute": "Số lượng Email Forwarders",
+      "value": "5",
+      "unit": "forwarder",
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Gói EMAIL 1",
+      "attribute": "Dung lượng mỗi email",
+      "value": "5",
+      "unit": "GB",
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Gói EMAIL 2",
+      "attribute": "Giá website",
+      "value": "85.500",
+      "unit": "VNĐ/tháng",
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Gói EMAIL 2",
+      "attribute": "Số lượng email",
+      "value": "20",
+      "unit": "email",
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Gói EMAIL 2",
+      "attribute": "Số lượng Email Forwarders",
+      "value": "10",
+      "unit": "forwarder",
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Gói EMAIL 2",
+      "attribute": "Dung lượng mỗi email",
+      "value": "5",
+      "unit": "GB",
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Gói EMAIL 3",
+      "attribute": "Giá website",
+      "value": "166.250",
+      "unit": "VNĐ/tháng",
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Gói EMAIL 3",
+      "attribute": "Số lượng email",
+      "value": "50",
+      "unit": "email",
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Gói EMAIL 3",
+      "attribute": "Số lượng Email Forwarders",
+      "value": "40",
+      "unit": "forwarder",
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Gói EMAIL 3",
+      "attribute": "Dung lượng mỗi email",
+      "value": "5",
+      "unit": "GB",
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Gói EMAIL 4",
+      "attribute": "Giá website",
+      "value": "285.000",
+      "unit": "VNĐ/tháng",
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Gói EMAIL 4",
+      "attribute": "Số lượng email",
+      "value": "100",
+      "unit": "email",
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Gói EMAIL 4",
+      "attribute": "Số lượng Email Forwarders",
+      "value": "100",
+      "unit": "forwarder",
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Gói EMAIL 4",
+      "attribute": "Dung lượng mỗi email",
+      "value": "5",
+      "unit": "GB",
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Gói EMAIL 1",
+      "attribute": "Giá nội bộ (1 tháng)",
+      "value": "45.000",
+      "unit": "VNĐ",
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Gói EMAIL 1",
+      "attribute": "Giá nội bộ (1 năm)",
+      "value": "513.000",
+      "unit": "VNĐ",
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Gói EMAIL 1",
+      "attribute": "Mức giảm giá (1 năm)",
+      "value": "5",
+      "unit": "%",
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Gói EMAIL 1",
+      "attribute": "Giá nội bộ (2 năm)",
+      "value": "864.000",
+      "unit": "VNĐ",
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Gói EMAIL 1",
+      "attribute": "Mức giảm giá (2 năm)",
+      "value": "20",
+      "unit": "%",
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Gói EMAIL 1",
+      "attribute": "Giá nội bộ (3 năm)",
+      "value": "1.134.000",
+      "unit": "VNĐ",
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Gói EMAIL 1",
+      "attribute": "Mức giảm giá (3 năm)",
+      "value": "30",
+      "unit": "%",
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Gói EMAIL 1",
+      "attribute": "Giá nội bộ (4 năm)",
+      "value": "1.296.000",
+      "unit": "VNĐ",
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Gói EMAIL 1",
+      "attribute": "Mức giảm giá (4 năm)",
+      "value": "40",
+      "unit": "%",
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Gói EMAIL 1",
+      "attribute": "Thuế VAT (giá nội bộ)",
+      "value": "Chưa bao gồm",
+      "unit": null,
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Email Hosting",
+      "attribute": "Chống Spam/Virus",
+      "value": "Tích hợp",
+      "unit": null,
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Email Hosting",
+      "attribute": "Tự động trả lời",
+      "value": "Có",
+      "unit": null,
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Email Hosting",
+      "attribute": "Hỗ trợ Webmail",
+      "value": "Có",
+      "unit": null,
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Email Hosting",
+      "attribute": "Hỗ trợ Outlook",
+      "value": "Có",
+      "unit": null,
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Email Hosting",
+      "attribute": "Giới hạn gửi email",
+      "value": "200",
+      "unit": "email/giờ",
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Email Hosting",
+      "attribute": "Giới hạn tên miền",
+      "value": "1",
+      "unit": "tên miền/gói",
+      "confidence": 1.0
+    }
+  ]
+}

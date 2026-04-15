@@ -7,16 +7,17 @@ value: Miễn phí
 unit: null
 qualifiers: null
 source_ids:
-- SRC-PLATINUM_WEB_HOSTING_HOSTING_NVME_TOC_O_CAO_BACKUP_3_LAN_2026_04_04
-- SRC-PLATINUM_WEB_HOSTING_HOSTING_NVME_TOC_O_CAO_BACKUP_3_LAN_2026_04_06
+  - SRC-PLATINUM_WEB_HOSTING_HOSTING_NVME_TOC_O_CAO_BACKUP_3_LAN_2026_04_04
+  - SRC-PLATINUM_WEB_HOSTING_HOSTING_NVME_TOC_O_CAO_BACKUP_3_LAN_2026_04_06
 observed_at: '2026-04-07T00:49:55.487118+07:00'
 valid_from: '2026-04-04'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: null
-compiler_note: 'Trích từ mục Tính năng / Thành phần: Hỗ trợ chuyển dữ liệu: BKNS hỗ
-  trợ chuyển dữ liệu website của khách hàng về hệ thống của mình miễn phí.'
+compiler_note: 'Trích từ mục Tính năng / Thành phần: Hỗ trợ chuyển dữ liệu: BKNS hỗ trợ chuyển dữ liệu website của khách hàng về hệ thống của mình miễn phí.'
 value_changed_from: free
 value_changed_at: '2026-04-07T00:49:55.487137+07:00'
-approved_at: '2026-04-07T13:00:12.190946+07:00'
+approved_at: '2026-04-08T13:00:11.349701+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.047Z'

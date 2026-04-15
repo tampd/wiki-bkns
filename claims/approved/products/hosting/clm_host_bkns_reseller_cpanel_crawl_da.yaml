@@ -7,12 +7,14 @@ value: '2026-04-05T14:25:00+07:00'
 unit: null
 qualifiers: null
 source_ids:
-- SRC-RESELLER_HOSTING_WEB_2026_04_05
+  - SRC-RESELLER_HOSTING_WEB_2026_04_05
 observed_at: '2026-04-05T22:11:26.625107+07:00'
 valid_from: '2026-04-05'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
 compiler_note: 'Trích từ ngày crawl: - Ngày crawl: 2026-04-05T14:25:00+07:00'
-approved_at: '2026-04-07T13:00:11.951629+07:00'
+approved_at: '2026-04-08T13:00:11.059334+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.016Z'

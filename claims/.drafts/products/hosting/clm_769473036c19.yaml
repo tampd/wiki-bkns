@@ -1,0 +1,21 @@
+claim_id: CLM-769473036C19
+entity_id: product.hosting.pla1
+entity_type: product_plan
+entity_name: PLA 1
+attribute: cpu_cores
+value: 1.5
+unit: Core
+qualifiers: null
+source_ids:
+- SRC-PLATINUM_WEB_HOSTING_HOSTING_NVME_TOC_O_CAO_BACKUP_3_LAN_2026_04_13
+observed_at: '2026-04-14T12:29:46.457077+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng so sánh: | CPU | 1.5 Core |'
+dual_vote:
+  status: DISAGREE
+  score: 0.5968
+  confidence: LOW
+  flag: human_review_required

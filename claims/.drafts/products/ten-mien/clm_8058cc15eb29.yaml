@@ -1,0 +1,30 @@
+claim_id: CLM-8058CC15EB29
+entity_id: ENT-PROD-DOMAIN
+entity_type: product
+entity_name: Dịch vụ Tên miền
+attribute: feature
+value: DNS có hỗ trợ IPv6
+unit: null
+qualifiers:
+  cost: free
+source_ids:
+- SRC-DICH_VU_ANG_KY_TEN_MIEN_VIET_NAM_VA_QUOC_TE_TAI_BKNS_2026_04_13
+- SRC-TRANNING_KINH_DOANH_HOSTING_EMAIL_2026_04_13
+- SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_05
+- SRC-BAO_VE_TEN_MIEN_CAP_CAO_NHAT_GIAI_PHAP_AN_TOAN_TUYET_OI_2026_04_05
+- SRC-DICH_VU_ANG_KY_TEN_MIEN_VIET_NAM_VA_QUOC_TE_TAI_BKNS_2026_04_05
+observed_at: '2026-04-14T16:47:42.417713+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng Tính năng / Thành phần: | DNS có hỗ trợ IPv6 | Miễn
+  phí | Miễn phí | Cho phép thay đổi địa chỉ IPv6 của tên miền thông qua Control Panel.
+  |'
+value_changed_from: Bảo mật thông tin tên miền (Whois Protect)
+value_changed_at: '2026-04-14T16:47:42.417754+07:00'
+dual_vote:
+  status: DISAGREE
+  score: 0.5
+  confidence: LOW
+  flag: human_review_required

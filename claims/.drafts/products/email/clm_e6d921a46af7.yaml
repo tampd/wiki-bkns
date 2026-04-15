@@ -1,0 +1,21 @@
+claim_id: CLM-E6D921A46AF7
+entity_id: ENT-PROD-EMAIL
+entity_type: product
+entity_name: Email Hosting
+attribute: reference_url
+value: https://www.bkns.vn/email/email-hosting.html
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-BKNS_CAMNANG_EMAIL_TENMIEN_DOT1_2026_04_05
+observed_at: '2026-04-14T17:01:39.746334+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ: __Link tham khảo:__ https://www.bkns.vn/email/email-hosting.html'
+dual_vote:
+  status: DISAGREE
+  score: 0.1633
+  confidence: LOW
+  flag: human_review_required

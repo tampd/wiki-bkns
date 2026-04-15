@@ -1,0 +1,22 @@
+claim_id: CLM-EF41D70CE57B
+entity_id: bkns.software.vbulletin.upgrade
+entity_type: product_plan
+entity_name: Upgrade vBulletin 4 to 5
+attribute: price
+value: Giá liên hệ
+unit: null
+qualifiers: null
+source_ids:
+- SRC-BAN_QUYEN_VBULLETIN_HE_QUAN_TRI_FORUM_MANG_XA_HOI_2026_04_05
+observed_at: '2026-04-14T17:09:15.797050+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: '| Upgrade | Giá liên hệ | Bản upgrade cho phép bạn nâng cấp phiên
+  bản vbullentin 4 lên vbulletin 5 connect. |'
+dual_vote:
+  status: DISAGREE
+  score: 0.0
+  confidence: LOW
+  flag: human_review_required

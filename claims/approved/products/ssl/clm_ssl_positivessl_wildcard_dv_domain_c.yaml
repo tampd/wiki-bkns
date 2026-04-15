@@ -7,14 +7,14 @@ value: 1 main domain and unlimited level 1 subdomains
 unit: null
 qualifiers: {}
 source_ids:
-- SRC-POSITIVESSL_WILDCARD_DV_CHUNG_CHI_SSL_GIA_RE_2026_04_06
+  - SRC-POSITIVESSL_WILDCARD_DV_CHUNG_CHI_SSL_GIA_RE_2026_04_06
 observed_at: '2026-04-07T00:55:31.439104+07:00'
 valid_from: '2026-04-07'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: none
-compiler_note: 'Trích từ Tóm tắt nhanh: ''...dùng để bảo mật một tên miền chính và
-  không giới hạn số lượng tên miền phụ (subdomain) cấp 1 của nó.'' và Thông số kỹ
-  thuật: ''Bảo vệ cho | 1 tên miền chính + tất cả tên miền con cấp 1'''
-approved_at: '2026-04-07T13:00:13.966645+07:00'
+compiler_note: 'Trích từ Tóm tắt nhanh: ''...dùng để bảo mật một tên miền chính và không giới hạn số lượng tên miền phụ (subdomain) cấp 1 của nó.'' và Thông số kỹ thuật: ''Bảo vệ cho | 1 tên miền chính + tất cả tên miền con cấp 1'''
+approved_at: '2026-04-08T13:00:13.481131+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.584Z'

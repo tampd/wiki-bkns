@@ -7,12 +7,14 @@ value: none
 unit: null
 qualifiers: {}
 source_ids:
-- SRC-POSITIVESSL_WILDCARD_DV_CHUNG_CHI_SSL_GIA_RE_2026_04_06
+  - SRC-POSITIVESSL_WILDCARD_DV_CHUNG_CHI_SSL_GIA_RE_2026_04_06
 observed_at: '2026-04-07T00:55:31.468163+07:00'
 valid_from: '2026-04-07'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: none
 compiler_note: 'Trích từ Thông số kỹ thuật / Giới hạn: ''Giấy tờ kèm theo | Không'''
-approved_at: '2026-04-07T13:00:13.992477+07:00'
+approved_at: '2026-04-08T13:00:13.510953+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.588Z'

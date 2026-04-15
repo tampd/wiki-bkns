@@ -1,0 +1,23 @@
+claim_id: CLM-88673DB1EA38
+entity_id: ssl.geotrust.true_business_id
+entity_type: product_plan
+entity_name: GeoTrust True BusinessID
+attribute: target_audience
+value: Các doanh nghiệp cần xác thực danh tính, tăng độ tin cậy cho website và bảo
+  mật giao dịch.
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-GEOTRUST_TRUE_BUSINESSID_CHUNG_CHI_SSL_XAC_THUC_DOANH_NGHI_2026_04_13
+observed_at: '2026-04-14T16:31:43.996414+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tóm tắt nhanh: ''• Phù hợp với: Các doanh nghiệp cần
+  xác thực danh tính, tăng độ tin cậy cho website và bảo mật giao dịch.'''
+dual_vote:
+  status: DISAGREE
+  score: 0.2607
+  confidence: LOW
+  flag: human_review_required

@@ -1,0 +1,20 @@
+claim_id: CLM-1DE74A688393
+entity_id: ENT-PROD-SSL-COMODO-WILDCARD-DV
+entity_type: product
+entity_name: Comodo SSL Wildcard Certificate (DV)
+attribute: product.target_audience
+value: Doanh nghiệp vừa và nhỏ, các trang web thương mại điện tử có lưu lượng truy
+  cập thấp cần bảo mật cho một tên miền chính cùng với tất cả các tên miền phụ của
+  nó.
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-COMODO_SSL_WILDCARD_CERTIFICATE_DV_CHUNG_CHI_SSL_2026_04_13
+observed_at: '2026-04-13T22:10:45.442186+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: ''Phù hợp với: Doanh nghiệp vừa và nhỏ, các
+  trang web thương mại điện tử có lưu lượng truy cập thấp cần bảo mật cho một tên
+  miền chính cùng với tất cả các tên miền phụ của nó.'''

@@ -1,0 +1,21 @@
+claim_id: CLM-C4863525CE54
+entity_id: product.dedicated_server.mccb01
+entity_type: product_plan
+entity_name: MCCB01
+attribute: bandwidth
+value: 100Mbps/ 5Mbps
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DANH_SACH_GOI_SAN_PHAM_MAY_CHU_BKNS_2026_04_05
+observed_at: '2026-04-14T17:13:15.613893+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng thông số gói MCCB01: ''Băng thông: 100Mbps/ 5Mbps'''
+dual_vote:
+  status: DISAGREE
+  score: 0.5083
+  confidence: LOW
+  flag: human_review_required

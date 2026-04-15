@@ -1,0 +1,21 @@
+claim_id: CLM-ENT--BK_MISA-HARDWARE
+entity_id: ENT-PROD-VPS.bk_misa
+entity_type: product
+entity_name: BK MISA
+attribute: hardware_cpu_type
+value: SSD & NVME
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-CLOUD_VPS_BK_MISA_GIAI_PHAP_LUU_TRU_KE_TOAN_SO_2026_04_06
+observed_at: '2026-04-06T23:45:51.835434+07:00'
+valid_from: '2026-04-06'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ: ━━━ Tính năng / Thành phần • Dịch vụ sử dụng ... ổ cứng
+  SSD & NVME...'
+value_changed_from: DDR4
+value_changed_at: '2026-04-06T23:45:51.835451+07:00'
+approved_at: '2026-04-08T13:00:13.581231+07:00'
+approved_by: admin-batch

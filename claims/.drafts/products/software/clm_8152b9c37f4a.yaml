@@ -1,0 +1,17 @@
+claim_id: CLM-8152B9C37F4A
+entity_id: product.software.softaculous_license
+entity_type: product
+entity_name: Bản quyền Softaculous
+attribute: supported_app_count
+value: 400
+unit: null
+qualifiers:
+  condition: more_than
+source_ids:
+- SRC-BAN_QUYEN_SOFTACULOUS_TRINH_CAI_AT_UNG_DUNG_TU_ONG_2026_04_13
+observed_at: '2026-04-13T21:34:20.596480+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ Điểm chính: ''Hỗ trợ hơn 400 ứng dụng...'''

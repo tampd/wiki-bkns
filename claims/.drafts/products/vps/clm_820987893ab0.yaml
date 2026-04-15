@@ -1,0 +1,17 @@
+claim_id: CLM-820987893AB0
+entity_id: product.vps.cloud_amd
+entity_type: product
+entity_name: Cloud VPS AMD
+attribute: target_customer.type
+value: doanh nghiệp
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-CLOUD_VPS_AMD_GIAI_PHAP_VPS_HIEU_SUAT_CAO_VOI_CPU_AMD_EPYCTM_2026_04_13
+observed_at: '2026-04-13T22:04:23.389014+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục ''Tóm tắt nhanh'': • Phù hợp với: Mọi doanh nghiệp có
+  nhu cầu về một VPS hiệu suất vượt trội với giá thành hợp lý.'

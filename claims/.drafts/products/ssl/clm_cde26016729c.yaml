@@ -1,0 +1,23 @@
+claim_id: CLM-CDE26016729C
+entity_id: ENT-PROD-SSL
+entity_type: product_category
+entity_name: SSL Certificate
+attribute: target_audience
+value: Website thương mại, sàn TMĐT, doanh nghiệp cần bảo mật
+unit: null
+qualifiers: null
+source_ids:
+- SRC-TRANNING_KINH_DOANH_HOSTING_EMAIL_2026_04_13
+observed_at: '2026-04-14T12:35:14.406039+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng Giới thiệu dịch vụ BKNS cung cấp, hàng SSL Certificate,
+  cột Đối tượng khách hàng chính: ''Website thương mại, sàn TMĐT, doanh nghiệp cần
+  bảo mật'''
+dual_vote:
+  status: DISAGREE
+  score: 0.5
+  confidence: LOW
+  flag: human_review_required

@@ -1,0 +1,23 @@
+claim_id: CLM-0599F3070ED1
+entity_id: ENT-PROD-HOSTING.platinum_web_hosting
+entity_type: product
+entity_name: Platinum Web Hosting
+attribute: target_audience
+value: Các website có lượng truy cập lớn, website thương mại điện tử, báo chí, tin
+  tức yêu cầu tốc độ và sự ổn định.
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-PLATINUM_WEB_HOSTING_HOSTING_NVME_TOC_O_CAO_BACKUP_3_LAN_2026_04_05
+observed_at: '2026-04-14T12:28:23.630494+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tóm tắt nhanh: Phù hợp với: Các website có lượng truy
+  cập lớn, website thương mại điện tử, báo chí, tin tức yêu cầu tốc độ và sự ổn định.'
+dual_vote:
+  status: DISAGREE
+  score: 0.5159
+  confidence: LOW
+  flag: human_review_required

@@ -1,0 +1,22 @@
+claim_id: CLM-IMG-product.hosting.bk_nvme_2-website_price
+entity_id: product.hosting.bk_nvme_2
+entity_type: product_plan
+entity_name: BK NVME 2
+attribute: website_price
+value: 66500
+confidence: high
+review_state: approved
+risk_class: verified
+source_ids:
+- IMG-NVME1-NVME2-NVME3-NVME4
+observed_at: '2026-04-07T16:35:55.109503+07:00'
+valid_from: '2026-04-07'
+approved_at: '2026-04-07T16:35:55.109503+07:00'
+approved_by: image-extraction
+unit: VND
+qualifiers:
+  period: 1 tháng
+  source: bkns.vn website screenshot
+  note: Giá hiển thị trên web, có thể đã bao gồm giảm giá
+compiler_note: Extracted from website screenshot (NVME1-NVME2-NVME3-NVME4), BK NVME
+  2

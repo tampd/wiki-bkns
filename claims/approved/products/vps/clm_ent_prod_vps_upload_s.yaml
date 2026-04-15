@@ -7,12 +7,14 @@ value: 200
 unit: Mbps
 qualifiers: {}
 source_ids:
-- SRC-CLOUD_VPS_AMD_WEB_2026_04_05
+  - SRC-CLOUD_VPS_AMD_WEB_2026_04_05
 observed_at: '2026-04-05T21:46:05.038834+07:00'
 valid_from: '2026-04-05'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
 compiler_note: 'Trích từ bảng giá gói AMD 5: Upload speed | 200Mbps'
-approved_at: '2026-04-07T13:00:14.564542+07:00'
+approved_at: '2026-04-08T13:00:14.195020+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.706Z'

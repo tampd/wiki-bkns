@@ -1,0 +1,23 @@
+claim_id: CLM-342C746EEEB9
+entity_id: product.software.dti_assessment
+entity_type: product
+entity_name: Phần Mềm Đánh Giá Chuyển Đổi Số DTI
+attribute: target_customer
+value: Các cơ quan, đơn vị, tỉnh thành cần một công cụ để theo dõi, báo cáo, và so
+  sánh tiến độ chuyển đổi số.
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-PHAN_MEM_ANH_GIA_CHUYEN_OI_SO_DTI_2026_04_13
+observed_at: '2026-04-14T17:20:54.511172+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tóm tắt nhanh: • Phù hợp với: Các cơ quan, đơn vị, tỉnh
+  thành cần một công cụ để theo dõi, báo cáo, và so sánh tiến độ chuyển đổi số.'
+dual_vote:
+  status: DISAGREE
+  score: 0.0
+  confidence: LOW
+  flag: human_review_required

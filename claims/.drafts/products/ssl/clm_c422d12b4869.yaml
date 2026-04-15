@@ -1,0 +1,27 @@
+claim_id: CLM-C422D12B4869
+entity_id: ENT-PROD-SSL-COMODO-DV
+entity_type: product_plan
+entity_name: Comodo SSL Certificate (DV)
+attribute: description
+value: Comodo SSL Certificate (DV) là một giải pháp chứng chỉ bảo mật, cung cấp xác
+  thực ở cấp độ tên miền (Domain Validation). Sản phẩm này giúp mã hóa kết nối giữa
+  máy chủ web và trình duyệt của người dùng, đảm bảo an toàn cho dữ liệu truyền đi.
+  Đây là loại chứng chỉ được cấp phát nhanh chóng, phù hợp cho việc bảo mật các trang
+  web không yêu cầu xác thực tổ chức phức tạp.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-COMODO_SSL_CERTIFICATE_DV_CHUNG_CHI_XAC_THUC_TEN_MIEN_2026_04_13
+observed_at: '2026-04-13T22:09:21.998627+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: '━━━ Mô tả dịch vụ
+
+
+  Comodo SSL Certificate (DV) là một giải pháp chứng chỉ bảo mật, cung cấp xác thực
+  ở cấp độ tên miền (Domain Validation). Sản phẩm này giúp mã hóa kết nối giữa máy
+  chủ web và trình duyệt của người dùng, đảm bảo an toàn cho dữ liệu truyền đi. Đây
+  là loại chứng chỉ được cấp phát nhanh chóng, phù hợp cho việc bảo mật các trang
+  web không yêu cầu xác thực tổ chức phức tạp.'

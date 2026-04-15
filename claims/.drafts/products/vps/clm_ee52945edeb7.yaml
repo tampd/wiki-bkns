@@ -1,0 +1,25 @@
+claim_id: CLM-EE52945EDEB7
+entity_id: ENT-PROD-VPS
+entity_type: product
+entity_name: VPS N8N – AI
+attribute: backup_frequency
+value: weekly
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_VPS_SIEU_TIET_KIEM_VPS_SIEU_RE_TAI_BKNS_2026_04_13
+- SRC-DICH_VU_THUE_CLOUD_VPS_SSD_GIA_RE_TAI_BKNS_2026_04_05
+- SRC-DICH_VU_VPS_SIEU_TIET_KIEM_VPS_SIEU_RE_TAI_BKNS_2026_04_05
+- SRC-VPS_N8N_AI_DICH_VU_TU_ONG_HOA_QUY_TRINH_TAI_BKNS_2026_04_05
+observed_at: '2026-04-14T16:20:24.946673+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tính năng / Thành phần: • Sao lưu dữ liệu: Dữ liệu được sao
+  lưu hàng tuần.'
+dual_vote:
+  status: PARTIAL
+  score: 0.6518
+  confidence: MEDIUM
+  flag: needs_review

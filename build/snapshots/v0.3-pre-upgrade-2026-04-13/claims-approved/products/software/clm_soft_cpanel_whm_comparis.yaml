@@ -1,0 +1,19 @@
+claim_id: CLM-SOFT-CPANEL_WHM-COMPARIS
+entity_id: product.software.cpanel_whm
+entity_type: product
+entity_name: Bản quyền cPanel/WHM
+attribute: comparison
+value: Giao diện được đánh giá là đẹp, hiện đại, dễ dùng so với DirectAdmin (đơn giản).
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-BAN_QUYEN_CPANEL_WHM_2026_04_06
+observed_at: '2026-04-06T23:00:29.745773+07:00'
+valid_from: '2026-04-06'
+confidence: high
+review_state: approved
+risk_class: none
+compiler_note: 'Trích từ bảng So sánh các gói: | Tiêu chí | cPanel | DirectAdmin |
+  | Giao diện | Đẹp, hiện đại, dễ dùng | Đơn giản |'
+approved_at: '2026-04-08T13:00:15.735662+07:00'
+approved_by: admin-batch

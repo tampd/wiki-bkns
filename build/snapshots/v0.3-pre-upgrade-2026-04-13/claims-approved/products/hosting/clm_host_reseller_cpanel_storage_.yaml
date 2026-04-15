@@ -1,0 +1,21 @@
+claim_id: CLM-HOST-RESELLER_CPANEL-STORAGE_
+entity_id: product.hosting.reseller_cpanel.rl04
+entity_type: product
+entity_name: Reseller Hosting cPanel
+attribute: storage_limit
+value: SSD
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-RESELLER_HOSTING_CPANEL_QUAN_LY_NHIEU_HOSTING_CHI_VOI_MOT_T_2026_04_04
+- SRC-RESELLER_HOSTING_CPANEL_QUAN_LY_NHIEU_HOSTING_CHI_VOI_MOT_T_2026_04_06
+observed_at: '2026-04-07T01:00:34.440772+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ mục Tính năng / Thành phần: ''Loại ổ cứng: SSD'''
+value_changed_from: 50
+value_changed_at: '2026-04-07T01:00:34.440845+07:00'
+approved_at: '2026-04-08T13:00:11.612381+07:00'
+approved_by: admin-batch

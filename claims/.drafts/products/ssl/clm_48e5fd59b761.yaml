@@ -1,0 +1,23 @@
+claim_id: CLM-48E5FD59B761
+entity_id: ENT-PROD-SSL-POSITIVESSL-DV
+entity_type: product_plan
+entity_name: PositiveSSL (DV)
+attribute: list_price
+value: 1274000
+unit: VND
+qualifiers:
+  billing_cycle: year
+  note: Giá nhà cung cấp (tham khảo)
+source_ids:
+- SRC-POSITIVESSL_DV_CHUNG_CHI_SSL_GIA_RE_2026_04_13
+observed_at: '2026-04-14T16:35:13.698398+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: '| Giá nhà cung cấp (tham khảo) | <del>1.274.000đ/năm</del> |'
+dual_vote:
+  status: DISAGREE
+  score: 0.5432
+  confidence: LOW
+  flag: human_review_required

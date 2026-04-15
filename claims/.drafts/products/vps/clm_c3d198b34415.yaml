@@ -1,0 +1,23 @@
+claim_id: CLM-C3D198B34415
+entity_id: product.vps.amd
+entity_type: product_family
+entity_name: Cloud VPS AMD
+attribute: cpu_type
+value: AMD EPYC
+unit: null
+qualifiers:
+  cores: 64
+  threads: 128
+source_ids:
+- SRC-BKNS_CAMNAG_HOSTING_DOT3_2026_04_05
+observed_at: '2026-04-14T12:02:37.737369+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ: "...sử dụng chip AMD EPYC (64 nhân/128 luồng)."'
+dual_vote:
+  status: DISAGREE
+  score: 0.4055
+  confidence: LOW
+  flag: human_review_required

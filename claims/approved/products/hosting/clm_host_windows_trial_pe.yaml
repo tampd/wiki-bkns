@@ -7,13 +7,14 @@ value: 7
 unit: days
 qualifiers: {}
 source_ids:
-- SRC-DICH_VU_HOSTING_WINDOWS_TAI_BKNS_2026_04_06
+  - SRC-DICH_VU_HOSTING_WINDOWS_TAI_BKNS_2026_04_06
 observed_at: '2026-04-07T00:08:17.764517+07:00'
 valid_from: '2026-04-07'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ mục Điều kiện/giới hạn nổi bật: Tất cả các gói đều có chính
-  sách dùng thử 7 ngày.'
-approved_at: '2026-04-07T13:00:12.590047+07:00'
+compiler_note: 'Trích từ mục Điều kiện/giới hạn nổi bật: Tất cả các gói đều có chính sách dùng thử 7 ngày.'
+approved_at: '2026-04-08T13:00:11.858788+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.094Z'

@@ -1,0 +1,24 @@
+claim_id: CLM-0F21D7E08C99
+entity_id: product.software.softaculous
+entity_type: product
+entity_name: Bản quyền Softaculous
+attribute: feature
+value: Nhập ứng dụng đã cài đặt thủ công
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-BAN_QUYEN_SOFTACULOUS_TRINH_CAI_AT_UNG_DUNG_TU_ONG_2026_04_05
+observed_at: '2026-04-14T17:18:51.512535+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tính năng / Thành phần: ''Nhập ứng dụng: Có thể nhập
+  các ứng dụng đã được cài đặt thủ công vào hệ thống quản lý của Softaculous.'''
+dual_vote:
+  status: PARTIAL
+  score: 0.6786
+  confidence: MEDIUM
+  flag: needs_review
+value_changed_from: Sao lưu và Phục hồi
+value_changed_at: '2026-04-14T17:18:51.512620+07:00'

@@ -1,0 +1,18 @@
+claim_id: CLM-ENT-PROD-SOF-PRODUCT_
+entity_id: ENT-PROD-SOFTWARE-LITESPEED
+entity_type: product
+entity_name: LiteSpeed Web Server
+attribute: product_type
+value: web server hiệu suất cao
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-LITESPEED_WEB_2026_04_05
+observed_at: '2026-04-05T22:07:23.252136+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ: ''LiteSpeed là web server hiệu suất cao...'''
+approved_at: '2026-04-08T13:00:15.552676+07:00'
+approved_by: admin-batch

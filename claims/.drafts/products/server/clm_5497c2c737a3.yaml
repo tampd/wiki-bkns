@@ -1,0 +1,27 @@
+claim_id: CLM-5497C2C737A3
+entity_id: product.colocation.bkns
+entity_type: product
+entity_name: Thuê Chỗ Đặt Máy Chủ (Colocation)
+attribute: feature
+value: Khách hàng có thể ra vào Data Center để thao tác trực tiếp trên máy chủ vật
+  lý của mình.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_THUE_CHO_AT_MAY_CHU_COLOCATION_TAI_BKNS_2026_04_05
+observed_at: '2026-04-14T17:15:53.962653+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ Câu hỏi thường gặp (FAQ): ''Khi thuê chỗ đặt máy chủ thì
+  có thể truy cập vào máy chủ vật lý được không? Có, khách hàng có thể ra vào Data
+  Center để thao tác trực tiếp trên máy chủ vật lý của mình.'''
+dual_vote:
+  status: DISAGREE
+  score: 0.58
+  confidence: LOW
+  flag: human_review_required
+value_changed_from: Hệ thống an ninh nhiều lớp bao gồm kiểm soát ra vào, camera giám
+  sát để bảo vệ thiết bị.
+value_changed_at: '2026-04-14T17:15:53.962681+07:00'

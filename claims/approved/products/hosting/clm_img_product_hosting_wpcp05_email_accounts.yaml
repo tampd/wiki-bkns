@@ -1,0 +1,18 @@
+claim_id: CLM-IMG-product.hosting.wpcp05-email_accounts
+entity_id: product.hosting.wpcp05
+entity_type: product_plan
+entity_name: WordPress Hosting WPCP05
+attribute: email_accounts
+value: Unlimited
+confidence: ground_truth
+review_state: approved
+risk_class: verified
+source_ids:
+  - IMG-WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06
+observed_at: '2026-04-07T16:33:55.131578+07:00'
+valid_from: '2026-04-07'
+approved_at: '2026-04-07T16:33:55.131578+07:00'
+approved_by: image-extraction
+compiler_note: From bkns.vn screenshot (WPCP01-WPCP02-WPCP03-WPCP03-WPCP04-WPCP05-WPCP06)
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.242Z'

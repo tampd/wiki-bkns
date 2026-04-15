@@ -1,0 +1,23 @@
+claim_id: CLM-4C480DB7202A
+entity_id: ENT-PROD-DOMAIN.BIZ
+entity_type: product_plan
+entity_name: .biz
+attribute: renewal_price
+value: 740000
+unit: VND
+qualifiers:
+  billing_cycle: year
+source_ids:
+- SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_05
+observed_at: '2026-04-14T16:43:52.786813+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ Bảng giá Tên miền Quốc tế, dòng .biz: Phí duy trì hàng năm
+  (VNĐ) 740.000'
+dual_vote:
+  status: DISAGREE
+  score: 0.5466
+  confidence: LOW
+  flag: human_review_required

@@ -1,0 +1,18 @@
+claim_id: CLM-76448A7B5302
+entity_id: product.software.cpanel_whm
+entity_type: product
+entity_name: Bản quyền cPanel/WHM
+attribute: product.component
+value: Bao gồm giao diện cPanel cho người dùng cuối và giao diện WHM (WebHost Manager)
+  cho quản trị viên máy chủ.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-BAN_QUYEN_CPANEL_WHM_2026_04_13
+observed_at: '2026-04-13T21:32:58.211044+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: Nó bao gồm giao diện cPanel cho người dùng
+  cuối và giao diện WHM (WebHost Manager) cho quản trị viên máy chủ.'

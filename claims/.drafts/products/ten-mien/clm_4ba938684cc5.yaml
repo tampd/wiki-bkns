@@ -1,0 +1,20 @@
+claim_id: CLM-4BA938684CC5
+entity_id: bkns:prod:domain:registry_lock
+entity_type: product
+entity_name: Bảo vệ tên miền cấp cao nhất (Registry Lock)
+attribute: target_audience
+value: bất kỳ ai sở hữu tên miền quan trọng
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-BAO_VE_TEN_MIEN_CAP_CAO_NHAT_GIAI_PHAP_AN_TOAN_TUYET_OI_2026_04_13
+observed_at: '2026-04-13T21:50:54.908206+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: ''Phù hợp với: Các tổ chức tài chính, ngân
+  hàng, cơ quan chính phủ, công ty thương mại điện tử lớn, tập đoàn, và bất kỳ ai
+  sở hữu tên miền quan trọng.'''
+value_changed_from: tập đoàn
+value_changed_at: '2026-04-13T21:50:54.908261+07:00'

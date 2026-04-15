@@ -1,0 +1,19 @@
+claim_id: CLM-DEDI-MCCB01-STORAGE
+entity_id: product.dedicated_server.mccb01
+entity_type: product_plan
+entity_name: MCCB01
+attribute: storage
+value: 1 x 400GB SSD Enterprise
+unit: ''
+qualifiers: {}
+source_ids:
+- SRC-DANH_SACH_GOI_SAN_PHAM_MAY_CHU_BKNS_2026_04_06
+observed_at: '2026-04-06T23:52:20.189262+07:00'
+valid_from: '2026-04-06'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ bảng thông số Gói MCCB01: | SSD | 1 x 400GB SSD Enterprise
+  |'
+approved_at: '2026-04-08T13:00:08.851208+07:00'
+approved_by: admin-batch

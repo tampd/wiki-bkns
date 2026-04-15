@@ -1,0 +1,21 @@
+claim_id: CLM-HOST-PLATINUM-SOFTWARE
+entity_id: product.hosting.platinum
+entity_type: product
+entity_name: Platinum Web Hosting
+attribute: software_web_server
+value: Jetbackup
+unit: null
+qualifiers: null
+source_ids:
+- SRC-PLATINUM_WEB_HOSTING_HOSTING_NVME_TOC_O_CAO_BACKUP_3_LAN_2026_04_06
+observed_at: '2026-04-07T00:49:55.452329+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: null
+compiler_note: 'Trích từ mục Điểm chính: ...backup dữ liệu tự động 3 lần/ngày bằng
+  Jetbackup.'
+value_changed_from: Imunify360
+value_changed_at: '2026-04-07T00:49:55.452357+07:00'
+approved_at: '2026-04-08T13:00:11.424966+07:00'
+approved_by: admin-batch

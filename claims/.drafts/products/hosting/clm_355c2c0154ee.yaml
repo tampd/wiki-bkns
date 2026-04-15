@@ -1,0 +1,21 @@
+claim_id: CLM-355C2C0154EE
+entity_id: product.hosting.shared
+entity_type: product_line
+entity_name: Hosting
+attribute: admin_privileges
+value: Chỉ có quyền cơ bản, không cài được các phần mềm tuỳ biến
+unit: ''
+qualifiers: null
+source_ids:
+- SRC-TRAINING_DICH_VU_VPS_2026_04_13
+observed_at: '2026-04-14T16:19:07.462139+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: Trích từ bảng so sánh mục 3, dòng 'Quyền quản trị', cột 'Hosting'.
+dual_vote:
+  status: DISAGREE
+  score: 0.4702
+  confidence: LOW
+  flag: human_review_required

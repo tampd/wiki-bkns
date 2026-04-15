@@ -1,0 +1,24 @@
+claim_id: CLM-191E2A15A314
+entity_id: ENT-PROD-SSL-COMODO-EV
+entity_type: product
+entity_name: Comodo EV SSL
+attribute: included_feature
+value: con dấu trang web miễn phí
+unit: null
+qualifiers: null
+source_ids:
+- SRC-COMODO_EV_SSL_CHUNG_CHI_SSL_XAC_THUC_MO_RONG_2026_04_05
+observed_at: '2026-04-14T16:26:39.453891+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ: Đi kèm tính năng Quét lỗ hổng HackerGuardian và con dấu
+  trang web miễn phí.'
+dual_vote:
+  status: DISAGREE
+  score: 0.3281
+  confidence: LOW
+  flag: human_review_required
+value_changed_from: Quét lỗ hổng HackerGuardian
+value_changed_at: '2026-04-14T16:26:39.453940+07:00'

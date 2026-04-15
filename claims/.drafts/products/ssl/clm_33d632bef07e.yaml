@@ -1,0 +1,25 @@
+claim_id: CLM-33D632BEF07E
+entity_id: ENT-PROD-SSL-011
+entity_type: ENT-PROD-SSL
+entity_name: GeoTrust True BusinessID with EV Multi-Domain
+attribute: price
+value: 9134000
+unit: VND
+qualifiers:
+  billing_cycle: year
+source_ids:
+- SRC-CHUNG_CHI_SSL_GEOTRUST_QUICKSSL_PREMIUM_WILDCARD_2026_04_05
+- SRC-GEOTRUST_TRUE_BUSINESSID_WITH_EV_MULTI_DOMAIN_2026_04_05
+observed_at: '2026-04-14T16:53:51.144026+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ bảng giá: ''| Giá tại BKNS | 9.134.000đ/năm |'''
+dual_vote:
+  status: DISAGREE
+  score: 0.5331
+  confidence: LOW
+  flag: human_review_required
+value_changed_from: 6614000
+value_changed_at: '2026-04-14T16:53:51.144081+07:00'

@@ -1,0 +1,18 @@
+claim_id: CLM-C0E29072427D
+entity_id: ENT-PROD-EMAIL
+entity_type: product
+entity_name: Email Hosting
+attribute: infrastructure_type
+value: Máy chủ dùng chung (Share Email Hosting).
+unit: null
+qualifiers:
+  comparison_with: Email Server
+source_ids:
+- SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_VA_TIN_CAY_2026_04_13
+observed_at: '2026-04-13T22:35:10.289216+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng so sánh Email Hosting và Email Server: | Hạ tầng | EMAIL
+  HOSTING | Máy chủ dùng chung (Share Email Hosting). |'

@@ -7,13 +7,14 @@ value: Cung cấp thanh địa chỉ màu xanh với tên công ty
 unit: ''
 qualifiers: null
 source_ids:
-- SRC-GEOTRUST_TRUE_BUSINESSID_WITH_EV_MULTI_DOMAIN_2026_04_06
+  - SRC-GEOTRUST_TRUE_BUSINESSID_WITH_EV_MULTI_DOMAIN_2026_04_06
 observed_at: '2026-04-07T00:34:23.292534+07:00'
 valid_from: '2026-04-07'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ mục ''Tóm tắt nhanh'': Cung cấp thanh địa chỉ màu xanh với
-  tên công ty (tính năng của EV)'
-approved_at: '2026-04-07T13:00:13.816295+07:00'
+compiler_note: 'Trích từ mục ''Tóm tắt nhanh'': Cung cấp thanh địa chỉ màu xanh với tên công ty (tính năng của EV)'
+approved_at: '2026-04-08T13:00:13.326750+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.570Z'

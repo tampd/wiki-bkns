@@ -3,23 +3,22 @@ entity_id: ENT-PROD-VPS-SIEU-RE
 entity_type: product
 entity_name: VPS Giá Rẻ
 attribute: description
-value: Dịch vụ cho thuê máy chủ ảo (VPS) với chi phí thấp, cung cấp tài nguyên độc
-  lập và quyền quản trị toàn phần cho người dùng.
+value: Dịch vụ cho thuê máy chủ ảo (VPS) với chi phí thấp, cung cấp tài nguyên độc lập và quyền quản trị toàn phần cho người dùng.
 unit: null
 qualifiers: null
 source_ids:
-- SRC-VPS_SIEU_RE_WEB_2026_04_05
-- SRC-STORAGE_VPS_MAY_CHU_AO_LUU_TRU_DUNG_LUONG_CAO_2026_04_04
-- SRC-DICH_VU_VPS_GIA_RE_MAY_CHU_AO_CAU_HINH_ON_INH_2026_04_06
+  - SRC-VPS_SIEU_RE_WEB_2026_04_05
+  - SRC-STORAGE_VPS_MAY_CHU_AO_LUU_TRU_DUNG_LUONG_CAO_2026_04_04
+  - SRC-DICH_VU_VPS_GIA_RE_MAY_CHU_AO_CAU_HINH_ON_INH_2026_04_06
 observed_at: '2026-04-07T00:16:39.044810+07:00'
 valid_from: '2026-04-05'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ mục ''Tóm tắt nhanh'': • Dịch vụ này là gì: Dịch vụ cho thuê
-  máy chủ ảo (VPS) với chi phí thấp, cung cấp tài nguyên độc lập và quyền quản trị
-  toàn phần cho người dùng.'
+compiler_note: 'Trích từ mục ''Tóm tắt nhanh'': • Dịch vụ này là gì: Dịch vụ cho thuê máy chủ ảo (VPS) với chi phí thấp, cung cấp tài nguyên độc lập và quyền quản trị toàn phần cho người dùng.'
 value_changed_from: giá rẻ
 value_changed_at: '2026-04-07T00:16:39.044829+07:00'
-approved_at: '2026-04-07T13:00:14.342695+07:00'
+approved_at: '2026-04-08T13:00:13.925885+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.681Z'

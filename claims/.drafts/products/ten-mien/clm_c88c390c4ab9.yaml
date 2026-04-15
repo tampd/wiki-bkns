@@ -1,0 +1,17 @@
+claim_id: CLM-C88C390C4AB9
+entity_id: bkns:prod:domain:registry_lock
+entity_type: product
+entity_name: Bảo vệ tên miền cấp cao nhất (Registry Lock)
+attribute: unlock_process
+value: Quy trình xác thực đa bên phức tạp giữa chủ thể, nhà đăng ký và registry
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-BAO_VE_TEN_MIEN_CAP_CAO_NHAT_GIAI_PHAP_AN_TOAN_TUYET_OI_2026_04_13
+observed_at: '2026-04-13T21:50:54.979362+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng So sánh các gói: ''| Quy trình mở khóa | ... | Quy trình
+  xác thực đa bên phức tạp giữa chủ thể, nhà đăng ký và registry |'''

@@ -1,0 +1,22 @@
+claim_id: CLM-6DF00624FB9F
+entity_id: product.software.plesk_dedi_dev_pack
+entity_type: product_plan
+entity_name: Plesk Dedicated License - Developer Pack
+attribute: monthly_price
+value: 500000
+unit: VND
+qualifiers:
+  billing_cycle: month
+source_ids:
+- SRC-PHAN_MEM_QUAN_TRI_HOSTING_PLESK_OBSIDIAN_2026_04_05
+observed_at: '2026-04-14T12:23:09.356243+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ bảng giá PLESK DEDICATED LICENSE: ''Developer Pack | 500.000'''
+dual_vote:
+  status: PARTIAL
+  score: 0.6082
+  confidence: MEDIUM
+  flag: needs_review

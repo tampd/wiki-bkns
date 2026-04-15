@@ -7,13 +7,14 @@ value: true
 unit: null
 qualifiers: null
 source_ids:
-- SRC-DICH_VU_VPS_SIEU_TIET_KIEM_VPS_SIEU_RE_TAI_BKNS_2026_04_06
+  - SRC-DICH_VU_VPS_SIEU_TIET_KIEM_VPS_SIEU_RE_TAI_BKNS_2026_04_06
 observed_at: '2026-04-07T00:18:36.280447+07:00'
 valid_from: '2026-04-07'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ mục Tính năng / Thành phần: ''Kích hoạt tự động: Dịch vụ
-  được khởi tạo và kích hoạt một cách tự động sau khi đăng ký.'''
-approved_at: '2026-04-07T13:00:14.290943+07:00'
+compiler_note: 'Trích từ mục Tính năng / Thành phần: ''Kích hoạt tự động: Dịch vụ được khởi tạo và kích hoạt một cách tự động sau khi đăng ký.'''
+approved_at: '2026-04-08T13:00:13.845689+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.675Z'

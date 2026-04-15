@@ -1,0 +1,17 @@
+claim_id: CLM-893347FD0FC9
+entity_id: ENT-PROD-SSL-ESSENTIALSSL-WILDCARD-DV
+entity_type: product_plan
+entity_name: EssentialSSL Wildcard (DV)
+attribute: organization_validation
+value: false
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-CHUNG_CHI_SSL_ESSENTIALSSL_WILDCARD_DV_CUA_COMODO_2026_04_13
+observed_at: '2026-04-13T21:57:30.161239+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tóm tắt nhanh: Điều kiện/giới hạn nổi bật: ... Chỉ xác
+  thực tên miền, không xác thực thông tin tổ chức.'

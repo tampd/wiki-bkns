@@ -2,60 +2,68 @@
 page_id: wiki.products.server.chinh-sach
 title: Máy Chủ BKNS — Chính Sách
 category: products/server
-updated: '2026-04-07'
+updated: '2026-04-14'
 review_state: drafted
-claims_used: 19
-compile_cost_usd: 0.0088
-self_review: pass
-corrections: 0
+claims_used: 30
+compile_cost_usd: 0.0117
+self_review: fail
+corrections: 1
 ---
 
 # Máy Chủ BKNS — Chính Sách
 
-Tổng hợp các chính sách chung về hỗ trợ, thanh toán và các dịch vụ liên quan đến máy chủ tại BKNS. Các thông tin được trích xuất trực tiếp từ nguồn dữ liệu đã được kiểm duyệt.
+Trang này tổng hợp các chính sách dịch vụ, cam kết hỗ trợ (SLA), và các điều khoản liên quan đến nhóm sản phẩm Máy Chủ tại BKNS.
 
 ## Chính Sách Hỗ Trợ Kỹ Thuật
 
 ### Thời Gian Hỗ Trợ
-Đội ngũ kỹ thuật của BKNS sẵn sàng hỗ trợ khách hàng **24/7/365** cho các dịch vụ máy chủ, bao gồm:
-- Thuê Chỗ Đặt Máy Chủ (Colocation)
-- Dịch vụ Quản trị Máy chủ
-- Dịch vụ Backup Dữ liệu
+Đội ngũ kỹ thuật của BKNS sẵn sàng hỗ trợ cho các dịch vụ như sau:
+- **Thuê Chỗ Đặt Máy Chủ:** Hỗ trợ 24/7/365.
+- **Backup Dữ liệu và Quản trị Máy chủ:** Hỗ trợ 24/7.
 
-### Thời Gian Phản Hồi (SLA)
-- **Dịch vụ Quản trị Máy chủ - Gói Nâng cao:** Thời gian phản hồi là **15 phút**.
-- Các dịch vụ khác: Đang cập nhật.
-
-### Kênh Hỗ Trợ & Tư Vấn
-Khách hàng có thể liên hệ với BKNS để nhận tư vấn và hỗ trợ dịch vụ qua các kênh sau:
+### Kênh Hỗ Trợ
+Khách hàng có thể liên hệ với BKNS để nhận hỗ trợ hoặc tư vấn đăng ký dịch vụ qua các kênh sau:
 - Hotline
 - Email
-- Zalo (áp dụng cho đăng ký Máy Chủ Vật Lý)
+- Zalo
+- Các kênh liên lạc khác
 
-## Chính Sách Thương Mại & Thanh Toán
+### Thời Gian Phản Hồi (Dịch vụ Quản trị Máy chủ)
+Thời gian phản hồi tối đa được cam kết cho từng gói Dịch vụ Quản trị Máy chủ như sau:
 
-### Thuế Giá Trị Gia Tăng (VAT)
-Giá niêm yết cho các gói Dịch vụ Quản trị Máy chủ Trọn gói **chưa bao gồm 10% thuế VAT**.
+| Gói Dịch Vụ | Thời Gian Phản Hồi Tối Đa |
+| :--- | :--- |
+| Cơ bản | 30 phút |
+| Nâng cao | 15 phút |
 
-### Chính Sách Ưu Đãi
-Đối với dịch vụ Cho thuê máy chủ vật lý (Dedicated Server), khách hàng sẽ nhận được **giá thuê ưu đãi hơn khi đăng ký chu kỳ dài hạn**.
+## Cam Kết Dịch Vụ (SLA) & Điều Khoản Chung
 
-## Chính Sách Dịch Vụ Bổ Sung
-
-### Dịch vụ Backup Dữ liệu
-- **Tần suất Backup:** Tùy chỉnh linh hoạt theo nhu cầu (theo giờ, ngày, tuần).
-- **Chính sách lưu trữ (Retention):** Dữ liệu được lưu trữ từ **3 đến 5 năm**.
-- **Hỗ trợ:** 24/7.
+- **Cam kết Uptime (SLA):** Đang cập nhật
+- **Chính sách Dùng thử (Trial):** Đang cập nhật
+- **Chính sách Hoàn tiền (Refund):** Đang cập nhật
 
 ## Các Chính Sách Khác
 
-- **Cam kết thời gian hoạt động (SLA Uptime):** Đang cập nhật
-- **Chính sách dùng thử (Trial Policy):** Đang cập nhật
-- **Chính sách hoàn tiền (Refund Policy):** Đang cập nhật
+### Chính sách Thuế VAT
+- **Dịch vụ Quản trị Máy chủ Trọn gói:** Giá các gói dịch vụ được niêm yết chưa bao gồm 10% thuế VAT.
+- **Bản quyền phần mềm (vBulletin):** Bản quyền phần mềm không chịu thuế.
 
-## Xem Thêm
+### Chính sách Ưu đãi
+- **Cho thuê máy chủ vật lý (Dedicated Server):** Khách hàng sẽ nhận được giá thuê ưu đãi hơn khi đăng ký chu kỳ dài hạn.
 
+## Chính Sách Sao Lưu Dữ Liệu (Backup)
+
+- **Tần suất sao lưu:** Có thể tùy chỉnh linh hoạt theo giờ, ngày, hoặc tuần, tùy thuộc vào mức độ quan trọng và tần suất thay đổi của dữ liệu.
+- **Thời gian lưu trữ (Retention):** Từ 3 đến 5 năm đối với các bản sao lưu hàng năm.
+
+## Quy Trình Đăng Ký Dịch Vụ
+
+- **Thuê Chỗ Đặt Máy Chủ (Colocation):** Quy trình gồm 4 bước: Liên hệ với BKNS, Tư vấn, Ký hợp đồng, và Bàn giao.
+- **Cho thuê máy chủ vật lý (Dedicated Server):** Khách hàng nhấn nút "Đăng ký" trên gói sản phẩm để được chuyển hướng đến Zalo của BKNS và nhận tư vấn, hỗ trợ.
+- **Dịch vụ Backup Dữ liệu:** Khách hàng liên hệ trực tiếp với BKNS qua hotline, email hoặc các kênh khác để được tư vấn và triển khai.
+
+### Xem Thêm
 - [Cloud VPS BKNS](../vps/index.md)
 - [Phần Mềm & Bản Quyền BKNS](../software/index.md)
 
-Compiled by BKNS Wiki Bot • 2026-04-07
+Compiled by BKNS Wiki Bot • 2026-04-14

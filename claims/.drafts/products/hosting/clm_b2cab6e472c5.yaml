@@ -1,0 +1,24 @@
+claim_id: CLM-B2CAB6E472C5
+entity_id: ENT-COMPANY-001
+entity_type: company
+entity_name: BKNS
+attribute: service_guarantee
+value: Cung cấp hỗ trợ kỹ thuật chuyên nghiệp cho CloudLinux.
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-BAN_QUYEN_CLOUDLINUX_OS_TANG_ON_INH_VA_BAO_MAT_CHO_SHARED_2026_04_05
+observed_at: '2026-04-14T11:59:30.301740+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Chính sách / Điều khoản / Lưu ý: ''Cung cấp bản quyền chính
+  hãng và hỗ trợ kỹ thuật chuyên nghiệp.'''
+dual_vote:
+  status: DISAGREE
+  score: 0.0371
+  confidence: LOW
+  flag: human_review_required
+value_changed_from: Cung cấp bản quyền CloudLinux chính hãng.
+value_changed_at: '2026-04-14T11:59:30.301771+07:00'

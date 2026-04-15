@@ -1,0 +1,20 @@
+claim_id: CLM-HOST-BKH04-PRICE
+entity_id: product.hosting.bkh04
+entity_type: product_plan
+entity_name: BKH04
+attribute: price
+value: 31500
+unit: VND
+qualifiers:
+  billing_cycle: year
+source_ids:
+- SRC-HOSTING_GIA_RE_BANG_GIA_VA_THONG_SO_KY_THUAT_TAI_BKNS_2026_04_06
+observed_at: '2026-04-07T00:36:08.713498+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: high
+compiler_note: 'Trích từ bảng giá: ''Giá | 31.500đ/Năm''. Ghi chú trích xuất cũng
+  xác nhận: ''Giá của gói BKH04 được ghi là "31.500đ/Năm"'''
+approved_at: '2026-04-08T13:00:10.968459+07:00'
+approved_by: admin-batch

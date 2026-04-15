@@ -1,0 +1,17 @@
+claim_id: CLM-B435A511B78D
+entity_id: product.vps.epyc1
+entity_type: product_plan
+entity_name: EPYC 1
+attribute: bandwidth_speed
+value: 100
+unit: Mbps
+qualifiers:
+  product_line: VPS ADM
+source_ids:
+- SRC-BANG_GIA_HOSTING_VPS_EMAIL_2026_04_13
+observed_at: '2026-04-13T21:44:20.658785+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng giá VPS ADM, dòng ''Tốc độ'', cột ''EPYC 1'': 100 Mbps'

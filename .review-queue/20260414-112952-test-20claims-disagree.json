@@ -1,0 +1,12 @@
+{
+  "ts": "2026-04-14T11:29:52.951456+07:00",
+  "skill": "test-20claims",
+  "status": "DISAGREE",
+  "flag": "human_review_required",
+  "score": 0.4892,
+  "model_a": "gemini-2.5-pro",
+  "model_b": "gpt-5.4",
+  "text_a": "```json\n{\n  \"attribute\": \"parked_domains\",\n  \"value\": \"Unlimited\",\n  \"confidence\": 1.0,\n  \"agrees\": true,\n  \"reason\": \"The product specification for WordPress Hosting WPCP07 confirms that the number of parked domains is unlimited.\"\n}\n```",
+  "text_b": "{\"attribute\":\"parked_domains\",\"value\":\"Unlimited\",\"confidence\":0.24,\"agrees\":false,\"reason\":\"No supporting product specification for BKNS WordPress Hosting plan WPCP07 was provided in the claim record, so the claimed parked_domains value cannot be verified from the given data.\"}",
+  "prompt_preview": "Verify the following claim about BKNS products and return JSON:\nEntity: WordPress Hosting WPCP07\nAttribute: parked_domains\nClaimed value: Unlimited\n\nReturn JSON: {\"attribute\": \"...\", \"value\": \"...\", \"confidence\": 0.0-1.0, \"agrees\": true/false, \"reason\": \"brief explanation\"}"
+}

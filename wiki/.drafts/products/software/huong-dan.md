@@ -2,55 +2,64 @@
 page_id: wiki.products.software.huong-dan
 title: Phần Mềm & Bản Quyền BKNS — Hướng Dẫn
 category: products/software
-updated: '2026-04-07'
+updated: '2026-04-14'
 review_state: drafted
-claims_used: 4
-compile_cost_usd: 0.0051
-self_review: skipped
+claims_used: 8
+compile_cost_usd: 0.0073
+self_review: pass
 corrections: 0
 ---
 
 # Phần Mềm & Bản Quyền BKNS — Hướng Dẫn
 
-Trang này cung cấp hướng dẫn chi tiết về cách đăng ký, kích hoạt và quản lý các sản phẩm phần mềm và bản quyền do BKNS cung cấp.
+Hướng dẫn đăng ký, kích hoạt và quản lý các sản phẩm phần mềm và bản quyền do BKNS cung cấp.
 
-### 1. Hướng dẫn Đăng ký / Mua bản quyền
+---
 
-Quy trình chung để đặt mua bản quyền phần mềm tại BKNS như sau:
+### 1. Hướng dẫn Đăng ký & Mua bản quyền
 
-**Bước 1: Đặt mua trên trang dịch vụ**
+Tùy thuộc vào sản phẩm, quy trình đăng ký có thể khác nhau. Dưới đây là các phương thức đăng ký hiện có:
 
-Truy cập trang chi tiết sản phẩm phần mềm bạn muốn mua và nhấn vào nút **"ĐẶT MUA"**.
+**a. Đặt mua trực tuyến qua website**
 
-- **Đối với Plesk Obsidian License & Bản quyền vBulletin:** Thao tác này sẽ thêm sản phẩm vào giỏ hàng của bạn.
+Phương thức này áp dụng cho các sản phẩm có sẵn nút "ĐẶT MUA" trên trang giới thiệu.
 
-**Bước 2: Hoàn tất thanh toán**
+*   **Sản phẩm áp dụng:** Plesk Obsidian License, Bản quyền vBulletin.
+*   **Quy trình:**
+    1.  Truy cập trang dịch vụ của sản phẩm bạn quan tâm.
+    2.  Nhấn vào nút **"ĐẶT MUA"**.
+    3.  Hệ thống sẽ chuyển hướng bạn đến giỏ hàng (đối với Plesk, bạn sẽ được chuyển đến trang `my.bkns.net`).
+    4.  Hoàn tất thanh toán để đăng ký license.
 
-Hệ thống sẽ chuyển hướng bạn đến giỏ hàng để tiến hành thanh toán.
+**b. Liên hệ trực tiếp để nhận báo giá**
 
-- **Đối với Plesk Obsidian License:** Quá trình thanh toán sẽ được hoàn tất trên trang `my.bkns.net`.
+Phương thức này áp dụng cho các sản phẩm cần tư vấn chuyên sâu hoặc báo giá tùy chỉnh.
 
-### 2. Hướng dẫn Kích hoạt / Triển khai
+*   **Sản phẩm áp dụng:** Bản quyền Softaculous, Bản Quyền CloudLinux OS.
+*   **Quy trình:**
+    1.  Liên hệ trực tiếp với đội ngũ BKNS.
+    2.  Bạn sẽ nhận được báo giá chính xác, thông tin về các chương trình khuyến mại (nếu có) và hướng dẫn cài đặt chi tiết.
 
-**Bản quyền CloudLinux OS**
+### 2. Hướng dẫn Kích hoạt & Triển khai
 
-- Quá trình chuyển đổi từ hệ điều hành CentOS hoặc RHEL sang CloudLinux OS được thực hiện dễ dàng.
+**CloudLinux OS**
+*   Quá trình chuyển đổi (migration) từ hệ điều hành CentOS hoặc RHEL sang CloudLinux OS được mô tả là dễ dàng.
 
-*(Hướng dẫn chi tiết cho các phần mềm khác đang được cập nhật).*
+*Thông tin chi tiết về kích hoạt và triển khai cho các phần mềm khác đang được cập nhật.*
 
-### 3. Hướng dẫn Quản lý / Sử dụng
+### 3. Hướng dẫn Quản lý & Sử dụng
 
-Đang cập nhật.
+Nội dung đang được cập nhật.
 
-### 4. Troubleshooting (Xử lý sự cố)
+### 4. Xử lý sự cố thường gặp
 
-Đang cập nhật.
+Nội dung đang được cập nhật.
 
-### Sản phẩm liên quan
+## Sản phẩm liên quan
 
 - [Web Hosting BKNS](../hosting/index.md)
 - [Cloud VPS BKNS](../vps/index.md)
 - [Máy Chủ BKNS](../server/index.md)
 
 ---
-Compiled by BKNS Wiki Bot • 2026-04-07
+Compiled by BKNS Wiki Bot • 2026-04-14

@@ -1,0 +1,24 @@
+claim_id: CLM-E55220EDB742
+entity_id: product.ssl.positivessl_ev
+entity_type: product_plan
+entity_name: PositiveSSL EV
+attribute: target_audience
+value: Các doanh nghiệp và tổ chức cần mức độ đảm bảo và xác thực cao, đặc biệt là
+  các trang thương mại điện tử, tài chính, ngân hàng.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-POSITIVESSL_EV_CHUNG_CHI_SSL_XAC_THUC_MO_RONG_EV_2026_04_13
+observed_at: '2026-04-14T16:37:04.507888+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: null
+compiler_note: 'Trích từ mục Tóm tắt nhanh: • Phù hợp với: Các doanh nghiệp và tổ
+  chức cần mức độ đảm bảo và xác thực cao, đặc biệt là các trang thương mại điện tử,
+  tài chính, ngân hàng.'
+dual_vote:
+  status: DISAGREE
+  score: 0.1482
+  confidence: LOW
+  flag: human_review_required

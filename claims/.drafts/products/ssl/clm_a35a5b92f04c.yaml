@@ -1,0 +1,17 @@
+claim_id: CLM-A35A5B92F04C
+entity_id: product.ssl.geotrust_true_businessid_wildcard
+entity_type: product
+entity_name: GeoTrust True BusinessID Wildcard
+attribute: issuance_time_max
+value: 3
+unit: day
+qualifiers: null
+source_ids:
+- SRC-CHUNG_CHI_SSL_GEOTRUST_TRUE_BUSINESSID_WILDCARD_2026_04_13
+observed_at: '2026-04-13T22:00:25.578484+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Thông số kỹ thuật: ''| Thời gian phát hành | 1-3 ngày
+  |'''

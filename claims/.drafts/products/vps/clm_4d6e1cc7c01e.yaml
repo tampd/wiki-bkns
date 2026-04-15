@@ -1,0 +1,19 @@
+claim_id: CLM-4D6E1CC7C01E
+entity_id: bkns_cloud_vps_ssd
+entity_type: product_service
+entity_name: Thuê Cloud VPS SSD
+attribute: target_audience
+value: Cá nhân và doanh nghiệp cần một môi trường máy chủ ảo độc lập, tốc độ cao để
+  chạy website, ứng dụng, lưu trữ dữ liệu hoặc các tác vụ khác.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_THUE_CLOUD_VPS_SSD_GIA_RE_TAI_BKNS_2026_04_13
+observed_at: '2026-04-13T22:29:34.480817+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tóm tắt nhanh: ''Phù hợp với: Cá nhân và doanh nghiệp
+  cần một môi trường máy chủ ảo độc lập, tốc độ cao để chạy website, ứng dụng, lưu
+  trữ dữ liệu hoặc các tác vụ khác.'''

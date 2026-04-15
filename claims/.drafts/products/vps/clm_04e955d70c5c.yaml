@@ -1,0 +1,28 @@
+claim_id: CLM-04E955D70C5C
+entity_id: ENT-PROD-VPS
+entity_type: product
+entity_name: VPS Siêu Rẻ
+attribute: description
+value: Dịch vụ cho thuê máy chủ ảo (VPS) với chi phí thấp, được giới thiệu là "VPS
+  Siêu Tiết Kiệm".
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_VPS_SIEU_TIET_KIEM_VPS_SIEU_RE_TAI_BKNS_2026_04_13
+- SRC-DICH_VU_CLOUD_VPS_SEO_MAY_CHU_AO_TOI_UU_CHO_SEO_2026_04_05
+- SRC-DICH_VU_VPS_SIEU_TIET_KIEM_VPS_SIEU_RE_TAI_BKNS_2026_04_05
+observed_at: '2026-04-14T16:13:24.746831+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ mục Tóm tắt nhanh: ''• Dịch vụ này là gì: Dịch vụ cho thuê
+  máy chủ ảo (VPS) với chi phí thấp, được giới thiệu là "VPS Siêu Tiết Kiệm".'''
+value_changed_from: Một dịch vụ máy chủ ảo (Cloud VPS) được cấu hình chuyên dụng cho
+  các website cần tối ưu hóa cho công cụ tìm kiếm (SEO).
+value_changed_at: '2026-04-14T16:13:24.746859+07:00'
+dual_vote:
+  status: DISAGREE
+  score: 0.2621
+  confidence: LOW
+  flag: human_review_required

@@ -1,0 +1,26 @@
+claim_id: CLM-1BDCEBF77BEB
+entity_id: ENT-PROD-VPS
+entity_type: product
+entity_name: VPS N8N – AI
+attribute: activation_type
+value: Automatic
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_THUE_CLOUD_VPS_SSD_GIA_RE_TAI_BKNS_2026_04_05
+- SRC-DICH_VU_VPS_SIEU_TIET_KIEM_VPS_SIEU_RE_TAI_BKNS_2026_04_05
+- SRC-VPS_N8N_AI_DICH_VU_TU_ONG_HOA_QUY_TRINH_TAI_BKNS_2026_04_05
+observed_at: '2026-04-14T16:20:24.966277+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tính năng / Thành phần: • Kích hoạt tự động: Dịch vụ được
+  khởi tạo nhanh chóng sau khi đăng ký.'
+dual_vote:
+  status: PARTIAL
+  score: 0.6518
+  confidence: MEDIUM
+  flag: needs_review
+value_changed_from: automatic
+value_changed_at: '2026-04-14T16:20:24.966320+07:00'

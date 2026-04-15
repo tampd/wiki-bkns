@@ -1,0 +1,34 @@
+```json
+{
+  "claims": [
+    {
+      "entity_name": "BKNS",
+      "attribute": "Cung cấp dịch vụ",
+      "value": "Hosting",
+      "unit": null,
+      "confidence": 0.7
+    },
+    {
+      "entity_name": "Dịch vụ Hosting BKNS",
+      "attribute": "Tài liệu",
+      "value": "Cung cấp trang tổng hợp bài viết, kiến thức về Hosting",
+      "unit": null,
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Trang kiến thức Hosting",
+      "attribute": "URL",
+      "value": "https://bkns.vn/hosting",
+      "unit": null,
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Trang kiến thức Hosting",
+      "attribute": "Tiêu đề trang",
+      "value": "Các Bài Viết, Kiến Thức Về Hosting Tại BKNS",
+      "unit": null,
+      "confidence": 1.0
+    }
+  ]
+}
+```

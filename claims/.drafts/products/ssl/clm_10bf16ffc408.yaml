@@ -1,0 +1,22 @@
+claim_id: CLM-10BF16FFC408
+entity_id: product.ssl.geotrust_true_businessid_ev_flex
+entity_type: ENT-PROD-SSL
+entity_name: GeoTrust True BusinessID EV (FLEX)
+attribute: product_line
+value: FLEX
+unit: null
+qualifiers: null
+source_ids:
+- SRC-CHUNG_CHI_SSL_GEOTRUST_TRUE_BUSINESSID_EV_FLEX_2026_04_05
+observed_at: '2026-04-14T16:23:53.892786+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: Sản phẩm thuộc dòng FLEX, cho phép bảo vệ
+  nhiều loại tên miền khác nhau.'
+dual_vote:
+  status: DISAGREE
+  score: 0.4318
+  confidence: LOW
+  flag: human_review_required

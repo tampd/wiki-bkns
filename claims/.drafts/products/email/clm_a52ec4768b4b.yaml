@@ -1,0 +1,24 @@
+claim_id: CLM-A52EC4768B4B
+entity_id: product.email.cloud_email_server
+entity_type: product
+entity_name: Cloud Email Server
+attribute: supported_platform
+value: Zimbra
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_05
+observed_at: '2026-04-14T17:04:23.495493+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tóm tắt nhanh: ''Điểm chính: ... và cung cấp hai lựa
+  chọn nền tảng là Kerio và Zimbra.'''
+dual_vote:
+  status: DISAGREE
+  score: 0.3931
+  confidence: LOW
+  flag: human_review_required
+value_changed_from: Kerio
+value_changed_at: '2026-04-14T17:04:23.495530+07:00'

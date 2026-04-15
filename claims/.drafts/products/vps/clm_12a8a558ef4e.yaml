@@ -1,0 +1,26 @@
+claim_id: CLM-12A8A558EF4E
+entity_id: ENT-PROD-VPS-STORAGE
+entity_type: product
+entity_name: Storage VPS
+attribute: supported_os
+value:
+- CentOS
+- Ubuntu
+- Debian
+- Windows
+unit: null
+qualifiers: null
+source_ids:
+- SRC-STORAGE_VPS_MAY_CHU_AO_LUU_TRU_DUNG_LUONG_CAO_2026_04_05
+observed_at: '2026-04-14T16:14:49.862408+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tính năng / Thành phần: Hỗ trợ đa dạng hệ điều hành:
+  Tương thích với các hệ điều hành phổ biến như CentOS, Ubuntu, Debian, Windows.'
+dual_vote:
+  status: DISAGREE
+  score: 0.5676
+  confidence: LOW
+  flag: human_review_required

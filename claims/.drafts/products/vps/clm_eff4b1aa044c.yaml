@@ -1,0 +1,24 @@
+claim_id: CLM-EFF4B1AA044C
+entity_id: ENT-PROD-VPS
+entity_type: product
+entity_name: VPS N8N – AI
+attribute: ipv6_support
+value: true
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_VPS_SIEU_TIET_KIEM_VPS_SIEU_RE_TAI_BKNS_2026_04_13
+- SRC-DICH_VU_VPS_SIEU_TIET_KIEM_VPS_SIEU_RE_TAI_BKNS_2026_04_05
+- SRC-VPS_N8N_AI_DICH_VU_TU_ONG_HOA_QUY_TRINH_TAI_BKNS_2026_04_05
+observed_at: '2026-04-14T16:20:24.958020+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tính năng / Thành phần: • Hỗ trợ IPv6: Có sẵn trên tất cả
+  các gói.'
+dual_vote:
+  status: DISAGREE
+  score: 0.599
+  confidence: LOW
+  flag: human_review_required

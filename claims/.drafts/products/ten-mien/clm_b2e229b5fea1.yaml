@@ -1,0 +1,19 @@
+claim_id: CLM-B2E229B5FEA1
+entity_id: bkns:prod:domain:registry_lock
+entity_type: product
+entity_name: Bảo vệ tên miền cấp cao nhất (Registry Lock)
+attribute: security_mechanism
+value: Yêu cầu xác thực từ Chủ thể, Nhà đăng ký (BKNS) và VNNIC để thực hiện bất kỳ
+  thay đổi nào đối với tên miền.
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-BAO_VE_TEN_MIEN_CAP_CAO_NHAT_GIAI_PHAP_AN_TOAN_TUYET_OI_2026_04_13
+observed_at: '2026-04-13T21:50:54.923031+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: ''Điểm chính: Cung cấp cơ chế bảo mật đa lớp,
+  yêu cầu xác thực từ Chủ thể, Nhà đăng ký (BKNS) và VNNIC để thực hiện bất kỳ thay
+  đổi nào đối với tên miền.'''

@@ -1,0 +1,21 @@
+claim_id: CLM-B93ACC9A6F79
+entity_id: product.dedicated_server.mccb01
+entity_type: product_plan
+entity_name: MCCB01
+attribute: ram
+value: '16'
+unit: GB
+qualifiers: null
+source_ids:
+- SRC-DANH_SACH_GOI_SAN_PHAM_MAY_CHU_BKNS_2026_04_05
+observed_at: '2026-04-14T17:13:15.607137+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng thông số gói MCCB01: ''RAM: 1 x 16GB'''
+dual_vote:
+  status: DISAGREE
+  score: 0.5083
+  confidence: LOW
+  flag: human_review_required

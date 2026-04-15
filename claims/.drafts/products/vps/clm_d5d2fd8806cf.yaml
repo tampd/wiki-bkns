@@ -1,0 +1,24 @@
+claim_id: CLM-D5D2FD8806CF
+entity_id: ENT-PROD-VPS
+entity_type: product_category
+entity_name: Dịch vụ Server/VPS
+attribute: infrastructure_feature
+value: hạ tầng Cloud hiện đại
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-BKNS_CAMNAG_HOSTING_DOT3_2026_04_13
+- SRC-BKNS_CAMNAG_HOSTING_DOT3_2026_04_05
+observed_at: '2026-04-14T12:02:37.715940+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ: "Điểm mạnh cốt lõi là hạ tầng Cloud hiện đại..."'
+value_changed_from: Hạ tầng Cloud hiện đại
+value_changed_at: '2026-04-14T12:02:37.715990+07:00'
+dual_vote:
+  status: DISAGREE
+  score: 0.4055
+  confidence: LOW
+  flag: human_review_required

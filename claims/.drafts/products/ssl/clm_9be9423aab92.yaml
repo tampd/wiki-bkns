@@ -1,0 +1,25 @@
+claim_id: CLM-9BE9423AAB92
+entity_id: ENT-PROD-SSL-COMODO-EV
+entity_type: product
+entity_name: Comodo EV SSL
+attribute: target_customer
+value: Các website yêu cầu mức độ tin cậy cao như trang thương mại điện tử, tài chính,
+  ngân hàng và các tổ chức muốn khẳng định danh tính một cách rõ ràng nhất với người
+  dùng.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-COMODO_EV_SSL_CHUNG_CHI_SSL_XAC_THUC_MO_RONG_2026_04_05
+observed_at: '2026-04-14T16:26:39.428456+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ: • Phù hợp với: Các website yêu cầu mức độ tin cậy cao như
+  trang thương mại điện tử, tài chính, ngân hàng và các tổ chức muốn khẳng định danh
+  tính một cách rõ ràng nhất với người dùng.'
+dual_vote:
+  status: DISAGREE
+  score: 0.3281
+  confidence: LOW
+  flag: human_review_required

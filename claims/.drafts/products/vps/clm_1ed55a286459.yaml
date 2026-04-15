@@ -1,0 +1,26 @@
+claim_id: CLM-1ED55A286459
+entity_id: ENT-PROD-VPS
+entity_type: product_service
+entity_name: VPS N8N – AI
+attribute: feature
+value: Cung cấp bảng điều khiển VPS để quản lý
+unit: null
+qualifiers: null
+source_ids:
+- SRC-TRANNING_KINH_DOANH_HOSTING_EMAIL_2026_04_13
+- SRC-TRAINING_DICH_VU_VPS_2026_04_05
+- SRC-VPS_N8N_AI_DICH_VU_TU_ONG_HOA_QUY_TRINH_TAI_BKNS_2026_04_13
+observed_at: '2026-04-14T16:21:40.469788+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục ''Tính năng / Thành phần'': • Bảng điều khiển: Cung cấp
+  bảng điều khiển VPS để quản lý.'
+dual_vote:
+  status: DISAGREE
+  score: 0.5
+  confidence: LOW
+  flag: human_review_required
+value_changed_from: Hỗ trợ IPv6
+value_changed_at: '2026-04-14T16:21:40.469817+07:00'

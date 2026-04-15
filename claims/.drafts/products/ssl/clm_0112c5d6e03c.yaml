@@ -1,0 +1,16 @@
+claim_id: CLM-0112C5D6E03C
+entity_id: ENT-PROD-SSL-ESSENTIALSSL-WILDCARD-DV
+entity_type: product_plan
+entity_name: EssentialSSL Wildcard (DV)
+attribute: warranty_amount
+value: 10000
+unit: USD
+qualifiers: {}
+source_ids:
+- SRC-CHUNG_CHI_SSL_ESSENTIALSSL_WILDCARD_DV_CUA_COMODO_2026_04_13
+observed_at: '2026-04-13T21:57:30.103444+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng thông số kỹ thuật: | Mức bảo hiểm | 10.000$ |'

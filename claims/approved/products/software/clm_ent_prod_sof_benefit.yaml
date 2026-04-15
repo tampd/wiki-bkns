@@ -7,12 +7,14 @@ value: Giảm tải CPU server
 unit: null
 qualifiers: {}
 source_ids:
-- SRC-LITESPEED_WEB_2026_04_05
+  - SRC-LITESPEED_WEB_2026_04_05
 observed_at: '2026-04-05T22:07:23.268426+07:00'
 valid_from: '2026-04-05'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
 compiler_note: 'Trích từ: ''Giảm tải CPU server'''
-approved_at: '2026-04-07T13:00:15.549318+07:00'
+approved_at: '2026-04-08T13:00:15.442033+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.359Z'

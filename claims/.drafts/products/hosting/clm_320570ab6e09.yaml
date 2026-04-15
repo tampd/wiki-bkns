@@ -1,0 +1,22 @@
+claim_id: CLM-320570AB6E09
+entity_id: product.hosting.platium.bkcp02
+entity_type: product_plan
+entity_name: BKCP02
+attribute: price
+value: 570000
+unit: VND
+qualifiers:
+  billing_cycle: year
+  vat_included: false
+  discount_percentage: 5
+source_ids:
+- SRC-BANG_GIA_HOSTING_2026_04_13
+observed_at: '2026-04-13T21:43:02.432855+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ bảng ''Platium web hosting'', cột ''BKCP02'', dòng ''Giá
+  1 năm (-5%)'': ''570,000''. (Nguồn: manual://Bang_Gia_Hosting.pdf, 2026-04-13T21:29:54.660388+07:00)'
+value_changed_from: 50000
+value_changed_at: '2026-04-13T21:43:02.432879+07:00'

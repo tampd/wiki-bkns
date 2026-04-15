@@ -1,0 +1,19 @@
+claim_id: CLM-ENT-PROD-DOM-SEO_BENE
+entity_id: ENT-PROD-DOMAIN
+entity_type: product_category
+entity_name: Tên miền
+attribute: seo_benefit_detail
+value: Google ưu tiên .VN cho IP Việt Nam
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-DANG_KY_TEN_MIEN_2026_04_05
+observed_at: '2026-04-05T21:53:55.766960+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ mục Tại sao chọn BKNS?: ''Lợi thế SEO Local vượt trội (Google
+  ưu tiên .VN cho IP Việt Nam)'''
+approved_at: '2026-04-08T13:00:09.751963+07:00'
+approved_by: admin-batch

@@ -1,0 +1,27 @@
+claim_id: CLM-579CCF3D7887
+entity_id: ENT-PROD-SSL-POSITIVE-WILDCARD-DV
+entity_type: product
+entity_name: PositiveSSL Wildcard (DV)
+attribute: description
+value: Đây là chứng chỉ SSL Wildcard với mức xác thực tên miền (Domain Validated -
+  DV), dùng để bảo mật một tên miền chính và không giới hạn số lượng tên miền phụ
+  (subdomain) cấp 1 của nó.
+unit: null
+qualifiers:
+  type: summary
+source_ids:
+- SRC-POSITIVESSL_WILDCARD_DV_CHUNG_CHI_SSL_GIA_RE_2026_04_05
+observed_at: '2026-04-14T16:38:10.377128+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ mục Tóm tắt nhanh: • Dịch vụ này là gì: Đây là chứng chỉ
+  SSL Wildcard với mức xác thực tên miền (Domain Validated - DV), dùng để bảo mật
+  một tên miền chính và không giới hạn số lượng tên miền phụ (subdomain) cấp 1 của
+  nó.'
+dual_vote:
+  status: DISAGREE
+  score: 0.4561
+  confidence: LOW
+  flag: human_review_required

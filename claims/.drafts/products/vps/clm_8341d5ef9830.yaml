@@ -1,0 +1,19 @@
+claim_id: CLM-8341D5EF9830
+entity_id: product.vps.cloud_amd
+entity_type: product
+entity_name: Cloud VPS AMD
+attribute: key_feature
+value: hiệu suất cao
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-CLOUD_VPS_AMD_GIAI_PHAP_VPS_HIEU_SUAT_CAO_VOI_CPU_AMD_EPYCTM_2026_04_13
+observed_at: '2026-04-13T22:04:23.402451+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục ''Tóm tắt nhanh'': • Điểm chính: Sức mạnh từ CPU AMD
+  EPYC™ thế hệ mới, hiệu suất cao.'
+value_changed_from: Sức mạnh từ CPU AMD EPYC™ thế hệ mới
+value_changed_at: '2026-04-13T22:04:23.402468+07:00'

@@ -1,0 +1,21 @@
+claim_id: CLM-ENT-PROD-SSL-FREE_INS
+entity_id: ENT-PROD-SSL-001
+entity_type: product
+entity_name: Comodo SSL Wildcard Certificate (DV)
+attribute: free_installation
+value: true
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-CHUNG_CHI_SSL_GEOTRUST_TRUE_BUSINESSID_EV_FLEX_2026_04_04
+- SRC-CHUNG_CHI_SSL_GEOTRUST_TRUE_BUSINESSID_EV_FLEX_2026_04_06
+- SRC-COMODO_SSL_WILDCARD_CERTIFICATE_DV_CHUNG_CHI_SSL_2026_04_06
+observed_at: '2026-04-06T23:50:22.239453+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: none
+compiler_note: 'Trích từ mục ''Chính sách / Điều khoản / Lưu ý'': ''• Cài đặt miễn
+  phí'''
+approved_at: '2026-04-08T13:00:12.375802+07:00'
+approved_by: admin-batch

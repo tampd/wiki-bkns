@@ -1,0 +1,16 @@
+claim_id: CLM-34ADCC07E751
+entity_id: product.server_management.bkns.advanced
+entity_type: product_plan
+entity_name: Quản trị Máy chủ - Nâng cao
+attribute: support.response_time
+value: 15
+unit: minute
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_QUAN_TRI_MAY_CHU_TRON_GOI_TAI_BKNS_2026_04_13
+observed_at: '2026-04-13T22:26:51.295405+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng giá: ''| Thời gian phản hồi | ... | 15 phút |'''

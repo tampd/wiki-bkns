@@ -1,0 +1,22 @@
+claim_id: CLM-609CE7366908
+entity_id: product.vps.n8n-ai01
+entity_type: product_plan
+entity_name: N8N-AI01
+attribute: price
+value: 140000
+unit: VND
+qualifiers:
+  billing_cycle: month
+source_ids:
+- SRC-VPS_N8N_AI_DICH_VU_TU_ONG_HOA_QUY_TRINH_TAI_BKNS_2026_04_13
+observed_at: '2026-04-14T16:21:40.474103+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ bảng giá, cột ''N8N-AI01'', dòng ''Giá'': 140.000đ/Tháng'
+dual_vote:
+  status: PARTIAL
+  score: 0.6972
+  confidence: MEDIUM
+  flag: needs_review

@@ -1,0 +1,22 @@
+claim_id: CLM-BC905BB34270
+entity_id: ENT-PROD-SSL-POSITIVESSL-DV
+entity_type: product_plan
+entity_name: PositiveSSL (DV)
+attribute: domain_coverage
+value: 1
+unit: domain
+qualifiers:
+  note: Bảo mật cho một tên miền chính hoặc tên miền con
+source_ids:
+- SRC-POSITIVESSL_DV_CHUNG_CHI_SSL_GIA_RE_2026_04_13
+observed_at: '2026-04-14T16:35:13.682195+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: '• Bảo vệ 1 Domain: Bảo mật cho một tên miền chính hoặc tên miền con.'
+dual_vote:
+  status: DISAGREE
+  score: 0.5432
+  confidence: LOW
+  flag: human_review_required

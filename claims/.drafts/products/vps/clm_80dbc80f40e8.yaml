@@ -1,0 +1,18 @@
+claim_id: CLM-80DBC80F40E8
+entity_id: product.vps.bkmisa
+entity_type: product
+entity_name: BK MISA
+attribute: upgrade_policy
+value: Hỗ trợ nâng cấp gói dịch vụ bất kỳ lúc nào mà không làm gián đoạn dịch vụ hay
+  mất mát dữ liệu.
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-CLOUD_VPS_BK_MISA_GIAI_PHAP_LUU_TRU_KE_TOAN_SO_2026_04_13
+observed_at: '2026-04-13T22:05:38.544964+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Chính sách / Điều khoản / Lưu ý: BKNS hỗ trợ nâng cấp gói
+  dịch vụ bất kỳ lúc nào mà không làm gián đoạn dịch vụ hay mất mát dữ liệu.'

@@ -7,12 +7,14 @@ value: ENT-COMPANY-001
 unit: null
 qualifiers: null
 source_ids:
-- SRC-BACKUP_DU_LIEU_WEB_2026_04_05
+  - SRC-BACKUP_DU_LIEU_WEB_2026_04_05
 observed_at: '2026-04-05T21:42:29.922091+07:00'
 valid_from: '2026-04-05'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
 compiler_note: 'Trích từ phần Giới thiệu: ''...uy tín tại BKNS...'''
-approved_at: '2026-04-07T13:00:09.843479+07:00'
+approved_at: '2026-04-08T13:00:08.935719+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.292Z'

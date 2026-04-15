@@ -1,0 +1,24 @@
+claim_id: CLM-7A7D43400983
+entity_id: product.email.cloud_email_server
+entity_type: product
+entity_name: Cloud Email Server
+attribute: inbox_delivery_rate
+value: 99
+unit: '%'
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_CLOUD_EMAIL_SERVER_AN_TOAN_HIEU_SUAT_CAO_2026_04_05
+- SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_05
+observed_at: '2026-04-14T17:04:23.413885+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tóm tắt nhanh: ''Điểm chính: ... tỷ lệ gửi vào inbox
+  99%...'''
+parent_entity_id: ENT-PROD-EMAIL
+dual_vote:
+  status: DISAGREE
+  score: 0.4298
+  confidence: LOW
+  flag: human_review_required

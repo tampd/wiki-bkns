@@ -7,15 +7,17 @@ value: https://www.bkns.vn/server/storage-vps.html
 unit: null
 qualifiers: {}
 source_ids:
-- SRC-VPS_GIA_RE_WEB_2026_04_05
-- SRC-STORAGE_VPS_MAY_CHU_AO_LUU_TRU_DUNG_LUONG_CAO_2026_04_06
+  - SRC-VPS_GIA_RE_WEB_2026_04_05
+  - SRC-STORAGE_VPS_MAY_CHU_AO_LUU_TRU_DUNG_LUONG_CAO_2026_04_06
 observed_at: '2026-04-07T01:03:06.761373+07:00'
 valid_from: '2026-04-05'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
 compiler_note: 'Trích từ mục ''Thông tin nguồn'': • URL: https://www.bkns.vn/server/storage-vps.html'
 value_changed_from: https://www.bkns.vn/server/vps-gia-re.html
 value_changed_at: '2026-04-07T01:03:06.761407+07:00'
-approved_at: '2026-04-07T13:00:14.492987+07:00'
+approved_at: '2026-04-08T13:00:14.110322+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.700Z'

@@ -1,0 +1,21 @@
+claim_id: CLM-0E7F0C2C9DA9
+entity_id: ENT-PROD-SSL-POSWILDDV
+entity_type: product_plan
+entity_name: PositiveSSL Wildcard (DV)
+attribute: browser_recognition_rate
+value: 99.3
+unit: '%'
+qualifiers: null
+source_ids:
+- SRC-POSITIVESSL_WILDCARD_DV_CHUNG_CHI_SSL_GIA_RE_2026_04_13
+observed_at: '2026-04-14T16:38:50.435839+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ mô tả dịch vụ: ''Với khả năng nhận dạng trình duyệt 99,3%...'''
+dual_vote:
+  status: DISAGREE
+  score: 0.2497
+  confidence: LOW
+  flag: human_review_required

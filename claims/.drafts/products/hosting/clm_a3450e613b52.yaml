@@ -1,0 +1,20 @@
+claim_id: CLM-A3450E613B52
+entity_id: ENT-PROD-HOSTING
+entity_type: product
+entity_name: Hosting Windows
+attribute: supported_database
+value: MSSQL
+unit: ''
+qualifiers:
+  product_line: Hosting Windows
+source_ids:
+- SRC-DICH_VU_HOSTING_WINDOWS_TAI_BKNS_2026_04_13
+observed_at: '2026-04-13T22:24:54.604795+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục ''Mô tả dịch vụ'': ''...cùng với hệ quản trị cơ sở dữ
+  liệu Microsoft SQL Server (MSSQL).'''
+value_changed_from: MySQL
+value_changed_at: '2026-04-13T22:24:54.604826+07:00'

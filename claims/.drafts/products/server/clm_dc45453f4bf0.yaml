@@ -1,0 +1,20 @@
+claim_id: CLM-DC45453F4BF0
+entity_id: product.server_management.bkns.advanced
+entity_type: product_plan
+entity_name: Quản trị Máy chủ - Nâng cao
+attribute: feature
+value: Hỗ trợ chuyển dữ liệu website từ nơi khác về máy chủ.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_QUAN_TRI_MAY_CHU_TRON_GOI_TAI_BKNS_2026_04_13
+observed_at: '2026-04-13T22:26:51.329941+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tính năng / Thành phần: ''* Chuyển đổi dữ liệu (Gói Nâng
+  cao): Hỗ trợ chuyển dữ liệu website từ nơi khác về máy chủ.'''
+value_changed_from: Cấu hình firewall, cài đặt và quét mã độc, virus để tăng cường
+  an ninh cho máy chủ.
+value_changed_at: '2026-04-13T22:26:51.329987+07:00'

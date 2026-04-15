@@ -1,0 +1,19 @@
+claim_id: CLM-72E08671B248
+entity_id: ENT-PROD-SSL-GEOTRUST-TBEV-FLEX
+entity_type: ENT-PROD-SSL
+entity_name: GeoTrust True BusinessID EV (FLEX)
+attribute: issuance_time
+value: 1 đến 3 ngày làm việc
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-CHUNG_CHI_SSL_GEOTRUST_TRUE_BUSINESSID_EV_FLEX_2026_04_13
+observed_at: '2026-04-13T21:59:27.309512+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục ''Chính sách / Điều khoản / Lưu ý'': Thời gian cấp phát
+  chứng chỉ là từ 1 đến 3 ngày làm việc.'
+value_changed_from: 1-3 ngày
+value_changed_at: '2026-04-13T21:59:27.309534+07:00'

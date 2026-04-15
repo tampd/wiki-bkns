@@ -1,0 +1,26 @@
+snapshot_name: v0.3-pre-upgrade-2026-04-13
+created: 2026-04-13
+purpose: |
+  Immutable backup of wiki v0.3 trước khi nâng cấp v0.4
+  (markitdown ingestion + Gemini 3.1 Pro + GPT-5.4 dual-vote).
+source_paths:
+  - wiki/
+  - claims/approved/
+  - build/active-build.yaml
+file_count: 2478
+total_size_bytes: 2083101
+total_size_mb: 1.99
+checksum_file: MANIFEST.sha256
+baseline_metrics:
+  raw_files: 291
+  claims_approved: 2252
+  wiki_pages: 213
+restore_instructions: |
+  # Mở quyền ghi tạm
+  sudo chmod -R u+w build/snapshots/v0.3-pre-upgrade-2026-04-13
+  # Khôi phục
+  cp -r build/snapshots/v0.3-pre-upgrade-2026-04-13/wiki/. wiki/
+  cp -r build/snapshots/v0.3-pre-upgrade-2026-04-13/claims-approved/. claims/approved/
+  cp build/snapshots/v0.3-pre-upgrade-2026-04-13/active-build.yaml build/active-build.yaml
+  # Đóng quyền ghi lại
+  sudo chmod -R a-w build/snapshots/v0.3-pre-upgrade-2026-04-13

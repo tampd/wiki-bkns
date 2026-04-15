@@ -1,0 +1,17 @@
+claim_id: CLM-58C397B7FB63
+entity_id: ENT-PROD-VPS:vps_seo
+entity_type: product_service
+entity_name: VPS SEO
+attribute: self_provisioning_required
+value: DirectAdmin, SSL
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-DICH_VU_CLOUD_VPS_SEO_MAY_CHU_AO_TOI_UU_CHO_SEO_2026_04_13
+observed_at: '2026-04-13T22:18:36.375346+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Chính sách / Điều khoản / Lưu ý: ''Khách hàng cần tự
+  trang bị nếu có nhu cầu.'''

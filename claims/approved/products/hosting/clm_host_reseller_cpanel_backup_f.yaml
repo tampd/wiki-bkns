@@ -7,13 +7,14 @@ value: daily
 unit: null
 qualifiers: {}
 source_ids:
-- SRC-RESELLER_HOSTING_CPANEL_QUAN_LY_NHIEU_HOSTING_CHI_VOI_MOT_T_2026_04_06
+  - SRC-RESELLER_HOSTING_CPANEL_QUAN_LY_NHIEU_HOSTING_CHI_VOI_MOT_T_2026_04_06
 observed_at: '2026-04-07T01:00:34.450970+07:00'
 valid_from: '2026-04-07'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ mục Tính năng / Thành phần: ''Backup: Sử dụng Jetbackup,
-  sao lưu mỗi ngày và lưu trữ 30 bản gần nhất.'''
-approved_at: '2026-04-07T13:00:12.295412+07:00'
+compiler_note: 'Trích từ mục Tính năng / Thành phần: ''Backup: Sử dụng Jetbackup, sao lưu mỗi ngày và lưu trữ 30 bản gần nhất.'''
+approved_at: '2026-04-08T13:00:11.472610+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.059Z'

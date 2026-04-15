@@ -1,0 +1,22 @@
+claim_id: CLM-397150852F87
+entity_id: ENT-PROD-SSL-POSITIVE-WILDCARD-DV
+entity_type: product
+entity_name: PositiveSSL Wildcard (DV)
+attribute: price
+value: 2413000
+unit: VND
+qualifiers:
+  billing_cycle: year
+source_ids:
+- SRC-POSITIVESSL_WILDCARD_DV_CHUNG_CHI_SSL_GIA_RE_2026_04_05
+observed_at: '2026-04-14T16:38:10.394813+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ bảng giá: | Giá tại BKNS | 2.413.000đ/năm |'
+dual_vote:
+  status: DISAGREE
+  score: 0.4561
+  confidence: LOW
+  flag: human_review_required

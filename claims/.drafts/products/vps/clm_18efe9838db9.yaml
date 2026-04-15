@@ -1,0 +1,21 @@
+claim_id: CLM-18EFE9838DB9
+entity_id: ENT-PROD-VPS
+entity_type: product
+entity_name: VPS N8N – AI
+attribute: product_name
+value: VPS N8N – AI
+unit: null
+qualifiers: null
+source_ids:
+- SRC-VPS_N8N_AI_DICH_VU_TU_ONG_HOA_QUY_TRINH_TAI_BKNS_2026_04_05
+observed_at: '2026-04-14T16:20:24.916106+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ tiêu đề: ═══ VPS N8N – AI'
+dual_vote:
+  status: PARTIAL
+  score: 0.6693
+  confidence: MEDIUM
+  flag: needs_review

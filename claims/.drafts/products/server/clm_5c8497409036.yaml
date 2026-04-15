@@ -1,0 +1,22 @@
+claim_id: CLM-5C8497409036
+entity_id: product.dedicated_server.addon.sas_900g
+entity_type: product_addon
+entity_name: Thêm ổ SAS ST900MM0006 900G HDD 2.5″
+attribute: monthly_price
+value: 200000
+unit: VND
+qualifiers: null
+source_ids:
+- SRC-DANH_SACH_GOI_SAN_PHAM_MAY_CHU_BKNS_2026_04_05
+observed_at: '2026-04-14T17:13:15.696940+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ bảng giá dịch vụ bổ sung: ''Thêm ổ SAS ST900MM0006 900G HDD
+  2.5″ | 200.000 đ/ tháng & 2.000.000 đ/lần'''
+dual_vote:
+  status: DISAGREE
+  score: 0.5083
+  confidence: LOW
+  flag: human_review_required

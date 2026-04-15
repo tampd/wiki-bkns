@@ -1,0 +1,18 @@
+claim_id: CLM-861FE12E6932
+entity_id: ENT-PROD-EMAIL-SERVER
+entity_type: product
+entity_name: Email Server
+attribute: email_flow
+value: Email gửi đi trực tiếp từ hệ thống của BKNS.
+unit: null
+qualifiers:
+  comparison_with: Email Relay
+source_ids:
+- SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_VA_TIN_CAY_2026_04_13
+observed_at: '2026-04-13T22:35:10.285063+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng so sánh Email Relay và Email Server: | Luồng gửi email
+  | EMAIL SERVER | Email gửi đi trực tiếp từ hệ thống của BKNS. |'

@@ -2,61 +2,68 @@
 page_id: wiki.products.server.chinh-sach
 title: Máy Chủ BKNS — Chính Sách
 category: products/server
-updated: '2026-04-07'
-review_state: approved
-claims_used: 19
-compile_cost_usd: 0.0099
-self_review: pass
-corrections: 0
-approved_at: '2026-04-07T13:36:02.528547+07:00'
+updated: '2026-04-14'
+review_state: drafted
+claims_used: 30
+compile_cost_usd: 0.0117
+self_review: fail
+corrections: 1
 ---
 
 # Máy Chủ BKNS — Chính Sách
 
-Trang này tổng hợp các chính sách chung về hỗ trợ kỹ thuật, sao lưu dữ liệu, và các điều khoản thương mại áp dụng cho nhóm sản phẩm Máy Chủ tại BKNS, bao gồm Chỗ đặt Máy chủ (Colocation), Máy chủ Vật lý (Dedicated Server), Quản trị Máy chủ và Backup Dữ liệu.
+Trang này tổng hợp các chính sách dịch vụ, cam kết hỗ trợ (SLA), và các điều khoản liên quan đến nhóm sản phẩm Máy Chủ tại BKNS.
 
-### Chính Sách Hỗ Trợ Kỹ Thuật
+## Chính Sách Hỗ Trợ Kỹ Thuật
 
-**1. Thời Gian Hỗ Trợ**
+### Thời Gian Hỗ Trợ
+Đội ngũ kỹ thuật của BKNS sẵn sàng hỗ trợ cho các dịch vụ như sau:
+- **Thuê Chỗ Đặt Máy Chủ:** Hỗ trợ 24/7/365.
+- **Backup Dữ liệu và Quản trị Máy chủ:** Hỗ trợ 24/7.
 
-*   **Toàn diện 24/7/365:** Các dịch vụ Thuê Chỗ Đặt Máy Chủ (Colocation), Quản trị Máy chủ Trọn gói, và Backup Dữ liệu được đội ngũ kỹ thuật viên chuyên nghiệp hỗ trợ liên tục 24/7/365.
+### Kênh Hỗ Trợ
+Khách hàng có thể liên hệ với BKNS để nhận hỗ trợ hoặc tư vấn đăng ký dịch vụ qua các kênh sau:
+- Hotline
+- Email
+- Zalo
+- Các kênh liên lạc khác
 
-**2. Kênh Hỗ Trợ**
+### Thời Gian Phản Hồi (Dịch vụ Quản trị Máy chủ)
+Thời gian phản hồi tối đa được cam kết cho từng gói Dịch vụ Quản trị Máy chủ như sau:
 
-*   Khách hàng có thể liên hệ với BKNS qua các kênh chính thức như **hotline, email, hoặc Zalo** để được tư vấn và hỗ trợ kỹ thuật.
-
-**3. Cam Kết Thời Gian Phản Hồi (SLA)**
-
-| Dịch vụ | Thời Gian Phản Hồi Cam Kết |
+| Gói Dịch Vụ | Thời Gian Phản Hồi Tối Đa |
 | :--- | :--- |
-| Quản trị Máy chủ - Gói Nâng cao | 15 phút |
-| Các dịch vụ khác | Đang cập nhật |
+| Cơ bản | 30 phút |
+| Nâng cao | 15 phút |
 
-### Chính Sách Sao Lưu Dữ Liệu (Backup)
+## Cam Kết Dịch Vụ (SLA) & Điều Khoản Chung
 
-*   **Tần suất sao lưu:** Tùy chỉnh linh hoạt theo nhu cầu (theo giờ, ngày, tuần), phụ thuộc vào mức độ quan trọng và tần suất thay đổi của dữ liệu.
-*   **Thời gian lưu trữ (Retention):** Dữ liệu sao lưu được lưu giữ từ **3 đến 5 năm**.
+- **Cam kết Uptime (SLA):** Đang cập nhật
+- **Chính sách Dùng thử (Trial):** Đang cập nhật
+- **Chính sách Hoàn tiền (Refund):** Đang cập nhật
 
-### Chính Sách Thương Mại & Thanh Toán
+## Các Chính Sách Khác
 
-*   **Thuế VAT:** Giá niêm yết cho dịch vụ Quản trị Máy chủ Trọn gói chưa bao gồm 10% thuế VAT.
-*   **Chính sách ưu đãi:** Khách hàng thuê Máy Chủ Vật Lý (Dedicated Server) với chu kỳ dài hạn sẽ được hưởng mức giá ưu đãi hơn.
+### Chính sách Thuế VAT
+- **Dịch vụ Quản trị Máy chủ Trọn gói:** Giá các gói dịch vụ được niêm yết chưa bao gồm 10% thuế VAT.
+- **Bản quyền phần mềm (vBulletin):** Bản quyền phần mềm không chịu thuế.
 
-### Các Chính Sách Khác
+### Chính sách Ưu đãi
+- **Cho thuê máy chủ vật lý (Dedicated Server):** Khách hàng sẽ nhận được giá thuê ưu đãi hơn khi đăng ký chu kỳ dài hạn.
 
-*   **Cam kết Uptime:** Đang cập nhật
-*   **Chính sách dùng thử (Trial):** Đang cập nhật
-*   **Chính sách hoàn tiền:** Đang cập nhật
+## Chính Sách Sao Lưu Dữ Liệu (Backup)
 
-### Quy Trình Đăng Ký
+- **Tần suất sao lưu:** Có thể tùy chỉnh linh hoạt theo giờ, ngày, hoặc tuần, tùy thuộc vào mức độ quan trọng và tần suất thay đổi của dữ liệu.
+- **Thời gian lưu trữ (Retention):** Từ 3 đến 5 năm đối với các bản sao lưu hàng năm.
 
-*   **Tư vấn trực tiếp:** Các dịch vụ như Backup Dữ liệu, Thuê Chỗ Đặt Máy Chủ được triển khai sau quá trình tư vấn và ký hợp đồng.
-*   **Đăng ký qua Zalo:** Đối với dịch vụ Máy Chủ Vật Lý, khách hàng có thể nhấn nút "Đăng ký" trên trang sản phẩm để được chuyển hướng đến Zalo và nhận hỗ trợ trực tiếp.
+## Quy Trình Đăng Ký Dịch Vụ
+
+- **Thuê Chỗ Đặt Máy Chủ (Colocation):** Quy trình gồm 4 bước: Liên hệ với BKNS, Tư vấn, Ký hợp đồng, và Bàn giao.
+- **Cho thuê máy chủ vật lý (Dedicated Server):** Khách hàng nhấn nút "Đăng ký" trên gói sản phẩm để được chuyển hướng đến Zalo của BKNS và nhận tư vấn, hỗ trợ.
+- **Dịch vụ Backup Dữ liệu:** Khách hàng liên hệ trực tiếp với BKNS qua hotline, email hoặc các kênh khác để được tư vấn và triển khai.
 
 ### Xem Thêm
+- [Cloud VPS BKNS](../vps/index.md)
+- [Phần Mềm & Bản Quyền BKNS](../software/index.md)
 
-*   [Cloud VPS BKNS](../vps/index.md)
-*   [Phần Mềm & Bản Quyền BKNS](../software/index.md)
-
----
-Compiled by BKNS Wiki Bot • 2026-04-07
+Compiled by BKNS Wiki Bot • 2026-04-14

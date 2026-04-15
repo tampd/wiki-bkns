@@ -1,0 +1,29 @@
+claim_id: CLM-EABFF610AF3F
+entity_id: product.software.cloudlinux_os
+entity_type: product
+entity_name: Bản Quyền CloudLinux OS
+attribute: feature
+value: 'PHP Selector: Cho phép người dùng cuối tự lựa chọn phiên bản PHP, các module
+  và tiện ích mở rộng phù hợp với website của họ.'
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-BAN_QUYEN_CLOUDLINUX_OS_TANG_ON_INH_VA_BAO_MAT_CHO_SHARED_2026_04_13
+- SRC-BAN_QUYEN_CLOUDLINUX_OS_TANG_ON_INH_VA_BAO_MAT_CHO_SHARED_2026_04_05
+observed_at: '2026-04-14T11:59:30.124855+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tính năng / Thành phần: ''PHP Selector: Cho phép người dùng
+  cuối tự lựa chọn phiên bản PHP, các module và tiện ích mở rộng phù hợp với website
+  của họ.'''
+value_changed_from: 'HardenedPHP: Cung cấp các bản vá bảo mật cho những phiên bản
+  PHP cũ đã hết được hỗ trợ chính thức, giúp bảo vệ các website đang chạy mã nguồn
+  cũ.'
+value_changed_at: '2026-04-14T11:59:30.124909+07:00'
+dual_vote:
+  status: DISAGREE
+  score: 0.0371
+  confidence: LOW
+  flag: human_review_required

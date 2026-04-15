@@ -1,0 +1,16 @@
+claim_id: CLM-0C3C936657E0
+entity_id: product.email.hosting.email3
+entity_type: product_plan
+entity_name: EMAIL 3
+attribute: email_forwarder_limit
+value: 40
+unit: forwarder
+qualifiers: {}
+source_ids:
+- SRC-BANG_GIA_DICH_VU_BKNS_TEXT_2026_04_13
+observed_at: '2026-04-13T21:40:29.219757+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ: ''Gói EMAIL 3: * Email forwarders: 40'''

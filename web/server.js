@@ -11,22 +11,18 @@ const multer = require('multer');
 const fs = require('fs');
 
 const { authMiddleware, loginHandler } = require('./middleware/auth');
-const { uploadRoute } = require('./routes/upload');
-const { filesRoute } = require('./routes/files');
-const { triggerRoute } = require('./routes/trigger');
 const { statusRoute } = require('./routes/status');
 const { wikiRoute } = require('./routes/wiki');
 const { reviewRoute } = require('./routes/review');
 const { buildsRoute } = require('./routes/builds');
 const { activityRoute } = require('./routes/activity');
-const { PipelineRunner } = require('./lib/pipeline-runner');
+const { librarianRoute } = require('./routes/librarian');
 
 // ============================================================
 // SETUP
 // ============================================================
 const app = express();
 const PORT = process.env.WEB_PORT || 3000;
-const pipelineRunner = new PipelineRunner();
 
 // Wiki assets directory
 const WIKI_ASSETS_DIR = path.resolve(__dirname, '../wiki/assets/images');
@@ -50,6 +46,8 @@ app.use(helmet({
     directives: {
       defaultSrc: ["'self'"],
       scriptSrc: ["'self'", "https://unpkg.com", "https://uicdn.toast.com", "https://cdn.jsdelivr.net"],
+      // 'unsafe-inline' required: TOAST UI Editor injects inline styles at runtime
+      // and cannot be replaced with nonces/hashes without patching the library.
       styleSrc: ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com", "https://unpkg.com", "https://uicdn.toast.com", "https://cdn.jsdelivr.net"],
       fontSrc: ["'self'", "https://fonts.gstatic.com"],
       imgSrc: ["'self'", "data:", "blob:"],
@@ -149,14 +147,12 @@ app.post('/api/upload/image', authMiddleware, imageUpload.single('image'), (req,
 });
 
 // Mount routes
-uploadRoute(app, pipelineRunner);
-filesRoute(app);
-triggerRoute(app, pipelineRunner);
-statusRoute(app, pipelineRunner);
+statusRoute(app);
 wikiRoute(app);
 reviewRoute(app);
 buildsRoute(app);
 activityRoute(app);
+librarianRoute(app);
 
 // ============================================================
 // FALLBACK — SPA
@@ -168,9 +164,20 @@ app.get('*', (req, res) => {
 // ============================================================
 // ERROR HANDLER
 // ============================================================
+const logDir = path.resolve(__dirname, '../logs');
 app.use((err, req, res, _next) => {
-  console.error('[SERVER] Unhandled error:', err);
-  res.status(500).json({ error: 'Internal server error' });
+  const today = new Date().toISOString().slice(0, 10);
+  const entry = JSON.stringify({
+    ts: new Date().toISOString(),
+    method: req.method,
+    url: req.url,
+    error: err.message,
+    stack: err.stack?.split('\n')[0],
+  }) + '\n';
+  try { fs.appendFileSync(`${logDir}/web-errors-${today}.jsonl`, entry); }
+  catch (_) {}
+  console.error('[SERVER] Error:', err.message);
+  res.status(err.status || 500).json({ error: 'Internal server error' });
 });
 
 // ============================================================

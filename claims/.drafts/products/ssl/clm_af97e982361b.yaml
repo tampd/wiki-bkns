@@ -1,0 +1,16 @@
+claim_id: CLM-AF97E982361B
+entity_id: product.ssl.comodo_essentialssl_dv
+entity_type: product_plan
+entity_name: EssentialSSL (DV)
+attribute: registration_url
+value: https://id.bkns.vn/store/comodo-ssl/comodo-essential?language=vietnamese
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-ESSENTIALSSL_DV_CHUNG_CHI_SSL_XAC_THUC_TEN_MIEN_TU_COMOD_2026_04_13
+observed_at: '2026-04-13T22:36:06.227332+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ Liên kết liên quan: [Đăng ký EssentialSSL tại BKNS](https://id.bkns.vn/store/comodo-ssl/comodo-essential?language=vietnamese)'

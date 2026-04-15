@@ -1,0 +1,22 @@
+claim_id: CLM-FD820DAA38DD
+entity_id: bkns.software.vbulletin.cloud
+entity_type: product_plan
+entity_name: vBulletin Cloud
+attribute: description
+value: Chi phí theo tháng vBulletin 5 Connect
+unit: null
+qualifiers: null
+source_ids:
+- SRC-BAN_QUYEN_VBULLETIN_HE_QUAN_TRI_FORUM_MANG_XA_HOI_2026_04_05
+observed_at: '2026-04-14T17:09:15.814654+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: '| vBulletin Cloud | Giá liên hệ | Chi phí theo tháng vBulletin 5 Connect
+  |'
+dual_vote:
+  status: DISAGREE
+  score: 0.0
+  confidence: LOW
+  flag: human_review_required

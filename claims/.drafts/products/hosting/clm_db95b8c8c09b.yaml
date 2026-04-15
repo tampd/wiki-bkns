@@ -1,0 +1,26 @@
+claim_id: CLM-DB95B8C8C09B
+entity_id: ENT-PROD-HOSTING-PLATINUM
+entity_type: product_plan
+entity_name: PLATINUM WEB HOSTING
+attribute: description
+value: dịch vụ lưu trữ web chuyên nghiệp, được thiết kế để mang lại tốc độ vượt trội,
+  bảo mật tối đa và độ ổn định tuyệt đối cho website doanh nghiệp, thương mại điện
+  tử, và các dự án yêu cầu hiệu suất cao
+unit: null
+qualifiers: null
+source_ids:
+- SRC-TRANNING_KINH_DOANH_HOSTING_EMAIL_2026_04_13
+observed_at: '2026-04-14T12:35:14.438313+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục 2.1.1.1 Giới thiệu tổng quan: ''Hosting cPanel cao cấp
+  của BKNS là dịch vụ lưu trữ web chuyên nghiệp, được thiết kế để mang lại tốc độ
+  vượt trội, bảo mật tối đa và độ ổn định tuyệt đối cho website doanh nghiệp, thương
+  mại điện tử, và các dự án yêu cầu hiệu suất cao.'''
+dual_vote:
+  status: DISAGREE
+  score: 0.5
+  confidence: LOW
+  flag: human_review_required

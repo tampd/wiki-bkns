@@ -1,0 +1,22 @@
+claim_id: CLM-973E4563BABB
+entity_id: ENT-PROD-VPS
+entity_type: product
+entity_name: Storage VPS
+attribute: support.availability
+value: 24/7/365
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-STORAGE_VPS_MAY_CHU_AO_LUU_TRU_DUNG_LUONG_CAO_2026_04_13
+observed_at: '2026-04-14T16:16:09.811761+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tính năng / Thành phần: • Hỗ trợ 24/7/365: Đội ngũ kỹ
+  thuật hỗ trợ liên tục.'
+dual_vote:
+  status: PARTIAL
+  score: 0.7558
+  confidence: MEDIUM
+  flag: needs_review

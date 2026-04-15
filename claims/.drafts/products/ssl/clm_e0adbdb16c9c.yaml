@@ -1,0 +1,22 @@
+claim_id: CLM-E0ADBDB16C9C
+entity_id: product.ssl.geotrust_true_businessid_ev_flex
+entity_type: ENT-PROD-SSL
+entity_name: GeoTrust True BusinessID EV (FLEX)
+attribute: brand
+value: GeoTrust
+unit: null
+qualifiers: null
+source_ids:
+- SRC-CHUNG_CHI_SSL_GEOTRUST_TRUE_BUSINESSID_EV_FLEX_2026_04_05
+observed_at: '2026-04-14T16:23:53.890383+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: Dịch vụ này là gì: Đây là chứng chỉ SSL xác
+  thực mở rộng (Extended Validation - EV) do GeoTrust cung cấp.'
+dual_vote:
+  status: DISAGREE
+  score: 0.4318
+  confidence: LOW
+  flag: human_review_required

@@ -8,12 +8,14 @@ unit: GB
 qualifiers:
   storage_type: NVMe
 source_ids:
-- SRC-CLOUD_VPS_AMD_WEB_2026_04_05
+  - SRC-CLOUD_VPS_AMD_WEB_2026_04_05
 observed_at: '2026-04-05T21:46:05.031216+07:00'
 valid_from: '2026-04-05'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
 compiler_note: 'Trích từ bảng giá gói AMD 5: NVMe | 60 GB'
-approved_at: '2026-04-07T13:00:14.505797+07:00'
+approved_at: '2026-04-08T13:00:14.125533+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.701Z'

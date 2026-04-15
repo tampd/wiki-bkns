@@ -1,0 +1,2 @@
+{"ts": "2026-04-13T22:30:26.762975+07:00", "action": "extracted", "claim_id": "CLM-C1309D6F9E02", "source": "SRC-DICH_VU_VPN_CLOUD_VPN_CUA_BKNS_2026_04_13", "raw_file": "raw/manual/dich-vu-vpn-cloud-vpn-cua-bkns-2026-04-13.md", "model": "gemini-2.5-pro", "cost_usd": 0.011268}
+{"ts": "2026-04-13T22:30:26.767113+07:00", "action": "extracted", "claim_id": "CLM-C1309D6F9E02", "source": "SRC-DICH_VU_VPN_CLOUD_VPN_CUA_BKNS_2026_04_13", "raw_file": "raw/manual/dich-vu-vpn-cloud-vpn-cua-bkns-2026-04-13.md", "model": "gemini-2.5-pro", "cost_usd": 0.011268}

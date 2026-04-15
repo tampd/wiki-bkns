@@ -1,0 +1,20 @@
+claim_id: CLM-EXCEL-product_hosting_bkcp05_plus-monthly_price
+entity_id: product.hosting.bkcp05_plus
+entity_type: product_plan
+entity_name: Platium Web Hosting BKCP05+
+attribute: monthly_price
+value: 290000
+confidence: ground_truth
+review_state: approved
+risk_class: verified
+source_ids:
+- EXCEL-BANGGIA-BKNS-2026
+observed_at: '2026-04-07T15:46:04.873903+07:00'
+valid_from: '2026-04-07'
+approved_at: '2026-04-07T15:46:04.873903+07:00'
+approved_by: excel-direct-injection
+unit: VND
+qualifiers:
+  period: 1 tháng
+  vat_included: false
+compiler_note: Excel Hosting sheet, 1. Platium web hosting, plan BKCP05+, Giá tháng

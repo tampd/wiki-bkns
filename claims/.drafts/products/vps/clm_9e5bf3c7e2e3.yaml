@@ -1,0 +1,22 @@
+claim_id: CLM-9E5BF3C7E2E3
+entity_id: product.network.vpn_bkns
+entity_type: product
+entity_name: Dịch vụ VPN
+attribute: product_type
+value: Mạng riêng ảo (VPN)
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-DICH_VU_VPN_CLOUD_VPN_CUA_BKNS_2026_04_05
+observed_at: '2026-04-14T16:10:38.090202+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: "Dịch vụ này là gì: Một dịch vụ Mạng riêng
+  ảo (VPN), được BKNS gọi là Cloud VPN."'
+dual_vote:
+  status: DISAGREE
+  score: 0.3876
+  confidence: LOW
+  flag: human_review_required

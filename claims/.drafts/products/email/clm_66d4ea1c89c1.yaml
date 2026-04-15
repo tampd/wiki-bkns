@@ -1,0 +1,17 @@
+claim_id: CLM-66D4EA1C89C1
+entity_id: product.email.hosting.email3
+entity_type: product_plan
+entity_name: EMAIL 3
+attribute: price
+value: 175000
+unit: VND
+qualifiers:
+  billing_cycle: month
+source_ids:
+- SRC-BANG_GIA_DICH_VU_BKNS_TEXT_2026_04_13
+observed_at: '2026-04-13T21:40:29.223992+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ: ''Gói EMAIL 3: * Giá tháng: 175.000 VNĐ'''

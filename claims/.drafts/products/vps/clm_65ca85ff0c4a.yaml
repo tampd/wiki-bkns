@@ -1,0 +1,17 @@
+claim_id: CLM-65CA85FF0C4A
+entity_id: bkns_cloud_vps_ssd
+entity_type: product_service
+entity_name: Thuê Cloud VPS SSD
+attribute: bandwidth
+value: Unlimited
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_THUE_CLOUD_VPS_SSD_GIA_RE_TAI_BKNS_2026_04_13
+observed_at: '2026-04-13T22:29:34.495363+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tính năng / Thành phần: ''Băng thông: Lưu lượng truyền
+  tải dữ liệu không giới hạn (Unlimited)'''

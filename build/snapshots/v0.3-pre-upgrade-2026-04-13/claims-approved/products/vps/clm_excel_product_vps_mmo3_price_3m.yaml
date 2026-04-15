@@ -1,0 +1,20 @@
+claim_id: CLM-EXCEL-product_vps_mmo3-price_3m
+entity_id: product.vps.mmo3
+entity_type: product_plan
+entity_name: VPS MMO (Bảng mới) MMO3
+attribute: price_3m
+value: 300000
+confidence: ground_truth
+review_state: approved
+risk_class: verified
+source_ids:
+- EXCEL-BANGGIA-BKNS-2026
+observed_at: '2026-04-07T15:46:04.873903+07:00'
+valid_from: '2026-04-07'
+approved_at: '2026-04-07T15:46:04.873903+07:00'
+approved_by: excel-direct-injection
+unit: VND
+qualifiers:
+  period: 3 tháng
+  vat_included: false
+compiler_note: Excel VPS sheet, Bảng mới, plan MMO3, Giá 3 tháng

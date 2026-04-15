@@ -1,0 +1,23 @@
+claim_id: CLM-37E880390687
+entity_id: ENT-PROD-SSL-008
+entity_type: product_plan
+entity_name: GeoTrust True BusinessID Multi-Domain Wildcard
+attribute: addon_price_wildcard_san
+value: 7173000
+unit: VND
+qualifiers:
+  billing_cycle: year
+source_ids:
+- SRC-GEOTRUST_TRUE_BUSINESSID_MULTI_DOMAIN_WILDCARD_2026_04_13
+observed_at: '2026-04-14T16:52:51.808591+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ bảng giá: | Bổ sung SAN Wildcard Domain | 7.173.000đ | năm
+  |'
+dual_vote:
+  status: DISAGREE
+  score: 0.3472
+  confidence: LOW
+  flag: human_review_required

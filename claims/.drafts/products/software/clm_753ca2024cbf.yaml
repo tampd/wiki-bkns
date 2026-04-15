@@ -1,0 +1,18 @@
+claim_id: CLM-753CA2024CBF
+entity_id: product.software.softaculous_vps_external
+entity_type: product_plan
+entity_name: Softaculous for VPS (VPS ngoài BKNS)
+attribute: monthly_price
+value: contact_for_price
+unit: null
+qualifiers:
+  billing_cycle: month
+source_ids:
+- SRC-BAN_QUYEN_SOFTACULOUS_TRINH_CAI_AT_UNG_DUNG_TU_ONG_2026_04_13
+observed_at: '2026-04-13T21:34:20.656442+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ bảng giá: ''| Dịch vụ | ... | Softaculous for VPS<br>(VPS
+  ngoài BKNS) | Giá 1 tháng | Giá liên hệ |'''

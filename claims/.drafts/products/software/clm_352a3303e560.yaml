@@ -1,0 +1,18 @@
+claim_id: CLM-352A3303E560
+entity_id: product.software.softaculous_license
+entity_type: product
+entity_name: Bản quyền Softaculous
+attribute: policy
+value: Có các loại bản quyền khác nhau dành cho Máy chủ chuyên dụng (Dedicated) và
+  VPS.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-BAN_QUYEN_SOFTACULOUS_TRINH_CAI_AT_UNG_DUNG_TU_ONG_2026_04_13
+observed_at: '2026-04-13T21:34:20.661320+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ Chính sách / Điều khoản / Lưu ý: ''Có các loại bản quyền
+  khác nhau dành cho Máy chủ chuyên dụng (Dedicated) và VPS.'''

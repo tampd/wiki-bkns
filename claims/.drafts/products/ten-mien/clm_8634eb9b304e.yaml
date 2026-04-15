@@ -1,0 +1,26 @@
+claim_id: CLM-8634EB9B304E
+entity_id: ENT-PROD-DOMAIN
+entity_type: product
+entity_name: Tên miền
+attribute: process_step
+value: VNNIC thực hiện Mở/Khóa dịch vụ theo yêu cầu đã được xác thực.
+unit: null
+qualifiers:
+  service_name: Registry Lock
+  step: 5
+source_ids:
+- SRC-BAO_VE_TEN_MIEN_CAP_CAO_NHAT_GIAI_PHAP_AN_TOAN_TUYET_OI_2026_04_05
+observed_at: '2026-04-14T16:45:21.002167+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Quy trình đăng ký / Triển khai / Kích hoạt: 5. VNNIC thực
+  hiện Mở/Khóa dịch vụ theo yêu cầu đã được xác thực.'
+dual_vote:
+  status: DISAGREE
+  score: 0.2797
+  confidence: LOW
+  flag: human_review_required
+value_changed_from: Chủ thể xác nhận yêu cầu với VNNIC.
+value_changed_at: '2026-04-14T16:45:21.002197+07:00'

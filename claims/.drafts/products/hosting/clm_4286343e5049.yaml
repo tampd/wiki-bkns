@@ -1,0 +1,23 @@
+claim_id: CLM-4286343E5049
+entity_id: ENT-PROD-HOSTING.platinum_web_hosting
+entity_type: product
+entity_name: Platinum Web Hosting
+attribute: hardware_cpu_type
+value: Intel Platinum
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-PLATINUM_WEB_HOSTING_HOSTING_NVME_TOC_O_CAO_BACKUP_3_LAN_2026_04_05
+observed_at: '2026-04-14T12:28:23.636094+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: medium
+compiler_note: 'Trích từ mục Tính năng / Thành phần: Hệ thống máy chủ được trang bị
+  CPU Intel Platinum, đảm bảo khả năng xử lý mạnh mẽ cho các website có lưu lượng
+  truy cập cao.'
+dual_vote:
+  status: DISAGREE
+  score: 0.5159
+  confidence: LOW
+  flag: human_review_required

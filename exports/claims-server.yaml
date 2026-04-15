@@ -1,0 +1,2795 @@
+- approved_at: '2026-04-07T13:00:09.625947+07:00'
+  approved_by: admin-batch
+  attribute: admin_rights
+  claim_id: CLM-BKNS:COLOCAT-ADMIN_RI
+  compiler_note: 'Trích từ phần ''Điểm chính'': khách hàng toàn quyền quản trị máy
+    chủ.'
+  confidence: high
+  entity_id: bkns:colocation
+  entity_name: Thuê Chỗ Đặt Máy Chủ (Colocation)
+  entity_type: product_service
+  observed_at: '2026-04-04T20:52:19.131502+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_THUE_CHO_AT_MAY_CHU_COLOCATION_TAI_BKNS_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: Toàn quyền
+- approved_at: '2026-04-07T13:00:09.630768+07:00'
+  approved_by: admin-batch
+  attribute: bandwidth_limit
+  claim_id: CLM-BKNS:COLOCAT-BANDWIDT
+  compiler_note: 'Trích từ phần ''Điểm chính'': băng thông không giới hạn'
+  confidence: high
+  entity_id: bkns:colocation
+  entity_name: Thuê Chỗ Đặt Máy Chủ (Colocation)
+  entity_type: product_service
+  observed_at: '2026-04-04T20:52:19.129427+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_THUE_CHO_AT_MAY_CHU_COLOCATION_TAI_BKNS_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: Không giới hạn
+- approved_at: '2026-04-07T13:00:09.635810+07:00'
+  approved_by: admin-batch
+  attribute: data_availability_note
+  claim_id: CLM-BKNS:COLOCAT-DATA_AVA
+  compiler_note: 'Trích từ phần ''Gói dịch vụ và bảng giá'': ⚠️ CHƯA TRÍCH XUẤT ĐỦ:
+    Bảng giá chi tiết cho các gói Thuê chỗ đặt máy chủ theo Server Unit (1U, 2U, 3U,
+    4U) và theo Tủ Rack (10U, 21U, 42U) không có trong nội dung được cung cấp.'
+  confidence: high
+  entity_id: bkns:colocation
+  entity_name: Thuê Chỗ Đặt Máy Chủ (Colocation)
+  entity_type: product_service
+  observed_at: '2026-04-04T20:52:19.146647+07:00'
+  qualifiers:
+    scope: pricing
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_THUE_CHO_AT_MAY_CHU_COLOCATION_TAI_BKNS_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: Bảng giá chi tiết cho các gói Thuê chỗ đặt máy chủ theo Server Unit (1U,
+    2U, 3U, 4U) và theo Tủ Rack (10U, 21U, 42U) không có trong nội dung được cung
+    cấp.
+- approved_at: '2026-04-07T13:00:09.641204+07:00'
+  approved_by: admin-batch
+  attribute: data_center_standard
+  claim_id: CLM-BKNS:COLOCAT-DATA_CEN
+  compiler_note: 'Trích từ phần ''Điểm chính'': Data Center chuẩn Tier 3'
+  confidence: high
+  entity_id: bkns:colocation
+  entity_name: Thuê Chỗ Đặt Máy Chủ (Colocation)
+  entity_type: product_service
+  observed_at: '2026-04-04T20:52:19.124870+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_THUE_CHO_AT_MAY_CHU_COLOCATION_TAI_BKNS_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: Tier 3
+- approved_at: '2026-04-07T13:00:09.645773+07:00'
+  approved_by: admin-batch
+  attribute: feature
+  claim_id: CLM-BKNS:COLOCAT-FEATURE
+  compiler_note: 'Trích từ phần ''FAQ'': Có, khách hàng có thể ra vào Data Center
+    để thao tác trực tiếp trên máy chủ vật lý của mình.'
+  confidence: high
+  entity_id: bkns:colocation
+  entity_name: Thuê Chỗ Đặt Máy Chủ (Colocation)
+  entity_type: product_service
+  observed_at: '2026-04-04T20:52:19.142308+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_THUE_CHO_AT_MAY_CHU_COLOCATION_TAI_BKNS_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: Khách hàng có thể ra vào Data Center để thao tác trực tiếp trên máy chủ vật
+    lý
+- approved_at: '2026-04-07T13:00:09.650419+07:00'
+  approved_by: admin-batch
+  attribute: product_category
+  claim_id: CLM-BKNS:COLOCAT-PRODUCT_
+  compiler_note: 'Trích từ phần ''Thông tin nguồn'': • Danh mục: server'
+  confidence: high
+  entity_id: bkns:colocation
+  entity_name: Thuê Chỗ Đặt Máy Chủ (Colocation)
+  entity_type: product_service
+  observed_at: '2026-04-04T20:52:19.116941+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_THUE_CHO_AT_MAY_CHU_COLOCATION_TAI_BKNS_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: server
+- approved_at: '2026-04-07T13:00:09.654447+07:00'
+  approved_by: admin-batch
+  attribute: promotion_reward
+  claim_id: CLM-BKNS:COLOCAT-PROMOTIO
+  compiler_note: 'Trích từ bảng ''Bảng Cấu Hình Máy Chủ Tặng Kèm'': Thanh toán 6 tháng'
+  confidence: high
+  entity_id: bkns:colocation
+  entity_name: Thuê Chỗ Đặt Máy Chủ (Colocation)
+  entity_type: product_service
+  observed_at: '2026-04-04T20:52:19.164649+07:00'
+  qualifiers:
+    payment_term_months: 6
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_THUE_CHO_AT_MAY_CHU_COLOCATION_TAI_BKNS_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: bkns:promo_server:config2
+- approved_at: '2026-04-07T13:00:09.658533+07:00'
+  approved_by: admin-batch
+  attribute: registration_process
+  claim_id: CLM-BKNS:COLOCAT-REGISTRA
+  compiler_note: Trích từ phần 'Quy trình đăng ký / Triển khai / Kích hoạt (nếu có)'
+  confidence: high
+  entity_id: bkns:colocation
+  entity_name: Thuê Chỗ Đặt Máy Chủ (Colocation)
+  entity_type: product_service
+  observed_at: '2026-04-04T20:52:19.149419+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_THUE_CHO_AT_MAY_CHU_COLOCATION_TAI_BKNS_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: 1. Liên hệ với BKNS. 2. Tư vấn. 3. Ký hợp đồng. 4. Bàn giao.
+- approved_at: '2026-04-07T13:00:09.662954+07:00'
+  approved_by: admin-batch
+  attribute: service_description
+  claim_id: CLM-BKNS:COLOCAT-SERVICE_
+  compiler_note: 'Trích từ phần ''Tóm tắt nhanh'': • Dịch vụ này là gì: Dịch vụ cho
+    phép khách hàng thuê không gian và cơ sở hạ tầng tại trung tâm dữ liệu (Data Center)
+    của BKNS để đặt máy chủ vật lý của mình.'
+  confidence: high
+  entity_id: bkns:colocation
+  entity_name: Thuê Chỗ Đặt Máy Chủ (Colocation)
+  entity_type: product_service
+  observed_at: '2026-04-04T20:52:19.119156+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_THUE_CHO_AT_MAY_CHU_COLOCATION_TAI_BKNS_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: Dịch vụ cho phép khách hàng thuê không gian và cơ sở hạ tầng tại trung tâm
+    dữ liệu (Data Center) của BKNS để đặt máy chủ vật lý của mình.
+- approved_at: '2026-04-07T13:00:09.667932+07:00'
+  approved_by: admin-batch
+  attribute: source_url
+  claim_id: CLM-BKNS:COLOCAT-SOURCE_U
+  compiler_note: 'Trích từ phần ''Thông tin nguồn'': • URL: https://www.bkns.vn/server/thue-cho-dat-may-chu.html'
+  confidence: high
+  entity_id: bkns:colocation
+  entity_name: Thuê Chỗ Đặt Máy Chủ (Colocation)
+  entity_type: product_service
+  observed_at: '2026-04-04T20:52:19.113988+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_THUE_CHO_AT_MAY_CHU_COLOCATION_TAI_BKNS_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: https://www.bkns.vn/server/thue-cho-dat-may-chu.html
+- approved_at: '2026-04-07T13:00:09.672336+07:00'
+  approved_by: admin-batch
+  attribute: target_customer
+  claim_id: CLM-BKNS:COLOCAT-TARGET_C
+  compiler_note: 'Trích từ phần ''Tóm tắt nhanh'': • Phù hợp với: Doanh nghiệp sở
+    hữu máy chủ riêng và cần một môi trường chuyên nghiệp để vận hành, bao gồm các
+    công ty có website lớn, công ty game, tài chính, chứng khoán, hoặc cần hệ thống
+    email, backup dữ liệu riêng.'
+  confidence: high
+  entity_id: bkns:colocation
+  entity_name: Thuê Chỗ Đặt Máy Chủ (Colocation)
+  entity_type: product_service
+  observed_at: '2026-04-04T20:52:19.121770+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_THUE_CHO_AT_MAY_CHU_COLOCATION_TAI_BKNS_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: Doanh nghiệp sở hữu máy chủ riêng và cần một môi trường chuyên nghiệp để
+    vận hành, bao gồm các công ty có website lớn, công ty game, tài chính, chứng khoán,
+    hoặc cần hệ thống email, backup dữ liệu riêng.
+- approved_at: '2026-04-07T13:00:09.676645+07:00'
+  approved_by: admin-batch
+  attribute: technical_support_availability
+  claim_id: CLM-BKNS:COLOCAT-TECHNICA
+  compiler_note: 'Trích từ phần ''Tính năng / Thành phần'': • Hỗ trợ 24/7: Đội ngũ
+    kỹ thuật viên chuyên nghiệp sẵn sàng hỗ trợ 24/7/365.'
+  confidence: high
+  entity_id: bkns:colocation
+  entity_name: Thuê Chỗ Đặt Máy Chủ (Colocation)
+  entity_type: product_service
+  observed_at: '2026-04-04T20:52:19.127058+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_THUE_CHO_AT_MAY_CHU_COLOCATION_TAI_BKNS_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: 24/7/365
+- approved_at: '2026-04-07T13:00:09.680388+07:00'
+  approved_by: admin-batch
+  attribute: cpu_cores
+  claim_id: CLM-BKNS:PROMO_S-CPU_CORE
+  compiler_note: 'Trích từ bảng ''Bảng Cấu Hình Máy Chủ Tặng Kèm'', cột ''Cấu hình
+    2'': CPU: 8 CORES'
+  confidence: high
+  entity_id: bkns:promo_server:config2
+  entity_name: Máy Chủ Tặng Kèm - Cấu hình 2
+  entity_type: product_hardware
+  observed_at: '2026-04-04T20:52:19.166709+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_THUE_CHO_AT_MAY_CHU_COLOCATION_TAI_BKNS_2026_04_04
+  unit: Cores
+  valid_from: '2026-04-04'
+  value: 8
+- approved_at: '2026-04-07T13:00:09.684484+07:00'
+  approved_by: admin-batch
+  attribute: ram_size
+  claim_id: CLM-BKNS:PROMO_S-RAM_SIZE
+  compiler_note: 'Trích từ bảng ''Bảng Cấu Hình Máy Chủ Tặng Kèm'', cột ''Cấu hình
+    2'': RAM: 16GB'
+  confidence: high
+  entity_id: bkns:promo_server:config2
+  entity_name: Máy Chủ Tặng Kèm - Cấu hình 2
+  entity_type: product_hardware
+  observed_at: '2026-04-04T20:52:19.168947+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_THUE_CHO_AT_MAY_CHU_COLOCATION_TAI_BKNS_2026_04_04
+  unit: GB
+  valid_from: '2026-04-04'
+  value: 16
+- approved_at: '2026-04-07T13:00:09.688157+07:00'
+  approved_by: admin-batch
+  attribute: stock_quantity
+  claim_id: CLM-BKNS:PROMO_S-STOCK_QU
+  compiler_note: 'Trích từ bảng ''Bảng Cấu Hình Máy Chủ Tặng Kèm'', cột ''Cấu hình
+    1'': Số lượng: 10 máy'
+  confidence: high
+  entity_id: bkns:promo_server:config1
+  entity_name: Máy Chủ Tặng Kèm - Cấu hình 1
+  entity_type: product_hardware
+  observed_at: '2026-04-04T20:52:19.162658+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_THUE_CHO_AT_MAY_CHU_COLOCATION_TAI_BKNS_2026_04_04
+  unit: máy
+  valid_from: '2026-04-04'
+  value: 10
+- approved_at: '2026-04-07T13:00:09.691888+07:00'
+  approved_by: admin-batch
+  attribute: storage_size
+  claim_id: CLM-BKNS:PROMO_S-STORAGE_
+  compiler_note: 'Trích từ bảng ''Bảng Cấu Hình Máy Chủ Tặng Kèm'', cột ''Cấu hình
+    1'': SAS: 600GB'
+  confidence: high
+  entity_id: bkns:promo_server:config1
+  entity_name: Máy Chủ Tặng Kèm - Cấu hình 1
+  entity_type: product_hardware
+  observed_at: '2026-04-04T20:52:19.160810+07:00'
+  qualifiers:
+    storage_type: SAS
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_THUE_CHO_AT_MAY_CHU_COLOCATION_TAI_BKNS_2026_04_04
+  unit: GB
+  valid_from: '2026-04-04'
+  value: 600
+- approved_at: '2026-04-07T13:00:09.696478+07:00'
+  approved_by: admin-batch
+  attribute: benefit
+  claim_id: CLM-COLO-BKNS-BENEFIT
+  compiler_note: 'Trích từ Mô tả dịch vụ: Dịch vụ này giúp doanh nghiệp tiết kiệm
+    chi phí xây dựng và vận hành một trung tâm dữ liệu riêng...'
+  confidence: high
+  entity_id: product.colocation.bkns
+  entity_name: Thuê Chỗ Đặt Máy Chủ (Colocation)
+  entity_type: product
+  observed_at: '2026-04-07T00:12:22.825250+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_THUE_CHO_AT_MAY_CHU_COLOCATION_TAI_BKNS_2026_04_06
+  unit: ''
+  valid_from: '2026-04-07'
+  value: Tiết kiệm chi phí xây dựng và vận hành một trung tâm dữ liệu riêng
+- approved_at: '2026-04-07T13:00:09.700694+07:00'
+  approved_by: admin-batch
+  attribute: bandwidth
+  claim_id: CLM-COLO-BKNS-BW
+  compiler_note: 'Trích từ Tóm tắt nhanh: Điểm chính: ... băng thông không giới hạn...'
+  confidence: high
+  entity_id: product.colocation.bkns
+  entity_name: Thuê Chỗ Đặt Máy Chủ (Colocation)
+  entity_type: product
+  observed_at: '2026-04-07T00:12:22.815602+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_THUE_CHO_AT_MAY_CHU_COLOCATION_TAI_BKNS_2026_04_06
+  unit: ''
+  valid_from: '2026-04-07'
+  value: Không giới hạn
+- approved_at: '2026-04-07T13:00:09.704448+07:00'
+  approved_by: admin-batch
+  attribute: data_center_tier
+  claim_id: CLM-COLO-BKNS-DATA_CEN
+  compiler_note: 'Trích từ Tóm tắt nhanh: Điểm chính: Data Center chuẩn Tier 3...'
+  confidence: high
+  entity_id: product.colocation.bkns
+  entity_name: Thuê Chỗ Đặt Máy Chủ (Colocation)
+  entity_type: product
+  observed_at: '2026-04-07T00:12:22.810004+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_THUE_CHO_AT_MAY_CHU_COLOCATION_TAI_BKNS_2026_04_06
+  unit: ''
+  valid_from: '2026-04-07'
+  value: Tier 3
+- approved_at: '2026-04-07T13:00:09.708620+07:00'
+  approved_by: admin-batch
+  attribute: management_access
+  claim_id: CLM-COLO-BKNS-MANAGEME
+  compiler_note: 'Trích từ Tóm tắt nhanh: Điểm chính: ... khách hàng toàn quyền quản
+    trị máy chủ.'
+  confidence: high
+  entity_id: product.colocation.bkns
+  entity_name: Thuê Chỗ Đặt Máy Chủ (Colocation)
+  entity_type: product
+  observed_at: '2026-04-07T00:12:22.818477+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_THUE_CHO_AT_MAY_CHU_COLOCATION_TAI_BKNS_2026_04_06
+  unit: ''
+  valid_from: '2026-04-07'
+  value: Toàn quyền quản trị
+- approved_at: '2026-04-07T13:00:09.712633+07:00'
+  approved_by: admin-batch
+  attribute: pricing_information_status
+  claim_id: CLM-COLO-BKNS-PRICING_
+  compiler_note: 'Trích từ Gói dịch vụ và bảng giá: ⚠️ CHƯA TRÍCH XUẤT ĐỦ: Bảng giá
+    chi tiết cho các gói Thuê chỗ đặt máy chủ theo Server Unit (1U, 2U, 3U, 4U) và
+    theo Tủ Rack (10U, 21U, 42U) không có trong nội dung được cung cấp.'
+  confidence: high
+  entity_id: product.colocation.bkns
+  entity_name: Thuê Chỗ Đặt Máy Chủ (Colocation)
+  entity_type: product
+  observed_at: '2026-04-07T00:12:22.836052+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_THUE_CHO_AT_MAY_CHU_COLOCATION_TAI_BKNS_2026_04_06
+  unit: ''
+  valid_from: '2026-04-07'
+  value: Bảng giá chi tiết không có sẵn
+- approved_at: '2026-04-07T13:00:09.717211+07:00'
+  approved_by: admin-batch
+  attribute: promotion
+  claim_id: CLM-COLO-BKNS-PROMOTIO
+  compiler_note: 'Trích từ Tóm tắt nhanh: Điều kiện/giới hạn nổi bật (nếu có): Có
+    chương trình tặng máy chủ khi khách hàng thanh toán dịch vụ chỗ đặt từ 3 tháng
+    trở lên.'
+  confidence: high
+  entity_id: product.colocation.bkns
+  entity_name: Thuê Chỗ Đặt Máy Chủ (Colocation)
+  entity_type: product
+  observed_at: '2026-04-07T00:12:22.821367+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_THUE_CHO_AT_MAY_CHU_COLOCATION_TAI_BKNS_2026_04_06
+  unit: ''
+  valid_from: '2026-04-07'
+  value: Tặng máy chủ khi khách hàng thanh toán dịch vụ chỗ đặt từ 3 tháng trở lên.
+- approved_at: '2026-04-07T13:00:09.721596+07:00'
+  approved_by: admin-batch
+  attribute: registration_process_step
+  claim_id: CLM-COLO-BKNS-REGISTRA
+  compiler_note: 'Trích từ Quy trình đăng ký / Triển khai / Kích hoạt: 1. Liên hệ:
+    Khách hàng liên hệ với BKNS qua các kênh hỗ trợ.'
+  confidence: high
+  entity_id: product.colocation.bkns
+  entity_name: Thuê Chỗ Đặt Máy Chủ (Colocation)
+  entity_type: product
+  observed_at: '2026-04-07T00:12:22.838812+07:00'
+  qualifiers:
+    step: 1
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_THUE_CHO_AT_MAY_CHU_COLOCATION_TAI_BKNS_2026_04_06
+  unit: ''
+  valid_from: '2026-04-07'
+  value: Khách hàng liên hệ với BKNS qua các kênh hỗ trợ.
+- approved_at: '2026-04-07T13:00:09.725447+07:00'
+  approved_by: admin-batch
+  attribute: security_feature
+  claim_id: CLM-COLO-BKNS-SECURITY
+  compiler_note: 'Trích từ Tính năng / Thành phần: Bảo mật: Hệ thống an ninh nhiều
+    lớp bao gồm kiểm soát ra vào, camera giám sát để bảo vệ thiết bị.'
+  confidence: high
+  entity_id: product.colocation.bkns
+  entity_name: Thuê Chỗ Đặt Máy Chủ (Colocation)
+  entity_type: product
+  observed_at: '2026-04-07T00:12:22.833229+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_THUE_CHO_AT_MAY_CHU_COLOCATION_TAI_BKNS_2026_04_06
+  unit: ''
+  valid_from: '2026-04-07'
+  value: Hệ thống an ninh nhiều lớp bao gồm kiểm soát ra vào, camera giám sát
+- approved_at: '2026-04-07T13:00:09.729905+07:00'
+  approved_by: admin-batch
+  attribute: service_description
+  claim_id: CLM-COLO-BKNS-SERVICE_
+  compiler_note: 'Trích từ Tóm tắt nhanh: Dịch vụ này là gì: Dịch vụ cho phép khách
+    hàng thuê không gian và cơ sở hạ tầng tại trung tâm dữ liệu (Data Center) của
+    BKNS để đặt máy chủ vật lý của mình.'
+  confidence: high
+  entity_id: product.colocation.bkns
+  entity_name: Thuê Chỗ Đặt Máy Chủ (Colocation)
+  entity_type: product
+  observed_at: '2026-04-07T00:12:22.803060+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_THUE_CHO_AT_MAY_CHU_COLOCATION_TAI_BKNS_2026_04_06
+  unit: ''
+  valid_from: '2026-04-07'
+  value: Dịch vụ cho phép khách hàng thuê không gian và cơ sở hạ tầng tại trung tâm
+    dữ liệu (Data Center) của BKNS để đặt máy chủ vật lý của mình.
+- approved_at: '2026-04-07T13:00:09.733900+07:00'
+  approved_by: admin-batch
+  attribute: target_audience
+  claim_id: CLM-COLO-BKNS-TARGET_A
+  compiler_note: 'Trích từ Tóm tắt nhanh: Phù hợp với: Doanh nghiệp sở hữu máy chủ
+    riêng và cần một môi trường chuyên nghiệp để vận hành...'
+  confidence: high
+  entity_id: product.colocation.bkns
+  entity_name: Thuê Chỗ Đặt Máy Chủ (Colocation)
+  entity_type: product
+  observed_at: '2026-04-07T00:12:22.806500+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_THUE_CHO_AT_MAY_CHU_COLOCATION_TAI_BKNS_2026_04_06
+  unit: ''
+  valid_from: '2026-04-07'
+  value: Doanh nghiệp sở hữu máy chủ riêng và cần một môi trường chuyên nghiệp để
+    vận hành
+- approved_at: '2026-04-07T13:00:09.738177+07:00'
+  approved_by: admin-batch
+  attribute: technical_support_availability
+  claim_id: CLM-COLO-BKNS-TECHNICA
+  compiler_note: 'Trích từ Tính năng / Thành phần: Hỗ trợ 24/7: Đội ngũ kỹ thuật viên
+    chuyên nghiệp sẵn sàng hỗ trợ 24/7/365.'
+  confidence: high
+  entity_id: product.colocation.bkns
+  entity_name: Thuê Chỗ Đặt Máy Chủ (Colocation)
+  entity_type: product
+  observed_at: '2026-04-07T00:12:22.830191+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_THUE_CHO_AT_MAY_CHU_COLOCATION_TAI_BKNS_2026_04_06
+  unit: ''
+  valid_from: '2026-04-07'
+  value: 24/7/365
+  value_changed_at: '2026-04-07T00:12:22.830221+07:00'
+  value_changed_from: 24/7
+- approved_at: '2026-04-07T13:00:09.742406+07:00'
+  approved_by: admin-batch
+  attribute: price
+  claim_id: CLM-DEDI-ADDON-PRICE
+  compiler_note: 'Trích từ Bảng giá dịch vụ bổ sung: | SSD Samsung Enterprise PM863
+    960GB | 650.000 đ/ tháng & 7.000.000 đ/lần |'
+  confidence: high
+  entity_id: product.dedicated_server.addon.sas_600g
+  entity_name: SSD Samsung Enterprise PM863 960GB
+  entity_type: product_addon
+  observed_at: '2026-04-06T23:52:20.278379+07:00'
+  qualifiers:
+    billing_cycle: one-time
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-DANH_SACH_GOI_SAN_PHAM_MAY_CHU_BKNS_2026_04_06
+  unit: VND
+  valid_from: '2026-04-06'
+  value: 7000000
+  value_changed_at: '2026-04-06T23:52:20.278398+07:00'
+  value_changed_from: 650000
+- approved_at: '2026-04-07T13:00:09.745864+07:00'
+  approved_by: admin-batch
+  attribute: bandwidth
+  claim_id: CLM-DEDI-MCCB01-BW
+  compiler_note: 'Trích từ bảng thông số Gói MCCB01: | Băng thông | 100Mbps/ 5Mbps
+    |'
+  confidence: high
+  entity_id: product.dedicated_server.mccb01
+  entity_name: MCCB01
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:52:20.191202+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DANH_SACH_GOI_SAN_PHAM_MAY_CHU_BKNS_2026_04_06
+  unit: ''
+  valid_from: '2026-04-06'
+  value: 100Mbps/ 5Mbps
+- approved_at: '2026-04-07T13:00:09.749225+07:00'
+  approved_by: admin-batch
+  attribute: cpu
+  claim_id: CLM-DEDI-MCCB01-CPU
+  compiler_note: 'Trích từ bảng thông số Gói MCCB01: | CPU | 1 x E5-2670 - 8 Cores
+    |'
+  confidence: high
+  entity_id: product.dedicated_server.mccb01
+  entity_name: MCCB01
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:52:20.185030+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DANH_SACH_GOI_SAN_PHAM_MAY_CHU_BKNS_2026_04_06
+  unit: ''
+  valid_from: '2026-04-06'
+  value: 1 x E5-2670 - 8 Cores
+- approved_at: '2026-04-07T13:00:09.752691+07:00'
+  approved_by: admin-batch
+  attribute: hardware_model
+  claim_id: CLM-DEDI-MCCB01-HARDWARE
+  compiler_note: 'Trích từ bảng thông số Gói MCCB01: | Server | Dell R620 / HPDL360
+    G8 |'
+  confidence: high
+  entity_id: product.dedicated_server.mccb01
+  entity_name: MCCB01
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:52:20.182469+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DANH_SACH_GOI_SAN_PHAM_MAY_CHU_BKNS_2026_04_06
+  unit: ''
+  valid_from: '2026-04-06'
+  value: Dell R620 / HPDL360 G8
+- approved_at: '2026-04-07T13:00:09.756720+07:00'
+  approved_by: admin-batch
+  attribute: price
+  claim_id: CLM-DEDI-MCCB01-PRICE
+  compiler_note: 'Trích từ bảng giá Gói MCCB01: | 24 tháng | 1.600.000 |'
+  confidence: high
+  entity_id: product.dedicated_server.mccb01
+  entity_name: MCCB01
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:52:20.206504+07:00'
+  qualifiers:
+    billing_cycle: 24 months
+    price_per: month
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-DANH_SACH_GOI_SAN_PHAM_MAY_CHU_BKNS_2026_04_06
+  unit: VND
+  valid_from: '2026-04-06'
+  value: 1600000
+  value_changed_at: '2026-04-06T23:52:20.206522+07:00'
+  value_changed_from: 1750000
+- approved_at: '2026-04-07T13:00:09.761209+07:00'
+  approved_by: admin-batch
+  attribute: ram
+  claim_id: CLM-DEDI-MCCB01-RAM
+  compiler_note: 'Trích từ bảng thông số Gói MCCB01: | RAM | 1 x 16GB |'
+  confidence: high
+  entity_id: product.dedicated_server.mccb01
+  entity_name: MCCB01
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:52:20.187299+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DANH_SACH_GOI_SAN_PHAM_MAY_CHU_BKNS_2026_04_06
+  unit: ''
+  valid_from: '2026-04-06'
+  value: 1 x 16GB
+- approved_at: '2026-04-07T13:00:09.764476+07:00'
+  approved_by: admin-batch
+  attribute: storage
+  claim_id: CLM-DEDI-MCCB01-STORAGE
+  compiler_note: 'Trích từ bảng thông số Gói MCCB01: | SSD | 1 x 400GB SSD Enterprise
+    |'
+  confidence: high
+  entity_id: product.dedicated_server.mccb01
+  entity_name: MCCB01
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:52:20.189262+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DANH_SACH_GOI_SAN_PHAM_MAY_CHU_BKNS_2026_04_06
+  unit: ''
+  valid_from: '2026-04-06'
+  value: 1 x 400GB SSD Enterprise
+- approved_at: '2026-04-07T13:00:09.769228+07:00'
+  approved_by: admin-batch
+  attribute: price
+  claim_id: CLM-DEDI-MCCB02-PRICE
+  compiler_note: 'Trích từ bảng giá Gói MCCB02: | 24 tháng | 1.800.000 |'
+  confidence: high
+  entity_id: product.dedicated_server.mccb02
+  entity_name: MCCB02
+  entity_type: product_plan
+  observed_at: '2026-04-06T23:52:20.221740+07:00'
+  qualifiers:
+    billing_cycle: 24 months
+    price_per: month
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-DANH_SACH_GOI_SAN_PHAM_MAY_CHU_BKNS_2026_04_06
+  unit: VND
+  valid_from: '2026-04-06'
+  value: 1800000
+  value_changed_at: '2026-04-06T23:52:20.221761+07:00'
+  value_changed_from: 1950000
+- approved_at: '2026-04-07T13:00:09.773933+07:00'
+  approved_by: admin-batch
+  attribute: backup:frequency_customization
+  claim_id: CLM-ENT-PROD-BAC-BACKUP:F
+  compiler_note: 'Trích từ mục Chính sách / Điều khoản / Lưu ý: • Tần suất backup
+    có thể tùy chỉnh linh hoạt (theo giờ, ngày, tuần) tùy thuộc vào mức độ quan trọng
+    và tần suất thay đổi của dữ liệu.'
+  confidence: high
+  entity_id: ENT-PROD-BACKUP-001
+  entity_name: Dịch vụ Backup Dữ liệu
+  entity_type: product
+  observed_at: '2026-04-04T20:44:55.512137+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_BACKUP_DU_LIEU_SAO_LUU_VA_PHUC_HOI_DU_LIEU_UY_TIN_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: Tùy chỉnh linh hoạt (theo giờ, ngày, tuần)
+- approved_at: '2026-04-07T13:00:09.777758+07:00'
+  approved_by: admin-batch
+  attribute: backup_frequency
+  claim_id: CLM-ENT-PROD-BAC-BACKUP_F
+  compiler_note: 'Trích từ Chính sách / Điều khoản / Lưu ý: ''Tần suất backup có thể
+    tùy chỉnh linh hoạt (theo giờ, ngày, tuần) tùy thuộc vào mức độ quan trọng và
+    tần suất thay đổi của dữ liệu.'''
+  confidence: high
+  entity_id: ENT-PROD-BACKUP-001
+  entity_name: Dịch vụ Backup Dữ liệu
+  entity_type: product
+  observed_at: '2026-04-06T23:56:23.800536+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: none
+  source_ids:
+  - SRC-DICH_VU_BACKUP_DU_LIEU_SAO_LUU_VA_PHUC_HOI_DU_LIEU_UY_TIN_2026_04_06
+  unit: null
+  valid_from: '2026-04-06'
+  value: Tùy chỉnh linh hoạt (theo giờ, ngày, tuần)
+- approved_at: '2026-04-07T13:00:09.781604+07:00'
+  approved_by: admin-batch
+  attribute: benefit
+  claim_id: CLM-ENT-PROD-BAC-BENEFIT
+  compiler_note: 'Trích từ Mô tả dịch vụ: ''Đảm bảo kinh doanh liên tục: Phục hồi
+    hệ thống nhanh chóng sau sự cố.'''
+  confidence: high
+  entity_id: ENT-PROD-BACKUP-001
+  entity_name: Dịch vụ Backup Dữ liệu
+  entity_type: product
+  observed_at: '2026-04-06T23:56:23.707104+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: none
+  source_ids:
+  - SRC-DICH_VU_BACKUP_DU_LIEU_SAO_LUU_VA_PHUC_HOI_DU_LIEU_UY_TIN_2026_04_06
+  unit: null
+  valid_from: '2026-04-06'
+  value: Đảm bảo kinh doanh liên tục
+  value_changed_at: '2026-04-06T23:56:23.707121+07:00'
+  value_changed_from: Tuân thủ các yêu cầu pháp lý về lưu trữ và bảo vệ dữ liệu
+- approved_at: '2026-04-07T13:00:09.785550+07:00'
+  approved_by: admin-batch
+  attribute: best_practice_rule
+  claim_id: CLM-ENT-PROD-BAC-BEST_PRA
+  compiler_note: 'Trích từ BK3: 3-2-1 backup rule là gì? 3 bản sao dữ liệu, 2 loại
+    media khác nhau (disk + cloud), 1 bản offsite (datacenter khác).'
+  confidence: high
+  entity_id: ENT-PROD-BACKUP
+  entity_name: Dịch vụ Backup
+  entity_type: product
+  observed_at: '2026-04-04T20:34:06.116708+07:00'
+  qualifiers:
+    description: 3 bản sao dữ liệu, 2 loại media khác nhau, 1 bản offsite
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BKNS_CAMNANG_HOSTING_DOT4_2026_04_04
+  unit: ''
+  valid_from: '2026-04-04'
+  value: 3-2-1 backup rule
+- approved_at: '2026-04-07T13:00:09.790226+07:00'
+  approved_by: admin-batch
+  attribute: compatibility
+  claim_id: CLM-ENT-PROD-BAC-COMPATIB
+  compiler_note: 'Trích từ Tính năng / Thành phần: ''Hỗ trợ đa nền tảng: Tương thích
+    với nhiều hệ thống khác nhau bao gồm máy chủ vật lý, máy chủ ảo (VPS), website,
+    cơ sở dữ liệu.'''
+  confidence: high
+  entity_id: ENT-PROD-BACKUP-001
+  entity_name: Dịch vụ Backup Dữ liệu
+  entity_type: product
+  observed_at: '2026-04-06T23:56:23.744323+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: none
+  source_ids:
+  - SRC-DICH_VU_BACKUP_DU_LIEU_SAO_LUU_VA_PHUC_HOI_DU_LIEU_UY_TIN_2026_04_06
+  unit: null
+  valid_from: '2026-04-06'
+  value: Cơ sở dữ liệu
+  value_changed_at: '2026-04-06T23:56:23.744354+07:00'
+  value_changed_from: Website
+- approved_at: '2026-04-07T13:00:09.794172+07:00'
+  approved_by: admin-batch
+  attribute: compliance:standard
+  claim_id: CLM-ENT-PROD-BAC-COMPLIAN
+  compiler_note: 'Trích từ mục Tính năng / Thành phần: • Bảo mật cao: ...tuân thủ
+    các tiêu chuẩn bảo mật quốc tế.'
+  confidence: high
+  entity_id: ENT-PROD-BACKUP-001
+  entity_name: Dịch vụ Backup Dữ liệu
+  entity_type: product
+  observed_at: '2026-04-04T20:44:55.460318+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_BACKUP_DU_LIEU_SAO_LUU_VA_PHUC_HOI_DU_LIEU_UY_TIN_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: Tiêu chuẩn bảo mật quốc tế
+- approved_at: '2026-04-07T13:00:09.798537+07:00'
+  approved_by: admin-batch
+  attribute: description
+  claim_id: CLM-ENT-PROD-BAC-DESC
+  compiler_note: 'Trích từ Tóm tắt nhanh: ''Dịch vụ này là gì: Là dịch vụ sao chép
+    và lưu trữ dữ liệu từ hệ thống gốc (máy chủ, website, database) sang một hệ thống
+    lưu trữ độc lập để có thể phục hồi khi xảy ra sự cố.'''
+  confidence: high
+  entity_id: ENT-PROD-BACKUP-001
+  entity_name: Dịch vụ Backup Dữ liệu
+  entity_type: product
+  observed_at: '2026-04-06T23:56:23.661107+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: none
+  source_ids:
+  - SRC-DICH_VU_BACKUP_DU_LIEU_SAO_LUU_VA_PHUC_HOI_DU_LIEU_UY_TIN_2026_04_06
+  unit: null
+  valid_from: '2026-04-06'
+  value: Dịch vụ sao chép và lưu trữ dữ liệu từ hệ thống gốc (máy chủ, website, database)
+    sang một hệ thống lưu trữ độc lập để có thể phục hồi khi xảy ra sự cố.
+- approved_at: '2026-04-07T13:00:09.802656+07:00'
+  approved_by: admin-batch
+  attribute: failure_rate
+  claim_id: CLM-ENT-PROD-BAC-FAILURE_
+  compiler_note: 'Trích từ BK10: 30% backup fail khi restore (corrupted, incomplete,
+    wrong config).'
+  confidence: high
+  entity_id: ENT-PROD-BACKUP
+  entity_name: Dịch vụ Backup
+  entity_type: product
+  observed_at: '2026-04-04T20:34:06.153070+07:00'
+  qualifiers:
+    action: restore
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BKNS_CAMNANG_HOSTING_DOT4_2026_04_04
+  unit: percent
+  valid_from: '2026-04-04'
+  value: 0.3
+- approved_at: '2026-04-07T13:00:09.806968+07:00'
+  approved_by: admin-batch
+  attribute: faq:question
+  claim_id: CLM-ENT-PROD-BAC-FAQ:QUES
+  compiler_note: Trích từ mục Câu hỏi thường gặp (FAQ).
+  confidence: high
+  entity_id: ENT-PROD-BACKUP-001
+  entity_name: Dịch vụ Backup Dữ liệu
+  entity_type: product
+  observed_at: '2026-04-04T20:44:55.543003+07:00'
+  qualifiers:
+    answer: BKNS hỗ trợ backup dữ liệu cho nhiều nền tảng khác nhau, bao gồm máy chủ
+      vật lý, máy chủ ảo (VPS), website, cơ sở dữ liệu và nhiều hơn nữa.
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_BACKUP_DU_LIEU_SAO_LUU_VA_PHUC_HOI_DU_LIEU_UY_TIN_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: BKNS có hỗ trợ các nền tảng nào?
+- approved_at: '2026-04-07T13:00:09.811280+07:00'
+  approved_by: admin-batch
+  attribute: feature
+  claim_id: CLM-ENT-PROD-BAC-FEATURE
+  compiler_note: 'Trích từ Chính sách / Điều khoản / Lưu ý: ''Dịch vụ hỗ trợ phục
+    hồi dữ liệu nhanh chóng khi khách hàng có yêu cầu.'''
+  confidence: high
+  entity_id: ENT-PROD-BACKUP-001
+  entity_name: Dịch vụ Backup Dữ liệu
+  entity_type: product
+  observed_at: '2026-04-06T23:56:23.795967+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: none
+  source_ids:
+  - SRC-DICH_VU_BACKUP_DU_LIEU_SAO_LUU_VA_PHUC_HOI_DU_LIEU_UY_TIN_2026_04_06
+  unit: null
+  valid_from: '2026-04-06'
+  value: Hỗ trợ phục hồi dữ liệu nhanh chóng theo yêu cầu
+  value_changed_at: '2026-04-06T23:56:23.796006+07:00'
+  value_changed_from: Lên lịch backup tự động theo giờ, ngày, tuần hoặc tháng
+- approved_at: '2026-04-07T13:00:09.815118+07:00'
+  approved_by: admin-batch
+  attribute: feature:compatibility
+  claim_id: 'CLM-ENT-PROD-BAC-FEATURE:'
+  compiler_note: 'Trích từ mục Tính năng / Thành phần: • Hỗ trợ đa nền tảng: Tương
+    thích với nhiều hệ thống khác nhau bao gồm máy chủ vật lý, máy chủ ảo (VPS), website,
+    cơ sở dữ liệu.'
+  confidence: high
+  entity_id: ENT-PROD-BACKUP-001
+  entity_name: Dịch vụ Backup Dữ liệu
+  entity_type: product
+  observed_at: '2026-04-04T20:44:55.474920+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_BACKUP_DU_LIEU_SAO_LUU_VA_PHUC_HOI_DU_LIEU_UY_TIN_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: Cơ sở dữ liệu
+- approved_at: '2026-04-07T13:00:09.818722+07:00'
+  approved_by: admin-batch
+  attribute: performance_metric
+  claim_id: CLM-ENT-PROD-BAC-PERFORMA
+  compiler_note: 'Trích từ BK4: Incremental: chỉ backup phần thay đổi (mỗi ngày chỉ
+    500MB, 10 phút).'
+  confidence: high
+  entity_id: ENT-PROD-BACKUP
+  entity_name: Dịch vụ Backup
+  entity_type: product
+  observed_at: '2026-04-04T20:34:06.123721+07:00'
+  qualifiers:
+    action: Incremental backup
+    data_size_mb: 500
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BKNS_CAMNANG_HOSTING_DOT4_2026_04_04
+  unit: phút
+  valid_from: '2026-04-04'
+  value: 10
+- approved_at: '2026-04-07T13:00:09.822803+07:00'
+  approved_by: admin-batch
+  attribute: monthly_price
+  claim_id: CLM-ENT-PROD-BAC-PRICE
+  compiler_note: 'Trích từ BK2: hourly 200-300K/tháng.'
+  confidence: high
+  entity_id: ENT-PROD-BACKUP
+  entity_name: Dịch vụ Backup
+  entity_type: product
+  observed_at: '2026-04-04T20:34:06.110868+07:00'
+  qualifiers:
+    backup_frequency: hourly
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BKNS_CAMNANG_HOSTING_DOT4_2026_04_04
+  unit: VND
+  valid_from: '2026-04-04'
+  value:
+    max: 300000
+    min: 200000
+- approved_at: '2026-04-07T13:00:09.826843+07:00'
+  approved_by: admin-batch
+  attribute: pricing:availability
+  claim_id: 'CLM-ENT-PROD-BAC-PRICING:'
+  compiler_note: 'Trích từ mục Gói dịch vụ và bảng giá: ⚠️ CHƯA TRÍCH XUẤT ĐỦ: Trang
+    không cung cấp bảng giá chi tiết cho các gói dịch vụ backup.'
+  confidence: high
+  entity_id: ENT-PROD-BACKUP-001
+  entity_name: Dịch vụ Backup Dữ liệu
+  entity_type: product
+  observed_at: '2026-04-04T20:44:55.482303+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_BACKUP_DU_LIEU_SAO_LUU_VA_PHUC_HOI_DU_LIEU_UY_TIN_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: Không cung cấp bảng giá chi tiết
+- approved_at: '2026-04-07T13:00:09.831525+07:00'
+  approved_by: admin-batch
+  attribute: pricing_factor
+  claim_id: CLM-ENT-PROD-BAC-PRICING_
+  compiler_note: 'Trích từ Gói dịch vụ và bảng giá: ''⚠️ CHƯA TRÍCH XUẤT ĐỦ: Trang
+    không cung cấp bảng giá chi tiết cho các gói dịch vụ backup.'''
+  confidence: high
+  entity_id: ENT-PROD-BACKUP-001
+  entity_name: Dịch vụ Backup Dữ liệu
+  entity_type: product
+  observed_at: '2026-04-06T23:56:23.761387+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: none
+  source_ids:
+  - SRC-DICH_VU_BACKUP_DU_LIEU_SAO_LUU_VA_PHUC_HOI_DU_LIEU_UY_TIN_2026_04_06
+  unit: null
+  valid_from: '2026-04-06'
+  value: Bảng giá chi tiết không được cung cấp trên trang web
+  value_changed_at: '2026-04-06T23:56:23.761419+07:00'
+  value_changed_from: Cung cấp các gói dịch vụ linh hoạt, phù hợp với nhu cầu và ngân
+    sách
+- approved_at: '2026-04-07T13:00:09.835653+07:00'
+  approved_by: admin-batch
+  attribute: product:comparison_availability
+  claim_id: 'CLM-ENT-PROD-BAC-PRODUCT:'
+  compiler_note: 'Trích từ mục So sánh các gói (nếu có): Trang không có bảng so sánh
+    các gói dịch vụ.'
+  confidence: high
+  entity_id: ENT-PROD-BACKUP-001
+  entity_name: Dịch vụ Backup Dữ liệu
+  entity_type: product
+  observed_at: '2026-04-04T20:44:55.492937+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_BACKUP_DU_LIEU_SAO_LUU_VA_PHUC_HOI_DU_LIEU_UY_TIN_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: false
+- approved_at: '2026-04-07T13:00:09.839682+07:00'
+  approved_by: admin-batch
+  attribute: product_name
+  claim_id: CLM-ENT-PROD-BAC-PRODUCT_
+  compiler_note: 'Trích từ tiêu đề trang: ''# Dịch vụ Backup Dữ liệu - Sao lưu và
+    Phục hồi Dữ liệu Uy tín'''
+  confidence: high
+  entity_id: ENT-PROD-BACKUP-001
+  entity_name: Dịch vụ Backup Dữ liệu
+  entity_type: product
+  observed_at: '2026-04-05T21:42:29.914844+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BACKUP_DU_LIEU_WEB_2026_04_05
+  unit: null
+  valid_from: '2026-04-05'
+  value: Dịch vụ Backup Dữ liệu - Sao lưu và Phục hồi Dữ liệu Uy tín
+- approved_at: '2026-04-07T13:00:09.843479+07:00'
+  approved_by: admin-batch
+  attribute: provider
+  claim_id: CLM-ENT-PROD-BAC-PROVIDER
+  compiler_note: 'Trích từ phần Giới thiệu: ''...uy tín tại BKNS...'''
+  confidence: high
+  entity_id: ENT-PROD-BACKUP-001
+  entity_name: Dịch vụ Backup Dữ liệu
+  entity_type: product
+  observed_at: '2026-04-05T21:42:29.922091+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BACKUP_DU_LIEU_WEB_2026_04_05
+  unit: null
+  valid_from: '2026-04-05'
+  value: ENT-COMPANY-001
+- approved_at: '2026-04-07T13:00:09.847397+07:00'
+  approved_by: admin-batch
+  attribute: recommendation
+  claim_id: CLM-ENT-PROD-BAC-RECOMMEN
+  compiler_note: 'Trích từ BK2: Website nội dung/blog: daily backup đủ.'
+  confidence: high
+  entity_id: ENT-PROD-BACKUP
+  entity_name: Dịch vụ Backup
+  entity_type: product
+  observed_at: '2026-04-04T20:34:06.104871+07:00'
+  qualifiers:
+    customer_type: Website nội dung/blog
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BKNS_CAMNANG_HOSTING_DOT4_2026_04_04
+  unit: ''
+  valid_from: '2026-04-04'
+  value: daily backup
+- approved_at: '2026-04-07T13:00:09.851481+07:00'
+  approved_by: admin-batch
+  attribute: registration_process
+  claim_id: CLM-ENT-PROD-BAC-REGISTRA
+  compiler_note: 'Trích từ Quy trình đăng ký / Triển khai / Kích hoạt: ''Quy trình
+    đăng ký dịch vụ được thực hiện thông qua tư vấn trực tiếp.'''
+  confidence: high
+  entity_id: ENT-PROD-BACKUP-001
+  entity_name: Dịch vụ Backup Dữ liệu
+  entity_type: product
+  observed_at: '2026-04-06T23:56:23.769847+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: none
+  source_ids:
+  - SRC-DICH_VU_BACKUP_DU_LIEU_SAO_LUU_VA_PHUC_HOI_DU_LIEU_UY_TIN_2026_04_06
+  unit: null
+  valid_from: '2026-04-06'
+  value: Thực hiện thông qua tư vấn trực tiếp
+- approved_at: '2026-04-07T13:00:09.855528+07:00'
+  approved_by: admin-batch
+  attribute: retention_policy
+  claim_id: CLM-ENT-PROD-BAC-RETENTIO
+  compiler_note: 'Trích từ BK9: Yearly: 3-5 năm (tùy compliance).'
+  confidence: high
+  entity_id: ENT-PROD-BACKUP
+  entity_name: Dịch vụ Backup
+  entity_type: product
+  observed_at: '2026-04-04T20:34:06.148186+07:00'
+  qualifiers:
+    backup_type: yearly
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BKNS_CAMNANG_HOSTING_DOT4_2026_04_04
+  unit: năm
+  valid_from: '2026-04-04'
+  value:
+    max: 5
+    min: 3
+- approved_at: '2026-04-07T13:00:09.859280+07:00'
+  approved_by: admin-batch
+  attribute: rpo_target
+  claim_id: CLM-ENT-PROD-BAC-RPO_TARG
+  compiler_note: 'Trích từ BK7: Blog: RPO 24h'
+  confidence: high
+  entity_id: ENT-PROD-BACKUP
+  entity_name: Dịch vụ Backup
+  entity_type: product
+  observed_at: '2026-04-04T20:34:06.135756+07:00'
+  qualifiers:
+    customer_type: Blog
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BKNS_CAMNANG_HOSTING_DOT4_2026_04_04
+  unit: giờ
+  valid_from: '2026-04-04'
+  value: 24
+- approved_at: '2026-04-07T13:00:09.862955+07:00'
+  approved_by: admin-batch
+  attribute: rto_target
+  claim_id: CLM-ENT-PROD-BAC-RTO_TARG
+  compiler_note: 'Trích từ BK7: Blog: RTO 12h.'
+  confidence: high
+  entity_id: ENT-PROD-BACKUP
+  entity_name: Dịch vụ Backup
+  entity_type: product
+  observed_at: '2026-04-04T20:34:06.137515+07:00'
+  qualifiers:
+    customer_type: Blog
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BKNS_CAMNANG_HOSTING_DOT4_2026_04_04
+  unit: giờ
+  valid_from: '2026-04-04'
+  value: 12
+- approved_at: '2026-04-07T13:00:09.867440+07:00'
+  approved_by: admin-batch
+  attribute: sales_process:contact_method
+  claim_id: CLM-ENT-PROD-BAC-SALES_PR
+  compiler_note: 'Trích từ Quy trình đăng ký / Triển khai / Kích hoạt: ''Khách hàng
+    có nhu cầu cần liên hệ với BKNS qua hotline, email hoặc các kênh liên lạc khác.'''
+  confidence: high
+  entity_id: ENT-PROD-BACKUP-001
+  entity_name: Dịch vụ Backup Dữ liệu
+  entity_type: product
+  observed_at: '2026-04-06T23:56:23.777912+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: none
+  source_ids:
+  - SRC-DICH_VU_BACKUP_DU_LIEU_SAO_LUU_VA_PHUC_HOI_DU_LIEU_UY_TIN_2026_04_04
+  - SRC-DICH_VU_BACKUP_DU_LIEU_SAO_LUU_VA_PHUC_HOI_DU_LIEU_UY_TIN_2026_04_06
+  unit: null
+  valid_from: '2026-04-04'
+  value: Liên hệ với BKNS qua hotline, email hoặc các kênh liên lạc khác
+  value_changed_at: '2026-04-06T23:56:23.777946+07:00'
+  value_changed_from: Cần liên hệ để nhận báo giá
+- approved_at: '2026-04-07T13:00:09.871612+07:00'
+  approved_by: admin-batch
+  attribute: security_feature
+  claim_id: CLM-ENT-PROD-BAC-SECURITY
+  compiler_note: 'Trích từ Tính năng / Thành phần: ''Bảo mật cao: Dữ liệu được mã
+    hóa và lưu trữ trên hệ thống đám mây an toàn, tuân thủ các tiêu chuẩn bảo mật
+    quốc tế.'''
+  confidence: high
+  entity_id: ENT-PROD-BACKUP-001
+  entity_name: Dịch vụ Backup Dữ liệu
+  entity_type: product
+  observed_at: '2026-04-06T23:56:23.720004+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: none
+  source_ids:
+  - SRC-DICH_VU_BACKUP_DU_LIEU_SAO_LUU_VA_PHUC_HOI_DU_LIEU_UY_TIN_2026_04_06
+  unit: null
+  valid_from: '2026-04-06'
+  value: Dữ liệu được mã hóa
+- approved_at: '2026-04-07T13:00:09.875494+07:00'
+  approved_by: admin-batch
+  attribute: service:data_recovery
+  claim_id: 'CLM-ENT-PROD-BAC-SERVICE:'
+  compiler_note: 'Trích từ mục Chính sách / Điều khoản / Lưu ý: • Dịch vụ hỗ trợ phục
+    hồi dữ liệu nhanh chóng khi khách hàng có yêu cầu.'
+  confidence: high
+  entity_id: ENT-PROD-BACKUP-001
+  entity_name: Dịch vụ Backup Dữ liệu
+  entity_type: product
+  observed_at: '2026-04-04T20:44:55.508522+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_BACKUP_DU_LIEU_SAO_LUU_VA_PHUC_HOI_DU_LIEU_UY_TIN_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: Hỗ trợ phục hồi dữ liệu nhanh chóng khi khách hàng có yêu cầu.
+- approved_at: '2026-04-07T13:00:09.879835+07:00'
+  approved_by: admin-batch
+  attribute: service_description
+  claim_id: CLM-ENT-PROD-BAC-SERVICE_
+  compiler_note: 'Trích từ phần Giới thiệu: ''Dịch vụ sao lưu phục hồi dữ liệu uy
+    tín tại BKNS, đảm bảo an toàn dữ liệu cho doanh nghiệp.'''
+  confidence: high
+  entity_id: ENT-PROD-BACKUP-001
+  entity_name: Dịch vụ Backup Dữ liệu
+  entity_type: product
+  observed_at: '2026-04-05T21:42:29.918640+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BACKUP_DU_LIEU_WEB_2026_04_05
+  unit: null
+  valid_from: '2026-04-05'
+  value: Dịch vụ sao lưu phục hồi dữ liệu uy tín tại BKNS, đảm bảo an toàn dữ liệu
+    cho doanh nghiệp.
+- approved_at: '2026-04-07T13:00:09.884471+07:00'
+  approved_by: admin-batch
+  attribute: source_url
+  claim_id: CLM-ENT-PROD-BAC-SOURCE_U
+  compiler_note: 'Trích từ metadata trong nội dung: ''Nguồn: https://www.bkns.vn/server/backup-du-lieu.html'''
+  confidence: high
+  entity_id: ENT-PROD-BACKUP-001
+  entity_name: Dịch vụ Backup Dữ liệu
+  entity_type: product
+  observed_at: '2026-04-05T21:42:29.956524+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-BACKUP_DU_LIEU_WEB_2026_04_05
+  unit: null
+  valid_from: '2026-04-05'
+  value: https://www.bkns.vn/server/backup-du-lieu.html
+- approved_at: '2026-04-07T13:00:09.888727+07:00'
+  approved_by: admin-batch
+  attribute: storage:location
+  claim_id: 'CLM-ENT-PROD-BAC-STORAGE:'
+  compiler_note: 'Trích từ mục Chính sách / Điều khoản / Lưu ý: • Dữ liệu được lưu
+    trữ trên hệ thống lưu trữ đám mây an toàn, bảo mật của BKNS.'
+  confidence: high
+  entity_id: ENT-PROD-BACKUP-001
+  entity_name: Dịch vụ Backup Dữ liệu
+  entity_type: product
+  observed_at: '2026-04-04T20:44:55.504709+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_BACKUP_DU_LIEU_SAO_LUU_VA_PHUC_HOI_DU_LIEU_UY_TIN_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: Hệ thống lưu trữ đám mây an toàn, bảo mật của BKNS.
+- approved_at: '2026-04-07T13:00:09.893333+07:00'
+  approved_by: admin-batch
+  attribute: storage_location
+  claim_id: CLM-ENT-PROD-BAC-STORAGE_
+  compiler_note: 'Trích từ Tính năng / Thành phần: ''Bảo mật cao: Dữ liệu được mã
+    hóa và lưu trữ trên hệ thống đám mây an toàn, tuân thủ các tiêu chuẩn bảo mật
+    quốc tế.'''
+  confidence: high
+  entity_id: ENT-PROD-BACKUP-001
+  entity_name: Dịch vụ Backup Dữ liệu
+  entity_type: product
+  observed_at: '2026-04-06T23:56:23.722381+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: none
+  source_ids:
+  - SRC-DICH_VU_BACKUP_DU_LIEU_SAO_LUU_VA_PHUC_HOI_DU_LIEU_UY_TIN_2026_04_06
+  unit: null
+  valid_from: '2026-04-06'
+  value: Hệ thống đám mây an toàn
+- approved_at: '2026-04-07T13:00:09.897193+07:00'
+  approved_by: admin-batch
+  attribute: support:availability
+  claim_id: 'CLM-ENT-PROD-BAC-SUPPORT:'
+  compiler_note: 'Trích từ mục Tóm tắt nhanh: • Điểm chính: ... và có đội ngũ kỹ thuật
+    hỗ trợ 24/7.'
+  confidence: high
+  entity_id: ENT-PROD-BACKUP-001
+  entity_name: Dịch vụ Backup Dữ liệu
+  entity_type: product
+  observed_at: '2026-04-04T20:44:55.421018+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_BACKUP_DU_LIEU_SAO_LUU_VA_PHUC_HOI_DU_LIEU_UY_TIN_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: 24/7
+- approved_at: '2026-04-07T13:00:09.901578+07:00'
+  approved_by: admin-batch
+  attribute: support_availability
+  claim_id: CLM-ENT-PROD-BAC-SUPPORT_
+  compiler_note: 'Trích từ Tóm tắt nhanh: ''Hỗ trợ đa nền tảng và có đội ngũ kỹ thuật
+    hỗ trợ 24/7.'' và Tính năng / Thành phần: ''Hỗ trợ kỹ thuật 24/7: Đội ngũ chuyên
+    gia sẵn sàng hỗ trợ khách hàng mọi lúc, mọi nơi.'''
+  confidence: high
+  entity_id: ENT-PROD-BACKUP-001
+  entity_name: Dịch vụ Backup Dữ liệu
+  entity_type: product
+  observed_at: '2026-04-06T23:56:23.672979+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: none
+  source_ids:
+  - SRC-DICH_VU_BACKUP_DU_LIEU_SAO_LUU_VA_PHUC_HOI_DU_LIEU_UY_TIN_2026_04_06
+  unit: null
+  valid_from: '2026-04-06'
+  value: 24/7
+- approved_at: '2026-04-07T13:00:09.905681+07:00'
+  approved_by: admin-batch
+  attribute: target_customer
+  claim_id: CLM-ENT-PROD-BAC-TARGET_C
+  compiler_note: 'Trích từ Tóm tắt nhanh: ''Phù hợp với: Cá nhân và doanh nghiệp có
+    dữ liệu quan trọng cần được bảo vệ, đảm bảo khả năng phục hồi và tính liên tục
+    trong hoạt động.'''
+  confidence: high
+  entity_id: ENT-PROD-BACKUP-001
+  entity_name: Dịch vụ Backup Dữ liệu
+  entity_type: product
+  observed_at: '2026-04-06T23:56:23.666110+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: none
+  source_ids:
+  - SRC-DICH_VU_BACKUP_DU_LIEU_SAO_LUU_VA_PHUC_HOI_DU_LIEU_UY_TIN_2026_04_06
+  unit: null
+  valid_from: '2026-04-06'
+  value: Cá nhân và doanh nghiệp có dữ liệu quan trọng cần được bảo vệ, đảm bảo khả
+    năng phục hồi và tính liên tục trong hoạt động.
+- approved_at: '2026-04-07T13:00:09.910290+07:00'
+  approved_by: admin-batch
+  attribute: technical_specification_availability
+  claim_id: CLM-ENT-PROD-BAC-TECHNICA
+  compiler_note: 'Trích từ Thông số kỹ thuật / Giới hạn: ''⚠️ CHƯA TRÍCH XUẤT ĐỦ:
+    Trang không liệt kê các thông số kỹ thuật chi tiết như dung lượng các gói, chính
+    sách lưu giữ (retention), băng thông, hay các giới hạn cụ thể khác.'''
+  confidence: high
+  entity_id: ENT-PROD-BACKUP-001
+  entity_name: Dịch vụ Backup Dữ liệu
+  entity_type: product
+  observed_at: '2026-04-06T23:56:23.765723+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: none
+  source_ids:
+  - SRC-DICH_VU_BACKUP_DU_LIEU_SAO_LUU_VA_PHUC_HOI_DU_LIEU_UY_TIN_2026_04_06
+  unit: null
+  valid_from: '2026-04-06'
+  value: Thông số kỹ thuật chi tiết không được cung cấp trên trang web
+- approved_at: '2026-04-07T13:00:09.914857+07:00'
+  approved_by: admin-batch
+  attribute: data_center_standard
+  claim_id: CLM-ENT-PROD-COL-DATA_CEN
+  compiler_note: 'Trích từ: ''Dịch vụ Colocation uy tín, ổn định tại Data Center chuẩn
+    Tier 3.'''
+  confidence: high
+  entity_id: ENT-PROD-COLOCATION-001
+  entity_name: Thuê Chỗ Đặt Máy Chủ (Colocation)
+  entity_type: product
+  observed_at: '2026-04-05T21:51:07.289744+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: medium
+  source_ids:
+  - SRC-COLOCATION_WEB_2026_04_05
+  unit: null
+  valid_from: '2026-04-05'
+  value: Tier 3
+- approved_at: '2026-04-07T13:00:09.919009+07:00'
+  approved_by: admin-batch
+  attribute: feature
+  claim_id: CLM-ENT-PROD-COL-FEATURE
+  compiler_note: 'Trích từ: ''- Hệ thống làm mát chuyên dụng'''
+  confidence: high
+  entity_id: ENT-PROD-COLOCATION-001
+  entity_name: Thuê Chỗ Đặt Máy Chủ (Colocation)
+  entity_type: product
+  observed_at: '2026-04-05T21:51:07.303184+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-COLOCATION_WEB_2026_04_05
+  unit: null
+  valid_from: '2026-04-05'
+  value: Hệ thống làm mát chuyên dụng
+- approved_at: '2026-04-07T13:00:09.922544+07:00'
+  approved_by: admin-batch
+  attribute: hardware_price
+  claim_id: CLM-ENT-PROD-COL-HARDWARE
+  compiler_note: 'Trích từ CO2: Database server: CPU mạnh, RAM lớn (128GB+) (̃ 80M).'
+  confidence: high
+  entity_id: ENT-PROD-COLOCATION
+  entity_name: Colocation
+  entity_type: product
+  observed_at: '2026-04-04T20:34:06.184597+07:00'
+  qualifiers:
+    ram_gb: 128+
+    use_case: Database server
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BKNS_CAMNANG_HOSTING_DOT4_2026_04_04
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 80000000
+- approved_at: '2026-04-07T13:00:09.926607+07:00'
+  approved_by: admin-batch
+  attribute: monthly_price_component
+  claim_id: CLM-ENT-PROD-COL-MONTHLY_
+  compiler_note: 'Trích từ CO5: 3) Power: 1-2M/tháng.'
+  confidence: high
+  entity_id: ENT-PROD-COLOCATION
+  entity_name: Colocation
+  entity_type: product
+  observed_at: '2026-04-04T20:34:06.200782+07:00'
+  qualifiers:
+    component: Power
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BKNS_CAMNANG_HOSTING_DOT4_2026_04_04
+  unit: VND
+  valid_from: '2026-04-04'
+  value:
+    max: 2000000
+    min: 1000000
+- approved_at: '2026-04-07T13:00:09.930352+07:00'
+  approved_by: admin-batch
+  attribute: network_feature
+  claim_id: CLM-ENT-PROD-COL-NETWORK_
+  compiler_note: 'Trích từ: ''- Đường truyền internet đa nhà mạng'''
+  confidence: high
+  entity_id: ENT-PROD-COLOCATION-001
+  entity_name: Thuê Chỗ Đặt Máy Chủ (Colocation)
+  entity_type: product
+  observed_at: '2026-04-05T21:51:07.309517+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-COLOCATION_WEB_2026_04_05
+  unit: null
+  valid_from: '2026-04-05'
+  value: Đường truyền internet đa nhà mạng
+- approved_at: '2026-04-07T13:00:09.934369+07:00'
+  approved_by: admin-batch
+  attribute: power_supply_feature
+  claim_id: CLM-ENT-PROD-COL-POWER_SU
+  compiler_note: 'Trích từ: ''- Nguồn điện ổn định, UPS backup'''
+  confidence: high
+  entity_id: ENT-PROD-COLOCATION-001
+  entity_name: Thuê Chỗ Đặt Máy Chủ (Colocation)
+  entity_type: product
+  observed_at: '2026-04-05T21:51:07.300105+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: medium
+  source_ids:
+  - SRC-COLOCATION_WEB_2026_04_05
+  unit: null
+  valid_from: '2026-04-05'
+  value: UPS backup
+- approved_at: '2026-04-07T13:00:09.937952+07:00'
+  approved_by: admin-batch
+  attribute: security_feature
+  claim_id: CLM-ENT-PROD-COL-SECURITY
+  compiler_note: 'Trích từ: ''- Bảo mật vật lý 24/7'''
+  confidence: high
+  entity_id: ENT-PROD-COLOCATION-001
+  entity_name: Thuê Chỗ Đặt Máy Chủ (Colocation)
+  entity_type: product
+  observed_at: '2026-04-05T21:51:07.306292+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: medium
+  source_ids:
+  - SRC-COLOCATION_WEB_2026_04_05
+  unit: null
+  valid_from: '2026-04-05'
+  value: Bảo mật vật lý 24/7
+- approved_at: '2026-04-07T13:00:09.941352+07:00'
+  approved_by: admin-batch
+  attribute: service_description
+  claim_id: CLM-ENT-PROD-COL-SERVICE_
+  compiler_note: 'Trích từ: ''Dịch vụ Colocation uy tín, ổn định tại Data Center chuẩn
+    Tier 3.'''
+  confidence: medium
+  entity_id: ENT-PROD-COLOCATION-001
+  entity_name: Thuê Chỗ Đặt Máy Chủ (Colocation)
+  entity_type: product
+  observed_at: '2026-04-05T21:51:07.285676+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-COLOCATION_WEB_2026_04_05
+  unit: null
+  valid_from: '2026-04-05'
+  value: Dịch vụ Colocation uy tín, ổn định
+- approved_at: '2026-04-07T13:00:09.945147+07:00'
+  approved_by: admin-batch
+  attribute: datacenter_standard
+  claim_id: CLM-ENT-PROD-HOS-DATACENT
+  compiler_note: 'Trích từ bảng Giới thiệu dịch vụ BKNS cung cấp, hàng ''Server vật
+    lý (Dedicated)'', cột ''Điểm mạnh cạnh tranh'': ''Trung tâm dữ liệu chuẩn Tier
+    3 tại Việt Nam'''
+  confidence: high
+  entity_id: ENT-PROD-HOSTING-DEDICATED
+  entity_name: Server vật lý (Dedicated)
+  entity_type: product_line
+  observed_at: '2026-04-04T21:17:54.106459+07:00'
+  qualifiers:
+    location: Việt Nam
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-TRANNING_KINH_DOANH_HOSTING_EMAIL_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: Tier 3
+- approved_at: '2026-04-07T13:00:09.949279+07:00'
+  approved_by: admin-batch
+  attribute: network_connectivity
+  claim_id: CLM-ENT-PROD-HOS-NETWORK_
+  compiler_note: 'Trích từ bảng Giới thiệu dịch vụ BKNS cung cấp, hàng ''Server vật
+    lý (Dedicated)'', cột ''Điểm mạnh cạnh tranh'': ''Đường truyền multihome kết nối
+    nhiều nhà mạng tối ưu tốc độ'''
+  confidence: high
+  entity_id: ENT-PROD-HOSTING-DEDICATED
+  entity_name: Server vật lý (Dedicated)
+  entity_type: product_line
+  observed_at: '2026-04-04T21:17:54.108861+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-TRANNING_KINH_DOANH_HOSTING_EMAIL_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: multihome
+- approved_at: '2026-04-07T13:00:09.953096+07:00'
+  approved_by: admin-batch
+  attribute: service_description
+  claim_id: CLM-ENT-PROD-HOS-SERVICE_
+  compiler_note: Trích từ bảng Giới thiệu dịch vụ BKNS cung cấp, hàng 'Server vật
+    lý (Dedicated)', cột 'Mô tả ngắn'
+  confidence: high
+  entity_id: ENT-PROD-HOSTING-DEDICATED
+  entity_name: Server vật lý (Dedicated)
+  entity_type: product_line
+  observed_at: '2026-04-04T21:17:54.101760+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-TRANNING_KINH_DOANH_HOSTING_EMAIL_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: Thuê máy chủ riêng toàn quyền quản lý
+- approved_at: '2026-04-07T13:00:09.957076+07:00'
+  approved_by: admin-batch
+  attribute: target_customer
+  claim_id: CLM-ENT-PROD-HOS-TARGET_C
+  compiler_note: Trích từ bảng Giới thiệu dịch vụ BKNS cung cấp, hàng 'Server vật
+    lý (Dedicated)', cột 'Đối tượng khách hàng chính'
+  confidence: high
+  entity_id: ENT-PROD-HOSTING-DEDICATED
+  entity_name: Server vật lý (Dedicated)
+  entity_type: product_line
+  observed_at: '2026-04-04T21:17:54.104446+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-TRANNING_KINH_DOANH_HOSTING_EMAIL_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: Doanh nghiệp lớn, dự án cần hiệu năng cao
+- approved_at: '2026-04-07T13:00:09.961397+07:00'
+  approved_by: admin-batch
+  attribute: description
+  claim_id: CLM-ENT-PROD-MAN-DESC
+  compiler_note: 'Trích từ mục Tóm tắt nhanh: Dịch vụ này là gì: Là dịch vụ mà BKNS
+    thay mặt khách hàng thực hiện các công việc vận hành, giám sát, và xử lý sự cố
+    cho máy chủ, giúp hệ thống hoạt động ổn định và an toàn.'
+  confidence: high
+  entity_id: ENT-PROD-MANAGED-SERVER
+  entity_name: Dịch vụ Quản trị Máy chủ Trọn gói
+  entity_type: product
+  observed_at: '2026-04-07T00:10:11.599262+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_QUAN_TRI_MAY_CHU_TRON_GOI_TAI_BKNS_2026_04_06
+  unit: ''
+  valid_from: '2026-04-07'
+  value: Là dịch vụ mà BKNS thay mặt khách hàng thực hiện các công việc vận hành,
+    giám sát, và xử lý sự cố cho máy chủ, giúp hệ thống hoạt động ổn định và an toàn.
+- approved_at: '2026-04-07T13:00:09.965518+07:00'
+  approved_by: admin-batch
+  attribute: feature.monitoring
+  claim_id: CLM-ENT-PROD-MAN-FEATURE.
+  compiler_note: 'Trích từ bảng giá, hàng ''Bảo mật server'', cột ''Nâng cao'': ✅'
+  confidence: high
+  entity_id: ENT-PROD-MANAGED-SERVER-BASIC
+  entity_name: Quản trị Máy chủ - Nâng cao
+  entity_type: product_plan
+  observed_at: '2026-04-07T00:10:11.709504+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_QUAN_TRI_MAY_CHU_TRON_GOI_TAI_BKNS_2026_04_06
+  unit: ''
+  valid_from: '2026-04-07'
+  value: true
+  value_changed_at: '2026-04-07T00:10:11.709535+07:00'
+  value_changed_from: false
+- approved_at: '2026-04-07T13:00:09.969973+07:00'
+  approved_by: admin-batch
+  attribute: feature
+  claim_id: CLM-ENT-PROD-MAN-FEATURE
+  compiler_note: 'Trích từ mục Tính năng / Thành phần: Bảo mật (Gói Nâng cao): Cấu
+    hình firewall, cài đặt và quét mã độc, virus để tăng cường an ninh cho máy chủ.'
+  confidence: high
+  entity_id: ENT-PROD-MANAGED-SERVER-ADVANCED
+  entity_name: Quản trị Máy chủ - Nâng cao
+  entity_type: product_plan
+  observed_at: '2026-04-07T00:10:11.719716+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_QUAN_TRI_MAY_CHU_TRON_GOI_TAI_BKNS_2026_04_06
+  unit: ''
+  valid_from: '2026-04-07'
+  value: Cấu hình firewall, cài đặt và quét mã độc, virus để tăng cường an ninh cho
+    máy chủ.
+  value_changed_at: '2026-04-07T00:10:11.719735+07:00'
+  value_changed_from: Cài đặt, cấu hình và tối ưu hóa các dịch vụ như Webserver, Database
+    Server, Mail Server, DNS Server.
+- approved_at: '2026-04-07T13:00:09.974159+07:00'
+  approved_by: admin-batch
+  attribute: policy.vat
+  claim_id: CLM-ENT-PROD-MAN-POLICY.V
+  compiler_note: 'Trích từ mục Chính sách / Điều khoản / Lưu ý: Giá các gói dịch vụ
+    được niêm yết trên chưa bao gồm 10% thuế VAT.'
+  confidence: high
+  entity_id: ENT-PROD-MANAGED-SERVER
+  entity_name: Dịch vụ Quản trị Máy chủ Trọn gói
+  entity_type: product
+  observed_at: '2026-04-07T00:10:11.607518+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: medium
+  source_ids:
+  - SRC-DICH_VU_QUAN_TRI_MAY_CHU_TRON_GOI_TAI_BKNS_2026_04_06
+  unit: ''
+  valid_from: '2026-04-07'
+  value: Giá chưa bao gồm 10% VAT
+- approved_at: '2026-04-07T13:00:09.978581+07:00'
+  approved_by: admin-batch
+  attribute: price
+  claim_id: CLM-ENT-PROD-MAN-PRICE
+  compiler_note: 'Trích từ bảng giá: Đơn giá/tháng | 990.000đ'
+  confidence: high
+  entity_id: ENT-PROD-MANAGED-SERVER-BASIC
+  entity_name: Quản trị Máy chủ - Nâng cao
+  entity_type: product_plan
+  observed_at: '2026-04-07T00:10:11.616910+07:00'
+  qualifiers:
+    billing_cycle: month
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-DICH_VU_QUAN_TRI_MAY_CHU_TRON_GOI_TAI_BKNS_2026_04_06
+  unit: VND
+  valid_from: '2026-04-07'
+  value: 990000
+  value_changed_at: '2026-04-07T00:10:11.616943+07:00'
+  value_changed_from: 330000
+- approved_at: '2026-04-07T13:00:09.982922+07:00'
+  approved_by: admin-batch
+  attribute: support.response_time
+  claim_id: CLM-ENT-PROD-MAN-SUPPORT.
+  compiler_note: 'Trích từ bảng giá, hàng ''Thời gian phản hồi'', cột ''Nâng cao'':
+    15 phút'
+  confidence: high
+  entity_id: ENT-PROD-MANAGED-SERVER-BASIC
+  entity_name: Quản trị Máy chủ - Nâng cao
+  entity_type: product_plan
+  observed_at: '2026-04-07T00:10:11.644676+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_QUAN_TRI_MAY_CHU_TRON_GOI_TAI_BKNS_2026_04_06
+  unit: minute
+  valid_from: '2026-04-07'
+  value: 15
+  value_changed_at: '2026-04-07T00:10:11.644738+07:00'
+  value_changed_from: 30
+- approved_at: '2026-04-07T13:00:09.987046+07:00'
+  approved_by: admin-batch
+  attribute: support_hours
+  claim_id: CLM-ENT-PROD-MAN-SUPPORT_
+  compiler_note: 'Trích từ mục Tóm tắt nhanh: Hỗ trợ kỹ thuật 24/7.'
+  confidence: high
+  entity_id: ENT-PROD-MANAGED-SERVER
+  entity_name: Dịch vụ Quản trị Máy chủ Trọn gói
+  entity_type: product
+  observed_at: '2026-04-07T00:10:11.605432+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_QUAN_TRI_MAY_CHU_TRON_GOI_TAI_BKNS_2026_04_06
+  unit: ''
+  valid_from: '2026-04-07'
+  value: 24/7
+- approved_at: '2026-04-07T13:00:09.990967+07:00'
+  approved_by: admin-batch
+  attribute: target_audience
+  claim_id: CLM-ENT-PROD-MAN-TARGET_A
+  compiler_note: 'Trích từ mục Tóm tắt nhanh: Phù hợp với: Các cá nhân và doanh nghiệp
+    sử dụng máy chủ nhưng không có đội ngũ kỹ thuật chuyên trách hoặc muốn tiết kiệm
+    chi phí nhân sự IT.'
+  confidence: high
+  entity_id: ENT-PROD-MANAGED-SERVER
+  entity_name: Dịch vụ Quản trị Máy chủ Trọn gói
+  entity_type: product
+  observed_at: '2026-04-07T00:10:11.602857+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_QUAN_TRI_MAY_CHU_TRON_GOI_TAI_BKNS_2026_04_06
+  unit: ''
+  valid_from: '2026-04-07'
+  value: Các cá nhân và doanh nghiệp sử dụng máy chủ nhưng không có đội ngũ kỹ thuật
+    chuyên trách hoặc muốn tiết kiệm chi phí nhân sự IT.
+- approved_at: '2026-04-07T13:00:09.994803+07:00'
+  approved_by: admin-batch
+  attribute: access.admin
+  claim_id: CLM-ENT-PROD-SER-ACCESS.A
+  compiler_note: 'Trích từ bảng so sánh ở mục 3: ''Có quyền Root/Administor có thể
+    cài đặt tuỳ biến theo nhu cầu'''
+  confidence: high
+  entity_id: ENT-PROD-SERVER
+  entity_name: Server (Máy chủ)
+  entity_type: product_category
+  observed_at: '2026-04-07T01:05:15.859277+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-TRAINING_DICH_VU_VPS_2026_04_06
+  unit: ''
+  valid_from: '2026-04-07'
+  value: Có quyền Root/Administor có thể cài đặt tuỳ biến theo nhu cầu
+- approved_at: '2026-04-07T13:00:09.998355+07:00'
+  approved_by: admin-batch
+  attribute: data_crawled_at
+  claim_id: CLM-ENT-PROD-SER-DATA_CRA
+  compiler_note: 'Trích từ nội dung: ''- Ngày crawl: 2026-04-05T14:25:00+07:00'''
+  confidence: high
+  entity_id: ENT-PROD-SERVER-MGT-001
+  entity_name: Dịch vụ Quản trị Máy chủ Trọn gói
+  entity_type: service
+  observed_at: '2026-04-05T22:10:29.074685+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-QUAN_TRI_MAY_CHU_WEB_2026_04_05
+  unit: null
+  valid_from: '2026-04-05'
+  value: '2026-04-05T14:25:00+07:00'
+- approved_at: '2026-04-07T13:00:10.002247+07:00'
+  approved_by: admin-batch
+  attribute: description
+  claim_id: CLM-ENT-PROD-SER-DESC
+  compiler_note: 'Trích từ mục Giới thiệu: ''Dịch vụ quản trị server chuyên nghiệp,
+    giúp doanh nghiệp không cần đội ngũ IT riêng.'''
+  confidence: high
+  entity_id: ENT-PROD-SERVER-MGT-001
+  entity_name: Dịch vụ Quản trị Máy chủ Trọn gói
+  entity_type: service
+  observed_at: '2026-04-05T22:10:29.043451+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-QUAN_TRI_MAY_CHU_WEB_2026_04_05
+  unit: null
+  valid_from: '2026-04-05'
+  value: Dịch vụ quản trị server chuyên nghiệp, giúp doanh nghiệp không cần đội ngũ
+    IT riêng.
+- approved_at: '2026-04-07T13:00:10.005982+07:00'
+  approved_by: admin-batch
+  attribute: hardware.storage_capacity
+  claim_id: CLM-ENT-PROD-SER-HARDWARE
+  compiler_note: 'Trích từ bảng so sánh ở mục 3: ''Dung lượng cao Có thể lưu trữ hàng
+    tram GB hoặc TB'''
+  confidence: high
+  entity_id: ENT-PROD-SERVER
+  entity_name: Server (Máy chủ)
+  entity_type: product_category
+  observed_at: '2026-04-07T01:05:15.861346+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-TRAINING_DICH_VU_VPS_2026_04_06
+  unit: ''
+  valid_from: '2026-04-07'
+  value: hàng trăm GB hoặc TB
+- approved_at: '2026-04-07T13:00:10.009944+07:00'
+  approved_by: admin-batch
+  attribute: included_feature
+  claim_id: CLM-ENT-PROD-SER-INCLUDED
+  compiler_note: 'Trích từ mục Dịch vụ bao gồm: ''- Tối ưu hiệu năng'''
+  confidence: high
+  entity_id: ENT-PROD-SERVER-MGT-001
+  entity_name: Dịch vụ Quản trị Máy chủ Trọn gói
+  entity_type: service
+  observed_at: '2026-04-05T22:10:29.065873+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-QUAN_TRI_MAY_CHU_WEB_2026_04_05
+  unit: null
+  valid_from: '2026-04-05'
+  value: Tối ưu hiệu năng
+- approved_at: '2026-04-07T13:00:10.014052+07:00'
+  approved_by: admin-batch
+  attribute: name
+  claim_id: CLM-ENT-PROD-SER-NAME
+  compiler_note: 'Trích từ tiêu đề: ''# Dịch vụ Quản trị Máy chủ Trọn gói tại BKNS'''
+  confidence: high
+  entity_id: ENT-PROD-SERVER-MGT-001
+  entity_name: Dịch vụ Quản trị Máy chủ Trọn gói
+  entity_type: service
+  observed_at: '2026-04-05T22:10:29.038507+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-QUAN_TRI_MAY_CHU_WEB_2026_04_05
+  unit: null
+  valid_from: '2026-04-05'
+  value: Dịch vụ Quản trị Máy chủ Trọn gói
+- approved_at: '2026-04-07T13:00:10.017761+07:00'
+  approved_by: admin-batch
+  attribute: pricing.level
+  claim_id: CLM-ENT-PROD-SER-PRICING.
+  compiler_note: 'Trích từ bảng so sánh ở mục 3: ''Giá thành: Cao'''
+  confidence: high
+  entity_id: ENT-PROD-SERVER
+  entity_name: Server (Máy chủ)
+  entity_type: product_category
+  observed_at: '2026-04-07T01:05:15.865487+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-TRAINING_DICH_VU_VPS_2026_04_06
+  unit: ''
+  valid_from: '2026-04-07'
+  value: Cao
+- approved_at: '2026-04-07T13:00:10.021549+07:00'
+  approved_by: admin-batch
+  attribute: provider
+  claim_id: CLM-ENT-PROD-SER-PROVIDER
+  compiler_note: 'Trích từ tiêu đề: ''# Dịch vụ Quản trị Máy chủ Trọn gói tại BKNS'''
+  confidence: high
+  entity_id: ENT-PROD-SERVER-MGT-001
+  entity_name: Dịch vụ Quản trị Máy chủ Trọn gói
+  entity_type: service
+  observed_at: '2026-04-05T22:10:29.041192+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-QUAN_TRI_MAY_CHU_WEB_2026_04_05
+  unit: null
+  valid_from: '2026-04-05'
+  value: ENT-COMPANY-001
+- approved_at: '2026-04-07T13:00:10.025931+07:00'
+  approved_by: admin-batch
+  attribute: resource.allocation_model
+  claim_id: CLM-ENT-PROD-SER-RESOURCE
+  compiler_note: 'Trích từ bảng so sánh ở mục 3: ''Thuê toàn bộ máy chủ, không chia
+    sẻ với bất kỳ ai'''
+  confidence: high
+  entity_id: ENT-PROD-SERVER
+  entity_name: Server (Máy chủ)
+  entity_type: product_category
+  observed_at: '2026-04-07T01:05:15.863419+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-TRAINING_DICH_VU_VPS_2026_04_06
+  unit: ''
+  valid_from: '2026-04-07'
+  value: Thuê toàn bộ máy chủ, không chia sẻ với bất kỳ ai
+- approved_at: '2026-04-07T13:00:10.030001+07:00'
+  approved_by: admin-batch
+  attribute: source_url
+  claim_id: CLM-ENT-PROD-SER-SOURCE_U
+  compiler_note: 'Trích từ nội dung: ''- Nguồn: https://www.bkns.vn/server/dich-vu-quan-tri-may-chu-tron-goi.html'''
+  confidence: high
+  entity_id: ENT-PROD-SERVER-MGT-001
+  entity_name: Dịch vụ Quản trị Máy chủ Trọn gói
+  entity_type: service
+  observed_at: '2026-04-05T22:10:29.071628+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-QUAN_TRI_MAY_CHU_WEB_2026_04_05
+  unit: null
+  valid_from: '2026-04-05'
+  value: https://www.bkns.vn/server/dich-vu-quan-tri-may-chu-tron-goi.html
+- approved_at: '2026-04-07T13:00:10.035012+07:00'
+  approved_by: admin-batch
+  attribute: description
+  claim_id: CLM-ENT-PROD-VPN-DESC
+  compiler_note: 'Trích từ mục ''Mô tả dịch vụ'': ''Dịch vụ VPN của BKNS có thể được
+    sử dụng nhằm mục đích truy cập những website bị hạn chế truy cập về mặt vị trí
+    địa lý và bảo vệ hoạt động duyệt web của người dùng.'''
+  confidence: high
+  entity_id: ENT-PROD-VPN-001
+  entity_name: Dịch vụ VPN
+  entity_type: product
+  observed_at: '2026-04-04T20:53:50.510262+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: none
+  source_ids:
+  - SRC-DICH_VU_VPN_CLOUD_VPN_CUA_BKNS_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: Dịch vụ VPN của BKNS có thể được sử dụng nhằm mục đích truy cập những website
+    bị hạn chế truy cập về mặt vị trí địa lý và bảo vệ hoạt động duyệt web của người
+    dùng.
+- approved_at: '2026-04-07T13:00:10.040427+07:00'
+  approved_by: admin-batch
+  attribute: feature
+  claim_id: CLM-ENT-PROD-VPN-FEATURE
+  compiler_note: 'Trích từ mục ''Mô tả dịch vụ'': ...và bảo vệ hoạt động duyệt web
+    của người dùng.'
+  confidence: high
+  entity_id: ENT-PROD-VPN-001
+  entity_name: Dịch vụ VPN
+  entity_type: product
+  observed_at: '2026-04-07T00:15:17.559425+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_VPN_CLOUD_VPN_CUA_BKNS_2026_04_04
+  - SRC-DICH_VU_VPN_CLOUD_VPN_CUA_BKNS_2026_04_06
+  unit: null
+  valid_from: '2026-04-04'
+  value: Bảo vệ hoạt động duyệt web
+  value_changed_at: '2026-04-07T00:15:17.559452+07:00'
+  value_changed_from: Truy cập các website bị hạn chế về mặt vị trí địa lý
+- approved_at: '2026-04-07T13:00:10.044863+07:00'
+  approved_by: admin-batch
+  attribute: monthly_price_per_user
+  claim_id: CLM-ENT-PROD-VPN-MONTHLY_
+  compiler_note: 'Trích từ VPN5: VPN service (cloud): $5-15/user/tháng'
+  confidence: high
+  entity_id: ENT-PROD-VPN
+  entity_name: VPN Doanh nghiệp
+  entity_type: product
+  observed_at: '2026-04-04T20:34:06.158146+07:00'
+  qualifiers:
+    type: VPN service (cloud)
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BKNS_CAMNANG_HOSTING_DOT4_2026_04_04
+  unit: USD
+  valid_from: '2026-04-04'
+  value:
+    max: 15
+    min: 5
+- approved_at: '2026-04-07T13:00:10.049117+07:00'
+  approved_by: admin-batch
+  attribute: monthly_price
+  claim_id: CLM-ENT-PROD-VPN-PRICE
+  compiler_note: 'Trích từ VPN5: = 12-35M VNĐ/tháng cho 50 users.'
+  confidence: high
+  entity_id: ENT-PROD-VPN
+  entity_name: VPN Doanh nghiệp
+  entity_type: product
+  observed_at: '2026-04-04T20:34:06.160744+07:00'
+  qualifiers:
+    type: VPN service (cloud)
+    users: 50
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-BKNS_CAMNANG_HOSTING_DOT4_2026_04_04
+  unit: VND
+  valid_from: '2026-04-04'
+  value:
+    max: 35000000
+    min: 12000000
+- approved_at: '2026-04-07T13:00:10.053325+07:00'
+  approved_by: admin-batch
+  attribute: product_category
+  claim_id: CLM-ENT-PROD-VPN-PRODUCT_
+  compiler_note: 'Trích từ mục ''Tóm tắt nhanh'': Dịch vụ này là gì: Một dịch vụ Mạng
+    riêng ảo (VPN), được BKNS gọi là Cloud VPN.'
+  confidence: high
+  entity_id: ENT-PROD-VPN-001
+  entity_name: Dịch vụ VPN
+  entity_type: product
+  observed_at: '2026-04-07T00:15:17.540832+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_VPN_CLOUD_VPN_CUA_BKNS_2026_04_04
+  - SRC-DICH_VU_VPN_CLOUD_VPN_CUA_BKNS_2026_04_06
+  unit: null
+  valid_from: '2026-04-04'
+  value: Cloud VPN
+  value_changed_at: '2026-04-07T00:15:17.540850+07:00'
+  value_changed_from: VPN
+- approved_at: '2026-04-07T13:00:10.057663+07:00'
+  approved_by: admin-batch
+  attribute: source_url
+  claim_id: CLM-ENT-PROD-VPN-SOURCE_U
+  compiler_note: 'Trích từ mục ''Thông tin nguồn'': URL: https://www\.bkns\.vn/server/dich\-vu\-vpn\.html'
+  confidence: high
+  entity_id: ENT-PROD-VPN-001
+  entity_name: Dịch vụ VPN
+  entity_type: product
+  observed_at: '2026-04-07T00:15:17.575679+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_VPN_CLOUD_VPN_CUA_BKNS_2026_04_04
+  - SRC-DICH_VU_VPN_CLOUD_VPN_CUA_BKNS_2026_04_06
+  unit: null
+  valid_from: '2026-04-04'
+  value: https://www.bkns.vn/server/dich-vu-vpn.html
+- approved_at: '2026-04-07T13:00:10.061797+07:00'
+  approved_by: admin-batch
+  attribute: target_customer
+  claim_id: CLM-ENT-PROD-VPN-TARGET_C
+  compiler_note: 'Trích từ mục ''Tóm tắt nhanh'': Phù hợp với: ...hoặc muốn bảo vệ
+    hoạt động duyệt web.'
+  confidence: high
+  entity_id: ENT-PROD-VPN-001
+  entity_name: Dịch vụ VPN
+  entity_type: product
+  observed_at: '2026-04-07T00:15:17.570684+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_VPN_CLOUD_VPN_CUA_BKNS_2026_04_06
+  unit: null
+  valid_from: '2026-04-07'
+  value: Người dùng muốn bảo vệ hoạt động duyệt web
+  value_changed_at: '2026-04-07T00:15:17.570700+07:00'
+  value_changed_from: Người dùng cần truy cập các website bị hạn chế về mặt vị trí
+    địa lý
+- approved_at: '2026-04-07T13:00:10.065635+07:00'
+  approved_by: admin-batch
+  attribute: use_case
+  claim_id: CLM-ENT-PROD-VPN-USE_CASE
+  compiler_note: 'Trích từ mục ''Tóm tắt nhanh'': ''Phù hợp với: Người dùng cần truy
+    cập các website bị hạn chế về mặt vị trí địa lý hoặc muốn bảo vệ hoạt động duyệt
+    web.'''
+  confidence: high
+  entity_id: ENT-PROD-VPN-001
+  entity_name: Dịch vụ VPN
+  entity_type: product
+  observed_at: '2026-04-04T20:53:50.503972+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: none
+  source_ids:
+  - SRC-DICH_VU_VPN_CLOUD_VPN_CUA_BKNS_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: Bảo vệ hoạt động duyệt web
+- approved_at: '2026-04-07T13:00:10.069315+07:00'
+  approved_by: admin-batch
+  attribute: website_category
+  claim_id: CLM-ENT-PROD-VPN-WEBSITE_
+  compiler_note: 'Trích từ mục ''Thông tin nguồn'': Danh mục: server'
+  confidence: high
+  entity_id: ENT-PROD-VPN-001
+  entity_name: Dịch vụ VPN
+  entity_type: product
+  observed_at: '2026-04-07T00:15:17.583162+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_VPN_CLOUD_VPN_CUA_BKNS_2026_04_06
+  unit: null
+  valid_from: '2026-04-07'
+  value: server
+- approved_at: '2026-04-07T13:00:10.073392+07:00'
+  approved_by: admin-batch
+  attribute: discount_policy
+  claim_id: CLM-PROD-DEDICATED_SERVER-DISCOUNT
+  compiler_note: 'Trích từ Tóm tắt nhanh: Điều kiện/giới hạn nổi bật (nếu có): Giá
+    thuê ưu đãi hơn khi đăng ký chu kỳ dài hạn.'
+  confidence: high
+  entity_id: product.dedicated_server
+  entity_name: Máy Chủ Vật Lý BKNS
+  entity_type: product_line
+  observed_at: '2026-04-06T23:52:20.175696+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DANH_SACH_GOI_SAN_PHAM_MAY_CHU_BKNS_2026_04_06
+  unit: ''
+  valid_from: '2026-04-06'
+  value: Giá thuê ưu đãi hơn khi đăng ký chu kỳ dài hạn.
+- approved_at: '2026-04-07T13:00:10.077632+07:00'
+  approved_by: admin-batch
+  attribute: registration_process
+  claim_id: CLM-PROD-DEDICATED_SERVER-REGISTRA
+  compiler_note: Trích từ mục Quy trình đăng ký / Triển khai / Kích hoạt.
+  confidence: high
+  entity_id: product.dedicated_server
+  entity_name: Máy Chủ Vật Lý BKNS
+  entity_type: product_line
+  observed_at: '2026-04-06T23:52:20.178553+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DANH_SACH_GOI_SAN_PHAM_MAY_CHU_BKNS_2026_04_06
+  unit: ''
+  valid_from: '2026-04-06'
+  value: Để đăng ký dịch vụ, khách hàng nhấn vào nút "Đăng ký" trên mỗi gói sản phẩm.
+    Nút này sẽ chuyển hướng đến Zalo của BKNS để được tư vấn và hỗ trợ.
+- approved_at: '2026-04-07T13:00:10.081506+07:00'
+  approved_by: admin-batch
+  attribute: service_description
+  claim_id: CLM-PROD-DEDICATED_SERVER-SERVICE_
+  compiler_note: 'Trích từ Tóm tắt nhanh: Dịch vụ này là gì: Trang tổng hợp và liệt
+    kê các gói sản phẩm cho thuê máy chủ vật lý (Dedicated Server) của BKNS.'
+  confidence: high
+  entity_id: product.dedicated_server
+  entity_name: Máy Chủ Vật Lý BKNS
+  entity_type: product_line
+  observed_at: '2026-04-06T23:52:20.168443+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DANH_SACH_GOI_SAN_PHAM_MAY_CHU_BKNS_2026_04_06
+  unit: ''
+  valid_from: '2026-04-06'
+  value: Trang tổng hợp và liệt kê các gói sản phẩm cho thuê máy chủ vật lý (Dedicated
+    Server) của BKNS.
+- approved_at: '2026-04-07T13:00:10.085691+07:00'
+  approved_by: admin-batch
+  attribute: target_customer
+  claim_id: CLM-PROD-DEDICATED_SERVER-TARGET_C
+  compiler_note: 'Trích từ Tóm tắt nhanh: Phù hợp với: Khách hàng có nhu cầu thuê
+    máy chủ vật lý với các cấu hình và mục đích sử dụng đa dạng như làm web server,
+    máy chủ game, lưu trữ, MMO...'
+  confidence: high
+  entity_id: product.dedicated_server
+  entity_name: Máy Chủ Vật Lý BKNS
+  entity_type: product_line
+  observed_at: '2026-04-06T23:52:20.172034+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DANH_SACH_GOI_SAN_PHAM_MAY_CHU_BKNS_2026_04_06
+  unit: ''
+  valid_from: '2026-04-06'
+  value: Khách hàng có nhu cầu thuê máy chủ vật lý với các cấu hình và mục đích sử
+    dụng đa dạng như làm web server, máy chủ game, lưu trữ, MMO...
+- approved_at: '2026-04-07T13:00:10.089527+07:00'
+  approved_by: admin-batch
+  attribute: one_time_price
+  claim_id: CLM-SERV-ADDON-OPRICE
+  compiler_note: 'Trích từ Bảng giá dịch vụ bổ sung: ''SSD Samsung Enterprise PM863
+    960GB | 650.000 đ/ tháng & 7.000.000 đ/lần'''
+  confidence: high
+  entity_id: product.server.addon.ssd_pm863_960gb
+  entity_name: SSD Samsung Enterprise PM863 960GB
+  entity_type: product_addon
+  observed_at: '2026-04-04T20:42:43.457618+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-DANH_SACH_GOI_SAN_PHAM_MAY_CHU_BKNS_2026_04_04
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 7000000
+- approved_at: '2026-04-07T13:00:10.092976+07:00'
+  approved_by: admin-batch
+  attribute: monthly_price
+  claim_id: CLM-SERV-ADDON-PRICE
+  compiler_note: 'Trích từ Bảng giá dịch vụ bổ sung: ''Thêm 1 IP | 80.000 đ/tháng'''
+  confidence: high
+  entity_id: product.server.addon.ip
+  entity_name: Thêm 1 IP
+  entity_type: product_addon
+  observed_at: '2026-04-04T20:42:43.459670+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-DANH_SACH_GOI_SAN_PHAM_MAY_CHU_BKNS_2026_04_04
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 80000
+- approved_at: '2026-04-07T13:00:10.097021+07:00'
+  approved_by: admin-batch
+  attribute: description
+  claim_id: CLM-SERV-BKNS-DESC
+  compiler_note: Trích từ mục Mô tả dịch vụ.
+  confidence: high
+  entity_id: product.server_management.bkns
+  entity_name: Dịch vụ Quản trị Máy chủ Trọn gói
+  entity_type: product
+  observed_at: '2026-04-04T20:51:23.106452+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_QUAN_TRI_MAY_CHU_TRON_GOI_TAI_BKNS_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: Là giải pháp giúp doanh nghiệp và cá nhân vận hành máy chủ một cách hiệu
+    quả mà không cần có đội ngũ IT riêng. Đội ngũ kỹ thuật của BKNS sẽ chịu trách
+    nhiệm theo dõi, giám sát, cài đặt, tối ưu và bảo mật máy chủ để đảm bảo hệ thống
+    hoạt động liên tục và ổn định.
+- approved_at: '2026-04-07T13:00:10.100961+07:00'
+  approved_by: admin-batch
+  attribute: feature
+  claim_id: CLM-SERV-BKNS-FEATURE
+  compiler_note: Trích từ mục Tính năng / Thành phần.
+  confidence: high
+  entity_id: product.server_management.bkns
+  entity_name: Dịch vụ Quản trị Máy chủ Trọn gói
+  entity_type: product
+  observed_at: '2026-04-04T20:51:23.110804+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_QUAN_TRI_MAY_CHU_TRON_GOI_TAI_BKNS_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: 'Giám sát 24/7: Theo dõi tình trạng hoạt động của máy chủ (CPU, RAM, ổ cứng)
+    và các dịch vụ quan trọng (Webserver, Database, Mail).'
+- approved_at: '2026-04-07T13:00:10.104653+07:00'
+  approved_by: admin-batch
+  attribute: limitation
+  claim_id: CLM-SERV-BKNS-LIMITATI
+  compiler_note: 'Trích từ mục Tóm tắt nhanh: ''Gói Cơ bản không bao gồm các tác vụ
+    cấu hình chuyên sâu và bảo mật.'''
+  confidence: high
+  entity_id: product.server_management.bkns.basic
+  entity_name: Quản trị Máy chủ - Gói Cơ bản
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:51:23.102292+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_QUAN_TRI_MAY_CHU_TRON_GOI_TAI_BKNS_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: Không bao gồm các tác vụ cấu hình chuyên sâu và bảo mật.
+- approved_at: '2026-04-07T13:00:10.109122+07:00'
+  approved_by: admin-batch
+  attribute: short_description
+  claim_id: CLM-SERV-BKNS-SHORT_DE
+  compiler_note: 'Trích từ mục Tóm tắt nhanh: ''Dịch vụ này là gì: Là dịch vụ mà BKNS
+    thay mặt khách hàng thực hiện các công việc vận hành, giám sát, và xử lý sự cố
+    cho máy chủ, giúp hệ thống hoạt động ổn định và an toàn.'''
+  confidence: high
+  entity_id: product.server_management.bkns
+  entity_name: Dịch vụ Quản trị Máy chủ Trọn gói
+  entity_type: product
+  observed_at: '2026-04-04T20:51:23.086134+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_QUAN_TRI_MAY_CHU_TRON_GOI_TAI_BKNS_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: Là dịch vụ mà BKNS thay mặt khách hàng thực hiện các công việc vận hành,
+    giám sát, và xử lý sự cố cho máy chủ, giúp hệ thống hoạt động ổn định và an toàn.
+- approved_at: '2026-04-07T13:00:10.113410+07:00'
+  approved_by: admin-batch
+  attribute: support_hours
+  claim_id: CLM-SERV-BKNS-SUPPORT_
+  compiler_note: 'Trích từ mục Tóm tắt nhanh: ''Hỗ trợ kỹ thuật 24/7.'''
+  confidence: high
+  entity_id: product.server_management.bkns
+  entity_name: Dịch vụ Quản trị Máy chủ Trọn gói
+  entity_type: product
+  observed_at: '2026-04-04T20:51:23.094865+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_QUAN_TRI_MAY_CHU_TRON_GOI_TAI_BKNS_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: 24/7
+- approved_at: '2026-04-07T13:00:10.117681+07:00'
+  approved_by: admin-batch
+  attribute: target_audience
+  claim_id: CLM-SERV-BKNS-TARGET_A
+  compiler_note: 'Trích từ mục Tóm tắt nhanh: ''Phù hợp với: Các cá nhân và doanh
+    nghiệp sử dụng máy chủ nhưng không có đội ngũ kỹ thuật chuyên trách hoặc muốn
+    tiết kiệm chi phí nhân sự IT.'''
+  confidence: high
+  entity_id: product.server_management.bkns
+  entity_name: Dịch vụ Quản trị Máy chủ Trọn gói
+  entity_type: product
+  observed_at: '2026-04-04T20:51:23.090766+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_QUAN_TRI_MAY_CHU_TRON_GOI_TAI_BKNS_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: Các cá nhân và doanh nghiệp sử dụng máy chủ nhưng không có đội ngũ kỹ thuật
+    chuyên trách hoặc muốn tiết kiệm chi phí nhân sự IT.
+- approved_at: '2026-04-07T13:00:10.121832+07:00'
+  approved_by: admin-batch
+  attribute: vat_policy
+  claim_id: CLM-SERV-BKNS-VAT_POLI
+  compiler_note: 'Trích từ mục Tóm tắt nhanh và Chính sách: ''Giá dịch vụ chưa bao
+    gồm 10% VAT.'''
+  confidence: high
+  entity_id: product.server_management.bkns
+  entity_name: Dịch vụ Quản trị Máy chủ Trọn gói
+  entity_type: product
+  observed_at: '2026-04-04T20:51:23.098497+07:00'
+  qualifiers: null
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-DICH_VU_QUAN_TRI_MAY_CHU_TRON_GOI_TAI_BKNS_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: Giá chưa bao gồm 10% VAT
+- approved_at: '2026-04-07T13:00:10.125766+07:00'
+  approved_by: admin-batch
+  attribute: bandwidth
+  claim_id: CLM-SERV-DEDICATED-BW
+  compiler_note: 'Trích từ bảng thông số gói MCCB01: ''| Băng thông | 100Mbps/ 5Mbps
+    |'''
+  confidence: high
+  entity_id: product.server.dedicated.mccb01
+  entity_name: MCCB01
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:42:43.399872+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DANH_SACH_GOI_SAN_PHAM_MAY_CHU_BKNS_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: 100Mbps/ 5Mbps
+- approved_at: '2026-04-07T13:00:10.129634+07:00'
+  approved_by: admin-batch
+  attribute: cpu
+  claim_id: CLM-SERV-DEDICATED-CPU
+  compiler_note: 'Trích từ bảng thông số gói MCCB01: ''| CPU | 1 x E5-2670 - 8 Cores
+    |'''
+  confidence: high
+  entity_id: product.server.dedicated.mccb01
+  entity_name: MCCB01
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:42:43.394183+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DANH_SACH_GOI_SAN_PHAM_MAY_CHU_BKNS_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: 1 x E5-2670 - 8 Cores
+- approved_at: '2026-04-07T13:00:10.133328+07:00'
+  approved_by: admin-batch
+  attribute: discount_policy
+  claim_id: CLM-SERV-DEDICATED-DISCOUNT
+  compiler_note: 'Trích từ Tóm tắt nhanh: ''Điều kiện/giới hạn nổi bật (nếu có): Giá
+    thuê ưu đãi hơn khi đăng ký chu kỳ dài hạn.'''
+  confidence: high
+  entity_id: product.server.dedicated.bkns
+  entity_name: Cho thuê máy chủ vật lý (Dedicated Server) BKNS
+  entity_type: product
+  observed_at: '2026-04-04T20:42:43.387899+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DANH_SACH_GOI_SAN_PHAM_MAY_CHU_BKNS_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: Giá thuê ưu đãi hơn khi đăng ký chu kỳ dài hạn.
+- approved_at: '2026-04-07T13:00:10.137392+07:00'
+  approved_by: admin-batch
+  attribute: price
+  claim_id: CLM-SERV-DEDICATED-PRICE
+  compiler_note: 'Trích từ bảng giá gói MCCB02: ''| 24 tháng | 1.800.000 |'''
+  confidence: high
+  entity_id: product.server.dedicated.mccb02
+  entity_name: MCCB02
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:42:43.429879+07:00'
+  qualifiers:
+    billing_cycle: 24 months
+    unit: per month
+  review_state: approved
+  risk_class: high
+  source_ids:
+  - SRC-DANH_SACH_GOI_SAN_PHAM_MAY_CHU_BKNS_2026_04_04
+  unit: VND
+  valid_from: '2026-04-04'
+  value: 1800000
+- approved_at: '2026-04-07T13:00:10.141142+07:00'
+  approved_by: admin-batch
+  attribute: ram
+  claim_id: CLM-SERV-DEDICATED-RAM
+  compiler_note: 'Trích từ bảng thông số gói MCCB01: ''| RAM | 1 x 16GB |'''
+  confidence: high
+  entity_id: product.server.dedicated.mccb01
+  entity_name: MCCB01
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:42:43.395980+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DANH_SACH_GOI_SAN_PHAM_MAY_CHU_BKNS_2026_04_04
+  unit: GB
+  valid_from: '2026-04-04'
+  value: '16'
+- approved_at: '2026-04-07T13:00:10.145311+07:00'
+  approved_by: admin-batch
+  attribute: registration_process
+  claim_id: CLM-SERV-DEDICATED-REGISTRA
+  compiler_note: Trích từ mục Quy trình đăng ký / Triển khai / Kích hoạt (nếu có).
+  confidence: high
+  entity_id: product.server.dedicated.bkns
+  entity_name: Cho thuê máy chủ vật lý (Dedicated Server) BKNS
+  entity_type: product
+  observed_at: '2026-04-04T20:42:43.390353+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DANH_SACH_GOI_SAN_PHAM_MAY_CHU_BKNS_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: Để đăng ký dịch vụ, khách hàng nhấn vào nút "Đăng ký" trên mỗi gói sản phẩm.
+    Nút này sẽ chuyển hướng đến Zalo của BKNS để được tư vấn và hỗ trợ.
+- approved_at: '2026-04-07T13:00:10.149904+07:00'
+  approved_by: admin-batch
+  attribute: server_model
+  claim_id: CLM-SERV-DEDICATED-SERVER_M
+  compiler_note: 'Trích từ bảng thông số gói MCCB01: ''| Server | Dell R620 / HPDL360
+    G8 |'''
+  confidence: high
+  entity_id: product.server.dedicated.mccb01
+  entity_name: MCCB01
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:42:43.392363+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DANH_SACH_GOI_SAN_PHAM_MAY_CHU_BKNS_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: Dell R620 / HPDL360 G8
+- approved_at: '2026-04-07T13:00:10.153865+07:00'
+  approved_by: admin-batch
+  attribute: service_description
+  claim_id: CLM-SERV-DEDICATED-SERVICE_
+  compiler_note: 'Trích từ Tóm tắt nhanh: ''Dịch vụ này là gì: Trang tổng hợp và liệt
+    kê các gói sản phẩm cho thuê máy chủ vật lý (Dedicated Server) của BKNS.'''
+  confidence: high
+  entity_id: product.server.dedicated.bkns
+  entity_name: Cho thuê máy chủ vật lý (Dedicated Server) BKNS
+  entity_type: product
+  observed_at: '2026-04-04T20:42:43.381613+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DANH_SACH_GOI_SAN_PHAM_MAY_CHU_BKNS_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: Trang tổng hợp và liệt kê các gói sản phẩm cho thuê máy chủ vật lý (Dedicated
+    Server) của BKNS.
+- approved_at: '2026-04-07T13:00:10.157603+07:00'
+  approved_by: admin-batch
+  attribute: storage
+  claim_id: CLM-SERV-DEDICATED-STORAGE
+  compiler_note: 'Trích từ bảng thông số gói MCCB01: ''| SSD | 1 x 400GB SSD Enterprise
+    |'''
+  confidence: high
+  entity_id: product.server.dedicated.mccb01
+  entity_name: MCCB01
+  entity_type: product_plan
+  observed_at: '2026-04-04T20:42:43.397939+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DANH_SACH_GOI_SAN_PHAM_MAY_CHU_BKNS_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: 1 x 400GB SSD Enterprise
+- approved_at: '2026-04-07T13:00:10.161953+07:00'
+  approved_by: admin-batch
+  attribute: target_audience
+  claim_id: CLM-SERV-DEDICATED-TARGET_A
+  compiler_note: 'Trích từ Tóm tắt nhanh: ''Phù hợp với: Khách hàng có nhu cầu thuê
+    máy chủ vật lý với các cấu hình và mục đích sử dụng đa dạng như làm web server,
+    máy chủ game, lưu trữ, MMO...'''
+  confidence: high
+  entity_id: product.server.dedicated.bkns
+  entity_name: Cho thuê máy chủ vật lý (Dedicated Server) BKNS
+  entity_type: product
+  observed_at: '2026-04-04T20:42:43.385388+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DANH_SACH_GOI_SAN_PHAM_MAY_CHU_BKNS_2026_04_04
+  unit: null
+  valid_from: '2026-04-04'
+  value: Khách hàng có nhu cầu thuê máy chủ vật lý với các cấu hình và mục đích sử
+    dụng đa dạng như làm web server, máy chủ game, lưu trữ, MMO...
+- approved_at: '2026-04-07T13:00:10.166064+07:00'
+  approved_by: admin-batch
+  attribute: example_config.bandwidth
+  claim_id: CLM-SERV-MAIN_LINE-EXAMPLE_
+  compiler_note: 'Trích từ bảng ví dụ cấu hình: ''| Băng thông | 100Mbps / 5Mbps |'''
+  confidence: high
+  entity_id: bkns.server.main_line
+  entity_name: Sản Phẩm Máy Chủ BKNS
+  entity_type: product_line
+  observed_at: '2026-04-05T22:18:42.821771+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-THUE_MAY_CHU_WEB_2026_04_05
+  unit: null
+  valid_from: '2026-04-05'
+  value: 100Mbps / 5Mbps
+- approved_at: '2026-04-07T13:00:10.169919+07:00'
+  approved_by: admin-batch
+  attribute: product_category
+  claim_id: CLM-SERV-MAIN_LINE-PRODUCT_
+  compiler_note: 'Trích từ danh mục: ''- Máy Chủ Giá Rẻ'''
+  confidence: high
+  entity_id: bkns.server.main_line
+  entity_name: Sản Phẩm Máy Chủ BKNS
+  entity_type: product_line
+  observed_at: '2026-04-05T22:18:42.788490+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-THUE_MAY_CHU_WEB_2026_04_05
+  unit: null
+  valid_from: '2026-04-05'
+  value: Máy Chủ Giá Rẻ
+- approved_at: '2026-04-07T13:00:10.173582+07:00'
+  approved_by: admin-batch
+  attribute: provider
+  claim_id: CLM-SERV-MAIN_LINE-PROVIDER
+  compiler_note: 'Trích từ tiêu đề: ''# Danh Sách Gói Sản Phẩm Máy Chủ BKNS'''
+  confidence: high
+  entity_id: bkns.server.main_line
+  entity_name: Sản Phẩm Máy Chủ BKNS
+  entity_type: product_line
+  observed_at: '2026-04-05T22:18:42.746299+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-THUE_MAY_CHU_WEB_2026_04_05
+  unit: null
+  valid_from: '2026-04-05'
+  value: BKNS
+- approved_at: '2026-04-07T13:00:10.178811+07:00'
+  approved_by: admin-batch
+  attribute: source_crawl_date
+  claim_id: CLM-SERV-MAIN_LINE-SOURCE_C
+  compiler_note: 'Trích từ metadata: ''- Ngày crawl: 2026-04-05T14:25:00+07:00'''
+  confidence: high
+  entity_id: bkns.server.main_line
+  entity_name: Sản Phẩm Máy Chủ BKNS
+  entity_type: product_line
+  observed_at: '2026-04-05T22:18:42.843099+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-THUE_MAY_CHU_WEB_2026_04_05
+  unit: null
+  valid_from: '2026-04-05'
+  value: '2026-04-05T14:25:00+07:00'
+- approved_at: '2026-04-07T13:00:10.184829+07:00'
+  approved_by: admin-batch
+  attribute: source_url
+  claim_id: CLM-SERV-MAIN_LINE-SOURCE_U
+  compiler_note: 'Trích từ metadata: ''- Nguồn: https://server.bkns.vn/danh-sach-goi-san-pham-may-chu.html'''
+  confidence: high
+  entity_id: bkns.server.main_line
+  entity_name: Sản Phẩm Máy Chủ BKNS
+  entity_type: product_line
+  observed_at: '2026-04-05T22:18:42.838117+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-THUE_MAY_CHU_WEB_2026_04_05
+  unit: null
+  valid_from: '2026-04-05'
+  value: https://server.bkns.vn/danh-sach-goi-san-pham-may-chu.html
+- approved_at: '2026-04-07T13:00:10.189603+07:00'
+  approved_by: admin-batch
+  attribute: data_crawled_at
+  claim_id: CLM-VPN-BKNS_CLOUD_VPN-DATA_CRA
+  compiler_note: 'Trích từ metadata: ''- Ngày crawl: 2026-04-05T14:25:00+07:00'''
+  confidence: high
+  entity_id: product.vpn.bkns_cloud_vpn
+  entity_name: BKNS Cloud VPN
+  entity_type: product
+  observed_at: '2026-04-05T21:55:31.675154+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_VPN_WEB_2026_04_05
+  unit: null
+  valid_from: '2026-04-05'
+  value: '2026-04-05T14:25:00+07:00'
+- approved_at: '2026-04-07T13:00:10.193162+07:00'
+  approved_by: admin-batch
+  attribute: feature
+  claim_id: CLM-VPN-BKNS_CLOUD_VPN-FEATURE
+  compiler_note: 'Trích từ mục Đặc điểm: ''- Bảo mật dữ liệu truyền tải'''
+  confidence: high
+  entity_id: product.vpn.bkns_cloud_vpn
+  entity_name: BKNS Cloud VPN
+  entity_type: product
+  observed_at: '2026-04-05T21:55:31.670620+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_VPN_WEB_2026_04_05
+  unit: null
+  valid_from: '2026-04-05'
+  value: Bảo mật dữ liệu truyền tải
+- approved_at: '2026-04-07T13:00:10.198760+07:00'
+  approved_by: admin-batch
+  attribute: product_type_name
+  claim_id: CLM-VPN-BKNS_CLOUD_VPN-PRODUCT_
+  compiler_note: 'Trích từ tiêu đề: ''# Dịch vụ VPN (Cloud VPN) của BKNS'''
+  confidence: high
+  entity_id: product.vpn.bkns_cloud_vpn
+  entity_name: BKNS Cloud VPN
+  entity_type: product
+  observed_at: '2026-04-05T21:55:31.656841+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_VPN_WEB_2026_04_05
+  unit: null
+  valid_from: '2026-04-05'
+  value: Dịch vụ VPN (Cloud VPN)
+- approved_at: '2026-04-07T13:00:10.203814+07:00'
+  approved_by: admin-batch
+  attribute: provider
+  claim_id: CLM-VPN-BKNS_CLOUD_VPN-PROVIDER
+  compiler_note: 'Trích từ tiêu đề: ''# Dịch vụ VPN (Cloud VPN) của BKNS'''
+  confidence: high
+  entity_id: product.vpn.bkns_cloud_vpn
+  entity_name: BKNS Cloud VPN
+  entity_type: product
+  observed_at: '2026-04-05T21:55:31.654058+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_VPN_WEB_2026_04_05
+  unit: null
+  valid_from: '2026-04-05'
+  value: BKNS
+- approved_at: '2026-04-07T13:00:10.208066+07:00'
+  approved_by: admin-batch
+  attribute: source_url
+  claim_id: CLM-VPN-BKNS_CLOUD_VPN-SOURCE_U
+  compiler_note: 'Trích từ metadata: ''- Nguồn: https://www.bkns.vn/server/dich-vu-vpn.html'''
+  confidence: high
+  entity_id: product.vpn.bkns_cloud_vpn
+  entity_name: BKNS Cloud VPN
+  entity_type: product
+  observed_at: '2026-04-05T21:55:31.672733+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_VPN_WEB_2026_04_05
+  unit: null
+  valid_from: '2026-04-05'
+  value: https://www.bkns.vn/server/dich-vu-vpn.html
+- approved_at: '2026-04-07T13:00:10.211996+07:00'
+  approved_by: admin-batch
+  attribute: target_audience
+  claim_id: CLM-VPN-BKNS_CLOUD_VPN-TARGET_A
+  compiler_note: 'Trích từ giới thiệu: ''Cloud VPN tại BKNS - kết nối an toàn, bảo
+    mật cho doanh nghiệp.'''
+  confidence: high
+  entity_id: product.vpn.bkns_cloud_vpn
+  entity_name: BKNS Cloud VPN
+  entity_type: product
+  observed_at: '2026-04-05T21:55:31.663721+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_VPN_WEB_2026_04_05
+  unit: null
+  valid_from: '2026-04-05'
+  value: doanh nghiệp
+- approved_at: '2026-04-07T13:00:10.215790+07:00'
+  approved_by: admin-batch
+  attribute: use_case
+  claim_id: CLM-VPN-BKNS_CLOUD_VPN-USE_CASE
+  compiler_note: 'Trích từ mục Đặc điểm: ''- Phù hợp cho remote working'''
+  confidence: high
+  entity_id: product.vpn.bkns_cloud_vpn
+  entity_name: BKNS Cloud VPN
+  entity_type: product
+  observed_at: '2026-04-05T21:55:31.668349+07:00'
+  qualifiers: {}
+  review_state: approved
+  risk_class: low
+  source_ids:
+  - SRC-DICH_VU_VPN_WEB_2026_04_05
+  unit: null
+  valid_from: '2026-04-05'
+  value: remote working

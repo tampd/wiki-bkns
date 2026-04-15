@@ -1,0 +1,23 @@
+claim_id: CLM-146A1E6D8280
+entity_id: product.vps.generic
+entity_type: product_line
+entity_name: VPS
+attribute: resource_allocation
+value: Được cấp phát các tài nguyên cố định như CPU, RAM, dung lượng ổ cứng và băng
+  thông, không chia sẻ với các VPS khác.
+unit: ''
+qualifiers: null
+source_ids:
+- SRC-TRAINING_DICH_VU_VPS_2026_04_13
+observed_at: '2026-04-14T16:19:07.451548+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục 2: ''Tài nguyên riêng: Được cấp phát các tài nguyên cố
+  định như CPU, RAM, dung lượng ổ cứng và băng thông, không chia sẻ với các VPS khác.'''
+dual_vote:
+  status: DISAGREE
+  score: 0.4702
+  confidence: LOW
+  flag: human_review_required

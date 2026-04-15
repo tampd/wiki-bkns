@@ -1,0 +1,22 @@
+claim_id: CLM-CC387FE0FE75
+entity_id: ENT-PROD-HOSTING-FREE
+entity_type: product
+entity_name: Hosting Miễn phí
+attribute: service_type
+value: web_hosting
+unit: null
+qualifiers: null
+source_ids:
+- SRC-HOSTING_MIEN_PHI_GIAI_PHAP_KHOI_TAO_WEBSITE_0_2026_04_13
+observed_at: '2026-04-14T12:14:44.316282+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ phần tóm tắt nhanh: • Dịch vụ này là gì: Cung cấp dịch vụ
+  lưu trữ web (hosting) với chi phí 0 đồng.'
+dual_vote:
+  status: DISAGREE
+  score: 0.4487
+  confidence: LOW
+  flag: human_review_required

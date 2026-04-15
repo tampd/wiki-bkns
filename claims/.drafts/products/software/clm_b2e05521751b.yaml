@@ -1,0 +1,19 @@
+claim_id: CLM-B2E05521751B
+entity_id: product.software.softaculous_license
+entity_type: product
+entity_name: Bản quyền Softaculous
+attribute: description
+value: Softaculous là một trình cài đặt ứng dụng tự động (Auto Installer) cho phép
+  người dùng cài đặt các ứng dụng web và tập lệnh chỉ bằng một cú nhấp chuột.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-BAN_QUYEN_SOFTACULOUS_TRINH_CAI_AT_UNG_DUNG_TU_ONG_2026_04_13
+observed_at: '2026-04-13T21:34:20.590895+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ Tóm tắt nhanh: ''Dịch vụ này là gì: Softaculous là một trình
+  cài đặt ứng dụng tự động (Auto Installer) cho phép người dùng cài đặt các ứng dụng
+  web và tập lệnh chỉ bằng một cú nhấp chuột.'''

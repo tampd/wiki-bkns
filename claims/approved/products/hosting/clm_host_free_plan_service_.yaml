@@ -7,13 +7,14 @@ value: web_hosting
 unit: ''
 qualifiers: {}
 source_ids:
-- SRC-HOSTING_MIEN_PHI_GIAI_PHAP_KHOI_TAO_WEBSITE_0_2026_04_06
+  - SRC-HOSTING_MIEN_PHI_GIAI_PHAP_KHOI_TAO_WEBSITE_0_2026_04_06
 observed_at: '2026-04-07T00:38:31.599804+07:00'
 valid_from: '2026-04-07'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ ''Tóm tắt nhanh'': Dịch vụ này là gì: Cung cấp dịch vụ lưu
-  trữ web (hosting) với chi phí 0 đồng.'
-approved_at: '2026-04-07T13:00:12.068691+07:00'
+compiler_note: 'Trích từ ''Tóm tắt nhanh'': Dịch vụ này là gì: Cung cấp dịch vụ lưu trữ web (hosting) với chi phí 0 đồng.'
+approved_at: '2026-04-08T13:00:11.217983+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.034Z'

@@ -7,12 +7,14 @@ value: có thể thay đổi IP
 unit: null
 qualifiers: null
 source_ids:
-- SRC-IMUNIFY360_WEB_2026_04_05
+  - SRC-IMUNIFY360_WEB_2026_04_05
 observed_at: '2026-04-05T22:06:05.021781+07:00'
 valid_from: '2026-04-05'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
 compiler_note: 'Trích từ phần Bản quyền: ''- Tính theo IP (có thể thay đổi IP)'''
-approved_at: '2026-04-07T13:00:16.113684+07:00'
+approved_at: '2026-04-08T13:00:15.943266+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.425Z'

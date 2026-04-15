@@ -1,0 +1,20 @@
+claim_id: CLM-6D8EB7166CEC
+entity_id: ENT-PROD-DOMAIN
+entity_type: product
+entity_name: Tên miền .me
+attribute: registration_fee
+value: 745000
+unit: VND
+qualifiers:
+  tld: .me
+source_ids:
+- SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_13
+observed_at: '2026-04-13T21:38:21.305963+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ Bảng giá Tên miền Quốc tế: ''| .me | Miễn phí | 745.000 |
+  745.000 | 745.000 |'''
+value_changed_from: 505000
+value_changed_at: '2026-04-13T21:38:21.305990+07:00'

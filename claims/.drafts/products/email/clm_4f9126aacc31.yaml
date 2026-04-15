@@ -1,0 +1,21 @@
+claim_id: CLM-4F9126AACC31
+entity_id: product.email.hosting.email_3
+entity_type: product_plan
+entity_name: EMAIL 3
+attribute: storage_per_email
+value: 5
+unit: GB
+qualifiers: null
+source_ids:
+- SRC-BANG_GIA_EMAIL_2026_04_05
+observed_at: '2026-04-14T17:00:20.247834+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ: ''Dung lượng: 5GB/ email'''
+dual_vote:
+  status: DISAGREE
+  score: 0.2718
+  confidence: LOW
+  flag: human_review_required

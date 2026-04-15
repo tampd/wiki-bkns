@@ -1,0 +1,22 @@
+claim_id: CLM-AB1CEB94F2F2
+entity_id: product.hosting.seo.bkseo01
+entity_type: product_plan
+entity_name: BKSEO-01
+attribute: monthly_price
+value: 57000
+unit: VND
+qualifiers:
+  billing_cycle: month
+source_ids:
+- SRC-DICH_VU_HOSTING_SEO_TOI_UU_WEBSITE_CHO_CONG_CU_TIM_KIEM_2026_04_05
+observed_at: '2026-04-14T12:09:18.722102+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ bảng giá, cột BKSEO-01, dòng Giá/Tháng: ''57.000đ'''
+dual_vote:
+  status: DISAGREE
+  score: 0.5032
+  confidence: LOW
+  flag: human_review_required

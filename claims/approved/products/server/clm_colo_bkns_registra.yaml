@@ -8,13 +8,14 @@ unit: ''
 qualifiers:
   step: 1
 source_ids:
-- SRC-DICH_VU_THUE_CHO_AT_MAY_CHU_COLOCATION_TAI_BKNS_2026_04_06
+  - SRC-DICH_VU_THUE_CHO_AT_MAY_CHU_COLOCATION_TAI_BKNS_2026_04_06
 observed_at: '2026-04-07T00:12:22.838812+07:00'
 valid_from: '2026-04-07'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ Quy trình đăng ký / Triển khai / Kích hoạt: 1. Liên hệ: Khách
-  hàng liên hệ với BKNS qua các kênh hỗ trợ.'
-approved_at: '2026-04-07T13:00:09.721596+07:00'
+compiler_note: 'Trích từ Quy trình đăng ký / Triển khai / Kích hoạt: 1. Liên hệ: Khách hàng liên hệ với BKNS qua các kênh hỗ trợ.'
+approved_at: '2026-04-08T13:00:08.794423+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.277Z'

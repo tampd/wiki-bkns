@@ -1,0 +1,17 @@
+claim_id: CLM-3D7BF20F353F
+entity_id: bkns:prod:domain:domain_lock
+entity_type: product
+entity_name: Khóa tên miền (Domain Lock)
+attribute: security_level
+value: Mức cơ bản
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-BAO_VE_TEN_MIEN_CAP_CAO_NHAT_GIAI_PHAP_AN_TOAN_TUYET_OI_2026_04_13
+observed_at: '2026-04-13T21:50:55.034958+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng So sánh các gói: ''| Tính năng | Khóa tên miền (Domain
+  Lock) | ... | | :--- | :--- | :--- | :--- | | Mức độ bảo vệ | Mức cơ bản | ... |'''

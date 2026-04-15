@@ -1,0 +1,19 @@
+claim_id: CLM-15270460ACD4
+entity_id: product.vps.epyc1
+entity_type: product_plan
+entity_name: EPYC 1
+attribute: storage
+value: 20
+unit: GB
+qualifiers:
+  product_line: VPS ADM
+  storage_type: SSD
+source_ids:
+- SRC-BANG_GIA_HOSTING_VPS_EMAIL_2026_04_13
+observed_at: '2026-04-13T21:44:20.654041+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng giá VPS ADM, dòng ''SSD (Dung lượng)'', cột ''EPYC 1'':
+  20GB'

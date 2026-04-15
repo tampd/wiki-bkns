@@ -1,0 +1,22 @@
+claim_id: CLM-BDE719623AF6
+entity_id: ENT-PROD-HOSTING.platinum_web_hosting
+entity_type: product
+entity_name: Platinum Web Hosting
+attribute: hardware_storage_type
+value: NVMe U.2
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-PLATINUM_WEB_HOSTING_HOSTING_NVME_TOC_O_CAO_BACKUP_3_LAN_2026_04_05
+observed_at: '2026-04-14T12:28:23.633545+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: medium
+compiler_note: 'Trích từ mục Tính năng / Thành phần: Sử dụng 100% ổ cứng NVMe U.2
+  cho tốc độ đọc/ghi nhanh hơn SSD thông thường.'
+dual_vote:
+  status: DISAGREE
+  score: 0.5159
+  confidence: LOW
+  flag: human_review_required

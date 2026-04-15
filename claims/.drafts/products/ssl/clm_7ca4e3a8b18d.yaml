@@ -1,0 +1,22 @@
+claim_id: CLM-7CA4E3A8B18D
+entity_id: product.ssl.comodo_instantssl_pro
+entity_type: product_plan
+entity_name: InstantSSL Pro (OV)
+attribute: issuance_time
+value: 1-3 ngày
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-INSTANTSSL_PRO_OV_CHUNG_CHI_SSL_XAC_THUC_TO_CHUC_CUA_COM_2026_04_13
+observed_at: '2026-04-14T16:33:35.249064+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tính năng / Thành phần: • Thời gian cấp phát: Từ 1-3
+  ngày sau khi hoàn tất xác minh.'
+dual_vote:
+  status: DISAGREE
+  score: 0.35
+  confidence: LOW
+  flag: human_review_required

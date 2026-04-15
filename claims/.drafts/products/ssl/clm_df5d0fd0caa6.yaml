@@ -1,0 +1,22 @@
+claim_id: CLM-DF5D0FD0CAA6
+entity_id: ENT-PROD-SSL-GEOTRUST-TRUE-BUSINESSID-WILDCARD
+entity_type: product
+entity_name: GeoTrust True BusinessID Wildcard
+attribute: issue_time
+value: 1-3 ngày
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-CHUNG_CHI_SSL_GEOTRUST_TRUE_BUSINESSID_WILDCARD_2026_04_05
+observed_at: '2026-04-14T16:24:48.862450+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ bảng Thông số kỹ thuật: | Thời gian phát hành | 1-3 ngày
+  |'
+dual_vote:
+  status: DISAGREE
+  score: 0.3808
+  confidence: LOW
+  flag: human_review_required

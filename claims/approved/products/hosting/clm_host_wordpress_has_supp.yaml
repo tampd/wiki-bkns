@@ -7,13 +7,14 @@ value: Hỗ trợ kỹ thuật 24/7 chuyên về WordPress
 unit: ''
 qualifiers: {}
 source_ids:
-- SRC-HOSTING_WORDPRESS_TOC_O_CAO_BANG_GIA_GIAI_PHAP_TOI_UU_S_2026_04_06
+  - SRC-HOSTING_WORDPRESS_TOC_O_CAO_BANG_GIA_GIAI_PHAP_TOI_UU_S_2026_04_06
 observed_at: '2026-04-07T00:40:11.123958+07:00'
 valid_from: '2026-04-07'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ Tính năng / Thành phần: • Hỗ trợ chuyên nghiệp: Đội ngũ kỹ
-  thuật chuyên môn về WordPress, hỗ trợ 24/7.'
-approved_at: '2026-04-07T13:00:12.662398+07:00'
+compiler_note: 'Trích từ Tính năng / Thành phần: • Hỗ trợ chuyên nghiệp: Đội ngũ kỹ thuật chuyên môn về WordPress, hỗ trợ 24/7.'
+approved_at: '2026-04-08T13:00:11.946106+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.100Z'

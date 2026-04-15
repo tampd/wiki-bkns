@@ -1,0 +1,22 @@
+claim_id: CLM-HOST-RESELLER_CPANEL-PRICE
+entity_id: product.hosting.reseller_cpanel.rl04
+entity_type: product_plan
+entity_name: RL03
+attribute: price
+value: 14022000
+unit: VND
+qualifiers:
+  billing_cycle: year
+source_ids:
+- SRC-RESELLER_HOSTING_CPANEL_QUAN_LY_NHIEU_HOSTING_CHI_VOI_MOT_T_2026_04_04
+- SRC-RESELLER_HOSTING_CPANEL_QUAN_LY_NHIEU_HOSTING_CHI_VOI_MOT_T_2026_04_06
+observed_at: '2026-04-07T01:00:34.594607+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: high
+compiler_note: 'Trích từ bảng giá: ''Giá | 14.022.000đ/Năm'''
+value_changed_from: 8322000
+value_changed_at: '2026-04-07T01:00:34.594627+07:00'
+approved_at: '2026-04-08T13:00:11.575932+07:00'
+approved_by: admin-batch

@@ -1,0 +1,16 @@
+claim_id: CLM-F51A63E583B5
+entity_id: product.email.hosting.email1
+entity_type: product_plan
+entity_name: EMAIL 1
+attribute: storage_per_email
+value: 5
+unit: GB
+qualifiers: {}
+source_ids:
+- SRC-BANG_GIA_DICH_VU_BKNS_TEXT_2026_04_13
+observed_at: '2026-04-13T21:40:29.167672+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ: ''Gói EMAIL 1: * Dung lượng: 5GB/email'''

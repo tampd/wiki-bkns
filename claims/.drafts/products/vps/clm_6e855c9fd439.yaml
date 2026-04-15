@@ -1,0 +1,21 @@
+claim_id: CLM-6E855C9FD439
+entity_id: ENT-PROD-VPS.vps_gia_re.vps_mm07
+entity_type: product_plan
+entity_name: VPS-MM07
+attribute: vcpu
+value: 8
+unit: Core
+qualifiers: {}
+source_ids:
+- SRC-DICH_VU_VPS_GIA_RE_MAY_CHU_AO_CAU_HINH_ON_INH_2026_04_05
+observed_at: '2026-04-14T16:11:54.205272+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: medium
+compiler_note: 'Trích từ bảng giá, dòng vCPU, cột VPS-MM07: 08 Core'
+dual_vote:
+  status: DISAGREE
+  score: 0.5846
+  confidence: LOW
+  flag: human_review_required

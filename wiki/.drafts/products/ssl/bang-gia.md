@@ -2,52 +2,66 @@
 page_id: wiki.products.ssl.bang-gia
 title: Chứng Chỉ SSL BKNS — Bảng Giá
 category: products/ssl
-updated: '2026-04-07'
+updated: '2026-04-14'
 review_state: drafted
-claims_used: 45
-compile_cost_usd: 0.0174
-self_review: fail
-corrections: 1
+claims_used: 138
+compile_cost_usd: 0.0353
+self_review: error
+corrections: 0
 ---
 
 # Chứng Chỉ SSL BKNS — Bảng Giá
 
-Trang này cung cấp bảng giá chi tiết cho các gói dịch vụ Chứng Chỉ SSL được cung cấp bởi BKNS. Dữ liệu được tổng hợp tự động từ các nguồn thông tin đã được xác thực.
+Bảng giá chi tiết tất cả các gói Chứng Chỉ SSL do BKNS cung cấp. Toàn bộ dữ liệu được tổng hợp tự động từ các nguồn thông tin đã được kiểm duyệt, đảm bảo tính chính xác và minh bạch.
 
-Theo dữ liệu ghi nhận, giá các sản phẩm SSL của Sectigo bắt đầu từ **1.474.000 VND** và giá cho chứng chỉ Code Signing bắt đầu từ **10.010.000 VND**.
+BKNS cung cấp chứng chỉ SSL từ nhiều thương hiệu hàng đầu thế giới. Dưới đây là mức giá khởi điểm tham khảo cho một số dòng sản phẩm phổ biến:
+*   **Sectigo SSL:** từ 1.474.000 VND/năm
+*   **Code Signing:** từ 10.010.000 VND/năm
 
 ## Bảng giá chi tiết
 
-**Lưu ý:** Bảng giá dưới đây được tính theo đơn vị VNĐ/năm.
+### Dòng sản phẩm Comodo / Sectigo
 
-| Tên gói | Giá tại BKNS (VND/năm) | Phí cài đặt | VAT | Ghi chú |
+| Tên gói | Giá (VND/năm) | Phí cài đặt | VAT | Ghi chú |
 | :--- | :--- | :--- | :--- | :--- |
-| **AlphaSSL** |
-| AlphaSSL (DV) | 849.000 | Miễn phí | Đang cập nhật | |
-| **Comodo / Sectigo** |
-| PositiveSSL (DV) | Đang cập nhật | Miễn phí | Đang cập nhật | Giá nhà cung cấp (tham khảo): <del>1.274.000đ/năm</del>. |
-| PositiveSSL Multi-Domain (DV) | 624.000 | Miễn phí | Đang cập nhật | Đã bao gồm 3 tên miền. Phí bổ sung SAN: 364.000đ/SAN/Năm. |
-| PositiveSSL Wildcard (DV) | 2.413.000 | Miễn phí | Đang cập nhật | Giá nhà cung cấp: <del>6.474.000đ/năm</del>. |
-| PositiveSSL EV | 3.203.000 | Miễn phí | Đang cập nhật | Giá nhà cung cấp: <del>3.874.000đ/năm</del>. |
-| EssentialSSL (DV) | 333.000 | Miễn phí | Đang cập nhật | Giá nhà cung cấp: <del>2.078.700đ/năm</del>. |
-| EssentialSSL Wildcard (DV) | 2.704.000 | Miễn phí | Đang cập nhật | Giá nhà cung cấp: <del>6.474.000đ/năm</del>. |
-| InstantSSL (OV) | 915.000 | Miễn phí | Đang cập nhật | Giá nhà cung cấp: <del>2.598.700đ/năm</del>. |
-| InstantSSL Pro (OV) | 998.000 | Miễn phí | Đang cập nhật | Giá nhà cung cấp: <del>3.638.700đ/năm</del>. |
-| **GeoTrust** |
-| GeoTrust QuickSSL Premium | 1.411.000 | Miễn phí | Đang cập nhật | Giá nhà cung cấp: <del>3.874.000đ/năm</del>. |
-| GeoTrust QuickSSL Premium SAN | 2.912.000 | Miễn phí | Đang cập nhật | Giá nhà cung cấp: <del>4.680.000đ/năm</del>. |
-| GeoTrust QuickSSL Premium Wildcard | 6.614.000 | Miễn phí | Đang cập nhật | Giá nhà cung cấp: <del>16.354.000đ/năm</del>. |
-| GeoTrust True BusinessID Wildcard | 9.714.000 | Miễn phí | Đang cập nhật | |
-| GeoTrust True BusinessID with EV Multi-Domain | 9.134.000 | Miễn phí | Đang cập nhật | So với giá nhà cung cấp 15.071.680đ/năm. Phí bổ sung SAN: 1.255.000đ/SAN/năm. |
-| **RapidSSL** |
-| RapidSSL Certificate | từ 215.000 | Miễn phí | Đang cập nhật | |
-| RapidSSL Wildcard Certificate | 2.187.000 | Miễn phí | Đang cập nhật | Giá nhà cung cấp: <del>6.136.000đ/năm</del>. Cam kết giá tốt nhất. |
+| **PositiveSSL (DV)** | 219.000 | Miễn phí | Đang cập nhật | Giá niêm yết tham khảo: 1.274.000đ. |
+| **PositiveSSL Multi-Domain (DV)** | 624.000 | Đang cập nhật | Đang cập nhật | Giá đã bao gồm 3 tên miền. Phí bổ sung: 364.000đ/SAN/năm. |
+| **PositiveSSL EV** | 3.203.000 | Miễn phí | Đang cập nhật | Giá niêm yết: 3.874.000đ. |
+| **PositiveSSL Wildcard (DV)** | 2.413.000 | Miễn phí | Đang cập nhật | Giá niêm yết: 6.474.000đ. |
+| **EssentialSSL (DV)** | 333.000 | Miễn phí | Đang cập nhật | Giá niêm yết: 2.078.700đ. |
+| **EssentialSSL Wildcard (DV)** | 2.704.000 | Miễn phí | Đang cập nhật | Giá niêm yết: 6.474.000đ. |
+| **InstantSSL (OV)** | 915.000 | Đang cập nhật | Đang cập nhật | Giá niêm yết: 2.598.700đ. |
+| **InstantSSL Pro (OV)** | 998.000 | Miễn phí | Đang cập nhật | Giá niêm yết: 3.638.700đ. |
+| **Comodo SSL Certificate (DV)** | 1.165.000 | Miễn phí | Đang cập nhật | Giá niêm yết: 2.574.000đ. |
+| **Comodo SSL Wildcard Certificate (DV)** | 5.574.000 | Miễn phí | Đang cập nhật | Giá niêm yết: 11.698.700đ. |
+| **Comodo EV SSL** | 5.782.000 | Miễn phí | Đang cập nhật | Giá niêm yết: 6.474.000đ. |
 
-### Sản phẩm liên quan
+### Dòng sản phẩm GeoTrust
 
-- [Web Hosting BKNS](../hosting/index.md)
-- [Cloud VPS BKNS](../vps/index.md)
-- [Tên Miền BKNS](../ten-mien/index.md)
+| Tên gói | Giá (VND/năm) | Phí cài đặt | VAT | Ghi chú |
+| :--- | :--- | :--- | :--- | :--- |
+| **GeoTrust QuickSSL Premium** | 1.411.000 | Miễn phí | Đang cập nhật | Giá niêm yết: 3.874.000đ. |
+| **GeoTrust QuickSSL Premium SAN** | 2.912.000 | Miễn phí | Đang cập nhật | Giá niêm yết: 4.680.000đ. |
+| **GeoTrust QuickSSL Premium Wildcard** | 6.614.000 | Miễn phí | Đang cập nhật | Giá niêm yết: 16.354.000đ. |
+| **GeoTrust True BusinessID** | 2.172.000 | Miễn phí | Đang cập nhật | Giá niêm yết: 6.968.000đ. |
+| **GeoTrust True BusinessID Wildcard** | 9.714.000 | Miễn phí | Đang cập nhật | Giá niêm yết: 22.048.000đ. |
+| **GeoTrust True BusinessID with EV Multi-Domain** | 9.134.000 | Miễn phí | Đang cập nhật | Giá nhà cung cấp: 15.071.680đ. Phí bổ sung SAN: 1.255.000đ/SAN/năm. |
+| **GeoTrust True BusinessID EV (FLEX)** | 9.837.000 | Miễn phí | Đang cập nhật | Giá niêm yết: 10.348.000đ. Phí bổ sung SAN: 4.576.000đ/SAN/năm. |
+| **GeoTrust True BusinessID Multi-Domain Wildcard** | 16.911.000 | Miễn phí | Đang cập nhật | Giá niêm yết: 51.759.500đ. Phí bổ sung SAN Wildcard: 7.173.000đ/năm. |
 
-***
-*Compiled by BKNS Wiki Bot • 2026-04-07*
+### Dòng sản phẩm RapidSSL & AlphaSSL
+
+| Tên gói | Giá (VND/năm) | Phí cài đặt | VAT | Ghi chú |
+| :--- | :--- | :--- | :--- | :--- |
+| **RapidSSL Certificate** | 215.000 | Miễn phí | Đang cập nhật | Giá niêm yết: 1.534.000đ. |
+| **RapidSSL Wildcard Certificate** | 2.187.000 | Miễn phí | Đang cập nhật | Giá niêm yết: 6.136.000đ. Cam kết giá tốt nhất. |
+| **AlphaSSL (DV)** | 849.000 | Đang cập nhật | Đang cập nhật | |
+
+## Sản phẩm liên quan
+
+*   [Web Hosting BKNS](../hosting/index.md)
+*   [Cloud VPS BKNS](../vps/index.md)
+*   [Tên Miền BKNS](../ten-mien/index.md)
+
+---
+Compiled by BKNS Wiki Bot • 2026-04-14

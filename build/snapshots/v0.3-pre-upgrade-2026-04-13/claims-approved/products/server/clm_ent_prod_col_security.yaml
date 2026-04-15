@@ -1,0 +1,18 @@
+claim_id: CLM-ENT-PROD-COL-SECURITY
+entity_id: ENT-PROD-COLOCATION-001
+entity_type: product
+entity_name: Thuê Chỗ Đặt Máy Chủ (Colocation)
+attribute: security_feature
+value: Bảo mật vật lý 24/7
+unit: null
+qualifiers: null
+source_ids:
+- SRC-COLOCATION_WEB_2026_04_05
+observed_at: '2026-04-05T21:51:07.306292+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: approved
+risk_class: medium
+compiler_note: 'Trích từ: ''- Bảo mật vật lý 24/7'''
+approved_at: '2026-04-08T13:00:09.051752+07:00'
+approved_by: admin-batch

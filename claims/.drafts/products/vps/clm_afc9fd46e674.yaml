@@ -1,0 +1,19 @@
+claim_id: CLM-AFC9FD46E674
+entity_id: product.vps.vps_gia_re
+entity_type: product_offering
+entity_name: VPS Giá Rẻ
+attribute: supported_os
+value: Windows
+unit: ''
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_VPS_GIA_RE_MAY_CHU_AO_CAU_HINH_ON_INH_2026_04_13
+observed_at: '2026-04-13T22:31:41.510187+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Thông số kỹ thuật / Giới hạn: ''Hệ điều hành: Hỗ trợ cài
+  đặt nhiều hệ điều hành Linux ... và Windows.'''
+value_changed_from: Linux
+value_changed_at: '2026-04-13T22:31:41.510229+07:00'

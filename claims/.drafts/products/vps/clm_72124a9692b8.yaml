@@ -1,0 +1,21 @@
+claim_id: CLM-72124A9692B8
+entity_id: product.vps.amd
+entity_type: product_family
+entity_name: Cloud VPS AMD
+attribute: product_url
+value: https://www.bkns.vn/server/cloud-vps-amd.html
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-BKNS_CAMNAG_HOSTING_DOT3_2026_04_05
+observed_at: '2026-04-14T12:02:37.731184+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ: "🔗 Link tham khảo: https://www.bkns.vn/server/cloud-vps-amd.html"'
+dual_vote:
+  status: DISAGREE
+  score: 0.4055
+  confidence: LOW
+  flag: human_review_required

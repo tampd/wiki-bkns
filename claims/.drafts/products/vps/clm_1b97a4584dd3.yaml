@@ -1,0 +1,23 @@
+claim_id: CLM-1B97A4584DD3
+entity_id: ENT-PROD-VPS-CLOUD-AMD
+entity_type: product
+entity_name: Cloud VPS AMD
+attribute: target_customer
+value: Phù hợp với website nặng, cần tốc độ cao, đặc biệt tối ưu cho chạy database
+  nặng
+unit: ''
+qualifiers: null
+source_ids:
+- SRC-TRAINING_DICH_VU_VPS_2026_04_05
+observed_at: '2026-04-14T16:17:36.155357+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: Trích từ mục '5 Bảng so sánh tính năng và đối tượng khách hàng hàng
+  các dịch vụ VPS', dòng 'Cloud VPS AMD'.
+dual_vote:
+  status: DISAGREE
+  score: 0.5333
+  confidence: LOW
+  flag: human_review_required

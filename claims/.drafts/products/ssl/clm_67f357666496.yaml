@@ -1,0 +1,24 @@
+claim_id: CLM-67F357666496
+entity_id: product.ssl.rapidssl_wildcard
+entity_type: product_plan
+entity_name: RapidSSL Wildcard Certificate
+attribute: price
+value: 2187000
+unit: VND
+qualifiers:
+  billing_cycle: year
+source_ids:
+- SRC-RAPIDSSL_WILDCARD_CERTIFICATE_THONG_TIN_VA_BANG_GIA_TAI_BK_2026_04_05
+- SRC-RAPIDSSL_WILDCARD_CERTIFICATE_THONG_TIN_VA_BANG_GIA_TAI_BK_2026_04_13
+observed_at: '2026-04-14T16:40:52.097090+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ bảng Gói dịch vụ và bảng giá: | Giá tại BKNS | 2.187.000đ/năm
+  |'
+dual_vote:
+  status: DISAGREE
+  score: 0.5213
+  confidence: LOW
+  flag: human_review_required

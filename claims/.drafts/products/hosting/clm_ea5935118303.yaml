@@ -1,0 +1,17 @@
+claim_id: CLM-EA5935118303
+entity_id: product.hosting.seo
+entity_type: product_line
+entity_name: Hosting SEO
+attribute: key_selling_point
+value: Cung cấp nhiều IP độc lập
+unit: ''
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_HOSTING_SEO_TOI_UU_WEBSITE_CHO_CONG_CU_TIM_KIEM_2026_04_13
+observed_at: '2026-04-13T22:22:22.901983+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục ''Điểm chính'': ''• Điểm chính: Cung cấp nhiều IP độc
+  lập...'''

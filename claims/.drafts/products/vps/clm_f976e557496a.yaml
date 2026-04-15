@@ -1,0 +1,27 @@
+claim_id: CLM-F976E557496A
+entity_id: ENT-PROD-VPS
+entity_type: product
+entity_name: VPS N8N – AI
+attribute: virtualization_technology
+value: KVM
+unit: null
+qualifiers: null
+source_ids:
+- SRC-BKNS_CAMNAG_HOSTING_DOT3_2026_04_13
+- SRC-BKNS_CAMNAG_HOSTING_DOT3_2026_04_05
+- SRC-DICH_VU_THUE_CLOUD_VPS_SSD_GIA_RE_TAI_BKNS_2026_04_05
+- SRC-VPS_N8N_AI_DICH_VU_TU_ONG_HOA_QUY_TRINH_TAI_BKNS_2026_04_05
+observed_at: '2026-04-14T16:20:24.937986+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tính năng / Thành phần: • Nền tảng ảo hóa KVM: Đảm bảo hiệu
+  suất và sự ổn định.'
+dual_vote:
+  status: DISAGREE
+  score: 0.4055
+  confidence: LOW
+  flag: human_review_required
+value_changed_from: KVM/VMware thực thụ
+value_changed_at: '2026-04-14T16:10:11.080793+07:00'

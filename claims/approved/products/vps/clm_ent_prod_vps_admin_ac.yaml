@@ -7,16 +7,17 @@ value: Full root/admin
 unit: null
 qualifiers: {}
 source_ids:
-- SRC-TRAINING_DICH_VU_VPS_2026_04_04
-- SRC-STORAGE_VPS_MAY_CHU_AO_LUU_TRU_DUNG_LUONG_CAO_2026_04_06
+  - SRC-TRAINING_DICH_VU_VPS_2026_04_04
+  - SRC-STORAGE_VPS_MAY_CHU_AO_LUU_TRU_DUNG_LUONG_CAO_2026_04_06
 observed_at: '2026-04-07T01:03:06.824993+07:00'
 valid_from: '2026-04-04'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ mục ''Tính năng / Thành phần'': • Toàn quyền quản trị: Cung
-  cấp quyền root/admin đầy đủ và giao diện quản trị riêng cho khách hàng.'
+compiler_note: 'Trích từ mục ''Tính năng / Thành phần'': • Toàn quyền quản trị: Cung cấp quyền root/admin đầy đủ và giao diện quản trị riêng cho khách hàng.'
 value_changed_from: Có quyền Root/Administor có thể cài đặt tuỳ biến theo nhu cầu
 value_changed_at: '2026-04-07T01:03:06.825011+07:00'
-approved_at: '2026-04-07T13:00:14.287180+07:00'
+approved_at: '2026-04-08T13:00:13.841586+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.675Z'

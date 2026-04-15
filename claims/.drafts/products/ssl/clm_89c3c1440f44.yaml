@@ -1,0 +1,23 @@
+claim_id: CLM-89C3C1440F44
+entity_id: product.ssl.comodo_dv
+entity_type: product
+entity_name: Comodo SSL Certificate (DV)
+attribute: price
+value: 1165000
+unit: VND
+qualifiers:
+  billing_cycle: year
+source_ids:
+- SRC-COMODO_SSL_CERTIFICATE_DV_CHUNG_CHI_XAC_THUC_TEN_MIEN_2026_04_05
+observed_at: '2026-04-14T16:46:18.421483+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ Gói dịch vụ và bảng giá: | Giá tại BKNS | 1.165.000đ/năm
+  |'
+dual_vote:
+  status: DISAGREE
+  score: 0.3622
+  confidence: LOW
+  flag: human_review_required

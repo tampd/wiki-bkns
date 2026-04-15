@@ -1,0 +1,21 @@
+claim_id: CLM-36C653C5173B
+entity_id: ENT-PROD-EMAIL-RELAY
+entity_type: product
+entity_name: Email Relay
+attribute: target_customer
+value: Khách hàng đã có Email Server và tự quản lý hệ thống.
+unit: null
+qualifiers:
+  comparison_with: Email Server
+source_ids:
+- SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_VA_TIN_CAY_2026_04_13
+observed_at: '2026-04-13T22:35:10.264213+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng so sánh Email Relay và Email Server: | Đối tượng | EMAIL
+  RELAY | Khách hàng đã có Email Server và tự quản lý hệ thống. |'
+value_changed_from: Doanh nghiệp hoặc cá nhân đã tự quản lý Email Server và muốn cải
+  thiện tỷ lệ gửi email vào inbox, bảo vệ uy tín IP gốc.
+value_changed_at: '2026-04-13T22:35:10.264244+07:00'

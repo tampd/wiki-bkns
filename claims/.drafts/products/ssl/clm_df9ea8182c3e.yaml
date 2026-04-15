@@ -1,0 +1,24 @@
+claim_id: CLM-DF9EA8182C3E
+entity_id: ENT-PROD-SSL
+entity_type: product_category
+entity_name: SSL Certificate
+attribute: feature
+value: hỗ trợ cài đặt
+unit: null
+qualifiers: null
+source_ids:
+- SRC-TRANNING_KINH_DOANH_HOSTING_EMAIL_2026_04_13
+observed_at: '2026-04-14T12:35:14.420055+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng Giới thiệu dịch vụ BKNS cung cấp, hàng SSL Certificate,
+  cột Điểm mạnh cạnh tranh: ''Giá hợp lý, cấp phát nhanh, hỗ trợ cài đặt'''
+dual_vote:
+  status: DISAGREE
+  score: 0.5
+  confidence: LOW
+  flag: human_review_required
+value_changed_from: cấp phát nhanh
+value_changed_at: '2026-04-14T12:35:14.420099+07:00'

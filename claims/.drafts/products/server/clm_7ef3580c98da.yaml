@@ -1,0 +1,16 @@
+claim_id: CLM-7EF3580C98DA
+entity_id: product.server_management.bkns.basic
+entity_type: product_plan
+entity_name: Quản trị Máy chủ - Cơ bản
+attribute: feature.server_security
+value: false
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_QUAN_TRI_MAY_CHU_TRON_GOI_TAI_BKNS_2026_04_13
+observed_at: '2026-04-13T22:26:51.283520+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng giá: ''| Bảo mật server | ❌ |'''

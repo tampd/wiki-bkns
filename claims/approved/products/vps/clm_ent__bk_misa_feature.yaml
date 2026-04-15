@@ -7,15 +7,16 @@ value: Khả năng khôi phục dữ liệu ngay cả khi bị xóa
 unit: null
 qualifiers: {}
 source_ids:
-- SRC-CLOUD_VPS_BK_MISA_GIAI_PHAP_LUU_TRU_KE_TOAN_SO_2026_04_06
+  - SRC-CLOUD_VPS_BK_MISA_GIAI_PHAP_LUU_TRU_KE_TOAN_SO_2026_04_06
 observed_at: '2026-04-06T23:45:51.824980+07:00'
 valid_from: '2026-04-06'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ: ━━━ Tính năng / Thành phần • Có khả năng khôi phục dữ liệu
-  ngay cả khi bị xóa.'
+compiler_note: 'Trích từ: ━━━ Tính năng / Thành phần • Có khả năng khôi phục dữ liệu ngay cả khi bị xóa.'
 value_changed_from: Bảo mật đa lớp
 value_changed_at: '2026-04-06T23:45:51.824997+07:00'
-approved_at: '2026-04-07T13:00:14.058161+07:00'
+approved_at: '2026-04-08T13:00:13.577204+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.649Z'

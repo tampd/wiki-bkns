@@ -1,0 +1,18 @@
+claim_id: CLM-SSL-ESSENTIALSSL_WILDCARD_DV-ISSUANCE
+entity_id: bkns.ssl.essentialssl_wildcard_dv
+entity_type: ENT-PROD-SSL
+entity_name: EssentialSSL Wildcard (DV)
+attribute: issuance_time
+value: 5
+unit: phút
+qualifiers: {}
+source_ids:
+- SRC-CHUNG_CHI_SSL_ESSENTIALSSL_WILDCARD_DV_CUA_COMODO_2026_04_04
+observed_at: '2026-04-04T20:34:55.308828+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ: • Điểm chính: Cấp phát nhanh trong 5 phút'
+approved_at: '2026-04-08T13:00:12.974792+07:00'
+approved_by: admin-batch

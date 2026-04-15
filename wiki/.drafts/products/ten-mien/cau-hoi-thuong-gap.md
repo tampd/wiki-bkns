@@ -2,7 +2,7 @@
 page_id: wiki.products.ten-mien.cau-hoi-thuong-gap
 title: Tên Miền BKNS — Câu Hỏi Thường Gặp
 category: products/ten-mien
-updated: '2026-04-07'
+updated: '2026-04-14'
 review_state: drafted
 claims_used: 0
 compile_cost_usd: 0

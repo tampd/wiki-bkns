@@ -8,13 +8,14 @@ unit: null
 qualifiers:
   product_line: Hosting WordPress
 source_ids:
-- SRC-HOSTING_WORDPRESS_WEB_2026_04_05
+  - SRC-HOSTING_WORDPRESS_WEB_2026_04_05
 observed_at: '2026-04-05T22:04:52.731032+07:00'
 valid_from: '2026-04-05'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ tiêu đề: ''# Hosting WordPress Tốc Độ Cao – Bảng Giá & Giải
-  Pháp Tối Ưu SEO'''
-approved_at: '2026-04-07T13:00:11.716608+07:00'
+compiler_note: 'Trích từ tiêu đề: ''# Hosting WordPress Tốc Độ Cao – Bảng Giá & Giải Pháp Tối Ưu SEO'''
+approved_at: '2026-04-08T13:00:10.809194+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:58.988Z'

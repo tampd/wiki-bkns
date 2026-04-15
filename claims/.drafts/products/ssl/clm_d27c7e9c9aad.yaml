@@ -1,0 +1,21 @@
+claim_id: CLM-D27C7E9C9AAD
+entity_id: ENT-PROD-SSL-011
+entity_type: ENT-PROD-SSL
+entity_name: GeoTrust True BusinessID with EV Multi-Domain
+attribute: source_url
+value: https://ssl.bkns.vn/ssl-bao-mat/geotrust-true-businessid-with-ev-multi-domain
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-GEOTRUST_TRUE_BUSINESSID_WITH_EV_MULTI_DOMAIN_2026_04_05
+observed_at: '2026-04-14T16:53:50.969737+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ mục ''Thông tin nguồn'': ''• URL: https://ssl.bkns.vn/ssl-bao-mat/geotrust-true-businessid-with-ev-multi-domain'''
+dual_vote:
+  status: DISAGREE
+  score: 0.2759
+  confidence: LOW
+  flag: human_review_required

@@ -1,0 +1,16 @@
+claim_id: CLM-15846AF042DB
+entity_id: product.server_management.bkns
+entity_type: product
+entity_name: Dịch vụ Quản trị Máy chủ Trọn gói
+attribute: support_availability
+value: 24/7
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_QUAN_TRI_MAY_CHU_TRON_GOI_TAI_BKNS_2026_04_13
+observed_at: '2026-04-13T22:26:51.252767+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tóm tắt nhanh: ''Hỗ trợ kỹ thuật 24/7.'''

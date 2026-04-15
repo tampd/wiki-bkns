@@ -1,0 +1,22 @@
+claim_id: CLM-C32F9D942AE2
+entity_id: product.software.directadmin.standard
+entity_type: product_plan
+entity_name: DirectAdmin Standard
+attribute: domain_limit
+value: unlimited
+unit: domain
+qualifiers: null
+source_ids:
+- SRC-BANG_GIA_BAN_QUYEN_PHAN_MEM_QUAN_TRI_SERVER_DIRECTADMIN_2026_04_13
+- SRC-BANG_GIA_BAN_QUYEN_PHAN_MEM_QUAN_TRI_SERVER_DIRECTADMIN_2026_04_05
+observed_at: '2026-04-14T17:10:42.488507+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng giá: | Giới hạn | Không giới hạn số User, domain |'
+dual_vote:
+  status: PARTIAL
+  score: 0.6814
+  confidence: MEDIUM
+  flag: needs_review

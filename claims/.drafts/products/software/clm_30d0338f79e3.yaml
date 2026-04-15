@@ -1,0 +1,17 @@
+claim_id: CLM-30D0338F79E3
+entity_id: product.software.directadmin.lite
+entity_type: product_plan
+entity_name: DirectAdmin Lite
+attribute: included_service
+value: Hỗ trợ cài đặt và tối ưu phần cứng miễn phí.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-BANG_GIA_BAN_QUYEN_PHAN_MEM_QUAN_TRI_SERVER_DIRECTADMIN_2026_04_13
+observed_at: '2026-04-13T21:39:20.584957+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: medium
+compiler_note: 'Trích từ bảng giá: ''| Hỗ trợ | Hỗ trợ cài đặt và tối ưu phần cứng
+  miễn phí. |'''

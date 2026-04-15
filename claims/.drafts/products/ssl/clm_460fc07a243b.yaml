@@ -1,0 +1,24 @@
+claim_id: CLM-460FC07A243B
+entity_id: ENT-PROD-SSL-GEOTRUST-TRUE-BUSINESSID-WILDCARD
+entity_type: product
+entity_name: GeoTrust True BusinessID Wildcard
+attribute: category
+value: Wildcard SSL
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-CHUNG_CHI_SSL_GEOTRUST_TRUE_BUSINESSID_WILDCARD_2026_04_05
+observed_at: '2026-04-14T16:24:48.828312+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ mục Danh mục: SSL Bảo mật, GeoTrust, Organization Validation
+  SSL, Wildcard SSL'
+dual_vote:
+  status: DISAGREE
+  score: 0.3808
+  confidence: LOW
+  flag: human_review_required
+value_changed_from: Organization Validation SSL
+value_changed_at: '2026-04-14T16:24:48.828357+07:00'

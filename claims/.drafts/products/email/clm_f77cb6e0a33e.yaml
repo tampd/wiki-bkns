@@ -1,0 +1,23 @@
+claim_id: CLM-F77CB6E0A33E
+entity_id: product.email.cloud_email_server
+entity_type: product
+entity_name: Cloud Email Server
+attribute: outgoing_email_limit_per_hour
+value: 200
+unit: email
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_13
+- SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_05
+observed_at: '2026-04-14T17:04:23.503601+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tóm tắt nhanh: ''Điều kiện/giới hạn nổi bật (nếu có):
+  Giới hạn số lượng email gửi đi là 200 email/giờ cho tất cả các gói.'''
+dual_vote:
+  status: DISAGREE
+  score: 0.3931
+  confidence: LOW
+  flag: human_review_required

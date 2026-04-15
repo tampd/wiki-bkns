@@ -1,0 +1,20 @@
+claim_id: CLM-2D89674BB980
+entity_id: product.vps.vps_gia_re
+entity_type: product_offering
+entity_name: VPS Giá Rẻ
+attribute: is_suitable_for
+value: Cá nhân có nhu cầu lưu trữ dữ liệu hoặc vận hành website, ứng dụng quy mô nhỏ
+unit: ''
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_VPS_GIA_RE_MAY_CHU_AO_CAU_HINH_ON_INH_2026_04_13
+observed_at: '2026-04-13T22:31:41.431789+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: ''Phù hợp với: Sinh viên, lập trình viên,
+  doanh nghiệp vừa và nhỏ, cá nhân có nhu cầu lưu trữ dữ liệu hoặc vận hành website,
+  ứng dụng quy mô nhỏ.'''
+value_changed_from: Doanh nghiệp vừa và nhỏ
+value_changed_at: '2026-04-13T22:31:41.431825+07:00'

@@ -3,23 +3,22 @@ entity_id: ENT-PROD-SSL-RAPIDSSL
 entity_type: product
 entity_name: RapidSSL Certificate
 attribute: registration_process
-value: Khách hàng có thể đăng ký dịch vụ bằng cách nhấn vào nút "Mua ngay" trên trang
-  sản phẩm để thêm vào giỏ hàng và tiến hành thanh toán.
+value: Khách hàng có thể đăng ký dịch vụ bằng cách nhấn vào nút "Mua ngay" trên trang sản phẩm để thêm vào giỏ hàng và tiến hành thanh toán.
 unit: null
 qualifiers: null
 source_ids:
-- SRC-RAPIDSSL_CERTIFICATE_CHUNG_CHI_SSL_XAC_THUC_TEN_MIEN_DV_2026_04_04
-- SRC-COMODO_SSL_CERTIFICATE_DV_CHUNG_CHI_XAC_THUC_TEN_MIEN_2026_04_06
-- SRC-RAPIDSSL_CERTIFICATE_CHUNG_CHI_SSL_XAC_THUC_TEN_MIEN_DV_2026_04_06
+  - SRC-RAPIDSSL_CERTIFICATE_CHUNG_CHI_SSL_XAC_THUC_TEN_MIEN_DV_2026_04_04
+  - SRC-COMODO_SSL_CERTIFICATE_DV_CHUNG_CHI_XAC_THUC_TEN_MIEN_2026_04_06
+  - SRC-RAPIDSSL_CERTIFICATE_CHUNG_CHI_SSL_XAC_THUC_TEN_MIEN_DV_2026_04_06
 observed_at: '2026-04-07T00:57:06.305066+07:00'
 valid_from: '2026-04-04'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ mục Quy trình đăng ký / Triển khai / Kích hoạt: Khách hàng
-  có thể đăng ký dịch vụ bằng cách nhấn vào nút "Mua ngay" trên trang sản phẩm để
-  thêm vào giỏ hàng và tiến hành thanh toán.'
+compiler_note: 'Trích từ mục Quy trình đăng ký / Triển khai / Kích hoạt: Khách hàng có thể đăng ký dịch vụ bằng cách nhấn vào nút "Mua ngay" trên trang sản phẩm để thêm vào giỏ hàng và tiến hành thanh toán.'
 value_changed_from: https://id.bkns.vn/store/comodo-ssl/comodo-ssl?language=vietnamese
 value_changed_at: '2026-04-07T00:57:06.305084+07:00'
-approved_at: '2026-04-07T13:00:13.119192+07:00'
+approved_at: '2026-04-08T13:00:12.609066+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.482Z'

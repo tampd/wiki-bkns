@@ -92,31 +92,43 @@ def main():
         print("Không có gì để compile.")
         return
     
-    # Step 2: Compile each category
+    # Step 2: Compile each category (use importlib per LESSONS BUG-002)
     print("📝 Step 2: Compiling wiki pages...")
-    from skills.compile_wiki_runner import compile_category
-    
+    import importlib.util
+
+    def _load_module(module_name: str, file_path: Path):
+        spec = importlib.util.spec_from_file_location(module_name, file_path)
+        mod = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(mod)
+        return mod
+
+    repo_root = Path(__file__).resolve().parent.parent
+    compile_mod = _load_module(
+        "bkns_compile",
+        repo_root / "skills" / "compile-wiki" / "scripts" / "compile.py",
+    )
+    do_compile = compile_mod.compile_category
+
     approved_base = CLAIMS_APPROVED_DIR / "products"
     categories = [args.category] if args.category else [
         d.name for d in approved_base.iterdir() if d.is_dir()
     ]
-    
+
     for cat in categories:
         print(f"\n  Compiling: {cat}...")
         try:
-            # Import and run compilation
-            sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "skills" / "compile-wiki" / "scripts"))
-            from compile import compile_category as do_compile
             result = do_compile(cat)
             print(f"  → {result.get('status', 'unknown')}")
         except Exception as e:
             print(f"  → Error: {e}")
-    
+
     # Step 3: Build snapshot
     print("\n🔨 Step 3: Building snapshot...")
-    sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "skills" / "build-snapshot" / "scripts"))
-    from snapshot import create_snapshot
-    build = create_snapshot()
+    snapshot_mod = _load_module(
+        "bkns_snapshot",
+        repo_root / "skills" / "build-snapshot" / "scripts" / "snapshot.py",
+    )
+    build = snapshot_mod.create_snapshot()
     print(f"✅ Build: {build['build_id']} ({build['version']})")
     
     print(f"\n{'='*50}")

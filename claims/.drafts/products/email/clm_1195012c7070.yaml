@@ -1,0 +1,21 @@
+claim_id: CLM-1195012C7070
+entity_id: product.email.hosting.email_2
+entity_type: product_plan
+entity_name: EMAIL 2
+attribute: email_forwarders
+value: 10
+unit: null
+qualifiers: null
+source_ids:
+- SRC-BANG_GIA_EMAIL_2026_04_05
+observed_at: '2026-04-14T17:00:20.236513+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ: ''Email trong Forwarders: 10'''
+dual_vote:
+  status: DISAGREE
+  score: 0.2718
+  confidence: LOW
+  flag: human_review_required

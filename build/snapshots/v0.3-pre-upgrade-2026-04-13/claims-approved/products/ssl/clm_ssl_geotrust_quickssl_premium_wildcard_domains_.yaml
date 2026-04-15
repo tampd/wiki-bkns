@@ -1,0 +1,19 @@
+claim_id: CLM-SSL-GEOTRUST_QUICKSSL_PREMIUM_WILDCARD-DOMAINS_
+entity_id: product.ssl.geotrust_quickssl_premium_wildcard
+entity_type: product
+entity_name: GeoTrust QuickSSL Premium Wildcard
+attribute: domains_protected_description
+value: Bảo mật cho 1 tên miền chính và không giới hạn tên miền phụ
+unit: null
+qualifiers: null
+source_ids:
+- SRC-CHUNG_CHI_SSL_GEOTRUST_QUICKSSL_PREMIUM_WILDCARD_2026_04_06
+observed_at: '2026-04-06T23:36:10.712039+07:00'
+valid_from: '2026-04-06'
+confidence: high
+review_state: approved
+risk_class: none
+compiler_note: 'Trích từ mục ''Tính năng / Thành phần'': ''Bảo vệ Wildcard: Bảo mật
+  cho 1 tên miền chính và không giới hạn tên miền phụ (ví dụ: `*.yourdomain.com`).'''
+approved_at: '2026-04-08T13:00:13.254443+07:00'
+approved_by: admin-batch

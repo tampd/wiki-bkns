@@ -1,0 +1,25 @@
+claim_id: CLM-ENT-PROD-SSL-ADDON_PR
+entity_id: ENT-PROD-SSL-013
+entity_type: product
+entity_name: PositiveSSL Multi-Domain (DV)
+attribute: addon_price
+value: 364000
+unit: VND
+qualifiers:
+  addon_type: SAN
+  billing_cycle: year
+source_ids:
+- SRC-GEOTRUST_TRUE_BUSINESSID_MULTI_DOMAIN_WILDCARD_2026_04_04
+- SRC-GEOTRUST_TRUE_BUSINESSID_MULTI_DOMAIN_WILDCARD_2026_04_06
+- SRC-POSITIVESSL_MULTI_DOMAIN_DV_CHUNG_CHI_SSL_CHO_NHIEU_TEN_M_2026_04_06
+observed_at: '2026-04-07T00:54:07.003200+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: high
+compiler_note: 'Trích từ bảng giá: | Bổ sung SAN | 364.000 đ/SAN/Năm | Phí cho mỗi
+  tên miền thêm vào. |'
+value_changed_from: 7173000
+value_changed_at: '2026-04-07T00:54:07.003218+07:00'
+approved_at: '2026-04-08T13:00:12.277235+07:00'
+approved_by: admin-batch

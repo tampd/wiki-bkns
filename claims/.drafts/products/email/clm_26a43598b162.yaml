@@ -1,0 +1,17 @@
+claim_id: CLM-26A43598B162
+entity_id: product.email.email_relay
+entity_type: product
+entity_name: Email Relay
+attribute: hourly_email_limit
+value: 200
+unit: email
+qualifiers: null
+source_ids:
+- SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_TIN_CAY_2026_04_13
+observed_at: '2026-04-13T22:34:09.046764+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Thông số kỹ thuật / Giới hạn: ''Giới hạn gửi email/giờ:
+  Tất cả các gói đều có giới hạn 200 email/giờ.'''

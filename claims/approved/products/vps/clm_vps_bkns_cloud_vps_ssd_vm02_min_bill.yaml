@@ -7,12 +7,14 @@ value: 1
 unit: month
 qualifiers: null
 source_ids:
-- SRC-DICH_VU_THUE_CLOUD_VPS_SSD_GIA_RE_TAI_BKNS_2026_04_06
+  - SRC-DICH_VU_THUE_CLOUD_VPS_SSD_GIA_RE_TAI_BKNS_2026_04_06
 observed_at: '2026-04-07T00:13:45.706652+07:00'
 valid_from: '2026-04-07'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
 compiler_note: 'Trích từ bảng giá: ''| CLOUD-VM02 | ... | 1 tháng |'''
-approved_at: '2026-04-07T13:00:15.013633+07:00'
+approved_at: '2026-04-08T13:00:14.759743+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.760Z'

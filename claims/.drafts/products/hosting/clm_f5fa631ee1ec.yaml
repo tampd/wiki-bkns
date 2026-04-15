@@ -1,0 +1,22 @@
+claim_id: CLM-F5FA631EE1EC
+entity_id: ENT-COMPANY-001
+entity_type: company
+entity_name: BKNS
+attribute: internal_document_source
+value: manual://BKNS_camnang_hosting_dot2.docx
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-BKNS_CAMNANG_HOSTING_DOT2_2026_04_13
+- SRC-BKNS_CAMNANG_HOSTING_DOT2_2026_04_05
+observed_at: '2026-04-14T12:04:01.277763+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ cuối tài liệu: ''- Nguồn: manual://BKNS_camnang_hosting_dot2.docx'''
+dual_vote:
+  status: DISAGREE
+  score: 0.3651
+  confidence: LOW
+  flag: human_review_required

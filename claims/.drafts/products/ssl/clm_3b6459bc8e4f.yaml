@@ -1,0 +1,22 @@
+claim_id: CLM-3B6459BC8E4F
+entity_id: product.ssl.rapidssl_wildcard
+entity_type: product_plan
+entity_name: RapidSSL Wildcard Certificate
+attribute: server_licenses
+value: unlimited
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-RAPIDSSL_WILDCARD_CERTIFICATE_THONG_TIN_VA_BANG_GIA_TAI_BK_2026_04_13
+observed_at: '2026-04-14T16:40:52.053879+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng Thông số kỹ thuật / Giới hạn: | Server cài đặt | Không
+  giới hạn |'
+dual_vote:
+  status: PARTIAL
+  score: 0.6575
+  confidence: MEDIUM
+  flag: needs_review

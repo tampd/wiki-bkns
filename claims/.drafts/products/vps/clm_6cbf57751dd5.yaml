@@ -1,0 +1,18 @@
+claim_id: CLM-6CBF57751DD5
+entity_id: ENT-PROD-VPS:vps_seo_02
+entity_type: product_plan
+entity_name: SEO 02
+attribute: control_panel_support
+value: DirectAdmin
+unit: null
+qualifiers:
+  supported: false
+source_ids:
+- SRC-DICH_VU_CLOUD_VPS_SEO_MAY_CHU_AO_TOI_UU_CHO_SEO_2026_04_13
+observed_at: '2026-04-13T22:18:36.412620+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng giá, dòng ''DirectAdmin'', cột ''SEO 02'': ''Không hỗ
+  trợ'''

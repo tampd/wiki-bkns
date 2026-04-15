@@ -1,0 +1,18 @@
+claim_id: CLM-IMG-product.hosting.bkh04-min_period
+entity_id: product.hosting.bkh04
+entity_type: product_plan
+entity_name: Hosting Giá Rẻ BKH04
+attribute: min_payment_period
+value: 1 tháng
+confidence: ground_truth
+review_state: approved
+risk_class: verified
+source_ids:
+  - IMG-BKH01-BKH02-BKH03-BKH04
+observed_at: '2026-04-07T16:33:30.251022+07:00'
+valid_from: '2026-04-07'
+approved_at: '2026-04-07T16:33:30.251022+07:00'
+approved_by: image-extraction
+compiler_note: Minimum payment period from bkns.vn (BKH01-BKH02-BKH03-BKH04)
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.153Z'

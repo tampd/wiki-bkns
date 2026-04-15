@@ -1,0 +1,19 @@
+claim_id: CLM-F8750697D20C
+entity_id: ENT-PROD-SSL-ESSENTIALSSL-WILDCARD-DV
+entity_type: product_plan
+entity_name: EssentialSSL Wildcard (DV)
+attribute: target_customer
+value: small e-commerce site
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-CHUNG_CHI_SSL_ESSENTIALSSL_WILDCARD_DV_CUA_COMODO_2026_04_13
+observed_at: '2026-04-13T21:57:30.157384+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tóm tắt nhanh: Phù hợp với: Các website, blog, hoặc trang
+  thương mại điện tử nhỏ...'
+value_changed_from: blog
+value_changed_at: '2026-04-13T21:57:30.157429+07:00'

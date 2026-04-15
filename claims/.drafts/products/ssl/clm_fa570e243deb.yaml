@@ -1,0 +1,23 @@
+claim_id: CLM-FA570E243DEB
+entity_id: product.ssl.rapidssl
+entity_type: product
+entity_name: RapidSSL Certificate
+attribute: target_audience
+value: Các website cần bảo mật cơ bản, website cá nhân, blog, và các dự án cần triển
+  khai SSL nhanh chóng với chi phí thấp.
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-RAPIDSSL_CERTIFICATE_CHUNG_CHI_SSL_XAC_THUC_TEN_MIEN_DV_2026_04_13
+observed_at: '2026-04-14T16:58:55.822405+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: '• Phù hợp với: Các website cần bảo mật cơ bản, website cá nhân, blog,
+  và các dự án cần triển khai SSL nhanh chóng với chi phí thấp.'
+dual_vote:
+  status: DISAGREE
+  score: 0.3997
+  confidence: LOW
+  flag: human_review_required

@@ -1,0 +1,22 @@
+claim_id: CLM-426B9D4AAB58
+entity_id: product.ssl.rapidssl
+entity_type: product
+entity_name: RapidSSL Certificate
+attribute: list_price
+value: 1534000
+unit: VND
+qualifiers:
+  billing_cycle: year
+source_ids:
+- SRC-RAPIDSSL_CERTIFICATE_CHUNG_CHI_SSL_XAC_THUC_TEN_MIEN_DV_2026_04_13
+observed_at: '2026-04-14T16:58:55.846513+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: '| Giá nhà cung cấp | <del>1.534.000đ</del> | năm |'
+dual_vote:
+  status: DISAGREE
+  score: 0.3997
+  confidence: LOW
+  flag: human_review_required

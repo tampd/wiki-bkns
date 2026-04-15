@@ -1,0 +1,16 @@
+claim_id: CLM-5DAC57B8EA2D
+entity_id: ENT-PROD-SSL-002
+entity_type: product
+entity_name: GeoTrust QuickSSL Premium Wildcard
+attribute: product_url
+value: https://ssl.bkns.vn/ssl-bao-mat/geotrust-quickssl-premium-wildcard
+unit: null
+qualifiers: null
+source_ids:
+- SRC-CHUNG_CHI_SSL_GEOTRUST_QUICKSSL_PREMIUM_WILDCARD_2026_04_13
+observed_at: '2026-04-13T21:58:22.347035+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ mục Thông tin nguồn: ''• URL: https://ssl.bkns.vn/ssl-bao-mat/geotrust-quickssl-premium-wildcard'''

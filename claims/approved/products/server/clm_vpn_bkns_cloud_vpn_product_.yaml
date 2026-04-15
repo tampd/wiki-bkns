@@ -7,12 +7,14 @@ value: Dịch vụ VPN (Cloud VPN)
 unit: null
 qualifiers: {}
 source_ids:
-- SRC-DICH_VU_VPN_WEB_2026_04_05
+  - SRC-DICH_VU_VPN_WEB_2026_04_05
 observed_at: '2026-04-05T21:55:31.656841+07:00'
 valid_from: '2026-04-05'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
 compiler_note: 'Trích từ tiêu đề: ''# Dịch vụ VPN (Cloud VPN) của BKNS'''
-approved_at: '2026-04-07T13:00:10.198760+07:00'
+approved_at: '2026-04-08T13:00:09.329663+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.344Z'

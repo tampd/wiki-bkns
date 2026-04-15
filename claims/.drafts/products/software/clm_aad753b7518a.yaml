@@ -1,0 +1,21 @@
+claim_id: CLM-AAD753B7518A
+entity_id: product.software.openlitespeed
+entity_type: product_version
+entity_name: OpenLiteSpeed (OLS)
+attribute: included_feature
+value: giao diện quản trị web
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-LITESPEED_WEB_SERVER_TINH_NANG_PHIEN_BAN_VA_SO_SANH_2026_04_13
+observed_at: '2026-04-14T12:21:39.529963+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Thông số kỹ thuật / Giới hạn: Nó có giao diện quản trị web...'
+dual_vote:
+  status: DISAGREE
+  score: 0.0
+  confidence: LOW
+  flag: human_review_required

@@ -1,0 +1,21 @@
+claim_id: CLM-45DDC0DF1A62
+entity_id: ENT-PROD-SSL-GEOTRUST-TRUE-BUSINESSID-WILDCARD
+entity_type: product
+entity_name: GeoTrust True BusinessID Wildcard
+attribute: site_seal_type
+value: Động
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-CHUNG_CHI_SSL_GEOTRUST_TRUE_BUSINESSID_WILDCARD_2026_04_05
+observed_at: '2026-04-14T16:24:48.878367+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ bảng Thông số kỹ thuật: | Biểu tượng | Động |'
+dual_vote:
+  status: DISAGREE
+  score: 0.3808
+  confidence: LOW
+  flag: human_review_required

@@ -1,0 +1,23 @@
+claim_id: CLM-210D38F6E932
+entity_id: product.software.dti_assessment.basic
+entity_type: product_plan
+entity_name: Gói Cơ bản
+attribute: price
+value: 650000000
+unit: VND
+qualifiers: {}
+source_ids:
+- SRC-PHAN_MEM_ANH_GIA_CHUYEN_OI_SO_DTI_2026_04_05
+- SRC-PHAN_MEM_ANH_GIA_CHUYEN_OI_SO_DTI_2026_04_13
+observed_at: '2026-04-14T17:20:54.516373+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ bảng giá: | Giá | 650.000.000 VNĐ | 910.000.000 VNĐ | 1.910.000.000
+  VNĐ |'
+dual_vote:
+  status: DISAGREE
+  score: 0.0
+  confidence: LOW
+  flag: human_review_required

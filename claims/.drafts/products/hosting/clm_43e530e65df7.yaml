@@ -1,0 +1,27 @@
+claim_id: CLM-43E530E65DF7
+entity_id: ENT-PROD-HOSTING
+entity_type: product_category
+entity_name: Hosting (Web Hosting)
+attribute: target_audience
+value: Website doanh nghiệp, cá nhân, thương mại điện tử
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_HOSTING_WINDOWS_TAI_BKNS_2026_04_13
+- SRC-TRANNING_KINH_DOANH_HOSTING_EMAIL_2026_04_13
+observed_at: '2026-04-14T12:35:14.357111+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng Giới thiệu dịch vụ BKNS cung cấp, hàng Hosting (Web
+  Hosting), cột Đối tượng khách hàng chính: ''Website doanh nghiệp, cá nhân, thương
+  mại điện tử'''
+value_changed_from: Các doanh nghiệp và cá nhân có website hoặc ứng dụng được phát
+  triển bằng công nghệ của Microsoft.
+value_changed_at: '2026-04-14T12:35:14.357183+07:00'
+dual_vote:
+  status: DISAGREE
+  score: 0.5
+  confidence: LOW
+  flag: human_review_required

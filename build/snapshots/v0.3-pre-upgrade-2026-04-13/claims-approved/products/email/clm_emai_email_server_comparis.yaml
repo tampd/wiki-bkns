@@ -1,0 +1,22 @@
+claim_id: CLM-EMAI-EMAIL_SERVER-COMPARIS
+entity_id: product.email.email_server
+entity_type: product
+entity_name: Email Server
+attribute: comparison_point
+value: Số lượng email tạo ra có thể nhiều hơn so với Email Hosting.
+unit: ''
+qualifiers:
+  compared_to: Email Hosting
+source_ids:
+- SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_TIN_CAY_2026_04_06
+observed_at: '2026-04-07T00:21:09.934107+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ bảng So sánh Email Hosting và Email Server: | EMAIL SERVER
+  | Số lượng email tạo ra có thể nhiều hơn so với Email Hosting. |'
+value_changed_from: Sử dụng một IP riêng biệt, không dùng chung.
+value_changed_at: '2026-04-07T00:21:09.934132+07:00'
+approved_at: '2026-04-08T13:00:10.223618+07:00'
+approved_by: admin-batch

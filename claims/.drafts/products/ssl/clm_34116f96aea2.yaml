@@ -1,0 +1,21 @@
+claim_id: CLM-34116F96AEA2
+entity_id: ENT-PROD-SSL-POSITIVE-DV
+entity_type: product
+entity_name: PositiveSSL (DV)
+attribute: insurance_level
+value: 50000
+unit: USD
+qualifiers: null
+source_ids:
+- SRC-POSITIVESSL_DV_CHUNG_CHI_SSL_GIA_RE_2026_04_05
+observed_at: '2026-04-14T16:34:23.545210+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng thông số kỹ thuật: "| Mức bảo hiểm | 50.000$ |"'
+dual_vote:
+  status: DISAGREE
+  score: 0.2246
+  confidence: LOW
+  flag: human_review_required

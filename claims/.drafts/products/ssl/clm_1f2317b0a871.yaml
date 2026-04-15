@@ -1,0 +1,24 @@
+claim_id: CLM-1F2317B0A871
+entity_id: ENT-COMPANY-001
+entity_type: company
+entity_name: BKNS
+attribute: partnership_status
+value: Authorized Reseller
+unit: null
+qualifiers:
+  brand: GeoTrust
+source_ids:
+- SRC-CHUNG_CHI_SSL_ESSENTIALSSL_WILDCARD_DV_CUA_COMODO_2026_04_13
+- SRC-GEOTRUST_TRUE_BUSINESSID_CHUNG_CHI_SSL_XAC_THUC_DOANH_NGHI_2026_04_13
+observed_at: '2026-04-14T16:31:44.088421+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Chính sách / Điều khoản / Lưu ý: ''• Nhà cung cấp: Đây
+  là sản phẩm của GeoTrust, và BKNS là nhà phân phối được ủy quyền (Authorized Reseller).'''
+dual_vote:
+  status: DISAGREE
+  score: 0.2607
+  confidence: LOW
+  flag: human_review_required

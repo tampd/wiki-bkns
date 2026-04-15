@@ -1,0 +1,23 @@
+claim_id: CLM-9293ADFFBCB1
+entity_id: ENT-PROD-VPS
+entity_type: product
+entity_name: Storage VPS
+attribute: product.use_case
+value: xây dựng các kho thư viện trực tuyến như ảnh, sách, báo và các loại tài liệu
+  khác
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-STORAGE_VPS_MAY_CHU_AO_LUU_TRU_DUNG_LUONG_CAO_2026_04_13
+observed_at: '2026-04-14T16:16:09.795480+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Mô tả dịch vụ: Dịch vụ này phù hợp cho việc xây dựng
+  các kho thư viện trực tuyến như ảnh, sách, báo và các loại tài liệu khác.'
+dual_vote:
+  status: PARTIAL
+  score: 0.7558
+  confidence: MEDIUM
+  flag: needs_review

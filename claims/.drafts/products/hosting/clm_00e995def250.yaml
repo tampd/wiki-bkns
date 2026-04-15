@@ -1,0 +1,21 @@
+claim_id: CLM-00E995DEF250
+entity_id: ENT-PROD-HOSTING
+entity_type: product_family
+entity_name: Hosting Giá Rẻ
+attribute: feature_web_server
+value: LiteSpeed Web Server
+unit: null
+qualifiers: null
+source_ids:
+- SRC-HOSTING_GIA_RE_BANG_GIA_VA_THONG_SO_KY_THUAT_TAI_BKNS_2026_04_05
+observed_at: '2026-04-14T12:12:07.447936+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục ''Điểm chính'': sử dụng LiteSpeed Web Server'
+dual_vote:
+  status: DISAGREE
+  score: 0.519
+  confidence: LOW
+  flag: human_review_required

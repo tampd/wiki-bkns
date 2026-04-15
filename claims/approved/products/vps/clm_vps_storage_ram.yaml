@@ -7,15 +7,16 @@ value: 3
 unit: GB
 qualifiers: {}
 source_ids:
-- SRC-STORAGE_VPS_MAY_CHU_AO_LUU_TRU_DUNG_LUONG_CAO_2026_04_06
+  - SRC-STORAGE_VPS_MAY_CHU_AO_LUU_TRU_DUNG_LUONG_CAO_2026_04_06
 observed_at: '2026-04-07T01:03:06.936191+07:00'
 valid_from: '2026-04-07'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ bảng giá: | STORAGE VPS 3 | 3 Core | 3 GB | 300 GB | 1 |
-  Không giới hạn | 540.000 đ/tháng |'
+compiler_note: 'Trích từ bảng giá: | STORAGE VPS 3 | 3 Core | 3 GB | 300 GB | 1 | Không giới hạn | 540.000 đ/tháng |'
 value_changed_from: 2
 value_changed_at: '2026-04-07T01:03:06.936209+07:00'
-approved_at: '2026-04-07T13:00:15.299214+07:00'
+approved_at: '2026-04-08T13:00:15.135903+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.794Z'

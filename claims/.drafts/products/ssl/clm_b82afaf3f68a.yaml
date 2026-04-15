@@ -1,0 +1,22 @@
+claim_id: CLM-B82AFAF3F68A
+entity_id: ENT-PROD-SSL-008
+entity_type: product_plan
+entity_name: GeoTrust True BusinessID Multi-Domain Wildcard
+attribute: included_domain_types
+value: 1 FQDN + 2 Wildcard
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-GEOTRUST_TRUE_BUSINESSID_MULTI_DOMAIN_WILDCARD_2026_04_13
+observed_at: '2026-04-14T16:52:51.764854+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục ''Thông số kỹ thuật / Giới hạn'': | Bảo vệ cho | 1 tên
+  miền cụ thể + 2 tên miền wildcard |'
+dual_vote:
+  status: DISAGREE
+  score: 0.3472
+  confidence: LOW
+  flag: human_review_required

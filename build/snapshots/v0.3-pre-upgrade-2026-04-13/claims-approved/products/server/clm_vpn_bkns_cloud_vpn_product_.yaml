@@ -1,0 +1,18 @@
+claim_id: CLM-VPN-BKNS_CLOUD_VPN-PRODUCT_
+entity_id: product.vpn.bkns_cloud_vpn
+entity_type: product
+entity_name: BKNS Cloud VPN
+attribute: product_type_name
+value: Dịch vụ VPN (Cloud VPN)
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-DICH_VU_VPN_WEB_2026_04_05
+observed_at: '2026-04-05T21:55:31.656841+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ tiêu đề: ''# Dịch vụ VPN (Cloud VPN) của BKNS'''
+approved_at: '2026-04-08T13:00:09.329663+07:00'
+approved_by: admin-batch

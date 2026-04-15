@@ -1,0 +1,19 @@
+claim_id: CLM-1318424283EF
+entity_id: product.colocation.bkns
+entity_type: product
+entity_name: Thuê Chỗ Đặt Máy Chủ (Colocation)
+attribute: promotion_summary
+value: Có chương trình tặng máy chủ khi khách hàng thanh toán dịch vụ chỗ đặt từ 3
+  tháng trở lên.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_THUE_CHO_AT_MAY_CHU_COLOCATION_TAI_BKNS_2026_04_13
+observed_at: '2026-04-13T22:28:17.194847+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: ''Điều kiện/giới hạn nổi bật (nếu có): Có
+  chương trình tặng máy chủ khi khách hàng thanh toán dịch vụ chỗ đặt từ 3 tháng trở
+  lên.'''

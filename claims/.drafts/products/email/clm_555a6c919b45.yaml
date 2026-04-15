@@ -1,0 +1,18 @@
+claim_id: CLM-555A6C919B45
+entity_id: ENT-PROD-EMAIL-SERVER
+entity_type: product
+entity_name: Email Server
+attribute: target_customer
+value: Khách hàng thuê dịch vụ trọn gói, BKNS quản lý Email Server.
+unit: null
+qualifiers:
+  comparison_with: Email Relay
+source_ids:
+- SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_VA_TIN_CAY_2026_04_13
+observed_at: '2026-04-13T22:35:10.269135+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng so sánh Email Relay và Email Server: | Đối tượng | EMAIL
+  SERVER | Khách hàng thuê dịch vụ trọn gói, BKNS quản lý Email Server. |'

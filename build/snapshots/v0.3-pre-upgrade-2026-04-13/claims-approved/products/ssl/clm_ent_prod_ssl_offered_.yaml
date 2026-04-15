@@ -1,0 +1,19 @@
+claim_id: CLM-ENT-PROD-SSL-OFFERED_
+entity_id: ENT-PROD-SSL
+entity_type: product_family
+entity_name: Chứng Chỉ SSL
+attribute: offered_product
+value: GeoTrust True BusinessID Wildcard
+unit: ''
+qualifiers:
+  brand: GeoTrust
+source_ids:
+- SRC-SSL_TONG_HOP_WEB_2026_04_05
+observed_at: '2026-04-05T22:15:36.005159+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ mục ''GeoTrust'': - GeoTrust True BusinessID Wildcard'
+approved_at: '2026-04-08T13:00:12.516216+07:00'
+approved_by: admin-batch

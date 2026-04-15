@@ -1,0 +1,25 @@
+claim_id: CLM-396C0E041464
+entity_id: ENT-PROD-SSL-011
+entity_type: ENT-PROD-SSL
+entity_name: GeoTrust True BusinessID with EV Multi-Domain
+attribute: issuance_time
+value: 7-10 ngày làm việc
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-CHUNG_CHI_SSL_GEOTRUST_QUICKSSL_PREMIUM_WILDCARD_2026_04_05
+- SRC-GEOTRUST_TRUE_BUSINESSID_WITH_EV_MULTI_DOMAIN_2026_04_05
+observed_at: '2026-04-14T16:53:51.189581+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ mục ''Quy trình đăng ký / Triển khai / Kích hoạt'': ''Quá
+  trình xác thực và cấp phát chứng chỉ sẽ mất từ 7-10 ngày làm việc.'''
+dual_vote:
+  status: DISAGREE
+  score: 0.5331
+  confidence: LOW
+  flag: human_review_required
+value_changed_from: 7-10 ngày
+value_changed_at: '2026-04-14T16:53:51.189629+07:00'

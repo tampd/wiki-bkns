@@ -1,0 +1,22 @@
+claim_id: CLM-825C383E1B32
+entity_id: ENT-PROD-SOFTWARE-IMUNIFY360
+entity_type: product
+entity_name: Imunify360
+attribute: target_audience
+value: Các cá nhân, doanh nghiệp quản trị server
+unit: null
+qualifiers: null
+source_ids:
+- SRC-BANG_GIA_IMUNIFY360_GIAI_PHAP_BAO_MAT_SERVER_BANG_AI_2026_04_05
+observed_at: '2026-04-14T17:11:48.165855+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: ''Phù hợp với: Các cá nhân, doanh nghiệp quản
+  trị server và muốn bảo vệ hệ thống khỏi các mối đe dọa như mã độc, tấn công từ hacker.'''
+dual_vote:
+  status: DISAGREE
+  score: 0.1912
+  confidence: LOW
+  flag: human_review_required

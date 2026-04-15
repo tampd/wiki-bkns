@@ -1,0 +1,24 @@
+claim_id: CLM-97A6A1496031
+entity_id: product.vps.adm.epyc_1
+entity_type: product_plan
+entity_name: EPYC 1
+attribute: price
+value: 940500
+unit: VND
+qualifiers:
+  billing_cycle: 6_months
+source_ids:
+- SRC-BANG_GIA_VPS_2026_04_05
+observed_at: '2026-04-14T16:06:14.452547+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ bảng giá VPS ADM, cột EPYC 1: Giá 6 Tháng 940,500'
+dual_vote:
+  status: DISAGREE
+  score: 0.2383
+  confidence: LOW
+  flag: human_review_required
+value_changed_from: 495000
+value_changed_at: '2026-04-14T16:06:14.452609+07:00'

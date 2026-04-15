@@ -1,0 +1,24 @@
+claim_id: CLM-22C60542B045
+entity_id: ENT-PROD-SSL.rapidssl
+entity_type: product
+entity_name: RapidSSL Certificate
+attribute: description
+value: RapidSSL Certificate là một chứng chỉ bảo mật SSL thuộc phân khúc giá rẻ của
+  DigiCert, thực hiện xác thực qua tên miền (Domain Validation - DV).
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-RAPIDSSL_CERTIFICATE_CHUNG_CHI_SSL_XAC_THUC_TEN_MIEN_DV_2026_04_05
+observed_at: '2026-04-14T16:57:24.716620+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: '• Dịch vụ này là gì: RapidSSL Certificate là một chứng chỉ bảo mật
+  SSL thuộc phân khúc giá rẻ của DigiCert, thực hiện xác thực qua tên miền (Domain
+  Validation - DV).'
+dual_vote:
+  status: DISAGREE
+  score: 0.3892
+  confidence: LOW
+  flag: human_review_required

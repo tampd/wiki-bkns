@@ -1,0 +1,23 @@
+claim_id: CLM-359806617C45
+entity_id: ENT-PROD-SOFTWARE-LITESPEED
+entity_type: product
+entity_name: LiteSpeed Web Server
+attribute: architecture
+value: hướng sự kiện
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-LITESPEED_WEB_SERVER_TINH_NANG_PHIEN_BAN_VA_SO_SANH_2026_04_05
+observed_at: '2026-04-14T12:20:31.085547+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: Điểm chính: Hiệu suất cao hơn Apache, kiến
+  trúc hướng sự kiện, tương thích với các tính năng của Apache, có sẵn plugin LSCache,
+  và tích hợp các tính năng bảo mật.'
+dual_vote:
+  status: DISAGREE
+  score: 0.0
+  confidence: LOW
+  flag: human_review_required

@@ -1,0 +1,19 @@
+claim_id: CLM-6BEA2AE1FD98
+entity_id: ENT-PROD-BACKUP-001
+entity_type: service
+entity_name: Dịch vụ Backup Dữ liệu
+attribute: purpose
+value: Phục hồi dữ liệu khi hệ thống gốc gặp sự cố như lỗi phần cứng, tấn công mạng,
+  thiên tai hoặc lỗi do con người
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_BACKUP_DU_LIEU_SAO_LUU_VA_PHUC_HOI_DU_LIEU_UY_TIN_2026_04_13
+observed_at: '2026-04-13T22:14:37.630186+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Mô tả dịch vụ: ''Mục đích chính là để phục hồi dữ liệu khi
+  hệ thống gốc gặp sự cố như lỗi phần cứng, tấn công mạng, thiên tai hoặc lỗi do con
+  người, giúp giảm thiểu thiệt hại và đảm bảo hoạt động kinh doanh không bị gián đoạn.'''

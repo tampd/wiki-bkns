@@ -1,0 +1,20 @@
+claim_id: CLM-HOST-SEO-PRICE
+entity_id: product.hosting.seo.start
+entity_type: product_plan
+entity_name: Giá khởi điểm
+attribute: monthly_price
+value: 189000
+unit: VND
+qualifiers:
+  billing_cycle: month
+source_ids:
+- SRC-SEO_HOSTING_WEB_2026_04_05
+- SRC-DICH_VU_HOSTING_SEO_TOI_UU_WEBSITE_CHO_CONG_CU_TIM_KIEM_2026_04_04
+observed_at: '2026-04-05T22:12:42.253946+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: approved
+risk_class: high
+compiler_note: 'Trích từ Bảng giá: ''| Giá khởi điểm | 189.000đ/tháng |'''
+approved_at: '2026-04-08T13:00:11.721200+07:00'
+approved_by: admin-batch

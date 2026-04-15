@@ -7,12 +7,14 @@ value: Đề xuất lộ trình chuyển đổi số
 unit: ''
 qualifiers: {}
 source_ids:
-- SRC-DTI_WEB_2026_04_05
+  - SRC-DTI_WEB_2026_04_05
 observed_at: '2026-04-05T21:58:28.005097+07:00'
 valid_from: '2026-04-05'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
 compiler_note: 'Trích từ mục Đặc điểm: ''- Đề xuất lộ trình chuyển đổi số'''
-approved_at: '2026-04-07T13:00:16.086272+07:00'
+approved_at: '2026-04-08T13:00:15.919464+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.423Z'

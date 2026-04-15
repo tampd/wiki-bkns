@@ -1,0 +1,22 @@
+claim_id: CLM-78A7CAE971F8
+entity_id: ENT-PROD-HOSTING
+entity_type: product_family
+entity_name: Hosting Giá Rẻ
+attribute: starting_price
+value: 5700
+unit: VND
+qualifiers:
+  billing_cycle: month
+source_ids:
+- SRC-HOSTING_GIA_RE_BANG_GIA_VA_THONG_SO_KY_THUAT_TAI_BKNS_2026_04_05
+observed_at: '2026-04-14T12:12:07.437224+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ mục ''Điểm chính'': Giá từ 5.700đ/tháng'
+dual_vote:
+  status: DISAGREE
+  score: 0.519
+  confidence: LOW
+  flag: human_review_required

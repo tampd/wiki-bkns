@@ -7,12 +7,14 @@ value: 24/7
 unit: ''
 qualifiers: {}
 source_ids:
-- SRC-SEO_HOSTING_WEB_2026_04_05
+  - SRC-SEO_HOSTING_WEB_2026_04_05
 observed_at: '2026-04-05T22:12:42.250491+07:00'
 valid_from: '2026-04-05'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
 compiler_note: 'Trích từ phần Đặc điểm nổi bật: ''Hỗ trợ kỹ thuật 24/7'''
-approved_at: '2026-04-07T13:00:12.498145+07:00'
+approved_at: '2026-04-08T13:00:11.743886+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.083Z'

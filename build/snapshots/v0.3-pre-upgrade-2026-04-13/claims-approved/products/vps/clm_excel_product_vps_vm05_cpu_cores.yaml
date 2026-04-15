@@ -1,0 +1,16 @@
+claim_id: CLM-EXCEL-product_vps_vm05-cpu_cores
+entity_id: product.vps.vm05
+entity_type: product_plan
+entity_name: Cloud VPS VM VM05
+attribute: cpu_cores
+value: 4 Cores
+confidence: ground_truth
+review_state: approved
+risk_class: verified
+source_ids:
+- EXCEL-BANGGIA-BKNS-2026
+observed_at: '2026-04-07T15:46:04.873903+07:00'
+valid_from: '2026-04-07'
+approved_at: '2026-04-07T15:46:04.873903+07:00'
+approved_by: excel-direct-injection
+compiler_note: Excel VPS sheet, 2. VPS VM, plan VM05, Số nhân CPU

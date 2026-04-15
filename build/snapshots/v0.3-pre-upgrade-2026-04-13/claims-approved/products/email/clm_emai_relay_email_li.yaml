@@ -1,0 +1,20 @@
+claim_id: CLM-EMAI-RELAY-EMAIL_LI
+entity_id: product.email.relay.bk_relay01
+entity_type: product_plan
+entity_name: BK-RELAY04
+attribute: email_limit_daily
+value: 200
+unit: email
+qualifiers: null
+source_ids:
+- SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_VA_TIN_CAY_2026_04_06
+observed_at: '2026-04-07T00:23:42.891155+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: medium
+compiler_note: 'Trích từ bảng giá: | Số lượng email gửi ra/giờ | 200 |'
+value_changed_from: 3000
+value_changed_at: '2026-04-07T00:23:42.891173+07:00'
+approved_at: '2026-04-08T13:00:10.370704+07:00'
+approved_by: admin-batch

@@ -1,0 +1,24 @@
+claim_id: CLM-40DAE2F29159
+entity_id: product.server_management.bkns.basic
+entity_type: product_plan
+entity_name: Quản trị Máy chủ - Cơ bản
+attribute: has_feature
+value: Chuyển đổi site
+unit: null
+qualifiers:
+  included: false
+source_ids:
+- SRC-DICH_VU_QUAN_TRI_MAY_CHU_TRON_GOI_TAI_BKNS_2026_04_05
+observed_at: '2026-04-14T17:14:28.669426+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng giá, dòng Chuyển đổi site, cột Cơ bản: ❌'
+dual_vote:
+  status: DISAGREE
+  score: 0.5497
+  confidence: LOW
+  flag: human_review_required
+value_changed_from: Cấu hình Server
+value_changed_at: '2026-04-14T17:14:28.669471+07:00'

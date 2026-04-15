@@ -1,0 +1,18 @@
+claim_id: CLM-HOST-WINDOWS-DISK_SPA
+entity_id: product.hosting.windows.bksw01
+entity_type: product_plan
+entity_name: BKSW01
+attribute: disk_space
+value: 1
+unit: GB
+qualifiers: {}
+source_ids:
+- SRC-DICH_VU_HOSTING_WINDOWS_TAI_BKNS_2026_04_06
+observed_at: '2026-04-07T00:08:17.773859+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ bảng giá: | Disk space | 1 GB |'
+approved_at: '2026-04-08T13:00:11.787950+07:00'
+approved_by: admin-batch

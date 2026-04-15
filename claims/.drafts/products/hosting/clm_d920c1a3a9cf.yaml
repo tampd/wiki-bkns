@@ -1,0 +1,19 @@
+claim_id: CLM-D920C1A3A9CF
+entity_id: product.hosting.seo
+entity_type: product_line
+entity_name: Hosting SEO
+attribute: has_feature
+value: Tích hợp Redis
+unit: ''
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_HOSTING_SEO_TOI_UU_WEBSITE_CHO_CONG_CU_TIM_KIEM_2026_04_13
+observed_at: '2026-04-13T22:22:22.944618+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục ''Tính năng / Thành phần'': ''• Redis: Tích hợp sẵn Redis
+  để tăng tốc độ xử lý dữ liệu.'''
+value_changed_from: Hỗ trợ cài đặt OneClick
+value_changed_at: '2026-04-13T22:22:22.944671+07:00'

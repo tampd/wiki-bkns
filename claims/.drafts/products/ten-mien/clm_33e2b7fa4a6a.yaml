@@ -1,0 +1,23 @@
+claim_id: CLM-33E2B7FA4A6A
+entity_id: ENT-PROD-DOMAIN.INFO
+entity_type: product_plan
+entity_name: .info
+attribute: original_registration_price
+value: 890000
+unit: VND
+qualifiers:
+  billing_cycle: year
+source_ids:
+- SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_05
+observed_at: '2026-04-14T16:43:52.773861+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ Chương trình khuyến mại: .info: Giá KM `170.000` (giá gốc
+  `890.000`)'
+dual_vote:
+  status: DISAGREE
+  score: 0.5466
+  confidence: LOW
+  flag: human_review_required

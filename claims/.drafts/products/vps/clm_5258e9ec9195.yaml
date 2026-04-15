@@ -1,0 +1,17 @@
+claim_id: CLM-5258E9EC9195
+entity_id: product.vps.bkmisa
+entity_type: product
+entity_name: BK MISA
+attribute: data_availability_note
+value: Bảng giá cho 'Khách hàng chưa sử dụng Misa SME Offline' không có nội dung.
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-CLOUD_VPS_BK_MISA_GIAI_PHAP_LUU_TRU_KE_TOAN_SO_2026_04_13
+observed_at: '2026-04-13T22:05:38.542714+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ ghi chú: ⚠️ CHƯA TRÍCH XUẤT ĐỦ: Bảng giá cho "Khách hàng
+  chưa sử dụng Misa SME Offline" không có nội dung trong trang nguồn.'

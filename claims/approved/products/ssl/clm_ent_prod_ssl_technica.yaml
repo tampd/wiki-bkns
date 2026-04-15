@@ -7,13 +7,14 @@ value: 24/7
 unit: null
 qualifiers: {}
 source_ids:
-- SRC-RAPIDSSL_WILDCARD_CERTIFICATE_THONG_TIN_VA_BANG_GIA_TAI_BK_2026_04_06
+  - SRC-RAPIDSSL_WILDCARD_CERTIFICATE_THONG_TIN_VA_BANG_GIA_TAI_BK_2026_04_06
 observed_at: '2026-04-07T00:58:40.439904+07:00'
 valid_from: '2026-04-07'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ Chính sách / Điều khoản / Lưu ý: Hỗ trợ: Hỗ trợ kỹ thuật
-  24/7.'
-approved_at: '2026-04-07T13:00:13.232540+07:00'
+compiler_note: 'Trích từ Chính sách / Điều khoản / Lưu ý: Hỗ trợ: Hỗ trợ kỹ thuật 24/7.'
+approved_at: '2026-04-08T13:00:12.732240+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.493Z'

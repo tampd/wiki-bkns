@@ -1,0 +1,24 @@
+claim_id: CLM-4D54E57AD6F3
+entity_id: ENT-PROD-VPS.vps_gia_re
+entity_type: product
+entity_name: Dịch vụ VPS Giá Rẻ
+attribute: description
+value: Dịch vụ cho thuê máy chủ ảo (VPS) với chi phí thấp, cung cấp tài nguyên độc
+  lập và quyền quản trị toàn phần cho người dùng.
+unit: ''
+qualifiers: {}
+source_ids:
+- SRC-DICH_VU_VPS_GIA_RE_MAY_CHU_AO_CAU_HINH_ON_INH_2026_04_05
+observed_at: '2026-04-14T16:11:54.088111+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tóm tắt nhanh: Dịch vụ này là gì: Dịch vụ cho thuê máy
+  chủ ảo (VPS) với chi phí thấp, cung cấp tài nguyên độc lập và quyền quản trị toàn
+  phần cho người dùng.'
+dual_vote:
+  status: DISAGREE
+  score: 0.5846
+  confidence: LOW
+  flag: human_review_required

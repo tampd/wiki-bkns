@@ -1,0 +1,29 @@
+claim_id: CLM-C0DDB3612CA3
+entity_id: ENT-PROD-VPS
+entity_type: product_service
+entity_name: VPS N8N – AI
+attribute: service_description
+value: Dịch vụ VPS (Máy chủ ảo) được cài đặt sẵn công cụ tự động hóa N8N, giúp kết
+  nối các ứng dụng và tự động hóa các quy trình công việc mà không cần viết code.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-TRANNING_KINH_DOANH_HOSTING_EMAIL_2026_04_13
+- SRC-DICH_VU_THUE_CLOUD_VPS_SSD_GIA_RE_TAI_BKNS_2026_04_05
+- SRC-VPS_N8N_AI_DICH_VU_TU_ONG_HOA_QUY_TRINH_TAI_BKNS_2026_04_13
+observed_at: '2026-04-14T16:21:40.426688+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục ''Tóm tắt nhanh'': • Dịch vụ này là gì: Dịch vụ VPS (Máy
+  chủ ảo) được cài đặt sẵn công cụ tự động hóa N8N, giúp kết nối các ứng dụng và tự
+  động hóa các quy trình công việc mà không cần viết code.'
+dual_vote:
+  status: DISAGREE
+  score: 0.5
+  confidence: LOW
+  flag: human_review_required
+value_changed_from: Dịch vụ cho thuê máy chủ ảo (Cloud VPS) được xây dựng trên nền
+  tảng ảo hóa KVM và sử dụng ổ cứng SSD cho hiệu suất cao.
+value_changed_at: '2026-04-14T16:21:40.426718+07:00'

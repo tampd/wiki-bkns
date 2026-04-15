@@ -1,0 +1,17 @@
+claim_id: CLM-24199177B8FE
+entity_id: ENT-PROD-DOMAIN
+entity_type: product_offering
+entity_name: Dịch vụ Tên miền
+attribute: pricing_note
+value: Giá được niêm yết bằng VNĐ và chưa bao gồm VAT.
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_13
+observed_at: '2026-04-13T21:36:58.128501+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ phần Gói dịch vụ và bảng giá: ''Lưu ý: Giá được niêm yết
+  bằng VNĐ và chưa bao gồm VAT.'''

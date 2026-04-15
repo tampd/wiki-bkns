@@ -1,0 +1,24 @@
+claim_id: CLM-E977A3B80234
+entity_id: product.ssl.comodo_instantssl_pro
+entity_type: product_plan
+entity_name: InstantSSL Pro (OV)
+attribute: target_audience
+value: Các trang web thương mại điện tử và các công ty, doanh nghiệp muốn tăng độ
+  tin cậy và xác thực danh tính tổ chức của mình
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-INSTANTSSL_PRO_OV_CHUNG_CHI_SSL_XAC_THUC_TO_CHUC_CUA_COM_2026_04_13
+observed_at: '2026-04-14T16:33:35.235093+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tóm tắt nhanh: • Phù hợp với: Các trang web thương mại
+  điện tử và các công ty, doanh nghiệp muốn tăng độ tin cậy và xác thực danh tính
+  tổ chức của mình.'
+dual_vote:
+  status: DISAGREE
+  score: 0.35
+  confidence: LOW
+  flag: human_review_required

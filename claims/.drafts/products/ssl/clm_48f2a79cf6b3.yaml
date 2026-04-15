@@ -1,0 +1,21 @@
+claim_id: CLM-48F2A79CF6B3
+entity_id: product.ssl.rapidssl_wildcard
+entity_type: product
+entity_name: RapidSSL Wildcard Certificate
+attribute: is_about
+value: https://ssl.bkns.vn/ssl-bao-mat/rapidssl-wildcard
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-RAPIDSSL_WILDCARD_CERTIFICATE_THONG_TIN_VA_BANG_GIA_TAI_BK_2026_04_05
+observed_at: '2026-04-14T16:39:47.253342+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ thông tin nguồn: • URL: https://ssl.bkns.vn/ssl-bao-mat/rapidssl-wildcard'
+dual_vote:
+  status: DISAGREE
+  score: 0.5213
+  confidence: LOW
+  flag: human_review_required

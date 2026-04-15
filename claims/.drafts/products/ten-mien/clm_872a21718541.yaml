@@ -1,0 +1,22 @@
+claim_id: CLM-872A21718541
+entity_id: ENT-PROD-DOMAIN.QT.INFO
+entity_type: product_plan
+entity_name: .info
+attribute: registration_fee
+value: 170000
+unit: VND
+qualifiers:
+  billing_cycle: year
+  promotion: true
+  promotion_start_date: '2025-01-06'
+  original_price: 890000
+source_ids:
+- SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_13
+observed_at: '2026-04-13T21:36:58.162958+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ bảng giá tên miền Quốc tế, dòng ''.info'', cột ''Phí đăng
+  ký mới'' và Ghi chú khuyến mại: ''* .info: Áp dụng 06/01/2025, giá khuyến mại 170.000đ
+  (giá gốc 890.000đ).'''

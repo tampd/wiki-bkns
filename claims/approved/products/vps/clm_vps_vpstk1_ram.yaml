@@ -7,12 +7,14 @@ value: 1
 unit: GB
 qualifiers: null
 source_ids:
-- SRC-DICH_VU_VPS_SIEU_TIET_KIEM_VPS_SIEU_RE_TAI_BKNS_2026_04_06
+  - SRC-DICH_VU_VPS_SIEU_TIET_KIEM_VPS_SIEU_RE_TAI_BKNS_2026_04_06
 observed_at: '2026-04-07T00:18:36.295821+07:00'
 valid_from: '2026-04-07'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
 compiler_note: 'Trích từ bảng giá, dòng ''RAM'', cột ''VPSTK1'': ''01 GB'''
-approved_at: '2026-04-07T13:00:15.334780+07:00'
+approved_at: '2026-04-08T13:00:15.183169+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.799Z'

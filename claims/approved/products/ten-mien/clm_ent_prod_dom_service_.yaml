@@ -3,24 +3,21 @@ entity_id: ENT-PROD-DOMAIN
 entity_type: product
 entity_name: Dịch vụ Tên miền BKNS
 attribute: service_limitation
-value: Dịch vụ đăng ký, duy trì và chuyển đổi tên miền (domain name) cho các website,
-  bao gồm cả tên miền Việt Nam (.vn) và tên miền quốc tế (.com, .net, .org, ...).
+value: Dịch vụ đăng ký, duy trì và chuyển đổi tên miền (domain name) cho các website, bao gồm cả tên miền Việt Nam (.vn) và tên miền quốc tế (.com, .net, .org, ...).
 unit: null
 qualifiers: {}
 source_ids:
-- SRC-BAO_VE_TEN_MIEN_CAP_CAO_NHAT_GIAI_PHAP_AN_TOAN_TUYET_OI_2026_04_04
-- SRC-DICH_VU_ANG_KY_TEN_MIEN_VIET_NAM_VA_QUOC_TE_TAI_BKNS_2026_04_06
+  - SRC-BAO_VE_TEN_MIEN_CAP_CAO_NHAT_GIAI_PHAP_AN_TOAN_TUYET_OI_2026_04_04
+  - SRC-DICH_VU_ANG_KY_TEN_MIEN_VIET_NAM_VA_QUOC_TE_TAI_BKNS_2026_04_06
 observed_at: '2026-04-06T23:54:34.798765+07:00'
 valid_from: '2026-04-04'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ mục Tóm tắt nhanh: Dịch vụ này là gì: Dịch vụ đăng ký, duy
-  trì và chuyển đổi tên miền (domain name) cho các website, bao gồm cả tên miền Việt
-  Nam (.vn) và tên miền quốc tế (.com, .net, .org, ...).'
-value_changed_from: Mọi thay đổi trên tên miền (chuyển nhượng, sửa DNS, xóa, thay
-  đổi thông tin) sẽ bị khóa và cần thực hiện quy trình xác thực đa bên để mở khóa
-  tạm thời.
+compiler_note: 'Trích từ mục Tóm tắt nhanh: Dịch vụ này là gì: Dịch vụ đăng ký, duy trì và chuyển đổi tên miền (domain name) cho các website, bao gồm cả tên miền Việt Nam (.vn) và tên miền quốc tế (.com, .net, .org, ...).'
+value_changed_from: Mọi thay đổi trên tên miền (chuyển nhượng, sửa DNS, xóa, thay đổi thông tin) sẽ bị khóa và cần thực hiện quy trình xác thực đa bên để mở khóa tạm thời.
 value_changed_at: '2026-04-06T23:54:34.798790+07:00'
-approved_at: '2026-04-07T13:00:10.657128+07:00'
+approved_at: '2026-04-08T13:00:09.756540+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.640Z'

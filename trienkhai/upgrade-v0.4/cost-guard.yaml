@@ -1,0 +1,37 @@
+---
+artifact: cost-guard
+part: 01
+created: 2026-04-13
+purpose: |
+  Cấu hình ngưỡng chi phí cho v0.4 testing. Pipeline có thể đọc file này
+  (qua tools/check_cost_budget.py) để fail-fast khi chạm ngưỡng.
+
+# Tracking spend kể từ ngày bắt đầu v0.4 (không cộng baseline v0.3 đã chi).
+v04_start_date: "2026-04-13"
+
+budgets:
+  vertex_ai:
+    monthly_hard_cap_usd: 20.00
+    alert_threshold_pct: 75              # 15.00 USD → trigger alert
+    project: bkns-agent-wiki              # update theo .env GOOGLE_CLOUD_PROJECT
+    cloud_console_budget_id: TBD         # điền sau khi setup ở Cloud Console
+    cloud_setup_required: true
+
+  openai:
+    monthly_hard_cap_usd: 10.00
+    alert_threshold_pct: 75              # 7.50 USD → alert
+    org_id: TBD                          # điền khi setup PART 05
+    dashboard_setup_required: true
+
+per_build_targets:
+  v03_baseline_per_build_usd: 6.50      # theo INDEX
+  v04_target_per_build_usd: 12.00       # 2 model dual-vote
+  v04_hard_max_per_build_usd: 15.00     # circuit breaker
+
+alerts:
+  channel: telegram
+  bot_token_env: TELEGRAM_BOT_TOKEN
+  chat_id_env: ADMIN_TELEGRAM_ID
+  alert_at_pct: [50, 75, 90, 100]
+
+manual_setup_runbook: trienkhai/upgrade-v0.4/cost-guard-runbook.md

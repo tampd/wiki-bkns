@@ -1,0 +1,23 @@
+claim_id: CLM-D7204E58FD0D
+entity_id: product.hosting.windows
+entity_type: product
+entity_name: Hosting Windows
+attribute: supported_language
+value: PHP
+unit: ''
+qualifiers: {}
+source_ids:
+- SRC-DICH_VU_HOSTING_WINDOWS_TAI_BKNS_2026_04_05
+observed_at: '2026-04-14T12:10:47.041822+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tính năng / Thành phần: ''Hỗ trợ ngôn ngữ: ASP.NET, PHP.'''
+dual_vote:
+  status: PARTIAL
+  score: 0.6404
+  confidence: MEDIUM
+  flag: needs_review
+value_changed_from: ASP.NET
+value_changed_at: '2026-04-14T12:10:47.041851+07:00'

@@ -1,0 +1,20 @@
+claim_id: CLM-BF41AEFA9023
+entity_id: ENT-PROD-SSL-002
+entity_type: product
+entity_name: GeoTrust QuickSSL Premium Wildcard
+attribute: target_audience
+value: Các doanh nghiệp cần một giải pháp nhanh chóng, tiết kiệm chi phí để bảo mật
+  trang web của họ, bao gồm cả các tên miền phụ, mà không cần thủ tục giấy tờ phức
+  tạp.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-CHUNG_CHI_SSL_GEOTRUST_QUICKSSL_PREMIUM_WILDCARD_2026_04_13
+observed_at: '2026-04-13T21:58:22.295233+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ mục Tóm tắt nhanh: ''• Phù hợp với: Các doanh nghiệp cần
+  một giải pháp nhanh chóng, tiết kiệm chi phí để bảo mật trang web của họ, bao gồm
+  cả các tên miền phụ, mà không cần thủ tục giấy tờ phức tạp.'''

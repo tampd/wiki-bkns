@@ -1,0 +1,23 @@
+claim_id: CLM-A5CA9E216439
+entity_id: ENT-PROD-DOMAIN.us
+entity_type: product_variant
+entity_name: Tên miền .us
+attribute: registration_price
+value: 340000
+unit: VND
+qualifiers:
+  billing_cycle: year
+source_ids:
+- SRC-DICH_VU_ANG_KY_TEN_MIEN_VIET_NAM_VA_QUOC_TE_TAI_BKNS_2026_04_05
+observed_at: '2026-04-14T16:47:42.507142+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ Bảng giá Tên miền Quốc tế: | .us | Miễn phí | 340.000 | 380.000
+  | 380.000 |'
+dual_vote:
+  status: PARTIAL
+  score: 0.6047
+  confidence: MEDIUM
+  flag: needs_review

@@ -1,0 +1,31 @@
+claim_id: CLM-E760675B3807
+entity_id: product.email.cloud_email_server
+entity_type: product
+entity_name: Cloud Email Server
+attribute: target_customer
+value: Doanh nghiệp cần một hệ thống email riêng theo tên miền, yêu cầu tính bảo mật
+  cao, hoạt động ổn định, có toàn quyền quản trị và không giới hạn số lượng tài khoản
+  người dùng.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_13
+- SRC-DICH_VU_CLOUD_EMAIL_SERVER_AN_TOAN_HIEU_SUAT_CAO_2026_04_05
+- SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_05
+observed_at: '2026-04-14T17:04:23.401085+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tóm tắt nhanh: ''Phù hợp với: Doanh nghiệp cần một hệ
+  thống email riêng theo tên miền, yêu cầu tính bảo mật cao, hoạt động ổn định, có
+  toàn quyền quản trị và không giới hạn số lượng tài khoản người dùng.'''
+value_changed_from: Các doanh nghiệp cần một hệ thống email chuyên nghiệp, bảo mật,
+  ổn định với khả năng quản trị riêng.
+value_changed_at: '2026-04-14T17:04:23.401118+07:00'
+parent_entity_id: ENT-PROD-EMAIL
+dual_vote:
+  status: DISAGREE
+  score: 0.4298
+  confidence: LOW
+  flag: human_review_required

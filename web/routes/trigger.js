@@ -31,7 +31,7 @@ function triggerRoute(router, pipelineRunner) {
       });
     } catch (err) {
       console.error('[TRIGGER] Error:', err);
-      res.status(500).json({ error: err.message || 'Trigger failed' });
+      res.status(500).json({ error: 'Trigger failed' });
     }
   });
 }

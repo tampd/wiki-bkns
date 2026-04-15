@@ -8,13 +8,14 @@ unit: null
 qualifiers:
   supported: false
 source_ids:
-- SRC-DICH_VU_CLOUD_VPS_SEO_MAY_CHU_AO_TOI_UU_CHO_SEO_2026_04_06
+  - SRC-DICH_VU_CLOUD_VPS_SEO_MAY_CHU_AO_TOI_UU_CHO_SEO_2026_04_06
 observed_at: '2026-04-07T00:03:36.861897+07:00'
 valid_from: '2026-04-07'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: medium
-compiler_note: 'Trích xuất từ bảng giá, dòng ''DirectAdmin'', cột ''SEO 01'': Không
-  hỗ trợ'
-approved_at: '2026-04-07T13:00:14.157979+07:00'
+compiler_note: 'Trích xuất từ bảng giá, dòng ''DirectAdmin'', cột ''SEO 01'': Không hỗ trợ'
+approved_at: '2026-04-08T13:00:13.675093+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.660Z'

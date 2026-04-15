@@ -41,20 +41,13 @@ async function loginHandler(req, res) {
   }
 
   const hashedPassword = process.env.ADMIN_PASSWORD_HASH;
-  const plainPassword = process.env.ADMIN_PASSWORD;
 
-  let valid = false;
-
-  if (hashedPassword) {
-    // Preferred: compare against bcrypt hash
-    valid = await bcrypt.compare(password, hashedPassword);
-  } else if (plainPassword) {
-    // Fallback for MVP: plain text comparison
-    valid = password === plainPassword;
-  } else {
-    console.error('[AUTH] Neither ADMIN_PASSWORD_HASH nor ADMIN_PASSWORD configured');
+  if (!hashedPassword) {
+    console.error('[AUTH] ADMIN_PASSWORD_HASH not configured. Run: node scripts/hash-password.js');
     return res.status(500).json({ error: 'Server configuration error' });
   }
+
+  const valid = await bcrypt.compare(password, hashedPassword);
 
   if (!valid) {
     return res.status(401).json({ error: 'Sai mật khẩu' });

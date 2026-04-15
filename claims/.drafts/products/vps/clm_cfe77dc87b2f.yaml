@@ -1,0 +1,22 @@
+claim_id: CLM-CFE77DC87B2F
+entity_id: ENT-PROD-VPS
+entity_type: product
+entity_name: Storage VPS
+attribute: feature.bandwidth
+value: Không giới hạn
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-STORAGE_VPS_MAY_CHU_AO_LUU_TRU_DUNG_LUONG_CAO_2026_04_13
+observed_at: '2026-04-14T16:16:09.800606+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tính năng / Thành phần: • Băng thông không giới hạn:
+  Không có giới hạn về lưu lượng truyền tải dữ liệu.'
+dual_vote:
+  status: PARTIAL
+  score: 0.7558
+  confidence: MEDIUM
+  flag: needs_review

@@ -1,0 +1,19 @@
+claim_id: CLM-F85362AC25CA
+entity_id: ENT-PROD-BACKUP-001
+entity_type: service
+entity_name: Dịch vụ Backup Dữ liệu
+attribute: pricing_information
+value: Chi phí dịch vụ phụ thuộc vào dung lượng lưu trữ, tần suất backup và các yêu
+  cầu cụ thể của khách hàng.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_BACKUP_DU_LIEU_SAO_LUU_VA_PHUC_HOI_DU_LIEU_UY_TIN_2026_04_13
+observed_at: '2026-04-13T22:14:37.625743+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: ''Điều kiện/giới hạn nổi bật (nếu có): Chi
+  phí dịch vụ phụ thuộc vào dung lượng lưu trữ, tần suất backup và các yêu cầu cụ
+  thể của khách hàng.'''

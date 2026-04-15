@@ -1,0 +1,17 @@
+claim_id: CLM-CB0D78FBF871
+entity_id: product.software.directadmin.standard
+entity_type: product_plan
+entity_name: DirectAdmin Standard
+attribute: target_customer
+value: Đơn vị cung cấp dịch vụ chuyên nghiệp, thiết kế web, kinh doanh Hosting.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-BANG_GIA_BAN_QUYEN_PHAN_MEM_QUAN_TRI_SERVER_DIRECTADMIN_2026_04_13
+observed_at: '2026-04-13T21:39:20.594718+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng giá: ''| Đối tượng phù hợp | ... | Đơn vị cung cấp dịch
+  vụ chuyên nghiệp, thiết kế web, kinh doanh Hosting. |'''

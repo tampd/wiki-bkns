@@ -1,0 +1,16 @@
+claim_id: CLM-8B6D66B34A4C
+entity_id: ENT-PROD-EMAIL
+entity_type: product
+entity_name: Dịch vụ Email
+attribute: price_vat_inclusive
+value: false
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-BANG_GIA_EMAIL_2026_04_13
+observed_at: '2026-04-13T21:41:46.253683+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ tiêu đề: BẢNG GIÁ EMAIL ( Chưa bao gồm VAT)'

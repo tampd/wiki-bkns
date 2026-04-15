@@ -1,0 +1,17 @@
+claim_id: CLM-5E946442B8E4
+entity_id: product.server_management.bkns.advanced
+entity_type: product_plan
+entity_name: Quản trị Máy chủ - Nâng cao
+attribute: monthly_price
+value: 990000
+unit: VND
+qualifiers:
+  billing_cycle: month
+source_ids:
+- SRC-DICH_VU_QUAN_TRI_MAY_CHU_TRON_GOI_TAI_BKNS_2026_04_13
+observed_at: '2026-04-13T22:26:51.288235+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ bảng giá: ''| Đơn giá/tháng | ... | 990.000đ |'''

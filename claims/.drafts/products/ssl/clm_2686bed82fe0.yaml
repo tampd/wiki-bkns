@@ -1,0 +1,23 @@
+claim_id: CLM-2686BED82FE0
+entity_id: ENT-PROD-SSL-POSITIVE-WILDCARD-DV
+entity_type: product
+entity_name: PositiveSSL Wildcard (DV)
+attribute: mobile_compatibility
+value: true
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-POSITIVESSL_WILDCARD_DV_CHUNG_CHI_SSL_GIA_RE_2026_04_05
+observed_at: '2026-04-14T16:38:10.389122+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ mục Mô tả dịch vụ: ...và khả năng tương thích với thiết bị
+  di động, Comodo Positive SSL Wildcard phù hợp cho hầu hết các trang web thương mại
+  điện tử nhẹ.'
+dual_vote:
+  status: DISAGREE
+  score: 0.4561
+  confidence: LOW
+  flag: human_review_required

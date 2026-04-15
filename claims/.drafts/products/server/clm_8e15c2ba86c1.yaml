@@ -1,0 +1,25 @@
+claim_id: CLM-8E15C2BA86C1
+entity_id: ENT-PROD-BACKUP
+entity_type: service
+entity_name: Backup Service
+attribute: monthly_price
+value: 200000
+unit: VND
+qualifiers:
+  price_type: maximum
+source_ids:
+- SRC-BKNS_CAMNANG_HOSTING_DOT4_2026_04_05
+observed_at: '2026-04-14T12:05:27.824105+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ BK1: chi phí 100-200K/tháng nhưng tránh mất hàng trăm triệu
+  doanh thu[1].'
+dual_vote:
+  status: DISAGREE
+  score: 0.0691
+  confidence: LOW
+  flag: human_review_required
+value_changed_from: 100000
+value_changed_at: '2026-04-14T12:05:27.824150+07:00'

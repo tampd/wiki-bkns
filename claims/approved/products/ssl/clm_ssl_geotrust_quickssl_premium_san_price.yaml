@@ -8,14 +8,15 @@ unit: VND
 qualifiers:
   billing_cycle: year
 source_ids:
-- SRC-GEOTRUST_QUICKSSL_PREMIUM_SAN_2026_04_04
-- SRC-GEOTRUST_QUICKSSL_PREMIUM_SAN_2026_04_06
+  - SRC-GEOTRUST_QUICKSSL_PREMIUM_SAN_2026_04_04
+  - SRC-GEOTRUST_QUICKSSL_PREMIUM_SAN_2026_04_06
 observed_at: '2026-04-07T00:29:33.296267+07:00'
 valid_from: '2026-04-04'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: high
-compiler_note: 'Trích từ mục Gói dịch vụ và bảng giá: | Giá tại BKNS | 2.912.000đ/năm
-  |'
-approved_at: '2026-04-07T13:00:13.634778+07:00'
+compiler_note: 'Trích từ mục Gói dịch vụ và bảng giá: | Giá tại BKNS | 2.912.000đ/năm |'
+approved_at: '2026-04-08T13:00:13.143021+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.550Z'

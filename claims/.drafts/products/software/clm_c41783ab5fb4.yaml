@@ -1,0 +1,17 @@
+claim_id: CLM-C41783AB5FB4
+entity_id: ENT-PROD-SOFTWARE-VBULLETIN
+entity_type: product
+entity_name: Bản quyền vBulletin
+attribute: tax_policy
+value: Bản quyền phần mềm không chịu thuế.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-BAN_QUYEN_VBULLETIN_HE_QUAN_TRI_FORUM_MANG_XA_HOI_2026_04_13
+observed_at: '2026-04-13T21:35:38.786357+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Chính sách / Điều khoản / Lưu ý: • Bản quyền phần mềm
+  không chịu thuế.'

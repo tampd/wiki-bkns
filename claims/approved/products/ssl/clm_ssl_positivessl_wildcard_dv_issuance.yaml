@@ -7,13 +7,14 @@ value: 5
 unit: minutes
 qualifiers: {}
 source_ids:
-- SRC-POSITIVESSL_WILDCARD_DV_CHUNG_CHI_SSL_GIA_RE_2026_04_06
+  - SRC-POSITIVESSL_WILDCARD_DV_CHUNG_CHI_SSL_GIA_RE_2026_04_06
 observed_at: '2026-04-07T00:55:31.443866+07:00'
 valid_from: '2026-04-07'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: none
-compiler_note: 'Trích từ Tóm tắt nhanh: ''Cấp phát nhanh trong 5 phút'' và Thông số
-  kỹ thuật: ''Thời gian phát hành | 5 phút'''
-approved_at: '2026-04-07T13:00:13.970480+07:00'
+compiler_note: 'Trích từ Tóm tắt nhanh: ''Cấp phát nhanh trong 5 phút'' và Thông số kỹ thuật: ''Thời gian phát hành | 5 phút'''
+approved_at: '2026-04-08T13:00:13.486168+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.585Z'

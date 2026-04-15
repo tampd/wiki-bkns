@@ -1,0 +1,16 @@
+claim_id: CLM-D266D3A0D6CE
+entity_id: product.ssl.comodo_instantssl_ov
+entity_type: product
+entity_name: Chứng chỉ SSL InstantSSL (OV)
+attribute: server_license
+value: unlimited
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-CHUNG_CHI_SSL_INSTANTSSL_OV_2026_04_13
+observed_at: '2026-04-13T22:01:40.605882+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng Thông số kỹ thuật: ''Server cài đặt | Không giới hạn'''

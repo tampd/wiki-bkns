@@ -1,0 +1,21 @@
+claim_id: CLM-23B69FB6AFDC
+entity_id: product.vps.storage_2
+entity_type: product_plan
+entity_name: STORAGE VPS 2
+attribute: bandwidth
+value: unlimited
+unit: null
+qualifiers: null
+source_ids:
+- SRC-STORAGE_VPS_MAY_CHU_AO_LUU_TRU_DUNG_LUONG_CAO_2026_04_05
+observed_at: '2026-04-14T16:14:49.904426+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng giá: | STORAGE VPS 2 | ... | Không giới hạn |'
+dual_vote:
+  status: DISAGREE
+  score: 0.5676
+  confidence: LOW
+  flag: human_review_required

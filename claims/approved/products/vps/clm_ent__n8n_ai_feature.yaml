@@ -7,15 +7,16 @@ value: Cung cấp bảng điều khiển VPS để quản lý.
 unit: null
 qualifiers: {}
 source_ids:
-- SRC-VPS_N8N_AI_DICH_VU_TU_ONG_HOA_QUY_TRINH_TAI_BKNS_2026_04_06
+  - SRC-VPS_N8N_AI_DICH_VU_TU_ONG_HOA_QUY_TRINH_TAI_BKNS_2026_04_06
 observed_at: '2026-04-07T01:08:24.863106+07:00'
 valid_from: '2026-04-07'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ mục ''Tính năng / Thành phần'': • Bảng điều khiển: Cung cấp
-  bảng điều khiển VPS để quản lý.'
+compiler_note: 'Trích từ mục ''Tính năng / Thành phần'': • Bảng điều khiển: Cung cấp bảng điều khiển VPS để quản lý.'
 value_changed_from: Cài đặt sẵn N8N
 value_changed_at: '2026-04-07T01:08:24.863124+07:00'
-approved_at: '2026-04-07T13:00:14.122928+07:00'
+approved_at: '2026-04-08T13:00:13.634334+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.656Z'

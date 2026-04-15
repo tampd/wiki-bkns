@@ -18,6 +18,7 @@ from lib.config import (
     WIKI_DIR, BUILD_DIR, MODEL_FLASH, MAX_QUERY_COST_USD,
 )
 from lib.gemini import generate_with_cache
+from lib.fallback import generate_with_fallback, AllProvidersFailed
 from lib.logger import log_entry, log_query
 from lib.telegram import notify_skill, notify_error
 from lib.utils import (
@@ -98,14 +99,32 @@ def query(question: str, wiki_content: str = None) -> dict:
             temperature=0.2,
             max_output_tokens=4096,
         )
-    except Exception as e:
-        error_msg = f"Query error: {str(e)}"
-        log_entry("query-wiki", "error", error_msg, severity="high")
-        return {
-            "answer": f"Có lỗi xảy ra khi truy vấn: {str(e)}",
-            "cost_usd": 0,
-            "cache_hit_rate": 0,
-        }
+    except Exception as primary_err:
+        # Primary (Gemini Flash with implicit cache) failed.
+        # Fall back to the provider chain on a flat (non-cached) prompt so the
+        # user still gets an answer instead of a hard failure.
+        log_entry("query-wiki", "fallback",
+                  f"Primary Gemini Flash failed, trying fallback chain: {primary_err}",
+                  severity="medium")
+        flat_prompt = f"Tài liệu wiki BKNS:\n\n{wiki_content}\n\nCâu hỏi: {question}"
+        try:
+            result = generate_with_fallback(
+                prompt=flat_prompt,
+                skill="query-wiki",
+                system_instruction=SYSTEM_INSTRUCTION,
+                temperature=0.2,
+                max_output_tokens=4096,
+            )
+            # generate() doesn't report cache_hit_rate — set to 0
+            result.setdefault("cache_hit_rate", 0)
+        except AllProvidersFailed as e:
+            error_msg = f"All providers failed: {e}"
+            log_entry("query-wiki", "error", error_msg, severity="critical")
+            return {
+                "answer": "Hệ thống tạm thời không phản hồi. Vui lòng thử lại sau ít phút.",
+                "cost_usd": 0,
+                "cache_hit_rate": 0,
+            }
 
     answer = result["text"]
     cost = result.get("cost_usd", 0)

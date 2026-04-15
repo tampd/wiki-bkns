@@ -1,0 +1,23 @@
+claim_id: CLM-6AE5EFFF0310
+entity_id: ENT-COMPANY-001
+entity_type: company
+entity_name: BKNS
+attribute: internal_document_update_date
+value: '2026-03-01'
+unit: ''
+qualifiers: {}
+source_ids:
+- SRC-BKNS_CAMNANG_HOSTING_DOT2_2026_04_05
+observed_at: '2026-04-14T12:04:01.281818+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ cuối tài liệu: ''Cập nhật 03/01/2026''. Assuming DD/MM/YYYY
+  format is a typo for MM/DD/YYYY or the intended format is DD/MM/YYYY. Using YYYY-MM-DD
+  for consistency.'
+dual_vote:
+  status: DISAGREE
+  score: 0.3651
+  confidence: LOW
+  flag: human_review_required

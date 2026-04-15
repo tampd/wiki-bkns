@@ -1,0 +1,22 @@
+claim_id: CLM-4CE2299100ED
+entity_id: ENT-PROD-SSL.geotrust_true_businessid
+entity_type: product_plan
+entity_name: GeoTrust True BusinessID
+attribute: domain_coverage
+value: 1
+unit: domain
+qualifiers:
+  type: main domain
+source_ids:
+- SRC-GEOTRUST_TRUE_BUSINESSID_CHUNG_CHI_SSL_XAC_THUC_DOANH_NGHI_2026_04_05
+observed_at: '2026-04-14T16:31:00.145059+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: medium
+compiler_note: 'Trích từ Tính năng / Thành phần: ''Bảo vệ tên miền: 1 tên miền.'''
+dual_vote:
+  status: DISAGREE
+  score: 0.3515
+  confidence: LOW
+  flag: human_review_required

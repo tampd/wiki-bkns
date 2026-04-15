@@ -1,0 +1,24 @@
+claim_id: CLM-1724830772CF
+entity_id: ENT-PROD-HOSTING
+entity_type: product
+entity_name: Platinum Web Hosting
+attribute: product.policy
+value: Hỗ trợ chuyển dữ liệu miễn phí
+unit: ''
+qualifiers: null
+source_ids:
+- SRC-PLATINUM_WEB_HOSTING_HOSTING_NVME_TOC_O_CAO_BACKUP_3_LAN_2026_04_13
+observed_at: '2026-04-14T12:29:46.434809+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tính năng / Thành phần: • Hỗ trợ chuyển dữ liệu: BKNS
+  hỗ trợ chuyển dữ liệu website của khách hàng về hệ thống của mình miễn phí.'
+dual_vote:
+  status: DISAGREE
+  score: 0.5968
+  confidence: LOW
+  flag: human_review_required
+value_changed_from: Cam kết hoàn tiền trong 30 ngày
+value_changed_at: '2026-04-14T12:29:46.434873+07:00'

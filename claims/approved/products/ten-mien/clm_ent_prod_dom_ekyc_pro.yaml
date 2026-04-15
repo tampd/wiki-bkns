@@ -7,13 +7,14 @@ value: 100% online
 unit: null
 qualifiers: {}
 source_ids:
-- SRC-DANG_KY_TEN_MIEN_2026_04_05
+  - SRC-DANG_KY_TEN_MIEN_2026_04_05
 observed_at: '2026-04-05T21:53:55.746837+07:00'
 valid_from: '2026-04-05'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ mục Tại sao chọn BKNS?: ''eKYC 100% online, quyền sở hữu
-  hợp pháp tuyệt đối'''
-approved_at: '2026-04-07T13:00:10.502295+07:00'
+compiler_note: 'Trích từ mục Tại sao chọn BKNS?: ''eKYC 100% online, quyền sở hữu hợp pháp tuyệt đối'''
+approved_at: '2026-04-08T13:00:09.662225+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.627Z'

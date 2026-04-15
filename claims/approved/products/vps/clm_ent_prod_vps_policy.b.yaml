@@ -7,13 +7,14 @@ value: false
 unit: null
 qualifiers: null
 source_ids:
-- SRC-DICH_VU_VPS_GIA_RE_MAY_CHU_AO_CAU_HINH_ON_INH_2026_04_06
+  - SRC-DICH_VU_VPS_GIA_RE_MAY_CHU_AO_CAU_HINH_ON_INH_2026_04_06
 observed_at: '2026-04-07T00:16:39.085364+07:00'
 valid_from: '2026-04-07'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ mục ''Tóm tắt nhanh'': • Điều kiện/giới hạn nổi bật (nếu
-  có): Các gói dịch vụ không đi kèm sao lưu dữ liệu hàng tuần'
-approved_at: '2026-04-07T13:00:14.423272+07:00'
+compiler_note: 'Trích từ mục ''Tóm tắt nhanh'': • Điều kiện/giới hạn nổi bật (nếu có): Các gói dịch vụ không đi kèm sao lưu dữ liệu hàng tuần'
+approved_at: '2026-04-08T13:00:14.020498+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.691Z'

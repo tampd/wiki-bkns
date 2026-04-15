@@ -1,0 +1,16 @@
+claim_id: CLM-IMG-product.hosting.bksw05-parked_sub_domain
+entity_id: product.hosting.bksw05
+entity_type: product_plan
+entity_name: BKSW05+ Hosting Windows Thường
+attribute: parked_sub_domain
+value: Unlimited
+confidence: high
+review_state: approved
+risk_class: verified
+source_ids:
+- IMG-BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+
+observed_at: '2026-04-07T16:35:42.325653+07:00'
+valid_from: '2026-04-07'
+approved_at: '2026-04-07T16:35:42.325653+07:00'
+approved_by: image-extraction
+compiler_note: From bkns.vn screenshot (BKSW01-BKSW02-BKSW03-BKSW04-BKSW03+-BKSW04-BKSW04+-BKSW05-BKSW05+)

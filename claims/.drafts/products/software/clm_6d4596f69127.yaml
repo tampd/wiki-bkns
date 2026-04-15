@@ -1,0 +1,25 @@
+claim_id: CLM-6D4596F69127
+entity_id: product.software.cloudlinux_os
+entity_type: product
+entity_name: Bản Quyền CloudLinux OS
+attribute: benefit
+value: Hỗ trợ nhiều phiên bản PHP đồng thời.
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-BAN_QUYEN_CLOUDLINUX_OS_TANG_ON_INH_VA_BAO_MAT_CHO_SHARED_2026_04_13
+- SRC-BAN_QUYEN_CLOUDLINUX_OS_TANG_ON_INH_VA_BAO_MAT_CHO_SHARED_2026_04_05
+observed_at: '2026-04-14T11:59:30.284523+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Chính sách / Điều khoản / Lưu ý: ''Lợi ích khi sử dụng: -
+  Hỗ trợ nhiều phiên bản PHP đồng thời.'''
+value_changed_from: Tăng mật độ khách hàng trên mỗi máy chủ.
+value_changed_at: '2026-04-14T11:59:30.284589+07:00'
+dual_vote:
+  status: DISAGREE
+  score: 0.0371
+  confidence: LOW
+  flag: human_review_required

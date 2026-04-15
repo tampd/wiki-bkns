@@ -1,0 +1,21 @@
+claim_id: CLM-9180BF94A0CB
+entity_id: product.software.dti_assessment.basic
+entity_type: product_plan
+entity_name: Gói Cơ bản
+attribute: user_accounts_limit
+value: 200
+unit: accounts
+qualifiers: null
+source_ids:
+- SRC-PHAN_MEM_ANH_GIA_CHUYEN_OI_SO_DTI_2026_04_05
+observed_at: '2026-04-14T17:20:03.599827+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ bảng giá: | Số lượng tài khoản | 200 |'
+dual_vote:
+  status: DISAGREE
+  score: 0.0
+  confidence: LOW
+  flag: human_review_required

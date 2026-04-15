@@ -1,0 +1,24 @@
+claim_id: CLM-C1119C25A6A0
+entity_id: ENT-PROD-VPS.vps_gia_re
+entity_type: product
+entity_name: Dịch vụ VPS Giá Rẻ
+attribute: feature
+value: Dễ dàng nâng cấp tài nguyên
+unit: ''
+qualifiers: {}
+source_ids:
+- SRC-DICH_VU_VPS_GIA_RE_MAY_CHU_AO_CAU_HINH_ON_INH_2026_04_05
+observed_at: '2026-04-14T16:11:54.108068+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tính năng / Thành phần: Dễ dàng nâng cấp: Người dùng
+  có thể nâng cấp tài nguyên khi nhu cầu sử dụng tăng lên.'
+dual_vote:
+  status: DISAGREE
+  score: 0.5846
+  confidence: LOW
+  flag: human_review_required
+value_changed_from: Tài nguyên độc lập (CPU, RAM, dung lượng)
+value_changed_at: '2026-04-14T16:11:54.108100+07:00'

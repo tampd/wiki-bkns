@@ -1,0 +1,25 @@
+claim_id: CLM-19965762F7CF
+entity_id: ENT-PROD-SSL-COMODO-EV
+entity_type: product
+entity_name: Comodo EV SSL
+attribute: product_description
+value: Comodo EV SSL là một chứng chỉ SSL với mức xác thực cao nhất (Extended Validation
+  - EV), được thiết kế để hiển thị tên công ty đã được xác minh trực tiếp trên thanh
+  địa chỉ của trình duyệt.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-COMODO_EV_SSL_CHUNG_CHI_SSL_XAC_THUC_MO_RONG_2026_04_05
+observed_at: '2026-04-14T16:26:39.423653+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ: • Dịch vụ này là gì: Comodo EV SSL là một chứng chỉ SSL
+  với mức xác thực cao nhất (Extended Validation - EV), được thiết kế để hiển thị
+  tên công ty đã được xác minh trực tiếp trên thanh địa chỉ của trình duyệt.'
+dual_vote:
+  status: DISAGREE
+  score: 0.3281
+  confidence: LOW
+  flag: human_review_required

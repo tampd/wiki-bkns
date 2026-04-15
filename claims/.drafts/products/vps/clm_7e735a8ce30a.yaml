@@ -1,0 +1,17 @@
+claim_id: CLM-7E735A8CE30A
+entity_id: product.vps.vps_gia_re
+entity_type: product_offering
+entity_name: VPS Giá Rẻ
+attribute: is_a
+value: ENT-PROD-VPS
+unit: ''
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_VPS_GIA_RE_MAY_CHU_AO_CAU_HINH_ON_INH_2026_04_13
+observed_at: '2026-04-13T22:31:41.404653+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ tiêu đề và mô tả: ''Dịch vụ VPS Giá Rẻ'', ''VPS Giá Rẻ là
+  giải pháp máy chủ ảo...'''

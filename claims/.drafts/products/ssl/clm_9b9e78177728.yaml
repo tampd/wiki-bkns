@@ -1,0 +1,21 @@
+claim_id: CLM-9B9E78177728
+entity_id: ENT-PROD-SSL-COMODO-ESSENTIAL-WILDCARD-DV
+entity_type: product_plan
+entity_name: EssentialSSL Wildcard (DV)
+attribute: purchase_url
+value: https://id.bkns.vn/store/comodo-ssl/comodo-essentialssl-wildcard?language=vietnamese
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-CHUNG_CHI_SSL_ESSENTIALSSL_WILDCARD_DV_CUA_COMODO_2026_04_05
+observed_at: '2026-04-14T16:22:15.549866+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Liên kết liên quan: ''Trang đăng ký mua hàng: `https://id.bkns.vn/store/comodo-ssl/comodo-essentialssl-wildcard?language=vietnamese`'''
+dual_vote:
+  status: DISAGREE
+  score: 0.2232
+  confidence: LOW
+  flag: human_review_required

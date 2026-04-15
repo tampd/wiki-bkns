@@ -1,0 +1,17 @@
+claim_id: CLM-FC7B4C34F8E0
+entity_id: prod.bkns.cloud_meeting
+entity_type: product
+entity_name: Cloud Meeting
+attribute: canonical_url
+value: https://www.bkns.vn/server/giai-phap-hop-truc-tuyen-bk-meeting.html
+unit: null
+qualifiers: null
+source_ids:
+- SRC-CLOUD_MEETING_E_MEETING_GIAI_PHAP_HOP_TRUC_TUYEN_TAI_BKNS_2026_04_13
+observed_at: '2026-04-13T22:02:54.648134+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: null
+compiler_note: 'Trích từ mục Liên kết liên quan: • URL Canonical được chỉ định trong
+  trang: `https://www.bkns.vn/server/giai-phap-hop-truc-tuyen-bk-meeting.html`'

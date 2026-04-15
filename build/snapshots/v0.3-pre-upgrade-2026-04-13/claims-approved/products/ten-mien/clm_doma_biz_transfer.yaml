@@ -1,0 +1,19 @@
+claim_id: CLM-DOMA-BIZ-TRANSFER
+entity_id: product.domain.biz
+entity_type: product_plan
+entity_name: .biz
+attribute: transfer_price
+value: 740000
+unit: VND
+qualifiers: null
+source_ids:
+- SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_04
+observed_at: '2026-04-04T20:03:20.209851+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: high
+compiler_note: 'Trích từ bảng giá tên miền Quốc tế, dòng ''.biz'', cột ''Transfer
+  về BKNS'': 740.000'
+approved_at: '2026-04-08T13:00:09.360684+07:00'
+approved_by: admin-batch

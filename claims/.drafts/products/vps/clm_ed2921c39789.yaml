@@ -1,0 +1,19 @@
+claim_id: CLM-ED2921C39789
+entity_id: bkns_cloud_vps_ssd
+entity_type: product_service
+entity_name: Thuê Cloud VPS SSD
+attribute: service_description
+value: Dịch vụ cho thuê máy chủ ảo (Cloud VPS) được xây dựng trên nền tảng ảo hóa
+  KVM và sử dụng ổ cứng SSD cho hiệu suất cao.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_THUE_CLOUD_VPS_SSD_GIA_RE_TAI_BKNS_2026_04_13
+observed_at: '2026-04-13T22:29:34.474882+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tóm tắt nhanh: ''Dịch vụ này là gì: Dịch vụ cho thuê
+  máy chủ ảo (Cloud VPS) được xây dựng trên nền tảng ảo hóa KVM và sử dụng ổ cứng
+  SSD cho hiệu suất cao.'''

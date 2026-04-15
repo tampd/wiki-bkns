@@ -1,0 +1,21 @@
+claim_id: CLM-B8C53DB6D09B
+entity_id: product.vps.bkns.vpstk1
+entity_type: product_plan
+entity_name: VPSTK1
+attribute: min_billing_cycle
+value: 1
+unit: month
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_VPS_SIEU_TIET_KIEM_VPS_SIEU_RE_TAI_BKNS_2026_04_05
+observed_at: '2026-04-14T16:13:24.800817+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ bảng giá, cột VPSTK1: ''Thanh Toán Tối Thiểu | 1 tháng'''
+dual_vote:
+  status: DISAGREE
+  score: 0.599
+  confidence: LOW
+  flag: human_review_required

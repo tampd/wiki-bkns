@@ -1,0 +1,18 @@
+claim_id: CLM-ENT-PROD-SOF-URL
+entity_id: ENT-PROD-SOFTWARE-SOFTACULOUS
+entity_type: product
+entity_name: Bản quyền Softaculous
+attribute: url
+value: https://www.bkns.vn/phan-mem/softaculous.html
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-BAN_QUYEN_SOFTACULOUS_TRINH_CAI_AT_UNG_DUNG_TU_ONG_2026_04_06
+observed_at: '2026-04-06T23:02:27.076738+07:00'
+valid_from: '2026-04-06'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ: • URL: https://www.bkns.vn/phan-mem/softaculous.html'
+approved_at: '2026-04-08T13:00:15.621074+07:00'
+approved_by: admin-batch

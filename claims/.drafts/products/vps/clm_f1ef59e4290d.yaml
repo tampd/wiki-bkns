@@ -1,0 +1,23 @@
+claim_id: CLM-F1EF59E4290D
+entity_id: product.vps.bkns_cloud
+entity_type: product_plan
+entity_name: Cloud VPS
+attribute: description
+value: Dịch vụ máy chủ ảo đám mây được xây dựng trên nền tảng lưu trữ CEPH Storage
+  phân tán.
+unit: ''
+qualifiers: null
+source_ids:
+- SRC-TRAINING_DICH_VU_VPS_2026_04_13
+observed_at: '2026-04-14T16:19:07.497417+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục 4.1: ''Cloud VPS BKNS là dịch vụ máy chủ ảo đám mây (Virtual
+  Private Server) được xây dựng trên nền tảng lưu trữ CEPH Storage phân tán...'''
+dual_vote:
+  status: DISAGREE
+  score: 0.4702
+  confidence: LOW
+  flag: human_review_required

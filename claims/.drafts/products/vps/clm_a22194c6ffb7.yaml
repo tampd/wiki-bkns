@@ -1,0 +1,22 @@
+claim_id: CLM-A22194C6FFB7
+entity_id: ENT-PROD-VPS-STORAGE
+entity_type: product
+entity_name: Storage VPS
+attribute: upgrade_policy
+value: Có thể nâng cấp gói dịch vụ khi có nhu cầu sử dụng cao hơn.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-STORAGE_VPS_MAY_CHU_AO_LUU_TRU_DUNG_LUONG_CAO_2026_04_05
+observed_at: '2026-04-14T16:14:49.872837+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Chính sách / Điều khoản / Lưu ý: Có thể nâng cấp gói
+  dịch vụ khi có nhu cầu sử dụng cao hơn.'
+dual_vote:
+  status: DISAGREE
+  score: 0.5676
+  confidence: LOW
+  flag: human_review_required

@@ -7,12 +7,14 @@ value: UPS backup
 unit: null
 qualifiers: null
 source_ids:
-- SRC-COLOCATION_WEB_2026_04_05
+  - SRC-COLOCATION_WEB_2026_04_05
 observed_at: '2026-04-05T21:51:07.300105+07:00'
 valid_from: '2026-04-05'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: medium
 compiler_note: 'Trích từ: ''- Nguồn điện ổn định, UPS backup'''
-approved_at: '2026-04-07T13:00:09.934369+07:00'
+approved_at: '2026-04-08T13:00:09.045776+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.307Z'

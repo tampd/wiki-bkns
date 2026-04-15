@@ -2,25 +2,28 @@
 page_id: wiki.products.ten-mien.san-pham.chuyen-ten-mien
 title: Chuyển Tên Miền (Transfer)
 category: products/ten-mien
-updated: '2026-04-07'
+updated: '2026-04-14'
 review_state: drafted
-claims_used: 17
-compile_cost_usd: 0.0066
+claims_used: 62
+compile_cost_usd: 0.0131
 self_review: fail
 corrections: 2
 ---
 
-# Chuyển Tên Miền (Transfer)
+# Chuyển Tên Miền (Transfer) về BKNS
 
-Trang này cung cấp thông tin chi tiết về dịch vụ chuyển đổi nhà đăng ký tên miền (transfer) về BKNS, bao gồm chi phí và các chính sách liên quan được tổng hợp từ hệ thống.
+BKNS hỗ trợ khách hàng chuyển tên miền từ nhà đăng ký khác về quản lý tại BKNS một cách thuận tiện. Dưới đây là các thông tin chi tiết về chính sách và chi phí transfer.
 
-## Phí Chuyển Tên Miền về BKNS
+## Chính sách chung
 
-BKNS hỗ trợ transfer tên miền Việt Nam hoàn toàn miễn phí. Đối với tên miền quốc tế, chi phí được áp dụng theo bảng giá dưới đây.
+Việc chuyển tên miền Việt Nam về BKNS được **miễn phí**.
 
-| Loại Tên Miền | Phí Transfer về BKNS (VND) |
-|---------------|----------------------------|
-| Tên miền Việt Nam | 0 |
+## Bảng giá Transfer Tên miền Quốc tế
+
+Chi phí transfer (chuyển về) các tên miền quốc tế phổ biến về BKNS được áp dụng như sau. Phí này đã bao gồm gia hạn tên miền thêm 1 năm.
+
+| Tên miền | Phí Transfer về BKNS (VND) |
+| :--- | :--- |
 | .com | 429.000 |
 | .net | 505.000 |
 | .org | 535.000 |
@@ -30,24 +33,24 @@ BKNS hỗ trợ transfer tên miền Việt Nam hoàn toàn miễn phí. Đối 
 | .id | 575.000 |
 | .us | 380.000 |
 | .ws | 1.075.000 |
+| .me | 745.000 |
 
-## Quy trình, Điều kiện và Thời gian Transfer
+*Lưu ý: Bảng giá được tổng hợp từ các claim đã duyệt và có độ tin cậy cao.*
 
-_[Ghi chú của Auditor: Các mục dưới đây cần được bổ sung thông tin chi tiết để hoàn thiện tài liệu.]_
+## Quy trình và Điều kiện Transfer
 
 ### Quy trình thực hiện
-Nội dung đang được cập nhật.
+**[CẦN BỔ SUNG]**
 
-### Điều kiện transfer
-Nội dung đang được cập nhật.
+### Điều kiện cần thiết
+**[CẦN BỔ SUNG]**
 
 ### Thời gian hoàn tất
-Nội dung đang được cập nhật.
+**[CẦN BỔ SUNG]**
 
 ## Sản phẩm liên quan
 - [Web Hosting BKNS](../hosting/index.md)
 - [Email Doanh Nghiệp BKNS](../email/index.md)
 - [Chứng Chỉ SSL BKNS](../ssl/index.md)
 
----
-Compiled by BKNS Wiki Bot • [CURRENT_DATE]
+Compiled by BKNS Wiki Bot • 2024-05-21

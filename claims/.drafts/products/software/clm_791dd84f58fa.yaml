@@ -1,0 +1,23 @@
+claim_id: CLM-791DD84F58FA
+entity_id: product.software.dti_assessment.basic
+entity_type: product_plan
+entity_name: Gói Cơ bản
+attribute: feature
+value: Chức năng khác
+unit: null
+qualifiers: null
+source_ids:
+- SRC-PHAN_MEM_ANH_GIA_CHUYEN_OI_SO_DTI_2026_04_05
+observed_at: '2026-04-14T17:20:03.679898+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ bảng giá, cột Gói Cơ bản: - Chức năng khác'
+dual_vote:
+  status: DISAGREE
+  score: 0.0
+  confidence: LOW
+  flag: human_review_required
+value_changed_from: Bản đồ số liệu trong tỉnh
+value_changed_at: '2026-04-14T17:20:03.679930+07:00'

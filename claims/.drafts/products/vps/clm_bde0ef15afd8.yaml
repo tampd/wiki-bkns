@@ -1,0 +1,21 @@
+claim_id: CLM-BDE0EF15AFD8
+entity_id: product.vps.n8n_ai01
+entity_type: product_plan
+entity_name: N8N-AI01
+attribute: registration_link
+value: https://my.bkns.net/?cmd=cart&action=add&id=22118
+unit: null
+qualifiers: null
+source_ids:
+- SRC-VPS_N8N_AI_DICH_VU_TU_ONG_HOA_QUY_TRINH_TAI_BKNS_2026_04_05
+observed_at: '2026-04-14T16:20:24.988296+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: Trích từ bảng giá, dòng Đăng ký, cột N8N-AI01
+dual_vote:
+  status: PARTIAL
+  score: 0.6693
+  confidence: MEDIUM
+  flag: needs_review

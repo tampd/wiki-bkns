@@ -1,0 +1,18 @@
+claim_id: CLM-C32340D2E8F1
+entity_id: product.vps.bkmisa.bkms02
+entity_type: product_plan
+entity_name: BKMS - 02
+attribute: monthly_price
+value: 408000
+unit: VND
+qualifiers:
+  billing_cycle: month
+  customer_type: Khách hàng đang sử dụng Misa SME offline
+source_ids:
+- SRC-CLOUD_VPS_BK_MISA_GIAI_PHAP_LUU_TRU_KE_TOAN_SO_2026_04_13
+observed_at: '2026-04-13T22:05:38.564352+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ bảng giá: | BKMS - 02 | 408.000đ |'

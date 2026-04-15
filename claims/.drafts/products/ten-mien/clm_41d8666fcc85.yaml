@@ -1,0 +1,27 @@
+claim_id: CLM-41D8666FCC85
+entity_id: ENT-PROD-DOMAIN
+entity_type: product
+entity_name: Dịch vụ Tên miền
+attribute: policy
+value: Phí cài đặt cho tất cả các loại tên miền đều được miễn phí.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_05
+- SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_05
+- SRC-BAO_VE_TEN_MIEN_CAP_CAO_NHAT_GIAI_PHAP_AN_TOAN_TUYET_OI_2026_04_05
+- SRC-DICH_VU_ANG_KY_TEN_MIEN_VIET_NAM_VA_QUOC_TE_TAI_BKNS_2026_04_05
+observed_at: '2026-04-14T16:47:42.389858+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Chính sách / Điều khoản / Lưu ý: Phí cài đặt cho tất cả các
+  loại tên miền đều được miễn phí.'
+dual_vote:
+  status: PARTIAL
+  score: 0.6024
+  confidence: MEDIUM
+  flag: needs_review
+value_changed_from: Tất cả các mức phí chưa bao gồm thuế VAT.
+value_changed_at: '2026-04-14T16:47:42.389907+07:00'

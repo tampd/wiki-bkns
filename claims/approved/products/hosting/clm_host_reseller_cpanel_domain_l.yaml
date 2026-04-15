@@ -7,15 +7,17 @@ value: 12
 unit: null
 qualifiers: {}
 source_ids:
-- SRC-RESELLER_HOSTING_CPANEL_QUAN_LY_NHIEU_HOSTING_CHI_VOI_MOT_T_2026_04_04
-- SRC-RESELLER_HOSTING_CPANEL_QUAN_LY_NHIEU_HOSTING_CHI_VOI_MOT_T_2026_04_06
+  - SRC-RESELLER_HOSTING_CPANEL_QUAN_LY_NHIEU_HOSTING_CHI_VOI_MOT_T_2026_04_04
+  - SRC-RESELLER_HOSTING_CPANEL_QUAN_LY_NHIEU_HOSTING_CHI_VOI_MOT_T_2026_04_06
 observed_at: '2026-04-07T01:00:34.611236+07:00'
 valid_from: '2026-04-04'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
 compiler_note: 'Trích từ bảng giá: ''Domains | 12'''
 value_changed_from: 10
 value_changed_at: '2026-04-07T01:00:34.611269+07:00'
-approved_at: '2026-04-07T13:00:12.351461+07:00'
+approved_at: '2026-04-08T13:00:11.541243+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.066Z'

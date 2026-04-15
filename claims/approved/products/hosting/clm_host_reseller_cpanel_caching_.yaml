@@ -7,13 +7,15 @@ value: Redis
 unit: null
 qualifiers: {}
 source_ids:
-- SRC-RESELLER_HOSTING_CPANEL_QUAN_LY_NHIEU_HOSTING_CHI_VOI_MOT_T_2026_04_04
-- SRC-RESELLER_HOSTING_CPANEL_QUAN_LY_NHIEU_HOSTING_CHI_VOI_MOT_T_2026_04_06
+  - SRC-RESELLER_HOSTING_CPANEL_QUAN_LY_NHIEU_HOSTING_CHI_VOI_MOT_T_2026_04_04
+  - SRC-RESELLER_HOSTING_CPANEL_QUAN_LY_NHIEU_HOSTING_CHI_VOI_MOT_T_2026_04_06
 observed_at: '2026-04-07T01:00:34.483019+07:00'
 valid_from: '2026-04-04'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
 compiler_note: 'Trích từ mục Tính năng / Thành phần: ''Caching: Hỗ trợ Redis.'''
-approved_at: '2026-04-07T13:00:12.322308+07:00'
+approved_at: '2026-04-08T13:00:11.500501+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.062Z'

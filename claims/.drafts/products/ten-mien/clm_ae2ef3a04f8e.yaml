@@ -1,0 +1,32 @@
+claim_id: CLM-AE2EF3A04F8E
+entity_id: ENT-PROD-DOMAIN
+entity_type: product
+entity_name: Dịch vụ Tên miền
+attribute: target_audience
+value: Cá nhân, tổ chức và doanh nghiệp muốn sở hữu địa chỉ website riêng để xây dựng
+  thương hiệu, kinh doanh trực tuyến hoặc tạo email theo tên miền riêng.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_13
+- SRC-DICH_VU_ANG_KY_TEN_MIEN_VIET_NAM_VA_QUOC_TE_TAI_BKNS_2026_04_13
+- SRC-TRANNING_KINH_DOANH_HOSTING_EMAIL_2026_04_13
+- SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_05
+- SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_05
+- SRC-DICH_VU_ANG_KY_TEN_MIEN_VIET_NAM_VA_QUOC_TE_TAI_BKNS_2026_04_05
+observed_at: '2026-04-14T16:47:42.349672+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: Phù hợp với: Cá nhân, tổ chức và doanh nghiệp
+  muốn sở hữu địa chỉ website riêng để xây dựng thương hiệu, kinh doanh trực tuyến
+  hoặc tạo email theo tên miền riêng.'
+value_changed_from: Cá nhân, tổ chức và doanh nghiệp cần đăng ký, quản lý hoặc chuyển
+  đổi nhà đăng ký cho tên miền.
+value_changed_at: '2026-04-14T16:47:42.349717+07:00'
+dual_vote:
+  status: DISAGREE
+  score: 0.5
+  confidence: LOW
+  flag: human_review_required

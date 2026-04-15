@@ -7,13 +7,14 @@ value: Dual Uplink – Multihome Network
 unit: ''
 qualifiers: null
 source_ids:
-- SRC-TRAINING_DICH_VU_VPS_2026_04_06
+  - SRC-TRAINING_DICH_VU_VPS_2026_04_06
 observed_at: '2026-04-07T01:05:15.915371+07:00'
 valid_from: '2026-04-07'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ bảng ở mục 4.1.1: ''Mạng kết nối: Dual Uplink – Multihome
-  Network'''
-approved_at: '2026-04-07T13:00:14.415391+07:00'
+compiler_note: 'Trích từ bảng ở mục 4.1.1: ''Mạng kết nối: Dual Uplink – Multihome Network'''
+approved_at: '2026-04-08T13:00:14.011205+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.690Z'

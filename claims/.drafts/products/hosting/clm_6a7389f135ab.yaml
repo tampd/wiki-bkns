@@ -1,0 +1,22 @@
+claim_id: CLM-6A7389F135AB
+entity_id: product.hosting.gia_re
+entity_type: product
+entity_name: Hosting Giá Rẻ
+attribute: trial_policy
+value: 7 ngày dùng thử
+unit: null
+qualifiers: null
+source_ids:
+- SRC-HOSTING_GIA_RE_BANG_GIA_VA_THONG_SO_KY_THUAT_TAI_BKNS_2026_04_13
+observed_at: '2026-04-14T12:13:27.173827+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Điều kiện/giới hạn nổi bật: Có chính sách dùng thử 7
+  ngày.'
+dual_vote:
+  status: DISAGREE
+  score: 0.5341
+  confidence: LOW
+  flag: human_review_required

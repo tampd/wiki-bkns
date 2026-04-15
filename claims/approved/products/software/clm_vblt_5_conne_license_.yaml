@@ -7,15 +7,16 @@ value: upgrade
 unit: null
 qualifiers: null
 source_ids:
-- SRC-BAN_QUYEN_VBULLETIN_HE_QUAN_TRI_FORUM_MANG_XA_HOI_2026_04_06
+  - SRC-BAN_QUYEN_VBULLETIN_HE_QUAN_TRI_FORUM_MANG_XA_HOI_2026_04_06
 observed_at: '2026-04-06T23:04:03.077659+07:00'
 valid_from: '2026-04-06'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ bảng giá, dòng ''Upgrade'' thứ hai: | Upgrade | Giá liên
-  hệ | Bản upgrade...'
+compiler_note: 'Trích từ bảng giá, dòng ''Upgrade'' thứ hai: | Upgrade | Giá liên hệ | Bản upgrade...'
 value_changed_from: lifetime
 value_changed_at: '2026-04-06T23:04:03.077699+07:00'
-approved_at: '2026-04-07T13:00:16.304984+07:00'
+approved_at: '2026-04-08T13:00:16.083948+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.440Z'

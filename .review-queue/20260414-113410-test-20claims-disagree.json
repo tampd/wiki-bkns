@@ -1,0 +1,12 @@
+{
+  "ts": "2026-04-14T11:34:10.903342+07:00",
+  "skill": "test-20claims",
+  "status": "DISAGREE",
+  "flag": "human_review_required",
+  "score": 0.4874,
+  "model_a": "gemini-2.5-pro",
+  "model_b": "gpt-5.4",
+  "text_a": "```json\n{\n  \"attribute\": \"storage\",\n  \"value\": \"1000GB\",\n  \"confidence\": 1.0,\n  \"agrees\": false,\n  \"reason\": \"The Cloud Email Server ES 4 plan includes 1000GB of storage. The 2000GB storage value is associated with the Cloud Email Server ES 5 plan.\"\n}\n```",
+  "text_b": "{\"attribute\":\"storage\",\"value\":\"2000GB\",\"confidence\":0.18,\"agrees\":false,\"reason\":\"The claim cannot be verified from the provided record alone, and no supporting BKNS source is included to confirm that Cloud Email Server ES 4 has 2000GB storage.\"}",
+  "prompt_preview": "Verify the following claim about BKNS products and return JSON:\nEntity: Cloud Email Server ES 4\nAttribute: storage\nClaimed value: 2000GB\n\nReturn JSON: {\"attribute\": \"...\", \"value\": \"...\", \"confidence\": 0.0-1.0, \"agrees\": true/false, \"reason\": \"brief explanation\"}"
+}

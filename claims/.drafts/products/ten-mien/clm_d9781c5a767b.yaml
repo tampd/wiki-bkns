@@ -1,0 +1,17 @@
+claim_id: CLM-D9781C5A767B
+entity_id: product.domain.international.us
+entity_type: product_plan
+entity_name: .us
+attribute: setup_fee
+value: 0
+unit: VND
+qualifiers: {}
+source_ids:
+- SRC-BANG_GIA_TEN_MIEN_QUOC_TE_2026_04_13
+observed_at: '2026-04-13T21:46:27.536139+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ bảng giá: | .us     | Miễn phí | 340.000   | 380.000   |
+  380.000   |'

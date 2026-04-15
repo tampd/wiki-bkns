@@ -1,0 +1,21 @@
+claim_id: CLM-EMAI-EMAIL_RELAY-PRICE
+entity_id: product.email.email_relay.bk_relay01
+entity_type: product_plan
+entity_name: BK-RELAY04
+attribute: monthly_price
+value: 980000
+unit: VND
+qualifiers:
+  billing_cycle: month
+source_ids:
+- SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_TIN_CAY_2026_04_06
+observed_at: '2026-04-07T00:21:09.844195+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: high
+compiler_note: 'Trích từ bảng giá: | Giá/Tháng | 980.000đ |'
+value_changed_from: 500000
+value_changed_at: '2026-04-07T00:21:09.844214+07:00'
+approved_at: '2026-04-08T13:00:10.206316+07:00'
+approved_by: admin-batch

@@ -1,0 +1,23 @@
+claim_id: CLM-E8E51B3164E5
+entity_id: product.ssl.geotrust_quickssl_premium_san
+entity_type: product_plan
+entity_name: GeoTrust QuickSSL Premium SAN
+attribute: included_sans
+value: 4
+unit: null
+qualifiers:
+  san_type: subdomain
+source_ids:
+- SRC-GEOTRUST_QUICKSSL_PREMIUM_SAN_2026_04_05
+observed_at: '2026-04-14T16:28:23.246452+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: medium
+compiler_note: 'Trích từ bảng Thông số kỹ thuật / Giới hạn: ''Bảo vệ cho | 04 SAN
+  cho Subdomain'''
+dual_vote:
+  status: DISAGREE
+  score: 0.3915
+  confidence: LOW
+  flag: human_review_required

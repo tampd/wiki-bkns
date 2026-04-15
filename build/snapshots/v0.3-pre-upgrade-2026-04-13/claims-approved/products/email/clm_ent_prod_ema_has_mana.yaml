@@ -1,0 +1,19 @@
+claim_id: CLM-ENT-PROD-EMA-HAS_MANA
+entity_id: ENT-PROD-EMAIL-RELAY
+entity_type: product
+entity_name: Email Relay
+attribute: has_management_interface
+value: true
+unit: null
+qualifiers:
+  scope: all_plans
+source_ids:
+- SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_VA_TIN_CAY_2026_04_04
+observed_at: '2026-04-04T20:57:41.684813+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ bảng giá: | Quản trị email relay | Có | Có | Có | Có |'
+approved_at: '2026-04-08T13:00:10.564295+07:00'
+approved_by: admin-batch

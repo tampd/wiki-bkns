@@ -1,0 +1,22 @@
+claim_id: CLM-364E245489C4
+entity_id: product.software.plesk_web_admin
+entity_type: product_plan_group
+entity_name: Plesk Web Admin Edition
+attribute: feature.reseller_management
+value: not_included
+unit: null
+qualifiers: null
+source_ids:
+- SRC-PHAN_MEM_QUAN_TRI_HOSTING_PLESK_OBSIDIAN_2026_04_05
+observed_at: '2026-04-14T12:23:09.358908+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng so sánh, cột Web Admin Edition, dòng Reseller Management:
+  ''❌'''
+dual_vote:
+  status: PARTIAL
+  score: 0.6082
+  confidence: MEDIUM
+  flag: needs_review

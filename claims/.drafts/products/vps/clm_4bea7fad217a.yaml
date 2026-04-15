@@ -1,0 +1,22 @@
+claim_id: CLM-4BEA7FAD217A
+entity_id: ENT-PROD-VPS.vps_gia_re.vps_mm07
+entity_type: product_plan
+entity_name: VPS-MM07
+attribute: monthly_price
+value: 580000
+unit: VND
+qualifiers:
+  billing_cycle: month
+source_ids:
+- SRC-DICH_VU_VPS_GIA_RE_MAY_CHU_AO_CAU_HINH_ON_INH_2026_04_05
+observed_at: '2026-04-14T16:11:54.198411+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ bảng giá, dòng Giá/Tháng, cột VPS-MM07: 580.000đ'
+dual_vote:
+  status: DISAGREE
+  score: 0.5846
+  confidence: LOW
+  flag: human_review_required

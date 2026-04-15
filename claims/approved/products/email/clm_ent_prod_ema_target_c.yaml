@@ -3,22 +3,21 @@ entity_id: ENT-PROD-EMAIL
 entity_type: product
 entity_name: Dịch vụ Email Hosting
 attribute: target_customer
-value: Doanh nghiệp cần một hệ thống email chuyên nghiệp, ổn định và bảo mật, với
-  khả năng tùy chỉnh số lượng tài khoản theo nhu nhu cầu.
+value: Doanh nghiệp cần một hệ thống email chuyên nghiệp, ổn định và bảo mật, với khả năng tùy chỉnh số lượng tài khoản theo nhu nhu cầu.
 unit: null
 qualifiers: {}
 source_ids:
-- SRC-TRANNING_KINH_DOANH_HOSTING_EMAIL_2026_04_04
-- SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_06
+  - SRC-TRANNING_KINH_DOANH_HOSTING_EMAIL_2026_04_04
+  - SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_06
 observed_at: '2026-04-07T00:05:00.782278+07:00'
 valid_from: '2026-04-04'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ mục Tóm tắt nhanh: ''Phù hợp với: Doanh nghiệp cần một hệ
-  thống email chuyên nghiệp, ổn định và bảo mật, với khả năng tùy chỉnh số lượng tài
-  khoản theo nhu cầu.'''
+compiler_note: 'Trích từ mục Tóm tắt nhanh: ''Phù hợp với: Doanh nghiệp cần một hệ thống email chuyên nghiệp, ổn định và bảo mật, với khả năng tùy chỉnh số lượng tài khoản theo nhu cầu.'''
 value_changed_from: Doanh nghiệp vừa và nhỏ
 value_changed_at: '2026-04-07T00:05:00.782296+07:00'
-approved_at: '2026-04-07T13:00:11.602793+07:00'
+approved_at: '2026-04-08T13:00:10.668146+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:58.975Z'

@@ -1,0 +1,20 @@
+claim_id: CLM-SOFT-IMUNIFY360-DESC
+entity_id: product.software.imunify360
+entity_type: product
+entity_name: Imunify360
+attribute: description
+value: giải pháp bảo mật server toàn diện, sử dụng AI để phát hiện và ngăn chặn mối
+  đe dọa
+unit: null
+qualifiers: null
+source_ids:
+- SRC-IMUNIFY360_WEB_2026_04_05
+observed_at: '2026-04-05T22:06:04.975936+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ phần Giới thiệu: ''Imunify360 là giải pháp bảo mật server
+  toàn diện, sử dụng AI để phát hiện và ngăn chặn mối đe dọa.'''
+approved_at: '2026-04-08T13:00:15.933366+07:00'
+approved_by: admin-batch

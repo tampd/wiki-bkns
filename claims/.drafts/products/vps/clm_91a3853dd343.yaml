@@ -1,0 +1,23 @@
+claim_id: CLM-91A3853DD343
+entity_id: product.vps.bk-misa
+entity_type: product
+entity_name: BK MISA
+attribute: backup_frequency
+value: hàng ngày
+unit: null
+qualifiers:
+  automation: tự động
+source_ids:
+- SRC-CLOUD_VPS_BK_MISA_GIAI_PHAP_LUU_TRU_KE_TOAN_SO_2026_04_05
+observed_at: '2026-04-14T16:08:16.015963+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: ...sao lưu dữ liệu hàng ngày. và Thông số
+  kỹ thuật / Giới hạn: Dữ liệu được sao lưu tự động hàng ngày.'
+dual_vote:
+  status: PARTIAL
+  score: 0.7201
+  confidence: MEDIUM
+  flag: needs_review

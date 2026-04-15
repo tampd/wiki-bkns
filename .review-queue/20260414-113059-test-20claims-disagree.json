@@ -1,0 +1,12 @@
+{
+  "ts": "2026-04-14T11:30:59.037055+07:00",
+  "skill": "test-20claims",
+  "status": "DISAGREE",
+  "flag": "human_review_required",
+  "score": 0.4902,
+  "model_a": "gemini-2.5-pro",
+  "model_b": "gpt-5.4",
+  "text_a": "```json\n{\n  \"attribute\": \"price_24m\",\n  \"value\": 3168000,\n  \"confidence\": 1.0,\n  \"agrees\": false,\n  \"reason\": \"The claimed value of 2,970,000 VND is incorrect. According to the official BKNS pricing page for Cloud VPS AMD EPYC, the price for a 24-month term for the 'AMD 1' plan is 3,168,000 VND. The claimed value corresponds to the price for an 18-month term (165,000 VND/month * 18).\"\n}\n```",
+  "text_b": "{\"attribute\":\"price_24m\",\"value\":\"2970000\",\"confidence\":0.18,\"agrees\":false,\"reason\":\"No source record or product pricing data was provided to verify the 24-month price for BKNS Cloud VPS AMD EPYC 1, so the claim cannot be confirmed.\"}",
+  "prompt_preview": "Verify the following claim about BKNS products and return JSON:\nEntity: Cloud VPS AMD EPYC 1\nAttribute: price_24m\nClaimed value: 2970000\n\nReturn JSON: {\"attribute\": \"...\", \"value\": \"...\", \"confidence\": 0.0-1.0, \"agrees\": true/false, \"reason\": \"brief explanation\"}"
+}

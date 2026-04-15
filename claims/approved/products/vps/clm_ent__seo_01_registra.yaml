@@ -7,12 +7,14 @@ value: https://my.bkns.net/?cmd=cart&action=add&id=450
 unit: null
 qualifiers: null
 source_ids:
-- SRC-DICH_VU_CLOUD_VPS_SEO_MAY_CHU_AO_TOI_UU_CHO_SEO_2026_04_06
+  - SRC-DICH_VU_CLOUD_VPS_SEO_MAY_CHU_AO_TOI_UU_CHO_SEO_2026_04_06
 observed_at: '2026-04-07T00:03:36.871099+07:00'
 valid_from: '2026-04-07'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
 compiler_note: 'Trích xuất từ bảng giá, dòng ''Đăng ký'', cột ''SEO 01'': [Đăng ký](https://my.bkns.net/?cmd=cart&action=add&id=450)'
-approved_at: '2026-04-07T13:00:14.184686+07:00'
+approved_at: '2026-04-08T13:00:13.703359+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.664Z'

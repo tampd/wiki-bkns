@@ -1,0 +1,21 @@
+claim_id: CLM-B4576A62D3F5
+entity_id: ENT-PROD-VPS-CLOUD-AMD
+entity_type: product
+entity_name: Cloud VPS AMD
+attribute: provisioning_time
+value: '5'
+unit: phút
+qualifiers: null
+source_ids:
+- SRC-TRAINING_DICH_VU_VPS_2026_04_05
+observed_at: '2026-04-14T16:17:36.153001+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: Trích từ mục '4.2 Cloud VPS AMD', dòng 'Khởi tạo VPS'.
+dual_vote:
+  status: DISAGREE
+  score: 0.5333
+  confidence: LOW
+  flag: human_review_required

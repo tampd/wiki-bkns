@@ -9,12 +9,14 @@ qualifiers:
   billing_cycle: year
   duration_years: 3
 source_ids:
-- SRC-EMAIL_RELAY_WEB_2026_04_05
+  - SRC-EMAIL_RELAY_WEB_2026_04_05
 observed_at: '2026-04-05T22:01:16.556434+07:00'
 valid_from: '2026-04-05'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
 compiler_note: 'Trích từ bảng giá gói BK-RELAY 04: | 3 năm (giảm 30%) |'
-approved_at: '2026-04-07T13:00:10.812151+07:00'
+approved_at: '2026-04-08T13:00:09.840468+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:58.857Z'

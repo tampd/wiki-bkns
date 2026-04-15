@@ -1,0 +1,19 @@
+claim_id: CLM-VPS-BKNS_CLOUD_VPS_SSD_VM01-FREE_SSL
+entity_id: product.vps.bkns_cloud_vps_ssd_vm01
+entity_type: product_plan
+entity_name: CLOUD-VM01
+attribute: free_ssl
+value: false
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_THUE_CLOUD_VPS_SSD_GIA_RE_TAI_BKNS_2026_04_06
+observed_at: '2026-04-07T00:13:45.692402+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ mục Thông số kỹ thuật / Giới hạn: ''SSL Miễn Phí: ... Gói
+  CLOUD-VM01 không có.'''
+approved_at: '2026-04-08T13:00:14.720792+07:00'
+approved_by: admin-batch

@@ -1,0 +1,19 @@
+claim_id: CLM-ENT--ID-SETUP_FE
+entity_id: ENT-PROD-DOMAIN.ID
+entity_type: product_variant
+entity_name: .id
+attribute: setup_fee
+value: 0
+unit: VND
+qualifiers: null
+source_ids:
+- SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_06
+observed_at: '2026-04-06T23:08:52.615040+07:00'
+valid_from: '2026-04-06'
+confidence: high
+review_state: approved
+risk_class: high
+compiler_note: 'Trích từ Bảng giá Tên miền Quốc tế: | .id | Miễn phí | 575.000 | 575.000
+  | 575.000 |'
+approved_at: '2026-04-08T13:00:09.525044+07:00'
+approved_by: admin-batch

@@ -1,0 +1,17 @@
+claim_id: CLM-E1741499ED19
+entity_id: product.email_relay.bk_relay02
+entity_type: product_plan
+entity_name: BK-RELAY02
+attribute: hourly_email_limit
+value: 200
+unit: email
+qualifiers: null
+source_ids:
+- SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_TIN_CAY_2026_04_13
+observed_at: '2026-04-13T22:34:09.080433+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng giá, dòng ''Số lượng email gửi ra/giờ'', cột ''BK-RELAY02'':
+  ''200'''

@@ -1,0 +1,20 @@
+claim_id: CLM-SOFT-IMUNIFY360-TECHNOLO
+entity_id: product.software.imunify360
+entity_type: product
+entity_name: Imunify360
+attribute: technology
+value: Trí tuệ nhân tạo (AI)
+unit: null
+qualifiers: null
+source_ids:
+- SRC-BANG_GIA_IMUNIFY360_GIAI_PHAP_BAO_MAT_SERVER_BANG_AI_2026_04_06
+observed_at: '2026-04-06T23:18:21.971709+07:00'
+valid_from: '2026-04-06'
+confidence: high
+review_state: approved
+risk_class: none
+compiler_note: 'Trích từ mục Tóm tắt nhanh: • Dịch vụ này là gì: Imunify360 là một
+  giải pháp bảo mật dành cho server, được xây dựng dựa trên công nghệ Trí tuệ nhân
+  tạo (AI).'
+approved_at: '2026-04-08T13:00:15.963537+07:00'
+approved_by: admin-batch

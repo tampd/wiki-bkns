@@ -1,0 +1,22 @@
+claim_id: CLM-18B368D25A2D
+entity_id: ENT-PROD-DOMAIN
+entity_type: service
+entity_name: Dịch vụ Tên miền BKNS
+attribute: currency
+value: VND
+unit: null
+qualifiers: null
+source_ids:
+- SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_05
+observed_at: '2026-04-14T16:43:52.719087+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Chính sách / Điều khoản / Lưu ý: Các mức giá trên là phí/năm,
+  đơn vị tính là VNĐ và chưa bao gồm VAT.'
+dual_vote:
+  status: DISAGREE
+  score: 0.5466
+  confidence: LOW
+  flag: human_review_required

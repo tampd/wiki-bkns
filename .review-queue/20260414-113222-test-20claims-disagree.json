@@ -1,0 +1,12 @@
+{
+  "ts": "2026-04-14T11:32:22.414468+07:00",
+  "skill": "test-20claims",
+  "status": "DISAGREE",
+  "flag": "human_review_required",
+  "score": 0.2621,
+  "model_a": "gemini-2.5-pro",
+  "model_b": "gpt-5.4",
+  "text_a": "```json\n{\n  \"attribute\": \"list_price\",\n  \"value\": 2598700,\n  \"confidence\": 1.0,\n  \"agrees\": true,\n  \"reason\": \"The official BKNS SSL pricing page lists the 1-year price for the InstantSSL (OV) certificate as 2,598,700 VNĐ.\"\n}\n```",
+  "text_b": "{\"attribute\":\"list_price\",\"value\":\"2598700\",\"confidence\":0.18,\"agrees\":false,\"reason\":\"The claim record only states the claimed list_price as 2598700 for InstantSSL (OV), but no source evidence or BKNS product data is provided to verify it against. Therefore the claim cannot be confirmed from the given information.\"}",
+  "prompt_preview": "Verify the following claim about BKNS products and return JSON:\nEntity: InstantSSL (OV)\nAttribute: list_price\nClaimed value: 2598700\n\nReturn JSON: {\"attribute\": \"...\", \"value\": \"...\", \"confidence\": 0.0-1.0, \"agrees\": true/false, \"reason\": \"brief explanation\"}"
+}

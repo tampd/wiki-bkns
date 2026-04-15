@@ -1,0 +1,20 @@
+claim_id: CLM-BCD007B209EA
+entity_id: ENT-COMPANY-001
+entity_type: company
+entity_name: BKNS
+attribute: provides_support
+value: Hỗ trợ kỹ thuật chuyên nghiệp
+unit: null
+qualifiers:
+  product: CloudLinux
+source_ids:
+- SRC-BAN_QUYEN_CLOUDLINUX_OS_TANG_ON_INH_VA_BAO_MAT_CHO_SHARED_2026_04_13
+observed_at: '2026-04-13T21:31:33.502531+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Chính sách / Điều khoản / Lưu ý: ''• Lưu ý từ nhà cung cấp:
+  - Cung cấp bản quyền chính hãng và hỗ trợ kỹ thuật chuyên nghiệp.'''
+value_changed_from: Hỗ trợ cài đặt và cấu hình CloudLinux.
+value_changed_at: '2026-04-13T21:31:33.502611+07:00'

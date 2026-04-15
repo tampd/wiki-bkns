@@ -1,0 +1,20 @@
+claim_id: CLM-SSL-ESSENTIALSSL_DV-PROVIDER
+entity_id: product.ssl.essentialssl_dv
+entity_type: product_plan
+entity_name: EssentialSSL (DV)
+attribute: provider
+value: Comodo
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-ESSENTIALSSL_DV_CHUNG_CHI_SSL_XAC_THUC_TEN_MIEN_TU_COMOD_2026_04_06
+observed_at: '2026-04-07T00:25:55.169301+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: ''Dịch vụ này là gì: Chứng chỉ SSL xác thực
+  tên miền (Domain Validation - DV) từ hãng Comodo, dùng để mã hóa và bảo mật cho
+  một tên miền.'''
+approved_at: '2026-04-08T13:00:12.925586+07:00'
+approved_by: admin-batch

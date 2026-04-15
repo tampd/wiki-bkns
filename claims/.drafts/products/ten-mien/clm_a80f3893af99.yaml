@@ -1,0 +1,23 @@
+claim_id: CLM-A80F3893AF99
+entity_id: domain.international.id
+entity_type: product_plan
+entity_name: .id
+attribute: registration_price
+value: 575000
+unit: VND
+qualifiers:
+  billing_cycle: year
+source_ids:
+- SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_05
+observed_at: '2026-04-14T16:42:32.512785+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ bảng giá tên miền Quốc tế, dòng .id, cột Phí đăng ký mới:
+  ''575.000'''
+dual_vote:
+  status: PARTIAL
+  score: 0.6024
+  confidence: MEDIUM
+  flag: needs_review

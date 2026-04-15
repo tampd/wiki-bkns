@@ -1,0 +1,17 @@
+claim_id: CLM-36CB27EE7D8E
+entity_id: bkns_cloud_vps_vm02
+entity_type: product_plan
+entity_name: CLOUD-VM02
+attribute: monthly_price
+value: 54000
+unit: VND
+qualifiers:
+  billing_cycle: month
+source_ids:
+- SRC-DICH_VU_THUE_CLOUD_VPS_SSD_GIA_RE_TAI_BKNS_2026_04_13
+observed_at: '2026-04-13T22:29:34.582056+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ bảng giá: ''CLOUD-VM02 | 54.000đ'''

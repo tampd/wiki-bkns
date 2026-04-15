@@ -1,0 +1,22 @@
+claim_id: CLM-EDEC2DC4D957
+entity_id: product.hosting.seo
+entity_type: product
+entity_name: Hosting SEO
+attribute: trial_policy
+value: Tất cả các gói Hosting SEO đều được áp dụng chính sách cho phép dùng thử dịch
+  vụ trong vòng 7 ngày.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_HOSTING_SEO_TOI_UU_WEBSITE_CHO_CONG_CU_TIM_KIEM_2026_04_05
+observed_at: '2026-04-14T12:09:18.710023+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: Trích từ mục Chính sách / Điều khoản / Lưu ý.
+dual_vote:
+  status: DISAGREE
+  score: 0.5032
+  confidence: LOW
+  flag: human_review_required

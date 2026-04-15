@@ -2,58 +2,46 @@
 page_id: wiki.products.software.tinh-nang
 title: Phần Mềm & Bản Quyền BKNS — Tính Năng
 category: products/software
-updated: '2026-04-07'
-review_state: approved
-claims_used: 30
-compile_cost_usd: 0.013
+updated: '2026-04-14'
+review_state: drafted
+claims_used: 86
+compile_cost_usd: 0.0225
 self_review: fail
 corrections: 1
-approved_at: '2026-04-07T13:43:52.224350+07:00'
 ---
 
 # Phần Mềm & Bản Quyền BKNS — Tính Năng
 
-Features nổi bật của các sản phẩm phần mềm và bản quyền do BKNS cung cấp, giúp người dùng quản trị, bảo mật và tối ưu hóa hệ thống hiệu quả.
+Features nổi bật của các sản phẩm Phần Mềm & Bản Quyền do BKNS cung cấp, giúp khách hàng tối ưu hóa quản trị, tăng cường bảo mật, cải thiện hiệu suất và nhận được sự hỗ trợ chuyên nghiệp.
 
-## Các Tính Năng Nổi Bật
-
-Các phần mềm được phân phối bởi BKNS đi kèm với nhiều tính năng mạnh mẽ, được nhóm thành các danh mục chính sau:
-
-### Quản trị & Vận hành
-
-*   **Triển khai Nhanh chóng:** Hỗ trợ cài đặt nhanh chóng hơn 400 ứng dụng và tập lệnh chỉ bằng một cú nhấp chuột. Cung cấp môi trường Staging để thử nghiệm tính năng mới một cách an toàn trước khi triển khai chính thức (Softaculous).
-*   **Tùy chỉnh Linh hoạt:** Cho phép người dùng tùy chỉnh các thiết lập cá nhân như giao diện, ngôn ngữ, mật khẩu (cPanel/WHM). Một số license cho phép sử dụng cho IP theo yêu cầu của khách hàng (DirectAdmin Standard).
-*   **Phát triển theo Yêu cầu:** Cung cấp khả năng cấu hình và phát triển phần mềm theo yêu cầu đặc thù của từng Tỉnh (Phần Mềm Đánh Giá Chuyển Đổi Số DTI - Gói Vĩnh viễn).
-*   **Công cụ Phân tích & Hoạch định:** Tích hợp các công cụ chuyên sâu như bản đồ số liệu trong tỉnh và đề xuất lộ trình chuyển đổi số (Phần Mềm Đánh Giá Chuyển Đổi Số DTI).
-*   **Tích hợp Mở rộng:** Hỗ trợ các tính năng đi kèm như ứng dụng trên Facebook, iOS (vBulletin 5 Connect + Mobile Suite Bundle) và quản lý tài khoản đại lý (Plesk Obsidian - Web Pro Edition).
+### Quản trị
+*   **Quản lý toàn diện:** Các control panel như cPanel/WHM và DirectAdmin cung cấp bộ công cụ mạnh mẽ để quản lý dịch vụ, bao gồm quản lý DNS, Email (POP/IMAP, webmail), FTP, sao lưu và khôi phục dữ liệu tự động. Người dùng có thể dễ dàng tùy chỉnh giao diện, ngôn ngữ và các thiết lập cá nhân.
+*   **Tự động hóa và linh hoạt:** Softaculous cho phép cài đặt hơn 400 ứng dụng (WordPress, Joomla, Magento...) chỉ bằng một cú nhấp chuột, hỗ trợ nhập các ứng dụng đã cài đặt thủ công và tạo môi trường thử nghiệm (staging).
+*   **Lựa chọn phiên bản PHP:** CloudLinux OS tích hợp tính năng PHP Selector, cho phép người dùng cuối tự lựa chọn phiên bản PHP cùng các module và tiện ích mở rộng phù hợp với website của họ.
+*   **Phân tích và hoạch định chiến lược:** Phần mềm Đánh giá Chuyển đổi số (DTI) cung cấp các tính năng độc đáo như xây dựng bản đồ số liệu trong tỉnh, đề xuất lộ trình chuyển đổi số, và có thể được cấu hình, phát triển theo yêu cầu riêng của từng Tỉnh.
+*   **Quản lý Reseller và Subscription:** Các phiên bản Plesk như Web Host và Web Pro hỗ trợ quản lý tài khoản và quản lý gói thuê bao (subscription); riêng phiên bản Web Host còn hỗ trợ quản lý đại lý (reseller), giúp phân chia và kiểm soát tài nguyên hiệu quả.
 
 ### Bảo mật
-
-*   **Bảo vệ Chủ động bằng AI:** Sử dụng công nghệ Trí tuệ nhân tạo (AI) để bảo vệ máy chủ khỏi mã độc và ngăn chặn sự tiếp cận trái phép từ hacker (Imunify360).
-*   **Tư vấn Tăng cường Bảo mật:** Tích hợp công cụ Security Advisor giúp rà soát và đưa ra các khuyến nghị để nâng cao an toàn cho hệ thống (Plesk Obsidian).
+*   **Bảo vệ máy chủ bằng AI:** Imunify360 sử dụng công nghệ Trí tuệ nhân tạo (AI) để chủ động bảo vệ máy chủ khỏi mã độc và ngăn chặn các truy cập trái phép từ hacker.
+*   **Chống tấn công DDoS:** LiteSpeed Web Server và LiteSpeed Web ADC được tích hợp sẵn các tính năng mạnh mẽ để phòng chống và giảm thiểu tác động từ các cuộc tấn công từ chối dịch vụ (DDoS).
+*   **Cô lập tài nguyên:** CloudLinux OS sử dụng công nghệ Lightweight Virtualized Environment (LVE) để cô lập tài nguyên (CPU, I/O, bộ nhớ) của mỗi người dùng. Điều này giúp ngăn chặn một tài khoản bị tấn công hoặc quá tải làm ảnh hưởng đến toàn bộ máy chủ.
+*   **Tư vấn bảo mật:** Plesk Obsidian tích hợp công cụ Security Advisor, cung cấp các khuyến nghị để giúp người quản trị tăng cường an ninh cho máy chủ.
 
 ### Hiệu suất
+*   **Kiến trúc hướng sự kiện:** LiteSpeed Web Server được xây dựng trên kiến trúc hướng sự kiện (event-driven), cho phép xử lý hàng ngàn kết nối đồng thời nhưng sử dụng ít tài nguyên CPU/RAM hơn so với Apache.
+*   **Tăng tốc website:** Giải pháp bộ nhớ đệm LiteSpeed Cache (LSCache) được tích hợp sẵn, cung cấp khả năng tăng tốc mạnh mẽ cho các website, đặc biệt là các trang sử dụng WordPress.
+*   **Tiết kiệm chi phí:** Nhờ khả năng xử lý hiệu quả và yêu cầu ít tài nguyên phần cứng, các phần mềm như LiteSpeed và DirectAdmin giúp doanh nghiệp tiết kiệm chi phí đầu tư và vận hành máy chủ.
+*   **Cân bằng tải hiệu suất cao:** LiteSpeed Web ADC hoạt động như một bộ cân bằng tải (Load Balancer) hiệu suất cao, giúp phân phối lưu lượng truy cập và đảm bảo tính ổn định cho hệ thống.
 
-*   **Tối ưu hóa Tốc độ và Tài nguyên:** Sử dụng kiến trúc hướng sự kiện (event-driven) giúp xử lý hàng ngàn kết nối đồng thời, giảm tải CPU cho máy chủ. Hỗ trợ các giao thức web hiện đại như HTTP/3 và QUIC để tăng tốc độ tải trang (LiteSpeed Web Server).
+### Hỗ trợ & Tương thích
+*   **Hỗ trợ kỹ thuật chuyên nghiệp:** BKNS cung cấp dịch vụ hỗ trợ cài đặt và tối ưu miễn phí cho các bản quyền DirectAdmin. Các gói phần mềm Đánh giá Chuyển đổi số (DTI) đều đi kèm dịch vụ hỗ trợ 24/7.
+*   **Tương thích đa nền tảng:** Các phần mềm hỗ trợ nhiều hệ điều hành phổ biến như CentOS, RHEL, Debian, Ubuntu và cả Windows (Plesk Obsidian), đảm bảo khả năng triển khai linh hoạt trên nhiều môi trường.
+*   **Hỗ trợ đa phiên bản PHP:** CloudLinux OS cho phép chạy đồng thời nhiều phiên bản PHP khác nhau trên cùng một máy chủ, đáp ứng yêu cầu đa dạng của các ứng dụng web.
+*   **Hỗ trợ giao thức mới:** LiteSpeed Web Server hỗ trợ giao thức QUIC (nền tảng của HTTP/3), giúp cải thiện tốc độ và độ tin cậy khi duyệt web.
 
-### Hỗ trợ Kỹ thuật
-
-*   **Hỗ trợ 24/7:** Nhiều gói sản phẩm phần mềm cung cấp dịch vụ hỗ trợ kỹ thuật liên tục 24/7.
-*   **Hỗ trợ Cài đặt & Tối ưu:** Cung cấp dịch vụ hỗ trợ cài đặt và tối ưu miễn phí cho một số sản phẩm (DirectAdmin Standard).
-*   **Hỗ trợ Dài hạn:** Một số gói sản phẩm đặc thù như Gói Vĩnh viễn của Phần mềm DTI được hỗ trợ kỹ thuật trong vòng 3 năm.
-
-## Nền Tảng Hỗ Trợ
-
-Các phần mềm do BKNS cung cấp tương thích với nhiều hệ điều hành và nền tảng phổ biến, đảm bảo tính linh hoạt trong triển khai.
-
-*   **Linux:** Hỗ trợ các phiên bản phổ biến như CentOS, RHEL (CloudLinux OS), Rocky Linux, AlmaLinux, Ubuntu, Debian (DirectAdmin, Imunify360).
-*   **Windows:** Hỗ trợ hệ điều hành Windows (Plesk Obsidian).
-*   **Script & Ứng dụng:** Hỗ trợ hàng trăm script phổ biến như WordPress, Joomla, Drupal, Magento (Softaculous).
-
-## Sản phẩm liên quan
-
+### Sản phẩm liên quan
 - [Web Hosting BKNS](../hosting/index.md)
 - [Cloud VPS BKNS](../vps/index.md)
 - [Máy Chủ BKNS](../server/index.md)
 
-Compiled by BKNS Wiki Bot • 2026-04-07
+Compiled by BKNS Wiki Bot • 2026-04-14

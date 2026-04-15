@@ -2,13 +2,12 @@
 page_id: wiki.products.ten-mien.cau-hoi-thuong-gap
 title: Tên Miền BKNS — Câu Hỏi Thường Gặp
 category: products/ten-mien
-updated: '2026-04-07'
-review_state: approved
+updated: '2026-04-14'
+review_state: drafted
 claims_used: 0
 compile_cost_usd: 0
 self_review: skeleton
 corrections: 0
-approved_at: '2026-04-07T13:24:43.561443+07:00'
 ---
 
 # Tên Miền BKNS — Câu Hỏi Thường Gặp

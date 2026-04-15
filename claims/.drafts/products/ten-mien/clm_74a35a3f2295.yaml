@@ -1,0 +1,20 @@
+claim_id: CLM-74A35A3F2295
+entity_id: bkns:prod:domain:registry_lock
+entity_type: product
+entity_name: Bảo vệ tên miền cấp cao nhất (Registry Lock)
+attribute: process_step
+value: VNNIC thực hiện Mở/Khóa dịch vụ theo yêu cầu đã được xác thực.
+unit: null
+qualifiers:
+  step: 5
+source_ids:
+- SRC-BAO_VE_TEN_MIEN_CAP_CAO_NHAT_GIAI_PHAP_AN_TOAN_TUYET_OI_2026_04_13
+observed_at: '2026-04-13T21:50:55.019901+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Quy trình đăng ký / Triển khai / Kích hoạt: ''5. VNNIC thực
+  hiện Mở/Khóa dịch vụ theo yêu cầu đã được xác thực.'''
+value_changed_from: Chủ thể xác nhận yêu cầu với VNNIC.
+value_changed_at: '2026-04-13T21:50:55.019923+07:00'

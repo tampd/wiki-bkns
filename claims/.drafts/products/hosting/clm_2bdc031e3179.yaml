@@ -1,0 +1,20 @@
+claim_id: CLM-2BDC031E3179
+entity_id: ENT-PROD-HOSTING
+entity_type: product
+entity_name: Hosting Windows
+attribute: supported_language
+value: PHP
+unit: ''
+qualifiers:
+  product_line: Hosting Windows
+source_ids:
+- SRC-DICH_VU_HOSTING_WINDOWS_TAI_BKNS_2026_04_13
+observed_at: '2026-04-13T22:24:54.589880+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục ''Tính năng / Thành phần'': ''• Hỗ trợ ngôn ngữ: ASP.NET,
+  PHP.'''
+value_changed_from: ASP.NET
+value_changed_at: '2026-04-13T22:24:54.589919+07:00'

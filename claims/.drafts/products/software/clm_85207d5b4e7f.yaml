@@ -1,0 +1,25 @@
+claim_id: CLM-85207D5B4E7F
+entity_id: product.software.cpanel_whm_license
+entity_type: product
+entity_name: Bản quyền cPanel/WHM
+attribute: component
+value: WHM (WebHost Manager) dành cho quản trị viên để quản lý toàn bộ máy chủ
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-BAN_QUYEN_CPANEL_WHM_2026_04_05
+observed_at: '2026-04-14T17:17:27.551900+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ mục ''Mô tả dịch vụ'': cPanel bao gồm hai giao diện chính:
+  cPanel dành cho người dùng cuối quản lý website của họ và WHM (WebHost Manager)
+  dành cho quản trị viên để quản lý toàn bộ máy chủ.'
+dual_vote:
+  status: DISAGREE
+  score: 0.1008
+  confidence: LOW
+  flag: human_review_required
+value_changed_from: cPanel dành cho người dùng cuối quản lý website của họ
+value_changed_at: '2026-04-14T17:17:27.551928+07:00'

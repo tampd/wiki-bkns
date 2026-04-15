@@ -8,13 +8,14 @@ unit: IOPS
 qualifiers:
   limit: up_to
 source_ids:
-- SRC-CLOUD_VPS_BK_MISA_GIAI_PHAP_LUU_TRU_KE_TOAN_SO_2026_04_06
+  - SRC-CLOUD_VPS_BK_MISA_GIAI_PHAP_LUU_TRU_KE_TOAN_SO_2026_04_06
 observed_at: '2026-04-06T23:45:51.838349+07:00'
 valid_from: '2026-04-06'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ: ━━━ Tính năng / Thành phần • ...giúp tăng tốc độ truy xuất
-  dữ liệu lên đến 10.000 IO.'
-approved_at: '2026-04-07T13:00:14.068490+07:00'
+compiler_note: 'Trích từ: ━━━ Tính năng / Thành phần • ...giúp tăng tốc độ truy xuất dữ liệu lên đến 10.000 IO.'
+approved_at: '2026-04-08T13:00:13.585488+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.650Z'

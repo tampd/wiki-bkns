@@ -1,0 +1,25 @@
+claim_id: CLM-E66F03F95678
+entity_id: bkns.hosting.platium.bkcp02
+entity_type: product_plan
+entity_name: BKCP02
+attribute: price
+value: 1440000
+unit: VND
+qualifiers:
+  billing_cycle: annually
+  term_years: 4
+source_ids:
+- SRC-BANG_GIA_HOSTING_2026_04_05
+observed_at: '2026-04-14T12:01:02.035886+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ bảng Platium web hosting, cột BKCP02, dòng Giá 4 năm: 1,440,000'
+dual_vote:
+  status: DISAGREE
+  score: 0.4208
+  confidence: LOW
+  flag: human_review_required
+value_changed_from: 1260000
+value_changed_at: '2026-04-14T12:01:02.035938+07:00'

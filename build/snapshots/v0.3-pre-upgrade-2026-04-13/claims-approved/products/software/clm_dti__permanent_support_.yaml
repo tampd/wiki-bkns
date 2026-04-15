@@ -1,0 +1,19 @@
+claim_id: CLM-DTI_-PERMANENT-SUPPORT_
+entity_id: dti_software.permanent
+entity_type: product_plan
+entity_name: Gói Vĩnh viễn
+attribute: support_hours
+value: 24/7
+unit: null
+qualifiers:
+  duration: 3 năm
+source_ids:
+- SRC-PHAN_MEM_ANH_GIA_CHUYEN_OI_SO_DTI_2026_04_04
+observed_at: '2026-04-04T21:07:35.201996+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ bảng giá: ''| Hỗ trợ | ... | 24/7 trong vòng 3 năm |'''
+approved_at: '2026-04-08T13:00:15.397200+07:00'
+approved_by: admin-batch

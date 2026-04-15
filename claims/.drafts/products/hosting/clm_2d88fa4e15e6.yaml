@@ -1,0 +1,21 @@
+claim_id: CLM-2D88FA4E15E6
+entity_id: product.hosting.shared
+entity_type: product_line
+entity_name: Hosting
+attribute: storage_capacity
+value: Dung lượng vừa phải, có thể lưu trữ vài chục GB
+unit: ''
+qualifiers: null
+source_ids:
+- SRC-TRAINING_DICH_VU_VPS_2026_04_13
+observed_at: '2026-04-14T16:19:07.464959+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: Trích từ bảng so sánh mục 3, dòng 'Ổ cứng', cột 'Hosting'.
+dual_vote:
+  status: DISAGREE
+  score: 0.4702
+  confidence: LOW
+  flag: human_review_required

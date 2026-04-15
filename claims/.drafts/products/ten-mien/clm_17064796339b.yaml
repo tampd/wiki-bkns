@@ -1,0 +1,19 @@
+claim_id: CLM-17064796339B
+entity_id: bkns:prod:domain:registry_lock
+entity_type: product
+entity_name: Bảo vệ tên miền cấp cao nhất (Registry Lock)
+attribute: description
+value: Ngăn chặn các thay đổi trái phép đối với thông tin tên miền ở cấp độ cơ quan
+  đăng ký (registry), cụ thể là VNNIC.
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-BAO_VE_TEN_MIEN_CAP_CAO_NHAT_GIAI_PHAP_AN_TOAN_TUYET_OI_2026_04_13
+observed_at: '2026-04-13T21:50:54.843099+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: ''Dịch vụ này là gì: Một dịch vụ bảo mật cao
+  cấp cho tên miền, giúp ngăn chặn các thay đổi trái phép đối với thông tin tên miền
+  ở cấp độ cơ quan đăng ký (registry), cụ thể là VNNIC.'''

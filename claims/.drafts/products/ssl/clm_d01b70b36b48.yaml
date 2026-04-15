@@ -1,0 +1,16 @@
+claim_id: CLM-D01B70B36B48
+entity_id: ENT-PROD-SSL-COMODO-WILDCARD-DV
+entity_type: product
+entity_name: Comodo SSL Wildcard Certificate (DV)
+attribute: ssl.wildcard_support
+value: true
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-COMODO_SSL_WILDCARD_CERTIFICATE_DV_CHUNG_CHI_SSL_2026_04_13
+observed_at: '2026-04-13T22:10:45.463040+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Thông số kỹ thuật / Giới hạn: ''| Hỗ trợ Wildcard | Có |'''

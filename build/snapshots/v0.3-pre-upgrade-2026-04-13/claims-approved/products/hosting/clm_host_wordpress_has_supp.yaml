@@ -1,0 +1,19 @@
+claim_id: CLM-HOST-WORDPRESS-HAS_SUPP
+entity_id: product.hosting.wordpress
+entity_type: product
+entity_name: Hosting WordPress
+attribute: has_support
+value: Hỗ trợ kỹ thuật 24/7 chuyên về WordPress
+unit: ''
+qualifiers: {}
+source_ids:
+- SRC-HOSTING_WORDPRESS_TOC_O_CAO_BANG_GIA_GIAI_PHAP_TOI_UU_S_2026_04_06
+observed_at: '2026-04-07T00:40:11.123958+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ Tính năng / Thành phần: • Hỗ trợ chuyên nghiệp: Đội ngũ kỹ
+  thuật chuyên môn về WordPress, hỗ trợ 24/7.'
+approved_at: '2026-04-08T13:00:11.946106+07:00'
+approved_by: admin-batch

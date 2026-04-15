@@ -1,0 +1,21 @@
+claim_id: CLM-78BE34ABD465
+entity_id: product.vps.adm.epyc1
+entity_type: product_plan
+entity_name: EPYC 1
+attribute: price
+value: 5445000
+unit: VND
+qualifiers:
+  billing_cycle: 60_months
+  vat_included: false
+source_ids:
+- SRC-BANG_GIA_VPS_2026_04_13
+observed_at: '2026-04-13T21:49:32.309269+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ bảng giá VPS ADM, cột EPYC 1, dòng Giá 60 tháng: 5,445,000.
+  Ghi chú chung: ''Chưa bao gồm VAT'''
+value_changed_from: 3861000
+value_changed_at: '2026-04-13T21:49:32.309310+07:00'

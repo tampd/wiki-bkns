@@ -1,0 +1,22 @@
+claim_id: CLM-C6F10695BA44
+entity_id: product.software.cpanel_whm_license
+entity_type: product
+entity_name: Bản quyền cPanel/WHM
+attribute: system_requirement
+value: Dành riêng cho máy chủ sử dụng hệ điều hành Linux.
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-BAN_QUYEN_CPANEL_WHM_2026_04_05
+observed_at: '2026-04-14T17:17:27.544323+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ mục ''Tóm tắt nhanh'': • Điều kiện/giới hạn nổi bật (nếu
+  có): Dành riêng cho máy chủ sử dụng hệ điều hành Linux.'
+dual_vote:
+  status: DISAGREE
+  score: 0.1008
+  confidence: LOW
+  flag: human_review_required

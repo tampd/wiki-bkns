@@ -1,0 +1,18 @@
+claim_id: CLM-ENT-PROD-VPN-WEBSITE_
+entity_id: ENT-PROD-VPN-001
+entity_type: product
+entity_name: Dịch vụ VPN
+attribute: website_category
+value: server
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-DICH_VU_VPN_CLOUD_VPN_CUA_BKNS_2026_04_06
+observed_at: '2026-04-07T00:15:17.583162+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ mục ''Thông tin nguồn'': Danh mục: server'
+approved_at: '2026-04-08T13:00:09.205420+07:00'
+approved_by: admin-batch

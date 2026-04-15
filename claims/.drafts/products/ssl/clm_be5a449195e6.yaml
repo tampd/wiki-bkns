@@ -1,0 +1,18 @@
+claim_id: CLM-BE5A449195E6
+entity_id: ENT-PROD-SSL-COMODO-DV
+entity_type: product_plan
+entity_name: Comodo SSL Certificate (DV)
+attribute: target_audience
+value: Các website cá nhân, blog hoặc các trang web cần bảo mật cơ bản, mã hóa dữ
+  liệu với quy trình xác thực nhanh chóng.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-COMODO_SSL_CERTIFICATE_DV_CHUNG_CHI_XAC_THUC_TEN_MIEN_2026_04_13
+observed_at: '2026-04-13T22:09:21.996302+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: '• Phù hợp với: Các website cá nhân, blog hoặc các trang web cần bảo
+  mật cơ bản, mã hóa dữ liệu với quy trình xác thực nhanh chóng.'

@@ -1,0 +1,23 @@
+claim_id: CLM-EMAI-EMAIL_RELAY-COMPARIS
+entity_id: product.email.email_relay
+entity_type: product
+entity_name: Email Relay
+attribute: comparison_point
+value: Toàn bộ email gửi ra ngoài sẽ được routing qua hệ thống của BKNS để xử lý.
+unit: ''
+qualifiers:
+  compared_to: Email Server
+source_ids:
+- SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_TIN_CAY_2026_04_06
+observed_at: '2026-04-07T00:21:09.884928+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ bảng So sánh Email Relay và Email Server: | EMAIL RELAY |
+  Toàn bộ email gửi ra ngoài sẽ được routing qua hệ thống của BKNS để xử lý. |'
+value_changed_from: Khách hàng tự kiểm soát uy tín IP server và gặp vấn đề khi gửi
+  mail.
+value_changed_at: '2026-04-07T00:21:09.884946+07:00'
+approved_at: '2026-04-08T13:00:10.170814+07:00'
+approved_by: admin-batch

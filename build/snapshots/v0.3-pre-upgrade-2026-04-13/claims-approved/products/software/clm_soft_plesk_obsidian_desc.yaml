@@ -1,0 +1,20 @@
+claim_id: CLM-SOFT-PLESK_OBSIDIAN-DESC
+entity_id: product.software.plesk_obsidian
+entity_type: product
+entity_name: Plesk Obsidian
+attribute: description
+value: Cung cấp bản quyền phần mềm quản trị hosting Plesk Obsidian cho VPS và máy
+  chủ riêng (Dedicated Server).
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-PHAN_MEM_QUAN_TRI_HOSTING_PLESK_OBSIDIAN_2026_04_04
+observed_at: '2026-04-04T21:08:50.860233+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: Dịch vụ này là gì: Cung cấp bản quyền phần
+  mềm quản trị hosting Plesk Obsidian cho VPS và máy chủ riêng (Dedicated Server).'
+approved_at: '2026-04-08T13:00:16.002341+07:00'
+approved_by: admin-batch

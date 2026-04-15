@@ -1,0 +1,24 @@
+claim_id: CLM-C97E01C7AC50
+entity_id: ENT-PROD-SSL-GT-EV-MD-01
+entity_type: product
+entity_name: GeoTrust True BusinessID with EV Multi-Domain
+attribute: target_customer
+value: Các doanh nghiệp, tổ chức cần tăng cường sự tin cậy của khách hàng và bảo mật
+  giao dịch trên nhiều website, đặc biệt là các trang thương mại điện tử, tài chính.
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-GEOTRUST_TRUE_BUSINESSID_WITH_EV_MULTI_DOMAIN_2026_04_13
+observed_at: '2026-04-14T16:54:21.879159+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tóm tắt nhanh: Phù hợp với: Các doanh nghiệp, tổ chức
+  cần tăng cường sự tin cậy của khách hàng và bảo mật giao dịch trên nhiều website,
+  đặc biệt là các trang thương mại điện tử, tài chính.'
+dual_vote:
+  status: DISAGREE
+  score: 0.375
+  confidence: LOW
+  flag: human_review_required

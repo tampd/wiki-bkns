@@ -1,0 +1,19 @@
+claim_id: CLM-VPS-BKNS-CPU_TYPE
+entity_id: product.vps.bkns.cloud_vps_amd
+entity_type: product_line
+entity_name: Cloud VPS AMD
+attribute: cpu_type
+value: AMD EPYC
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-BKNS_CAMNAG_HOSTING_DOT3_2026_04_04
+observed_at: '2026-04-04T20:31:22.415072+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ mục 4.1 CLOUD VPS AMD: ''...sử dụng chip AMD EPYC (64 nhân/128
+  luồng).'''
+approved_at: '2026-04-08T13:00:14.816328+07:00'
+approved_by: admin-batch

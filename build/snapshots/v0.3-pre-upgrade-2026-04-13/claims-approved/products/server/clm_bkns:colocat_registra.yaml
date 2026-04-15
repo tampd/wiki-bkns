@@ -1,0 +1,18 @@
+claim_id: CLM-BKNS:COLOCAT-REGISTRA
+entity_id: bkns:colocation
+entity_type: product_service
+entity_name: Thuê Chỗ Đặt Máy Chủ (Colocation)
+attribute: registration_process
+value: 1. Liên hệ với BKNS. 2. Tư vấn. 3. Ký hợp đồng. 4. Bàn giao.
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-DICH_VU_THUE_CHO_AT_MAY_CHU_COLOCATION_TAI_BKNS_2026_04_04
+observed_at: '2026-04-04T20:52:19.149419+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: Trích từ phần 'Quy trình đăng ký / Triển khai / Kích hoạt (nếu có)'
+approved_at: '2026-04-08T13:00:08.716588+07:00'
+approved_by: admin-batch

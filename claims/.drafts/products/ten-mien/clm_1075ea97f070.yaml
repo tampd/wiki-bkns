@@ -1,0 +1,18 @@
+claim_id: CLM-1075EA97F070
+entity_id: bkns:prod:domain:2fa
+entity_type: product
+entity_name: Xác thực 2 bước (2FA)
+attribute: security_level
+value: Mức tăng cường
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-BAO_VE_TEN_MIEN_CAP_CAO_NHAT_GIAI_PHAP_AN_TOAN_TUYET_OI_2026_04_13
+observed_at: '2026-04-13T21:50:55.059110+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng So sánh các gói: ''| Tính năng | ... | Xác thực 2 bước
+  (2FA) | ... | | :--- | :--- | :--- | :--- | | Mức độ bảo vệ | ... | Mức tăng cường
+  | ... |'''

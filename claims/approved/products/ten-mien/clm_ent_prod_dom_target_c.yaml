@@ -7,17 +7,17 @@ value: Cá nhân, tổ chức và doanh nghiệp muốn sở hữu địa chỉ 
 unit: null
 qualifiers: {}
 source_ids:
-- SRC-BAO_VE_TEN_MIEN_CAP_CAO_NHAT_GIAI_PHAP_AN_TOAN_TUYET_OI_2026_04_04
-- SRC-DICH_VU_ANG_KY_TEN_MIEN_VIET_NAM_VA_QUOC_TE_TAI_BKNS_2026_04_06
+  - SRC-BAO_VE_TEN_MIEN_CAP_CAO_NHAT_GIAI_PHAP_AN_TOAN_TUYET_OI_2026_04_04
+  - SRC-DICH_VU_ANG_KY_TEN_MIEN_VIET_NAM_VA_QUOC_TE_TAI_BKNS_2026_04_06
 observed_at: '2026-04-06T23:54:34.810602+07:00'
 valid_from: '2026-04-04'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ mục Tóm tắt nhanh: Phù hợp với: Cá nhân, tổ chức và doanh
-  nghiệp muốn sở hữu địa chỉ website riêng để xây dựng thương hiệu, kinh doanh trực
-  tuyến hoặc tạo email theo tên miền riêng.'
+compiler_note: 'Trích từ mục Tóm tắt nhanh: Phù hợp với: Cá nhân, tổ chức và doanh nghiệp muốn sở hữu địa chỉ website riêng để xây dựng thương hiệu, kinh doanh trực tuyến hoặc tạo email theo tên miền riêng.'
 value_changed_from: bất kỳ ai sở hữu tên miền quan trọng
 value_changed_at: '2026-04-06T23:54:34.810621+07:00'
-approved_at: '2026-04-07T13:00:10.689471+07:00'
+approved_at: '2026-04-08T13:00:09.774772+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.642Z'

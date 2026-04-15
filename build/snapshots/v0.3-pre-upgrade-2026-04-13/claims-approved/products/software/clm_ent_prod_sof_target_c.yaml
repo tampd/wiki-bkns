@@ -1,0 +1,19 @@
+claim_id: CLM-ENT-PROD-SOF-TARGET_C
+entity_id: ENT-PROD-SOFTWARE-OPENLITESPEED
+entity_type: product_version
+entity_name: OpenLiteSpeed
+attribute: target_customer
+value: phù hợp cho các trang web không yêu cầu các tính năng của phiên bản Enterprise
+unit: null
+qualifiers: null
+source_ids:
+- SRC-LITESPEED_WEB_SERVER_TINH_NANG_PHIEN_BAN_VA_SO_SANH_2026_04_04
+observed_at: '2026-04-04T21:06:48.518338+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ phần ''Thông số kỹ thuật / Giới hạn'': • OpenLiteSpeed (OLS):
+  ... và phù hợp cho các trang web không yêu cầu các tính năng của phiên bản Enterprise.'
+approved_at: '2026-04-08T13:00:15.610729+07:00'
+approved_by: admin-batch

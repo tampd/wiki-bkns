@@ -1,0 +1,26 @@
+claim_id: CLM-BEE5A2F3C25C
+entity_id: product.email.cloud_email_server
+entity_type: product
+entity_name: Cloud Email Server
+attribute: starting_price
+value: 239000
+unit: VND
+qualifiers:
+  billing_cycle: month
+  source: meta_description
+source_ids:
+- SRC-DICH_VU_CLOUD_EMAIL_SERVER_AN_TOAN_HIEU_SUAT_CAO_2026_04_05
+observed_at: '2026-04-14T17:03:01.555794+07:00'
+valid_from: '2026-04-14'
+confidence: medium
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ ghi chú trích xuất: ''MÂU THUẪN TRONG TRANG: Meta description
+  của trang ghi giá "CHỈ TỪ 239K/THÁNG", tuy nhiên gói thấp nhất trong bảng giá là
+  MINI EMAIL 01 có giá 314.000đ/Tháng.'' Giá trị này mâu thuẫn với bảng giá.'
+parent_entity_id: ENT-PROD-EMAIL
+dual_vote:
+  status: DISAGREE
+  score: 0.4298
+  confidence: LOW
+  flag: human_review_required

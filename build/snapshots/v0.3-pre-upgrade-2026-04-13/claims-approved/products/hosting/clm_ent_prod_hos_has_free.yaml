@@ -1,0 +1,19 @@
+claim_id: CLM-ENT-PROD-HOS-HAS_FREE
+entity_id: ENT-PROD-HOSTING
+entity_type: product_offering
+entity_name: Hosting Giá Rẻ
+attribute: has_free_ssl
+value: true
+unit: ''
+qualifiers: {}
+source_ids:
+- SRC-HOSTING_GIA_RE_BANG_GIA_VA_THONG_SO_KY_THUAT_TAI_BKNS_2026_04_06
+observed_at: '2026-04-07T00:36:08.635358+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ Tính năng / Thành phần: ''• Miễn phí SSL: Cung cấp chứng
+  chỉ SSL miễn phí để mã hóa kết nối và tăng độ tin cậy cho website.'''
+approved_at: '2026-04-08T13:00:10.754923+07:00'
+approved_by: admin-batch

@@ -1,0 +1,23 @@
+claim_id: CLM-IMG-product.hosting.bkbw01-website_price
+entity_id: product.hosting.bkbw01
+entity_type: product_plan
+entity_name: Hosting Windows Thường BKBW01
+attribute: website_price
+value: 313500
+confidence: ground_truth
+review_state: approved
+risk_class: verified
+source_ids:
+  - IMG-BKBW01-BKBW02-BKBW03-BKBW04
+observed_at: '2026-04-07T16:35:13.179694+07:00'
+valid_from: '2026-04-07'
+approved_at: '2026-04-07T16:35:13.179694+07:00'
+approved_by: image-extraction
+unit: VND
+qualifiers:
+  period: 1 tháng
+  source: bkns.vn website screenshot
+  note: Giá hiển thị trên web, có thể đã bao gồm giảm giá
+compiler_note: Extracted from website screenshot (BKBW01-BKBW02-BKBW03-BKBW04), Hosting Windows Thường BKBW01
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.129Z'

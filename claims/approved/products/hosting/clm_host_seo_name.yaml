@@ -7,12 +7,14 @@ value: Hosting SEO
 unit: null
 qualifiers: null
 source_ids:
-- SRC-DICH_VU_HOSTING_SEO_TOI_UU_WEBSITE_CHO_CONG_CU_TIM_KIEM_2026_04_06
+  - SRC-DICH_VU_HOSTING_SEO_TOI_UU_WEBSITE_CHO_CONG_CU_TIM_KIEM_2026_04_06
 observed_at: '2026-04-07T00:07:08.152546+07:00'
 valid_from: '2026-04-07'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: none
 compiler_note: 'Trích từ tiêu đề trang: ═══ Hosting SEO'
-approved_at: '2026-04-07T13:00:12.463955+07:00'
+approved_at: '2026-04-08T13:00:11.708906+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.080Z'

@@ -7,12 +7,14 @@ value: 2
 unit: core
 qualifiers: null
 source_ids:
-- SRC-DICH_VU_VPS_SIEU_TIET_KIEM_VPS_SIEU_RE_TAI_BKNS_2026_04_06
+  - SRC-DICH_VU_VPS_SIEU_TIET_KIEM_VPS_SIEU_RE_TAI_BKNS_2026_04_06
 observed_at: '2026-04-07T00:18:36.327353+07:00'
 valid_from: '2026-04-07'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
 compiler_note: 'Trích từ bảng giá, dòng ''vCPU'', cột ''VPSTK3'': ''02 Core'''
-approved_at: '2026-04-07T13:00:15.387676+07:00'
+approved_at: '2026-04-08T13:00:15.237212+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.807Z'

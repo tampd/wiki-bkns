@@ -1,0 +1,23 @@
+claim_id: CLM-C08902789FC1
+entity_id: ENT-PROD-VPS
+entity_type: product_family
+entity_name: VPS
+attribute: definition
+value: Một máy chủ ảo được tạo ra bằng công nghệ ảo hóa từ một máy chủ vật lý.
+unit: ''
+qualifiers: null
+source_ids:
+- SRC-TRAINING_DICH_VU_VPS_2026_04_05
+observed_at: '2026-04-14T16:17:36.039146+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục ''1 Vps là gì ?'': ''VPS, hay Máy chủ riêng ảo (Virtual
+  Private Server), là một máy chủ ảo được tạo ra bằng công nghệ ảo hóa từ một máy
+  chủ vật lý.'''
+dual_vote:
+  status: DISAGREE
+  score: 0.5333
+  confidence: LOW
+  flag: human_review_required

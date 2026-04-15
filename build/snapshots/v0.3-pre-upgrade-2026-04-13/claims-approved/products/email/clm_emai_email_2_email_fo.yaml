@@ -1,0 +1,18 @@
+claim_id: CLM-EMAI-EMAIL_2-EMAIL_FO
+entity_id: bkns.email_hosting.email_2
+entity_type: product_plan
+entity_name: EMAIL 2
+attribute: email_forwards
+value: 10
+unit: tài khoản
+qualifiers: {}
+source_ids:
+- SRC-DICH_VU_EMAIL_HOSTING_CHUYEN_NGHIEP_AN_TOAN_BAO_MAT_CAO_2026_04_06
+observed_at: '2026-04-07T00:05:00.888079+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ bảng giá: ''Số lượng email forward | 10'''
+approved_at: '2026-04-08T13:00:10.116543+07:00'
+approved_by: admin-batch

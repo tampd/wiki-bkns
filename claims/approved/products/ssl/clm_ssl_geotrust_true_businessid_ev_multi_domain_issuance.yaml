@@ -7,13 +7,14 @@ value: 7-10 ngày làm việc
 unit: ''
 qualifiers: null
 source_ids:
-- SRC-GEOTRUST_TRUE_BUSINESSID_WITH_EV_MULTI_DOMAIN_2026_04_06
+  - SRC-GEOTRUST_TRUE_BUSINESSID_WITH_EV_MULTI_DOMAIN_2026_04_06
 observed_at: '2026-04-07T00:34:23.301387+07:00'
 valid_from: '2026-04-07'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ mục ''Quy trình đăng ký / Triển khai / Kích hoạt'': Quá trình
-  xác thực và cấp phát chứng chỉ sẽ mất từ 7-10 ngày làm việc.'
-approved_at: '2026-04-07T13:00:13.841602+07:00'
+compiler_note: 'Trích từ mục ''Quy trình đăng ký / Triển khai / Kích hoạt'': Quá trình xác thực và cấp phát chứng chỉ sẽ mất từ 7-10 ngày làm việc.'
+approved_at: '2026-04-08T13:00:13.344962+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.572Z'

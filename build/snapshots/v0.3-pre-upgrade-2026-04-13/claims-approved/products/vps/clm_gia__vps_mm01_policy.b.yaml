@@ -1,0 +1,18 @@
+claim_id: CLM-GIA_-VPS-MM01-POLICY.B
+entity_id: vps.gia_re.vps-mm01
+entity_type: product_plan
+entity_name: VPS-MM01
+attribute: policy.backup.weekly
+value: false
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_VPS_GIA_RE_MAY_CHU_AO_CAU_HINH_ON_INH_2026_04_06
+observed_at: '2026-04-07T00:16:39.162745+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ bảng giá, cột VPS-MM01: Sao Lưu Dữ Liệu Hàng Tuần | Không'
+approved_at: '2026-04-08T13:00:14.268955+07:00'
+approved_by: admin-batch

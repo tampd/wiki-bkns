@@ -1,0 +1,18 @@
+claim_id: CLM-ENT-PROD-VPS-RECOMMEN
+entity_id: ENT-PROD-VPS
+entity_type: product_offering
+entity_name: VPS Giá Rẻ
+attribute: recommended_use_case
+value: project nhỏ
+unit: null
+qualifiers: null
+source_ids:
+- SRC-VPS_GIA_RE_WEB_2026_04_05
+observed_at: '2026-04-05T22:21:03.428810+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ: Phù hợp cho VPS test, development, project nhỏ'
+approved_at: '2026-04-08T13:00:14.085234+07:00'
+approved_by: admin-batch

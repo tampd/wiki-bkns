@@ -7,13 +7,14 @@ value: Domain Validation (DV)
 unit: null
 qualifiers: {}
 source_ids:
-- SRC-GEOTRUST_QUICKSSL_PREMIUM_CHUNG_CHI_SSL_XAC_THUC_TEN_MIEN_2026_04_04
+  - SRC-GEOTRUST_QUICKSSL_PREMIUM_CHUNG_CHI_SSL_XAC_THUC_TEN_MIEN_2026_04_04
 observed_at: '2026-04-04T20:59:24.004066+07:00'
 valid_from: '2026-04-04'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ Tóm tắt nhanh: ''• Dịch vụ này là gì: Chứng chỉ SSL xác thực
-  tên miền (Domain Validation - DV) do GeoTrust cung cấp.'''
-approved_at: '2026-04-07T13:00:12.811105+07:00'
+compiler_note: 'Trích từ Tóm tắt nhanh: ''• Dịch vụ này là gì: Chứng chỉ SSL xác thực tên miền (Domain Validation - DV) do GeoTrust cung cấp.'''
+approved_at: '2026-04-08T13:00:12.152602+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.449Z'

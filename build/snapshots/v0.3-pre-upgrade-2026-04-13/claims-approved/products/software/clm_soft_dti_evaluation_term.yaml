@@ -1,0 +1,19 @@
+claim_id: CLM-SOFT-DTI_EVALUATION-TERM
+entity_id: product.software.dti_evaluation.perpetual
+entity_type: product_plan
+entity_name: Gói Vĩnh viễn
+attribute: term
+value: perpetual
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-PHAN_MEM_ANH_GIA_CHUYEN_OI_SO_DTI_2026_04_06
+observed_at: '2026-04-07T00:45:52.685757+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ bảng giá, cột ''Gói Vĩnh viễn'', hàng ''Thời gian'': Vĩnh
+  viễn'
+approved_at: '2026-04-08T13:00:15.900341+07:00'
+approved_by: admin-batch

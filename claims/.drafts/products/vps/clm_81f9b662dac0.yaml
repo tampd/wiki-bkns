@@ -1,0 +1,19 @@
+claim_id: CLM-81F9B662DAC0
+entity_id: product.vps.vps_gia_re
+entity_type: product_offering
+entity_name: VPS Giá Rẻ
+attribute: has_feature
+value: Hỗ trợ kỹ thuật 24/7
+unit: ''
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_VPS_GIA_RE_MAY_CHU_AO_CAU_HINH_ON_INH_2026_04_13
+observed_at: '2026-04-13T22:31:41.500027+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tính năng / Thành phần: ''Hỗ trợ kỹ thuật: Đội ngũ kỹ thuật
+  hỗ trợ 24/7.'''
+value_changed_from: Hạ tầng đặt tại Data Center đạt chuẩn quốc tế
+value_changed_at: '2026-04-13T22:31:41.500062+07:00'

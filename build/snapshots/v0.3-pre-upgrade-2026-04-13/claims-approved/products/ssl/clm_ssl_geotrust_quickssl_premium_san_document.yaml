@@ -1,0 +1,22 @@
+claim_id: CLM-SSL-GEOTRUST_QUICKSSL_PREMIUM_SAN-DOCUMENT
+entity_id: product.ssl.geotrust_quickssl_premium_san
+entity_type: product_plan
+entity_name: GeoTrust QuickSSL Premium SAN
+attribute: documentation_required
+value: Không yêu cầu
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-GEOTRUST_QUICKSSL_PREMIUM_SAN_2026_04_04
+- SRC-GEOTRUST_QUICKSSL_PREMIUM_SAN_2026_04_06
+observed_at: '2026-04-07T00:29:33.242491+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: none
+compiler_note: 'Trích từ mục Thông số kỹ thuật / Giới hạn: | Giấy tờ kèm theo | Không
+  yêu cầu |'
+value_changed_from: false
+value_changed_at: '2026-04-07T00:29:33.242508+07:00'
+approved_at: '2026-04-08T13:00:13.099748+07:00'
+approved_by: admin-batch

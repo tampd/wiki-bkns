@@ -1,0 +1,18 @@
+claim_id: CLM-11D6E6A8CD82
+entity_id: product.software.directadmin.standard
+entity_type: product_plan
+entity_name: DirectAdmin Standard
+attribute: monthly_price
+value: 790000
+unit: VND
+qualifiers:
+  billing_cycle: month
+  license_type: external
+source_ids:
+- SRC-BANG_GIA_BAN_QUYEN_PHAN_MEM_QUAN_TRI_SERVER_DIRECTADMIN_2026_04_13
+observed_at: '2026-04-13T21:39:20.587690+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ bảng giá: ''| Standard | 790.000/ Tháng |'''

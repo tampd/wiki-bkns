@@ -1,0 +1,22 @@
+claim_id: CLM-1DC1D393EEEC
+entity_id: ENT-PROD-SSL-POSITIVESSL-DV
+entity_type: product_plan
+entity_name: PositiveSSL (DV)
+attribute: installation_support
+value: Miễn phí
+unit: null
+qualifiers:
+  provider: BKNS
+source_ids:
+- SRC-POSITIVESSL_DV_CHUNG_CHI_SSL_GIA_RE_2026_04_13
+observed_at: '2026-04-14T16:35:13.693100+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: '• Miễn phí cài đặt: BKNS hỗ trợ cài đặt miễn phí.'
+dual_vote:
+  status: DISAGREE
+  score: 0.5432
+  confidence: LOW
+  flag: human_review_required

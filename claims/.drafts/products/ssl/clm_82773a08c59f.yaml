@@ -1,0 +1,22 @@
+claim_id: CLM-82773A08C59F
+entity_id: ENT-PROD-SSL-ESSENTIALSSL
+entity_type: product_plan
+entity_name: EssentialSSL (DV)
+attribute: site_seal_type
+value: static
+unit: null
+qualifiers: null
+source_ids:
+- SRC-ESSENTIALSSL_DV_CHUNG_CHI_SSL_XAC_THUC_TEN_MIEN_TU_COMOD_2026_04_05
+observed_at: '2026-04-14T16:48:31.145400+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tính năng / Thành phần: ''Biểu tượng trang web: Cung cấp
+  Dấu trang (Site Seal) tĩnh.'''
+dual_vote:
+  status: DISAGREE
+  score: 0.141
+  confidence: LOW
+  flag: human_review_required

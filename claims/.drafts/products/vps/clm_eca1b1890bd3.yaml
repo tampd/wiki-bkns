@@ -1,0 +1,17 @@
+claim_id: CLM-ECA1B1890BD3
+entity_id: ENT-PROD-VPS:vps_seo_02
+entity_type: product_plan
+entity_name: SEO 02
+attribute: minimum_billing_cycle
+value: 3
+unit: month
+qualifiers: {}
+source_ids:
+- SRC-DICH_VU_CLOUD_VPS_SEO_MAY_CHU_AO_TOI_UU_CHO_SEO_2026_04_13
+observed_at: '2026-04-13T22:18:36.410425+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng giá, dòng ''Thanh Toán Tối Thiểu'', cột ''SEO 02'':
+  ''3 tháng'''

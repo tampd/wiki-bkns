@@ -1,0 +1,22 @@
+claim_id: CLM-9F467EE94FA1
+entity_id: product.software.litespeed_enterprise
+entity_type: product_version
+entity_name: LiteSpeed Enterprise (LSWS)
+attribute: pricing_model
+value: có tính phí
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-LITESPEED_WEB_SERVER_TINH_NANG_PHIEN_BAN_VA_SO_SANH_2026_04_13
+observed_at: '2026-04-14T12:21:39.491266+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ Tóm tắt nhanh: Điều kiện/giới hạn nổi bật (nếu có): Phiên
+  bản LiteSpeed Enterprise là phần mềm thương mại có tính phí...'
+dual_vote:
+  status: DISAGREE
+  score: 0.0
+  confidence: LOW
+  flag: human_review_required

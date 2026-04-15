@@ -8,12 +8,14 @@ unit: null
 qualifiers:
   target_entity_id: ENT-PROD-VPS
 source_ids:
-- SRC-CPANEL_WHM_WEB_2026_04_05
+  - SRC-CPANEL_WHM_WEB_2026_04_05
 observed_at: '2026-04-05T21:52:26.268168+07:00'
 valid_from: '2026-04-05'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
 compiler_note: 'Trích từ Bảng giá, cột Đối tượng: ''VPS'''
-approved_at: '2026-04-07T13:00:15.912770+07:00'
+approved_at: '2026-04-08T13:00:15.725927+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.401Z'

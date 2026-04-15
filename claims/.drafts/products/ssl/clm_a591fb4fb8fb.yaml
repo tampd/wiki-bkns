@@ -1,0 +1,26 @@
+claim_id: CLM-A591FB4FB8FB
+entity_id: ENT-PROD-SSL-008
+entity_type: product_plan
+entity_name: GeoTrust True BusinessID Multi-Domain Wildcard
+attribute: data_inconsistency
+value: Nút 'Mua ngay' trên trang trỏ đến một sản phẩm khác (true-businessid-ev-multi-domain-san)
+  là loại xác thực EV, trong khi nội dung trang mô tả sản phẩm OV.
+unit: null
+qualifiers:
+  link: https://id.bkns.vn/store/geotrust-ssl/true-businessid-ev-multi-domain-san?language=vietnamese
+source_ids:
+- SRC-GEOTRUST_TRUE_BUSINESSID_MULTI_DOMAIN_WILDCARD_2026_04_13
+observed_at: '2026-04-14T16:52:51.825300+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: medium
+compiler_note: 'Trích từ mục ''Ghi chú trích xuất'' và ''Chính sách / Điều khoản /
+  Lưu ý'': ⚠️ MÂU THUẪN TRONG TRANG: Nút ''Mua ngay'' trên trang trỏ đến một sản phẩm
+  khác (`true-businessid-ev-multi-domain-san`) là loại xác thực EV, trong khi nội
+  dung trang mô tả sản phẩm OV.'
+dual_vote:
+  status: DISAGREE
+  score: 0.3472
+  confidence: LOW
+  flag: human_review_required

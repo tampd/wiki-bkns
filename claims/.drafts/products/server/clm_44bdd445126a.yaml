@@ -1,0 +1,25 @@
+claim_id: CLM-44BDD445126A
+entity_id: product.server_management.bkns
+entity_type: product
+entity_name: Dịch vụ Quản trị Máy chủ Trọn gói
+attribute: description
+value: Là dịch vụ mà BKNS thay mặt khách hàng thực hiện các công việc vận hành, giám
+  sát, và xử lý sự cố cho máy chủ, giúp hệ thống hoạt động ổn định và an toàn.
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-DICH_VU_QUAN_TRI_MAY_CHU_TRON_GOI_TAI_BKNS_2026_04_13
+- SRC-DICH_VU_QUAN_TRI_MAY_CHU_TRON_GOI_TAI_BKNS_2026_04_05
+observed_at: '2026-04-14T17:14:28.610020+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tóm tắt nhanh: Dịch vụ này là gì: Là dịch vụ mà BKNS
+  thay mặt khách hàng thực hiện các công việc vận hành, giám sát, và xử lý sự cố cho
+  máy chủ, giúp hệ thống hoạt động ổn định và an toàn.'
+dual_vote:
+  status: DISAGREE
+  score: 0.5497
+  confidence: LOW
+  flag: human_review_required

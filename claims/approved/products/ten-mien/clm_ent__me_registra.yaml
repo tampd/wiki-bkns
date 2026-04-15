@@ -8,12 +8,14 @@ unit: VND
 qualifiers:
   billing_cycle: year
 source_ids:
-- SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_04
+  - SRC-BANG_GIA_ANG_KY_TEN_MIEN_QUOC_TE_VA_VIET_NAM_TAI_BKNS_2026_04_04
 observed_at: '2026-04-04T20:20:40.763335+07:00'
 valid_from: '2026-04-04'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: high
 compiler_note: 'Trích từ bảng giá Tên miền Quốc tế: | .me | Miễn phí | 745.000 |'
-approved_at: '2026-04-07T13:00:10.415182+07:00'
+approved_at: '2026-04-08T13:00:09.578393+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.619Z'

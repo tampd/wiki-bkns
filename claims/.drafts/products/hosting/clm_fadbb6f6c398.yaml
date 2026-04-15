@@ -1,0 +1,21 @@
+claim_id: CLM-FADBB6F6C398
+entity_id: product.hosting.free_hosting
+entity_type: product_plan
+entity_name: Hosting Miễn phí
+attribute: is_plan_of
+value: ENT-PROD-HOSTING
+unit: null
+qualifiers: null
+source_ids:
+- SRC-HOSTING_MIEN_PHI_GIAI_PHAP_KHOI_TAO_WEBSITE_0_2026_04_05
+observed_at: '2026-04-14T12:14:07.189156+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ thông tin nguồn: Danh mục: hosting'
+dual_vote:
+  status: DISAGREE
+  score: 0.4325
+  confidence: LOW
+  flag: human_review_required

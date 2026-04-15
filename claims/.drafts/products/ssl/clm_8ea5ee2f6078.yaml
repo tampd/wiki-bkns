@@ -1,0 +1,24 @@
+claim_id: CLM-8EA5EE2F6078
+entity_id: ENT-COMPANY-001
+entity_type: company
+entity_name: BKNS
+attribute: reseller_status
+value: Authorized Reseller
+unit: null
+qualifiers:
+  brand: RapidSSL
+source_ids:
+- SRC-GEOTRUST_TRUE_BUSINESSID_CHUNG_CHI_SSL_XAC_THUC_DOANH_NGHI_2026_04_05
+- SRC-RAPIDSSL_WILDCARD_CERTIFICATE_THONG_TIN_VA_BANG_GIA_TAI_BK_2026_04_13
+observed_at: '2026-04-14T16:40:52.119776+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Chính sách / Điều khoản / Lưu ý: • Đại lý ủy quyền: BKNS
+  là đại lý được ủy quyền (Authorized Reseller) của RapidSSL.'
+dual_vote:
+  status: DISAGREE
+  score: 0.3515
+  confidence: LOW
+  flag: human_review_required

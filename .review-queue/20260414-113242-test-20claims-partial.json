@@ -1,0 +1,12 @@
+{
+  "ts": "2026-04-14T11:32:42.571214+07:00",
+  "skill": "test-20claims",
+  "status": "PARTIAL",
+  "flag": "needs_review",
+  "score": 0.8595,
+  "model_a": "gemini-2.5-pro",
+  "model_b": "gpt-5.4",
+  "text_a": "```json\n{\n  \"attribute\": \"name\",\n  \"value\": \"RapidSSL Certificate\",\n  \"confidence\": 1.0,\n  \"agrees\": true,\n  \"reason\": \"The claimed value is the official name of the product.\"\n}\n```",
+  "text_b": "{\"attribute\":\"name\",\"value\":\"RapidSSL Certificate\",\"confidence\":0.99,\"agrees\":true,\"reason\":\"The entity name exactly matches the claimed product name: RapidSSL Certificate.\"}",
+  "prompt_preview": "Verify the following claim about BKNS products and return JSON:\nEntity: RapidSSL Certificate\nAttribute: name\nClaimed value: RapidSSL Certificate\n\nReturn JSON: {\"attribute\": \"...\", \"value\": \"...\", \"confidence\": 0.0-1.0, \"agrees\": true/false, \"reason\": \"brief explanation\"}"
+}

@@ -1,0 +1,18 @@
+claim_id: CLM-BKNS_CLOUD_E-PLATFORM
+entity_id: bkns_cloud_email_server:mini_email_02
+entity_type: product_plan
+entity_name: MINI EMAIL 02
+attribute: platform
+value: Kerio
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_CLOUD_EMAIL_SERVER_GIAI_PHAP_EMAIL_AN_TOAN_2026_04_04
+observed_at: '2026-04-04T20:47:01.907529+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ bảng giá, dòng ''Nền tảng'', cột ''MINI EMAIL 02'': Kerio'
+approved_at: '2026-04-08T13:00:09.813881+07:00'
+approved_by: admin-batch

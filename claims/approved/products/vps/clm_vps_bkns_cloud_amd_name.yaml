@@ -7,12 +7,14 @@ value: Cloud VPS AMD
 unit: null
 qualifiers: null
 source_ids:
-- SRC-CLOUD_VPS_AMD_GIAI_PHAP_VPS_HIEU_SUAT_CAO_VOI_CPU_AMD_EPYCTM_2026_04_06
+  - SRC-CLOUD_VPS_AMD_GIAI_PHAP_VPS_HIEU_SUAT_CAO_VOI_CPU_AMD_EPYCTM_2026_04_06
 observed_at: '2026-04-06T23:44:27.787789+07:00'
 valid_from: '2026-04-06'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
 compiler_note: 'Trích từ tiêu đề chính của tài liệu: ═══ Cloud VPS AMD'
-approved_at: '2026-04-07T13:00:14.914223+07:00'
+approved_at: '2026-04-08T13:00:14.628164+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.749Z'

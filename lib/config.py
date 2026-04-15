@@ -60,12 +60,32 @@ GOOGLE_LOCATION = os.getenv("GOOGLE_CLOUD_LOCATION", "us-central1")
 
 # ── Models ─────────────────────────────────────────────────
 # gemini-2.5-flash: GA, fast, cost-effective
-# gemini-3.1-pro-preview: most advanced reasoning, 1M context, 65K output
 MODEL_FLASH = os.getenv("MODEL_FLASH", "gemini-2.5-flash")
+# gemini-2.5-pro: GA stable — default PRO model
 # [C6] Default to gemini-2.5-pro (GA). Override via MODEL_PRO env var if needed.
 MODEL_PRO = os.getenv("MODEL_PRO", "gemini-2.5-pro")
+# gemini-3.1-pro-preview: PART 04 upgrade target — stronger reasoning, 1M context
+MODEL_PRO_NEW = os.getenv("MODEL_PRO_NEW", "gemini-3.1-pro-preview")
+# Feature flag: set USE_PRO_NEW=true in .env after A/B test passes
+USE_PRO_NEW = os.getenv("USE_PRO_NEW", "false").lower() == "true"
+# gemini-3.1-pro-preview chỉ available qua 'global' routing endpoint (không phải us-central1)
+MODEL_PRO_NEW_LOCATION = os.getenv("MODEL_PRO_NEW_LOCATION", "global")
+
+
+def get_pro_model() -> str:
+    """Return the active Pro model based on the USE_PRO_NEW feature flag.
+
+    USE_PRO_NEW=false (default) → MODEL_PRO  (gemini-2.5-pro, stable GA)
+    USE_PRO_NEW=true            → MODEL_PRO_NEW (gemini-3.1-pro-preview, upgrade)
+
+    Rollback: set USE_PRO_NEW=false in .env + pm2 restart all
+    """
+    return MODEL_PRO_NEW if USE_PRO_NEW else MODEL_PRO
+
 
 # Model assignment per skill (theo spec 00-MASTER.md)
+# NOTE: skills that call generate(model=MODEL_PRO) should use get_pro_model()
+# instead, so the feature flag is respected at call time.
 SKILL_MODELS = {
     "query-wiki": MODEL_FLASH,       # $0.30/$2.50 per 1M — queries
     "crawl-source": None,             # No LLM — pure script
@@ -77,6 +97,8 @@ SKILL_MODELS = {
     "auto-file": MODEL_FLASH,         # FAQ filing
     "cross-link": MODEL_FLASH,        # Cross-linking
     "build-snapshot": None,            # No LLM — pure script
+    "librarian-chat": MODEL_PRO,       # $1.25/$10 per 1M — conversational assistant
+    "librarian-classify": MODEL_PRO,   # $1.25/$10 per 1M — strict-JSON classification
 }
 
 # ── Telegram ───────────────────────────────────────────────
@@ -91,6 +113,9 @@ BKNS_HOTLINE_KINH_DOANH = "1800 646 884"  # Miễn phí
 BKNS_WEBSITE = "https://bkns.vn"
 
 # ── Quality Gates ──────────────────────────────────────────
+# NOTE: CRAWL_RULES là reference config — các giá trị được đọc trực tiếp
+# bởi tools/crawl_bkns.py và skills/crawl-source/scripts/crawl.py
+# Không xóa — dùng cho documentation và future validation layer
 CRAWL_RULES = {
     "url_scheme": ["http", "https"],
     "warn_if_not_bkns": True,
@@ -147,6 +172,25 @@ CATEGORY_MAP = {
     "ho-tro": "support",
     "chinh-sach": "policies",
 }
+
+# ── OpenAI — PART 05 (dual-vote with GPT-5.4) ──────────────
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
+OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-5.4")
+OPENAI_MODEL_MINI = os.getenv("OPENAI_MODEL_MINI", "gpt-5.4-mini")
+OPENAI_BASE_URL = os.getenv("OPENAI_BASE_URL", "https://api.openai.com/v1")
+OPENAI_MAX_RETRIES = int(os.getenv("OPENAI_MAX_RETRIES", "3"))
+OPENAI_TIMEOUT = int(os.getenv("OPENAI_TIMEOUT", "120"))
+
+# ── Dual-Vote (PART 06) ────────────────────────────────────
+# Feature flag: set true AFTER smoke test + unit tests pass
+DUAL_VOTE_ENABLED = os.getenv("DUAL_VOTE_ENABLED", "false").lower() == "true"
+# Agreement thresholds (mirrors vote.py — keep in sync)
+DUAL_VOTE_THRESHOLD_AGREE = float(os.getenv("DUAL_VOTE_THRESHOLD_AGREE", "0.9"))
+DUAL_VOTE_THRESHOLD_PARTIAL = float(os.getenv("DUAL_VOTE_THRESHOLD_PARTIAL", "0.6"))
+# High-stakes categories: always use dual-vote regardless of flag
+DUAL_VOTE_HIGH_STAKES = {"hosting", "vps", "ssl", "ten-mien", "email", "server"}
+# Review queue: flagged sections land here for human review
+REVIEW_QUEUE_DIR = WORKSPACE / ".review-queue"
 
 # ── Budget ─────────────────────────────────────────────────
 MONTHLY_BUDGET_USD = 50.0  # Kill criteria: >$50/tháng → dừng

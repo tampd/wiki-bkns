@@ -1,0 +1,21 @@
+claim_id: CLM-1AFA90465C93
+entity_id: ENT-PROD-SSL-POSITIVE-DV
+entity_type: product
+entity_name: PositiveSSL (DV)
+attribute: validation_type
+value: Domain (DV)
+unit: null
+qualifiers: null
+source_ids:
+- SRC-POSITIVESSL_DV_CHUNG_CHI_SSL_GIA_RE_2026_04_05
+observed_at: '2026-04-14T16:34:23.512348+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng thông số kỹ thuật: "| Xác thực | Domain (DV) |"'
+dual_vote:
+  status: DISAGREE
+  score: 0.2246
+  confidence: LOW
+  flag: human_review_required

@@ -2,7 +2,7 @@
 page_id: wiki.products.email.cau-hoi-thuong-gap
 title: Email Doanh Nghiệp BKNS — Câu Hỏi Thường Gặp
 category: products/email
-updated: '2026-04-07'
+updated: '2026-04-14'
 review_state: drafted
 claims_used: 0
 compile_cost_usd: 0

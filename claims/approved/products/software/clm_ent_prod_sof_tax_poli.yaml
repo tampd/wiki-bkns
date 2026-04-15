@@ -7,14 +7,15 @@ value: Bản quyền phần mềm không chịu thuế.
 unit: null
 qualifiers: null
 source_ids:
-- SRC-BAN_QUYEN_VBULLETIN_HE_QUAN_TRI_FORUM_MANG_XA_HOI_2026_04_04
-- SRC-BAN_QUYEN_VBULLETIN_HE_QUAN_TRI_FORUM_MANG_XA_HOI_2026_04_06
+  - SRC-BAN_QUYEN_VBULLETIN_HE_QUAN_TRI_FORUM_MANG_XA_HOI_2026_04_04
+  - SRC-BAN_QUYEN_VBULLETIN_HE_QUAN_TRI_FORUM_MANG_XA_HOI_2026_04_06
 observed_at: '2026-04-06T23:04:03.006642+07:00'
 valid_from: '2026-04-04'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ mục ''Chính sách / Điều khoản / Lưu ý'': • Bản quyền phần
-  mềm không chịu thuế.'
-approved_at: '2026-04-07T13:00:15.793479+07:00'
+compiler_note: 'Trích từ mục ''Chính sách / Điều khoản / Lưu ý'': • Bản quyền phần mềm không chịu thuế.'
+approved_at: '2026-04-08T13:00:15.615954+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.380Z'

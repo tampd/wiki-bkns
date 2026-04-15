@@ -1,0 +1,16 @@
+claim_id: CLM-D32BE1812FAC
+entity_id: product.email_relay.bk_relay02
+entity_type: product_plan
+entity_name: BK-RELAY02
+attribute: inbox_delivery_rate
+value: 0.99
+unit: percentage
+qualifiers: null
+source_ids:
+- SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_TIN_CAY_2026_04_13
+observed_at: '2026-04-13T22:34:09.078222+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng giá, dòng ''Tỉ lệ vào inbox'', cột ''BK-RELAY02'': ''99%'''

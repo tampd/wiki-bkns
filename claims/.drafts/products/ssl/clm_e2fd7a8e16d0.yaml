@@ -1,0 +1,24 @@
+claim_id: CLM-E2FD7A8E16D0
+entity_id: product.ssl.geotrust_quickssl_premium
+entity_type: product_plan
+entity_name: GeoTrust QuickSSL Premium
+attribute: target_audience
+value: Các doanh nghiệp trực tuyến quy mô vừa và nhỏ
+unit: ''
+qualifiers: {}
+source_ids:
+- SRC-GEOTRUST_QUICKSSL_PREMIUM_CHUNG_CHI_SSL_XAC_THUC_TEN_MIEN_2026_04_13
+observed_at: '2026-04-14T16:50:45.174143+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: • Phù hợp với: Các doanh nghiệp trực tuyến
+  quy mô vừa và nhỏ cần bảo mật cho một tên miền duy nhất với chi phí hợp lý và thời
+  gian cấp phát nhanh.'
+parent_entity_id: ENT-PROD-SSL
+dual_vote:
+  status: DISAGREE
+  score: 0.1768
+  confidence: LOW
+  flag: human_review_required

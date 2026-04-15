@@ -1,0 +1,21 @@
+claim_id: CLM-2D2C340FF3E9
+entity_id: product.vps.generic
+entity_type: product_line
+entity_name: VPS
+attribute: storage_capacity
+value: Dung lượng trung bình, có thể lưu trữ hàng trăm GB hoặc TB
+unit: ''
+qualifiers: null
+source_ids:
+- SRC-TRAINING_DICH_VU_VPS_2026_04_13
+observed_at: '2026-04-14T16:19:07.483236+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: Trích từ bảng so sánh mục 3, dòng 'Ổ cứng', cột 'VPS'.
+dual_vote:
+  status: DISAGREE
+  score: 0.4702
+  confidence: LOW
+  flag: human_review_required

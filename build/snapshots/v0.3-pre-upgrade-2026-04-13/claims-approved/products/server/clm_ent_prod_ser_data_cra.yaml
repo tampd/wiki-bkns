@@ -1,0 +1,18 @@
+claim_id: CLM-ENT-PROD-SER-DATA_CRA
+entity_id: ENT-PROD-SERVER-MGT-001
+entity_type: service
+entity_name: Dịch vụ Quản trị Máy chủ Trọn gói
+attribute: data_crawled_at
+value: '2026-04-05T14:25:00+07:00'
+unit: null
+qualifiers: null
+source_ids:
+- SRC-QUAN_TRI_MAY_CHU_WEB_2026_04_05
+observed_at: '2026-04-05T22:10:29.074685+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ nội dung: ''- Ngày crawl: 2026-04-05T14:25:00+07:00'''
+approved_at: '2026-04-08T13:00:09.133390+07:00'
+approved_by: admin-batch

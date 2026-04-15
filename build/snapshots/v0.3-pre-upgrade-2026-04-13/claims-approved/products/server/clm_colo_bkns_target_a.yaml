@@ -1,0 +1,20 @@
+claim_id: CLM-COLO-BKNS-TARGET_A
+entity_id: product.colocation.bkns
+entity_type: product
+entity_name: Thuê Chỗ Đặt Máy Chủ (Colocation)
+attribute: target_audience
+value: Doanh nghiệp sở hữu máy chủ riêng và cần một môi trường chuyên nghiệp để vận
+  hành
+unit: ''
+qualifiers: {}
+source_ids:
+- SRC-DICH_VU_THUE_CHO_AT_MAY_CHU_COLOCATION_TAI_BKNS_2026_04_06
+observed_at: '2026-04-07T00:12:22.806500+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: Phù hợp với: Doanh nghiệp sở hữu máy chủ riêng
+  và cần một môi trường chuyên nghiệp để vận hành...'
+approved_at: '2026-04-08T13:00:08.811476+07:00'
+approved_by: admin-batch

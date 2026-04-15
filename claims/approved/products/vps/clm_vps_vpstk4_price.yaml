@@ -8,12 +8,14 @@ unit: VND
 qualifiers:
   billing_cycle: month
 source_ids:
-- SRC-DICH_VU_VPS_SIEU_TIET_KIEM_VPS_SIEU_RE_TAI_BKNS_2026_04_06
+  - SRC-DICH_VU_VPS_SIEU_TIET_KIEM_VPS_SIEU_RE_TAI_BKNS_2026_04_06
 observed_at: '2026-04-07T00:18:36.333624+07:00'
 valid_from: '2026-04-07'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: high
 compiler_note: 'Trích từ bảng giá, dòng ''Giá/Tháng'', cột ''VPSTK4'': ''159.000đ'''
-approved_at: '2026-04-07T13:00:15.395925+07:00'
+approved_at: '2026-04-08T13:00:15.250263+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.808Z'

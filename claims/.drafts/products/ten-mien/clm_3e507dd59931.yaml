@@ -1,0 +1,19 @@
+claim_id: CLM-3E507DD59931
+entity_id: bkns:prod:domain:2fa
+entity_type: product
+entity_name: Xác thực 2 bước (2FA)
+attribute: feature
+value: Ngăn chặn xóa tên miền
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-BAO_VE_TEN_MIEN_CAP_CAO_NHAT_GIAI_PHAP_AN_TOAN_TUYET_OI_2026_04_13
+observed_at: '2026-04-13T21:50:55.072917+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng So sánh các gói: ''| Ngăn chặn xóa tên miền | ... |
+  Có | ... |'''
+value_changed_from: Ngăn chặn thay đổi DNS
+value_changed_at: '2026-04-13T21:50:55.072939+07:00'

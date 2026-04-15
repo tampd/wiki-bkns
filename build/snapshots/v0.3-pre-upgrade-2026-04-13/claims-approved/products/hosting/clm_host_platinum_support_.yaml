@@ -1,0 +1,20 @@
+claim_id: CLM-HOST-PLATINUM-SUPPORT_
+entity_id: product.hosting.platinum
+entity_type: product
+entity_name: Platinum Web Hosting
+attribute: support_availability
+value: 24/7/365
+unit: null
+qualifiers: null
+source_ids:
+- SRC-PLATINUM_WEB_HOSTING_HOSTING_NVME_TOC_O_CAO_BACKUP_3_LAN_2026_04_04
+- SRC-PLATINUM_WEB_HOSTING_HOSTING_NVME_TOC_O_CAO_BACKUP_3_LAN_2026_04_06
+observed_at: '2026-04-07T00:49:55.478056+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: null
+compiler_note: 'Trích từ mục Tính năng / Thành phần: Hỗ trợ 24/7: Đội ngũ kỹ thuật
+  hỗ trợ 24/7/365 qua nhiều kênh liên lạc.'
+approved_at: '2026-04-08T13:00:11.442230+07:00'
+approved_by: admin-batch

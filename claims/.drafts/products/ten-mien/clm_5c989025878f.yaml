@@ -1,0 +1,19 @@
+claim_id: CLM-5C989025878F
+entity_id: bkns:prod:domain:registry_lock
+entity_type: product
+entity_name: Bảo vệ tên miền cấp cao nhất (Registry Lock)
+attribute: feature
+value: Ngăn chặn thay đổi thông tin liên hệ của tên miền trái phép
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-BAO_VE_TEN_MIEN_CAP_CAO_NHAT_GIAI_PHAP_AN_TOAN_TUYET_OI_2026_04_13
+observed_at: '2026-04-13T21:50:54.964192+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tính năng / Thành phần: ''Ngăn chặn thay đổi thông tin liên
+  hệ của tên miền trái phép: Bảo vệ thông tin của chủ thể đăng ký tên miền.'''
+value_changed_from: Ngăn chặn việc xóa tên miền trái phép
+value_changed_at: '2026-04-13T21:50:54.964247+07:00'

@@ -2,44 +2,62 @@
 page_id: wiki.products.email.tinh-nang
 title: Email Doanh Nghiệp BKNS — Tính Năng
 category: products/email
-updated: '2026-04-07'
-review_state: approved
-claims_used: 35
-compile_cost_usd: 0.0106
-self_review: fail
-corrections: 1
-approved_at: '2026-04-07T16:24:20.022479+07:00'
+updated: '2026-04-14'
+review_state: drafted
+claims_used: 53
+compile_cost_usd: 0.0144
+self_review: pass
+corrections: 0
 ---
 
-# Email Doanh Nghiệp BKNS — Các Dịch Vụ và Tính Năng
+# Email Doanh Nghiệp BKNS — Tính Năng
 
-BKNS cung cấp nhiều giải pháp email chuyên nghiệp, mỗi dịch vụ được thiết kế với các tính năng riêng biệt để đáp ứng nhu cầu đa dạng của doanh nghiệp.
+Dịch vụ Email Doanh Nghiệp của BKNS được trang bị nhiều tính năng mạnh mẽ, đảm bảo hiệu suất, bảo mật và khả năng quản trị linh hoạt cho mọi tổ chức. Các tính năng được xây dựng trên những nền tảng ổn định và được hỗ trợ bởi đội ngũ kỹ thuật chuyên nghiệp.
 
-## 1. Email Hosting
+## Quản trị
 
-Dịch vụ Email Hosting của BKNS là lựa chọn phù hợp cho các doanh nghiệp cần một hệ thống email ổn định và dễ quản lý.
+### Giao diện quản trị chuyên dụng
+Dịch vụ Email Relay cung cấp giao diện quản trị riêng, cho phép người dùng kiểm soát và cấu hình các luồng email gửi đi một cách hiệu quả. Tất cả các gói cước Email Relay đều được trang bị tính năng này.
 
-*   **Tự động trả lời (Auto-responder):** Dễ dàng thiết lập các email phản hồi tự động khi bạn vắng mặt.
-*   **Quản trị DNS miễn phí (Managed DNS):** Đi kèm tính năng quản trị DNS miễn phí, giúp đơn giản hóa việc cấu hình.
-*   **Tương thích Email Client:** Hỗ trợ truy cập qua Webmail và các ứng dụng phổ biến như Microsoft Outlook.
+### Quản trị DNS miễn phí (Managed DNS)
+Khách hàng sử dụng dịch vụ Email Hosting được cung cấp tính năng Managed DNS miễn phí, giúp đơn giản hóa việc quản lý các bản ghi DNS liên quan đến email.
 
-## 2. Cloud Email Server
+### Không giới hạn tên miền (cho Email Relay)
+Dịch vụ Email Relay cho phép sử dụng không giới hạn số lượng tên miền, mang lại sự linh hoạt tối đa cho các doanh nghiệp vận hành nhiều website hoặc thương hiệu.
 
-Giải pháp email mạnh mẽ, cung cấp hiệu suất cao và bảo mật nâng cao cho doanh nghiệp.
+## Bảo mật
 
-*   **Tích hợp chống Spam/Virus:** Được tích hợp sẵn các công cụ chống spam và virus miễn phí để bảo vệ hộp thư của bạn.
-*   **Hỗ trợ đa giao thức (POP3/IMAP/SMTP):** Tương thích hoàn toàn với các giao thức phổ biến, đảm bảo hoạt động trên mọi ứng dụng email client từ Outlook đến các ứng dụng di động.
+### Tích hợp chống Spam/Virus
+Hệ thống email của BKNS được tích hợp sẵn các công cụ bảo mật, bao gồm khả năng chống Spam và Virus, giúp bảo vệ hộp thư của người dùng khỏi các mối đe dọa. Tính năng này được cung cấp miễn phí cho dịch vụ Cloud Email Server.
 
-## 3. Email Relay
+### Hệ thống IP uy tín (Whitelist IP)
+Dịch vụ Email Relay sử dụng hệ thống IP đã được whitelist, đảm bảo email gửi đi có độ tin cậy cao và không bị các bộ lọc thư rác chặn lại.
 
-Dịch vụ chuyên dụng giúp đảm bảo tỷ lệ gửi email thành công vào inbox cao, phù hợp cho các chiến dịch marketing hoặc gửi thông báo hàng loạt.
+## Hiệu suất và Tương thích
 
-*   **Giao diện quản trị chuyên dụng:** Cung cấp giao diện riêng để khách hàng chủ động quản lý và theo dõi dịch vụ.
-*   **Không giới hạn tên miền:** Cho phép sử dụng không giới hạn số lượng tên miền trên một gói dịch vụ, mang lại sự linh hoạt tối đa.
-*   **Hệ thống IP uy tín (Whitelist IP):** Sử dụng hệ thống IP được tin cậy (whitelist) để tăng tỷ lệ email vào inbox và không bị chặn bởi bộ lọc thư rác.
-*   **Hỗ trợ kỹ thuật 24/7/365:** Đội ngũ hỗ trợ chuyên nghiệp luôn sẵn sàng giải quyết các vấn đề kỹ thuật liên quan đến dịch vụ.
+### Nền tảng đa dạng (Zimbra & Kerio)
+BKNS cung cấp các dịch vụ email trên những nền tảng phổ biến và ổn định. Email Hosting sử dụng nền tảng Zimbra, trong khi Cloud Email Server cho phép lựa chọn giữa Zimbra và Kerio. Các gói MINI EMAIL được xây dựng trên nền tảng Kerio.
 
-## Sản phẩm liên quan
+### Hỗ trợ đầy đủ giao thức Email
+Dịch vụ Cloud Email Server hỗ trợ đầy đủ các giao thức POP3, IMAP và SMTP, cho phép người dùng dễ dàng kết nối và đồng bộ hóa email trên nhiều thiết bị và ứng dụng email client khác nhau.
+
+### Tương thích với Outlook
+Hệ thống Email Hosting hỗ trợ truy cập và sử dụng thông qua các ứng dụng email client phổ biến như Microsoft Outlook, bên cạnh giao diện Webmail.
+
+### Hạ tầng linh hoạt
+BKNS cung cấp hai lựa chọn hạ tầng: Email Hosting hoạt động trên máy chủ dùng chung (Share Email Hosting) và Email Server cung cấp máy chủ riêng biệt cho mỗi dịch vụ, đáp ứng các nhu cầu khác nhau về tài nguyên và quyền kiểm soát.
+
+## Hỗ trợ kỹ thuật
+
+### Hỗ trợ kỹ thuật 24/7/365
+Đội ngũ hỗ trợ kỹ thuật của BKNS hoạt động 24/7/365, sẵn sàng giải đáp các thắc mắc và xử lý các vấn đề liên quan đến dịch vụ Email Relay.
+
+### Hỗ trợ chuyên môn
+BKNS cung cấp hỗ trợ kỹ thuật chuyên môn cho khách hàng sử dụng dịch vụ, đảm bảo dịch vụ vận hành ổn định và hiệu quả.
+
+## Xem thêm
 - [Tên Miền BKNS](../ten-mien/index.md)
 - [Web Hosting BKNS](../hosting/index.md)
 - [Chứng Chỉ SSL BKNS](../ssl/index.md)
+
+Compiled by BKNS Wiki Bot • 2026-04-14

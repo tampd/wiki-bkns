@@ -1,0 +1,19 @@
+claim_id: CLM-09447938F88F
+entity_id: product.software.directadmin
+entity_type: product
+entity_name: Bản quyền phần mềm DirectAdmin
+attribute: feature
+value: Tích hợp công cụ sao lưu và khôi phục dữ liệu tự động.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-BANG_GIA_BAN_QUYEN_PHAN_MEM_QUAN_TRI_SERVER_DIRECTADMIN_2026_04_13
+observed_at: '2026-04-13T21:39:20.536446+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Tính năng / Thành phần: ''Sao lưu & Phục hồi: Tích hợp
+  công cụ sao lưu và khôi phục dữ liệu tự động.'''
+value_changed_from: 'Hỗ trợ 3 cấp độ tài khoản: Admin, Reseller, User.'
+value_changed_at: '2026-04-13T21:39:20.536482+07:00'

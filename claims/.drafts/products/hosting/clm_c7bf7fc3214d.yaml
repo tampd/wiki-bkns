@@ -1,0 +1,22 @@
+claim_id: CLM-C7BF7FC3214D
+entity_id: bkns.hosting.platinum.p4
+entity_type: product_plan
+entity_name: Platinum 4
+attribute: storage_capacity
+value: 10
+unit: GB
+qualifiers:
+  storage_type: NVMe U.2
+source_ids:
+- SRC-BKNS_CAMNANG_HOSTING_DOT2_2026_04_05
+observed_at: '2026-04-14T12:04:01.363467+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng thông số Platinum Web Hosting: ''Platinum 4 | 10 GB'''
+dual_vote:
+  status: DISAGREE
+  score: 0.3651
+  confidence: LOW
+  flag: human_review_required

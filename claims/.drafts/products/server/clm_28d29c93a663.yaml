@@ -1,0 +1,17 @@
+claim_id: CLM-28D29C93A663
+entity_id: ENT-PROD-BACKUP-001
+entity_type: service
+entity_name: Dịch vụ Backup Dữ liệu
+attribute: has_technical_specifications
+value: false
+unit: null
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_BACKUP_DU_LIEU_SAO_LUU_VA_PHUC_HOI_DU_LIEU_UY_TIN_2026_04_13
+observed_at: '2026-04-13T22:14:37.712211+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Thông số kỹ thuật / Giới hạn: ''⚠️ CHƯA TRÍCH XUẤT ĐỦ: Trang
+  không liệt kê các thông số kỹ thuật chi tiết...'''

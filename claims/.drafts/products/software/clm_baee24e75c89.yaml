@@ -1,0 +1,17 @@
+claim_id: CLM-BAEE24E75C89
+entity_id: ENT-COMPANY-001
+entity_type: company
+entity_name: BKNS
+attribute: business_model
+value: Đại lý cung cấp bản quyền cho phần mềm của bên thứ ba là Softaculous.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-BAN_QUYEN_SOFTACULOUS_TRINH_CAI_AT_UNG_DUNG_TU_ONG_2026_04_13
+observed_at: '2026-04-13T21:34:20.659191+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ Chính sách / Điều khoản / Lưu ý: ''BKNS là đại lý cung cấp
+  bản quyền cho phần mềm của bên thứ ba là Softaculous.'''

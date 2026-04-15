@@ -1,0 +1,25 @@
+claim_id: CLM-80F64CAD5978
+entity_id: ENT-PROD-HOSTING-FREE
+entity_type: product
+entity_name: Hosting Miễn phí
+attribute: included_feature
+value: cPanel
+unit: null
+qualifiers: null
+source_ids:
+- SRC-HOSTING_MIEN_PHI_GIAI_PHAP_KHOI_TAO_WEBSITE_0_2026_04_13
+observed_at: '2026-04-14T12:14:44.393449+07:00'
+valid_from: '2026-04-14'
+confidence: low
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ phần tính năng: ⚠️ CHƯA TRÍCH XUẤT ĐỦ: Nội dung trang có
+  đề cập đến các tính năng như SSL và cPanel, nhưng không có mô tả chi tiết về chúng
+  trong dữ liệu được cung cấp.'
+dual_vote:
+  status: DISAGREE
+  score: 0.4487
+  confidence: LOW
+  flag: human_review_required
+value_changed_from: SSL
+value_changed_at: '2026-04-14T12:14:44.393476+07:00'

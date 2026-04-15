@@ -1,0 +1,17 @@
+claim_id: CLM-23A8CB2F303D
+entity_id: company.bkns
+entity_type: company
+entity_name: BKNS
+attribute: vat_policy
+value: Prices do not include VAT
+unit: null
+qualifiers:
+  vat_rate_percentage: 10
+source_ids:
+- SRC-BANG_GIA_DICH_VU_BKNS_TEXT_2026_04_13
+observed_at: '2026-04-13T21:40:29.154286+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: medium
+compiler_note: 'Trích từ ghi chú: ''Tất cả giá trên chưa bao gồm VAT (10%)'''

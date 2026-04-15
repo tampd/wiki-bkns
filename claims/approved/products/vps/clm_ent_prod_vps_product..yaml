@@ -3,23 +3,20 @@ entity_id: ENT-PROD-VPS
 entity_type: product_plan
 entity_name: Cloud VPS
 attribute: product.definition
-value: Dịch vụ máy chủ ảo đám mây (Virtual Private Server) được xây dựng trên nền
-  tảng lưu trữ CEPH Storage phân tán.
+value: Dịch vụ máy chủ ảo đám mây (Virtual Private Server) được xây dựng trên nền tảng lưu trữ CEPH Storage phân tán.
 unit: ''
 qualifiers: null
 source_ids:
-- SRC-TRAINING_DICH_VU_VPS_2026_04_06
+  - SRC-TRAINING_DICH_VU_VPS_2026_04_06
 observed_at: '2026-04-07T01:05:15.870042+07:00'
 valid_from: '2026-04-07'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ mục 4.1: ''Cloud VPS BKNS là dịch vụ máy chủ ảo đám mây (Virtual
-  Private Server) được xây dựng trên nền tảng lưu trữ CEPH Storage phân tán, mang
-  lại hiệu năng cao, độ ổn định tuyệt đối và khả năng mở rộng linh hoạt cho mọi doanh
-  nghiệp.'''
-value_changed_from: Được cấp phát các tài nguyên cố định như CPU, RAM, dung lượng
-  ổ cứng và băng thông, không chia sẻ với các VPS khác.
+compiler_note: 'Trích từ mục 4.1: ''Cloud VPS BKNS là dịch vụ máy chủ ảo đám mây (Virtual Private Server) được xây dựng trên nền tảng lưu trữ CEPH Storage phân tán, mang lại hiệu năng cao, độ ổn định tuyệt đối và khả năng mở rộng linh hoạt cho mọi doanh nghiệp.'''
+value_changed_from: Được cấp phát các tài nguyên cố định như CPU, RAM, dung lượng ổ cứng và băng thông, không chia sẻ với các VPS khác.
 value_changed_at: '2026-04-07T01:05:15.870059+07:00'
-approved_at: '2026-04-07T13:00:14.450348+07:00'
+approved_at: '2026-04-08T13:00:14.056542+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.695Z'

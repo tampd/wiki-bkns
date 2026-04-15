@@ -92,14 +92,7 @@
             <i data-lucide="layout-dashboard" aria-hidden="true"></i>
             <span>Dashboard</span>
           </button>
-          <button class="nav-tab" data-tab="upload" aria-selected="false">
-            <i data-lucide="upload-cloud" aria-hidden="true"></i>
-            <span>Upload</span>
-          </button>
-          <button class="nav-tab" data-tab="pipeline" aria-selected="false">
-            <i data-lucide="workflow" aria-hidden="true"></i>
-            <span>Pipeline</span>
-          </button>
+
           <button class="nav-tab" data-tab="review" aria-selected="false">
             <i data-lucide="shield-check" aria-hidden="true"></i>
             <span>Review</span>
@@ -109,13 +102,15 @@
             <i data-lucide="clock" aria-hidden="true"></i>
             <span>Lịch sử</span>
           </button>
+          <button class="nav-tab" data-tab="librarian" aria-selected="false">
+            <i data-lucide="bot" aria-hidden="true"></i>
+            <span>Thủ thư</span>
+            <span class="nav-badge" id="librarian-badge" style="display:none">0</span>
+          </button>
         </nav>
 
         <div class="header-actions">
-          <span id="pipeline-status-header" class="pipeline-badge idle" aria-label="Trạng thái pipeline">
-            <span class="dot" aria-hidden="true"></span>
-            <span>Idle</span>
-          </span>
+
           <button class="btn btn-ghost btn-icon" id="btn-logout" aria-label="Đăng xuất" title="Đăng xuất">
             <i data-lucide="log-out" aria-hidden="true"></i>
           </button>
@@ -177,7 +172,6 @@
           <h2>BKNS Wiki Admin Portal</h2>
           <p>Chọn trang wiki từ sidebar bên trái để bắt đầu đọc hoặc chỉnh sửa.</p>
           <div class="welcome-stats" id="welcome-stats"></div>
-          <div class="welcome-recent" id="welcome-recent"></div>
         </div>
 
         <!-- Wiki Reader/Editor -->
@@ -248,13 +242,13 @@
     <!-- ==================== DASHBOARD TAB ==================== -->
     <div class="tab-content" id="tab-dashboard" style="display:none">
       <div class="dashboard-wrap">
-        <!-- Stats Bar -->
+        <!-- Stats Bar - Row 1: File & Wiki stats -->
         <div class="stats-bar">
           <div class="card stat-card">
-            <div class="stat-icon cyan" aria-hidden="true"><i data-lucide="files"></i></div>
+            <div class="stat-icon cyan" aria-hidden="true"><i data-lucide="folder-tree"></i></div>
             <div class="stat-content">
-              <div class="stat-value" id="stat-total-files">—</div>
-              <div class="stat-label">Tổng file</div>
+              <div class="stat-value" id="stat-wiki-categories">—</div>
+              <div class="stat-label">Danh mục</div>
             </div>
           </div>
           <div class="card stat-card">
@@ -268,17 +262,122 @@
             <div class="stat-icon blue" aria-hidden="true"><i data-lucide="list-checks"></i></div>
             <div class="stat-content">
               <div class="stat-value" id="stat-claims">—</div>
-              <div class="stat-label">Claims</div>
+              <div class="stat-label">Tổng Claims</div>
             </div>
           </div>
           <div class="card stat-card">
-            <div class="stat-icon amber" aria-hidden="true"><i data-lucide="clock"></i></div>
+            <div class="stat-icon amber" aria-hidden="true"><i data-lucide="package"></i></div>
             <div class="stat-content">
               <div class="stat-value" id="stat-last-build">—</div>
               <div class="stat-label">Build cuối</div>
             </div>
           </div>
         </div>
+
+        <!-- Stats Bar - Row 2: Review & Quality stats -->
+        <div class="stats-bar">
+          <div class="card stat-card">
+            <div class="stat-icon green" aria-hidden="true"><i data-lucide="shield-check"></i></div>
+            <div class="stat-content">
+              <div class="stat-value" id="stat-gt-ratio">—</div>
+              <div class="stat-label">Ground Truth %</div>
+            </div>
+          </div>
+          <div class="card stat-card">
+            <div class="stat-icon amber" aria-hidden="true"><i data-lucide="clock-3"></i></div>
+            <div class="stat-content">
+              <div class="stat-value" id="stat-review-pending">—</div>
+              <div class="stat-label">Chờ Review</div>
+            </div>
+          </div>
+          <div class="card stat-card">
+            <div class="stat-icon cyan" aria-hidden="true"><i data-lucide="check-circle-2"></i></div>
+            <div class="stat-content">
+              <div class="stat-value" id="stat-review-approved">—</div>
+              <div class="stat-label">Đã Approved</div>
+            </div>
+          </div>
+          <div class="card stat-card">
+            <div class="stat-icon pink" aria-hidden="true"><i data-lucide="alert-triangle"></i></div>
+            <div class="stat-content">
+              <div class="stat-value" id="stat-conflicts">—</div>
+              <div class="stat-label">Conflicts</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Data Quality Overview -->
+        <section class="card" aria-labelledby="quality-title" style="margin-bottom: var(--space-4)">
+          <div class="section-header">
+            <h2 class="section-title" id="quality-title">
+              <i data-lucide="bar-chart-2" aria-hidden="true"></i>
+              Chất Lượng Dữ Liệu
+            </h2>
+          </div>
+          <div id="quality-grid" class="quality-grid">
+            <div style="color:var(--color-text-muted);font-size:var(--text-sm)">Đang tải...</div>
+          </div>
+        </section>
+
+        <!-- Data Integrity Checker -->
+        <section class="card" aria-labelledby="integrity-title" style="margin-bottom: var(--space-4)">
+          <div class="section-header">
+            <h2 class="section-title" id="integrity-title">
+              <i data-lucide="scan-search" aria-hidden="true"></i>
+              Kiểm Tra Dữ Liệu
+            </h2>
+            <button class="btn btn-primary btn-sm" id="btn-integrity-check">
+              <i data-lucide="play" aria-hidden="true"></i>
+              Quét
+            </button>
+          </div>
+          <div id="integrity-summary" style="display:none;margin-bottom:var(--space-3)">
+            <div class="stats-bar" style="grid-template-columns:repeat(4,1fr)">
+              <div class="card stat-card" style="border-left:3px solid #e17055">
+                <div class="stat-content"><div class="stat-value" id="integrity-errors">0</div><div class="stat-label">Lỗi</div></div>
+              </div>
+              <div class="card stat-card" style="border-left:3px solid #fdcb6e">
+                <div class="stat-content"><div class="stat-value" id="integrity-warnings">0</div><div class="stat-label">Cảnh báo</div></div>
+              </div>
+              <div class="card stat-card" style="border-left:3px solid #74b9ff">
+                <div class="stat-content"><div class="stat-value" id="integrity-info">0</div><div class="stat-label">Gợi ý</div></div>
+              </div>
+              <div class="card stat-card" style="border-left:3px solid #00b894">
+                <div class="stat-content"><div class="stat-value" id="integrity-pages">0</div><div class="stat-label">Trang quét</div></div>
+              </div>
+            </div>
+          </div>
+          <div id="integrity-results" style="max-height:400px;overflow-y:auto">
+            <div style="color:var(--color-text-muted);font-size:var(--text-sm);padding:var(--space-3)">Nhấn "Quét" để kiểm tra toàn bộ wiki.</div>
+          </div>
+        </section>
+
+        <!-- Build History -->
+        <section class="card" aria-labelledby="build-history-title" style="margin-bottom:var(--space-4)">
+          <div class="section-header">
+            <h2 class="section-title" id="build-history-title">
+              <i data-lucide="package" aria-hidden="true"></i>
+              Lịch Sử Build
+            </h2>
+          </div>
+          <div style="overflow-x:auto">
+            <table class="files-table" aria-label="Build history">
+              <thead>
+                <tr>
+                  <th scope="col">Build ID</th>
+                  <th scope="col">Version</th>
+                  <th scope="col">Wiki files</th>
+                  <th scope="col">Claims</th>
+                  <th scope="col">Tokens (est.)</th>
+                  <th scope="col">Ngày</th>
+                </tr>
+              </thead>
+              <tbody id="build-history-tbody">
+                <tr><td colspan="6" class="files-empty">Đang tải...</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
 
         <!-- Recent Changes -->
         <section class="card" aria-labelledby="changelog-title">
@@ -295,137 +394,7 @@
       </div>
     </div>
 
-    <!-- ==================== UPLOAD TAB ==================== -->
-    <div class="tab-content" id="tab-upload" style="display:none">
-      <div class="upload-wrap">
-        <section class="card" aria-labelledby="upload-title">
-          <div class="section-header">
-            <h2 class="section-title" id="upload-title">
-              <i data-lucide="upload-cloud" aria-hidden="true"></i>
-              Upload Tài Liệu
-            </h2>
-          </div>
 
-          <div class="upload-zone" id="upload-zone" role="button" tabindex="0" aria-label="Kéo thả file hoặc click để chọn">
-            <div class="upload-icon" aria-hidden="true"><i data-lucide="cloud-upload"></i></div>
-            <div class="upload-title-text">Kéo thả file vào đây</div>
-            <div class="upload-desc">hoặc click để chọn file • Tối đa 50MB/file</div>
-            <div class="upload-formats">
-              <span class="format-tag">.pdf</span>
-              <span class="format-tag">.docx</span>
-              <span class="format-tag">.xlsx</span>
-              <span class="format-tag">.md</span>
-              <span class="format-tag">.txt</span>
-              <span class="format-tag">.png</span>
-              <span class="format-tag">.jpg</span>
-            </div>
-          </div>
-          <input type="file" id="file-input" multiple hidden accept=".pdf,.docx,.xlsx,.md,.txt,.png,.jpg,.jpeg">
-
-          <div class="file-queue" id="file-queue" style="display:none"></div>
-
-          <div class="upload-actions" id="upload-actions" style="display:none">
-            <button class="btn btn-success" id="btn-upload-trigger">
-              <i data-lucide="zap" aria-hidden="true"></i>
-              Upload & Trigger
-            </button>
-            <button class="btn btn-primary" id="btn-upload-only">
-              <i data-lucide="inbox" aria-hidden="true"></i>
-              Upload Only
-            </button>
-            <button class="btn btn-ghost" id="btn-clear-queue">
-              <i data-lucide="x" aria-hidden="true"></i>
-              Xóa hết
-            </button>
-          </div>
-        </section>
-
-        <!-- File Browser -->
-        <section class="card" aria-labelledby="files-title">
-          <div class="section-header">
-            <h2 class="section-title" id="files-title">
-              <i data-lucide="folder-open" aria-hidden="true"></i>
-              File Browser
-            </h2>
-          </div>
-
-          <div class="files-header">
-            <div class="files-tabs" role="tablist">
-              <button class="files-tab active" data-source="all" role="tab" aria-selected="true">Tất cả</button>
-              <button class="files-tab" data-source="web" role="tab">Web</button>
-              <button class="files-tab" data-source="manual" role="tab">Manual</button>
-            </div>
-          </div>
-
-          <div style="overflow-x:auto">
-            <table class="files-table" aria-label="Danh sách file">
-              <thead>
-                <tr>
-                  <th scope="col">Tên file</th>
-                  <th scope="col">Nguồn</th>
-                  <th scope="col">Kích thước</th>
-                  <th scope="col">Ngày upload</th>
-                  <th scope="col"><span class="sr-only">Hành động</span></th>
-                </tr>
-              </thead>
-              <tbody id="files-tbody">
-                <tr><td colspan="5" class="files-empty">Chưa có file nào</td></tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div class="files-pagination" id="files-pagination" style="display:none">
-            <span id="files-info">0-0 / 0</span>
-            <div style="display:flex;gap:var(--space-2)">
-              <button class="btn btn-ghost btn-icon" id="btn-prev-page" disabled><i data-lucide="chevron-left"></i></button>
-              <button class="btn btn-ghost btn-icon" id="btn-next-page" disabled><i data-lucide="chevron-right"></i></button>
-            </div>
-          </div>
-        </section>
-      </div>
-    </div>
-
-    <!-- ==================== PIPELINE TAB ==================== -->
-    <div class="tab-content" id="tab-pipeline" style="display:none">
-      <div class="pipeline-wrap">
-        <section class="card" aria-labelledby="pipeline-title">
-          <div class="section-header">
-            <h2 class="section-title" id="pipeline-title">
-              <i data-lucide="workflow" aria-hidden="true"></i>
-              Pipeline Control
-            </h2>
-            <div id="pipeline-status-badge" class="pipeline-badge idle">
-              <span class="dot" aria-hidden="true"></span>
-              <span id="pipeline-status-text">Idle</span>
-            </div>
-          </div>
-
-          <div class="pipeline-actions">
-            <button class="btn btn-primary" id="btn-trigger-full">
-              <i data-lucide="play" aria-hidden="true"></i>
-              Full Pipeline
-            </button>
-            <button class="btn btn-ghost" id="btn-trigger-extract">
-              <i data-lucide="file-text" aria-hidden="true"></i>
-              Extract Only
-            </button>
-            <button class="btn btn-ghost" id="btn-trigger-compile">
-              <i data-lucide="layers" aria-hidden="true"></i>
-              Compile Only
-            </button>
-          </div>
-
-          <dl class="pipeline-info">
-            <dt>Lần chạy cuối</dt>
-            <dd id="pipeline-last-run">—</dd>
-            <dt>Kết quả</dt>
-            <dd id="pipeline-last-result">—</dd>
-            <dt>Build version</dt>
-            <dd id="pipeline-build-version">—</dd>
-          </dl>
-        </section>
-      </div>
-    </div>
 
     <!-- ==================== REVIEW QUEUE TAB ==================== -->
     <div class="tab-content" id="tab-review" style="display:none">
@@ -460,7 +429,83 @@
               <div class="stat-label">Conflicts</div>
             </div>
           </div>
+          <div class="card stat-card">
+            <div class="stat-icon purple" aria-hidden="true"><i data-lucide="git-merge"></i></div>
+            <div class="stat-content">
+              <div class="stat-value" id="dual-queue-count">—</div>
+              <div class="stat-label">Dual-Vote Pending</div>
+            </div>
+          </div>
         </div>
+
+        <!-- ── Ground Truth Promotion ── -->
+        <section class="card promote-gt-section" aria-labelledby="promote-gt-title">
+          <div class="section-header">
+            <h2 class="section-title" id="promote-gt-title">
+              <i data-lucide="trending-up" aria-hidden="true"></i>
+              Promote → Ground Truth
+            </h2>
+          </div>
+          <p style="font-size:var(--text-sm);color:var(--color-text-muted);margin-bottom:var(--space-3)">
+            Upgrade confidence của các claims đã <strong>approved</strong> lên <code>ground_truth</code>.
+            Chạy Dry Run trước để xem số lượng trước khi confirm.
+          </p>
+          <div style="display:flex;align-items:center;gap:var(--space-3);flex-wrap:wrap">
+            <div style="display:flex;align-items:center;gap:var(--space-2)">
+              <label style="font-size:var(--text-sm);color:var(--color-text-muted)">Promote từ:</label>
+              <label style="font-size:var(--text-sm);display:flex;gap:4px;align-items:center">
+                <input type="checkbox" id="promo-high" checked> high
+              </label>
+              <label style="font-size:var(--text-sm);display:flex;gap:4px;align-items:center">
+                <input type="checkbox" id="promo-medium"> medium
+              </label>
+              <label style="font-size:var(--text-sm);display:flex;gap:4px;align-items:center">
+                <input type="checkbox" id="promo-low"> low
+              </label>
+            </div>
+            <button class="btn btn-ghost btn-sm" id="btn-promote-dryrun">
+              <i data-lucide="search" aria-hidden="true"></i> Dry Run
+            </button>
+            <button class="btn btn-sm" id="btn-promote-confirm" style="background:var(--color-primary-500);color:#fff">
+              <i data-lucide="trending-up" aria-hidden="true"></i> Promote
+            </button>
+            <span id="promote-result" style="font-size:var(--text-sm);color:var(--color-text-muted)"></span>
+          </div>
+        </section>
+
+        <!-- ── Dual-Vote Queue Section ── -->
+        <section class="card dual-queue-section" aria-labelledby="dual-queue-title">
+          <div class="section-header">
+            <h2 class="section-title" id="dual-queue-title">
+              <i data-lucide="git-merge" aria-hidden="true"></i>
+              Dual-Vote Review Queue
+              <span class="dual-queue-badge" id="dual-queue-badge" style="display:none">0</span>
+            </h2>
+            <button class="btn btn-ghost btn-sm" id="btn-refresh-dual" title="Làm mới">
+              <i data-lucide="refresh-cw" aria-hidden="true"></i>
+            </button>
+          </div>
+          <p class="dual-queue-desc">Các output bị DISAGREE/PARTIAL giữa Gemini và GPT cần human chọn. Nhấp vào hàng để xem side-by-side.</p>
+          <div style="overflow-x:auto">
+            <table class="files-table" aria-label="Dual-vote items cần review">
+              <thead>
+                <tr>
+                  <th scope="col">Thời gian</th>
+                  <th scope="col">Skill</th>
+                  <th scope="col">Status</th>
+                  <th scope="col">Score</th>
+                  <th scope="col">Model A</th>
+                  <th scope="col">Model B</th>
+                  <th scope="col">Preview</th>
+                  <th scope="col"><span class="sr-only">Actions</span></th>
+                </tr>
+              </thead>
+              <tbody id="dual-queue-tbody">
+                <tr><td colspan="8" class="files-empty">Đang tải...</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
 
         <!-- Review Filters -->
         <section class="card" aria-labelledby="review-title">
@@ -642,6 +687,80 @@
       </div>
     </div>
 
+    <!-- ==================== THỦ THƯ (LIBRARIAN) TAB ==================== -->
+    <div class="tab-content" id="tab-librarian" style="display:none">
+      <div class="librarian-wrap">
+
+        <!-- Header bar -->
+        <section class="card librarian-header">
+          <div class="librarian-title">
+            <div class="librarian-avatar" aria-hidden="true">
+              <i data-lucide="bot"></i>
+            </div>
+            <div>
+              <h2 class="section-title" style="margin:0">AI Thủ thư</h2>
+              <p class="librarian-subtitle">Gửi file/ghi chú → tự phân loại vào inbox → xử lý batch lúc 00:00 hoặc bấm "Xử lý ngay".</p>
+            </div>
+          </div>
+          <div class="librarian-stats" id="librarian-stats" aria-live="polite">
+            <span class="lib-stat"><strong id="lib-stat-today">—</strong> hôm nay</span>
+            <span class="lib-stat"><strong id="lib-stat-review">—</strong> cần review</span>
+            <span class="lib-stat"><strong id="lib-stat-processed">—</strong> đã xử lý</span>
+            <button class="btn btn-primary btn-sm" id="btn-librarian-trigger" type="button">
+              <i data-lucide="play" aria-hidden="true"></i>
+              Xử lý ngay
+            </button>
+          </div>
+        </section>
+
+        <!-- Chat + Drop zone -->
+        <section class="card librarian-chat-card" aria-labelledby="lib-chat-title">
+          <div class="section-header">
+            <h3 class="section-title" id="lib-chat-title">
+              <i data-lucide="messages-square" aria-hidden="true"></i>
+              Trò chuyện
+            </h3>
+            <button class="btn btn-ghost btn-sm" id="btn-librarian-new-session" title="Bắt đầu phiên mới">
+              <i data-lucide="rotate-ccw" aria-hidden="true"></i>
+              Phiên mới
+            </button>
+          </div>
+
+          <div class="librarian-chat" id="librarian-chat" role="log" aria-live="polite" aria-label="Hội thoại với Thủ thư">
+            <div class="chat-empty" id="chat-empty">
+              <i data-lucide="sparkles" aria-hidden="true"></i>
+              <p>Bắt đầu bằng cách kéo file vào đây hoặc nhập tin nhắn bên dưới.</p>
+            </div>
+          </div>
+
+          <!-- Drop zone -->
+          <div class="librarian-dropzone" id="librarian-dropzone" tabindex="0" role="button" aria-label="Kéo thả file để upload, hoặc nhấn Enter để chọn">
+            <input type="file" id="librarian-file-input" multiple style="display:none"
+              accept=".md,.txt,.yaml,.yml,.pdf,.docx,.xlsx,.pptx,.epub,.png,.jpg,.jpeg,.webp,.gif,.html,.csv,.json">
+            <i data-lucide="upload-cloud" aria-hidden="true"></i>
+            <span>Kéo thả file vào đây hoặc <button type="button" class="link-btn" id="btn-pick-files">chọn file</button></span>
+            <small>Tối đa 10 file × 50MB</small>
+          </div>
+
+          <!-- Composer -->
+          <form class="librarian-composer" id="librarian-composer" autocomplete="off">
+            <textarea
+              id="librarian-input"
+              class="input librarian-input"
+              rows="1"
+              placeholder="Nhập tin nhắn cho Thủ thư... (Enter để gửi, Shift+Enter xuống dòng)"
+              aria-label="Tin nhắn cho Thủ thư"
+            ></textarea>
+            <button type="submit" class="btn btn-primary" id="btn-librarian-send" aria-label="Gửi">
+              <i data-lucide="send" aria-hidden="true"></i>
+              <span>Gửi</span>
+            </button>
+          </form>
+        </section>
+
+      </div>
+    </div>
+
   </div><!-- /app -->
 
   <!-- Create Page Modal -->
@@ -681,5 +800,59 @@
   </div>
 
   <script src="/app.js"></script>
+  <script src="/librarian.js"></script>
+
+  <!-- ── Dual-Vote Side-by-Side Modal ── -->
+  <div class="dual-modal-overlay" id="dual-modal-overlay" role="dialog" aria-modal="true" aria-labelledby="dual-modal-title" style="display:none">
+    <div class="dual-modal">
+      <div class="dual-modal-header">
+        <div>
+          <h3 id="dual-modal-title">So sánh Dual-Vote</h3>
+          <div class="dual-modal-meta" id="dual-modal-meta"></div>
+        </div>
+        <button class="btn btn-ghost btn-icon" id="dual-modal-close" aria-label="Đóng">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+
+      <div class="dual-modal-prompt" id="dual-modal-prompt"></div>
+
+      <div class="dual-compare">
+        <!-- Agent A — Gemini -->
+        <div class="dual-panel dual-panel-a">
+          <div class="dual-panel-header">
+            <span class="dual-agent-label agent-a">Agent A — Gemini</span>
+            <span class="dual-model-name" id="dual-model-a-name"></span>
+          </div>
+          <pre class="dual-output" id="dual-output-a"></pre>
+        </div>
+
+        <!-- Agent B — GPT -->
+        <div class="dual-panel dual-panel-b">
+          <div class="dual-panel-header">
+            <span class="dual-agent-label agent-b">Agent B — GPT</span>
+            <span class="dual-model-name" id="dual-model-b-name"></span>
+          </div>
+          <pre class="dual-output" id="dual-output-b"></pre>
+        </div>
+      </div>
+
+      <div class="dual-modal-actions">
+        <button class="btn btn-primary dual-pick" id="btn-pick-a">
+          <i data-lucide="check-circle" aria-hidden="true"></i>
+          Chọn A (Gemini)
+        </button>
+        <button class="btn btn-accent dual-pick" id="btn-pick-b">
+          <i data-lucide="check-circle" aria-hidden="true"></i>
+          Chọn B (GPT)
+        </button>
+        <button class="btn btn-ghost" id="btn-reject-both">
+          <i data-lucide="x-circle" aria-hidden="true"></i>
+          Loại bỏ cả hai
+        </button>
+        <button class="btn btn-ghost" id="dual-modal-cancel">Đóng</button>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

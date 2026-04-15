@@ -1,0 +1,21 @@
+claim_id: CLM-5CBE20C1E57B
+entity_id: ENT-PROD-SSL-POSITIVESSL-EV
+entity_type: product
+entity_name: PositiveSSL EV
+attribute: source.url
+value: https://ssl.bkns.vn/ssl-bao-mat/positivessl-ev
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-POSITIVESSL_EV_CHUNG_CHI_SSL_XAC_THUC_MO_RONG_EV_2026_04_05
+observed_at: '2026-04-14T16:36:06.871594+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ: ━━━ Thông tin nguồn • URL: https://ssl.bkns.vn/ssl-bao-mat/positivessl-ev'
+dual_vote:
+  status: DISAGREE
+  score: 0.1365
+  confidence: LOW
+  flag: human_review_required

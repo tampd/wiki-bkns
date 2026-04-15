@@ -1,0 +1,18 @@
+claim_id: CLM-VPS-N8N-MIN_BILL
+entity_id: product.vps.n8n.ai01
+entity_type: product_plan
+entity_name: N8N-AI01
+attribute: min_billing_cycle
+value: 3
+unit: month
+qualifiers: null
+source_ids:
+- SRC-VPS_N8N_AI_DICH_VU_TU_ONG_HOA_QUY_TRINH_TAI_BKNS_2026_04_04
+observed_at: '2026-04-04T21:19:10.947107+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: medium
+compiler_note: 'Trích từ bảng giá, cột N8N-AI01, hàng Thanh Toán Tối Thiểu: ''3 tháng'''
+approved_at: '2026-04-08T13:00:14.982513+07:00'
+approved_by: admin-batch

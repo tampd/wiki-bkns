@@ -1,0 +1,21 @@
+claim_id: CLM-BKNS:COLOCAT-SERVICE_
+entity_id: bkns:colocation
+entity_type: product_service
+entity_name: Thuê Chỗ Đặt Máy Chủ (Colocation)
+attribute: service_description
+value: Dịch vụ cho phép khách hàng thuê không gian và cơ sở hạ tầng tại trung tâm
+  dữ liệu (Data Center) của BKNS để đặt máy chủ vật lý của mình.
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-DICH_VU_THUE_CHO_AT_MAY_CHU_COLOCATION_TAI_BKNS_2026_04_04
+observed_at: '2026-04-04T20:52:19.119156+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ phần ''Tóm tắt nhanh'': • Dịch vụ này là gì: Dịch vụ cho
+  phép khách hàng thuê không gian và cơ sở hạ tầng tại trung tâm dữ liệu (Data Center)
+  của BKNS để đặt máy chủ vật lý của mình.'
+approved_at: '2026-04-08T13:00:08.723753+07:00'
+approved_by: admin-batch

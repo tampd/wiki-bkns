@@ -149,7 +149,7 @@
       btn.setAttribute('aria-selected', active ? 'true' : 'false');
     });
     // Hide all tabs
-    ['wiki', 'dashboard', 'upload', 'pipeline', 'review', 'history'].forEach(t => {
+    ['wiki', 'dashboard', 'review', 'history', 'librarian'].forEach(t => {
       const el = $(`#tab-${t}`);
       if (el) el.style.display = 'none';
     });
@@ -158,15 +158,21 @@
     if (el) el.style.display = tabName === 'wiki' ? 'flex' : 'block';
 
     if (tabName === 'dashboard') { loadDashboard(); loadChangelog(); }
-    if (tabName === 'upload') loadFiles();
-    if (tabName === 'review') { loadReviewStats(); loadReviewQueue(); }
+    if (tabName === 'review') { loadReviewStats(); loadReviewQueue(); loadDualQueue(); }
     if (tabName === 'history') { loadHealth(); loadBuilds(); loadActivity(); }
+    if (tabName === 'librarian' && window.Librarian) window.Librarian.activate();
     lucide.createIcons();
   }
 
   $$('.nav-tab').forEach(btn => {
-    btn.addEventListener('click', () => {
+    btn.addEventListener('click', async () => {
       if (btn.dataset.tab === state.currentTab) return;
+      // Warn if wiki editor has unsaved changes
+      if (state.wikiDirty && state.currentTab === 'wiki') {
+        const ok = await showModal('Chưa lưu', 'Bạn có thay đổi chưa lưu. Chuyển tab sẽ mất dữ liệu.', 'Chuyển tab');
+        if (!ok) return;
+        state.wikiDirty = false;
+      }
       switchTab(btn.dataset.tab);
     });
   });
@@ -478,23 +484,6 @@
           ['code', 'codeblock'],
           ['scrollSync'],
         ],
-        hooks: {
-          addImageBlobHook: async (blob, callback) => {
-            try {
-              const formData = new FormData();
-              formData.append('image', blob);
-              const res = await apiFetch('/api/upload/image', { method: 'POST', body: formData });
-              if (res.ok) {
-                const data = await res.json();
-                callback(data.url, blob.name || 'image');
-              } else {
-                toast('error', 'Upload ảnh thất bại');
-              }
-            } catch (e) {
-              toast('error', 'Lỗi upload', e.message);
-            }
-          },
-        },
         events: {
           change: () => {
             if (!state.wikiDirty) {
@@ -599,7 +588,7 @@
       }
 
       searchListEl.innerHTML = data.results.map(r => {
-        const snippet = r.snippet ? r.snippet.replace(new RegExp(`(${escapeHtml(query)})`, 'gi'), '<mark>$1</mark>') : '';
+        const snippet = r.snippet ? escapeHtml(r.snippet).replace(new RegExp(`(${escapeHtml(query)})`, 'gi'), '<mark>$1</mark>') : '';
         return `<li class="search-result-item" data-cat="${r.category}" data-page="${r.page}">
           <div class="search-result-title">${escapeHtml(r.title)}</div>
           <div class="search-result-path">${r.categoryLabel} / ${r.page}</div>
@@ -628,6 +617,7 @@
   document.addEventListener('keydown', e => {
     if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
       e.preventDefault();
+      if (!state.token) return; // Not logged in
       if (state.currentTab !== 'wiki') switchTab('wiki');
       searchInput.focus();
     }
@@ -654,10 +644,44 @@
       } else {
         listEl.innerHTML = data.backups.map(b =>
           `<li data-filename="${escapeHtml(b.filename)}">
-            <div style="font-weight:500">${escapeHtml(b.filename)}</div>
-            <div style="color:var(--color-text-muted);margin-top:2px">${formatDate(b.mtime)} • ${formatSize(b.size)}</div>
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:var(--space-2)">
+              <div>
+                <div style="font-weight:500">${escapeHtml(b.filename)}</div>
+                <div style="color:var(--color-text-muted);margin-top:2px">${formatDate(b.mtime)} • ${formatSize(b.size)}</div>
+              </div>
+              <button class="btn btn-ghost btn-xs backup-restore-btn" data-file="${escapeHtml(b.filename)}" title="Khôi phục">
+                <i data-lucide="undo-2" aria-hidden="true"></i> Restore
+              </button>
+            </div>
           </li>`
         ).join('');
+
+        // Restore handlers
+        listEl.querySelectorAll('.backup-restore-btn').forEach(btn => {
+          btn.addEventListener('click', async (e) => {
+            e.stopPropagation();
+            const filename = btn.dataset.file;
+            const ok = await showModal('Khôi phục backup', `Khôi phục từ ${filename}? Phiên bản hiện tại sẽ được backup trước.`, 'Khôi phục');
+            if (!ok) return;
+            try {
+              const pageParam = state.wikiCurrentPage.replace(/\//g, '__');
+              const r = await apiFetch(`/api/wiki/${state.wikiCurrentCategory}/${pageParam}/restore`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ filename }),
+              });
+              if (r.ok) {
+                toast('success', 'Đã khôi phục', filename);
+                state.wikiDirty = false;
+                navigateToPage(state.wikiCurrentCategory, state.wikiCurrentPage);
+                drawer.style.display = 'none';
+              } else {
+                const err = await r.json().catch(() => ({}));
+                toast('error', 'Restore thất bại', err.error || 'Lỗi');
+              }
+            } catch (ex) { toast('error', 'Lỗi', ex.message); }
+          });
+        });
       }
       drawer.style.display = '';
       lucide.createIcons();
@@ -719,20 +743,175 @@
   // ============================================================
   // DASHBOARD
   // ============================================================
-  async function loadDashboard() {
+  async function loadBuildsHistory() {
+    const tbody = $('#build-history-tbody');
+    if (!tbody) return;
     try {
-      const res = await apiFetch('/api/status');
-      if (!res.ok) return;
+      const res = await apiFetch('/api/builds');
+      if (!res.ok) { tbody.innerHTML = '<tr><td colspan="6" class="files-empty">Không thể tải</td></tr>'; return; }
       const data = await res.json();
-      if (data.wiki_stats) {
-        const s = data.wiki_stats;
-        if ($('#stat-total-files')) $('#stat-total-files').textContent = s.total_files || '0';
-        if ($('#stat-wiki-pages')) $('#stat-wiki-pages').textContent = s.wiki_pages || '0';
-        if ($('#stat-claims')) $('#stat-claims').textContent = s.total_claims || '0';
-        if ($('#stat-last-build')) $('#stat-last-build').textContent = s.build_version || '—';
+      if (!data.builds?.length) {
+        tbody.innerHTML = '<tr><td colspan="6" class="files-empty">Chưa có build nào</td></tr>';
+        return;
+      }
+      tbody.innerHTML = data.builds.map((b, i) => {
+        const isLatest = i === 0;
+        const tokens = b.wiki_token_estimate > 0
+          ? (b.wiki_token_estimate / 1000).toFixed(1) + 'K'
+          : '—';
+        const date = b.build_date ? new Date(b.build_date).toLocaleDateString('vi-VN', { day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' }) : '—';
+        return `<tr>
+          <td><code style="font-size:var(--text-xs)">${escapeHtml(b.display)}</code>${isLatest ? ' <span style="font-size:0.6rem;background:#00b894;color:#fff;padding:1px 5px;border-radius:3px;vertical-align:middle">LATEST</span>' : ''}</td>
+          <td style="font-weight:600">${escapeHtml(b.version || '—')}</td>
+          <td>${b.wiki_files || 0}</td>
+          <td>${b.claims_count || 0}</td>
+          <td style="color:var(--color-text-muted)">${tokens}</td>
+          <td style="color:var(--color-text-muted);font-size:var(--text-xs)">${date}</td>
+        </tr>`;
+      }).join('');
+    } catch (e) {
+      if (tbody) tbody.innerHTML = `<tr><td colspan="6" class="files-empty">Lỗi: ${escapeHtml(e.message)}</td></tr>`;
+    }
+  }
+
+  async function loadDashboard() {
+    loadBuildsHistory();
+    // Fetch status and review stats in parallel
+    const [statusRes, reviewRes] = await Promise.allSettled([
+      apiFetch('/api/status').catch(() => null),
+      apiFetch('/api/review/stats').catch(() => null),
+    ]);
+
+    // Populate status stats
+    try {
+      const res = statusRes.status === 'fulfilled' ? statusRes.value : null;
+      if (res && res.ok) {
+        const data = await res.json();
+        if (data.wiki_stats) {
+          const s = data.wiki_stats;
+          if ($('#stat-wiki-categories')) $('#stat-wiki-categories').textContent = s.wiki_categories || '0';
+          if ($('#stat-wiki-pages')) $('#stat-wiki-pages').textContent = s.wiki_pages || '0';
+          if ($('#stat-claims')) $('#stat-claims').textContent = s.total_claims || '0';
+          if ($('#stat-last-build')) $('#stat-last-build').textContent = s.build_version || '—';
+        }
+      }
+    } catch { /* silent */ }
+
+    // Populate review quality stats
+    try {
+      const res = reviewRes.status === 'fulfilled' ? reviewRes.value : null;
+      if (res && res.ok) {
+        const s = await res.json();
+        if ($('#stat-gt-ratio')) $('#stat-gt-ratio').textContent = (s.ground_truth_ratio || '0') + '%';
+        if ($('#stat-review-pending')) $('#stat-review-pending').textContent = s.by_state?.pending || '0';
+        if ($('#stat-review-approved')) $('#stat-review-approved').textContent = s.by_state?.approved || '0';
+        if ($('#stat-conflicts')) $('#stat-conflicts').textContent = s.conflicts || '0';
+
+        // Build quality grid
+        const grid = $('#quality-grid');
+        if (grid && s.by_confidence) {
+          const total = s.total || 1;
+          const conf = s.by_confidence;
+          const confItems = [
+            { label: 'Ground Truth', key: 'ground_truth', color: '#00b894' },
+            { label: 'High', key: 'high', color: '#0984e3' },
+            { label: 'Medium', key: 'medium', color: '#fdcb6e' },
+            { label: 'Low', key: 'low', color: '#e17055' },
+          ];
+          grid.innerHTML = confItems.map(item => {
+            const count = conf[item.key] || 0;
+            const pct = ((count / total) * 100).toFixed(1);
+            return `<div class="quality-item">
+              <div class="quality-label">${escapeHtml(item.label)}</div>
+              <div class="quality-bar-wrap">
+                <div class="quality-bar" style="width:${pct}%;background:${item.color}" title="${count} claims"></div>
+              </div>
+              <div class="quality-count">${count} <span style="color:var(--color-text-muted)">(${pct}%)</span></div>
+            </div>`;
+          }).join('') + (s.by_state ? `<div class="quality-item" style="margin-top:var(--space-3);border-top:1px solid var(--color-border);padding-top:var(--space-3)">
+            <div class="quality-label" style="font-weight:600">Review Status</div>
+            <div class="quality-count" style="gap:var(--space-3);display:flex;flex-wrap:wrap">
+              <span style="color:#00b894">✓ ${s.by_state.approved || 0} approved</span>
+              <span style="color:#fdcb6e">⏳ ${s.by_state.pending || 0} pending</span>
+              <span style="color:#e17055">⚑ ${s.by_state.flagged || 0} flagged</span>
+              <span style="color:#b2bec3">✗ ${s.by_state.rejected || 0} rejected</span>
+            </div>
+          </div>` : '');
+        }
       }
     } catch { /* silent */ }
   }
+
+  // ============================================================
+  // INTEGRITY CHECKER
+  // ============================================================
+  $('#btn-integrity-check')?.addEventListener('click', async () => {
+    const btn = $('#btn-integrity-check');
+    const resultsEl = $('#integrity-results');
+    btn.disabled = true;
+    btn.innerHTML = '<i data-lucide="loader-2" class="spin" aria-hidden="true"></i> Đang quét...';
+    lucide.createIcons();
+    resultsEl.innerHTML = '<div style="color:var(--color-text-muted);padding:var(--space-3)">Đang kiểm tra...</div>';
+
+    try {
+      const res = await apiFetch('/api/wiki/integrity');
+      if (!res.ok) { toast('error', 'Kiểm tra thất bại'); return; }
+      const data = await res.json();
+      const { summary, issues } = data;
+
+      // Summary
+      $('#integrity-summary').style.display = '';
+      $('#integrity-errors').textContent = summary.errors;
+      $('#integrity-warnings').textContent = summary.warnings;
+      $('#integrity-info').textContent = summary.info;
+      $('#integrity-pages').textContent = summary.total_pages;
+
+      if (issues.length === 0) {
+        resultsEl.innerHTML = '<div style="color:#00b894;padding:var(--space-3);font-weight:600">✅ Không phát hiện vấn đề nào!</div>';
+        return;
+      }
+
+      const severityIcons = {
+        error: '🔴',
+        warning: '🟡',
+        info: '🔵',
+      };
+
+      resultsEl.innerHTML = issues.map(issue => {
+        const icon = severityIcons[issue.severity] || '⚪';
+        const pageLink = issue.type !== 'duplicate_title'
+          ? `<a href="#" class="integrity-link" data-cat="${escapeHtml(issue.category)}" data-page="${escapeHtml(issue.page)}" style="color:var(--color-accent);text-decoration:underline;cursor:pointer">${escapeHtml(issue.category)}/${escapeHtml(issue.page)}</a>`
+          : `<span style="color:var(--color-text-muted)">${escapeHtml(issue.page)}</span>`;
+        return `<div style="display:flex;gap:var(--space-2);padding:var(--space-2) var(--space-3);border-bottom:1px solid var(--color-border);font-size:var(--text-sm);align-items:flex-start">
+          <span style="flex-shrink:0">${icon}</span>
+          <div style="flex:1;min-width:0">
+            <div>${escapeHtml(issue.message)}</div>
+            <div style="color:var(--color-text-muted);font-size:var(--text-xs);margin-top:2px">${pageLink} • ${escapeHtml(issue.type)}</div>
+          </div>
+        </div>`;
+      }).join('');
+
+      // Navigate to page on click
+      resultsEl.querySelectorAll('.integrity-link').forEach(link => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          const cat = link.dataset.cat;
+          const page = link.dataset.page;
+          if (cat && page) {
+            switchTab('wiki');
+            navigateToPage(cat, page);
+          }
+        });
+      });
+    } catch (e) {
+      toast('error', 'Lỗi', e.message);
+      resultsEl.innerHTML = '<div style="color:#e17055;padding:var(--space-3)">Lỗi khi kiểm tra dữ liệu.</div>';
+    } finally {
+      btn.disabled = false;
+      btn.innerHTML = '<i data-lucide="play" aria-hidden="true"></i> Quét';
+      lucide.createIcons();
+    }
+  });
 
   async function loadChangelog() {
     try {
@@ -757,200 +936,6 @@
     } catch { /* silent */ }
   }
 
-  // ============================================================
-  // STATUS
-  // ============================================================
-  async function loadStatus() {
-    try {
-      const res = await apiFetch('/api/status');
-      if (!res.ok) return;
-      const data = await res.json();
-
-      const cls = data.pipeline || 'idle';
-      const labels = { idle: 'Idle', running: 'Đang chạy', success: 'Thành công', failed: 'Thất bại' };
-
-      [$('#pipeline-status-badge'), $('#pipeline-status-header')].forEach(el => {
-        if (el) el.className = 'pipeline-badge ' + cls;
-      });
-      if ($('#pipeline-status-text')) $('#pipeline-status-text').textContent = labels[cls] || cls;
-      const headerSpan = $('#pipeline-status-header');
-      if (headerSpan) headerSpan.querySelector('span:last-child').textContent = labels[cls] || cls;
-
-      if ($('#pipeline-last-run')) $('#pipeline-last-run').textContent = formatDate(data.last_run);
-      if ($('#pipeline-last-result')) $('#pipeline-last-result').textContent = data.last_result || '—';
-      if ($('#pipeline-build-version')) $('#pipeline-build-version').textContent = data.build_version || '—';
-    } catch { /* silent */ }
-  }
-
-  // ============================================================
-  // PIPELINE CONTROL
-  // ============================================================
-  async function triggerPipeline(action) {
-    try {
-      const res = await apiFetch('/api/trigger', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ action }) });
-      if (res.ok) { toast('success', 'Pipeline triggered', `Action: ${action}`); loadStatus(); }
-      else { const err = await res.json().catch(() => ({})); toast('error', 'Trigger thất bại', err.error || 'Lỗi'); }
-    } catch (e) { toast('error', 'Lỗi kết nối', e.message); }
-  }
-
-  $('#btn-trigger-full')?.addEventListener('click', async () => {
-    const ok = await showModal('Chạy Full Pipeline', 'Extract → Compile → Build. Tiếp tục?', 'Chạy');
-    if (ok) triggerPipeline('full');
-  });
-  $('#btn-trigger-extract')?.addEventListener('click', () => triggerPipeline('extract'));
-  $('#btn-trigger-compile')?.addEventListener('click', () => triggerPipeline('compile'));
-
-  // ============================================================
-  // UPLOAD
-  // ============================================================
-  const uploadZone = $('#upload-zone');
-  const fileInput = $('#file-input');
-
-  if (uploadZone) {
-    uploadZone.addEventListener('click', () => fileInput.click());
-    uploadZone.addEventListener('dragover', e => { e.preventDefault(); uploadZone.classList.add('drag-over'); });
-    uploadZone.addEventListener('dragleave', () => uploadZone.classList.remove('drag-over'));
-    uploadZone.addEventListener('drop', e => { e.preventDefault(); uploadZone.classList.remove('drag-over'); addFilesToQueue(e.dataTransfer.files); });
-  }
-  if (fileInput) fileInput.addEventListener('change', () => { addFilesToQueue(fileInput.files); fileInput.value = ''; });
-
-  function addFilesToQueue(fileList) {
-    for (const file of fileList) {
-      const ext = getFileExt(file.name);
-      if (!ALLOWED_TYPES.includes(ext)) { toast('warning', 'Định dạng không hỗ trợ', file.name); continue; }
-      if (file.size > MAX_FILE_SIZE) { toast('warning', 'File quá lớn', file.name); continue; }
-      if (state.fileQueue.some(f => f.name === file.name && f.size === file.size)) continue;
-      state.fileQueue.push(file);
-    }
-    renderQueue();
-  }
-
-  function renderQueue() {
-    const queueEl = $('#file-queue');
-    const actionsEl = $('#upload-actions');
-    if (!state.fileQueue.length) { queueEl.style.display = 'none'; actionsEl.style.display = 'none'; return; }
-    queueEl.style.display = 'block'; actionsEl.style.display = 'flex';
-    queueEl.innerHTML = state.fileQueue.map((file, i) => {
-      const info = getFileTypeInfo(file.name);
-      return `<div class="file-queue-item"><div class="file-icon ${info.cls}">${info.label}</div>
-        <div class="file-info"><div class="file-name">${escapeHtml(file.name)}</div><div class="file-size">${formatSize(file.size)}</div></div>
-        <button class="remove-btn" data-index="${i}">&times;</button></div>`;
-    }).join('');
-    queueEl.querySelectorAll('.remove-btn').forEach(b => b.addEventListener('click', () => { state.fileQueue.splice(+b.dataset.index, 1); renderQueue(); }));
-  }
-
-  $('#btn-clear-queue')?.addEventListener('click', () => { state.fileQueue = []; renderQueue(); });
-
-  async function uploadFiles(trigger) {
-    if (!state.fileQueue.length) return;
-    const formData = new FormData();
-    state.fileQueue.forEach(f => formData.append('files', f));
-    formData.append('trigger', trigger ? 'true' : 'false');
-    const loading = toast('info', 'Đang upload...', `${state.fileQueue.length} file`, 0);
-    try {
-      const res = await apiFetch('/api/upload', { method: 'POST', body: formData });
-      removeToast(loading);
-      if (res.ok) {
-        const data = await res.json();
-        state.fileQueue = []; renderQueue();
-        toast('success', trigger ? 'Upload & Trigger OK' : 'Upload OK', `${data.uploaded.length} file`);
-        loadFiles(); loadStatus();
-      } else { toast('error', 'Upload thất bại'); }
-    } catch (e) { removeToast(loading); toast('error', 'Lỗi', e.message); }
-  }
-
-  $('#btn-upload-trigger')?.addEventListener('click', () => uploadFiles(true));
-  $('#btn-upload-only')?.addEventListener('click', () => uploadFiles(false));
-
-  // ============================================================
-  // FILE BROWSER
-  // ============================================================
-  async function loadFiles() {
-    try {
-      const res = await apiFetch(`/api/files?source=${state.currentSource}&page=${state.currentPage}&limit=15`);
-      if (!res.ok) return;
-      const data = await res.json();
-      const tbody = $('#files-tbody');
-
-      if (!data.files?.length) {
-        tbody.innerHTML = '<tr><td colspan="5" class="files-empty">Chưa có file nào</td></tr>';
-        $('#files-pagination').style.display = 'none';
-        return;
-      }
-
-      tbody.innerHTML = data.files.map(f => {
-        const info = getFileTypeInfo(f.filename || f.name || '');
-        const source = f.source === 'web' ? '🌐 Web' : '📁 Manual';
-        const fname = f.filename || f.name || '';
-        const fid = f.id || '';
-        const ext = getFileExt(fname);
-        const viewable = ['.md', '.txt', '.csv', '.json', '.yaml', '.yml'].includes(ext);
-        return `<tr>
-          <td><div class="file-name-cell"><div class="file-icon ${info.cls}" style="width:28px;height:28px;font-size:0.6rem">${info.label}</div>
-            <span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:260px;display:inline-block">${escapeHtml(fname)}</span></div></td>
-          <td>${source}</td>
-          <td>${formatSize(f.size || 0)}</td>
-          <td>${formatDate(f.uploaded_at || f.mtime)}</td>
-          <td style="display:flex;gap:4px">
-            ${viewable && fid ? `<button class="btn btn-ghost btn-icon btn-xs" data-action="view" data-id="${escapeHtml(fid)}" data-name="${escapeHtml(fname)}" title="Xem"><i data-lucide="eye"></i></button>` : ''}
-            <button class="btn btn-ghost btn-icon btn-xs" data-action="delete" data-id="${escapeHtml(fid)}" title="Xóa" ${!fid ? 'disabled' : ''}><i data-lucide="trash-2"></i></button>
-          </td></tr>`;
-      }).join('');
-
-      tbody.querySelectorAll('[data-action="view"]').forEach(b => b.addEventListener('click', () => viewFile(b.dataset.id, b.dataset.name)));
-      tbody.querySelectorAll('[data-action="delete"]').forEach(b => b.addEventListener('click', () => deleteFile(b.dataset.id)));
-      lucide.createIcons();
-
-      const total = data.total || 0;
-      const pages = Math.ceil(total / 15);
-      if (pages > 1) {
-        $('#files-pagination').style.display = 'flex';
-        $('#files-info').textContent = `${(state.currentPage - 1) * 15 + 1}-${Math.min(state.currentPage * 15, total)} / ${total}`;
-        $('#btn-prev-page').disabled = state.currentPage <= 1;
-        $('#btn-next-page').disabled = state.currentPage >= pages;
-      } else { $('#files-pagination').style.display = 'none'; }
-    } catch { /* silent */ }
-  }
-
-  $$('.files-tab').forEach(tab => tab.addEventListener('click', () => {
-    $$('.files-tab').forEach(t => { t.classList.remove('active'); t.setAttribute('aria-selected', 'false'); });
-    tab.classList.add('active'); tab.setAttribute('aria-selected', 'true');
-    state.currentSource = tab.dataset.source; state.currentPage = 1; loadFiles();
-  }));
-  $('#btn-prev-page')?.addEventListener('click', () => { if (state.currentPage > 1) { state.currentPage--; loadFiles(); } });
-  $('#btn-next-page')?.addEventListener('click', () => { state.currentPage++; loadFiles(); });
-
-  async function deleteFile(id) {
-    if (!id) return;
-    const ok = await showModal('Xóa file', 'File sẽ bị xóa vĩnh viễn.', 'Xóa');
-    if (!ok) return;
-    try {
-      const res = await apiFetch('/api/files/' + encodeURIComponent(id), { method: 'DELETE' });
-      if (res.ok) { toast('success', 'Đã xóa'); loadFiles(); } else toast('error', 'Xóa thất bại');
-    } catch (e) { toast('error', 'Lỗi', e.message); }
-  }
-
-  async function viewFile(id, filename) {
-    if (!id) return;
-    try {
-      const res = await apiFetch('/api/files/' + encodeURIComponent(id) + '/content');
-      if (!res.ok) { toast('error', 'Không thể xem file'); return; }
-      const data = await res.json();
-      $('#modal-title').textContent = filename;
-      const msgEl = $('#modal-message');
-      msgEl.innerHTML = '';
-      const pre = document.createElement('pre');
-      pre.textContent = data.content || '';
-      msgEl.appendChild(pre);
-      $('#modal-confirm').textContent = 'Đóng';
-      $('#modal-cancel').style.display = 'none';
-      const mod = $('#modal-overlay');
-      const card = mod.querySelector('.modal');
-      if (card) card.style.maxWidth = '800px';
-      mod.classList.add('active');
-      modalResolve = () => { if (card) card.style.maxWidth = ''; };
-    } catch (e) { toast('error', 'Lỗi', e.message); }
-  }
 
   // ============================================================
   // BREADCRUMB CLICK — go back to category index
@@ -1282,8 +1267,11 @@
         const daysMod = h.days_since_modified !== null ? `${h.days_since_modified} ngày` : '—';
         const daysVer = h.days_since_verify !== null ? `${h.days_since_verify} ngày` : '—';
         const lintBadge = h.lint_errors === null ? '—'
-          : h.lint_errors === 0 ? '<span class="health-ok">✓ 0 lỗi</span>'
-          : `<span class="health-err">${h.lint_errors} lỗi</span>`;
+          : h.lint_errors === 0 && (!h.lint_warnings || h.lint_warnings === 0)
+            ? '<span class="health-ok">✓ Sạch</span>'
+          : h.lint_errors === 0
+            ? `<span class="health-warn">${h.lint_warnings} cảnh báo</span>`
+          : `<span class="health-err">${h.lint_errors} lỗi${h.lint_warnings ? ` +${h.lint_warnings} cảnh báo` : ''}</span>`;
 
         return `<div class="health-card health-${info.cls}">
           <div class="health-card-header">
@@ -1603,6 +1591,242 @@
       }
     } catch { /* silent */ }
   }
+
+  // ============================================================
+  // DUAL-VOTE QUEUE
+  // ============================================================
+  let dualModalCurrentId = null;
+
+  async function loadDualQueue() {
+    const tbody = $('#dual-queue-tbody');
+    tbody.innerHTML = '<tr><td colspan="8" class="files-empty">Đang tải...</td></tr>';
+    try {
+      const res = await apiFetch('/api/review/dual-queue');
+      if (!res.ok) {
+        tbody.innerHTML = '<tr><td colspan="8" class="files-empty">Lỗi tải dữ liệu</td></tr>';
+        return;
+      }
+      const ct = res.headers.get('content-type') || '';
+      if (!ct.includes('application/json')) {
+        tbody.innerHTML = '<tr><td colspan="8" class="files-empty">API chưa sẵn sàng — cần restart server để kích hoạt route dual-queue</td></tr>';
+        return;
+      }
+      const data = await res.json();
+
+      // Update stat
+      const count = data.total || 0;
+      const countEl = $('#dual-queue-count');
+      if (countEl) countEl.textContent = count;
+      const badge = $('#dual-queue-badge');
+      if (badge) {
+        if (count > 0) { badge.textContent = count; badge.style.display = ''; }
+        else badge.style.display = 'none';
+      }
+
+      if (!data.items?.length) {
+        tbody.innerHTML = '<tr><td colspan="8" class="files-empty">✅ Không có items nào chờ review</td></tr>';
+        return;
+      }
+
+      tbody.innerHTML = data.items.map(item => {
+        const statusBadge = {
+          DISAGREE: '<span class="dv-badge dv-disagree">DISAGREE</span>',
+          PARTIAL:  '<span class="dv-badge dv-partial">PARTIAL</span>',
+        }[item.status] || `<span class="dv-badge">${escapeHtml(item.status || '?')}</span>`;
+
+        const score = item.score != null ? (item.score * 100).toFixed(0) + '%' : '—';
+        const ts = item.ts ? new Date(item.ts).toLocaleString('vi-VN', { hour12: false }) : '—';
+        const preview = escapeHtml((item.prompt_preview || '').slice(0, 80));
+        const modelA = escapeHtml((item.model_a || '').replace('gemini-', 'gem-').slice(0, 20));
+        const modelB = escapeHtml((item.model_b || '').slice(0, 12));
+
+        return `<tr class="dual-queue-row" data-dual-id="${escapeHtml(item.id)}" style="cursor:pointer" title="Nhấp để xem side-by-side">
+          <td style="font-size:var(--text-xs);color:var(--color-text-muted)">${ts}</td>
+          <td><code style="font-size:var(--text-xs)">${escapeHtml(item.skill || '—')}</code></td>
+          <td>${statusBadge}</td>
+          <td style="font-family:var(--font-mono);font-size:var(--text-sm)">${escapeHtml(score)}</td>
+          <td style="font-size:var(--text-xs);color:var(--color-text-muted)">${modelA}</td>
+          <td style="font-size:var(--text-xs);color:var(--color-text-muted)">${modelB}</td>
+          <td style="font-size:var(--text-xs);max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${preview}</td>
+          <td>
+            <button class="btn btn-xs btn-ghost" data-dual-open="${escapeHtml(item.id)}" title="Xem chi tiết">
+              <i data-lucide="eye"></i>
+            </button>
+          </td>
+        </tr>`;
+      }).join('');
+
+      lucide.createIcons();
+
+      // Row click → open modal
+      tbody.querySelectorAll('.dual-queue-row').forEach(row => {
+        row.addEventListener('click', (e) => {
+          if (e.target.closest('button')) return;
+          openDualModal(row.dataset.dualId);
+        });
+      });
+      tbody.querySelectorAll('[data-dual-open]').forEach(btn => {
+        btn.addEventListener('click', () => openDualModal(btn.dataset.dualOpen));
+      });
+    } catch (e) {
+      tbody.innerHTML = `<tr><td colspan="8" class="files-empty">Lỗi: ${escapeHtml(e.message)}</td></tr>`;
+    }
+  }
+
+  async function openDualModal(id) {
+    dualModalCurrentId = id;
+    try {
+      const res = await apiFetch(`/api/review/dual/${encodeURIComponent(id)}`);
+      if (!res.ok) { toast('error', 'Lỗi', 'Không tải được item'); return; }
+      const data = await res.json();
+
+      // Fill modal fields
+      $('#dual-modal-meta').textContent = [
+        `Score: ${data.score != null ? (data.score * 100).toFixed(1) + '%' : '—'}`,
+        `Status: ${data.status || '—'}`,
+        `Skill: ${data.skill || '—'}`,
+        data.ts ? new Date(data.ts).toLocaleString('vi-VN', { hour12: false }) : '',
+      ].filter(Boolean).join('  |  ');
+
+      $('#dual-modal-prompt').textContent = data.prompt_preview
+        ? 'Prompt: ' + data.prompt_preview
+        : '';
+
+      $('#dual-model-a-name').textContent = data.model_a || '';
+      $('#dual-model-b-name').textContent = data.model_b || '';
+      $('#dual-output-a').textContent = data.text_a || '(empty)';
+      $('#dual-output-b').textContent = data.text_b || '(empty)';
+
+      // Show modal
+      const overlay = $('#dual-modal-overlay');
+      overlay.style.display = 'flex';
+      overlay.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+      lucide.createIcons();
+    } catch (e) {
+      toast('error', 'Lỗi', e.message);
+    }
+  }
+
+  function closeDualModal() {
+    const overlay = $('#dual-modal-overlay');
+    overlay.style.display = 'none';
+    overlay.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    dualModalCurrentId = null;
+  }
+
+  async function submitDualDecision(decision) {
+    if (!dualModalCurrentId) return;
+    const id = dualModalCurrentId;
+    try {
+      const res = await apiFetch(`/api/review/dual/${encodeURIComponent(id)}/decide`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ decision }),
+      });
+      if (res.ok) {
+        const labels = { pick_a: 'Chọn A (Gemini)', pick_b: 'Chọn B (GPT)', reject_both: 'Loại bỏ cả hai' };
+        toast('success', 'Đã quyết định', `${id}: ${labels[decision] || decision}`);
+        closeDualModal();
+        loadDualQueue();
+      } else {
+        const err = await res.json().catch(() => ({}));
+        toast('error', 'Lỗi', err.error || 'Thất bại');
+      }
+    } catch (e) {
+      toast('error', 'Lỗi kết nối', e.message);
+    }
+  }
+
+  // Dual modal bindings
+  $('#dual-modal-close')?.addEventListener('click', closeDualModal);
+  $('#dual-modal-cancel')?.addEventListener('click', closeDualModal);
+  $('#dual-modal-overlay')?.addEventListener('click', (e) => {
+    if (e.target === e.currentTarget) closeDualModal();
+  });
+  $('#btn-pick-a')?.addEventListener('click', () => submitDualDecision('pick_a'));
+  $('#btn-pick-b')?.addEventListener('click', () => submitDualDecision('pick_b'));
+  $('#btn-reject-both')?.addEventListener('click', () => submitDualDecision('reject_both'));
+  $('#btn-refresh-dual')?.addEventListener('click', loadDualQueue);
+
+  // ============================================================
+  // GROUND TRUTH PROMOTION
+  // ============================================================
+  function getPromoSources() {
+    const src = [];
+    if ($('#promo-high')?.checked) src.push('high');
+    if ($('#promo-medium')?.checked) src.push('medium');
+    if ($('#promo-low')?.checked) src.push('low');
+    return src;
+  }
+
+  $('#btn-promote-dryrun')?.addEventListener('click', async () => {
+    const src = getPromoSources();
+    if (!src.length) { toast('warning', 'Chọn ít nhất 1 confidence level'); return; }
+    const resultEl = $('#promote-result');
+    if (resultEl) resultEl.textContent = 'Đang kiểm tra...';
+    try {
+      const res = await apiFetch('/api/review/promote-groundtruth', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ from_confidence: src, dry_run: true }),
+      });
+      const data = await res.json();
+      if (res.ok) {
+        const parts = Object.entries(data.breakdown || {}).map(([k, v]) => `${v} ${k}`).join(', ');
+        if (resultEl) resultEl.textContent = `Dry run: ${data.total_candidates} claims sẽ promote (${parts || '0'})`;
+        toast('info', 'Dry Run', `${data.total_candidates} claims eligible → ${src.join(', ')} → ground_truth`);
+      } else {
+        if (resultEl) resultEl.textContent = '';
+        toast('error', 'Lỗi', data.error || 'Thất bại');
+      }
+    } catch (e) {
+      if (resultEl) resultEl.textContent = '';
+      toast('error', 'Lỗi kết nối', e.message);
+    }
+  });
+
+  $('#btn-promote-confirm')?.addEventListener('click', async () => {
+    const src = getPromoSources();
+    if (!src.length) { toast('warning', 'Chọn ít nhất 1 confidence level'); return; }
+    const ok = await showModal(
+      'Promote → Ground Truth',
+      `Upgrade tất cả claims approved có confidence [${src.join(', ')}] lên ground_truth. Hành động này không thể hoàn tác tự động.`,
+      'Confirm Promote'
+    );
+    if (!ok) return;
+    const resultEl = $('#promote-result');
+    if (resultEl) resultEl.textContent = 'Đang promote...';
+    try {
+      const res = await apiFetch('/api/review/promote-groundtruth', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ from_confidence: src, dry_run: false }),
+      });
+      const data = await res.json();
+      if (res.ok) {
+        if (resultEl) resultEl.textContent = data.message;
+        toast('success', 'Promoted!', data.message);
+        // Reload stats to reflect new GT ratio
+        loadReviewStats();
+        loadDashboard();
+      } else {
+        if (resultEl) resultEl.textContent = '';
+        toast('error', 'Lỗi', data.error || 'Thất bại');
+      }
+    } catch (e) {
+      if (resultEl) resultEl.textContent = '';
+      toast('error', 'Lỗi kết nối', e.message);
+    }
+  });
+
+  // Close on Escape
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && $('#dual-modal-overlay')?.style.display !== 'none') {
+      closeDualModal();
+    }
+  });
 
   // ============================================================
   // INIT

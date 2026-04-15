@@ -1,0 +1,23 @@
+claim_id: CLM-9B22E92A515D
+entity_id: product.software.litespeed_web_server
+entity_type: product
+entity_name: LiteSpeed Web Server (LSWS)
+attribute: target_customer
+value: Các website yêu cầu tốc độ tải trang nhanh, khả năng xử lý lượng truy cập lớn
+  và cần bảo mật cao.
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-LITESPEED_WEB_SERVER_TINH_NANG_PHIEN_BAN_VA_SO_SANH_2026_04_13
+observed_at: '2026-04-14T12:21:39.411499+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: Phù hợp với: Các website yêu cầu tốc độ tải
+  trang nhanh, khả năng xử lý lượng truy cập lớn và cần bảo mật cao.'
+dual_vote:
+  status: DISAGREE
+  score: 0.0
+  confidence: LOW
+  flag: human_review_required

@@ -1,0 +1,23 @@
+claim_id: CLM-ENT-PROD-SOF-FEATURE
+entity_id: ENT-PROD-SOFTWARE-VBULLETIN
+entity_type: product
+entity_name: Bản quyền Softaculous
+attribute: feature
+value: Cài đặt bằng một cú nhấp chuột
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-VBULLETIN_WEB_2026_04_05
+- SRC-BAN_QUYEN_SOFTACULOUS_TRINH_CAI_AT_UNG_DUNG_TU_ONG_2026_04_04
+- SRC-BAN_QUYEN_SOFTACULOUS_TRINH_CAI_AT_UNG_DUNG_TU_ONG_2026_04_06
+observed_at: '2026-04-06T23:02:27.181887+07:00'
+valid_from: '2026-04-05'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ: • Cài đặt bằng một cú nhấp chuột: Cài đặt nhanh chóng hơn
+  400 ứng dụng và tập lệnh.'
+value_changed_from: Tự động sao lưu
+value_changed_at: '2026-04-06T23:02:27.181905+07:00'
+approved_at: '2026-04-08T13:00:15.485229+07:00'
+approved_by: admin-batch

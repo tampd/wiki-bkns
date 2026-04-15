@@ -7,13 +7,14 @@ value: Multi-Domain/SAN
 unit: null
 qualifiers: {}
 source_ids:
-- SRC-GEOTRUST_QUICKSSL_PREMIUM_SAN_2026_04_06
+  - SRC-GEOTRUST_QUICKSSL_PREMIUM_SAN_2026_04_06
 observed_at: '2026-04-07T00:29:33.190724+07:00'
 valid_from: '2026-04-07'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: none
-compiler_note: 'Trích từ mục Tính năng / Thành phần: • Bảo vệ tên miền: Bảo vệ nhiều
-  tên miền (Multi-Domain/SAN).'
-approved_at: '2026-04-07T13:00:13.600780+07:00'
+compiler_note: 'Trích từ mục Tính năng / Thành phần: • Bảo vệ tên miền: Bảo vệ nhiều tên miền (Multi-Domain/SAN).'
+approved_at: '2026-04-08T13:00:13.104452+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.546Z'

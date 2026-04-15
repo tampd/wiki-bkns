@@ -1,0 +1,18 @@
+claim_id: CLM-2538E8650EB8
+entity_id: ENT-PROD-SSL-COMODO-WILDCARD-DV
+entity_type: product
+entity_name: Comodo SSL Wildcard Certificate (DV)
+attribute: product.provider
+value: Comodo
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-COMODO_SSL_WILDCARD_CERTIFICATE_DV_CHUNG_CHI_SSL_2026_04_13
+observed_at: '2026-04-13T22:10:45.439400+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: ''Dịch vụ này là gì: Chứng chỉ bảo mật SSL
+  loại Wildcard với mức xác thực tên miền (Domain Validation - DV) do Comodo cung
+  cấp.'''

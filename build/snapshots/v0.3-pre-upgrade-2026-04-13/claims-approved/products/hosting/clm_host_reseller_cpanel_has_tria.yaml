@@ -1,0 +1,21 @@
+claim_id: CLM-HOST-RESELLER_CPANEL-HAS_TRIA
+entity_id: product.hosting.reseller_cpanel
+entity_type: product
+entity_name: Reseller Hosting cPanel
+attribute: has_trial
+value: true
+unit: null
+qualifiers:
+  duration: 7
+  duration_unit: day
+source_ids:
+- SRC-RESELLER_HOSTING_CPANEL_QUAN_LY_NHIEU_HOSTING_CHI_VOI_MOT_T_2026_04_04
+observed_at: '2026-04-04T21:14:39.985811+07:00'
+valid_from: '2026-04-04'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ mục Tóm tắt nhanh: Điều kiện/giới hạn nổi bật (nếu có): ...
+  Dịch vụ cho phép dùng thử trong 7 ngày.'
+approved_at: '2026-04-08T13:00:11.554248+07:00'
+approved_by: admin-batch

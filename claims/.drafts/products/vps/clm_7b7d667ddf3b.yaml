@@ -1,0 +1,22 @@
+claim_id: CLM-7B7D667DDF3B
+entity_id: ENT-PROD-VPS
+entity_type: product_service
+entity_name: VPS N8N – AI
+attribute: activation_process
+value: Dịch vụ được khởi tạo nhanh chóng sau khi đăng ký.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-VPS_N8N_AI_DICH_VU_TU_ONG_HOA_QUY_TRINH_TAI_BKNS_2026_04_13
+observed_at: '2026-04-14T16:21:40.464129+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục ''Tính năng / Thành phần'': • Kích hoạt tự động: Dịch
+  vụ được khởi tạo nhanh chóng sau khi đăng ký.'
+dual_vote:
+  status: PARTIAL
+  score: 0.6972
+  confidence: MEDIUM
+  flag: needs_review

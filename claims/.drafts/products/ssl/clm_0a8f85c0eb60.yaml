@@ -1,0 +1,19 @@
+claim_id: CLM-0A8F85C0EB60
+entity_id: ENT-PROD-SSL-COMODO-WILDCARD-DV
+entity_type: product
+entity_name: Comodo SSL Wildcard Certificate (DV)
+attribute: product.feature
+value: Bảo mật cho tên miền chính và không giới hạn số lượng tên miền phụ chỉ với
+  một chứng chỉ.
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-COMODO_SSL_WILDCARD_CERTIFICATE_DV_CHUNG_CHI_SSL_2026_04_13
+observed_at: '2026-04-13T22:10:45.444865+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Tóm tắt nhanh: ''Điểm chính: Chỉ với một chứng chỉ, có thể
+  bảo mật cho tên miền chính (ví dụ `www.domain.com`) và không giới hạn số lượng tên
+  miền phụ (ví dụ `mail.domain.com`, `billing.domain.com`, v.v.).'''

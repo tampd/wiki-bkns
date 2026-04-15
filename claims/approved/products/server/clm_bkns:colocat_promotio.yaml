@@ -8,12 +8,14 @@ unit: null
 qualifiers:
   payment_term_months: 6
 source_ids:
-- SRC-DICH_VU_THUE_CHO_AT_MAY_CHU_COLOCATION_TAI_BKNS_2026_04_04
+  - SRC-DICH_VU_THUE_CHO_AT_MAY_CHU_COLOCATION_TAI_BKNS_2026_04_04
 observed_at: '2026-04-04T20:52:19.164649+07:00'
 valid_from: '2026-04-04'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
 compiler_note: 'Trích từ bảng ''Bảng Cấu Hình Máy Chủ Tặng Kèm'': Thanh toán 6 tháng'
-approved_at: '2026-04-07T13:00:09.654447+07:00'
+approved_at: '2026-04-08T13:00:08.710062+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.269Z'

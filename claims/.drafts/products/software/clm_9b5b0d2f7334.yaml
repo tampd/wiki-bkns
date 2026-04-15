@@ -1,0 +1,17 @@
+claim_id: CLM-9B5B0D2F7334
+entity_id: ENT-PROD-SOFTWARE-VBULLETIN-MOBILE-NEW
+entity_type: product_plan
+entity_name: vBulletin 5 Connect + Mobile Suite Bundle
+attribute: price_string
+value: Giá liên hệ
+unit: null
+qualifiers: null
+source_ids:
+- SRC-BAN_QUYEN_VBULLETIN_HE_QUAN_TRI_FORUM_MANG_XA_HOI_2026_04_13
+observed_at: '2026-04-13T21:35:38.799201+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ bảng giá: | vBulletin 5 Connect + Mobile Suite Bundle | Giá
+  liên hệ | ...'

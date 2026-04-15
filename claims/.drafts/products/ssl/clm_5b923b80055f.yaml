@@ -1,0 +1,17 @@
+claim_id: CLM-5B923B80055F
+entity_id: product.ssl.geotrust_true_businessid_wildcard
+entity_type: product
+entity_name: GeoTrust True BusinessID Wildcard
+attribute: domain_coverage
+value: 1 tên miền chính + tất cả tên miền con cấp 1
+unit: null
+qualifiers: null
+source_ids:
+- SRC-CHUNG_CHI_SSL_GEOTRUST_TRUE_BUSINESSID_WILDCARD_2026_04_13
+observed_at: '2026-04-13T22:00:25.562479+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Thông số kỹ thuật: ''| Bảo vệ cho | 1 tên miền chính
+  + tất cả tên miền con cấp 1 |'''

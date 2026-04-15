@@ -7,12 +7,14 @@ value: 1 lần / tuần
 unit: ''
 qualifiers: null
 source_ids:
-- SRC-TRAINING_DICH_VU_VPS_2026_04_06
+  - SRC-TRAINING_DICH_VU_VPS_2026_04_06
 observed_at: '2026-04-07T01:05:15.923110+07:00'
 valid_from: '2026-04-07'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
 compiler_note: 'Trích từ bảng ở mục 4.1.1: ''Backup & Snapshot: Backup 1 tuần /1 lần'''
-approved_at: '2026-04-07T13:00:14.294840+07:00'
+approved_at: '2026-04-08T13:00:13.851931+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.675Z'

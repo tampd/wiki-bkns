@@ -7,13 +7,14 @@ value: Domain Validation (DV)
 unit: null
 qualifiers: {}
 source_ids:
-- SRC-ESSENTIALSSL_DV_CHUNG_CHI_SSL_XAC_THUC_TEN_MIEN_TU_COMOD_2026_04_06
+  - SRC-ESSENTIALSSL_DV_CHUNG_CHI_SSL_XAC_THUC_TEN_MIEN_TU_COMOD_2026_04_06
 observed_at: '2026-04-07T00:25:55.189886+07:00'
 valid_from: '2026-04-07'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ bảng Thông số kỹ thuật / Giới hạn: ''| Xác thực | Domain
-  (DV) |'''
-approved_at: '2026-04-07T13:00:13.463587+07:00'
+compiler_note: 'Trích từ bảng Thông số kỹ thuật / Giới hạn: ''| Xác thực | Domain (DV) |'''
+approved_at: '2026-04-08T13:00:12.957154+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.528Z'

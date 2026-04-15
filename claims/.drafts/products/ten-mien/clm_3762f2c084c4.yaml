@@ -1,0 +1,17 @@
+claim_id: CLM-3762F2C084C4
+entity_id: ENT-PROD-DOMAIN.QT
+entity_type: product_family
+entity_name: Tên miền Quốc tế
+attribute: included_feature
+value: Miễn phí cài đặt
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-BANG_GIA_ANG_KY_GIA_HAN_VA_TRANSFER_TEN_MIEN_2026_TAI_BKNS_2026_04_13
+observed_at: '2026-04-13T21:36:58.131831+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ phần Tính năng / Thành phần: ''Miễn phí cài đặt cho tên miền
+  quốc tế.'''

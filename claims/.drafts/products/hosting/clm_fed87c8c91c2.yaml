@@ -1,0 +1,27 @@
+claim_id: CLM-FED87C8C91C2
+entity_id: product.hosting.wordpress
+entity_type: product
+entity_name: Hosting WordPress
+attribute: data_discrepancy_note
+value: Thông số trong bảng giá trên trang không khớp với thông số hiển thị trong giỏ
+  hàng (link đăng ký). Ví dụ, gói WPCP01 trên trang ghi Bandwidth 30 GB và không ghi
+  Disk Space, nhưng link đăng ký lại hiển thị Dung lượng 1GB và Băng thông 20GB.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-HOSTING_WORDPRESS_TOC_O_CAO_BANG_GIA_GIAI_PHAP_TOI_UU_S_2026_04_05
+observed_at: '2026-04-14T12:16:10.935177+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: medium
+compiler_note: 'Trích từ phần ''Ghi chú trích xuất'': ''⚠️ MÂU THUẪN TRONG TRANG:
+  Thông số trong bảng giá trên trang không khớp với thông số hiển thị trong giỏ hàng
+  (link đăng ký). Ví dụ, gói WPCP01 trên trang ghi Bandwidth 30 GB và không ghi Disk
+  Space, nhưng link đăng ký lại hiển thị Dung lượng 1GB và Băng thông 20GB. Bài viết
+  này ưu tiên trích xuất dữ liệu hiển thị trực tiếp trên trang theo quy tắc.'''
+dual_vote:
+  status: DISAGREE
+  score: 0.2766
+  confidence: LOW
+  flag: human_review_required

@@ -1,0 +1,191 @@
+---
+artifact: test-set
+part: 01
+created: 2026-04-13
+purpose: |
+  Bộ benchmark cho regression v0.3 → v0.4. Mỗi category có 1 wiki page chính
+  + 4 claims đại diện (mix verified/normal). Khi rebuild bằng Gemini 3.1 + GPT-5.4
+  (PART 07), output mới phải khớp expected_value cho tất cả claims này.
+selection_seed: 42
+total_pages: 5
+total_claims: 20
+verified_claims: 8       # ground-truth từ Excel/screenshot
+normal_claims: 12        # confidence high nhưng chưa human-verify
+
+acceptance_threshold:
+  exact_value_match: ">= 18/20 (90%)"
+  unit_must_match: "100%"
+  page_compile_no_self_review_block: "5/5"
+
+categories:
+  hosting:
+    page: wiki/products/hosting/bang-gia.md
+    page_purpose: "Bảng giá đầy đủ tất cả gói hosting BKH/WPCP/BKSEO"
+    claims:
+      - claim_id: CLM-IMG-product.hosting.wpcp07-parked_domains
+        file: claims/approved/products/hosting/clm_img_product_hosting_wpcp07_parked_domains.yaml
+        entity_name: WordPress Hosting WPCP07
+        attribute: parked_domains
+        expected_value: Unlimited
+        expected_unit: null
+        risk_class: verified
+        notes: "Từ screenshot website (IMG source) — ground truth"
+      - claim_id: CLM-IMG-product.hosting.wpcp03-website_price
+        file: claims/approved/products/hosting/clm_img_product_hosting_wpcp03_website_price.yaml
+        entity_name: WordPress Hosting WPCP03
+        attribute: website_price
+        expected_value: 104500
+        expected_unit: VND
+        risk_class: verified
+        notes: "Giá WPCP03 từ screenshot — số phải chính xác tuyệt đối"
+      - claim_id: CLM-HOST-WORDPRESS-DESC
+        file: claims/approved/products/hosting/clm_host_wordpress_desc.yaml
+        entity_name: Hosting WordPress
+        attribute: description
+        expected_value_substring: "thiết kế và tối ưu hóa đặc biệt cho các website sử dụng mã nguồn WordPress"
+        risk_class: low
+        notes: "Description test — chỉ kiểm tra substring giữ đúng"
+      - claim_id: CLM-HOST-BKH01-PRICE
+        file: claims/approved/products/hosting/clm_host_bkh01_price.yaml
+        entity_name: BKH01
+        attribute: price
+        expected_value: 5700
+        expected_unit: VND
+        risk_class: high
+        notes: "Giá BKH01 từ trang dịch vụ — phải khớp"
+
+  vps:
+    page: wiki/products/vps/bang-gia.md
+    page_purpose: "Bảng giá VPS toàn dòng (Storage / SSD / AMD)"
+    claims:
+      - claim_id: CLM-EXCEL-product_vps_epyc_1-price_24m
+        file: claims/approved/products/vps/clm_excel_product_vps_epyc_1_price_24m.yaml
+        entity_name: Cloud VPS AMD EPYC 1
+        attribute: price_24m
+        expected_value: 2970000
+        expected_unit: VND
+        risk_class: verified
+        notes: "Giá 24 tháng từ Excel ground-truth"
+      - claim_id: CLM-EXCEL-product_vps_epyc_6-cpu_cores
+        file: claims/approved/products/vps/clm_excel_product_vps_epyc_6_cpu_cores.yaml
+        entity_name: Cloud VPS AMD EPYC 6
+        attribute: cpu_cores
+        expected_value: "5 Cores"
+        expected_unit: null
+        risk_class: verified
+        notes: "Số core EPYC 6 từ Excel"
+      - claim_id: CLM-VPS-VPSTK5-VCPU
+        file: claims/approved/products/vps/clm_vps_vpstk5_vcpu.yaml
+        entity_name: VPSTK5
+        attribute: vcpu
+        expected_value: 2
+        expected_unit: core
+        risk_class: low
+        notes: "vCPU VPSTK5 — số nguyên"
+      - claim_id: CLM-ENT-PROD-VPS-PROMOTIO
+        file: claims/approved/products/vps/clm_ent_prod_vps_promotio.yaml
+        entity_name: Cloud VPS/Server tại BKNS
+        attribute: promotion
+        expected_value_substring: "miễn phí License DirectAdmin"
+        risk_class: low
+        notes: "Khuyến mãi entity-level — substring check"
+
+  ssl:
+    page: wiki/products/ssl/bang-gia.md
+    page_purpose: "Bảng giá toàn bộ chứng chỉ SSL (DV/OV/EV của Comodo, GeoTrust, RapidSSL)"
+    claims:
+      - claim_id: CLM-ENT-PROD-SSL-TARGET_C
+        file: claims/approved/products/ssl/clm_ent_prod_ssl_target_c.yaml
+        entity_name: PositiveSSL (DV)
+        attribute: target_customer
+        expected_value_substring: "blog, website cá nhân"
+        risk_class: low
+      - claim_id: CLM-SSL-INSTANTSSL_PRO_OV-GUARANTE
+        file: claims/approved/products/ssl/clm_ssl_instantssl_pro_ov_guarante.yaml
+        entity_name: InstantSSL Pro (OV)
+        attribute: guarantee
+        expected_value: "BKNS ĐẢM BẢO"
+        expected_unit: null
+        risk_class: low
+      - claim_id: CLM-SSL-BKNS-LIST_PRI
+        file: claims/approved/products/ssl/clm_ssl_bkns_list_pri.yaml
+        entity_name: InstantSSL (OV)
+        attribute: list_price
+        expected_value: 2598700
+        expected_unit: VND
+        risk_class: high
+        notes: "Giá list InstantSSL OV — số chính xác"
+      - claim_id: CLM-ENT-PROD-SSL-NAME
+        file: claims/approved/products/ssl/clm_ent_prod_ssl_name.yaml
+        entity_name: RapidSSL Certificate
+        attribute: name
+        expected_value: "RapidSSL Certificate"
+        expected_unit: null
+        risk_class: low
+
+  ten-mien:
+    page: wiki/products/ten-mien/bang-gia.md
+    page_purpose: "Bảng giá đăng ký + gia hạn + transfer toàn bộ TLD"
+    claims:
+      - claim_id: CLM-DOMA-COM-SETUP_FE
+        file: claims/approved/products/ten-mien/clm_doma_com_setup_fe.yaml
+        entity_name: .com
+        attribute: setup_fee
+        expected_value: 0
+        expected_unit: VND
+        risk_class: high
+        notes: "Phí setup .com = 0 — không được hallucinate giá khác"
+      - claim_id: CLM-ENT-PROD-DOM-PRICING_
+        file: claims/approved/products/ten-mien/clm_ent_prod_dom_pricing_.yaml
+        entity_name: Dịch vụ Tên miền BKNS
+        attribute: pricing_note
+        expected_value: "Chưa bao gồm thuế VAT"
+        risk_class: low
+      - claim_id: CLM-DOMA-NET-TRANSFER
+        file: claims/approved/products/ten-mien/clm_doma_net_transfer.yaml
+        entity_name: .net
+        attribute: transfer_price
+        expected_value: 505000
+        expected_unit: VND
+        risk_class: high
+      - claim_id: CLM-ENT--BIZ-RENEWAL_
+        file: claims/approved/products/ten-mien/clm_ent__biz_renewal_.yaml
+        entity_name: .biz
+        attribute: renewal_fee
+        expected_value: 740000
+        expected_unit: VND
+        risk_class: high
+        notes: "Giá gia hạn .biz từ 3 source → cross-check"
+
+  email:
+    page: wiki/products/email/bang-gia.md
+    page_purpose: "Bảng giá Email Hosting / Cloud Email Server / Email Relay"
+    claims:
+      - claim_id: CLM-EXCEL-product_email_hosting_email_4-forwarders
+        file: claims/approved/products/email/clm_excel_product_email_hosting_email_4_forwarders.yaml
+        entity_name: Email Hosting EMAIL 4
+        attribute: forwarders
+        expected_value: 100
+        expected_unit: null
+        risk_class: verified
+      - claim_id: CLM-EXCEL-product_email_server_es_4-storage
+        file: claims/approved/products/email/clm_excel_product_email_server_es_4_storage.yaml
+        entity_name: Cloud Email Server ES 4
+        attribute: storage
+        expected_value: "2000GB"
+        expected_unit: null
+        risk_class: verified
+      - claim_id: CLM-ENT--BK-RELAY01-DAILY_EM
+        file: claims/approved/products/email/clm_ent__bk_relay01_daily_em.yaml
+        entity_name: BK-RELAY01
+        attribute: daily_email_limit
+        expected_value: 350
+        expected_unit: email
+        risk_class: low
+      - claim_id: CLM-EMAI-MINI_EMAIL_02-PRICE
+        file: claims/approved/products/email/clm_emai_mini_email_02_price.yaml
+        entity_name: MINI EMAIL 02
+        attribute: monthly_price
+        expected_value: 450000
+        expected_unit: VND
+        risk_class: high

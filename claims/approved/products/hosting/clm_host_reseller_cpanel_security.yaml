@@ -7,14 +7,15 @@ value: CloudLinux
 unit: null
 qualifiers: {}
 source_ids:
-- SRC-RESELLER_HOSTING_CPANEL_QUAN_LY_NHIEU_HOSTING_CHI_VOI_MOT_T_2026_04_04
-- SRC-RESELLER_HOSTING_CPANEL_QUAN_LY_NHIEU_HOSTING_CHI_VOI_MOT_T_2026_04_06
+  - SRC-RESELLER_HOSTING_CPANEL_QUAN_LY_NHIEU_HOSTING_CHI_VOI_MOT_T_2026_04_04
+  - SRC-RESELLER_HOSTING_CPANEL_QUAN_LY_NHIEU_HOSTING_CHI_VOI_MOT_T_2026_04_06
 observed_at: '2026-04-07T01:00:34.469152+07:00'
 valid_from: '2026-04-04'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: low
-compiler_note: 'Trích từ mục Tính năng / Thành phần: ''Bảo mật: Mức độ bảo mật cao,
-  có CloudLinux để cô lập tài nguyên.'''
-approved_at: '2026-04-07T13:00:12.386968+07:00'
+compiler_note: 'Trích từ mục Tính năng / Thành phần: ''Bảo mật: Mức độ bảo mật cao, có CloudLinux để cô lập tài nguyên.'''
+approved_at: '2026-04-08T13:00:11.598244+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.071Z'

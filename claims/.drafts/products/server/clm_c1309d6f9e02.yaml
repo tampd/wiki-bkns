@@ -1,0 +1,19 @@
+claim_id: CLM-C1309D6F9E02
+entity_id: ENT-PROD-VPN-BKNS
+entity_type: product
+entity_name: Dịch vụ VPN
+attribute: feature
+value: Bảo vệ hoạt động duyệt web của người dùng
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-DICH_VU_VPN_CLOUD_VPN_CUA_BKNS_2026_04_13
+observed_at: '2026-04-13T22:30:26.765377+07:00'
+valid_from: '2026-04-13'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ mục Mô tả dịch vụ: ''...và bảo vệ hoạt động duyệt web của
+  người dùng.'''
+value_changed_from: Truy cập những website bị hạn chế truy cập về mặt vị trí địa lý
+value_changed_at: '2026-04-13T22:30:26.765393+07:00'

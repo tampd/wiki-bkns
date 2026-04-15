@@ -7,12 +7,14 @@ value: 20
 unit: GB
 qualifiers: null
 source_ids:
-- SRC-VPS_N8N_AI_DICH_VU_TU_ONG_HOA_QUY_TRINH_TAI_BKNS_2026_04_04
+  - SRC-VPS_N8N_AI_DICH_VU_TU_ONG_HOA_QUY_TRINH_TAI_BKNS_2026_04_04
 observed_at: '2026-04-04T21:19:10.938731+07:00'
 valid_from: '2026-04-04'
-confidence: high
+confidence: ground_truth
 review_state: approved
 risk_class: medium
 compiler_note: 'Trích từ bảng giá, cột N8N-AI01, hàng Dung Lượng: ''20 GB'''
-approved_at: '2026-04-07T13:00:15.191381+07:00'
+approved_at: '2026-04-08T13:00:14.999851+07:00'
 approved_by: admin-batch
+promoted_from: high
+promoted_at: '2026-04-15T07:05:59.780Z'

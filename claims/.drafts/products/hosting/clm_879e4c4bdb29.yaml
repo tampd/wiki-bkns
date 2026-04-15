@@ -1,0 +1,24 @@
+claim_id: CLM-879E4C4BDB29
+entity_id: product.hosting.wordpress
+entity_type: product
+entity_name: Hosting WordPress
+attribute: target_audience
+value: Các cá nhân, doanh nghiệp sử dụng website WordPress, từ blog cá nhân, trang
+  giới thiệu công ty đến các trang thương mại điện tử.
+unit: null
+qualifiers: null
+source_ids:
+- SRC-HOSTING_WORDPRESS_TOC_O_CAO_BANG_GIA_GIAI_PHAP_TOI_UU_S_2026_04_05
+observed_at: '2026-04-14T12:16:10.940930+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ phần ''Tóm tắt nhanh'': ''Phù hợp với: Các cá nhân, doanh
+  nghiệp sử dụng website WordPress, từ blog cá nhân, trang giới thiệu công ty đến
+  các trang thương mại điện tử.'''
+dual_vote:
+  status: DISAGREE
+  score: 0.2766
+  confidence: LOW
+  flag: human_review_required

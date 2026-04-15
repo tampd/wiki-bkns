@@ -1,0 +1,19 @@
+claim_id: CLM-ENT-PROD-SSL-BRAND_OW
+entity_id: ENT-PROD-SSL-RAPIDSSL-WILDCARD
+entity_type: product
+entity_name: RapidSSL Wildcard Certificate
+attribute: brand_owner
+value: DigiCert
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-RAPIDSSL_WILDCARD_CERTIFICATE_THONG_TIN_VA_BANG_GIA_TAI_BK_2026_04_06
+observed_at: '2026-04-07T00:58:40.400710+07:00'
+valid_from: '2026-04-07'
+confidence: high
+review_state: approved
+risk_class: low
+compiler_note: 'Trích từ Mô tả dịch vụ: RapidSSL Wildcard Certificate là một giải
+  pháp bảo mật đến từ DigiCert...'
+approved_at: '2026-04-08T13:00:12.295845+07:00'
+approved_by: admin-batch

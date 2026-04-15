@@ -1,0 +1,21 @@
+claim_id: CLM-81DC62D339C4
+entity_id: ENT-PROD-SSL-GEOTRUST-TRUE-BUSINESSID-WILDCARD
+entity_type: product
+entity_name: GeoTrust True BusinessID Wildcard
+attribute: purchase_url
+value: https://my.bkns.net/?cmd=cart&action=add&id=81&language=vietnamese
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-CHUNG_CHI_SSL_GEOTRUST_TRUE_BUSINESSID_WILDCARD_2026_04_05
+observed_at: '2026-04-14T16:24:48.905718+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: none
+compiler_note: 'Trích từ mục Liên kết liên quan: • [Mua ngay tại BKNS](https://my.bkns.net/?cmd=cart&action=add&id=81&language=vietnamese)'
+dual_vote:
+  status: DISAGREE
+  score: 0.3808
+  confidence: LOW
+  flag: human_review_required

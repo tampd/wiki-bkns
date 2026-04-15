@@ -1,0 +1,22 @@
+claim_id: CLM-EEC0CFD1C3E5
+entity_id: ENT-PROD-EMAIL-RELAY-BK-RELAY02
+entity_type: product_plan
+entity_name: BK-RELAY02
+attribute: registration_url
+value: https://my.bkns.net/?cmd=cart&action=add&id=406
+unit: null
+qualifiers: {}
+source_ids:
+- SRC-EMAIL_RELAY_GIAI_PHAP_GUI_EMAIL_AN_TOAN_VA_TIN_CAY_2026_04_05
+observed_at: '2026-04-14T17:07:24.197607+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ bảng giá: | Đăng ký | [Đăng ký](https://my.bkns.net/?cmd=cart&action=add&id=406)
+  |'
+dual_vote:
+  status: PARTIAL
+  score: 0.6451
+  confidence: MEDIUM
+  flag: needs_review

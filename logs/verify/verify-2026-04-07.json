@@ -1,34 +1,100 @@
 {
-  "ts": "2026-04-07T15:49:32.606058+07:00",
-  "category": "all",
-  "total_claims": 1987,
-  "total_checks": 3,
-  "critical_issues": 3,
+  "ts": "2026-04-07T16:42:50.861262+07:00",
+  "category": "products/hosting",
+  "total_claims": 696,
+  "total_checks": 13,
+  "critical_issues": 0,
   "high_issues": 0,
   "results": [
     {
-      "claim_id": "CLM-EMAI-HOSTING-PRICE",
-      "layer": 3,
-      "status": "conflict_with_gt",
-      "severity": "critical",
-      "detail": "CONFLICT: claim=166250 vs ground_truth=90000",
-      "action": "auto_reject"
+      "claim_id": "batch_error",
+      "layer": 2,
+      "status": "error",
+      "detail": "API error: Expecting ',' delimiter: line 7 column 6 (char 334)"
     },
     {
-      "claim_id": "CLM-HOST-BKSW01-PRICE",
-      "layer": 3,
-      "status": "conflict_with_gt",
-      "severity": "critical",
-      "detail": "CONFLICT: claim=31350 vs ground_truth=33000",
-      "action": "auto_reject"
+      "claim_id": "batch_error",
+      "layer": 2,
+      "status": "error",
+      "detail": "API error: Unterminated string starting at: line 3 column 17 (char 22)"
     },
     {
-      "claim_id": "CLM-HOST-BKCP01-CPU_CORE",
-      "layer": 3,
-      "status": "conflict_with_gt",
-      "severity": "critical",
-      "detail": "CONFLICT: claim=1 vs ground_truth=1 Core",
-      "action": "auto_reject"
+      "claim_id": "batch_error",
+      "layer": 2,
+      "status": "error",
+      "detail": "API error: 'NoneType' object has no attribute 'strip'"
+    },
+    {
+      "claim_id": "CLM-HOST-PLATINUM-SSL_CERT",
+      "layer": 2,
+      "status": "warning",
+      "plausibility_score": 75,
+      "issues": [
+        "Thông tin 'ssl_certificate = free' đã được thể hiện rõ ràng hơn và đầy đủ hơn trong claim 'Platinum Web Hosting: included_ssl = True'. Claim này có vẻ thừa hoặc không cung cấp thêm giá trị thông tin đáng kể."
+      ],
+      "detail": "Cross-model score: 75/100"
+    },
+    {
+      "claim_id": "[CLM-HOST-PLATINUM-HARDWARE]",
+      "layer": 2,
+      "status": "flagged",
+      "plausibility_score": 20,
+      "issues": [
+        "Thông số kỹ thuật không logic: 'Intel Platinum' là dòng CPU (bộ vi xử lý), không phải thông số của 'hardware_storage' (thiết bị lưu trữ). Đây là sự nhầm lẫn cơ bản về phần cứng."
+      ],
+      "detail": "Cross-model score: 20/100"
+    },
+    {
+      "claim_id": "batch_error",
+      "layer": 2,
+      "status": "error",
+      "detail": "API error: Expecting ',' delimiter: line 7 column 6 (char 294)"
+    },
+    {
+      "claim_id": "batch_error",
+      "layer": 2,
+      "status": "error",
+      "detail": "API error: Expecting ',' delimiter: line 7 column 6 (char 363)"
+    },
+    {
+      "claim_id": "batch_error",
+      "layer": 2,
+      "status": "error",
+      "detail": "API error: 'NoneType' object has no attribute 'strip'"
+    },
+    {
+      "claim_id": "batch_error",
+      "layer": 2,
+      "status": "error",
+      "detail": "API error: Unterminated string starting at: line 10 column 17 (char 348)"
+    },
+    {
+      "claim_id": "batch_error",
+      "layer": 2,
+      "status": "error",
+      "detail": "API error: Unterminated string starting at: line 3 column 17 (char 22)"
+    },
+    {
+      "claim_id": "batch_error",
+      "layer": 2,
+      "status": "error",
+      "detail": "API error: Expecting ',' delimiter: line 7 column 6 (char 275)"
+    },
+    {
+      "claim_id": "batch_error",
+      "layer": 2,
+      "status": "error",
+      "detail": "API error: 'NoneType' object has no attribute 'strip'"
+    },
+    {
+      "claim_id": "[CLM-IMG-product.hosting.bksw01-bandwidth]",
+      "layer": 2,
+      "status": "warning",
+      "plausibility_score": 70,
+      "issues": [
+        "Bandwidth 20 GB (nếu là lưu lượng truyền tải hàng tháng) là khá thấp so với mặt bằng chung các gói hosting hiện nay trên thị trường Việt Nam. Nhiều nhà cung cấp khác thường cung cấp từ 50 GB đến không giới hạn cho các gói tương đương hoặc chỉ cao hơn một chút về giá. Điều này có thể không đủ cho website có lượng truy cập trung bình hoặc nhiều nội dung đa phương tiện, khiến gói này kém cạnh tranh hơn."
+      ],
+      "detail": "Cross-model score: 70/100"
     }
   ]
 }

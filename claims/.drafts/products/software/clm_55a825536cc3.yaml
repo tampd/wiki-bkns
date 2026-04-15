@@ -1,0 +1,21 @@
+claim_id: CLM-55A825536CC3
+entity_id: ENT-PROD-SOFTWARE-IMUNIFY360
+entity_type: product
+entity_name: Imunify360
+attribute: source_url
+value: https://www.bkns.vn/phan-mem/imunify360.html
+unit: null
+qualifiers: null
+source_ids:
+- SRC-BANG_GIA_IMUNIFY360_GIAI_PHAP_BAO_MAT_SERVER_BANG_AI_2026_04_05
+observed_at: '2026-04-14T17:11:48.178716+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: low
+compiler_note: 'Trích từ Thông tin nguồn: ''URL: https://www.bkns.vn/phan-mem/imunify360.html'''
+dual_vote:
+  status: DISAGREE
+  score: 0.1912
+  confidence: LOW
+  flag: human_review_required

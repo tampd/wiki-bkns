@@ -1,0 +1,22 @@
+claim_id: CLM-493C76130624
+entity_id: ENT-PROD-DOMAIN.net
+entity_type: product_variant
+entity_name: Tên miền .net
+attribute: transfer_price
+value: 505000
+unit: VND
+qualifiers: null
+source_ids:
+- SRC-DICH_VU_ANG_KY_TEN_MIEN_VIET_NAM_VA_QUOC_TE_TAI_BKNS_2026_04_05
+observed_at: '2026-04-14T16:47:42.437800+07:00'
+valid_from: '2026-04-14'
+confidence: high
+review_state: drafted
+risk_class: high
+compiler_note: 'Trích từ Bảng giá Tên miền Quốc tế: | .net | Miễn phí | 435.000 |
+  505.000 | 505.000 |'
+dual_vote:
+  status: PARTIAL
+  score: 0.6047
+  confidence: MEDIUM
+  flag: needs_review

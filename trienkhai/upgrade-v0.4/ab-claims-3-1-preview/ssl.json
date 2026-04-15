@@ -1,0 +1,263 @@
+{
+  "claims": [
+    {
+      "entity_name": "AlphaSSL",
+      "attribute": "giá rẻ nhất",
+      "value": "849.000",
+      "unit": "VND/năm",
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "RapidSSL",
+      "attribute": "giá rẻ nhất",
+      "value": "215.000",
+      "unit": "VND/năm",
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "GeoTrust SSL",
+      "attribute": "giá rẻ nhất",
+      "value": "1.411.000",
+      "unit": "VND/năm",
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Thawte SSL",
+      "attribute": "giá rẻ nhất",
+      "value": "998.000",
+      "unit": "VND/năm",
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "DigiCert",
+      "attribute": "giá rẻ nhất",
+      "value": "6.127.000",
+      "unit": "VND/năm",
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Comodo/Sectigo SSL",
+      "attribute": "giá rẻ nhất",
+      "value": "219.000",
+      "unit": "VND/năm",
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "GlobalSign SSL",
+      "attribute": "giá rẻ nhất",
+      "value": "4.446.000",
+      "unit": "VND/năm",
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Sectigo SSL",
+      "attribute": "giá rẻ nhất",
+      "value": "1.474.000",
+      "unit": "VND/năm",
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Code Signing",
+      "attribute": "giá rẻ nhất",
+      "value": "10.010.000",
+      "unit": "VND/năm",
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "AlphaSSL",
+      "attribute": "giá",
+      "value": "849.000",
+      "unit": "VND/năm",
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "AlphaSSL",
+      "attribute": "loại xác thực",
+      "value": "DV - Domain Validation",
+      "unit": null,
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "AlphaSSL Wildcard",
+      "attribute": "tính năng",
+      "value": "bảo vệ domain chính + tất cả subdomain",
+      "unit": null,
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "RapidSSL Certificate",
+      "attribute": "giá từ",
+      "value": "215.000",
+      "unit": "VND/năm",
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "RapidSSL Certificate",
+      "attribute": "loại xác thực",
+      "value": "DV",
+      "unit": null,
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "RapidSSL Wildcard",
+      "attribute": "tính năng",
+      "value": "bảo vệ domain + unlimited subdomains",
+      "unit": null,
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "GeoTrust QuickSSL Premium",
+      "attribute": "loại xác thực",
+      "value": "DV",
+      "unit": null,
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "GeoTrust QuickSSL Premium SAN",
+      "attribute": "tính năng",
+      "value": "nhiều domain",
+      "unit": null,
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "GeoTrust True BusinessID",
+      "attribute": "loại xác thực",
+      "value": "OV",
+      "unit": null,
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Thawte SSL123 Wildcard",
+      "attribute": "giá",
+      "value": "6.614.000",
+      "unit": "VND/năm",
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Thawte SSL123 Wildcard",
+      "attribute": "giá gốc",
+      "value": "19.370.000",
+      "unit": "VND/năm",
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "DigiCert",
+      "attribute": "phân khúc",
+      "value": "cao cấp nhất",
+      "unit": null,
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "DigiCert Secure Site SSL",
+      "attribute": "giá từ",
+      "value": "6.127.000",
+      "unit": "VND/năm",
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "PositiveSSL DV",
+      "attribute": "giá từ",
+      "value": "219.000",
+      "unit": "VND/năm",
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "PositiveSSL DV",
+      "attribute": "đặc điểm",
+      "value": "rẻ nhất",
+      "unit": null,
+      "confidence": 0.9
+    },
+    {
+      "entity_name": "GlobalSign Domain Validation Wildcard",
+      "attribute": "loại xác thực",
+      "value": "DV",
+      "unit": null,
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "GlobalSign Organization Validation",
+      "attribute": "loại xác thực",
+      "value": "OV",
+      "unit": null,
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "GlobalSign Organization Validation Wildcard",
+      "attribute": "loại xác thực",
+      "value": "OV",
+      "unit": null,
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "GlobalSign Extended Validation SSL",
+      "attribute": "loại xác thực",
+      "value": "EV",
+      "unit": null,
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "GlobalSign Code Signing Certificate",
+      "attribute": "loại xác thực",
+      "value": "EV",
+      "unit": null,
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "DV (Domain Validation)",
+      "attribute": "tính năng",
+      "value": "Xác thực tên miền",
+      "unit": null,
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "DV (Domain Validation)",
+      "attribute": "thời gian cấp",
+      "value": "nhanh trong vài phút",
+      "unit": null,
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "OV (Organization Validation)",
+      "attribute": "tính năng",
+      "value": "Xác thực tổ chức",
+      "unit": null,
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "OV (Organization Validation)",
+      "attribute": "thời gian xử lý",
+      "value": "1-3 ngày",
+      "unit": null,
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "EV (Extended Validation)",
+      "attribute": "tính năng",
+      "value": "Xác thực mở rộng, hiển thị tên công ty trên thanh địa chỉ",
+      "unit": null,
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Wildcard",
+      "attribute": "tính năng",
+      "value": "Bảo vệ domain chính + tất cả subdomain",
+      "unit": null,
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Multi-Domain (UCC/SAN)",
+      "attribute": "tính năng",
+      "value": "Bảo vệ nhiều tên miền khác nhau",
+      "unit": null,
+      "confidence": 1.0
+    },
+    {
+      "entity_name": "Code Signing",
+      "attribute": "tính năng",
+      "value": "Ký số phần mềm, chứng minh nguồn gốc",
+      "unit": null,
+      "confidence": 1.0
+    }
+  ]
+}
