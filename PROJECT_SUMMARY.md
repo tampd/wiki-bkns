@@ -1,9 +1,10 @@
 # 📚 BKNS Agent Wiki — Tổng Kết Dự Án
 
-> **Trạng thái**: Production-ready (MVP) — Bot đang chạy trên PM2  
-> **Build hiện tại**: v0.3 — 9 wiki files, ~13,786 tokens  
-> **Tổng chi phí Vertex AI**: $6.50  
-> **Ngày cập nhật**: 2026-04-04
+> **Trạng thái**: Production-ready — Bot đang chạy trên PM2  
+> **Build hiện tại**: v0.4 — markitdown + dual-vote (Gemini + GPT-5.4)  
+> **Tổng chi phí**: $6.50 (v0.3 baseline); v0.4 pending regression test  
+> **Ngày cập nhật**: 2026-04-14  
+> **v0.4**: markitdown (15+ formats) + dual-vote cross-validation + Gemini 3.1 Pro ready
 
 ---
 
@@ -14,9 +15,10 @@ BKNS Agent Wiki là **bot thủ thư tự động** cho BKNS.VN, sử dụng mô
 ### Kiến trúc
 
 ```
-Tài liệu thủ công (DOCX/PDF)
-    ↓ convert_manual.py
-Markdown files (raw/manual/)
+Tài liệu / Media (DOCX/PDF/XLSX/PPTX/EPUB/HTML/ZIP/MP3/WAV/YouTube)
+    ↓ convert_manual.py  [markitdown backend, v0.4+]
+    ↓ ingest_youtube.py / ingest_html.py / ingest_audio.py
+Markdown files (raw/manual/ | raw/youtube/ | raw/html/ | raw/audio/)
     ↓ extract-claims (Gemini Pro)
 YAML claims (claims/.drafts/)
     ↓ approve (batch/manual)
@@ -29,12 +31,30 @@ Snapshot (build/snapshots/)
 Telegram Bot ← User hỏi
 ```
 
+### Kiến trúc v0.4 (Dual-Vote)
+
+```
+Tài liệu / Media (DOCX/PDF/XLSX/PPTX/EPUB/HTML/ZIP/MP3/WAV/YouTube)
+    ↓ markitdown_adapter.py  [v0.4 — 15+ formats]
+Markdown files (raw/)
+    ↓ extract_dual.py        [Gemini Pro + GPT-5.4 → AGREE/PARTIAL/DISAGREE]
+    ↓ .review-queue/         [DISAGREE → human review]
+Approved claims (claims/approved/)
+    ↓ compile_dual.py        [Gemini Pro + GPT-5.4 dual-vote compile]
+Wiki pages (wiki/products/)
+    ↓ build-snapshot
+Snapshot (build/snapshots/)
+    ↓ query-wiki (Gemini Flash + Context Caching)
+Telegram Bot ← User hỏi
+```
+
 ### Tech Stack
 - **AI**: Vertex AI — Gemini 2.5 Pro (extract/compile) + Gemini 2.5 Flash (query)
+- **AI (v0.4)**: Dual-vote — Gemini 2.5/3.1 Pro **+** OpenAI GPT-5.4 cross-validation
 - **Bot**: Telegram long polling (Python)
 - **Process Manager**: PM2 (auto-restart on crash/reboot)
 - **Storage**: Local YAML/Markdown + JSONL audit logs
-- **Auth**: Service account `/home/openclaw/wiki/api/vertex-key.json`
+- **Auth**: Vertex AI service account + OpenAI API key (env var)
 
 ---
 
@@ -91,7 +111,7 @@ Telegram Bot ← User hỏi
 | Wiki categories | 7 (hosting, ssl, vps, ten-mien, email, server, software) |
 | Wiki pages | 7 tong-quan.md + 2 system |
 | Wiki tokens | ~13,786 |
-| Build version | v0.3 |
+| Build version | v0.6 (app version v1.1.0) |
 | Bot status | ✅ PM2 online (auto-restart) |
 
 ### 📄 Chi tiết Wiki Pages
@@ -237,7 +257,10 @@ Telegram Bot ← User hỏi
 │   ├── lint-wiki/             ├── ground-truth/
 │   ├── auto-file/             └── cross-link/
 ├── tools/
-│   ├── convert_manual.py      # DOCX/PDF → Markdown
+│   ├── convert_manual.py      # 15+ formats → Markdown (markitdown v0.4+)
+│   ├── ingest_youtube.py      # YouTube URL → transcript Markdown
+│   ├── ingest_html.py         # HTML URL → Markdown
+│   ├── ingest_audio.py        # MP3/WAV → transcript Markdown (Whisper)
 │   └── approve_and_compile.py # Batch approve pipeline
 ├── web/                        # Web Data Portal (NEW)
 │   ├── server.js              # Express server

@@ -1,141 +1,224 @@
 # BKNS Knowledge Wiki
 
-> **Bộ kiến thức chuẩn hóa về hệ sinh thái sản phẩm BKNS.vn**
-> Được xây dựng và duy trì bởi **OpenClaw** theo phương pháp **LLM-Compiled Wiki + Gemini Implicit Context Caching**
+> **LLM-Compiled Markdown Knowledge Base** cho hệ sinh thái sản phẩm BKNS.vn
+> Dual-vote cross-validation · Gemini Implicit Caching · No RAG, no vector DB
+
+[![Version](https://img.shields.io/badge/version-v1.1.0-blue)]() [![License](https://img.shields.io/badge/license-MIT-green)]() [![Python](https://img.shields.io/badge/python-3.10+-blue)]() [![Node](https://img.shields.io/badge/node-18+-green)]()
 
 ---
 
-## Tổng Quan Dự Án
+## Tổng quan
+
+BKNS Wiki là knowledge base tự-compile bằng LLM, phục vụ bot CSKH Telegram + Web Admin Portal nội bộ. Hệ thống **không dùng RAG/vector DB** — toàn bộ wiki (~200k–500k token) được nạp làm prefix cố định mỗi query, Gemini Implicit Caching tự động tiết kiệm ~75% token input.
 
 | Thông tin | Chi tiết |
+|-----------|----------|
+| **Phiên bản hiện tại** | v1.1.0 (2026-04-14) — xem [CHANGELOG.md](./CHANGELOG.md) |
+| **Stack** | Python 3.10+ pipeline · Node.js 18+ web portal · PM2 · Telegram bot |
+| **LLM** | Gemini 2.5 Pro/Flash (Vertex AI) + OpenAI GPT-5.4 (dual-vote) |
+| **Kho dữ liệu** | 2,252 claims YAML, 14 categories, builds v0.1 → v0.6 |
+| **Web Portal** | Admin Review UI (dual-vote resolution, bulk actions) |
+| **Bot Telegram** | `/hoi`, `/them`, `/extract`, `/compile`, `/build`, `/lint`, `/status` |
+| **License** | [MIT](./LICENSE) |
+
+---
+
+## Kiến trúc pipeline
+
+```
+[Telegram /them URL]  [File upload]  [Image screenshot]
+           │               │                │
+           ▼               ▼                ▼
+    ┌─────────────────────────────────────────────┐
+    │  1. crawl-source     → raw/ (Markdown thô)  │
+    │  2. ingest-image     → Gemini Flash Vision  │
+    │  3. extract-claims   → claims/.drafts/      │  ← Dual-vote
+    │     (Gemini Pro + GPT-5.4 cross-validate)   │     cross-check
+    │  4. [Review queue]   → claims/approved/     │  ← Human review
+    │     (Web Portal: approve/reject/conflict)   │     (25 conflicts
+    │  5. compile-wiki     → wiki/products/*.md   │     resolved manually)
+    │     (Gemini Pro + self-review)              │
+    │  6. build-snapshot   → build/manifests/     │
+    │  7. query-wiki       → /hoi answers         │
+    │     (Flash + Implicit Cache, ~$0.0004/q)    │
+    └─────────────────────────────────────────────┘
+```
+
+**Chi tiết:** xem [docs/SPEC-wiki-system.md](./docs/SPEC-wiki-system.md) (v2.0) và [docs/runbook.md](./docs/runbook.md).
+
+---
+
+## Tính năng chính
+
+### 1. LLM-Compiled Wiki (ý tưởng Andrej Karpathy)
+Toàn bộ kiến thức BKNS biên soạn thành Markdown có cấu trúc, metadata, nguồn trích dẫn. Gemini Pro vừa compile vừa tự-review từng page trước khi publish.
+
+### 2. Dual-Vote Cross-Validation (v0.4+)
+Mỗi claim được extract/compile bởi **cả 2 model độc lập**: Gemini 2.5 Pro + OpenAI GPT-5.4. Kết quả được so sánh ngữ nghĩa (semantic similarity). Trạng thái:
+- **AGREE** → auto-approve
+- **PARTIAL** → flag low confidence
+- **DISAGREE** → vào review queue cho con người giải quyết
+
+Log per-call tại `logs/dual-vote-YYYY-MM.jsonl`.
+
+### 3. Gemini Implicit Context Caching
+Wiki đặt cố định ở đầu mỗi query request. Gemini tự động nhận diện prefix lặp lại và cache — không cần quản lý thủ công, không phí storage, tiết kiệm ~75% chi phí token input.
+
+### 4. Markitdown Multi-Format Ingest (v0.4+)
+Convert 15+ formats qua `tools/converters/markitdown_adapter.py`: DOCX, PDF, XLSX, PPTX, EPUB, HTML, ZIP, MP3, WAV, YouTube transcript, ảnh kèm EXIF. Xem [docs/converters.md](./docs/converters.md).
+
+### 5. Web Admin Portal
+Portal nội bộ (Express + vanilla JS SPA) phục vụ review workflow:
+- Sidebar tree theo category
+- Reader + Toast UI Editor
+- Dual-vote conflict resolution với bulk actions
+- Quality dashboard: lint errors, ground-truth drift, cost split
+
+### 6. Cost Monitoring
+- `lib/logger.py::log_gemini_call()` ghi per-call JSONL vào `logs/gemini-calls-YYYY-MM.jsonl`
+- Alert khi 1 query vượt `MAX_QUERY_COST_USD` (mặc định $0.01)
+- Monthly budget cap `MONTHLY_BUDGET_USD` trong `lib/config.py`
+
+---
+
+## Quick Start
+
+```bash
+# 1. Clone
+git clone git@github.com:tampd/Wiki.git wiki && cd wiki
+
+# 2. Python + Node dependencies
+pip install -r requirements.txt
+cd web && npm install && cd ..
+
+# 3. Environment config
+cp .env.example .env
+# Điền TELEGRAM_BOT_TOKEN, GOOGLE_APPLICATION_CREDENTIALS, GOOGLE_CLOUD_PROJECT, v.v.
+
+# 4. Smoke test
+python3 -c "from lib.config import WIKI_WORKSPACE; print('OK:', WIKI_WORKSPACE)"
+pytest tests/ -q
+
+# 5. Start services
+pm2 start ecosystem.config.js           # web portal + cron jobs
+python3 bot/wiki_bot.py                 # Telegram bot (hoặc qua PM2)
+```
+
+**Yêu cầu hệ thống:** Python 3.10+, Node.js 18+, PM2 (`npm install -g pm2`), Google Cloud service account có quyền Vertex AI.
+
+---
+
+## Bot Commands (Telegram)
+
+| Command | Quyền | Mô tả |
+|---------|-------|-------|
+| `/hoi [câu hỏi]` | Mọi người | Hỏi đáp về sản phẩm BKNS |
+| `/status` | Mọi người | Trạng thái hệ thống + build version |
+| `/help` | Mọi người | Hướng dẫn sử dụng |
+| `/them [URL]` | Admin | Crawl URL mới vào `raw/` (v1.1.0) |
+| `/extract` | Admin | Extract claims từ raw files mới |
+| `/compile [category]` | Admin | Compile wiki (hoặc `--all`) |
+| `/build` | Admin | Tạo build snapshot mới |
+| `/lint` | Admin | Kiểm tra chất lượng wiki |
+
+---
+
+## Cấu trúc thư mục
+
+```
+wiki/
+├── bot/              Telegram bot (wiki_bot.py)
+├── lib/              Shared libs: config, logger, gemini, openai_client, dual_vote, utils
+├── skills/           10 skills: crawl-source, extract-claims, compile-wiki, query-wiki,
+│                     build-snapshot, ingest-image, lint-wiki, ground-truth, auto-file,
+│                     cross-link, dual-vote
+├── tools/            Adhoc tools: converters, regression_test, quality_dashboard, cron_tasks
+├── web/              Express + vanilla JS Admin Portal
+├── claims/
+│   ├── .drafts/      Draft claims đang chờ review
+│   ├── .review-queue/ Dual-vote DISAGREE cases
+│   └── approved/     Claims đã duyệt (theo category)
+├── wiki/             Markdown wiki pages (wiki/products/<category>/*.md)
+├── build/
+│   ├── active-build.yaml  Manifest active hiện tại
+│   ├── manifests/    Build history (BLD-YYYYMMDD-HHMMSS.yaml)
+│   └── snapshots/    Snapshot files
+├── raw/              Dữ liệu thô (crawl, manual, images)
+├── assets/
+│   ├── images/       Thumbnails ≤100KB
+│   └── evidence/     Full-res screenshots (Git LFS)
+├── logs/             Lint, verify, dual-vote, gemini-calls JSONL
+├── docs/             SPEC, runbook, REVIEWER_GUIDE, converters
+├── scripts/          rollback-v0.4.sh, utility scripts
+└── tests/            pytest suites (test_pipeline_smoke, test_bot, ...)
+```
+
+---
+
+## Tài liệu
+
+| File | Nội dung |
+|------|----------|
+| [docs/SPEC-wiki-system.md](./docs/SPEC-wiki-system.md) | Spec kiến trúc đầy đủ v2.0 — skills matrix, API, infra |
+| [docs/runbook.md](./docs/runbook.md) | Operations runbook v0.4 (monitoring, rollback) |
+| [docs/REVIEWER_GUIDE.md](./docs/REVIEWER_GUIDE.md) | Hướng dẫn review dual-vote conflicts |
+| [docs/converters.md](./docs/converters.md) | 15+ format ingest qua markitdown |
+| [HANDOVER.md](./HANDOVER.md) | Tài liệu bàn giao v1.1.0 — cài đặt + bot commands |
+| [CHANGELOG.md](./CHANGELOG.md) | Lịch sử thay đổi (SemVer) |
+| [LESSONS.md](./LESSONS.md) | Bài học quan trọng (≤10 entries) |
+| [CONTRIBUTING.md](./CONTRIBUTING.md) | Quy trình đóng góp |
+| [OPTIMIZATION_PLAN.md](./OPTIMIZATION_PLAN.md) | Lộ trình tối ưu 5 phases |
+| [OPTIMIZATION_LOG.md](./OPTIMIZATION_LOG.md) | Log thực thi optimization |
+
+---
+
+## Chi phí vận hành (thực tế)
+
+| Hoạt động | Chi phí |
 |-----------|---------|
-| **Mục tiêu** | Knowledge base cho bot CSKH, bot nội bộ, và nhân viên mới của BKNS |
-| **Phương pháp** | LLM-Compiled Markdown Wiki (ý tưởng Andrej Karpathy) |
-| **Không dùng** | RAG, vector database |
-| **Tiết kiệm token** | Gemini Implicit Context Caching (~75% savings khi query) |
-| **Kênh bot** | Telegram (OpenClaw) |
-| **LLM** | Gemini 2.5 Pro (compile, lint) + Gemini 2.5 Flash (query, vision extract) |
-| **Ngân sách** | $300 Vertex AI — ước tính ~15–20 tháng (*cần xác nhận loại credit*) |
+| Extract 1 URL (Gemini Pro) | ~$0.015 |
+| Extract dual-vote (Gemini + GPT-5.4) | ~$0.030 |
+| Compile 1 category | ~$0.10 |
+| Query 1 câu (Flash + Implicit Cache) | ~$0.0004 |
+| Build snapshot | gần như miễn phí |
+
+Monthly budget cap mặc định: **$50** (xem `lib/config.py`).
 
 ---
 
-## Tại Sao Không Dùng RAG?
-
-- Wiki BKNS ước tính ~50–150 file Markdown = **200k–500k token** sau biên dịch
-- Gemini 2.5 Flash hỗ trợ **1M token context** — đủ nhét toàn bộ wiki
-- **KHÔNG nhét thô mỗi query** — dùng **Gemini Implicit Context Caching**: wiki được đặt cố định ở đầu mỗi request như một prefix, Gemini tự động cache và giảm **75% chi phí** token cached
-- Full-context tốt hơn RAG: không mất thông tin do chunking, suy luận đa bước chính xác hơn
-
----
-
-## 3 Tính Năng Chính
-
-### 1. 📝 Wiki Markdown Chuẩn Hóa
-- Toàn bộ kiến thức BKNS được biên soạn thành Markdown có cấu trúc
-- Mỗi file có metadata, nguồn trích dẫn, ngày cập nhật
-- LLM (Gemini 2.5 Pro) làm "thủ thư" — tự compile, tự tổ chức, tự backlink
-
-### 2. 📸 Quản Lý Ảnh & Bằng Chứng
-- Ảnh bảng giá, note quan trọng gửi qua Telegram → tự động extract thành Markdown
-- Lưu ảnh gốc full-resolution trong `assets/evidence/` (bằng chứng, Git LFS)
-- Thumbnail nén trong `assets/images/` (hiển thị, Git thường)
-- Gemini 2.5 Flash Vision extract bảng giá phức tạp với độ chính xác cao
-
-### 3. ⚡ Gemini Implicit Context Caching
-- Wiki được gửi như **prefix cố định** ở đầu mỗi query request
-- Gemini tự động nhận diện và cache prefix lặp lại — **không cần quản lý cache thủ công**
-- Tiết kiệm **~75% chi phí token input** cho các queries dùng chung wiki
-- Không tốn phí lưu trữ cache (khác với Explicit Caching)
-
----
-
-## Luồng Hoạt Động
-
-```
-[Nhân viên gửi ảnh bảng giá qua Telegram]
-         ↓ OpenClaw nhận
-[Gemini 2.5 Flash Vision] → extract bảng → Markdown
-         ↓
-[wiki/products/hosting/bang-gia.md] ← được cập nhật
-         ↓
-[wiki_content string được reload trong memory]
-         ↓
-[Khách hàng hỏi bot Telegram]
-         ↓ Flash nhận câu hỏi
-[wiki_content (prefix) + câu hỏi → Gemini 2.5 Flash]
-(Implicit cache tự động giảm 75% chi phí prefix)
-         ↓
-[Câu trả lời] → "Theo products/hosting/bang-gia.md: Gói BKCP01 giá 26.000đ/tháng..."
-```
-
----
-
-## Trạng Thái
+## Trạng thái dự án
 
 | Phase | Nội dung | Trạng thái |
 |-------|----------|-----------|
-| **Research** | Nghiên cứu, thiết kế kiến trúc, sửa lỗi kỹ thuật | ✅ Hoàn thành |
-| **Phase 1** | Bootstrap: company/ + tên miền + hosting | ⏳ Chờ phê duyệt |
-| **Phase 2** | Mở rộng: VPS + Email + SSL + ảnh bảng giá | 📋 Lên kế hoạch |
-| **Phase 3** | Bán hàng: tư vấn, kịch bản, FAQ | 📋 Lên kế hoạch |
-| **Phase 4** | Hoàn thiện: linting, cross-link, đo lường | 📋 Lên kế hoạch |
+| **Phase 0 — Foundation** | 5 shared libs, registries, scaffold | ✅ Complete |
+| **Phase 1 — Core Ingest** | crawl + extract + compile + query + build | ✅ Complete (v0.3) |
+| **Phase 2 — Quality** | lint 2-layer, ground-truth, image vision | ✅ Complete |
+| **Phase 2.5 — Web Portal** | Admin portal, Toast UI, review queue | ✅ Complete |
+| **Phase 3 — Dual-Vote v0.4** | Gemini + GPT-5.4 cross-validation | ✅ Complete |
+| **Phase 4 — Optimization v1.1.0** | Dead code removal, type hints, error logging | ✅ Complete |
+| **Phase 5 — Intelligence** | auto-file FAQ, cross-link graph | ✅ Complete |
+
+**Tổng metrics (2026-04-15):**
+- 2,252 claims (21.8% ground-truth, 77.9% high-confidence)
+- 11 skills implemented + verified
+- 71 tests pass (7 smoke + 13 bot + 51 unit)
+- 6 build snapshots (v0.1 → v0.6)
 
 ---
 
-## ⚠️ Cần Xác Nhận Trước Khi Bắt Đầu
+## License
 
-| # | Việc cần làm | Ảnh hưởng |
-|---|-------------|----------|
-| 1 | **Xác nhận loại $300 budget**: trial credit (hết hạn 90 ngày) hay billing credit (vô hạn)? | Timeline toàn bộ dự án |
-| 2 | **Bổ sung hotline BKNS chính thức** vào `wiki/support/lien-he.md` và system prompt | Bot không thể hướng dẫn khách liên hệ đúng chỗ |
-| 3 | **Xác nhận model string** của Gemini 2.5 trong OpenClaw config | agents.yaml |
+MIT — xem [LICENSE](./LICENSE). Copyright © 2026 Tampd (BKNS).
 
 ---
 
-## Tài Liệu
+## Liên hệ
 
-| File | Nội dung |
-|------|---------|
-| [ytuongbandau.md](./ytuongbandau.md) | 📋 Đề tài nghiên cứu đầy đủ v3: kiến trúc, caching, image mgmt, roadmap, budget (đã sửa lỗi) |
-
----
-
-## Cấu Trúc Thư Mục (Dự Kiến)
-
-```
-/home/openclaw/wiki/
-├── README.md            ← Bạn đang đọc file này
-├── ytuongbandau.md      ← Đề tài nghiên cứu & kế hoạch (v3)
-├── wiki/                ← Wiki chính (Markdown, LLM quản lý)
-│   ├── index.md
-│   ├── company/
-│   ├── products/
-│   ├── support/
-│   ├── sales/
-│   ├── technical/
-│   └── faq/
-├── raw/                 ← Dữ liệu thô chưa biên dịch
-├── assets/              ← Ảnh & media (ở ROOT, không trong wiki/)
-│   ├── images/          ← Thumbnail ảnh ≤100KB (Git thường)
-│   └── evidence/        ← Ảnh gốc full-res (Git LFS)
-└── logs/                ← Log agent, lint reports
-```
+- **Maintainer:** Tampd (BKNS) — `duytam@bkns.vn`
+- **Issues:** https://github.com/tampd/Wiki/issues
+- **Security:** Email trực tiếp thay vì mở issue công khai
 
 ---
 
-## Công Nghệ Sử Dụng
-
-| Công nghệ | Vai trò |
-|-----------|---------|
-| **Gemini 2.5 Pro** | Compile wiki, linting, reasoning phức tạp |
-| **Gemini 2.5 Flash** | Query bot Telegram, extract ảnh bảng giá, classify |
-| **Gemini Implicit Caching** | Cache wiki tự động, tiết kiệm ~75% token queries |
-| **OpenClaw** | Orchestrator: điều phối agent, Telegram gateway, cron jobs |
-| **Git + Git LFS** | Version control wiki + lưu ảnh gốc |
-| **Markdown** | Format chuẩn của toàn bộ wiki |
-
----
-
-*BKNS Knowledge Wiki v0.3 — Powered by OpenClaw + Gemini 2.5*
-*Cập nhật: 2026-04-04 (v3 — sửa lỗi model, pricing, caching strategy, gitattributes)*
-
+*BKNS Knowledge Wiki v1.1.0 — LLM-Compiled + Dual-Vote + Implicit Caching*
+*Cập nhật: 2026-04-15*
