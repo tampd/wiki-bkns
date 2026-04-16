@@ -1,6 +1,6 @@
 # BKNS Wiki — Tài Liệu Bàn Giao & Chuyển Máy Chủ
 
-**Version:** v1.1.0 (Build v0.6)
+**Version:** v1.1.1 (Build v0.6)
 **Cập nhật:** 2026-04-16
 **Maintainer:** Tampd · duytam@bkns.vn
 
@@ -92,8 +92,8 @@ Tất cả config load từ `.env` qua `lib/config.py`. Template: `.env.example`
 
 | Biến | Cũ | Mới | Notes |
 |------|----|-----|-------|
-| `WIKI_WORKSPACE` | `/home/openclaw/wiki` | `/path/to/new/wiki` | **Phải update khi đổi server** |
-| `GOOGLE_APPLICATION_CREDENTIALS` | `/home/openclaw/...` | `/new/path/...` | Path tuyệt đối đến JSON key |
+| `WORKSPACE` | `/wiki` | `/path/to/new/wiki` | **Phải update khi đổi server** |
+| `GOOGLE_APPLICATION_CREDENTIALS` | `/wiki/service-account.json` | `/new/path/...` | Path tuyệt đối đến JSON key |
 
 ### Biến models (optional — defaults ổn)
 
@@ -134,7 +134,7 @@ git clone git@github.com:tampd/wiki-bkns.git /opt/wiki
 cd /opt/wiki
 ```
 
-> Thay `/opt/wiki` bằng thư mục muốn deploy. Nhớ update `WIKI_WORKSPACE` trong `.env`.
+> Thay `/opt/wiki` bằng thư mục muốn deploy. Nhớ update `WORKSPACE` trong `.env`.
 
 ### Bước 2: Python dependencies
 
@@ -168,21 +168,21 @@ cp .env.example .env
 nano .env
 # Điền đầy đủ: TELEGRAM_BOT_TOKEN, ADMIN_TELEGRAM_ID,
 # GOOGLE_APPLICATION_CREDENTIALS, GOOGLE_CLOUD_PROJECT,
-# WIKI_WORKSPACE=/opt/wiki (đổi thành path thực)
+# WORKSPACE=/opt/wiki (đổi thành path thực)
 ```
 
 ### Bước 6: Smoke test
 
 ```bash
 # Test Python config
-python3 -c "from lib.config import WIKI_WORKSPACE; print('OK:', WIKI_WORKSPACE)"
+python3 -c "from lib.config import WORKSPACE as WS; print('OK:', WS)"
 
 # Test Gemini connection
 python3 -c "from lib.gemini import GeminiClient; c = GeminiClient(); print('Gemini OK')"
 
 # Run test suite
 pytest tests/ -q
-# Expected: 33 passed
+# Expected: 38 passed
 ```
 
 ### Bước 7: Khởi động Bot + Crons (PM2 user)
@@ -220,7 +220,7 @@ sudo pm2 status
 
 ```bash
 # Copy nginx config
-sudo cp web/nginx-upload.trieuphu.biz.conf /etc/nginx/sites-available/wiki
+sudo cp web/nginx-wiki.bkns.vn.conf /etc/nginx/sites-available/wiki
 # Chỉnh sửa domain và paths nếu cần
 sudo ln -s /etc/nginx/sites-available/wiki /etc/nginx/sites-enabled/
 sudo nginx -t && sudo systemctl reload nginx
@@ -236,7 +236,7 @@ sudo bash web/deploy-nginx.sh
 # Expected: Build v0.6, 198 wiki files, 2252 claims
 
 # Web portal test
-curl -s https://upload.trieuphu.biz/api/status | python3 -m json.tool
+curl -s https://wiki.bkns.vn/api/status | python3 -m json.tool
 # Expected: { "build": "BLD-20260415-135355", "version": "v0.6", ... }
 ```
 
@@ -296,7 +296,7 @@ rsync -avz --progress \
 
 ```bash
 # Update các path-specific vars
-WIKI_WORKSPACE=/opt/wiki                             # Đổi theo location mới
+WORKSPACE=/opt/wiki                             # Đổi theo location mới
 GOOGLE_APPLICATION_CREDENTIALS=/opt/wiki/credentials/sa.json
 ```
 
@@ -305,7 +305,7 @@ GOOGLE_APPLICATION_CREDENTIALS=/opt/wiki/credentials/sa.json
 Trong `ecosystem.config.js`, đổi `cwd` và `PYTHONPATH`:
 
 ```js
-cwd: '/opt/wiki',         // Đổi từ /home/openclaw/wiki
+cwd: '/opt/wiki',         // Đổi từ /wiki
 env: {
   PYTHONPATH: '/opt/wiki', // Đổi theo
 }
@@ -321,7 +321,7 @@ cwd: '/opt/wiki/web',
 
 ```bash
 # 1. Test Python config
-python3 -c "from lib.config import WIKI_WORKSPACE, CLAIMS_DIR; print(WIKI_WORKSPACE, CLAIMS_DIR)"
+python3 -c "from lib.config import WORKSPACE, CLAIMS_DIR; print('WS:', WORKSPACE, 'Claims:', CLAIMS_DIR)"
 
 # 2. Check claims count
 python3 -c "
@@ -362,10 +362,10 @@ print(f'Build: {build[\"build_id\"]}, Version: {build[\"version\"]}, Pages: {bui
 
 ```
 [ ] Code clone + npm install + pip install thành công
-[ ] .env điền đầy đủ (đặc biệt WIKI_WORKSPACE mới)
+[ ] .env điền đầy đủ (đặc biệt WORKSPACE mới)
 [ ] GCP service account JSON đúng path và có quyền Vertex AI
 [ ] ecosystem.config.js cwd paths đã update
-[ ] pytest 33/33 pass
+[ ] pytest 38/38 pass
 [ ] pm2 start → bkns-wiki-bot (online)
 [ ] sudo pm2 start web → wiki-portal (online)
 [ ] Nginx config đúng domain + TLS
@@ -416,16 +416,16 @@ pm2 stop all
 
 ```bash
 # Restart web (ĐÚNG cách)
-sudo bash -c "export PATH=/home/openclaw/.nvm/versions/node/v24.14.0/bin:\$PATH && pm2 reload wiki-admin"
+sudo bash -c "export PATH=$(which node | xargs dirname):\$PATH && pm2 reload wiki-portal"
 
 # Hoặc nếu tên process là wiki-portal
-sudo bash -c "export PATH=/home/openclaw/.nvm/versions/node/v24.14.0/bin:\$PATH && pm2 reload wiki-portal"
+sudo bash -c "export PATH=$(which node | xargs dirname):\$PATH && pm2 reload wiki-portal"
 
 # Xem status web
 sudo pm2 status
 
 # KHÔNG dùng (sẽ không tìm thấy process):
-# pm2 reload wiki-admin   ← thiếu sudo
+# pm2 reload wiki-portal   ← thiếu sudo
 # kill -9 <PID>          ← gây restart không clean
 ```
 
@@ -476,7 +476,7 @@ Upload DOCX/PDF qua Web UI  →  /extract  →  review trên Web Portal  →  /c
 
 ## 8. Web Admin Portal
 
-**URL:** https://upload.trieuphu.biz (credentials trong `password.md`, không commit vào git)
+**URL:** https://wiki.bkns.vn (credentials trong `password.md`, không commit vào git)
 
 ### 8.1 Giao diện
 
@@ -580,13 +580,13 @@ else:
 | `/them` lỗi permission | `chat_id` ≠ `ADMIN_TELEGRAM_ID` | Kiểm tra `.env` `ADMIN_TELEGRAM_ID` |
 | Gemini 429 | Rate limit | Retry tự động 3x. Nếu tiếp tục: giảm concurrency |
 | `active-build.yaml` không tồn tại | Chưa chạy build | `python3 skills/build-snapshot/scripts/snapshot.py` |
-| Web 500 errors | Server-side lỗi | `pm2 logs wiki-admin --err` hoặc `logs/web-errors-*.jsonl` |
+| Web 500 errors | Server-side lỗi | `pm2 logs wiki-portal --err` hoặc `logs/web-errors-*.jsonl` |
 | Claims không xuất hiện sau extract | File đã cached | Xóa entry trong `claims/.cache/` hoặc dùng `--force` |
 | `USE_PRO_NEW=true` gây lỗi | 3.1 Pro chỉ dùng `global` location | Đảm bảo `MODEL_PRO_NEW_LOCATION=global` |
-| Web portal không reload | Root PM2 daemon | Dùng `sudo pm2 reload wiki-admin` (không phải kill PID) |
+| Web portal không reload | Root PM2 daemon | Dùng `sudo pm2 reload wiki-portal` (không phải kill PID) |
 | OpenAI 401 | API key hết hạn | Rotate tại platform.openai.com |
 | Python import error sau migrate | PYTHONPATH sai | Check `PYTHONPATH` trong `ecosystem.config.js` |
-| Claims count = 0 sau migrate | WIKI_WORKSPACE sai | Cập nhật `WIKI_WORKSPACE` trong `.env` |
+| Claims count = 0 sau migrate | WORKSPACE sai | Cập nhật `WORKSPACE` trong `.env` |
 
 ---
 

@@ -369,7 +369,7 @@ def main():
         parser.print_help()
         sys.exit(1)
 
-    workspace = Path("/home/openclaw/wiki")
+    workspace = Path("/wiki")
     claims_base = workspace / "claims"
     backup_base = workspace / "tools" / ".backups"
 

@@ -59,7 +59,7 @@
 
 ## 📝 Usage
 ```bash
-export PYTHONPATH=/home/openclaw/wiki
+export PYTHONPATH=/wiki
 
 # Crawl
 python3 skills/crawl-source/scripts/crawl.py --force https://bkns.vn/URL

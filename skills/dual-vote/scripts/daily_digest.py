@@ -3,7 +3,7 @@
 Dual-Vote Daily Digest — gửi Telegram báo cáo hàng ngày lúc 8h sáng.
 
 Cài cron:
-  0 8 * * * cd /home/openclaw/wiki && python skills/dual-vote/scripts/daily_digest.py >> logs/daily-digest.log 2>&1
+  0 8 * * * cd /wiki && python skills/dual-vote/scripts/daily_digest.py >> logs/daily-digest.log 2>&1
 
 Hoặc chạy thủ công:
   python skills/dual-vote/scripts/daily_digest.py

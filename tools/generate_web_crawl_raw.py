@@ -10,7 +10,7 @@ import hashlib
 from datetime import datetime
 from pathlib import Path
 
-OUTPUT_DIR = Path("/home/openclaw/wiki/raw/website-crawl")
+OUTPUT_DIR = Path("/wiki/raw/website-crawl")
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 CRAWL_DATE = "2026-04-05T14:25:00+07:00"
@@ -1050,5 +1050,5 @@ print(f"✅ Hoàn thành tạo raw files trong: {OUTPUT_DIR}")
 print(f"📂 Tổng số files: {len(list(OUTPUT_DIR.glob('*-web-2026-04-05.md')))}")
 print("=" * 60)
 print("\nĐể chạy extract pipeline:")
-print("  cd /home/openclaw/wiki")
+print("  cd /wiki")
 print("  PYTHONPATH=. python3 skills/extract-claims/scripts/extract.py")

@@ -16,17 +16,17 @@ Usage:
 
 Cron schedule suggestions:
     # Daily health check + conflict scan + digest at 7-8am
-    0 7 * * * /usr/bin/python3 /home/openclaw/wiki/tools/cron_tasks.py --task health 2>&1
-    0 7 * * * /usr/bin/python3 /home/openclaw/wiki/tools/cron_tasks.py --task conflicts 2>&1
-    0 8 * * * /usr/bin/python3 /home/openclaw/wiki/tools/cron_tasks.py --task daily-digest 2>&1
+    0 7 * * * /usr/bin/python3 /wiki/tools/cron_tasks.py --task health 2>&1
+    0 7 * * * /usr/bin/python3 /wiki/tools/cron_tasks.py --task conflicts 2>&1
+    0 8 * * * /usr/bin/python3 /wiki/tools/cron_tasks.py --task daily-digest 2>&1
 
     # Hourly dual-vote DISAGREE alert (v0.4+)
-    0 * * * * /usr/bin/python3 /home/openclaw/wiki/tools/cron_tasks.py --task dual-vote-check 2>&1
+    0 * * * * /usr/bin/python3 /wiki/tools/cron_tasks.py --task dual-vote-check 2>&1
 
     # Weekly lint + auto-file + promo-scrape on Monday 8-9am
-    0 8 * * 1 /usr/bin/python3 /home/openclaw/wiki/tools/cron_tasks.py --task lint 2>&1
-    0 8 * * 1 /usr/bin/python3 /home/openclaw/wiki/tools/cron_tasks.py --task auto-file 2>&1
-    0 9 * * 1 /usr/bin/python3 /home/openclaw/wiki/tools/cron_tasks.py --task promo-scrape 2>&1
+    0 8 * * 1 /usr/bin/python3 /wiki/tools/cron_tasks.py --task lint 2>&1
+    0 8 * * 1 /usr/bin/python3 /wiki/tools/cron_tasks.py --task auto-file 2>&1
+    0 9 * * 1 /usr/bin/python3 /wiki/tools/cron_tasks.py --task promo-scrape 2>&1
 """
 import sys
 import json

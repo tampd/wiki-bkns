@@ -5,7 +5,7 @@
 
 set -euo pipefail
 
-WIKI_DIR="/home/openclaw/wiki"
+WIKI_DIR="/wiki"
 LOG_DIR="$WIKI_DIR/logs"
 TIMESTAMP=$(date +%Y%m%d_%H%M%S)
 LOG_FILE="$LOG_DIR/pipeline_run_${TIMESTAMP}.log"

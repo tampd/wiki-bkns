@@ -320,7 +320,7 @@ def convert_all(force: bool = False, dual_write: bool = False) -> list[dict]:
         print(f"   Run: python3 tools/diff_converters.py để xem diff")
 
     print(f"\n📋 Bước tiếp theo:")
-    print(f"   PYTHONPATH=/home/openclaw/wiki python3 skills/extract-claims/scripts/extract.py")
+    print(f"   PYTHONPATH=/wiki python3 skills/extract-claims/scripts/extract.py")
 
     return results
 

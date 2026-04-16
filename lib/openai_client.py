@@ -63,7 +63,7 @@ def get_client() -> OpenAI:
             raise RuntimeError(
                 "OPENAI_API_KEY chưa được cấu hình. "
                 "Vào https://platform.openai.com/api-keys → tạo key → "
-                "điền vào OPENAI_API_KEY trong /home/openclaw/wiki/.env"
+                "điền vào OPENAI_API_KEY trong /wiki/.env"
             )
         _client = OpenAI(
             api_key=OPENAI_API_KEY,

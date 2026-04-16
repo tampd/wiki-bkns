@@ -1,7 +1,7 @@
 # 🧭 BKNS Agent Wiki — Hướng Dẫn Đọc Dự Án (AI Onboarding Guide)
 
 > **Mục đích**: Cho AI khác đọc nhanh để hiểu toàn bộ dự án, kiểm tra chéo, phát hiện thiếu sót.
-> **Workspace**: `/home/openclaw/wiki/`
+> **Workspace**: `/wiki/`
 > **Ước tính tokens nếu đọc đúng cách**: ~15,000-20,000 tokens (thay vì 500,000+ nếu đọc hết)
 
 ---
@@ -145,7 +145,7 @@ AI reviewer nên kiểm tra các mục sau:
 
 ```
 Bạn là AI reviewer. Hãy đọc các file sau theo thứ tự ưu tiên trong 
-/home/openclaw/wiki/ để kiểm tra chéo dự án BKNS Agent Wiki:
+/wiki/ để kiểm tra chéo dự án BKNS Agent Wiki:
 
 1. Đọc PROJECT_SUMMARY.md để hiểu tổng quan
 2. Đọc .env để hiểu config

@@ -5,6 +5,30 @@ Format: [Semantic Versioning](https://semver.org/) | dates in YYYY-MM-DD
 
 ---
 
+## [v1.1.1] — 2026-04-16 — Domain Migration & API Configuration
+
+### Changed
+- **Domain**: migrated from `upload.trieuphu.biz` → `wiki.bkns.vn` (SSL Let's Encrypt)
+- **Server path**: `/home/openclaw/wiki` → `/wiki`
+- **Nginx config**: replaced `nginx-upload.trieuphu.biz.conf` with `nginx-wiki.bkns.vn.conf`
+- `ecosystem.config.js`, `web/ecosystem.web.config.js`: updated `cwd` and `PYTHONPATH` to `/wiki`
+- `web/deploy-nginx.sh`: updated domain and config paths for `wiki.bkns.vn`
+- `.env.example`: updated `WIKI_WORKSPACE=/wiki`
+- `requirements.txt`: fixed `markitdown>=0.4.0` → `markitdown>=0.1.0` (version 0.4.0 not published)
+
+### Added
+- `.env`: configured OpenAI API key (`sk-proj-*`) and Google Vertex AI service account
+- `service-account.json`: Google Cloud credentials for Vertex AI (gitignored)
+- `.gitignore`: added `service-account.json` to prevent credential leak
+
+### Fixed
+- All docs (`README.md`, `HANDOVER.md`, `SPEC-wiki-system.md`): updated domain references, paths, test counts, process names
+- `HANDOVER.md`: fixed `WIKI_WORKSPACE` → `WORKSPACE` (matching actual `lib/config.py` variable name)
+- `HANDOVER.md`: fixed PM2 process name `wiki-admin` → `wiki-portal`
+- `HANDOVER.md`: updated test count 33 → 38
+
+---
+
 ## [v1.1.0] — 2026-04-14 — Optimization Release
 
 ### Removed

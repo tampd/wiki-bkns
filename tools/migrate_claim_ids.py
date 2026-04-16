@@ -142,8 +142,8 @@ def main():
     print("=" * 60)
 
     for label, base_dir in [
-        ("Approved", Path("/home/openclaw/wiki/claims/approved/products")),
-        ("Drafts", Path("/home/openclaw/wiki/claims/.drafts/products")),
+        ("Approved", Path("/wiki/claims/approved/products")),
+        ("Drafts", Path("/wiki/claims/.drafts/products")),
     ]:
         if not base_dir.exists():
             continue

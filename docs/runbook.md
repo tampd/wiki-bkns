@@ -81,7 +81,7 @@ python3 tools/cron_tasks.py --task conflicts       # conflict scan
 ### Full rebuild (tất cả categories)
 
 ```bash
-cd /home/openclaw/wiki
+cd /wiki
 
 # Dry-run extract + compile (hosting only)
 python3 skills/extract-claims/scripts/extract.py --dry-run
@@ -299,10 +299,10 @@ pm2 logs bkns-wiki-bot --err --lines 30
 
 ```bash
 # ĐÚNG:
-sudo bash -c "export PATH=/home/openclaw/.nvm/versions/node/v24.14.0/bin:\$PATH && pm2 reload wiki-admin"
+sudo bash -c "export PATH=$(which node | xargs dirname):\$PATH && pm2 reload wiki-portal"
 
 # SAI (sẽ không tìm thấy process):
-pm2 reload wiki-admin
+pm2 reload wiki-portal
 kill -9 <PID>
 ```
 
@@ -351,10 +351,10 @@ grep "OPENAI_API_KEY" .env | head -c 40  # verify key present
 ### Claims count = 0 sau migrate
 
 ```bash
-# Kiểm tra WIKI_WORKSPACE
+# Kiểm tra WORKSPACE
 python3 -c "from lib.config import CLAIMS_DIR; print(CLAIMS_DIR)"
 ls "$CLAIMS_DIR/approved/" | head -5
-# Nếu path sai: cập nhật WIKI_WORKSPACE trong .env
+# Nếu path sai: cập nhật WORKSPACE trong .env
 ```
 
 ---
@@ -376,7 +376,7 @@ ls "$CLAIMS_DIR/approved/" | head -5
 | `logs/web-portal-error.log` | Web error log |
 | `ecosystem.config.js` | PM2 config (bot + crons) |
 | `web/ecosystem.web.config.js` | PM2 config (web portal) |
-| `web/nginx-upload.trieuphu.biz.conf` | Nginx config |
+| `web/nginx-wiki.bkns.vn.conf` | Nginx config |
 | `scripts/rollback-v0.4.sh` | Rollback script (reference) |
 
 ---

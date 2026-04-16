@@ -28,7 +28,7 @@ from lib.utils import ensure_dir
 from lib.logger import log_entry
 
 # ── Constants ──────────────────────────────────────────────
-EXCEL_PATH = Path("/home/openclaw/wiki/raw/manual/Bảng giá Hosting- VPS- Email.xlsx")
+EXCEL_PATH = Path("/wiki/raw/manual/Bảng giá Hosting- VPS- Email.xlsx")
 SOURCE_ID = "EXCEL-BANGGIA-BKNS-2026"
 VN_TZ = timezone(timedelta(hours=7))
 NOW_ISO = datetime.now(VN_TZ).isoformat()

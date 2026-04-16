@@ -6,7 +6,7 @@ audience: BKNS reviewer, editor, admin
 
 # Hướng Dẫn Reviewer — BKNS Wiki
 
-Tài liệu này dành cho người trực tiếp thao tác phê duyệt claims và xử lý xung đột dữ liệu tại https://upload.trieuphu.biz.
+Tài liệu này dành cho người trực tiếp thao tác phê duyệt claims và xử lý xung đột dữ liệu tại https://wiki.bkns.vn.
 
 Mục tiêu: biến quy trình review từ "biết code là hiểu" thành "ai đọc cũng thao tác được".
 
@@ -35,7 +35,7 @@ Reviewer có 3 nhiệm vụ chính:
 
 ### 2.1 Mở và filter
 
-1. Đăng nhập https://upload.trieuphu.biz
+1. Đăng nhập https://wiki.bkns.vn
 2. Chọn tab **Review**
 3. Dropdown filter:
    - `all` — Tất cả đang chờ (không bao gồm đã approve/reject)

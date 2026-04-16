@@ -6,7 +6,7 @@ telegram:
   admin_ids:
     - ${ADMIN_TELEGRAM_ID}
 
-workspace: /home/openclaw/wiki/
+workspace: /wiki/
 
 models:
   default: gemini-2.5-flash
@@ -37,8 +37,8 @@ skills:
 
 memory:
   type: file
-  path: /home/openclaw/wiki/build/active-build.yaml
+  path: /wiki/build/active-build.yaml
 
 logging:
   level: INFO
-  path: /home/openclaw/wiki/logs/
+  path: /wiki/logs/

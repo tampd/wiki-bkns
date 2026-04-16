@@ -3,7 +3,7 @@
 > **LLM-Compiled Markdown Knowledge Base** cho hệ sinh thái sản phẩm BKNS.vn
 > Dual-vote cross-validation · Gemini Implicit Caching · No RAG, no vector DB
 
-[![Version](https://img.shields.io/badge/version-v1.1.0-blue)]() [![License](https://img.shields.io/badge/license-MIT-green)]() [![Python](https://img.shields.io/badge/python-3.10+-blue)]() [![Node](https://img.shields.io/badge/node-18+-green)]()
+[![Version](https://img.shields.io/badge/version-v1.1.1-blue)]() [![License](https://img.shields.io/badge/license-MIT-green)]() [![Python](https://img.shields.io/badge/python-3.10+-blue)]() [![Node](https://img.shields.io/badge/node-18+-green)]()
 
 ---
 
@@ -13,9 +13,10 @@ BKNS Wiki là knowledge base tự-compile bằng LLM, phục vụ bot CSKH Teleg
 
 | Thông tin | Chi tiết |
 |-----------|----------|
-| **Phiên bản hiện tại** | v1.1.0 (2026-04-14) — xem [CHANGELOG.md](./CHANGELOG.md) |
+| **Phiên bản hiện tại** | v1.1.1 (2026-04-16) — xem [CHANGELOG.md](./CHANGELOG.md) |
 | **Stack** | Python 3.10+ pipeline · Node.js 18+ web portal · PM2 · Telegram bot |
 | **LLM** | Gemini 2.5 Pro/Flash (Vertex AI) + OpenAI GPT-5.4 (dual-vote) |
+| **Domain** | [wiki.bkns.vn](https://wiki.bkns.vn) (SSL Let's Encrypt) |
 | **Kho dữ liệu** | 2,252 approved claims, 198 wiki pages, builds v0.1 → v0.6 |
 | **Web Portal** | Admin Review UI (dual-vote resolution, bulk actions) |
 | **Bot Telegram** | `/hoi`, `/them`, `/extract`, `/compile`, `/build`, `/lint`, `/status` |
@@ -96,7 +97,7 @@ cp .env.example .env
 # Điền TELEGRAM_BOT_TOKEN, GOOGLE_APPLICATION_CREDENTIALS, GOOGLE_CLOUD_PROJECT, v.v.
 
 # 4. Smoke test
-python3 -c "from lib.config import WIKI_WORKSPACE; print('OK:', WIKI_WORKSPACE)"
+python3 -c "from lib.config import WORKSPACE; print('OK:', WORKSPACE)"
 pytest tests/ -q
 
 # 5. Start services
@@ -202,7 +203,7 @@ Monthly budget cap mặc định: **$50** (xem `lib/config.py`).
 - 2,252 approved claims (21.8% ground-truth, 77.9% high-confidence)
 - 198 wiki pages (7 categories)
 - 14 skills (11 active / tested, 3 pending/disabled)
-- 33 tests pass (100%)
+- 38 tests pass (100%)
 - 6 build snapshots (v0.1 → v0.6)
 
 ---
@@ -221,5 +222,5 @@ MIT — xem [LICENSE](./LICENSE). Copyright © 2026 Tampd (BKNS).
 
 ---
 
-*BKNS Knowledge Wiki v1.1.0 — LLM-Compiled + Dual-Vote + Implicit Caching*
-*Cập nhật: 2026-04-16*
+*BKNS Knowledge Wiki v1.1.1 — LLM-Compiled + Dual-Vote + Implicit Caching*
+*Domain: wiki.bkns.vn | Cập nhật: 2026-04-16*

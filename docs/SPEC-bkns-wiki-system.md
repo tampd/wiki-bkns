@@ -88,7 +88,7 @@ Thiếu hệ thống tập trung hóa tri thức với quy trình cập nhật t
 ### US-2: Admin upload tài liệu mới
 **As a** admin, **I want** upload PDF/DOCX mới qua web, **so that** wiki tự động cập nhật.
 
-**Given** tôi login vào https://upload.trieuphu.biz
+**Given** tôi login vào https://wiki.bkns.vn
 **When** tôi upload file PDF mới
 **Then** file lưu vào `raw/web/`, pipeline extract → compile → wiki page mới
 
@@ -114,7 +114,7 @@ Thiếu hệ thống tập trung hóa tri thức với quy trình cập nhật t
 graph TB
     subgraph "Data Ingestion"
         SSH["SSH Copy"]
-        WEB["Web Portal<br/>upload.trieuphu.biz"]
+        WEB["Web Portal<br/>wiki.bkns.vn"]
         TG_IN["Telegram Image"]
     end
     
@@ -444,9 +444,9 @@ See [16-web-data-portal.md](../trienkhai/trienkhaicuoicung/16-web-data-portal.md
 
 ### 13.1. Current Deployment
 - **Server:** VPS (single node)
-- **Process Manager:** PM2 (bkns-wiki-bot + wiki-admin)
+- **Process Manager:** PM2 (bkns-wiki-bot + wiki-portal)
 - **Reverse Proxy:** Nginx (SSL termination)
-- **Domain:** upload.trieuphu.biz (portal only)
+- **Domain:** wiki.bkns.vn (portal only)
 
 ### 13.2. Deployment Commands
 ```bash
@@ -454,7 +454,7 @@ See [16-web-data-portal.md](../trienkhai/trienkhaicuoicung/16-web-data-portal.md
 pm2 restart bkns-wiki-bot
 
 # Portal
-cd /home/openclaw/wiki/web && pm2 restart wiki-admin
+cd /wiki/web && pm2 restart wiki-portal
 
 # Nginx
 sudo nginx -t && sudo systemctl reload nginx
@@ -737,7 +737,7 @@ graph TB
         PIPE["Processing Pipeline<br/>extract → approve → compile"]
         BOT["Telegram Bot<br/>query-wiki"]
         WIKI["Wiki Store<br/>9+ pages / 809+ claims"]
-        WEB["Web Portal<br/>upload.trieuphu.biz"]
+        WEB["Web Portal<br/>wiki.bkns.vn"]
     end
 
     subgraph "Knowledge Sources"
@@ -1134,7 +1134,7 @@ Server đọc tất cả YAML claim một lần (`loadAllClaims()`), build map t
 
 | ID | Date | Symptom | Root cause | Fix |
 |---|---|---|---|---|
-| BUG-BULK-01 | 2026-04-13 | Toast "Bulk action thất bại" khi user chọn ≥2 claim và bấm Duyệt/Từ chối tại `upload.trieuphu.biz`. | PM2 daemon chạy bản `wiki-admin` từ 2026-04-07 (PID 965697), không reload sau commit `a1dc75b` thêm route bulk → Express trả 404 HTML "Cannot POST /api/review/bulk" → frontend `res.json()` ăn lỗi → toast generic. Verified: `curl -X POST http://127.0.0.1:3000/api/review/bulk` → 404 text/html. | Reload bằng `sudo env PATH=$NODE_BIN:$PATH $NODE_BIN/pm2 reload wiki-admin` (PM2 daemon root, NVM node không trong PATH của sudo). Verify: gọi lại curl phải trả JSON 200. Đã fix 2026-04-13. Xem LESSONS.md L007. |
+| BUG-BULK-01 | 2026-04-13 | Toast "Bulk action thất bại" khi user chọn ≥2 claim và bấm Duyệt/Từ chối tại `wiki.bkns.vn`. | PM2 daemon chạy bản `wiki-portal` từ 2026-04-07 (PID 965697), không reload sau commit `a1dc75b` thêm route bulk → Express trả 404 HTML "Cannot POST /api/review/bulk" → frontend `res.json()` ăn lỗi → toast generic. Verified: `curl -X POST http://127.0.0.1:3000/api/review/bulk` → 404 text/html. | Reload bằng `sudo env PATH=$NODE_BIN:$PATH $NODE_BIN/pm2 reload wiki-portal` (PM2 daemon root, NVM node không trong PATH của sudo). Verify: gọi lại curl phải trả JSON 200. Đã fix 2026-04-13. Xem LESSONS.md L007. |
 
 ### 18.4. Deploy Checklist (cho mọi PR chạm `web/`)
 
@@ -1143,18 +1143,18 @@ Server đọc tất cả YAML claim một lần (`loadAllClaims()`), build map t
 git pull
 
 # 2. Reload PM2 (zero-downtime). PM2 daemon chạy dưới root → cần sudo + giữ PATH node.
-NODE_BIN=/home/openclaw/.nvm/versions/node/v24.14.0/bin
-sudo env PATH=$NODE_BIN:$PATH $NODE_BIN/pm2 reload wiki-admin
+NODE_BIN=$(which node | xargs dirname)
+sudo env PATH=$NODE_BIN:$PATH $NODE_BIN/pm2 reload wiki-portal
 
 # 3. Verify endpoint returns JSON, không phải 404 HTML
-TOKEN=$(grep ADMIN_TOKEN /home/openclaw/wiki/.env | cut -d= -f2)
+TOKEN=$(grep ADMIN_TOKEN /wiki/.env | cut -d= -f2)
 curl -sS -X POST http://127.0.0.1:3000/api/review/bulk \
   -H "Authorization: Bearer $TOKEN" \
   -H "Content-Type: application/json" \
   -d '{"action":"flag","claim_ids":["__probe__"]}' | head
 
 # 4. Tail log để confirm không có Unhandled error
-sudo env PATH=$NODE_BIN:$PATH $NODE_BIN/pm2 logs wiki-admin --lines 20 --nostream
+sudo env PATH=$NODE_BIN:$PATH $NODE_BIN/pm2 logs wiki-portal --lines 20 --nostream
 
 # 5. Test trên UI: chọn 2 claim → Duyệt → toast "Bulk approve xong"
 ```
@@ -1162,6 +1162,6 @@ sudo env PATH=$NODE_BIN:$PATH $NODE_BIN/pm2 logs wiki-admin --lines 20 --nostrea
 ### 18.5. Hardening Backlog
 
 - [ ] Frontend: detect `Content-Type !== application/json` → toast cụ thể "Endpoint không tồn tại — server cần restart" thay vì "Lỗi" generic.
-- [ ] Tạo `web/restart.sh` wrap `sudo pm2 reload wiki-admin && curl ... probe`.
+- [ ] Tạo `web/restart.sh` wrap `sudo pm2 reload wiki-portal && curl ... probe`.
 - [ ] Cân nhắc PM2 `watch: ['routes', 'middleware', 'server.js']` cho prod (tradeoff: spurious restart khi edit).
 - [ ] Server: rate-limit riêng cho `/api/review/bulk` (vd 30 req / 5 phút) để chống abuse.

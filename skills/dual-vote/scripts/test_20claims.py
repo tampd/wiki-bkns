@@ -3,7 +3,7 @@
 PART 06 — Bước 7: Test dual-vote trên 20 claims từ test-set.yaml
 
 Chạy:
-  cd /home/openclaw/wiki
+  cd /wiki
   python3 skills/dual-vote/scripts/test_20claims.py [--dry-run] [--limit N]
 
 Output:

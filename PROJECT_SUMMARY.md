@@ -64,10 +64,10 @@ Telegram Bot ← User hỏi
 - Phân tích yêu cầu BKNS
 - Thiết kế kiến trúc multi-agent
 - Chọn Karpathy Pattern thay vì RAG truyền thống
-- Viết spec đầy đủ tại `/home/openclaw/wiki/trienkhai/`
+- Viết spec đầy đủ tại `/wiki/trienkhai/`
 
 ### Phiên 3: Scaffold & Foundation
-- Tạo cấu trúc dự án tại `/home/openclaw/wiki/`
+- Tạo cấu trúc dự án tại `/wiki/`
 - Implement 5 shared libraries:
   - `lib/config.py` — Environment & paths
   - `lib/gemini.py` — Vertex AI wrapper (Gemini Pro/Flash)
@@ -228,7 +228,7 @@ Telegram Bot ← User hỏi
 - [x] Pipeline integration (auto-trigger extract/compile)
 - [x] PM2 deployment (`wiki-portal`) + Nginx reverse proxy + SSL (Let's Encrypt)
 - [x] Security: Helmet, rate limiting (3 zones), HSTS, TLS 1.3
-- [x] 🌐 **Live**: https://upload.trieuphu.biz (credentials: xem `password.md`)
+- [x] 🌐 **Live**: https://wiki.bkns.vn (credentials: xem `password.md`)
 - [x] 📂 Spec: `trienkhai/trienkhaicuoicung/16-web-data-portal.md` (v2.0)
 
 ### Phase 3: Production (2-4 tuần)
@@ -242,7 +242,7 @@ Telegram Bot ← User hỏi
 ## 6. 📁 Cấu Trúc File
 
 ```
-/home/openclaw/wiki/
+/wiki/
 ├── .env                        # Biến môi trường (KHÔNG commit)
 ├── ecosystem.config.js         # PM2 config
 ├── bot/
@@ -303,7 +303,7 @@ pm2 logs bkns-wiki-bot            # Xem logs realtime
 pm2 logs bkns-wiki-bot --lines 50 # Xem 50 dòng gần nhất
 
 # === Data Pipeline ===
-cd /home/openclaw/wiki
+cd /wiki
 PYTHONPATH=.
 
 # Thêm tài liệu mới
@@ -329,7 +329,7 @@ python3 skills/lint-wiki/scripts/lint.py
 pm2 restart wiki-portal                # Restart portal
 pm2 logs wiki-portal --lines 50       # Portal logs
 sudo nginx -t && sudo systemctl reload nginx  # Reload Nginx
-# 🌐 https://upload.trieuphu.biz (credentials: xem password.md)
+# 🌐 https://wiki.bkns.vn (credentials: xem password.md)
 
 # === Monitoring ===
 tail -f logs/wiki-bot-pm2.log         # Bot logs
@@ -346,5 +346,5 @@ tail -f logs/compile-wiki-*.jsonl     # Compile logs
 > **Quick Start cho phiên tiếp theo:**
 > 1. Mở Telegram → gửi "/status" tới bot Octopus → xác nhận bot hoạt động
 > 2. Gửi câu hỏi test: "Giá VPS rẻ nhất?" → kiểm tra answer
-> 3. Upload thêm data: https://upload.trieuphu.biz (password: bkns2026portal)
+> 3. Upload thêm data: https://wiki.bkns.vn (password: bkns2026portal)
 > 4. Hoặc copy thủ công DOCX/PDF vào `raw/manual/` → chạy pipeline

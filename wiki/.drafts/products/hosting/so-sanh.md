@@ -2,7 +2,7 @@
 page_id: wiki.products.hosting.so-sanh
 title: Web Hosting BKNS — So Sánh
 category: products/hosting
-updated: '2026-04-14'
+updated: '2026-04-16'
 review_state: drafted
 claims_used: 0
 compile_cost_usd: 0
@@ -27,5 +27,5 @@ corrections: 0
 
 ## Liên hệ / đăng ký
 
-- [Liên hệ BKNS](../../support/lien-he.md)
-- [Hướng dẫn chung](../../support/huong-dan-chung.md)
+- [Liên hệ BKNS](../support/lien-he.md)
+- [Hướng dẫn chung](../support/huong-dan-chung.md)

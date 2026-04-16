@@ -11,7 +11,7 @@ _env_path = Path(__file__).resolve().parent.parent / ".env"
 load_dotenv(_env_path)
 
 # ── Workspace Root ─────────────────────────────────────────
-WORKSPACE = Path(os.getenv("WIKI_WORKSPACE", "/home/openclaw/wiki"))
+WORKSPACE = Path(os.getenv("WIKI_WORKSPACE", "/wiki"))
 
 # ── Directory Paths ────────────────────────────────────────
 RAW_DIR = WORKSPACE / "raw"

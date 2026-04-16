@@ -177,7 +177,7 @@ wiki/
 │   │   ├── app.js              # Client-side logic
 │   │   ├── librarian.js        # Librarian chat UI
 │   │   └── style.css           # Dark theme, glassmorphism
-│   ├── nginx-upload.trieuphu.biz.conf  # Nginx reverse proxy config
+│   ├── nginx-wiki.bkns.vn.conf  # Nginx reverse proxy config
 │   ├── deploy-nginx.sh         # Nginx + Let's Encrypt deployment
 │   └── ecosystem.web.config.js # PM2 config cho web server (process: wiki-portal)
 │
@@ -427,7 +427,7 @@ Web Portal là 4-tab SPA:
 | Reverse proxy | Nginx | TLS 1.2/1.3, rate limiting, HSTS |
 | AI — Gemini | Google Cloud Vertex AI | Implicit caching, Gemini 2.5 Flash + Pro |
 | AI — GPT | OpenAI API hoặc OpenRouter | Chỉ khi `DUAL_VOTE_ENABLED=true` |
-| DNS | upload.trieuphu.biz | Let's Encrypt TLS |
+| DNS | wiki.bkns.vn | Let's Encrypt TLS |
 
 ### 8.2 PM2 Processes
 
@@ -443,17 +443,17 @@ Web Portal là 4-tab SPA:
 
 | Tên | Script | Port | Notes |
 |-----|--------|------|-------|
-| `wiki-admin` (hoặc `wiki-portal`) | `web/server.js` | 3000 | **Restart bằng `sudo pm2 reload wiki-admin`** |
+| `wiki-portal` (hoặc `wiki-portal`) | `web/server.js` | 3000 | **Restart bằng `sudo pm2 reload wiki-portal`** |
 
 > **LƯU Ý QUAN TRỌNG:** Web portal chạy dưới root PM2 daemon. Khi restart phải dùng:
 > ```bash
-> sudo bash -c "export PATH=/home/openclaw/.nvm/versions/node/v24.14.0/bin:\$PATH && pm2 reload wiki-admin"
+> sudo bash -c "export PATH=$(which node | xargs dirname):\$PATH && pm2 reload wiki-portal"
 > ```
 > **KHÔNG** dùng `kill PID` hoặc `pm2 restart` của user thường.
 
 ### 8.3 Nginx Config
 
-File: `web/nginx-upload.trieuphu.biz.conf`
+File: `web/nginx-wiki.bkns.vn.conf`
 
 - TLS: Let's Encrypt, redirect HTTP → HTTPS
 - Rate limiting:
@@ -518,7 +518,7 @@ File: `.env` (xem `.env.example` để template đầy đủ)
 |------|---------|-------|
 | `MAX_QUERY_COST_USD` | `0.01` | Alert khi 1 query vượt mức |
 | `MONTHLY_BUDGET_USD` | `50` | Budget tháng (alert ngưỡng) |
-| `WIKI_WORKSPACE` | `/home/openclaw/wiki` | Root workspace — **cập nhật khi migrate** |
+| `WORKSPACE` | `/wiki` | Root workspace — **cập nhật khi migrate** |
 | `WEB_PORT` | `3000` | Port web server |
 
 ---
@@ -579,7 +579,7 @@ File: `bot/wiki_bot.py` — polling mode, daemon bởi PM2.
 
 ```bash
 # Chạy tất cả (33 tests, ~5-10 giây)
-cd /home/openclaw/wiki
+cd /wiki
 pytest tests/ -q
 
 # Verbose

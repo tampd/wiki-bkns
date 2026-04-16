@@ -3,11 +3,11 @@
 # Run with: sudo bash deploy-nginx.sh
 set -euo pipefail
 
-DOMAIN="upload.trieuphu.biz"
-CONF_SRC="/home/openclaw/wiki/web/nginx-upload.trieuphu.biz.conf"
+DOMAIN="wiki.bkns.vn"
+CONF_SRC="/wiki/web/nginx-wiki.bkns.vn.conf"
 CONF_DST="/etc/nginx/sites-available/${DOMAIN}"
 CONF_LINK="/etc/nginx/sites-enabled/${DOMAIN}"
-EMAIL="admin@trieuphu.biz"
+EMAIL="duytam@bkns.vn"
 
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo " BKNS Wiki Portal — Deploy Nginx"
@@ -22,7 +22,7 @@ cat > /tmp/upload-http.conf << 'HTTPEOF'
 server {
     listen 80;
     listen [::]:80;
-    server_name upload.trieuphu.biz;
+    server_name wiki.bkns.vn;
 
     location /.well-known/acme-challenge/ {
         root /var/www/html;
