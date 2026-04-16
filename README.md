@@ -16,7 +16,7 @@ BKNS Wiki là knowledge base tự-compile bằng LLM, phục vụ bot CSKH Teleg
 | **Phiên bản hiện tại** | v1.1.0 (2026-04-14) — xem [CHANGELOG.md](./CHANGELOG.md) |
 | **Stack** | Python 3.10+ pipeline · Node.js 18+ web portal · PM2 · Telegram bot |
 | **LLM** | Gemini 2.5 Pro/Flash (Vertex AI) + OpenAI GPT-5.4 (dual-vote) |
-| **Kho dữ liệu** | 2,252 claims YAML, 14 categories, builds v0.1 → v0.6 |
+| **Kho dữ liệu** | 2,252 approved claims, 198 wiki pages, builds v0.1 → v0.6 |
 | **Web Portal** | Admin Review UI (dual-vote resolution, bulk actions) |
 | **Bot Telegram** | `/hoi`, `/them`, `/extract`, `/compile`, `/build`, `/lint`, `/status` |
 | **License** | [MIT](./LICENSE) |
@@ -85,7 +85,7 @@ Portal nội bộ (Express + vanilla JS SPA) phục vụ review workflow:
 
 ```bash
 # 1. Clone
-git clone git@github.com:tampd/Wiki.git wiki && cd wiki
+git clone git@github.com:tampd/wiki-bkns.git wiki && cd wiki
 
 # 2. Python + Node dependencies
 pip install -r requirements.txt
@@ -129,9 +129,9 @@ python3 bot/wiki_bot.py                 # Telegram bot (hoặc qua PM2)
 wiki/
 ├── bot/              Telegram bot (wiki_bot.py)
 ├── lib/              Shared libs: config, logger, gemini, openai_client, dual_vote, utils
-├── skills/           10 skills: crawl-source, extract-claims, compile-wiki, query-wiki,
+├── skills/           14 skills: crawl-source, extract-claims, compile-wiki, query-wiki,
 │                     build-snapshot, ingest-image, lint-wiki, ground-truth, auto-file,
-│                     cross-link, dual-vote
+│                     cross-link, dual-vote, verify-claims, audit-wiki
 ├── tools/            Adhoc tools: converters, regression_test, quality_dashboard, cron_tasks
 ├── web/              Express + vanilla JS Admin Portal
 ├── claims/
@@ -196,12 +196,13 @@ Monthly budget cap mặc định: **$50** (xem `lib/config.py`).
 | **Phase 2.5 — Web Portal** | Admin portal, Toast UI, review queue | ✅ Complete |
 | **Phase 3 — Dual-Vote v0.4** | Gemini + GPT-5.4 cross-validation | ✅ Complete |
 | **Phase 4 — Optimization v1.1.0** | Dead code removal, type hints, error logging | ✅ Complete |
-| **Phase 5 — Intelligence** | auto-file FAQ, cross-link graph | ✅ Complete |
+| **Phase 5 — Intelligence** | auto-file FAQ, cross-link graph | 🔲 Disabled (code ready, not active) |
 
-**Tổng metrics (2026-04-15):**
-- 2,252 claims (21.8% ground-truth, 77.9% high-confidence)
-- 11 skills implemented + verified
-- 71 tests pass (7 smoke + 13 bot + 51 unit)
+**Tổng metrics (2026-04-16):**
+- 2,252 approved claims (21.8% ground-truth, 77.9% high-confidence)
+- 198 wiki pages (7 categories)
+- 14 skills (11 active / tested, 3 pending/disabled)
+- 33 tests pass (100%)
 - 6 build snapshots (v0.1 → v0.6)
 
 ---
@@ -215,10 +216,10 @@ MIT — xem [LICENSE](./LICENSE). Copyright © 2026 Tampd (BKNS).
 ## Liên hệ
 
 - **Maintainer:** Tampd (BKNS) — `duytam@bkns.vn`
-- **Issues:** https://github.com/tampd/Wiki/issues
+- **Issues:** https://github.com/tampd/wiki-bkns/issues
 - **Security:** Email trực tiếp thay vì mở issue công khai
 
 ---
 
 *BKNS Knowledge Wiki v1.1.0 — LLM-Compiled + Dual-Vote + Implicit Caching*
-*Cập nhật: 2026-04-15*
+*Cập nhật: 2026-04-16*

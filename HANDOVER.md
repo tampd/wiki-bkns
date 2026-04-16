@@ -1,267 +1,608 @@
-# BKNS Wiki — Tài liệu Bàn giao
+# BKNS Wiki — Tài Liệu Bàn Giao & Chuyển Máy Chủ
 
-**Version:** v1.1.0 | **Cập nhật:** 2026-04-14
-
----
-
-## 1. Kiến trúc hệ thống
-
-### Pipeline chính (7 bước)
-
-```
-[URL / File thô]
-      ↓
-1. crawl-source     — Thu thập HTML → Markdown (raw/website-crawl/)
-      ↓
-2. ingest-image     — Ảnh bảng giá → Markdown qua Gemini Flash Vision
-      ↓
-3. extract-claims   — Markdown thô → claims YAML (Gemini Pro)
-      ↓
-4. [Review thủ công] — Phê duyệt claims → claims/approved/
-      ↓
-5. compile-wiki     — Claims + nguồn → Wiki pages (Gemini Pro)
-      ↓
-6. build-snapshot   — Gộp toàn bộ wiki/ → active-build.yaml
-      ↓
-7. query-wiki       — Câu hỏi + wiki prefix → trả lời (Gemini Flash + Implicit Cache)
-```
-
-### Không dùng RAG
-Wiki toàn bộ (~200k–500k token) được nạp làm **prefix cố định** mỗi query. Gemini tự động cache prefix → tiết kiệm ~75–90% chi phí token input. Không cần vector DB.
+**Version:** v1.1.0 (Build v0.6)
+**Cập nhật:** 2026-04-16
+**Maintainer:** Tampd · duytam@bkns.vn
 
 ---
 
-## 2. Cài đặt môi trường
+## Mục lục
+
+1. [Kiến trúc tổng quan](#1-kiến-trúc-tổng-quan)
+2. [Yêu cầu hệ thống](#2-yêu-cầu-hệ-thống)
+3. [Cấu hình môi trường](#3-cấu-hình-môi-trường)
+4. [Cài đặt từ đầu (New Server)](#4-cài-đặt-từ-đầu-new-server)
+5. [Chuyển máy chủ (Migration)](#5-chuyển-máy-chủ-migration)
+6. [Khởi động & quản lý processes](#6-khởi-động--quản-lý-processes)
+7. [Bot Commands](#7-bot-commands)
+8. [Web Admin Portal](#8-web-admin-portal)
+9. [Skills Registry](#9-skills-registry)
+10. [Cost Monitoring](#10-cost-monitoring)
+11. [Troubleshooting](#11-troubleshooting)
+12. [Backlog](#12-backlog)
+
+---
+
+## 1. Kiến trúc tổng quan
+
+Pipeline 7 bước, không dùng RAG:
+
+```
+[Tài liệu / URL]
+      ↓
+1. Ingest           — DOCX/PDF/XLSX/PPTX/HTML/YouTube/audio → raw/*.md
+                      (markitdown_adapter.py hoặc Telegram /them)
+      ↓
+2. Extract          — raw/*.md → claims YAML (Gemini 2.5 Pro)
+                      Option: Dual-vote extract (Gemini + GPT-5.4)
+      ↓
+3. Review           — Auto-approve (AGREE) hoặc Web Portal (DISAGREE)
+                      claims/.review-queue/ → human giải quyết
+      ↓
+4. Compile          — claims/approved/ → wiki/products/*.md (Gemini 2.5 Pro)
+                      Self-review gate: detect hallucination, auto-correct
+      ↓
+5. Build snapshot   — wiki/ → BLD-YYYYMMDD-HHMMSS manifest
+                      build/active-build.yaml được update
+      ↓
+6. Query            — câu hỏi + wiki prefix → trả lời (Gemini 2.5 Flash)
+                      Implicit Caching tự động: ~$0.0004/query
+      ↓
+7. Human edit       — Web Portal WYSIWYG editor (Toast UI)
+                      Auto-backup trước mỗi lần save
+```
+
+**Không dùng RAG.** Toàn bộ wiki (~127K tokens) nạp làm prefix cố định. Gemini Implicit Caching tự động cache prefix → tiết kiệm 75–90% chi phí input.
+
+---
+
+## 2. Yêu cầu hệ thống
+
+| Thành phần | Version | Notes |
+|-----------|---------|-------|
+| Python | 3.10+ | pip, venv khuyến nghị |
+| Node.js | 18+ | nvm khuyến nghị |
+| PM2 | Latest | `npm install -g pm2` |
+| Nginx | Latest | Reverse proxy + TLS |
+| Git | Latest | Để clone repo |
+| Disk | ≥10GB free | claims 33M + wiki 2.1M + build 11M + logs growing |
+| RAM | ≥2GB | Gemini calls không nhiều, nhưng Node.js + Python cùng chạy |
+
+**Cloud credentials bắt buộc:**
+- Google Cloud service account JSON (Vertex AI / Gemini)
+- Telegram Bot Token
+- (Optional) OpenAI API key nếu muốn dual-vote
+
+---
+
+## 3. Cấu hình môi trường
+
+Tất cả config load từ `.env` qua `lib/config.py`. Template: `.env.example`.
+
+### Biến bắt buộc
+
+| Biến | Mô tả |
+|------|-------|
+| `TELEGRAM_BOT_TOKEN` | Token Telegram bot (từ @BotFather) |
+| `ADMIN_TELEGRAM_ID` | Telegram user ID của admin (số nguyên) |
+| `GOOGLE_APPLICATION_CREDENTIALS` | Đường dẫn **absolute** đến GCP service account JSON |
+| `GOOGLE_CLOUD_PROJECT` | GCP project ID |
+
+### Biến quan trọng khi migrate
+
+| Biến | Cũ | Mới | Notes |
+|------|----|-----|-------|
+| `WIKI_WORKSPACE` | `/home/openclaw/wiki` | `/path/to/new/wiki` | **Phải update khi đổi server** |
+| `GOOGLE_APPLICATION_CREDENTIALS` | `/home/openclaw/...` | `/new/path/...` | Path tuyệt đối đến JSON key |
+
+### Biến models (optional — defaults ổn)
 
 ```bash
-# Clone / vào thư mục dự án
-cd /home/openclaw/wiki
+MODEL_FLASH=gemini-2.5-flash          # Query, ingest
+MODEL_PRO=gemini-2.5-pro              # Extract, compile
+MODEL_PRO_NEW=gemini-3.1-pro-preview  # Chưa enable (USE_PRO_NEW=false)
+MODEL_PRO_NEW_LOCATION=global         # Bắt buộc global cho 3.1 Pro
+USE_PRO_NEW=false
+GOOGLE_CLOUD_LOCATION=us-central1
+```
 
-# Cài Python dependencies
+### Biến dual-vote (optional)
+
+```bash
+OPENAI_API_KEY=                       # sk-proj-* (OpenAI) hoặc sk-or-v1-* (OpenRouter)
+OPENAI_MODEL=gpt-5.4
+OPENAI_BASE_URL=https://api.openai.com/v1
+DUAL_VOTE_ENABLED=false               # false = chỉ Gemini; true = Gemini + GPT
+```
+
+### Biến cost & workspace
+
+```bash
+MAX_QUERY_COST_USD=0.01
+MONTHLY_BUDGET_USD=50
+WEB_PORT=3000
+```
+
+---
+
+## 4. Cài đặt từ đầu (New Server)
+
+### Bước 1: Clone repo
+
+```bash
+git clone git@github.com:tampd/wiki-bkns.git /opt/wiki
+cd /opt/wiki
+```
+
+> Thay `/opt/wiki` bằng thư mục muốn deploy. Nhớ update `WIKI_WORKSPACE` trong `.env`.
+
+### Bước 2: Python dependencies
+
+```bash
+# Khuyến nghị dùng venv
+python3 -m venv venv
+source venv/bin/activate
 pip install -r requirements.txt
-
-# Copy và điền .env
-cp .env.example .env
-# Điền TELEGRAM_BOT_TOKEN, ADMIN_TELEGRAM_ID, GOOGLE_CLOUD_PROJECT, v.v.
-
-# Cài Node dependencies (Web UI)
-cd web && npm install && cd ..
 ```
 
-**Yêu cầu:**
-- Python 3.10+
-- Node.js 18+
-- PM2 (`npm install -g pm2`)
-- Google Cloud credentials file (Vertex AI)
-
----
-
-## 3. Cấu hình (Environment Variables)
-
-Tất cả được load từ `.env` qua `lib/config.py`:
-
-| Biến | Bắt buộc | Mô tả |
-|------|----------|-------|
-| `TELEGRAM_BOT_TOKEN` | Có | Token Telegram bot |
-| `ADMIN_TELEGRAM_ID` | Có | Telegram user ID của admin (không hardcode) |
-| `GOOGLE_APPLICATION_CREDENTIALS` | Có | Đường dẫn đến file JSON service account Vertex AI |
-| `GOOGLE_CLOUD_PROJECT` | Có | GCP project ID (mặc định: `ai-test-491016`) |
-| `GOOGLE_CLOUD_LOCATION` | Không | Region (mặc định: `us-central1`) |
-| `MODEL_FLASH` | Không | Model Flash (mặc định: `gemini-2.5-flash`) |
-| `MODEL_PRO` | Không | Model Pro (mặc định: `gemini-2.5-pro`) |
-| `MODEL_PRO_NEW` | Không | Model Pro mới (mặc định: `gemini-3.1-pro-preview`) |
-| `USE_PRO_NEW` | Không | Feature flag — dùng MODEL_PRO_NEW (mặc định: `false`) |
-| `MODEL_PRO_NEW_LOCATION` | Không | Location cho PRO_NEW (mặc định: `global`) |
-| `OPENAI_API_KEY` | Không | Chỉ cần khi `DUAL_VOTE_ENABLED=true` |
-| `DUAL_VOTE_ENABLED` | Không | Bật dual-vote cross-validation (mặc định: `false`) |
-| `WIKI_WORKSPACE` | Không | Override workspace root (mặc định: `/home/openclaw/wiki`) |
-
----
-
-## 4. Khởi động hệ thống
-
-### PM2 (production)
+### Bước 3: Node.js dependencies (Web Portal)
 
 ```bash
-# Khởi động tất cả processes
+cd web
+npm install
+cd ..
+```
+
+### Bước 4: Upload credentials
+
+```bash
+# Copy GCP service account JSON lên server
+scp credentials/wiki-gcp-sa.json user@newserver:/opt/wiki/credentials/
+chmod 600 /opt/wiki/credentials/wiki-gcp-sa.json
+```
+
+### Bước 5: Tạo và điền .env
+
+```bash
+cp .env.example .env
+nano .env
+# Điền đầy đủ: TELEGRAM_BOT_TOKEN, ADMIN_TELEGRAM_ID,
+# GOOGLE_APPLICATION_CREDENTIALS, GOOGLE_CLOUD_PROJECT,
+# WIKI_WORKSPACE=/opt/wiki (đổi thành path thực)
+```
+
+### Bước 6: Smoke test
+
+```bash
+# Test Python config
+python3 -c "from lib.config import WIKI_WORKSPACE; print('OK:', WIKI_WORKSPACE)"
+
+# Test Gemini connection
+python3 -c "from lib.gemini import GeminiClient; c = GeminiClient(); print('Gemini OK')"
+
+# Run test suite
+pytest tests/ -q
+# Expected: 33 passed
+```
+
+### Bước 7: Khởi động Bot + Crons (PM2 user)
+
+```bash
+# Cài PM2 nếu chưa có
+npm install -g pm2
+
+# Khởi động
+pm2 start ecosystem.config.js
+
+# Verify
+pm2 status
+# Expected: bkns-wiki-bot (online), bkns-cron-daily (online), bkns-cron-promo (online)
+
+# Save PM2 config để auto-start khi reboot
+pm2 save
+pm2 startup  # Làm theo hướng dẫn hiện ra
+```
+
+### Bước 8: Khởi động Web Portal (Root PM2)
+
+```bash
+# Web portal chạy dưới root PM2 (sudo required)
+cd web
+sudo bash -c "export PATH=$(which node | xargs dirname):\$PATH && pm2 start ecosystem.web.config.js"
+sudo pm2 save
+
+# Verify
+sudo pm2 status
+# Expected: wiki-portal (online, port 3000)
+```
+
+### Bước 9: Nginx + TLS
+
+```bash
+# Copy nginx config
+sudo cp web/nginx-upload.trieuphu.biz.conf /etc/nginx/sites-available/wiki
+# Chỉnh sửa domain và paths nếu cần
+sudo ln -s /etc/nginx/sites-available/wiki /etc/nginx/sites-enabled/
+sudo nginx -t && sudo systemctl reload nginx
+
+# Let's Encrypt (nếu chưa có cert)
+sudo bash web/deploy-nginx.sh
+```
+
+### Bước 10: Verify production
+
+```bash
+# Bot test — gửi /status từ Telegram admin
+# Expected: Build v0.6, 198 wiki files, 2252 claims
+
+# Web portal test
+curl -s https://upload.trieuphu.biz/api/status | python3 -m json.tool
+# Expected: { "build": "BLD-20260415-135355", "version": "v0.6", ... }
+```
+
+---
+
+## 5. Chuyển máy chủ (Migration)
+
+### 5.1 Danh sách data cần chuyển
+
+```
+PHẢI CHUYỂN:
+✅ claims/approved/         — 2,252 approved claims (critical data)
+✅ wiki/products/           — 198 wiki pages (production content)
+✅ build/                   — Build manifests + snapshots
+✅ raw/manual/              — 72 source documents
+✅ assets/                  — Uploaded images + evidence
+✅ entities/registry.yaml   — Entity registry
+✅ sources/registry.yaml    — Source traceability
+✅ logs/                    — Audit logs (optional nhưng có ích)
+
+KHÔNG CẦN CHUYỂN (có thể bỏ qua):
+❌ web/node_modules/        — Chạy npm install lại trên server mới
+❌ .env                     — Tạo mới từ .env.example + điền key mới
+❌ bot/.last_offset         — Sẽ tự tạo lại (Telegram offset reset)
+❌ claims/.drafts/          — Draft claims chưa review (có thể bỏ)
+❌ trienkhai/               — Planning docs (stale, không cần)
+❌ tampd_skill/             — Legacy code (không active)
+```
+
+### 5.2 Backup trên server cũ
+
+```bash
+# Backup toàn bộ data quan trọng
+tar -czf bkns-wiki-backup-$(date +%Y%m%d).tar.gz \
+  claims/approved/ \
+  wiki/products/ \
+  build/ \
+  raw/manual/ \
+  assets/ \
+  entities/ \
+  sources/ \
+  logs/
+
+# Transfer sang server mới
+rsync -avz --progress \
+  claims/approved/ \
+  wiki/products/ \
+  build/ \
+  raw/manual/ \
+  assets/ \
+  entities/ \
+  sources/ \
+  user@newserver:/opt/wiki/
+```
+
+### 5.3 Update .env trên server mới
+
+```bash
+# Update các path-specific vars
+WIKI_WORKSPACE=/opt/wiki                             # Đổi theo location mới
+GOOGLE_APPLICATION_CREDENTIALS=/opt/wiki/credentials/sa.json
+```
+
+### 5.4 Update ecosystem.config.js
+
+Trong `ecosystem.config.js`, đổi `cwd` và `PYTHONPATH`:
+
+```js
+cwd: '/opt/wiki',         // Đổi từ /home/openclaw/wiki
+env: {
+  PYTHONPATH: '/opt/wiki', // Đổi theo
+}
+```
+
+Tương tự trong `web/ecosystem.web.config.js`:
+
+```js
+cwd: '/opt/wiki/web',
+```
+
+### 5.5 Validate sau migration
+
+```bash
+# 1. Test Python config
+python3 -c "from lib.config import WIKI_WORKSPACE, CLAIMS_DIR; print(WIKI_WORKSPACE, CLAIMS_DIR)"
+
+# 2. Check claims count
+python3 -c "
+import yaml
+from pathlib import Path
+ws = Path('.')
+total = sum(1 for _ in (ws/'claims'/'approved').rglob('*.yaml'))
+print(f'Approved claims: {total}')
+"
+
+# 3. Check wiki pages
+python3 -c "
+from pathlib import Path
+total = sum(1 for _ in Path('wiki/products').rglob('*.md'))
+print(f'Wiki pages: {total}')
+"
+
+# 4. Test query
+python3 -c "
+import sys; sys.path.insert(0, '.')
+from skills.query_wiki.scripts.query import run_query
+result = run_query('VPS BKNS có những gói nào?')
+print(result[:200])
+"
+
+# 5. Run full test suite
+pytest tests/ -q
+
+# 6. Check active build
+python3 -c "
+import yaml
+build = yaml.safe_load(open('build/active-build.yaml'))
+print(f'Build: {build[\"build_id\"]}, Version: {build[\"version\"]}, Pages: {build[\"wiki_files\"]}')
+"
+```
+
+### 5.6 Checklist cut-over
+
+```
+[ ] Code clone + npm install + pip install thành công
+[ ] .env điền đầy đủ (đặc biệt WIKI_WORKSPACE mới)
+[ ] GCP service account JSON đúng path và có quyền Vertex AI
+[ ] ecosystem.config.js cwd paths đã update
+[ ] pytest 33/33 pass
+[ ] pm2 start → bkns-wiki-bot (online)
+[ ] sudo pm2 start web → wiki-portal (online)
+[ ] Nginx config đúng domain + TLS
+[ ] /api/status trả về build v0.6
+[ ] Telegram /status từ bot trả lời đúng
+[ ] Telegram /hoi [câu hỏi test] cho kết quả hợp lý
+[ ] DNS record trỏ sang IP mới
+[ ] Dừng processes trên server cũ
+```
+
+---
+
+## 6. Khởi động & quản lý processes
+
+### 6.1 Bot + Crons (User PM2)
+
+```bash
+# Start tất cả
 pm2 start ecosystem.config.js
 
 # Xem trạng thái
 pm2 status
 
-# Xem logs bot
-pm2 logs bkns-wiki-bot
-
-# Restart sau khi thay đổi code
+# Restart bot sau thay đổi code
 pm2 restart bkns-wiki-bot
 
-# Dừng
+# Xem logs bot (live)
+pm2 logs bkns-wiki-bot
+
+# Xem lỗi
+pm2 logs bkns-wiki-bot --err --lines 50
+
+# Stop tất cả
 pm2 stop all
 ```
 
-**PM2 processes được định nghĩa trong `ecosystem.config.js`:**
-- `bkns-wiki-bot` — Telegram bot daemon (`bot/wiki_bot.py --daemon`)
-- `bkns-cron-daily` — Cron hàng ngày 7h sáng VN (`tools/cron_tasks.py --task all`)
+**3 processes quản lý bởi user PM2:**
 
-### Manual (dev/debug)
+| Tên | Script | Cron | Mô tả |
+|-----|--------|------|-------|
+| `bkns-wiki-bot` | `bot/wiki_bot.py --daemon` | Luôn chạy | Telegram bot |
+| `bkns-cron-daily` | `tools/cron_tasks.py --task all` | 00:00 UTC (7h VN) | Health, digest, conflicts |
+| `bkns-cron-promo` | `tools/cron_tasks.py --task promo-scrape` | 02:00 UTC T2 (9h VN) | Promo scrape hàng tuần |
+
+### 6.2 Web Portal (Root PM2)
+
+> **QUAN TRỌNG:** Web portal chạy dưới **root PM2 daemon** — dùng `sudo pm2` chứ không phải `pm2`.
 
 ```bash
-# Bot chạy một lần (xử lý messages hiện có rồi thoát)
+# Restart web (ĐÚNG cách)
+sudo bash -c "export PATH=/home/openclaw/.nvm/versions/node/v24.14.0/bin:\$PATH && pm2 reload wiki-admin"
+
+# Hoặc nếu tên process là wiki-portal
+sudo bash -c "export PATH=/home/openclaw/.nvm/versions/node/v24.14.0/bin:\$PATH && pm2 reload wiki-portal"
+
+# Xem status web
+sudo pm2 status
+
+# KHÔNG dùng (sẽ không tìm thấy process):
+# pm2 reload wiki-admin   ← thiếu sudo
+# kill -9 <PID>          ← gây restart không clean
+```
+
+### 6.3 Manual (dev/debug)
+
+```bash
+# Bot single-run (xử lý messages rồi thoát)
 python3 bot/wiki_bot.py
 
 # Bot daemon mode
 python3 bot/wiki_bot.py --daemon
 
-# Web UI
+# Web server
 cd web && node server.js
+
+# Cron tasks thủ công
+python3 tools/cron_tasks.py --task health
+python3 tools/cron_tasks.py --task daily-digest
+python3 tools/cron_tasks.py --task dual-vote-check
+python3 tools/cron_tasks.py --task conflicts
 ```
 
 ---
 
-## 5. Bot Commands
+## 7. Bot Commands
 
 | Command | Quyền | Mô tả |
 |---------|-------|-------|
-| `/hoi [câu hỏi]` | Tất cả | Hỏi về sản phẩm/dịch vụ BKNS |
-| `/status` | Tất cả | Xem build hiện tại, số wiki files, số claims |
-| `/help` | Tất cả | Xem danh sách lệnh |
-| `/them [URL]` | Admin | Crawl URL mới vào `raw/`, tiếp theo chạy `/extract` |
-| `/extract` | Admin | Extract claims từ tất cả raw files chưa xử lý |
-| `/compile [category]` | Admin | Compile wiki cho một category (hoặc `--all`) |
-| `/build` | Admin | Tạo build snapshot mới từ wiki hiện tại |
-| `/lint` | Admin | Chạy syntax lint trên toàn bộ wiki |
+| `/hoi [câu hỏi]` | Tất cả | Query wiki (max 500 ký tự) |
+| `/status` | Tất cả | Build version, wiki files, claims count |
+| `/help` | Tất cả | Danh sách lệnh |
+| `/them [URL]` | Admin only | Crawl URL → `raw/` (timeout 60s) |
+| `/extract` | Admin only | Extract claims từ raw files chưa xử lý |
+| `/compile [category\|--all]` | Admin only | Compile wiki |
+| `/build` | Admin only | Tạo build snapshot |
+| `/lint` | Admin only | Quality check wiki |
 
-**Categories hợp lệ cho `/compile`:** `hosting`, `vps`, `email`, `ssl`, `ten-mien`, `server`, `software`
+**Categories hợp lệ:** `hosting`, `vps`, `email`, `ssl`, `ten-mien`, `server`, `software`
 
-**Workflow thêm trang mới:**
+**Workflow thêm tài liệu mới:**
 ```
-/them https://bkns.vn/page → /extract → [review claims thủ công] → /compile [cat] → /build
+Upload DOCX/PDF qua Web UI  →  /extract  →  review trên Web Portal  →  /compile [cat]  →  /build
+       hoặc
+/them [URL]                 →  /extract  →  review trên Web Portal  →  /compile [cat]  →  /build
 ```
 
 ---
 
-## 6. Skills Registry
+## 8. Web Admin Portal
 
-Định nghĩa trong `agents.yaml`. Skills được triển khai trong `skills/`:
+**URL:** https://upload.trieuphu.biz (credentials trong `password.md`, không commit vào git)
 
-| Skill | Phase | Model | Mô tả |
-|-------|-------|-------|-------|
-| `crawl-source` | 0.5 | None | Thu thập HTML → Markdown raw |
-| `extract-claims` | 0.5 | gemini-2.5-pro | Trích xuất claims từ raw files |
-| `compile-wiki` | 0.5 | gemini-2.5-pro | Compile claims + nguồn → Wiki pages |
-| `query-wiki` | 0.5 | gemini-2.5-flash | Trả lời câu hỏi từ wiki |
-| `build-snapshot` | 1 | None | Tạo snapshot build |
-| `ingest-image` | 1 | gemini-2.5-flash | Extract ảnh bảng giá → Markdown |
-| `lint-wiki` | 1 | gemini-2.5-pro | Lint chất lượng wiki |
-| `ground-truth` | 1 | gemini-2.5-flash | Kiểm tra thông tin cơ bản |
-| `auto-file` | 2 (disabled) | gemini-2.5-flash | Tự động file FAQ |
-| `cross-link` | 2 (disabled) | gemini-2.5-flash | Tạo cross-links |
-| `dual-vote` | - | Gemini + GPT | Cross-validation dual-vote |
+### 8.1 Giao diện
+
+4 tabs:
+- **Wiki** — Sidebar category tree, reader mode, Toast UI Editor
+- **Review** — Dual-vote conflicts, bulk approve/reject
+- **Upload** — File browser, upload DOCX/PDF/XLSX/PPTX/EPUB/HTML
+- **Builds** — Build history + snapshot metadata
+
+### 8.2 API chính
+
+| Method | Endpoint | Mô tả |
+|--------|----------|-------|
+| `POST` | `/api/login` | Đăng nhập → bearer token |
+| `GET` | `/api/wiki/tree` | Category tree |
+| `GET` | `/api/wiki/search?q=` | Full-text search |
+| `GET/PUT` | `/api/wiki/:cat/:page` | Đọc/cập nhật page |
+| `GET` | `/api/review/queue` | Conflict queue |
+| `POST` | `/api/review/resolve/:id` | Resolve conflict |
+| `POST` | `/api/review/bulk` | Bulk actions |
+| `GET` | `/api/status` | System status |
+| `GET` | `/api/builds` | Build history |
+| `POST` | `/api/trigger` | Trigger pipeline |
+| `POST` | `/api/librarian/chat` | Librarian assistant |
+
+---
+
+## 9. Skills Registry
+
+14 pipeline skills trong `skills/`. Định nghĩa trong `agents.yaml`.
+
+| Skill | Model | Trạng thái | Notes |
+|-------|-------|-----------|-------|
+| `extract-claims` | Gemini 2.5 Pro | ✅ Active | Core pipeline |
+| `compile-wiki` | Gemini 2.5 Pro | ✅ Active | Core pipeline |
+| `query-wiki` | Gemini 2.5 Flash | ✅ Active | Core pipeline |
+| `build-snapshot` | None | ✅ Active | Core pipeline |
+| `ingest-image` | Gemini 2.5 Flash | ✅ Tested | Chưa tích hợp cron |
+| `lint-wiki` | Gemini 2.5 Pro | ✅ Active | Qua bot /lint |
+| `ground-truth` | Gemini 2.5 Flash | ⚠️ Blocked | Cloudflare blocks |
+| `crawl-source` | None | ⚠️ Blocked | Cloudflare blocks |
+| `dual-vote` | Gemini + GPT | ✅ Code ready | `DUAL_VOTE_ENABLED=false` |
+| `auto-file` | Gemini 2.5 Flash | 🔲 Disabled | Phase 2 |
+| `cross-link` | Gemini 2.5 Flash | 🔲 Disabled | Phase 2 |
+| `verify-claims` | None | 🔲 Pending | Chưa tích hợp |
+| `audit-wiki` | None | 🔲 Pending | Chưa tích hợp |
 
 Mỗi skill có `skills/{name}/SKILL.md` (spec) và `skills/{name}/scripts/` (code).
 
 ---
 
-## 7. Cấu trúc thư mục quan trọng
+## 10. Cost Monitoring
+
+### Log files
 
 ```
-/home/openclaw/wiki/
-├── lib/                    ← Core library
-│   ├── config.py           ← Cấu hình trung tâm (env vars, paths, constants)
-│   ├── gemini.py           ← Vertex AI Gemini wrapper (generate, costs, retry)
-│   ├── logger.py           ← Structured JSONL logging
-│   └── utils.py            ← Shared utilities (hash, slug, yaml, datetime)
-├── bot/
-│   └── wiki_bot.py         ← Telegram bot (commands, routing, retry)
-├── skills/                 ← Pipeline skills (crawl/extract/compile/query/...)
-├── web/                    ← Web review UI
-│   ├── server.js           ← Express server
-│   ├── routes/             ← API routes
-│   └── public/             ← Frontend (app.js, index.html, style.css)
-├── tests/                  ← Test suite
-│   ├── test_bot.py         ← Bot unit tests (13 tests)
-│   └── test_pipeline_smoke.py ← Pipeline smoke tests (7 tests)
-├── raw/                    ← Dữ liệu thô chưa xử lý
-│   └── website-crawl/      ← Kết quả crawl
-├── claims/                 ← Claims (YAML)
-│   └── approved/           ← Claims đã phê duyệt
-├── wiki/                   ← Wiki pages (Markdown)
-├── build/                  ← Build artifacts
-│   └── active-build.yaml   ← Build hiện tại (đọc bởi query-wiki)
-├── logs/                   ← Logs
-│   ├── gemini-calls-YYYY-MM.jsonl  ← Cost tracking
-│   ├── errors/             ← Error logs
-│   └── intake/             ← Crawl audit logs
-├── agents.yaml             ← Skills registry
-├── ecosystem.config.js     ← PM2 config
-└── requirements.txt        ← Python dependencies
+logs/gemini-calls-YYYY-MM.jsonl   — Per-call Gemini cost
+logs/openai-calls-YYYY-MM.jsonl   — Per-call OpenAI cost (khi dual-vote)
+logs/dual-vote-YYYY-MM.jsonl      — Dual-vote events (AGREE/PARTIAL/DISAGREE)
+logs/query-YYYY-MM-DD.jsonl       — Query logs + cache hit rate
 ```
 
----
+### Chi phí ước tính
 
-## 8. Cost Monitoring
+| Hoạt động | Chi phí |
+|-----------|---------|
+| Extract 1 file (Gemini Pro) | ~$0.015 |
+| Extract dual-vote (Gemini + GPT) | ~$0.030 |
+| Compile 1 category | ~$0.10 |
+| Query 1 câu (Flash + Implicit Cache) | ~$0.0004 |
+| Build snapshot | Miễn phí |
 
-### Monthly cost log
+**Budget tháng mặc định: $50** (config `MONTHLY_BUDGET_USD` trong `.env`).
 
-File: `logs/gemini-calls-YYYY-MM.jsonl`
-
-Mỗi dòng là một Gemini API call:
-```json
-{
-  "ts": "2026-04-14T10:30:00+07:00",
-  "skill": "query-wiki",
-  "action": "llm_call_cached",
-  "model": "gemini-2.5-flash",
-  "input_tokens": 45000,
-  "cached_tokens": 42000,
-  "output_tokens": 350,
-  "cost_usd": 0.000287,
-  "elapsed_ms": 1240
-}
-```
-
-### Đọc báo cáo chi phí tháng
+### Kiểm tra nhanh
 
 ```bash
-# Tổng chi phí tháng hiện tại
+# Chi phí tháng hiện tại
 python3 -c "
-import json; from pathlib import Path; from datetime import datetime
+import json
+from pathlib import Path
+from datetime import datetime
 month = datetime.now().strftime('%Y-%m')
 f = Path(f'logs/gemini-calls-{month}.jsonl')
 if f.exists():
-    lines = [json.loads(l) for l in f.read_text().splitlines() if l]
-    total = sum(l['cost_usd'] for l in lines)
-    print(f'Total calls: {len(lines)}, Total cost: \${total:.4f}')
+    lines = [json.loads(l) for l in f.read_text().splitlines() if l.strip()]
+    total = sum(l.get('cost_usd', 0) for l in lines)
+    print(f'Calls: {len(lines)}, Cost: \${total:.4f}')
+else:
+    print('No log file found')
 "
 ```
 
-### Alerts
-- Alert tự động khi 1 query vượt `MAX_QUERY_COST_USD` (mặc định $0.01)
-- Budget tháng: $50 — nếu vượt, cần xem xét giảm tần suất hoặc model
-
 ---
 
-## 9. Troubleshooting phổ biến
+## 11. Troubleshooting
 
 | Vấn đề | Nguyên nhân | Xử lý |
 |--------|-------------|-------|
-| Bot không phản hồi | Token Telegram sai hoặc bot offline | `pm2 logs bkns-wiki-bot`, kiểm tra `TELEGRAM_BOT_TOKEN` |
-| `/them` trả về lỗi permission | `chat_id` không khớp `ADMIN_TELEGRAM_ID` | Kiểm tra `.env` giá trị `ADMIN_TELEGRAM_ID` |
-| Gemini API error 429 | Vượt rate limit | Retry tự động 3 lần (5s interval). Nếu vẫn lỗi — giảm tần suất |
-| `active-build.yaml` không tồn tại | Chưa chạy `/build` lần nào | Chạy `/build` qua bot hoặc `python3 skills/build-snapshot/scripts/snapshot.py` |
-| Web UI lỗi 500 | Lỗi server-side | Xem `logs/web-errors-YYYY-MM-DD.jsonl` để biết chi tiết |
-| Claims không xuất hiện sau extract | File đã được xử lý (cached) | Xóa file `.processed` hoặc dùng `--force` flag |
-| `USE_PRO_NEW=true` gây lỗi | gemini-3.1-pro-preview chỉ available qua `global` location | Đảm bảo `MODEL_PRO_NEW_LOCATION=global` trong `.env` |
+| Bot không phản hồi | Token sai hoặc bot offline | `pm2 logs bkns-wiki-bot`, kiểm tra `TELEGRAM_BOT_TOKEN` |
+| `/them` lỗi permission | `chat_id` ≠ `ADMIN_TELEGRAM_ID` | Kiểm tra `.env` `ADMIN_TELEGRAM_ID` |
+| Gemini 429 | Rate limit | Retry tự động 3x. Nếu tiếp tục: giảm concurrency |
+| `active-build.yaml` không tồn tại | Chưa chạy build | `python3 skills/build-snapshot/scripts/snapshot.py` |
+| Web 500 errors | Server-side lỗi | `pm2 logs wiki-admin --err` hoặc `logs/web-errors-*.jsonl` |
+| Claims không xuất hiện sau extract | File đã cached | Xóa entry trong `claims/.cache/` hoặc dùng `--force` |
+| `USE_PRO_NEW=true` gây lỗi | 3.1 Pro chỉ dùng `global` location | Đảm bảo `MODEL_PRO_NEW_LOCATION=global` |
+| Web portal không reload | Root PM2 daemon | Dùng `sudo pm2 reload wiki-admin` (không phải kill PID) |
+| OpenAI 401 | API key hết hạn | Rotate tại platform.openai.com |
+| Python import error sau migrate | PYTHONPATH sai | Check `PYTHONPATH` trong `ecosystem.config.js` |
+| Claims count = 0 sau migrate | WIKI_WORKSPACE sai | Cập nhật `WIKI_WORKSPACE` trong `.env` |
 
 ---
 
-## 10. Backlog / Future improvements
+## 12. Backlog
 
-- [ ] `auto-file` skill (Phase 2): Tự động phân loại FAQ từ queries — disabled pending Phase 2
-- [ ] `cross-link` skill (Phase 2): Tạo cross-links giữa wiki pages — disabled pending Phase 2
-- [ ] `USE_PRO_NEW=true`: Enable gemini-3.1-pro-preview sau khi xác nhận API quota
-- [ ] Dual-vote cho compile: `DUAL_VOTE_ENABLED=true` sau khi regression test pass
-- [ ] Scheduled crawl: Cron job crawl tự động bkns.vn thay vì chỉ manual `/them`
-- [ ] `audit-wiki` và `verify-claims` skills: chưa được tích hợp vào pipeline chính
-- [ ] Web UI: Chuyển từ `unsafe-inline` CSP sang nonce-based khi TOAST UI hỗ trợ
-- [ ] Monitoring dashboard: Xây dựng dashboard tổng hợp cost + cache hit rate + query volume
+Tính năng chưa implement hoặc đang bị disable:
+
+- [ ] **Enable dual-vote** (`DUAL_VOTE_ENABLED=true`) — sau khi chạy `regression_test.py --full` đầy đủ
+- [ ] **Enable Gemini 3.1 Pro** (`USE_PRO_NEW=true`) — sau khi xác nhận API quota
+- [ ] **auto-file skill** (Phase 2) — tự phân loại FAQ từ queries
+- [ ] **cross-link skill** (Phase 2) — internal links giữa wiki pages
+- [ ] **verify-claims + audit-wiki** — tích hợp vào pipeline chính
+- [ ] **Monitoring dashboard** — cost + cache hit rate + query volume
+- [ ] **CSP nonce-based** — khi TOAST UI Editor hỗ trợ
+
+---
+
+*Chi tiết kỹ thuật: xem [docs/SPEC-wiki-system.md](./docs/SPEC-wiki-system.md)*
+*Operations runbook: xem [docs/runbook.md](./docs/runbook.md)*

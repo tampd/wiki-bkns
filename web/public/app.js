@@ -351,9 +351,21 @@
       wrapper.querySelectorAll('a[href]').forEach(a => {
         const href = a.getAttribute('href');
         if (href && href.endsWith('.md') && !href.startsWith('http')) {
-          const parts = href.replace(/\.md$/, '').split('/');
-          const cat = parts.length >= 2 ? parts[parts.length - 2] : state.wikiCurrentCategory;
-          const pg = parts[parts.length - 1];
+          let parts = href.replace(/\.md$/, '').split('/');
+          // Resolve `..` relative to current page's directory so links from
+          // nested pages (e.g. san-pham/foo.md → ../bang-gia.md) work.
+          if (parts.includes('..') || parts.includes('.')) {
+            const currentPageParts = (state.wikiCurrentPage || 'index').split('/');
+            const stack = [state.wikiCurrentCategory, ...currentPageParts.slice(0, -1)];
+            for (const p of parts) {
+              if (p === '..') { if (stack.length > 0) stack.pop(); }
+              else if (p === '.' || p === '') { /* skip */ }
+              else { stack.push(p); }
+            }
+            parts = stack;
+          }
+          const cat = parts.length >= 2 ? parts[0] : state.wikiCurrentCategory;
+          const pg = parts.length >= 2 ? parts.slice(1).join('/') : parts[0];
           a.setAttribute('href', '#');
           a.setAttribute('data-wiki-cat', cat);
           a.setAttribute('data-wiki-page', pg);

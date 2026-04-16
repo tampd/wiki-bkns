@@ -493,16 +493,20 @@ QUY TẮC BẮT BUỘC:
 6. ✅ Nếu thiếu dữ liệu → ghi rõ "Đang cập nhật" chứ không bịa
 7. ✅ Cuối trang: "Compiled by BKNS Wiki Bot • {date}"
 8. ✅ Nếu claims quá ít cho trang này → ghi nội dung cô đọng, không kéo dài
+9. ✅ LINK NỘI BỘ: dùng NGUYÊN văn các đường dẫn tương đối bên dưới.
+   KHÔNG tự biên đường dẫn khác; KHÔNG đổi số `../`; KHÔNG tạo link .md mới.
 
-SẢN PHẨM LIÊN QUAN (cross-link):
+SẢN PHẨM LIÊN QUAN (copy y hệt vào cuối trang, KHÔNG sửa đường dẫn):
 {cross_links}
 
 OUTPUT: Markdown thuần (không frontmatter, không code fence)."""
 
 
-# Cached variant: STABLE prefix (all claims + rules + cross-links) comes first,
-# so Gemini implicit caching kicks in across sub-pages within one category.
-# The per-subpage task (title/filter/hint) is placed at the END as the question.
+# Cached variant: STABLE prefix (all claims + rules) comes first, so Gemini
+# implicit caching kicks in across sub-pages within one category. The per-
+# subpage task (title/filter/hint + depth-aware cross-links) is placed at
+# the END as the question — cross-links vary by subpage depth so they
+# intentionally live OUTSIDE the cached prefix.
 SUBPAGE_COMPILE_PREFIX = """Bạn là biên tập viên chuyên nghiệp cho Wiki tri thức BKNS.
 
 INPUT — TOÀN BỘ claims đã duyệt của category "{category}":
@@ -517,9 +521,8 @@ QUY TẮC BẮT BUỘC KHI SOẠN BẤT KỲ TRANG NÀO:
 6. ✅ Nếu thiếu dữ liệu → ghi rõ "Đang cập nhật" chứ không bịa
 7. ✅ Cuối trang: "Compiled by BKNS Wiki Bot • {date}"
 8. ✅ Nếu claims thuộc phạm vi trang quá ít → ghi cô đọng, không kéo dài
-
-SẢN PHẨM LIÊN QUAN (cross-link chung cho mọi trang):
-{cross_links}"""
+9. ✅ LINK NỘI BỘ: dùng NGUYÊN văn các đường dẫn tương đối được cung cấp.
+   KHÔNG tự biên đường dẫn khác; KHÔNG đổi số `../`; KHÔNG tạo link .md mới."""
 
 SUBPAGE_COMPILE_QUESTION = """NHIỆM VỤ HIỆN TẠI: Soạn trang wiki "{title}".
 
@@ -530,6 +533,9 @@ PHẠM VI CLAIMS DÀNH RIÊNG CHO TRANG NÀY (subset của danh sách phía trê
 
 HƯỚNG DẪN ĐẶC BIỆT:
 {prompt_hint}
+
+SẢN PHẨM LIÊN QUAN (copy y hệt vào cuối trang, KHÔNG sửa đường dẫn):
+{cross_links}
 
 CHỈ viết nội dung liên quan tới phạm vi trên. Các claims không thuộc phạm vi bỏ qua.
 OUTPUT: Markdown thuần (không frontmatter, không code fence). Ngày: {date}."""
@@ -666,15 +672,24 @@ def _filter_claims(claims: list[dict], filter_fn) -> list[dict]:
     return [c for c in claims if filter_fn(c)]
 
 
-def _generate_cross_links(category: str) -> str:
-    """Generate cross-link text for a category."""
+def _generate_cross_links(category: str, subpage_filename: str = "") -> str:
+    """Generate cross-link text for a category.
+
+    The relative path prefix is depth-aware based on `subpage_filename`:
+      - top-level pages (e.g. "bang-gia.md") → "../"
+      - nested pages   (e.g. "san-pham/foo.md") → "../../"
+    This keeps links filesystem-correct so the web UI's relative path
+    resolver (which walks `..` from the current page dir) can navigate them.
+    """
     related = CROSS_LINKS.get(category, [])
     if not related:
         return "Không có."
+    depth = subpage_filename.count("/")  # 0 for top-level, 1 for san-pham/*
+    prefix = "../" * (depth + 1)
     lines = []
     for r in related:
         title = CATEGORY_TITLES.get(r, r)
-        lines.append(f"- [{title}](../{r}/index.md)")
+        lines.append(f"- [{title}]({prefix}{r}/index.md)")
     return "\n".join(lines)
 
 
@@ -709,17 +724,17 @@ def compile_category(category: str, force: bool = False) -> dict:
     pages_compiled = 0
     pages_skipped = 0
     results = []
-    cross_links_text = _generate_cross_links(category)
 
     # Precompute stable prefix ONCE per category when caching is enabled.
     # Same prefix bytes across subpages → Gemini implicit cache kicks in.
+    # Cross-links are depth-aware (per-subpage) so they live in the question,
+    # not in the cached prefix.
     cached_prefix = None
     if COMPILE_CACHE_ENABLED:
         all_claims_text = _format_claims_text(claims)
         cached_prefix = SUBPAGE_COMPILE_PREFIX.format(
             category=category,
             all_claims_content=all_claims_text,
-            cross_links=cross_links_text,
             date=today_str(),
         )
 
@@ -728,6 +743,12 @@ def compile_category(category: str, force: bool = False) -> dict:
         filename = sp["filename"]
         title = sp["title"]
         filter_fn = sp["filter"]
+
+        # Depth-aware cross-links for this specific subpage
+        cross_links_text = _generate_cross_links(category, filename)
+        # support/ links also need the correct depth (same logic as cross-links)
+        support_depth = filename.count("/") + 1
+        support_prefix = "../" * support_depth
 
         # Filter claims for this sub-page
         page_claims = _filter_claims(claims, filter_fn)
@@ -743,8 +764,8 @@ def compile_category(category: str, force: bool = False) -> dict:
                 "⏳ Đang cập nhật — Chưa có claims đủ cho trang này.\n\n"
                 f"## Sản phẩm liên quan\n\n{cross_links_text}\n\n"
                 "## Liên hệ / đăng ký\n\n"
-                "- [Liên hệ BKNS](../../support/lien-he.md)\n"
-                "- [Hướng dẫn chung](../../support/huong-dan-chung.md)\n"
+                f"- [Liên hệ BKNS]({support_prefix}support/lien-he.md)\n"
+                f"- [Hướng dẫn chung]({support_prefix}support/huong-dan-chung.md)\n"
             )
             page_cost = 0
             review_verdict = "skeleton"
@@ -769,6 +790,7 @@ def compile_category(category: str, force: bool = False) -> dict:
                         page_desc=sp["desc"],
                         scoped_claim_ids=scoped_ids or "(không có claim nào — trả về skeleton)",
                         prompt_hint=sp["prompt_hint"],
+                        cross_links=cross_links_text,
                         date=today_str(),
                     )
                     result = generate_with_cache(

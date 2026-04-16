@@ -49,8 +49,13 @@ npm-debug.log*
 # Claude / other AI
 .claude/
 
-# Old project files (kept for reference)
-# output/
-# tampd_skill/
-# trienkhai/
+# Old project files — stale planning docs, not needed for handover
 tampd_skill/
+trienkhai/
+
+# Internal AI/dev notes — not for handover
+GEMINI.md
+AI_READING_GUIDE.md
+INSTINCTS.md
+OPTIMIZATION_PLAN.md
+OPTIMIZATION_LOG.md
