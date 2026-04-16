@@ -5,6 +5,67 @@ Format: [Semantic Versioning](https://semver.org/) | dates in YYYY-MM-DD
 
 ---
 
+## [v1.2.2] — 2026-04-16 — Fix: SSE Streaming for OpenClaw Responses API
+
+### Fixed
+- **incomplete turn detected: payloads=0**: OpenClaw dùng `openai-responses` transport với `stream: true`, nhưng proxy trả về plain JSON thay vì SSE streaming events
+  → `vertex-proxy` v1.2.0 giờ convert non-streaming JSON response từ Vertex AI thành SSE events đúng format Responses API
+
+### Root cause
+- OpenClaw's `google-vertex` provider dùng `api: openai-responses` (mặc định) → gọi `client.responses.create(params, {stream: true})`
+- Client này expect SSE events: `response.created`, `response.output_item.added`, `response.output_text.delta`, `response.output_item.done`, `response.completed`
+- Proxy cũ trả về JSON object → OpenAI SDK không parse được → stream yield 0 events → `payloads=0`
+
+### Solution
+- Proxy nhận `/responses` với `stream: true` → forward `/chat/completions` với `stream: false` tới Vertex AI → convert JSON response thành SSE events → stream về OpenClaw
+
+### Files Changed
+- `tools/vertex-proxy.js` v1.1.0 → v1.2.0: replace `chatToResponsesResponse()` with `emitResponsesSSE()` (SSE writer)
+
+---
+
+## [v1.2.1] — 2026-04-16 — Fix: Responses API Conversion + stream:false
+
+### Fixed
+- **HTTP 400**: OpenClaw gọi `POST /responses` (OpenAI Responses API) nhưng Vertex AI chỉ hỗ trợ `POST /chat/completions`
+  → `vertex-proxy` v1.1.0 tự động convert `/responses` ↔ `/chat/completions`
+- **Missing content**: Vertex AI trả về response không có text khi thiếu `stream:false`
+  → proxy inject `stream: false` vào mọi request
+- **gemini-3.x không available**: Đã verify tất cả gemini-3.x đều 404 trên Vertex AI cho project `ai-test-491016`
+  → Dùng `google/gemini-2.5-pro` (model mạnh nhất available, 1M context, reasoning)
+
+### Documented
+- Thêm vào Spec #17: 2 lỗi mới (Responses API + gemini-3.x) với nguyên nhân và cách tránh
+- Ghi rõ: không assume Vertex AI hỗ trợ mọi endpoint OpenAI; phải test trực tiếp
+
+---
+
+## [v1.2.0] — 2026-04-16 — OpenClaw Telegram Integration + Gemini 2.5 Pro
+
+### Added
+- **OpenClaw v2026.4.14**: Installed as AI gateway platform for Telegram bot
+- **Vertex Auth Proxy** (`tools/vertex-proxy.js`): Auto-refresh GCP access token proxy (port 19010)
+- **PM2 config** (`ecosystem.openclaw.config.js`): 2 processes — `vertex-proxy` + `openclaw-gateway`
+- **Spec** (`trienkhai/17-openclaw-telegram-integration.md`): Full architecture, security, troubleshooting docs
+
+### Changed
+- **AI Backend**: `openai/gpt-4o` → `google-vertex/gemini-2.5-pro` (1M context, reasoning mode)
+- **Telegram Security**: `dmPolicy: open` → `dmPolicy: allowlist` (only owner ID 882968821)
+- **Group Policy**: `disabled` — bot không tham gia group nào
+
+### Fixed
+- **HTTP 404**: Sai endpoint URL format (native API vs OpenAI-compatible) + model `gemini-3.1-pro-preview` chưa available
+- **HTTP 401**: `gcp-vertex-credentials` không resolve ADC → tạo proxy xử lý auth riêng
+- **Port conflict**: Gateway process cũ giữ port khi restart
+
+### Security
+- Allowlist chỉ cho Telegram ID `882968821` (@phamduytam)
+- Group chat disabled hoàn toàn
+- Proxy chỉ listen trên 127.0.0.1
+- Gateway auth token-based
+
+---
+
 ## [v1.1.1] — 2026-04-16 — Domain Migration & API Configuration
 
 ### Changed

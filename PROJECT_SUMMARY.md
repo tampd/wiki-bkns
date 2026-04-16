@@ -1,10 +1,10 @@
 # 📚 BKNS Agent Wiki — Tổng Kết Dự Án
 
-> **Trạng thái**: Production-ready — Bot đang chạy trên PM2  
-> **Build hiện tại**: v0.4 — markitdown + dual-vote (Gemini + GPT-5.4)  
+> **Trạng thái**: Production-ready — Bot đang chạy trên PM2 (OpenClaw + Vertex Proxy)  
+> **Build hiện tại**: v1.2.0 — OpenClaw gateway + Gemini 2.5 Pro via Vertex AI  
 > **Tổng chi phí**: $6.50 (v0.3 baseline); v0.4 pending regression test  
-> **Ngày cập nhật**: 2026-04-14  
-> **v0.4**: markitdown (15+ formats) + dual-vote cross-validation + Gemini 3.1 Pro ready
+> **Ngày cập nhật**: 2026-04-16  
+> **v1.2.0**: OpenClaw Telegram gateway + Vertex AI auth proxy + Gemini 2.5 Pro (1M context)
 
 ---
 
